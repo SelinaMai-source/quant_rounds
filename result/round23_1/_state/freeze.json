@@ -1,0 +1,50 @@
+{
+  "round": "23.1",
+  "frozen_before_new_nav": true,
+  "formal_primary": "O4",
+  "o1_is_failure_control": true,
+  "ten_weight_grid": [
+    0.5,
+    0.75,
+    0.9,
+    1.0
+  ],
+  "ten_zero_not_a_formal_candidate": true,
+  "lgbm_weights": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "common_top2_label": "label_exit_rule_net",
+  "grade_edges_fit_on": "inner train only",
+  "min_inner_signal_days": 120,
+  "fallback_ten_weight": 0.9,
+  "diversity": {
+    "max_daily_spearman": 0.9,
+    "min_top1_disagreement": 0.1
+  },
+  "no_catboost": true,
+  "no_three_seed_mean": true,
+  "no_threshold_search_on_rules": true,
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "hypotheses": [
+    {
+      "id": "H231_O1_NOT_PROMOTED",
+      "claim": "旧 Spearman 目标只作为失败对照，不重新晋级"
+    },
+    {
+      "id": "H231_O4_BLEND",
+      "claim": "内折 O4 选出的 Five/Ten 权重相对 v5 过经济门、统计门、Top 变化和执行门"
+    },
+    {
+      "id": "H231_LGBM_ENSEMBLE",
+      "claim": "多样性门通过后的 LGBM 融合过同一组晋级门"
+    },
+    {
+      "id": "H231_RULES_EXPLAINED",
+      "claim": "R1/R2/R3 的净收益下降能用过滤后的替补或执行假设解释，而不是未记录的引擎错单"
+    }
+  ],
+  "status": "FROZEN"
+}

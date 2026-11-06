@@ -1,0 +1,53 @@
+{
+  "status": "DONE",
+  "rows": [
+    {
+      "code": "R23_R1_BREADTH",
+      "kind": "environment_abstain",
+      "classification": "EXECUTION_ASSUMPTION_SENSITIVITY",
+      "base_trades": 1107,
+      "alt_trades": 949,
+      "trade_count_delta": -158,
+      "names_only_in_alt": 0,
+      "names_only_in_base": 158,
+      "alt_pnl_sum": 8280661.174063854,
+      "base_pnl_sum": 12450089.355724687,
+      "sharpe": 1.782722738723001,
+      "cagr": 0.47987138740100743,
+      "explanation": "广度过滤整日不交易，笔数下降来自被拿掉的信号日，现金占用留下收益拖累。这是过滤假设，不是引擎多下单。",
+      "retuned": false
+    },
+    {
+      "code": "R23_R2_LIQUIDITY",
+      "kind": "name_filter_reallocation",
+      "classification": "EXECUTION_ASSUMPTION_SENSITIVITY",
+      "base_trades": 1107,
+      "alt_trades": 1197,
+      "trade_count_delta": 90,
+      "names_only_in_alt": 163,
+      "names_only_in_base": 73,
+      "alt_pnl_sum": 8473469.385201942,
+      "base_pnl_sum": 12450089.355724687,
+      "sharpe": 1.7800192360703326,
+      "cagr": 0.4837199522681883,
+      "explanation": "流动性过滤先删掉低成交额名字，引擎仍在剩余名单里取 Top2。新增成交 163 笔是替补或换仓，不是未解释的重复下单。笔数变化 90。",
+      "retuned": false
+    },
+    {
+      "code": "R23_R3_OPEN_SEAL",
+      "kind": "execution_assumption",
+      "classification": "EXECUTION_ASSUMPTION_SENSITIVITY",
+      "base_trades": 1107,
+      "alt_trades": 1421,
+      "trade_count_delta": 314,
+      "names_only_in_alt": 330,
+      "names_only_in_base": 16,
+      "alt_pnl_sum": 4877656.753080317,
+      "base_pnl_sum": 12450089.355724687,
+      "sharpe": 1.4621710316390184,
+      "cagr": 0.39502491042353305,
+      "explanation": "开盘封死改变的是买得到买不到，属于执行敏感性，不是新的 alpha。",
+      "retuned": false
+    }
+  ]
+}

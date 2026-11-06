@@ -1,0 +1,26 @@
+{
+  "final": "PREDICTIVE_ONLY",
+  "o4_pass": false,
+  "lgbm_pass": false,
+  "live_ready": false,
+  "auto_promote": false,
+  "current_baseline_changed": false,
+  "hypotheses": [
+    {
+      "id": "H231_O1_NOT_PROMOTED",
+      "result": "PASS"
+    },
+    {
+      "id": "H231_O4_BLEND",
+      "result": "FAIL"
+    },
+    {
+      "id": "H231_LGBM_ENSEMBLE",
+      "result": "FAIL"
+    },
+    {
+      "id": "H231_RULES_EXPLAINED",
+      "result": "PASS"
+    }
+  ]
+}

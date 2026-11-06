@@ -1,0 +1,10 @@
+{
+  "daily_spearman_five_ten": 0.5830477457333747,
+  "top1_disagreement": 0.6732186732186732,
+  "n_days": 2035,
+  "disagreement_days_five_exit_mean": 0.0006245250771621598,
+  "disagreement_days_ten_exit_mean": 0.006004745579407837,
+  "disagreement_days_five_e2_mean": -0.00021566154233019206,
+  "disagreement_days_ten_e2_mean": 0.0012374832391475927,
+  "note": "分歧日的实现标签是诊断，不用来事后改权重"
+}
