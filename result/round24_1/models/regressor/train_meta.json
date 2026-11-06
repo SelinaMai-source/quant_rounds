@@ -1,0 +1,74 @@
+{
+  "status": "trained_oos",
+  "kind": "regressor",
+  "features": [
+    "r241_second_board_amount_log",
+    "r241_second_board_turnover_surprise",
+    "r241_second_board_return_5",
+    "r241_first_to_second_amount_ratio",
+    "r241_second_board_market_breadth"
+  ],
+  "label": "label_2to3_realized_exit_net_v1",
+  "seed": 17,
+  "subsample": 1.0,
+  "colsample_bytree": 1.0,
+  "untradable_coded_as_loss": false,
+  "immature_coded_as_loss": false,
+  "score_is_fill_probability": false,
+  "folds": [
+    {
+      "predict_year": 2018,
+      "status": "EMPTY"
+    },
+    {
+      "predict_year": 2019,
+      "train_rows": 1207,
+      "test_rows": 2397,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2020,
+      "train_rows": 2995,
+      "test_rows": 2924,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2021,
+      "train_rows": 5191,
+      "test_rows": 3001,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2022,
+      "train_rows": 6316,
+      "test_rows": 2707,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2023,
+      "train_rows": 6677,
+      "test_rows": 1410,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2024,
+      "train_rows": 5566,
+      "test_rows": 3410,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2025,
+      "train_rows": 5836,
+      "test_rows": 2698,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2026,
+      "train_rows": 5732,
+      "test_rows": 1624,
+      "positive_rate": null
+    }
+  ],
+  "rows": 20171,
+  "filled_with_zero": false
+}

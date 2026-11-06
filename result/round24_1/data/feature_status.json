@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "feature_set": "REDUCED",
+  "features": [
+    "r241_second_board_amount_log",
+    "r241_second_board_turnover_surprise",
+    "r241_second_board_return_5",
+    "r241_first_to_second_amount_ratio",
+    "r241_second_board_market_breadth"
+  ],
+  "blocked": [
+    "BLOCKED_PIT"
+  ],
+  "coverage": {
+    "r241_second_board_first_touch_time": 0.9847608555953364,
+    "r241_second_board_seal_duration": 0.9847608555953364,
+    "r241_second_board_peer_strength": 0.0
+  },
+  "filled_with_zero": false,
+  "n_rows": 21786,
+  "mixed_full_and_reduced": false
+}

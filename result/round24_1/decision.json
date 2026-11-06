@@ -1,0 +1,57 @@
+{
+  "final": "SECOND_TO_THIRD_RESEARCH_ONLY",
+  "gate": {
+    "level": false,
+    "paired_increment": false,
+    "fee_robust": true,
+    "catastrophic": true,
+    "execution_dependent": false,
+    "passed": false
+  },
+  "feature_set": "REDUCED",
+  "baseline_2to3_replaced": false,
+  "compare_to_1to2_cagr": false,
+  "live_ready": false,
+  "current_baseline_changed": false,
+  "hypotheses": [
+    {
+      "id": "H241_BOARD",
+      "result": "PASS"
+    },
+    {
+      "id": "H241_NO_DOUBLE_FEE",
+      "result": "PASS"
+    },
+    {
+      "id": "H241_FEATURES",
+      "result": "PASS"
+    },
+    {
+      "id": "H241_STAGE",
+      "result": "FAIL"
+    }
+  ],
+  "other_arms_not_ranked_by_sharpe": [
+    {
+      "code": "A1_P_RANK",
+      "sharpe": -0.4588824041162544,
+      "cagr": -0.18729264452858896,
+      "max_drawdown": -0.8417533080686839,
+      "promoted_by_outer_sharpe": false
+    },
+    {
+      "code": "A2_REGRESSOR",
+      "sharpe": -0.05643622896385347,
+      "cagr": -0.06901822122694135,
+      "max_drawdown": -0.6606108726123817,
+      "promoted_by_outer_sharpe": false
+    },
+    {
+      "code": "A3_ABSTAIN_P",
+      "sharpe": 0.0038095187005713275,
+      "cagr": -0.023657775472181286,
+      "max_drawdown": -0.5210325037505061,
+      "promoted_by_outer_sharpe": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "round": "24.1",
+  "independent_of_first_to_second": true,
+  "do_not_finetune_1to2": true,
+  "do_not_replace_baseline_2to3_v0": true,
+  "compare_cagr_to_first_board": false,
+  "abstention_thresholds": [
+    0.5,
+    0.55,
+    0.6
+  ],
+  "default_threshold_if_inner_days_below_120": 0.5,
+  "threshold_selected_on": "inner mean realized net of selected tradable names",
+  "never_select_threshold_on_outer_sharpe": true,
+  "rankic_min_names": 5,
+  "gate": {
+    "cagr_min": 0.0,
+    "sharpe_min": 0.5,
+    "maxdd_floor": -0.4,
+    "catastrophic_maxdd": -0.6,
+    "catastrophic_cagr": -0.2
+  },
+  "label_cost_not_recharged_in_nav": true,
+  "current_baseline_changed": false,
+  "hypotheses": [
+    {
+      "id": "H241_BOARD",
+      "claim": "二板状态含 2026-07-06 主板 ST 规则，且没有用统一的 1.099 阈值"
+    },
+    {
+      "id": "H241_NO_DOUBLE_FEE",
+      "claim": "训练标签里的成本不会在净值里再扣一次"
+    },
+    {
+      "id": "H241_FEATURES",
+      "claim": "只用规定的 8 个特征；缺失则降为 F1–F4+F7，不填 0"
+    },
+    {
+      "id": "H241_STAGE",
+      "claim": "A1–A4 在二进三门上同时过 T0 与 T2 的配对增量、费用和保守成交"
+    }
+  ],
+  "status": "FROZEN"
+}

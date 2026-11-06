@@ -1,0 +1,277 @@
+{
+  "by_year": {
+    "2018": 0.5,
+    "2019": 0.6,
+    "2020": 0.6,
+    "2021": 0.55,
+    "2022": "ALWAYS",
+    "2023": "ALWAYS",
+    "2024": 0.55,
+    "2025": "ALWAYS",
+    "2026": 0.55
+  },
+  "reports": [
+    {
+      "year": 2018,
+      "threshold": 0.5,
+      "reason": "DEFAULT_0.50",
+      "n_days": 0
+    },
+    {
+      "year": 2019,
+      "threshold": 0.6,
+      "reason": "INNER_MEAN_NET",
+      "grid": [
+        {
+          "threshold": 0.5,
+          "mean_realized_net": 0.001686804765494135,
+          "n": 126,
+          "day_share": 0.5447154471544715
+        },
+        {
+          "threshold": 0.55,
+          "mean_realized_net": 0.0075160385634179235,
+          "n": 88,
+          "day_share": 0.3821138211382114
+        },
+        {
+          "threshold": 0.6,
+          "mean_realized_net": 0.021741911044765482,
+          "n": 67,
+          "day_share": 0.2682926829268293
+        },
+        {
+          "threshold": "ALWAYS_TRADE_ELIGIBLE",
+          "mean_realized_net": -0.02037017294377102,
+          "n": 689,
+          "day_share": 0.983739837398374
+        }
+      ],
+      "n_days": 123
+    },
+    {
+      "year": 2020,
+      "threshold": 0.6,
+      "reason": "INNER_MEAN_NET",
+      "grid": [
+        {
+          "threshold": 0.5,
+          "mean_realized_net": -0.01725634509269371,
+          "n": 34,
+          "day_share": 0.20634920634920634
+        },
+        {
+          "threshold": 0.55,
+          "mean_realized_net": 0.0024469181680558116,
+          "n": 4,
+          "day_share": 0.023809523809523808
+        },
+        {
+          "threshold": 0.6,
+          "mean_realized_net": 0.014750610146167187,
+          "n": 1,
+          "day_share": 0.007936507936507936
+        },
+        {
+          "threshold": "ALWAYS_TRADE_ELIGIBLE",
+          "mean_realized_net": -0.010042639547609266,
+          "n": 661,
+          "day_share": 0.9841269841269841
+        }
+      ],
+      "n_days": 126
+    },
+    {
+      "year": 2021,
+      "threshold": 0.55,
+      "reason": "INNER_MEAN_NET",
+      "grid": [
+        {
+          "threshold": 0.5,
+          "mean_realized_net": 0.02203576066168251,
+          "n": 21,
+          "day_share": 0.15079365079365079
+        },
+        {
+          "threshold": 0.55,
+          "mean_realized_net": 0.10725978014212723,
+          "n": 4,
+          "day_share": 0.031746031746031744
+        },
+        {
+          "threshold": 0.6,
+          "mean_realized_net": null,
+          "n": 0,
+          "day_share": 0.0
+        },
+        {
+          "threshold": "ALWAYS_TRADE_ELIGIBLE",
+          "mean_realized_net": -0.0021741701250922625,
+          "n": 974,
+          "day_share": 0.9761904761904762
+        }
+      ],
+      "n_days": 126
+    },
+    {
+      "year": 2022,
+      "threshold": "ALWAYS",
+      "reason": "INNER_MEAN_NET",
+      "grid": [
+        {
+          "threshold": 0.5,
+          "mean_realized_net": -0.015945423555292142,
+          "n": 19,
+          "day_share": 0.136
+        },
+        {
+          "threshold": 0.55,
+          "mean_realized_net": -0.002001621623553884,
+          "n": 1,
+          "day_share": 0.008
+        },
+        {
+          "threshold": 0.6,
+          "mean_realized_net": null,
+          "n": 0,
+          "day_share": 0.0
+        },
+        {
+          "threshold": "ALWAYS_TRADE_ELIGIBLE",
+          "mean_realized_net": 0.004679107307276851,
+          "n": 1085,
+          "day_share": 0.984
+        }
+      ],
+      "n_days": 125
+    },
+    {
+      "year": 2023,
+      "threshold": "ALWAYS",
+      "reason": "INNER_MEAN_NET",
+      "grid": [
+        {
+          "threshold": 0.5,
+          "mean_realized_net": -0.0065432467258145395,
+          "n": 57,
+          "day_share": 0.288
+        },
+        {
+          "threshold": 0.55,
+          "mean_realized_net": -0.06719923195215814,
+          "n": 7,
+          "day_share": 0.056
+        },
+        {
+          "threshold": 0.6,
+          "mean_realized_net": null,
+          "n": 0,
+          "day_share": 0.0
+        },
+        {
+          "threshold": "ALWAYS_TRADE_ELIGIBLE",
+          "mean_realized_net": -0.005112042414649149,
+          "n": 925,
+          "day_share": 0.984
+        }
+      ],
+      "n_days": 125
+    },
+    {
+      "year": 2024,
+      "threshold": 0.55,
+      "reason": "INNER_MEAN_NET",
+      "grid": [
+        {
+          "threshold": 0.5,
+          "mean_realized_net": 0.019646016956989983,
+          "n": 56,
+          "day_share": 0.35772357723577236
+        },
+        {
+          "threshold": 0.55,
+          "mean_realized_net": 0.07576855704970985,
+          "n": 12,
+          "day_share": 0.0975609756097561
+        },
+        {
+          "threshold": 0.6,
+          "mean_realized_net": null,
+          "n": 0,
+          "day_share": 0.0
+        },
+        {
+          "threshold": "ALWAYS_TRADE_ELIGIBLE",
+          "mean_realized_net": -0.0076524404225828515,
+          "n": 577,
+          "day_share": 0.983739837398374
+        }
+      ],
+      "n_days": 123
+    },
+    {
+      "year": 2025,
+      "threshold": "ALWAYS",
+      "reason": "INNER_MEAN_NET",
+      "grid": [
+        {
+          "threshold": 0.5,
+          "mean_realized_net": -0.03944180891397918,
+          "n": 601,
+          "day_share": 0.272
+        },
+        {
+          "threshold": 0.55,
+          "mean_realized_net": -0.042326938597397515,
+          "n": 573,
+          "day_share": 0.136
+        },
+        {
+          "threshold": 0.6,
+          "mean_realized_net": -0.03661675477326117,
+          "n": 439,
+          "day_share": 0.104
+        },
+        {
+          "threshold": "ALWAYS_TRADE_ELIGIBLE",
+          "mean_realized_net": -0.005833584670637868,
+          "n": 1694,
+          "day_share": 0.984
+        }
+      ],
+      "n_days": 125
+    },
+    {
+      "year": 2026,
+      "threshold": 0.55,
+      "reason": "INNER_MEAN_NET",
+      "grid": [
+        {
+          "threshold": 0.5,
+          "mean_realized_net": -0.005415435387126281,
+          "n": 18,
+          "day_share": 0.10317460317460317
+        },
+        {
+          "threshold": 0.55,
+          "mean_realized_net": 0.027975675859488902,
+          "n": 1,
+          "day_share": 0.007936507936507936
+        },
+        {
+          "threshold": 0.6,
+          "mean_realized_net": null,
+          "n": 0,
+          "day_share": 0.0
+        },
+        {
+          "threshold": "ALWAYS_TRADE_ELIGIBLE",
+          "mean_realized_net": -0.0015364867434135778,
+          "n": 1013,
+          "day_share": 0.9761904761904762
+        }
+      ],
+      "n_days": 126
+    }
+  ]
+}

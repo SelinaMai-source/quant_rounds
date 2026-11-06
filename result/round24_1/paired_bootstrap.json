@@ -1,0 +1,25 @@
+{
+  "vs_t0": {
+    "status": "OK",
+    "n": 2075,
+    "block": 20,
+    "n_boot": 5000,
+    "mean_excess": 0.0001718528521805933,
+    "ci95_low": -0.0010913908415315155,
+    "ci95_high": 0.001400801570314597,
+    "share_boot_mean_gt_0": 0.6078,
+    "interpretation": "block bootstrap interval, not a posterior"
+  },
+  "vs_t2": {
+    "status": "OK",
+    "n": 2075,
+    "block": 20,
+    "n_boot": 5000,
+    "mean_excess": -0.00021073463841986265,
+    "ci95_low": -0.0016843108120526847,
+    "ci95_high": 0.0011739810613247473,
+    "share_boot_mean_gt_0": 0.3948,
+    "interpretation": "block bootstrap interval, not a posterior"
+  },
+  "is_posterior": false
+}
