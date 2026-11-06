@@ -1,0 +1,8 @@
+{
+  "n_top2_slots": 2096,
+  "open_limit_up_share": 0.14599236641221375,
+  "gap_ge_7_share": 0.3139312977099237,
+  "gap_ge_9_share": 0.22089694656488548,
+  "limit_price_source": "market limit_up when finite and not sentinel; no flat 1.099 rule",
+  "main_sensitivity": "NO_SAME_DAY_REPLACEMENT"
+}

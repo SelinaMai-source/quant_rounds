@@ -1,0 +1,35 @@
+{
+  "allnan_nav": 12750089.355724689,
+  "v5_nav": 12750089.355724689,
+  "allnan_nav_identical": true,
+  "allnan_sharpe": 1.8756627913361097,
+  "shuffle_sharpe": 1.8125087429942996,
+  "shuffle_matches_frozen": true,
+  "frozen_shuffle_sharpe": 1.8125087429942996,
+  "counts_as_alpha": false,
+  "source_allnan": "/data1/stock-mxy/课题/一进二策略/result/round22_4/null/R224_CTRL_ALLNAN/sleeve/summary.json",
+  "source_shuffle": "/data1/stock-mxy/课题/一进二策略/result/round22_4/null/R224_CTRL_SHUFFLE/sleeve/summary.json",
+  "permutations": [
+    {
+      "seed": 17,
+      "sharpe": -0.6607223430812782,
+      "cagr": -0.11065286567972021,
+      "nav_end": 109998.407703172,
+      "counts_as_alpha": false
+    },
+    {
+      "seed": 42,
+      "sharpe": -0.11277543809694558,
+      "cagr": -0.034985765995791396,
+      "nav_end": 221205.08279992762,
+      "counts_as_alpha": false
+    },
+    {
+      "seed": 73,
+      "sharpe": -0.46910110559189666,
+      "cagr": -0.09991516941405898,
+      "nav_end": 121893.42396036976,
+      "counts_as_alpha": false
+    }
+  ]
+}

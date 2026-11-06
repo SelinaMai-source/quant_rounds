@@ -1,0 +1,40 @@
+{
+  "status": "RECONCILED",
+  "chain": [
+    "Prediction",
+    "Rank",
+    "B03",
+    "O01",
+    "Order",
+    "Fill",
+    "Position",
+    "Exit",
+    "Net PnL"
+  ],
+  "artifacts": {
+    "prediction": "/data1/stock-mxy/课题/一进二策略/result/round22_3/candidates/R223_E0/predictions.parquet",
+    "overlay": "/data1/stock-mxy/课题/一进二策略/result/round22_3/candidates/R223_E0/overlayed.parquet",
+    "trades": "/data1/stock-mxy/课题/一进二策略/result/round22_3/candidates/R223_E0/trades.parquet",
+    "positions": "/data1/stock-mxy/课题/一进二策略/result/round22_3/candidates/R223_E0/positions.parquet",
+    "nav": "/data1/stock-mxy/课题/一进二策略/result/round22_3/candidates/R223_E0/nav.parquet",
+    "costs": "/data1/stock-mxy/课题/一进二策略/result/round22_3/candidates/R223_E0/costs.parquet"
+  },
+  "cash_plus_market_value_equals_total_asset": true,
+  "max_identity_gap": 0.0,
+  "start_nav": 300000.0,
+  "end_nav": 12750089.355724689,
+  "end_cash": 12750089.355724689,
+  "end_market_value_unrealized": 0.0,
+  "closed_trade_cash_pnl": 12450089.355724687,
+  "open_buy_cost_still_held": 0.0,
+  "residual_after_cash_pnl_and_unrealized_cost": 1.862645149230957e-09,
+  "residual_over_nav": 1.4608879179302726e-16,
+  "fees_already_inside_trade_cash": {
+    "commission": 123143.345151774,
+    "transfer_fee": 12314.334515177403,
+    "stamp_tax": 311082.52026835,
+    "total": 446540.19993530144
+  },
+  "compounding": "日收益由总资产序列复利，不是单利加总",
+  "n_trades": 1107
+}

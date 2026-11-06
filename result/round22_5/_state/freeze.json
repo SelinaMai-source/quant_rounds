@@ -1,0 +1,98 @@
+{
+  "round": "22.5",
+  "frozen_before_new_nav": true,
+  "anchor": {
+    "code": "R16_O01",
+    "window": [
+      "2018-01-02",
+      "2026-07-24"
+    ],
+    "sharpe": 1.8756627913361097,
+    "cagr": 0.5499812832273525,
+    "max_drawdown": -0.24056327715394388,
+    "nav_end": 12750089.355724689,
+    "trades": 1107,
+    "capital": 300000,
+    "fee_schedule": "ROUND7_FLAT_5BP"
+  },
+  "hypotheses": [
+    {
+      "id": "H225_C1_FULL_TRAIN_INCREMENT",
+      "claim": "C1 在 2024-01-01 起的 FULL_TRAIN 上相对 v5 有稳定增量",
+      "pass_if": "FULL_TRAIN wealth ratio>1 且切片超额为负的结论不成立，并且全历史经济门通过"
+    },
+    {
+      "id": "H225_C4_ECONOMIC",
+      "claim": "C4 的全历史增量过 R21_3 经济门",
+      "pass_if": "经济门全部为真"
+    },
+    {
+      "id": "H225_ALLNAN_INVARIANT",
+      "claim": "全 NaN 对照的 NAV 与 v5 相同",
+      "pass_if": "NAV 与锁定锚点一致"
+    },
+    {
+      "id": "H225_SHUFFLE_RECHECK",
+      "claim": "既有 SHUFFLE 袖套 Sharpe 等于冻结数字",
+      "pass_if": "与 1.8125087429942996 的差小于 1e-9"
+    },
+    {
+      "id": "H225_PERM_NOT_ALPHA",
+      "claim": "日内截面置换不是可晋级 alpha",
+      "pass_if": "三颗种子都不计 alpha 且不自动晋级"
+    },
+    {
+      "id": "H225_FS2_OOF_SCREEN",
+      "claim": "FS2=OCF/平均资产 通过 PIT 与 OOF 筛选并可进入袖套",
+      "pass_if": "PIT 通过且至少 3 个完整外折年且 OOF Top2 成熟标签为正且至少 60% 外折同号"
+    },
+    {
+      "id": "H225_NAV_RECONCILED",
+      "claim": "v5 净值桥包含现金、费用、未实现和复利",
+      "pass_if": "现金+市值等于总资产且闭合残差相对净值不超过 1%"
+    },
+    {
+      "id": "H225_C4_ROLLING_ROWWISE",
+      "claim": "C4 滚动按行，不把日历空档插进窗口",
+      "pass_if": "合成缺口上按行窗口与按日历窗口不一致，且原公式未改"
+    }
+  ],
+  "hypotheses_locked": true,
+  "economic_materiality": {
+    "id": "R21_3_ECONOMIC_MATERIALITY_V1",
+    "delta_cagr_min_abs": 0.01,
+    "delta_sharpe_min": 0.05,
+    "nav_rel_min": 0.01,
+    "v5_nav": 12750089.355724689,
+    "nav_abs_min": 127500.89355724689,
+    "top1_or_top2_change_gt_0": true,
+    "maxdd_worse_max_abs": 0.02,
+    "fee_corrected_direction_holds": true,
+    "not_only_2024_or_2025": true,
+    "predeclared_21_2_immaterial": {
+      "code": "R21_2_E3_r21_l1_known_float_chg",
+      "delta_sharpe": 0.003055650344720773,
+      "delta_nav_rmb": 42.9,
+      "verdict": "IMMATERIAL"
+    },
+    "carried_from": "round21_3",
+    "frozen_before_formal_nav": true,
+    "do_not_retune": true
+  },
+  "economic_gate_sha256": "2a5314d20e7fea88b2486a28a6384ea7ce769498910464b04e8a36fc6bc78fe9",
+  "c4_formula_unchanged": "mean(sign(NET_FLOW).shift(1).rolling(5, min_periods=3))",
+  "fs2_formula": "OperatingCashFlow/AverageAssets",
+  "fs2_is_not_cash_conversion_change": true,
+  "no_new_factors": true,
+  "no_xgb_retune": true,
+  "permutation_seeds": [
+    17,
+    42,
+    73
+  ],
+  "execution_main_sensitivity": "NO_SAME_DAY_REPLACEMENT",
+  "replacement_is_separate_scenario": true,
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "status": "FROZEN"
+}

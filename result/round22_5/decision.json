@@ -1,0 +1,62 @@
+{
+  "c1": "ARCHIVE_C1_NO_STABLE_INCREMENTAL_ALPHA",
+  "c4": "WEAK_RESEARCH_SIGNAL_ONLY",
+  "fs2": "PREDICTIVE_NOT_ECONOMIC",
+  "promote": false,
+  "live_ready": false,
+  "forward": "FORWARD_OOS_NOT_AVAILABLE",
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "next_round_baseline": "baseline_v5=R16_O01",
+  "hypotheses": [
+    {
+      "id": "H225_C1_FULL_TRAIN_INCREMENT",
+      "claim": "C1 在 2024-01-01 起的 FULL_TRAIN 上相对 v5 有稳定增量",
+      "result": "FAIL",
+      "artifact": "H225_C1_FULL_TRAIN_INCREMENT"
+    },
+    {
+      "id": "H225_C4_ECONOMIC",
+      "claim": "C4 的全历史增量过 R21_3 经济门",
+      "result": "FAIL",
+      "artifact": "H225_C4_ECONOMIC"
+    },
+    {
+      "id": "H225_ALLNAN_INVARIANT",
+      "claim": "全 NaN 对照的 NAV 与 v5 相同",
+      "result": "PASS",
+      "artifact": "H225_ALLNAN_INVARIANT"
+    },
+    {
+      "id": "H225_SHUFFLE_RECHECK",
+      "claim": "既有 SHUFFLE 袖套 Sharpe 等于冻结数字",
+      "result": "PASS",
+      "artifact": "H225_SHUFFLE_RECHECK"
+    },
+    {
+      "id": "H225_PERM_NOT_ALPHA",
+      "claim": "日内截面置换不是可晋级 alpha",
+      "result": "PASS",
+      "artifact": "H225_PERM_NOT_ALPHA"
+    },
+    {
+      "id": "H225_FS2_OOF_SCREEN",
+      "claim": "FS2=OCF/平均资产 通过 PIT 与 OOF 筛选并可进入袖套",
+      "result": "PASS",
+      "artifact": "H225_FS2_OOF_SCREEN"
+    },
+    {
+      "id": "H225_NAV_RECONCILED",
+      "claim": "v5 净值桥包含现金、费用、未实现和复利",
+      "result": "PASS",
+      "artifact": "H225_NAV_RECONCILED"
+    },
+    {
+      "id": "H225_C4_ROLLING_ROWWISE",
+      "claim": "C4 滚动按行，不把日历空档插进窗口",
+      "result": "PASS",
+      "artifact": "H225_C4_ROLLING_ROWWISE"
+    }
+  ],
+  "promote_recommendation": "KEEP_BASELINE_V5"
+}

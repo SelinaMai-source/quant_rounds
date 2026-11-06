@@ -1,0 +1,204 @@
+{
+  "pit": {
+    "formula": "OperatingCashFlow/AverageAssets",
+    "not_cash_conversion_change": true,
+    "future_known_at_rows_before_filter": 0,
+    "asof": "known_at<=trade_date 后按标的和交易日取最近版本",
+    "version_collapse": "latest known_at",
+    "staleness_days_median": 56.0,
+    "staleness_days_p90": 133.0,
+    "filled_with_zero": false,
+    "pit_pass": "True"
+  },
+  "conditional_ic": {
+    "five_label": 0.024460536527712975,
+    "ten_label": 0.02626711215897661,
+    "g1": -0.0037629515962630694
+  },
+  "fold_coverage": [
+    {
+      "predict_year": 2018,
+      "finite_share": 0.9879666769515582,
+      "complete_year": true
+    },
+    {
+      "predict_year": 2019,
+      "finite_share": 0.9972405009552112,
+      "complete_year": true
+    },
+    {
+      "predict_year": 2020,
+      "finite_share": 0.9919836261299676,
+      "complete_year": true
+    },
+    {
+      "predict_year": 2021,
+      "finite_share": 0.998608453644112,
+      "complete_year": true
+    },
+    {
+      "predict_year": 2022,
+      "finite_share": 0.9992857142857143,
+      "complete_year": true
+    },
+    {
+      "predict_year": 2023,
+      "finite_share": 0.9982617333002235,
+      "complete_year": true
+    },
+    {
+      "predict_year": 2024,
+      "finite_share": 0.9988221436984688,
+      "complete_year": true
+    },
+    {
+      "predict_year": 2025,
+      "finite_share": 0.9993924665856622,
+      "complete_year": true
+    },
+    {
+      "predict_year": 2026,
+      "finite_share": 0.9989091900736297,
+      "complete_year": false
+    }
+  ],
+  "screens": {
+    "five": {
+      "pass": true,
+      "complete_outer_years": 8,
+      "top2_mean": 0.0024290370176174338,
+      "same_sign_share": 0.75,
+      "years": [
+        {
+          "year": 2018,
+          "top2_mean": -0.0022898310342823118,
+          "n": 486
+        },
+        {
+          "year": 2019,
+          "top2_mean": 0.0056071145927694185,
+          "n": 488
+        },
+        {
+          "year": 2020,
+          "top2_mean": 0.008263612739938843,
+          "n": 486
+        },
+        {
+          "year": 2021,
+          "top2_mean": 0.002102890563322676,
+          "n": 486
+        },
+        {
+          "year": 2022,
+          "top2_mean": 0.0013187659735216044,
+          "n": 483
+        },
+        {
+          "year": 2023,
+          "top2_mean": 0.0014413252048300338,
+          "n": 484
+        },
+        {
+          "year": 2024,
+          "top2_mean": -0.0002510113754580212,
+          "n": 484
+        },
+        {
+          "year": 2025,
+          "top2_mean": 0.0032394294762972285,
+          "n": 486
+        }
+      ]
+    },
+    "ten": {
+      "pass": true,
+      "complete_outer_years": 8,
+      "top2_mean": 0.0022652321850551767,
+      "same_sign_share": 0.625,
+      "years": [
+        {
+          "year": 2018,
+          "top2_mean": -0.003353725178230656,
+          "n": 486
+        },
+        {
+          "year": 2019,
+          "top2_mean": -0.0026055432188405027,
+          "n": 488
+        },
+        {
+          "year": 2020,
+          "top2_mean": 0.011130800063776352,
+          "n": 486
+        },
+        {
+          "year": 2021,
+          "top2_mean": 0.003895533956029492,
+          "n": 486
+        },
+        {
+          "year": 2022,
+          "top2_mean": -0.0024723064962896735,
+          "n": 483
+        },
+        {
+          "year": 2023,
+          "top2_mean": 0.0029099146729706397,
+          "n": 484
+        },
+        {
+          "year": 2024,
+          "top2_mean": 0.0029396188456089533,
+          "n": 484
+        },
+        {
+          "year": 2025,
+          "top2_mean": 0.005677564835416809,
+          "n": 486
+        }
+      ]
+    }
+  },
+  "both_add": false,
+  "remove_replace": false,
+  "new_params": false,
+  "sleeve": {
+    "cagr": 0.4535633179565095,
+    "sharpe": 1.6365459243636638,
+    "max_drawdown": -0.2791973786646168,
+    "nav_end": 7359885.152982602,
+    "nav_start": 300000.0,
+    "total_return": 23.532950509942005,
+    "n_obs": 2075,
+    "window_start": "2018-01-02",
+    "window_end": "2026-07-24",
+    "code": "R225_FS2_FIVE_ADD",
+    "completed_trades": 1109,
+    "status": "ran",
+    "fee_schedule": "ROUND7_FLAT_5BP",
+    "compare_to": "R16_O01",
+    "restarted_capital": false,
+    "scenario": false,
+    "counts_as_alpha": true,
+    "round": "22.5",
+    "scope": "FULL_HISTORY_FIRST_TO_SECOND",
+    "initial_cash": 300000.0,
+    "delta_cagr": -0.09641796527084301,
+    "delta_sharpe": -0.23911686697244594,
+    "nav_rel": 0.42275815112793136,
+    "delta_maxdd": -0.038634101510672925,
+    "flags": {
+      "delta_cagr_ok": false,
+      "delta_sharpe_ok": false,
+      "nav_rel_ok": true,
+      "top_changed_ok": true,
+      "maxdd_ok": false,
+      "fee_direction_ok": true,
+      "not_only_2024_or_2025": true
+    },
+    "economically_material": false,
+    "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1"
+  },
+  "verdict": "PREDICTIVE_NOT_ECONOMIC"
+}

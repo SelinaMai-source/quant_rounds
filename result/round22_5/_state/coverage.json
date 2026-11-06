@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "flow": {
+    "n_valid_3": 5116,
+    "n_valid_4": 5116,
+    "n_valid_5": 11778270,
+    "n_valid": 11788502,
+    "status": "OK",
+    "formula": "mean(sign(NET_FLOW).shift(1).rolling(5, min_periods=3))",
+    "source": "/data1/Stock/data/acquisitions/hermes-cn-a-2010-20260724-v7-rebuild/raw/mkt_equ_mf_new",
+    "column": "NET_FLOW",
+    "rolling_inserts_calendar_gaps": false,
+    "rolling_is_row_based": true,
+    "calendar_gaps_present": true,
+    "n_instruments": 5116,
+    "n_flow_rows": 11803850,
+    "rewritten": false
+  },
+  "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ]
+}

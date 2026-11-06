@@ -1,0 +1,127 @@
+{
+  "slices": {
+    "PRE_AVAILABILITY": {
+      "n_obs": 664,
+      "excess_sharpe_not_comparable_across_slices": null,
+      "slice_wealth_ratio": 1.0,
+      "sum_excess_log": 0.0,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排"
+    },
+    "PARTIAL": {
+      "n_obs": 792,
+      "excess_sharpe_not_comparable_across_slices": null,
+      "slice_wealth_ratio": 1.0,
+      "sum_excess_log": 0.0,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排"
+    },
+    "FULL_TRAIN": {
+      "n_obs": 619,
+      "excess_sharpe_not_comparable_across_slices": 0.23682517221716531,
+      "slice_wealth_ratio": 1.0325489738571552,
+      "sum_excess_log": 0.03203047703534656,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排"
+    }
+  },
+  "yearly_inside_full_train": {
+    "2024": {
+      "n_obs": 242,
+      "excess_sharpe_not_comparable_across_slices": 1.562774665955394,
+      "slice_wealth_ratio": 1.0640825449300984,
+      "sum_excess_log": 0.06211296773181596,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排",
+      "full_year": true,
+      "note": "完整日历年切片，不与全历史 Sharpe 混排"
+    },
+    "2025": {
+      "n_obs": 243,
+      "excess_sharpe_not_comparable_across_slices": -0.3506487446673693,
+      "slice_wealth_ratio": 0.9704996486512788,
+      "sum_excess_log": -0.02994423840170235,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排",
+      "full_year": true,
+      "note": "完整日历年切片，不与全历史 Sharpe 混排"
+    },
+    "2026": {
+      "n_obs": 134,
+      "excess_sharpe_not_comparable_across_slices": -1.1560389178248909,
+      "slice_wealth_ratio": 0.9998617572616403,
+      "sum_excess_log": -0.00013825229476713274,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排",
+      "full_year": false,
+      "note": "2026 不是完整自然年"
+    }
+  },
+  "conditional_ic": {
+    "ic_label_e2_net": -0.01887498154220378,
+    "ic_label_exit_rule_net": -0.02435772786305752,
+    "ic_vs_g1_ret_5": 0.39086635666002023,
+    "partial_ic_given_g1_ret_5": -0.006687477343739302,
+    "partial_ic_days": 559,
+    "ic_given_five_top_half": -0.008357595565751405,
+    "ic_given_ten_top_half": -0.016857808238051133,
+    "status": "OK"
+  },
+  "ndcg": {
+    "edges_fit_on": "2021-01-01..2023-12-31 label_e2_net",
+    "edges": [
+      -0.05155124340138439,
+      -0.02436233853247691,
+      0.0035802497058989857,
+      0.03962832787791766
+    ],
+    "ndcg_at_1": {
+      "status": "OK",
+      "k": 1,
+      "n_days": 580,
+      "ndcg": 0.51566091954023
+    },
+    "ndcg_at_2": {
+      "status": "OK",
+      "k": 2,
+      "n_days": 580,
+      "ndcg": 0.5159537496061413
+    },
+    "grade_fit_on_outer": false
+  },
+  "changed_top": {
+    "top1": {
+      "n_changed": 133,
+      "n_days": 133,
+      "mean_matured_label_new": 0.007035456963677951,
+      "mean_matured_label_base": 0.005444680160279205
+    },
+    "top2": {
+      "n_changed": 370,
+      "n_days": 250,
+      "mean_matured_label_new": 0.0014866318781774166,
+      "mean_matured_label_base": 0.0010842123412447813
+    }
+  },
+  "bootstrap": {
+    "status": "OK",
+    "n": 619,
+    "block": 20,
+    "n_boot": 5000,
+    "mean_excess": 5.472508412938327e-05,
+    "ci95_low": -0.00022764616581552553,
+    "ci95_high": 0.00036194042599038066,
+    "share_boot_mean_gt_0": 0.6368,
+    "interpretation": "block bootstrap interval, not a posterior"
+  },
+  "bootstrap_is_posterior": false,
+  "full_history_summary": {
+    "sharpe": 1.885273629050742,
+    "cagr": 0.5557948579127749,
+    "delta_sharpe": null,
+    "delta_cagr": null,
+    "nav_end": 13165091.68084055,
+    "max_drawdown": -0.24056327715394388,
+    "economically_material": null
+  }
+}

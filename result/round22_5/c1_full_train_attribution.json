@@ -1,0 +1,56 @@
+{
+  "verdict": "C1_NO_STABLE_INCREMENTAL_ALPHA",
+  "slices": {
+    "PRE_AVAILABILITY": {
+      "n_obs": 664,
+      "excess_sharpe_not_comparable_across_slices": null,
+      "slice_wealth_ratio": 1.0,
+      "sum_excess_log": 0.0,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排"
+    },
+    "PARTIAL": {
+      "n_obs": 792,
+      "excess_sharpe_not_comparable_across_slices": 1.2139498702349403,
+      "slice_wealth_ratio": 1.2636868422206864,
+      "sum_excess_log": 0.23403351362152836,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排"
+    },
+    "FULL_TRAIN": {
+      "n_obs": 619,
+      "excess_sharpe_not_comparable_across_slices": -1.4047290095163467,
+      "slice_wealth_ratio": 0.8067108503924177,
+      "sum_excess_log": -0.2147899767857715,
+      "status": "OK",
+      "partial_vs_full_note": "切片超额 Sharpe 不与全历史 1.876 混排"
+    }
+  },
+  "partial_wealth_recomputed": 1.2636868422206864,
+  "full_train_wealth_recomputed": 0.8067108503924177,
+  "historical_partial_wealth_claim": 1.263687,
+  "historical_full_train_wealth_claim": 0.806711,
+  "changed": {
+    "top1": {
+      "n_changed": 205,
+      "n_days": 205,
+      "mean_matured_label_new": -5.208349533913621e-05,
+      "mean_matured_label_base": 0.0075406152144140625
+    },
+    "top2": {
+      "n_changed": 548,
+      "n_days": 362,
+      "mean_matured_label_new": 0.0026511932361147827,
+      "mean_matured_label_base": -0.0024605663525608034
+    }
+  },
+  "full_history_summary": {
+    "sharpe": 1.8891860464733643,
+    "cagr": 0.5534714007251016,
+    "delta_sharpe": null,
+    "delta_cagr": null,
+    "nav_end": 12997822.152645178,
+    "economically_material": null
+  },
+  "new_combinations": false
+}
