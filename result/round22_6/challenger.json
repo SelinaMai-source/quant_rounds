@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "verdict": "LOCAL_REORDER_EFFECT_ONLY",
+  "ch0": {
+    "sharpe": 1.8756627913361097,
+    "cagr": 0.5499812832273525,
+    "nav_end": 12750089.355724689,
+    "completed_trades": 1107
+  },
+  "ch1": {
+    "sharpe": 1.8944691405412657,
+    "cagr": 0.557344590250811,
+    "nav_end": 13277713.582022782,
+    "completed_trades": 1108,
+    "nav_improvement": 0.04138200224151323
+  },
+  "ch2": {
+    "sharpe": 1.8549303953450806,
+    "cagr": 0.5421832672826843,
+    "nav_end": 12211585.795391148,
+    "completed_trades": 1107,
+    "nav_improvement": -0.04223527736233135
+  },
+  "ch2_vs_ch0": false,
+  "ch2_vs_ch1": false,
+  "buffer": 0.002,
+  "min_train_pair_days": 250,
+  "active_dates": 2030
+}

@@ -1,0 +1,9 @@
+[round22_6] stage=freeze
+[round22_6] stage=partial_ic
+[round22_6] stage=fs2_heads
+[round22_6] stage=c4_placebo
+[round22_6] stage=challenger
+[round22_6] stage=stats
+[round22_6] stage=decision
+[round22_6] stage=report
+{'freeze': 'OK', 'partial_ic': 'DONE', 'fs2_heads': 'DONE', 'c4_placebo': 'DONE', 'challenger': 'DONE', 'stats': 'OK', 'decision': 'KEEP_BASELINE_V5', 'report': 'DONE'}

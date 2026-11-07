@@ -1,0 +1,146 @@
+{
+  "bootstrap": {
+    "F1": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": -0.00026854835473023625,
+        "delta_sharpe": -0.23911686697244527,
+        "delta_cagr": -0.10178791874182891,
+        "delta_maxdd": -0.038634101510672814
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -0.00046540391121167483,
+          "high": -8.766101618235392e-05
+        },
+        "delta_sharpe": {
+          "low": -0.43252785286923023,
+          "high": -0.06753000279894213
+        },
+        "delta_cagr": {
+          "low": -0.18931731639741217,
+          "high": -0.03139143559073753
+        },
+        "delta_maxdd": {
+          "low": -0.08300431794050607,
+          "high": 0.04397154328983941
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    },
+    "F2": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": -0.0007488397791238304,
+        "delta_sharpe": -0.665560100372947,
+        "delta_cagr": -0.2667513927862224,
+        "delta_maxdd": -0.2227391524586244
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -0.001229471986540173,
+          "high": -0.0002847883231665219
+        },
+        "delta_sharpe": {
+          "low": -1.1240026131573455,
+          "high": -0.22258903017732826
+        },
+        "delta_cagr": {
+          "low": -0.4792525175663416,
+          "high": -0.09418421777876053
+        },
+        "delta_maxdd": {
+          "low": -0.2492024571045021,
+          "high": 0.07887630811809655
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    },
+    "CH1": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": 1.9549329659741344e-05,
+        "delta_sharpe": 0.018806349205155115,
+        "delta_cagr": 0.00778377484650572,
+        "delta_maxdd": 0.004308779279498687
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -6.411574330749992e-05,
+          "high": 8.859678767347949e-05
+        },
+        "delta_sharpe": {
+          "low": -0.05935421010300052,
+          "high": 0.08245544332882496
+        },
+        "delta_cagr": {
+          "low": -0.02517590189628661,
+          "high": 0.0368305397504587
+        },
+        "delta_maxdd": {
+          "low": -0.01296385773960301,
+          "high": 0.01908651701978717
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    },
+    "CH2": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": -2.0767479851814194e-05,
+        "delta_sharpe": -0.020732395991025943,
+        "delta_cagr": -0.008241732087701958,
+        "delta_maxdd": -0.02695271570878166
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -0.00010658337573475945,
+          "high": 5.09341222034067e-05
+        },
+        "delta_sharpe": {
+          "low": -0.10321089891262801,
+          "high": 0.047202633490388536
+        },
+        "delta_cagr": {
+          "low": -0.043345142259687976,
+          "high": 0.02131970633083154
+        },
+        "delta_maxdd": {
+          "low": -0.022850873362123787,
+          "high": 0.014713981013650604
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    }
+  },
+  "spa_full_history_first_to_second": {
+    "status": "BLOCKED_STAT_TEST",
+    "reason": "No module named 'arch'",
+    "method_not_used": "self_written_reality_check_spa_is_not_hansen_spa",
+    "candidates": [
+      "F1",
+      "F2"
+    ],
+    "n_alternatives": 2
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "status": "DONE",
+  "c4_formula_unchanged": "mean(sign(NET_FLOW).shift(1).rolling(5, min_periods=3))",
+  "placebo": "within-date finite C4 only",
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "no_pseudo_exact_pvalue": true,
+  "portfolio_score_allocation_randomization": {
+    "name": "PORTFOLIO_SCORE_ALLOCATION_RANDOMIZATION",
+    "not_c4_feature_evidence": true,
+    "source_round22_5": [
+      {
+        "seed": 17,
+        "sharpe": -0.6607223430812782,
+        "cagr": -0.11065286567972021,
+        "nav_end": 109998.407703172,
+        "counts_as_alpha": false
+      },
+      {
+        "seed": 42,
+        "sharpe": -0.11277543809694558,
+        "cagr": -0.034985765995791396,
+        "nav_end": 221205.08279992762,
+        "counts_as_alpha": false
+      },
+      {
+        "seed": 73,
+        "sharpe": -0.46910110559189666,
+        "cagr": -0.09991516941405898,
+        "nav_end": 121893.42396036976,
+        "counts_as_alpha": false
+      }
+    ],
+    "frozen_shuffle_sharpe_note": "旧打乱最终分数/仓位实验保留并改名，不再当作 C4 因子级证据"
+  },
+  "rows": [
+    {
+      "code": "R226_C4_TRUE",
+      "kind": "TRUE_C4",
+      "seed": null,
+      "sharpe": 1.885273629050742,
+      "cagr": 0.5557948579127749,
+      "nav_end": 13165091.68084055,
+      "nav_improvement": 0.03254897385715405
+    },
+    {
+      "code": "R16_O01",
+      "kind": "V5",
+      "seed": null,
+      "sharpe": 1.8756627913361097,
+      "cagr": 0.5499812832273525,
+      "nav_end": 12750089.355724689,
+      "nav_improvement": 0.0
+    },
+    {
+      "code": "R226_C4_PLACEBO_17",
+      "kind": "FEATURE_PLACEBO",
+      "seed": 17,
+      "sharpe": 1.880297386494778,
+      "cagr": 0.5469203130666829,
+      "nav_end": 12536259.959652722,
+      "nav_improvement": -0.016770815490477986
+    },
+    {
+      "code": "R226_C4_PLACEBO_42",
+      "kind": "FEATURE_PLACEBO",
+      "seed": 42,
+      "sharpe": 1.8242783488526084,
+      "cagr": 0.5238018735949406,
+      "nav_end": 11020922.861945888,
+      "nav_improvement": -0.13561995100861146
+    },
+    {
+      "code": "R226_C4_PLACEBO_73",
+      "kind": "FEATURE_PLACEBO",
+      "seed": 73,
+      "sharpe": 1.9005111514296793,
+      "cagr": 0.5595102365138027,
+      "nav_end": 13436520.134557717,
+      "nav_improvement": 0.05383733083602471
+    }
+  ]
+}

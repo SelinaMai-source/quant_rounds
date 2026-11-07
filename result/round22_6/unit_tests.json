@@ -1,0 +1,120 @@
+{
+  "passed": 19,
+  "failed": 0,
+  "total": 19,
+  "rows": [
+    {
+      "name": "false_string_not_true",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "require_bool_rejects_false_string",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nav_improvement_negative_on_decline",
+      "pass": true,
+      "detail": -0.9215691771170993
+    },
+    {
+      "name": "missing_fee_not_fee_ok_true",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "legacy_defaults_fee_true_diff_recorded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cache_valid_same_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cache_invalid_on_input_hash_change",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "conditional_ic_not_raw_rename",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "explicit_merge_preserves_rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "rank_tie_break_instrument_id",
+      "pass": true,
+      "detail": {
+        "n_rows": 3,
+        "n_dates": 1,
+        "n_valid_scores": 3,
+        "n_missing_scores": 0,
+        "duplicate_keys": 0,
+        "tie_break": "instrument_id ascending after score descending"
+      }
+    },
+    {
+      "name": "unfilled_not_profitability_zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right_censored_not_zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nav_tolerance_rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nav_reconcile_pass",
+      "pass": true,
+      "detail": {
+        "cash_plus_mv_equals_total": true,
+        "max_identity_gap": 0.0,
+        "tolerance": 0.01,
+        "tolerance_rule": "max(0.01 RMB, 1e-8 * NAV)",
+        "end_nav": 100.0,
+        "n_days": 2,
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "scopes_separated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "production_config_unchanged_flag",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "legacy_open_lane_named",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "e7_high_p_negative_mu_no_buy",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tail_seal_differs_from_longest_run",
+      "pass": true,
+      "detail": {
+        "tail": 2,
+        "longest": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "experiment_id": "demo",
+  "code_hash": "a",
+  "input_data_hash": "in1",
+  "label_definition_hash": "l",
+  "label_maturity_hash": "m",
+  "feature_order_hash": "f",
+  "train_test_fold_hash": "t",
+  "model_parameters_hash": "p",
+  "seed": 17,
+  "execution_contract_hash": "e",
+  "cost_contract_hash": "c",
+  "extras": {},
+  "fingerprint": "aa081c3772dc529285e758ed68f8b6adbcb98a828c58d4a75456522cbc8bc31e"
+}

@@ -1,0 +1,5 @@
+"""Round 16.5：期权尾部确认性验证。不搜阈值。CURRENT 不得自动升 v5。"""
+
+from .contract import KEEP_BASELINE_V4, PRE_REGISTERED_IDS, PRIOR_SELECTION_EXISTS
+
+__all__ = ["KEEP_BASELINE_V4", "PRE_REGISTERED_IDS", "PRIOR_SELECTION_EXISTS"]

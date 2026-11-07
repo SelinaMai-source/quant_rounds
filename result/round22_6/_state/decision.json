@@ -1,0 +1,17 @@
+{
+  "decision": "KEEP_BASELINE_V5",
+  "fs2_verdict": "FS2_DIRECT_ADD_NOT_SUPPORTED",
+  "challenger_verdict": "LOCAL_REORDER_EFFECT_ONLY",
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "production_config_changed": false,
+  "tests": {
+    "passed": 19,
+    "failed": 0,
+    "total": 19
+  },
+  "f1_delta_sharpe": -0.23911686697244594,
+  "f2_delta_sharpe": -0.6655601003729505,
+  "challenger_vs_baseline": false,
+  "challenger_vs_score_only": false
+}

@@ -1,0 +1,68 @@
+# Round21 六大家族公式（与 core/round21/hypotheses.py 同步）。不是因子值。
+round: 21
+a1_is_not_r18_f1: true
+r18_f1: log1p(V_seal / (A_below + 0.01*A_day))
+near_neighbors:
+  r21_a4_tail_seal_share: [fb_close_seal_streak_norm]
+  r21_b1_fb_amount_share: [r17_d_amt_xs_rank]
+  r21_c3_post_touch_path_eff: [h_min1_path_eff_full]
+  r21_a1_vw_limit_gap: [fb_post_limit_supply_absorption]
+families:
+  A:
+    - factor_id: r21_a1_vw_limit_gap
+      formula: sum((limit_px - close_m) * amount_m | bar_sec >= touch_sec, close_m < limit_px) / sum(amount_m | bar_sec >= touch_sec, close_m < limit_px, amount_m > 0)
+    - factor_id: r21_a2_minutes_to_reseal
+      formula: (min(bar_sec | bar_sec >= touch_sec, close_m >= limit_px, bar_sec > first_leave_sec) - touch_sec) / 60
+    - factor_id: r21_a3_retouch_count
+      formula: count(upcross) where high_m>=limit_px and close_m[t-1]<limit_px after touch
+    - factor_id: r21_a4_tail_seal_share
+      formula: mean(I(close_m >= limit_px) | bar_sec >= 14:30)
+  B:
+    - factor_id: r21_b1_fb_amount_share
+      formula: amount_i / sum(amount_j | j in same-day first-board candidate pool)
+    - factor_id: r21_b2_seal_rel_strength
+      formula: close_limit_value_i / median(close_limit_value_j | same-day first-board pool)
+    - factor_id: r21_b3_amt_surprise_vs_peer
+      formula: (amount_i/mean5_i) - median(amount_j/mean5_j | same-day first-board pool)
+    - factor_id: r21_b4_activity_x_resilience
+      formula: r21_b1_fb_amount_share * (1 / (1 + r21_a2_minutes_to_reseal))
+  C:
+    - factor_id: r21_c1_min1_amihud
+      formula: mean(|close/open-1| / amount | after touch, amount>0)
+    - factor_id: r21_c2_post_touch_amt_vs_impact
+      formula: sum(amount after touch) / max(max(high)-min(low), tick)
+    - factor_id: r21_c3_post_touch_path_eff
+      formula: abs(close_last - close_touch) / sum(|d_close|) after touch
+    - factor_id: r21_c4_downside_quad_var
+      formula: sum(min(d_close,0)^2) / sum(d_close^2) after touch
+  D:
+    - factor_id: r21_d1_log_holder_ratio
+      formula: log(HOLDER_NUM_t / HOLDER_NUM_{t-1}) using ANN_DT; next trading day
+    - factor_id: r21_d2_holder_daily_chg
+      formula: (HOLDER_NUM_t - HOLDER_NUM_{t-1}) / calendar_days(ANN_DT)
+    - factor_id: r21_d3_holder_per_circ
+      formula: HOLDER_NUM / circulating_shares
+    - factor_id: r21_d4_holder_x_float
+      formula: log1p(HOLDER_NUM) * log1p(free_float_shares)
+  E:
+    - factor_id: r21_e1_block_discount
+      formula: 1 - B_SHARE_PRICE / close_raw
+      blocked: BLOCKED_PIT
+    - factor_id: r21_e2_block_vol20_to_circ
+      formula: sum(B_SHARE_VOLUME, 20d) / circulating_shares
+      blocked: BLOCKED_PIT
+    - factor_id: r21_e3_discount_wtd_pressure
+      formula: sum((1-px/close)*amount, 20d) / circulating_market_cap
+      blocked: BLOCKED_PIT
+    - factor_id: r21_e4_block_event_intensity_60
+      formula: sum(B_FREQUENCY, 60d)
+      blocked: BLOCKED_PIT
+  F:
+    - factor_id: r21_f1_fin_bal_chg
+      formula: financing_balance / financing_balance.prev - 1  aligned on available_at
+    - factor_id: r21_f2_fin_repay_pressure
+      formula: financing_repayment_value / financing_balance.prev
+    - factor_id: r21_f3_fin_buy_intensity
+      formula: financing_buy_value / amount
+    - factor_id: r21_f4_fin_bal_accel
+      formula: r21_f1_fin_bal_chg - r21_f1_fin_bal_chg.prev

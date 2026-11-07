@@ -1,0 +1,121 @@
+{
+  "round": "22.6",
+  "frozen_before_new_nav": true,
+  "freeze_timestamp": "2026-11-07T16:44:57.632952+08:00",
+  "anchor": {
+    "code": "R16_O01",
+    "window": [
+      "2018-01-02",
+      "2026-07-24"
+    ],
+    "sharpe": 1.8756627913361097,
+    "cagr": 0.5499812832273525,
+    "max_drawdown": -0.24056327715394388,
+    "nav_end": 12750089.355724689,
+    "trades": 1107,
+    "capital": 300000,
+    "fee_schedule": "ROUND7_FLAT_5BP",
+    "information_lane": "LEGACY_OPEN_INFORMATION_LANE"
+  },
+  "hypotheses": [
+    {
+      "id": "H226_FS2_PARTIAL_INFO",
+      "claim": "FS2 相对 Five14/Ten13 的线性残差信息可识别（允许负向）",
+      "pass_if": "LINEAR_PARTIAL_INFORMATION_DIAGNOSTIC 对至少一头有可识别日相关，且不把 raw IC 误称为 conditional IC"
+    },
+    {
+      "id": "H226_FS2_DIRECT_ADD",
+      "claim": "Five+FS2 或 Ten+FS2 相对 v5 有增量并过经济门",
+      "pass_if": "F1 或 F2 增量门与 CORRECTED 经济门同时成立；否则 FS2_DIRECT_ADD_NOT_SUPPORTED"
+    },
+    {
+      "id": "H226_C4_FEATURE_PLACEBO",
+      "claim": "真实 C4 增量明显区别于仅打乱 C4 列的 feature placebo",
+      "pass_if": "真实 C4 与三组 placebo 对照完成；不得报告伪精确 p 值"
+    },
+    {
+      "id": "H226_CHALLENGER_FS2",
+      "claim": "在冻结 v5 上仅交换 rank2/3 时，CH2 相对 CH0 与 CH1 均改善",
+      "pass_if": "若成立则 LOCAL_FS2_INCREMENT_CANDIDATE；仅 CH1 改善则为 LOCAL_REORDER_EFFECT_ONLY"
+    }
+  ],
+  "hypotheses_locked": true,
+  "fs2_formula": "OperatingCashFlow/AverageAssets",
+  "fs2_is_not_cash_conversion_change": true,
+  "c4_formula_unchanged": "mean(sign(NET_FLOW).shift(1).rolling(5, min_periods=3))",
+  "c1_archived_no_extension": true,
+  "permutation_seeds": [
+    17,
+    42,
+    73
+  ],
+  "challenger_buffer": 0.002,
+  "challenger_min_train_pair_days": 250,
+  "ridge_alpha": 10.0,
+  "information_lane": "LEGACY_OPEN_INFORMATION_LANE",
+  "no_new_factors": true,
+  "no_xgb_retune": true,
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "source_hashes": {
+    "round22_3/contract.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/round22_3/contract.py",
+      "sha256": "d339e1b478758f60e9604c7780d8acf55952a6ba67c84d1dd2746579d8d913be",
+      "bytes": 20435
+    },
+    "r225241_models.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/r225241_models.py",
+      "sha256": "66f4fdf0187762e8e3e73189fc27daa2d6b7c7b7427ded7baeb3a5e1addc5037",
+      "bytes": 12854
+    },
+    "r225241_sleeve.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/r225241_sleeve.py",
+      "sha256": "ca1f7d418370321c0f2e3a9a8498e504ff9384645a3472adfa55c94043bfb348",
+      "bytes": 5816
+    },
+    "r225241_stats.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/r225241_stats.py",
+      "sha256": "7818d98911a866b4d11f9336019fb4e2f016bf8977a3dde8b6afd06a2cc56ce8",
+      "bytes": 9395
+    },
+    "r225241_io.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/r225241_io.py",
+      "sha256": "007986093c5b06ce26432722cd1f6fab91b418e8152322239f9a87b99c544b5e",
+      "bytes": 4031
+    },
+    "local_executor.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+      "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed",
+      "bytes": 45705
+    },
+    "round22_5/pipeline.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/round22_5/pipeline.py",
+      "sha256": "59ffdaaa26f080773f6f65dc7c603b5fc3a80135881ec87a0a14faf442b93f1c",
+      "bytes": 50091
+    },
+    "round23_1/pipeline.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/round23_1/pipeline.py",
+      "sha256": "b8b79f30cd94ba99fe9adb05ac0cd1ba2d96d7d025b3db5201929f3014715b9a",
+      "bytes": 28155
+    },
+    "round24_1/pipeline.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/round24_1/pipeline.py",
+      "sha256": "97e4dbc94436b25f20fa7e351051f568c0dc3ba50460f8873dc85a42bf8b1d89",
+      "bytes": 21136
+    },
+    "round24_1/features.py": {
+      "path": "/data1/stock-mxy/课题/一进二策略/core/round24_1/features.py",
+      "sha256": "13c1dd9635b829e1e9ab779970d02db67e3e61e5046827c60ab69b7504719827",
+      "bytes": 18558
+    }
+  },
+  "fee_components": {
+    "schedule_name": "ROUND7_FLAT_5BP",
+    "slippage_bps": 12.3,
+    "commission_bps": 1.0,
+    "transfer_fee_bps": 0.1,
+    "sell_tax_bps": 5.0,
+    "note": "契约名含5BP，真实分项如上；买卖合计远不止5bp",
+    "source": "core.local_executor.round7_fixed_sleeve_config"
+  }
+}

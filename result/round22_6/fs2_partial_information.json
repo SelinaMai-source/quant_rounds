@@ -1,0 +1,209 @@
+{
+  "pit": {
+    "formula": "OperatingCashFlow/AverageAssets",
+    "panel_path": "/data1/stock-mxy/课题/一进二策略/result/round22_3/data_recovery/fs2_panel.parquet",
+    "panel_sha256": "bfe3baf8751fd4af73faa2289d9eb087efa25ea32e4c6fc9a779b40ae2706cbe",
+    "columns": [
+      "trade_date",
+      "instrument_id",
+      "r22_3_fs2_ocf_over_assets",
+      "known_at",
+      "published_at",
+      "fiscal_period_end",
+      "ni",
+      "ocf",
+      "avg_assets"
+    ],
+    "has_report_id": false,
+    "has_period": false,
+    "has_statement_basis": false,
+    "has_revision": false,
+    "has_unit": false,
+    "has_average_assets": false,
+    "has_operating_cash_flow": false,
+    "future_known_at_rows_before_filter": 0,
+    "asof": "known_at<=trade_date then latest known_at",
+    "filled_with_zero": false,
+    "pit_pass": true,
+    "n_rows": 63653
+  },
+  "diagnostic_name": "LINEAR_PARTIAL_INFORMATION_DIAGNOSTIC",
+  "renamed_from_misuse": "daily_spearman_formerly_called_conditional_ic",
+  "summaries": {
+    "five": {
+      "years": [
+        {
+          "head": "five",
+          "predict_year": 2018,
+          "status": "OK",
+          "n_days_ok": 220,
+          "mean_spearman_uv": 0.0304898856030097,
+          "mean_pearson_uv": 0.026206177260724616,
+          "mean_raw_rank_ic": 0.05597204394352694
+        },
+        {
+          "head": "five",
+          "predict_year": 2019,
+          "status": "OK",
+          "n_days_ok": 232,
+          "mean_spearman_uv": 0.013011998378721468,
+          "mean_pearson_uv": -0.010605311865055662,
+          "mean_raw_rank_ic": 0.025708945818558097
+        },
+        {
+          "head": "five",
+          "predict_year": 2020,
+          "status": "OK",
+          "n_days_ok": 240,
+          "mean_spearman_uv": 0.04479844427388462,
+          "mean_pearson_uv": 0.03834540889673746,
+          "mean_raw_rank_ic": 0.0554185768671504
+        },
+        {
+          "head": "five",
+          "predict_year": 2021,
+          "status": "OK",
+          "n_days_ok": 242,
+          "mean_spearman_uv": 0.021193619367517205,
+          "mean_pearson_uv": 0.012639342970486541,
+          "mean_raw_rank_ic": 0.03685260556923391
+        },
+        {
+          "head": "five",
+          "predict_year": 2022,
+          "status": "OK",
+          "n_days_ok": 237,
+          "mean_spearman_uv": 0.006147516131574714,
+          "mean_pearson_uv": -0.002032157422724509,
+          "mean_raw_rank_ic": 0.013390988824169829
+        },
+        {
+          "head": "five",
+          "predict_year": 2023,
+          "status": "OK",
+          "n_days_ok": 242,
+          "mean_spearman_uv": -0.01788985674830239,
+          "mean_pearson_uv": -0.01672640732123425,
+          "mean_raw_rank_ic": -0.010098238707079933
+        },
+        {
+          "head": "five",
+          "predict_year": 2024,
+          "status": "OK",
+          "n_days_ok": 239,
+          "mean_spearman_uv": 0.0004714875634937074,
+          "mean_pearson_uv": -0.012203143956562544,
+          "mean_raw_rank_ic": 0.008668465976344653
+        },
+        {
+          "head": "five",
+          "predict_year": 2025,
+          "status": "OK",
+          "n_days_ok": 242,
+          "mean_spearman_uv": 0.014050539698681964,
+          "mean_pearson_uv": 0.011568818686136895,
+          "mean_raw_rank_ic": 0.016853280881188072
+        },
+        {
+          "head": "five",
+          "predict_year": 2026,
+          "status": "OK",
+          "n_days_ok": 116,
+          "mean_spearman_uv": 0.0659294364459169,
+          "mean_pearson_uv": 0.04519044689634444,
+          "mean_raw_rank_ic": 0.04757871704949501
+        }
+      ],
+      "raw_rank_ic_full": 0.024460536527712975,
+      "note": "raw_rank_ic 不是 conditional_ic；条件诊断名为 LINEAR_PARTIAL_INFORMATION_DIAGNOSTIC"
+    },
+    "ten": {
+      "years": [
+        {
+          "head": "ten",
+          "predict_year": 2018,
+          "status": "OK",
+          "n_days_ok": 222,
+          "mean_spearman_uv": 0.049406128936635964,
+          "mean_pearson_uv": 0.04102836414050936,
+          "mean_raw_rank_ic": 0.06657455877814956
+        },
+        {
+          "head": "ten",
+          "predict_year": 2019,
+          "status": "OK",
+          "n_days_ok": 234,
+          "mean_spearman_uv": 0.013796286936343728,
+          "mean_pearson_uv": 0.0005967436005172743,
+          "mean_raw_rank_ic": 0.03161902219006699
+        },
+        {
+          "head": "ten",
+          "predict_year": 2020,
+          "status": "OK",
+          "n_days_ok": 242,
+          "mean_spearman_uv": 0.03833020263917613,
+          "mean_pearson_uv": 0.03345923878314789,
+          "mean_raw_rank_ic": 0.0539698254536157
+        },
+        {
+          "head": "ten",
+          "predict_year": 2021,
+          "status": "OK",
+          "n_days_ok": 242,
+          "mean_spearman_uv": 0.020716304244435078,
+          "mean_pearson_uv": 0.017508019293020646,
+          "mean_raw_rank_ic": 0.034121812268490176
+        },
+        {
+          "head": "ten",
+          "predict_year": 2022,
+          "status": "OK",
+          "n_days_ok": 239,
+          "mean_spearman_uv": 0.011079457871608946,
+          "mean_pearson_uv": -0.0049429870649936635,
+          "mean_raw_rank_ic": 0.02096081960746024
+        },
+        {
+          "head": "ten",
+          "predict_year": 2023,
+          "status": "OK",
+          "n_days_ok": 242,
+          "mean_spearman_uv": -0.020246662085861747,
+          "mean_pearson_uv": -0.018354986371330984,
+          "mean_raw_rank_ic": -0.014827818119973283
+        },
+        {
+          "head": "ten",
+          "predict_year": 2024,
+          "status": "OK",
+          "n_days_ok": 240,
+          "mean_spearman_uv": 0.0038468289122488516,
+          "mean_pearson_uv": -0.001480318069921042,
+          "mean_raw_rank_ic": 0.012644626943537497
+        },
+        {
+          "head": "ten",
+          "predict_year": 2025,
+          "status": "OK",
+          "n_days_ok": 243,
+          "mean_spearman_uv": 0.013862235655402483,
+          "mean_pearson_uv": 0.008059376788760632,
+          "mean_raw_rank_ic": 0.016015416612381553
+        },
+        {
+          "head": "ten",
+          "predict_year": 2026,
+          "status": "OK",
+          "n_days_ok": 116,
+          "mean_spearman_uv": 0.06478458232320393,
+          "mean_pearson_uv": 0.04254825343408611,
+          "mean_raw_rank_ic": 0.05088689130746315
+        }
+      ],
+      "raw_rank_ic_full": 0.02626711215897661,
+      "note": "raw_rank_ic 不是 conditional_ic；条件诊断名为 LINEAR_PARTIAL_INFORMATION_DIAGNOSTIC"
+    }
+  },
+  "status": "DONE"
+}
