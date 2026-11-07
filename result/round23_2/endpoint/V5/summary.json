@@ -1,0 +1,115 @@
+{
+  "cagr": 0.5499812832273525,
+  "sharpe": 1.8756627913361097,
+  "max_drawdown": -0.240563277153944,
+  "nav_end": 12750089.355724689,
+  "nav_start": 300000.0,
+  "total_return": 41.50029785241563,
+  "n_obs": 2075,
+  "window_start": "2018-01-02",
+  "window_end": "2026-07-24",
+  "code": "R232_EP_V5",
+  "completed_trades": 1107,
+  "status": "ran",
+  "fee_schedule": "ROUND7_FLAT_5BP",
+  "compare_to": "R16_O01",
+  "restarted_capital": false,
+  "scenario": false,
+  "counts_as_alpha": false,
+  "round": "23.2",
+  "scope": "FULL_HISTORY_FIRST_TO_SECOND",
+  "initial_cash": 300000.0,
+  "economically_material": false,
+  "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+  "delta_cagr_vs_v5_not_used": 0.0,
+  "v5_nav_reference_not_a_benchmark": 12750089.355724689,
+  "economic_gate": {
+    "LEGACY": {
+      "delta_cagr": 0.0,
+      "delta_sharpe": 0.0,
+      "nav_rel": 0.0,
+      "delta_maxdd": -1.1102230246251565e-16,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_rel_ok": false,
+        "top_changed_ok": false,
+        "maxdd_ok": true,
+        "fee_direction_ok": true,
+        "not_only_2024_or_2025": true
+      },
+      "economically_material": false,
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "R16_O01",
+      "implementation": "LEGACY"
+    },
+    "CORRECTED": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "R16_O01",
+      "delta_cagr": 0.0,
+      "delta_sharpe": 0.0,
+      "delta_maxdd": -1.1102230246251565e-16,
+      "nav_improvement": 0.0,
+      "delta_terminal_nav_rmb": 0.0,
+      "relative_terminal_nav_change": 0.0,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": false,
+        "maxdd_ok": true,
+        "fee_direction_ok": true,
+        "not_only_2024_or_2025": true
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "FAIL",
+        "maxdd": "PASS",
+        "fee_direction": "PASS",
+        "not_only_year": "PASS"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": false,
+      "evidence": {
+        "top_changed": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        },
+        "fee_same_direction": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "not_only_year": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        }
+      }
+    },
+    "diffs": [],
+    "promotion_decision_source": "CORRECTED",
+    "economically_material": false
+  },
+  "nav_improvement": 0.0,
+  "nav_improvement_ok": false,
+  "delta_terminal_nav_rmb": 0.0,
+  "relative_terminal_nav_change": 0.0,
+  "promotion_decision_source": "CORRECTED",
+  "nav_reconcile": {
+    "cash_plus_mv_equals_total": true,
+    "max_identity_gap": 0.0,
+    "tolerance": 0.1275008935572469,
+    "tolerance_rule": "max(0.01 RMB, 1e-8 * NAV)",
+    "end_nav": 12750089.355724689,
+    "n_days": 2076,
+    "status": "PASS"
+  },
+  "lineage_rows": 25874,
+  "lineage_path": "/data1/stock-mxy/课题/一进二策略/result/round23_2/endpoint/V5/lineage_signal_to_exit.parquet"
+}

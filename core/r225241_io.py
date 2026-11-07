@@ -14,7 +14,16 @@ import pandas as pd
 from .paths import PROJECT_ROOT, RESULT_ROOT, assert_project_result_path
 
 TRACKER_PATH = RESULT_ROOT / "一进二_Round7基线_实验组追踪.md"
-_ALLOWED = ("round22_5", "round23_1", "round24_1", "round22_5_24_1_master")
+_ALLOWED = (
+    "round22_5",
+    "round23_1",
+    "round24_1",
+    "round22_5_24_1_master",
+    "round22_6",
+    "round23_2",
+    "round24_2",
+    "round22_6_24_2_master",
+)
 
 
 def assert_new_result(path: Path) -> Path:

@@ -1,0 +1,60 @@
+{
+  "round": "23.2",
+  "frozen_before_new_nav": true,
+  "freeze_timestamp": "2026-11-07T17:13:41.613895+08:00",
+  "anchor": {
+    "code": "R16_O01",
+    "window": [
+      "2018-01-02",
+      "2026-07-24"
+    ],
+    "sharpe": 1.8756627913361097,
+    "cagr": 0.5499812832273525,
+    "max_drawdown": -0.24056327715394388,
+    "nav_end": 12750089.355724689,
+    "trades": 1107,
+    "capital": 300000,
+    "fee_schedule": "ROUND7_FLAT_5BP",
+    "information_lane": "LEGACY_OPEN_INFORMATION_LANE"
+  },
+  "lgbm_weights": [
+    0.0,
+    0.1,
+    0.25
+  ],
+  "ten_weights": [
+    0.75,
+    0.9,
+    1.0
+  ],
+  "default_w_lgbm": 0.0,
+  "default_w_ten": 0.9,
+  "no_joint_m2_m3": true,
+  "diversity_is_diagnostic_only": true,
+  "gap7_renamed": "GAP7_ALLOCATION_HALF_DIAGNOSTIC",
+  "information_lane": "LEGACY_OPEN_INFORMATION_LANE",
+  "hypotheses": [
+    {
+      "id": "H232_ENDPOINT_IDENTITY",
+      "claim": "w_ten=0.90 且 w_lgbm=0 与冻结 v5 预测/排序/订单/NAV 一致",
+      "pass_if": "endpoint_parity PASS"
+    },
+    {
+      "id": "H232_LGBM_TOPK",
+      "claim": "truncation_level Five=4/Ten=5 相对旧 LGBM 有条件增量",
+      "pass_if": "正式融合证据来自内层重放，而非多样性"
+    },
+    {
+      "id": "H232_M2_ZERO_OK",
+      "claim": "若无增量则各年可选 w_lgbm=0",
+      "pass_if": "允许全年份默认 0"
+    },
+    {
+      "id": "H232_RISK_VS_ALPHA",
+      "claim": "R1 GAP7 半仓相对 R2 matched-exposure 有否增量",
+      "pass_if": "分账报告，不自动替换 alpha baseline"
+    }
+  ],
+  "current_baseline_changed": false,
+  "auto_promote": false
+}

@@ -1,0 +1,119 @@
+{
+  "decision": "KEEP_BASELINE_V5",
+  "endpoint_parity": "PASS",
+  "zero_weight_identity": true,
+  "ensemble_selected_weights": [
+    {
+      "year": 2018,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2019,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2020,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2021,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2022,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2023,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2024,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2025,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2026,
+      "family": "M2",
+      "chosen": "w_0.00",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2018,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2019,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2020,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2021,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2022,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2023,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2024,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2025,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    },
+    {
+      "year": 2026,
+      "family": "M3",
+      "chosen": "t_0.90",
+      "reason": "INNER_REPLAY"
+    }
+  ],
+  "risk_configuration_verdict": "DIAGNOSTIC_ONLY_NOT_ALPHA_REPLACEMENT",
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "production_config_changed": false
+}

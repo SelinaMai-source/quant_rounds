@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "ten_weight_0.90_score_keys",
+      "pass": true
+    },
+    {
+      "check": "ten_weight_0.90_score_max_diff",
+      "pass": true,
+      "value": 0.0
+    },
+    {
+      "check": "ten_weight_0.90_nav",
+      "pass": true,
+      "v5_nav": 12750089.355724689,
+      "cand_nav": 12750089.355724689
+    },
+    {
+      "check": "w_lgbm_0_returns_frozen_path",
+      "pass": true
+    },
+    {
+      "check": "w_lgbm_0_nav",
+      "pass": true,
+      "v5_nav": 12750089.355724689,
+      "cand_nav": 12750089.355724689
+    }
+  ],
+  "fallback_schema": [
+    "signal_date",
+    "reason",
+    "n"
+  ]
+}

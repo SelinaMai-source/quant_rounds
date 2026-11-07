@@ -1,0 +1,10 @@
+[round23_2] stage=freeze
+[round23_2] stage=endpoint
+[round23_2] stage=lgbm
+[round23_2] stage=models
+[round23_2] stage=risk
+[round23_2] stage=execution
+[round23_2] stage=stats
+[round23_2] stage=decision
+[round23_2] stage=report
+{'freeze': 'OK', 'endpoint': 'PASS', 'lgbm': 'DONE', 'models': 'DONE', 'risk': 'DONE', 'execution': 'DONE', 'stats': 'OK', 'decision': 'KEEP_BASELINE_V5', 'report': 'DONE'}
