@@ -1,0 +1,85 @@
+{
+  "status": "DONE",
+  "rows": [
+    {
+      "code": "CASH",
+      "sharpe": null,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "nav_end": 300000.0,
+      "trades": null,
+      "positive_realizable": false,
+      "less_loss_than_cash": false
+    },
+    {
+      "code": "T0C",
+      "sharpe": 0.4093330357420038,
+      "cagr": 0.06949844594332566,
+      "max_drawdown": -0.5465381407686972,
+      "nav_end": 533065.2520414717,
+      "trades": 1158,
+      "positive_realizable": true,
+      "less_loss_than_cash": true
+    },
+    {
+      "code": "K3",
+      "sharpe": 0.4280845510657615,
+      "cagr": 0.07898813059058729,
+      "max_drawdown": -0.45453235371995027,
+      "nav_end": 574916.4279223632,
+      "trades": 1070,
+      "positive_realizable": true,
+      "less_loss_than_cash": true
+    },
+    {
+      "code": "K7",
+      "sharpe": 0.676181155895512,
+      "cagr": 0.1516829726173441,
+      "max_drawdown": -0.4476801120868745,
+      "nav_end": 1004321.3022256331,
+      "trades": 1093,
+      "positive_realizable": true,
+      "less_loss_than_cash": true
+    },
+    {
+      "code": "R3",
+      "sharpe": 0.28487907663362466,
+      "cagr": 0.03993735307731683,
+      "max_drawdown": -0.5329169828130291,
+      "nav_end": 419402.47487125767,
+      "trades": 1037,
+      "positive_realizable": true,
+      "less_loss_than_cash": true
+    },
+    {
+      "code": "R7",
+      "sharpe": 0.6808558910513699,
+      "cagr": 0.13954403773816115,
+      "max_drawdown": -0.3853849101854696,
+      "nav_end": 917276.7562527386,
+      "trades": 1044,
+      "positive_realizable": true,
+      "less_loss_than_cash": true
+    },
+    {
+      "code": "R7_POS",
+      "sharpe": 0.5365578564178448,
+      "cagr": 0.09323323688265539,
+      "max_drawdown": -0.39955044946435037,
+      "nav_end": 643190.8057335981,
+      "trades": 783,
+      "positive_realizable": true,
+      "less_loss_than_cash": true
+    },
+    {
+      "code": "E7",
+      "sharpe": 0.7299425188673835,
+      "cagr": 0.13506415421844986,
+      "max_drawdown": -0.34978593814606296,
+      "nav_end": 886878.1823302837,
+      "trades": 868,
+      "positive_realizable": true,
+      "less_loss_than_cash": true
+    }
+  ]
+}

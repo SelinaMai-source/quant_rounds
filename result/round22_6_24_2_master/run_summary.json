@@ -1,0 +1,25 @@
+{
+  "integrity_v2_sha256": "eb4ec8b6c170728fc8ea798093ba38e172c672326d23412252dab3215fd6b4ce",
+  "round22_6_sha": "89311afafab3c257c1daf41eaedac2d14bfdf958",
+  "round23_2_sha": "37b65c56a2ca31dacc640cef7cbbe1b420ad2613",
+  "round24_2_sha": "PENDING_PUBLISH",
+  "decisions": {
+    "22.6": "KEEP_BASELINE_V5",
+    "23.2": "KEEP_BASELINE_V5",
+    "24.2": "SECOND_TO_THIRD_RESEARCH_CANDIDATE"
+  },
+  "tests": {
+    "passed": 19,
+    "failed": 0,
+    "total": 19
+  },
+  "spa": {
+    "22.6": "BLOCKED_STAT_TEST",
+    "23.2": "BLOCKED_STAT_TEST"
+  },
+  "n_formal_outer_non_scenario": 28,
+  "current_baseline_changed": false,
+  "production_config_changed": false,
+  "auto_promote": false,
+  "live_ready": false
+}

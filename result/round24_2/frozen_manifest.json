@@ -1,0 +1,46 @@
+{
+  "round": "24.2",
+  "freeze_timestamp": "2026-11-07T18:11:34.352014+08:00",
+  "independent_of_first_to_second": true,
+  "do_not_overwrite_1to2_current": true,
+  "do_not_overwrite_2to3_old_baseline": true,
+  "core3": [
+    "amount_log",
+    "return_5",
+    "amount_vs_5"
+  ],
+  "target7": [
+    "second_board_amount_log",
+    "second_board_turnover_surprise",
+    "second_board_return_5",
+    "first_to_second_amount_ratio",
+    "second_board_market_breadth",
+    "second_board_first_touch_time",
+    "second_board_tail_seal_fraction"
+  ],
+  "industry_not_in_round": true,
+  "hypotheses": [
+    {
+      "id": "H242_WARMUP",
+      "claim": "2018 折可用 2015–2017 成熟样本，无 EMPTY 后与旧基线假比较",
+      "pass_if": "training_history_repair 显示有效训练"
+    },
+    {
+      "id": "H242_LABEL",
+      "claim": "label_available_at 来自真实退出，RIGHT_CENSORED 不作 0",
+      "pass_if": "label_execution_parity PASS"
+    },
+    {
+      "id": "H242_MINUTE",
+      "claim": "缺行业不删分钟列；TARGET7 含 F5/F6",
+      "pass_if": "minute features 保留"
+    },
+    {
+      "id": "H242_MATRIX",
+      "claim": "相对 CASH/T0C/K3 区分少亏与正可实现收益",
+      "pass_if": "主表完整"
+    }
+  ],
+  "current_baseline_changed": false,
+  "auto_promote": false
+}

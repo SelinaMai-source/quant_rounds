@@ -1,0 +1,223 @@
+{
+  "freeze_timestamp": "2026-11-07T16:34:26.539016+08:00",
+  "timezone": "Asia/Shanghai",
+  "project_realpath": "/data1/stock-mxy/课题/一进二策略",
+  "project_inode": 75047504,
+  "bad_path_exists": true,
+  "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+  "cpu_count": 40,
+  "memory": {
+    "MemTotal": "131677048 kB",
+    "MemAvailable": "120931180 kB"
+  },
+  "disk_free_gb": 6515.54,
+  "disk_total_gb": 7619.77,
+  "git_status": {
+    "cmd": "git status --porcelain",
+    "rc": 128,
+    "stdout": "",
+    "stderr": "fatal: not a git repository (or any parent up to mount point /)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set)."
+  },
+  "git_remote_redacted": {
+    "cmd": "git remote -v",
+    "rc": 128,
+    "stdout": "",
+    "stderr": "fatal: not a git repository (or any parent up to mount point /)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set)."
+  },
+  "git_head": {
+    "cmd": "git rev-parse HEAD",
+    "rc": 128,
+    "stdout": "",
+    "stderr": "fatal: not a git repository (or any parent up to mount point /)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set)."
+  },
+  "audit_source_shas": {
+    "round22_5": "767119e0a158573054eb7035730f0301cdde8cec",
+    "round23_1": "e8ad1ce710a0976141f7fcb4f284a71ccd2f56c4",
+    "round24_1": "cc3c602298a2b6085090dca1f2e0fee1ab2e364d"
+  },
+  "remote_source_check": {
+    "publish_path": "/tmp/quant_rounds_push.5U1etr",
+    "round22_5": {
+      "cmd": "git ls-remote origin refs/heads/round22_5",
+      "rc": 128,
+      "stdout": "",
+      "stderr": "fatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists."
+    },
+    "round23_1": {
+      "cmd": "git ls-remote origin refs/heads/round23_1",
+      "rc": 128,
+      "stdout": "",
+      "stderr": "fatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists."
+    },
+    "round24_1": {
+      "cmd": "git ls-remote origin refs/heads/round24_1",
+      "rc": 128,
+      "stdout": "",
+      "stderr": "fatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists."
+    }
+  },
+  "source_code_hashes": {
+    "core/round7/contract.py": {
+      "exists": true,
+      "sha256": "1301375a49380fca14aa3fae66d940c482bbc060128f83b58979bddf21340f89",
+      "bytes": 2588
+    },
+    "core/local_executor.py": {
+      "exists": true,
+      "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed",
+      "bytes": 45705
+    },
+    "core/round21/contract.py": {
+      "exists": true,
+      "sha256": "b1a06c9925b01642bdd9d0fa63c7a2ef2dff692108b847f1b0fd354066fb851b",
+      "bytes": 13831
+    },
+    "core/round21_3/contract.py": {
+      "exists": true,
+      "sha256": "b9b630927c2f551802d2b2265ce9281c729c6ece5322f538e1fc90a3639d42e0",
+      "bytes": 13819
+    },
+    "core/round21_4/contract.py": {
+      "exists": true,
+      "sha256": "35bff8add6b4dfb79bae14e852cfcdae3904ff611a9ed4a621ddf64263aac5ad",
+      "bytes": 22774
+    },
+    "core/r225241_io.py": {
+      "exists": true,
+      "sha256": "007986093c5b06ce26432722cd1f6fab91b418e8152322239f9a87b99c544b5e",
+      "bytes": 4031
+    },
+    "core/r225241_models.py": {
+      "exists": true,
+      "sha256": "66f4fdf0187762e8e3e73189fc27daa2d6b7c7b7427ded7baeb3a5e1addc5037",
+      "bytes": 12854
+    },
+    "core/r225241_sleeve.py": {
+      "exists": true,
+      "sha256": "ca1f7d418370321c0f2e3a9a8498e504ff9384645a3472adfa55c94043bfb348",
+      "bytes": 5816
+    },
+    "core/r225241_stats.py": {
+      "exists": true,
+      "sha256": "7818d98911a866b4d11f9336019fb4e2f016bf8977a3dde8b6afd06a2cc56ce8",
+      "bytes": 9395
+    },
+    "core/round22_5/pipeline.py": {
+      "exists": true,
+      "sha256": "59ffdaaa26f080773f6f65dc7c603b5fc3a80135881ec87a0a14faf442b93f1c",
+      "bytes": 50091
+    },
+    "core/round22_5/contract.py": {
+      "exists": true,
+      "sha256": "90eadff2b52151efa753b6a165856f0989156bf10b00de9665507f92276901da",
+      "bytes": 3332
+    },
+    "core/round23_1/pipeline.py": {
+      "exists": true,
+      "sha256": "b8b79f30cd94ba99fe9adb05ac0cd1ba2d96d7d025b3db5201929f3014715b9a",
+      "bytes": 28155
+    },
+    "core/round23_1/contract.py": {
+      "exists": true,
+      "sha256": "c7b6b360826af4a3b0acff7b3e6225d8be2b244f288569bc037e8719d6273b6b",
+      "bytes": 1378
+    },
+    "core/round24_1/pipeline.py": {
+      "exists": true,
+      "sha256": "97e4dbc94436b25f20fa7e351051f568c0dc3ba50460f8873dc85a42bf8b1d89",
+      "bytes": 21136
+    },
+    "core/round24_1/features.py": {
+      "exists": true,
+      "sha256": "13c1dd9635b829e1e9ab779970d02db67e3e61e5046827c60ab69b7504719827",
+      "bytes": 18558
+    },
+    "core/round24_1/contract.py": {
+      "exists": true,
+      "sha256": "8b3ccb94fc1c04622156cd516205d0a3faee98dd9c9870a0b5a3cc2452cbaf65",
+      "bytes": 1689
+    },
+    "core/round22_3/contract.py": {
+      "exists": true,
+      "sha256": "d339e1b478758f60e9604c7780d8acf55952a6ba67c84d1dd2746579d8d913be",
+      "bytes": 20435
+    },
+    "core/fold_ranker.py": {
+      "exists": true,
+      "sha256": "0a21879ac5c410c4733f8e65cf35f9a4d365a0da0b90e70d8848ac790d9177f0",
+      "bytes": 10307
+    },
+    "core/research_sleeve.py": {
+      "exists": true,
+      "sha256": "87634c442c96f69cedc06f5f6af9f386d64f9be4bf6d19cf431ee1335cfe2c1b",
+      "bytes": 10242
+    },
+    "core/limit_rules.py": {
+      "exists": true,
+      "sha256": "3c012783e794da00014ba5213c0dec59bdc75f51ebfb1154619a0769bd02b178",
+      "bytes": 4389
+    },
+    "result/round22_3/candidates/R223_E0/summary.json": {
+      "exists": true,
+      "sha256": "c6205090d90704cbabc6a0f8d50aa7fe7fe9ffb608b2c4490775862e90a414c4",
+      "bytes": 857
+    },
+    "result/round22_5/decision.json": {
+      "exists": true,
+      "sha256": "2b18eee3f25d51ce01e48df98fc530507e411b9f9a1e8982755a442891fa28da",
+      "bytes": 1856
+    },
+    "result/round23_1/decision.json": {
+      "exists": true,
+      "sha256": "726d2a12fe06ba7e50afbc7a04817c2aebecd41e56a14ef935e9dee7da0e18fc",
+      "bytes": 461
+    },
+    "result/round24_1/decision.json": {
+      "exists": true,
+      "sha256": "626e8cfcfc4c6924e3334ca32034e0dc6af6a159302c1502a3ca7691c95cfbe9",
+      "bytes": 1297
+    }
+  },
+  "input_artifact_hashes": {
+    "result/round22_3/data/five_candidate.parquet": {
+      "exists": true,
+      "sha256": "b4905e71e05008b6cb905eec5fc956fbd92ed63e6b45250469966bf37c3ced81",
+      "bytes": 79043297
+    },
+    "result/round22_3/data/five_training.parquet": {
+      "exists": true,
+      "sha256": "0521841634126267855a4318625b73aaf950e52cdb597359a5b4a37e969965b4",
+      "bytes": 78938484
+    },
+    "result/round22_3/data/ten_candidate.parquet": {
+      "exists": true,
+      "sha256": "3a520545d006229e1a2a1c32948ac6286da5ca1836bd0f5309f3f81de37187d7",
+      "bytes": 79162934
+    },
+    "result/round22_3/data/ten_training.parquet": {
+      "exists": true,
+      "sha256": "5c374d0ff51b94edc9e6f20cb6e20a6c5e6d435565cbf2b65211960fa4085da8",
+      "bytes": 75152316
+    },
+    "result/round22_3/data_recovery/fs2_panel.parquet": {
+      "exists": true,
+      "sha256": "bfe3baf8751fd4af73faa2289d9eb087efa25ea32e4c6fc9a779b40ae2706cbe",
+      "bytes": 2453381
+    },
+    "result/round22_3/candidates/R223_E0/summary.json": {
+      "exists": true,
+      "sha256": "c6205090d90704cbabc6a0f8d50aa7fe7fe9ffb608b2c4490775862e90a414c4",
+      "bytes": 857
+    }
+  },
+  "dependency_versions": {
+    "numpy": "2.2.3",
+    "pandas": "2.3.3",
+    "sklearn": "1.9.0",
+    "xgboost": "3.3.0",
+    "lightgbm": "4.6.0",
+    "arch": "MISSING:No module named 'arch'",
+    "pyarrow": "24.0.0"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "status": "trained_oos",
+  "seed": 17,
+  "features": [
+    "second_board_amount_log",
+    "second_board_turnover_surprise",
+    "second_board_return_5",
+    "first_to_second_amount_ratio",
+    "second_board_market_breadth",
+    "second_board_first_touch_time",
+    "second_board_tail_seal_fraction"
+  ],
+  "extras": [],
+  "target": "label_exit_rule_net",
+  "n_bins": 5,
+  "eval_metric": "ndcg@2",
+  "subsample": 1.0,
+  "colsample_bytree": 1.0,
+  "rows": 16212,
+  "folds": [
+    {
+      "predict_year": 2018,
+      "train_rows": 4691,
+      "test_rows": 1312
+    },
+    {
+      "predict_year": 2019,
+      "train_rows": 1994,
+      "test_rows": 1901
+    },
+    {
+      "predict_year": 2020,
+      "train_rows": 2882,
+      "test_rows": 2094
+    },
+    {
+      "predict_year": 2021,
+      "train_rows": 4186,
+      "test_rows": 1847
+    },
+    {
+      "predict_year": 2022,
+      "train_rows": 4692,
+      "test_rows": 2060
+    },
+    {
+      "predict_year": 2023,
+      "train_rows": 4914,
+      "test_rows": 1056
+    },
+    {
+      "predict_year": 2024,
+      "train_rows": 4058,
+      "test_rows": 2656
+    },
+    {
+      "predict_year": 2025,
+      "train_rows": 4574,
+      "test_rows": 2103
+    },
+    {
+      "predict_year": 2026,
+      "train_rows": 4491,
+      "test_rows": 1183
+    }
+  ],
+  "train_clean_audit": {
+    "rows_before": 24362,
+    "rows_dropped_in_memory": 6445,
+    "rows_after": 17917,
+    "require_target": true,
+    "base_required": [
+      "second_board_amount_log",
+      "second_board_turnover_surprise",
+      "second_board_return_5",
+      "first_to_second_amount_ratio",
+      "second_board_market_breadth",
+      "second_board_first_touch_time",
+      "second_board_tail_seal_fraction"
+    ],
+    "extras_allowed_nan": [],
+    "feature_missing_rows": {
+      "second_board_amount_log": 0,
+      "second_board_turnover_surprise": 1644,
+      "second_board_return_5": 1422,
+      "first_to_second_amount_ratio": 15,
+      "second_board_market_breadth": 0,
+      "second_board_first_touch_time": 21,
+      "second_board_tail_seal_fraction": 21
+    },
+    "filled_with_zero": false,
+    "dropped_names_for_extra_nan": false
+  },
+  "candidate_clean_audit": {
+    "rows_before": 24362,
+    "rows_dropped_in_memory": 1678,
+    "rows_after": 22684,
+    "require_target": false,
+    "base_required": [
+      "second_board_amount_log",
+      "second_board_turnover_surprise",
+      "second_board_return_5",
+      "first_to_second_amount_ratio",
+      "second_board_market_breadth",
+      "second_board_first_touch_time",
+      "second_board_tail_seal_fraction"
+    ],
+    "extras_allowed_nan": [],
+    "feature_missing_rows": {
+      "second_board_amount_log": 0,
+      "second_board_turnover_surprise": 1644,
+      "second_board_return_5": 1422,
+      "first_to_second_amount_ratio": 15,
+      "second_board_market_breadth": 0,
+      "second_board_first_touch_time": 21,
+      "second_board_tail_seal_fraction": 21
+    },
+    "filled_with_zero": false,
+    "dropped_names_for_extra_nan": false
+  },
+  "filled_with_zero": false,
+  "label_bins_fit_inside_training_fold": true
+}

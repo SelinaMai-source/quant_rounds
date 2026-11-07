@@ -1,0 +1,74 @@
+{
+  "status": "trained_oos",
+  "kind": "regressor",
+  "features": [
+    "amount_log",
+    "return_5",
+    "amount_vs_5"
+  ],
+  "label": "label_net",
+  "seed": 17,
+  "subsample": 1.0,
+  "colsample_bytree": 1.0,
+  "untradable_coded_as_loss": false,
+  "immature_coded_as_loss": false,
+  "score_is_fill_probability": false,
+  "folds": [
+    {
+      "predict_year": 2018,
+      "train_rows": 4934,
+      "test_rows": 1424,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2019,
+      "train_rows": 2213,
+      "test_rows": 2030,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2020,
+      "train_rows": 3068,
+      "test_rows": 2275,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2021,
+      "train_rows": 4314,
+      "test_rows": 1969,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2022,
+      "train_rows": 4827,
+      "test_rows": 2130,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2023,
+      "train_rows": 5047,
+      "test_rows": 1083,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2024,
+      "train_rows": 4182,
+      "test_rows": 2675,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2025,
+      "train_rows": 4678,
+      "test_rows": 2105,
+      "positive_rate": null
+    },
+    {
+      "predict_year": 2026,
+      "train_rows": 4571,
+      "test_rows": 1187,
+      "positive_rate": null
+    }
+  ],
+  "rows": 16878,
+  "filled_with_zero": false
+}

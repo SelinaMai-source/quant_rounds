@@ -1,0 +1,65 @@
+[round24_2] stage=freeze
+[round24_2] stage=universe
+[round24_2] stage=features
+[24.2] daily features from 2015+
+[24.2] minute features F5/F6
+[round24_2] stage=label_parity
+[round24_2] stage=matrix
+[xgb-rank] year=2018 train=4705 test=1314
+[xgb-rank] year=2019 train=1998 test=1902
+[xgb-rank] year=2020 train=2885 test=2098
+[xgb-rank] year=2021 train=4192 test=1850
+[xgb-rank] year=2022 train=4699 test=2062
+[xgb-rank] year=2023 train=4923 test=1056
+[xgb-rank] year=2024 train=4063 test=2660
+[xgb-rank] year=2025 train=4579 test=2104
+[xgb-rank] year=2026 train=4495 test=1183
+[xgb-rank] year=2018 train=4691 test=1312
+[xgb-rank] year=2019 train=1994 test=1901
+[xgb-rank] year=2020 train=2882 test=2094
+[xgb-rank] year=2021 train=4186 test=1847
+[xgb-rank] year=2022 train=4692 test=2060
+[xgb-rank] year=2023 train=4914 test=1056
+[xgb-rank] year=2024 train=4058 test=2656
+[xgb-rank] year=2025 train=4574 test=2103
+[xgb-rank] year=2026 train=4491 test=1183
+[xgb-regressor] year=2018 train=4934 test=1424
+[xgb-regressor] year=2019 train=2213 test=2030
+[xgb-regressor] year=2020 train=3068 test=2275
+[xgb-regressor] year=2021 train=4314 test=1969
+[xgb-regressor] year=2022 train=4827 test=2130
+[xgb-regressor] year=2023 train=5047 test=1083
+[xgb-regressor] year=2024 train=4182 test=2675
+[xgb-regressor] year=2025 train=4678 test=2105
+[xgb-regressor] year=2026 train=4571 test=1187
+[xgb-regressor] year=2018 train=4934 test=1424
+[xgb-regressor] year=2019 train=2213 test=2030
+[xgb-regressor] year=2020 train=3068 test=2275
+[xgb-regressor] year=2021 train=4314 test=1969
+[xgb-regressor] year=2022 train=4827 test=2130
+[xgb-regressor] year=2023 train=5047 test=1083
+[xgb-regressor] year=2024 train=4182 test=2675
+[xgb-regressor] year=2025 train=4678 test=2105
+[xgb-regressor] year=2026 train=4571 test=1187
+[xgb-regressor] year=2018 train=4934 test=1424
+[xgb-regressor] year=2019 train=2213 test=2030
+[xgb-regressor] year=2020 train=3068 test=2275
+[xgb-regressor] year=2021 train=4314 test=1969
+[xgb-regressor] year=2022 train=4827 test=2130
+[xgb-regressor] year=2023 train=5047 test=1083
+[xgb-regressor] year=2024 train=4182 test=2675
+[xgb-regressor] year=2025 train=4678 test=2105
+[xgb-regressor] year=2026 train=4571 test=1187
+[e7] year=2018 cal=CALIBRATED_TRAIN_OOF
+[e7] year=2019 cal=CALIBRATED_TRAIN_OOF
+[e7] year=2020 cal=CALIBRATED_TRAIN_OOF
+[e7] year=2021 cal=CALIBRATED_TRAIN_OOF
+[e7] year=2022 cal=CALIBRATED_TRAIN_OOF
+[e7] year=2023 cal=CALIBRATED_TRAIN_OOF
+[e7] year=2024 cal=CALIBRATED_TRAIN_OOF
+[e7] year=2025 cal=CALIBRATED_TRAIN_OOF
+[e7] year=2026 cal=CALIBRATED_TRAIN_OOF
+[round24_2] stage=execution
+[round24_2] stage=decision
+[round24_2] stage=report
+{'freeze': 'FROZEN', 'universe': 'DONE', 'features': 'DONE', 'label_parity': 'DONE', 'matrix': 'DONE', 'execution': 'DONE', 'decision': 'SECOND_TO_THIRD_RESEARCH_CANDIDATE', 'report': 'DONE'}

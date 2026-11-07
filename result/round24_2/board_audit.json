@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "checked_panel_rows": 394,
+  "checked_main_st_rows": 105,
+  "mismatches": 0,
+  "flat_1099_only_inclusions": 0,
+  "panel_keys_in_short_window": 137,
+  "board_ok": true,
+  "st_cutover": "2026-07-06",
+  "used_flat_1099_for_all_names": false,
+  "audit_rule": "只核对二板面板成员是否按法定涨跌幅封板。一板 ST 封板不要求进入二板面板。",
+  "examples": [],
+  "rebuild_required": false
+}

@@ -1,0 +1,56 @@
+# Round22.6–24.2 总研究报告
+
+## 1. 范围与锁定基线
+一进二锁定基线仍是 baseline_v5=R16_O01，全历史 2018-01-02～2026-07-24，Sharpe=1.8756627913361097，CAGR=0.5499812832273525，MaxDD=-0.24056327715394388，NAV=12750089.355724689，笔数=1107，资金=300000。费用名 ROUND7_FLAT_5BP（实际含滑点/佣金/过户/印花税分项，不是合计 5bp）。二进三为独立研究线，不覆盖一进二 CURRENT，也不覆盖旧二进三基线。
+
+## 2. 公共修复 research_integrity_v2
+- 目录哈希 sha256=`eb4ec8b6c170728fc8ea798093ba38e172c672326d23412252dab3215fd6b4ce`
+- 三态证据、有符号 nav_improvement、LEGACY/CORRECTED 经济门、全身份缓存、布尔/枚举、显式 merge、秩唯一、决策时点 vs 成交时点、标签成熟不筛候选、账本谱系。
+- 单元测试：通过 19，失败 0，合计 19。
+
+## 3. Round22.6
+- 决策：`KEEP_BASELINE_V5`；FS2=`FS2_DIRECT_ADD_NOT_SUPPORTED`；Challenger=`LOCAL_REORDER_EFFECT_ONLY`
+- F1 ΔSharpe=`-0.23911686697244594`；F2 ΔSharpe=`-0.6655601003729505`（相对基线增量，不是自身均值>0）
+- SPA=`BLOCKED_STAT_TEST` reason=`No module named 'arch'`
+- 主报告：`result/round22_6/ROUND22_6_RESEARCH_REPORT.md`
+- 分支 SHA（已核验推送）：`89311afafab3c257c1daf41eaedac2d14bfdf958`
+
+## 4. Round23.2
+- 决策：`KEEP_BASELINE_V5`；endpoint=`PASS`；zero_weight_identity=`True`
+- 内层选择全年选回 w_lgbm=0 与 Ten=0.90；M1 单独 LGBM 弱于 v5。
+- 风险裁决：`DIAGNOSTIC_ONLY_NOT_ALPHA_REPLACEMENT`；R1=GAP7_ALLOCATION_HALF_DIAGNOSTIC 不部署。
+- SPA=`BLOCKED_STAT_TEST` reason=`No module named 'arch'`
+- 主报告：`result/round23_2/ROUND23_2_RESEARCH_REPORT.md`
+- 分支 SHA（已核验推送）：`37b65c56a2ca31dacc640cef7cbbe1b420ad2613`
+
+## 5. Round24.2
+- 决策：`SECOND_TO_THIRD_RESEARCH_CANDIDATE`；best=`K7`；warmup_repaired=`True`
+- 绩效窗仍 2018-01-02～2026-07-24；训练预热含 2015+ 二板信号；行业 F8 本轮不做；分钟 first_touch/tail_seal 已纳入 TARGET7。
+- 矩阵（二进三内部，不与一进二 Sharpe 混排）：
+```
+code,sharpe,cagr,max_drawdown,nav_end,trades,positive_realizable,less_loss_than_cash
+CASH,,0.0,0.0,300000.0,,False,False
+T0C,0.4093330357420038,0.06949844594332566,-0.5465381407686972,533065.2520414717,1158.0,True,True
+K3,0.4280845510657615,0.07898813059058729,-0.45453235371995027,574916.4279223632,1070.0,True,True
+K7,0.676181155895512,0.1516829726173441,-0.4476801120868745,1004321.3022256331,1093.0,True,True
+R3,0.28487907663362466,0.03993735307731683,-0.5329169828130291,419402.47487125767,1037.0,True,True
+R7,0.6808558910513699,0.13954403773816115,-0.3853849101854696,917276.7562527386,1044.0,True,True
+R7_POS,0.5365578564178448,0.09323323688265539,-0.39955044946435037,643190.8057335981,783.0,True,True
+E7,0.7299425188673835,0.13506415421844986,-0.34978593814606296,886878.1823302837,868.0,True,True
+```
+- 主报告：`result/round24_2/ROUND24_2_RESEARCH_REPORT.md`
+- 分支 SHA：`PENDING_PUBLISH`（发布后回填）
+
+## 6. 分线结论与生产开关
+| 线 | 决策 |
+| --- | --- |
+| 一进二 Round22.6 | `KEEP_BASELINE_V5` |
+| 一进二 Round23.2 | `KEEP_BASELINE_V5` |
+| 二进三 Round24.2 | `SECOND_TO_THIRD_RESEARCH_CANDIDATE` |
+
+CURRENT_BASELINE_CHANGED=FALSE
+PRODUCTION_CONFIG_CHANGED=FALSE
+AUTO_PROMOTE=FALSE
+LIVE_READY=FALSE
+
+生成时间（Asia/Shanghai）：2026-11-07T18:23:26.281181+08:00

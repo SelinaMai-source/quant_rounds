@@ -1,0 +1,67 @@
+{
+  "folds": [
+    {
+      "year": 2018,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 2546,
+      "n_neg": 2388
+    },
+    {
+      "year": 2019,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 849,
+      "n_neg": 1364
+    },
+    {
+      "year": 2020,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 1133,
+      "n_neg": 1935
+    },
+    {
+      "year": 2021,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 1617,
+      "n_neg": 2697
+    },
+    {
+      "year": 2022,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 1897,
+      "n_neg": 2930
+    },
+    {
+      "year": 2023,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 1968,
+      "n_neg": 3079
+    },
+    {
+      "year": 2024,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 1610,
+      "n_neg": 2572
+    },
+    {
+      "year": 2025,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 1688,
+      "n_neg": 2990
+    },
+    {
+      "year": 2026,
+      "fallback": null,
+      "cal_flag": "CALIBRATED_TRAIN_OOF",
+      "n_pos": 1694,
+      "n_neg": 2877
+    }
+  ]
+}
