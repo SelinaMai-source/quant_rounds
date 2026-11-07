@@ -98,7 +98,7 @@
 - 精确公式：供应商 equ_h2l_factor_t1.PCV（本仓库未展开供应商内部公式）；按 UPDATE_TIME 取 argMax
 - 表/列：ClickHouse hermes equ_h2l_factor_t1.PCV, UPDATE_TIME
 - 回看：当日微观；对齐：D；available_at：`D_close（依赖供应商 UPDATE_TIME；非今日下载即 PIT）`
-- 缺失：缺失保持 NaN；formal 覆盖门槛曾要求≥0.98；归一：供应商比率；单位：ratio
+- 缺失：缺失保持 NaN；formal 覆盖门槛曾要求≥0.98；归一：无；单位：**vendor score（观测可越出 [0,1]，勿当严格 ratio）**
 - 一进二面板覆盖：0.9914
 - PIT：PIT_CONDITIONAL_ON_UPDATE_TIME; today_download≠PIT_SAFE；uses_D+1：False
 - 首板特异性：微观提取绑在首板 selection 键上
@@ -116,7 +116,7 @@
 - 精确公式：供应商 equ_h2l_factor_t1.BCVP_15MIN（内部公式未在本仓库展开）
 - 表/列：ClickHouse equ_h2l_factor_t1.BCVP_15MIN
 - 回看：尾盘15分钟（供应商定义）；对齐：D；available_at：`D_close / UPDATE_TIME`
-- 缺失：NaN complete-case；归一：ratio；单位：ratio
+- 缺失：NaN complete-case；归一：无；单位：**vendor score（观测可负/可>1，勿当严格 volume ratio）**
 - 一进二面板覆盖：0.9913
 - PIT：PIT_CONDITIONAL_ON_UPDATE_TIME；uses_D+1：False
 - 首板特异性：微观抽取绑首板 selection
