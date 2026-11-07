@@ -1,0 +1,75 @@
+{
+  "identity": "baseline_v5=R16_O01",
+  "source": "result/baseline_v5/frozen_identity.json",
+  "metrics": {
+    "cagr": 0.5499812832273525,
+    "sharpe": 1.8756627913361097,
+    "max_drawdown": -0.24056327715394388,
+    "nav_end": 12750089.355724689,
+    "completed_trades": 1107,
+    "initial_capital": 300000.0,
+    "n_obs": 2075,
+    "window_start": "2018-01-02",
+    "window_end": "2026-07-24",
+    "fee_schedule": "ROUND7_FLAT_5BP"
+  },
+  "parity_vs_prompt_reference": [
+    {
+      "metric": "cagr",
+      "expected": 0.5499812832273525,
+      "got": 0.5499812832273525,
+      "match": true
+    },
+    {
+      "metric": "sharpe",
+      "expected": 1.8756627913361097,
+      "got": 1.8756627913361097,
+      "match": true
+    },
+    {
+      "metric": "max_drawdown",
+      "expected": -0.24056327715394388,
+      "got": -0.24056327715394388,
+      "match": true
+    },
+    {
+      "metric": "nav_end",
+      "expected": 12750089.355724689,
+      "got": 12750089.355724689,
+      "match": true
+    },
+    {
+      "metric": "initial_capital",
+      "expected": 300000.0,
+      "got": 300000.0,
+      "match": true
+    },
+    {
+      "metric": "completed_trades",
+      "expected": 1107,
+      "got": 1107,
+      "match": true
+    },
+    {
+      "metric": "window_start",
+      "expected": "2018-01-02",
+      "got": "2018-01-02",
+      "match": true
+    },
+    {
+      "metric": "window_end",
+      "expected": "2026-07-24",
+      "got": "2026-07-24",
+      "match": true
+    }
+  ],
+  "all_match": true,
+  "baseline_contract_mismatch": [
+    {
+      "field": "d1_open_gap_formula",
+      "tag": "BASELINE_CONTRACT_MISMATCH",
+      "registry": "(open_D+1/close_D)-1",
+      "source": "open_D+1/pre_close_D+1 - 1"
+    }
+  ]
+}
