@@ -1,0 +1,133 @@
+year,feature_id,gap,data_status,required_source,note,n_eligible,n_pit_safe
+2015,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,5678,0
+2015,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,5678,0
+2015,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,5678,0
+2015,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,5678,0
+2015,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,5678,0
+2015,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,5678,0
+2015,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,5678,0
+2015,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,5678,0
+2015,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,5678,0
+2015,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,5678,0
+2015,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,5678,0
+2016,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,1154,0
+2016,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,1154,0
+2016,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,1154,0
+2016,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,1154,0
+2016,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,1154,0
+2016,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,1154,0
+2016,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,1154,0
+2016,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,1154,0
+2016,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,1154,0
+2016,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,1154,0
+2016,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,1154,0
+2017,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,1083,0
+2017,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,1083,0
+2017,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,1083,0
+2017,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,1083,0
+2017,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,1083,0
+2017,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,1083,0
+2017,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,1083,0
+2017,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,1083,0
+2017,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,1083,0
+2017,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,1083,0
+2017,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,1083,0
+2018,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,1615,0
+2018,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,1615,0
+2018,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,1615,0
+2018,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,1615,0
+2018,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,1615,0
+2018,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,1615,0
+2018,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,1615,0
+2018,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,1615,0
+2018,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,1615,0
+2018,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,1615,0
+2018,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,1615,0
+2019,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,2397,0
+2019,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,2397,0
+2019,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,2397,0
+2019,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,2397,0
+2019,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,2397,0
+2019,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,2397,0
+2019,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,2397,0
+2019,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,2397,0
+2019,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,2397,0
+2019,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,2397,0
+2019,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,2397,0
+2020,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,2924,0
+2020,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,2924,0
+2020,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,2924,0
+2020,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,2924,0
+2020,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,2924,0
+2020,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,2924,0
+2020,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,2924,0
+2020,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,2924,0
+2020,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,2924,0
+2020,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,2924,0
+2020,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,2924,0
+2021,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,3001,0
+2021,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,3001,0
+2021,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,3001,0
+2021,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,3001,0
+2021,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,3001,0
+2021,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,3001,0
+2021,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,3001,0
+2021,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,3001,0
+2021,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,3001,0
+2021,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,3001,0
+2021,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,3001,0
+2022,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,2707,0
+2022,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,2707,0
+2022,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,2707,0
+2022,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,2707,0
+2022,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,2707,0
+2022,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,2707,0
+2022,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,2707,0
+2022,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,2707,0
+2022,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,2707,0
+2022,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,2707,0
+2022,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,2707,0
+2023,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,1410,0
+2023,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,1410,0
+2023,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,1410,0
+2023,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,1410,0
+2023,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,1410,0
+2023,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,1410,0
+2023,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,1410,0
+2023,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,1410,0
+2023,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,1410,0
+2023,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,1410,0
+2023,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,1410,0
+2024,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,3410,0
+2024,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,3410,0
+2024,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,3410,0
+2024,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,3410,0
+2024,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,3410,0
+2024,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,3410,0
+2024,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,3410,0
+2024,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,3410,0
+2024,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,3410,0
+2024,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,3410,0
+2024,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,3410,0
+2025,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,2698,0
+2025,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,2698,0
+2025,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,2698,0
+2025,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,2698,0
+2025,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,2698,0
+2025,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,2698,0
+2025,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,2698,0
+2025,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,2698,0
+2025,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,2698,0
+2025,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,2698,0
+2025,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,2698,0
+2026,g_prim_px_vol_corr,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建,1624,0
+2026,fb_close_seal_streak_norm,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用,1624,0
+2026,fb_last30_amount_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,minute_bars,同上,1624,0
+2026,h5_last_first_limit_value_change_sym,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel,1624,0
+2026,h1_consistent_buy_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取,1624,0
+2026,h1_last15m_volume_ratio,LOW_OR_ZERO_COVERAGE,BLOCKED_DATA,clickhouse_BCVP,同上,1624,0
+2026,h4_large_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow,1624,0
+2026,h4_retail_net_to_turnover,LOW_OR_ZERO_COVERAGE,RECOMPUTE_POSSIBLE,daily_money_flow,同上,1624,0
+2026,g3_days_since_limit,LOW_OR_ZERO_COVERAGE,SEMANTIC_ISSUE,limit history,二板日语义退化,1624,0
+2026,ind_seal_rate_excess,LOW_OR_ZERO_COVERAGE,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板,1624,0
+2026,d1_open_gap,LOW_OR_ZERO_COVERAGE,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION,1624,0

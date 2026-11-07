@@ -1,0 +1,13 @@
+{
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "parity_metrics_match": true,
+  "feature_order_hash_match": true,
+  "source_status": "SOURCE_WITH_EXTERNAL_DATA_DEPENDENCY",
+  "READY_FOR_ROUND24_FACTOR_MIGRATION_REVIEW": false,
+  "ready_false_reasons": [
+    "分钟路径与微观 PCV/BCVP 在二板宇宙上 BLOCKED_DATA（覆盖矩阵大量 coverage_ratio=0）",
+    "d1_open_gap 为 BLOCKED_PIT/OPEN_INFORMATION",
+    "g_prim_px_vol_corr 与 h1_* 供应商内部公式仍 UNVERIFIED/INCOMPLETE_SOURCE"
+  ]
+}

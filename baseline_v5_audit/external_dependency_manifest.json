@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-11-07T16:35:02.831121+00:00",
+  "status": "SOURCE_WITH_EXTERNAL_DATA_DEPENDENCY",
+  "python_packages": {
+    "xgboost": "retrain",
+    "pandas": "required",
+    "numpy": "required",
+    "pyarrow": "required",
+    "zyquant": "DataSnapshot"
+  },
+  "external_code": [
+    {
+      "name": "first_board_hermes",
+      "path": "/data1/stock-mxy/src/first_board_hermes",
+      "copied_audit_refs": "baseline_v5_audit/source_refs/"
+    }
+  ],
+  "external_data": [
+    {
+      "name": "hermes_v7",
+      "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features"
+    },
+    {
+      "name": "five_panel",
+      "path": "/data1/stock-mxy/data/first_board_hermes/aligned_original_candidate_full44_plus_d1_open_gap_v1"
+    },
+    {
+      "name": "ten_panel",
+      "path": "/data1/stock-mxy/data/first_board_hermes/aligned_original_candidate_fs01122_chain_label_v1"
+    },
+    {
+      "name": "amazingdata_minute",
+      "path": "/home/mxy/AmazingData/data/amazingdata_raw/kline_min1"
+    },
+    {
+      "name": "second_board_panel",
+      "path": "/home/mxy/Stock/课题/一进二策略/result/round24/data/second_board.parquet"
+    }
+  ]
+}
