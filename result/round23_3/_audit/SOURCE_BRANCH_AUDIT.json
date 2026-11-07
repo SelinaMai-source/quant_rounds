@@ -1,0 +1,35 @@
+{
+  "baseline_v5": {
+    "sha": "feda6870a26f6efe5d722fd9c3b11130ca266d85",
+    "worktree_core_sample_sha256": "6523b7df366089c639d5d35e80d13000fd7456f4401ec1d53eb0ec9364172aea",
+    "worktree": "/data1/stock-mxy/research_publish/wt_baseline_v5"
+  },
+  "round22_6": {
+    "sha": "89311afafab3c257c1daf41eaedac2d14bfdf958",
+    "worktree_core_sample_sha256": "15926dfbc14b299e81317ec0d0317823895352b523a83dfe912513e92efcd1a3",
+    "worktree": "/data1/stock-mxy/research_publish/wt_round22_6"
+  },
+  "round23_2": {
+    "sha": "37b65c56a2ca31dacc640cef7cbbe1b420ad2613",
+    "worktree_core_sample_sha256": "f9c9fa7f8bbb29b07446f2f3923dd3ad00cd7067f8d146a199f8ac65bb7e779b",
+    "worktree": "/data1/stock-mxy/research_publish/wt_round23_2"
+  },
+  "round24_2": {
+    "sha": "6581d3a245fcee5af8a6d7b6676a92950a8569a9",
+    "worktree_core_sample_sha256": "15926dfbc14b299e81317ec0d0317823895352b523a83dfe912513e92efcd1a3",
+    "worktree": "/data1/stock-mxy/research_publish/wt_round24_2"
+  },
+  "env": {
+    "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
+    "platform": "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+    "numpy": "2.2.3",
+    "pandas": "2.3.3",
+    "xgboost": "3.3.0",
+    "lightgbm": "4.6.0",
+    "sklearn": "1.9.0"
+  },
+  "git_status_quant_rounds": "## HEAD (no branch)\n",
+  "recorded_at": "2026-11-07T19:25:34.616673",
+  "canonical_root": "/data1/stock-mxy/课题/一进二策略",
+  "inode": 75047504
+}

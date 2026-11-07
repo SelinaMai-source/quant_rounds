@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "n_pairs": 811,
+  "rows": [
+    {
+      "experiment": "E4_BASE",
+      "sharpe": 1.8756627913361097,
+      "cagr": 0.5499812832273525,
+      "nav_end": 12750089.355724689,
+      "economically_material": false
+    },
+    {
+      "experiment": "E4_SCORE_ONLY",
+      "sharpe": 1.8208530497262794,
+      "cagr": 0.5302360100886332,
+      "nav_end": 11425476.341685556,
+      "economically_material": false
+    },
+    {
+      "experiment": "E4_DISAGREEMENT",
+      "sharpe": 1.8180066221986582,
+      "cagr": 0.5303478895051779,
+      "nav_end": 11432625.350740789,
+      "economically_material": false
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "status": "DONE",
+  "fixed": [
+    {
+      "experiment": "E1_T075",
+      "w_ten": 0.75,
+      "sharpe": 1.7613275718506398,
+      "cagr": 0.49693950246671204,
+      "nav_end": 9465224.401724987,
+      "max_drawdown": -0.30393923878384765,
+      "completed_trades": 1144,
+      "economically_material": false
+    },
+    {
+      "experiment": "E1_T090",
+      "w_ten": 0.9,
+      "sharpe": 1.8756627913361097,
+      "cagr": 0.5499812832273525,
+      "nav_end": 12750089.355724689,
+      "max_drawdown": -0.240563277153944,
+      "completed_trades": 1107,
+      "economically_material": false
+    },
+    {
+      "experiment": "E1_T100",
+      "w_ten": 1.0,
+      "sharpe": 1.4241537315998063,
+      "cagr": 0.3911374409041253,
+      "nav_end": 5055502.175594716,
+      "max_drawdown": -0.3118570521351747,
+      "completed_trades": 1080,
+      "economically_material": false
+    },
+    {
+      "experiment": "E1_NESTED_SELECTED",
+      "w_ten": null,
+      "sharpe": 1.8756627913361097,
+      "cagr": 0.5499812832273525,
+      "nav_end": 12750089.355724689,
+      "max_drawdown": -0.240563277153944,
+      "completed_trades": 1107,
+      "economically_material": false
+    }
+  ],
+  "nested": {
+    "cagr": 0.5499812832273525,
+    "sharpe": 1.8756627913361097,
+    "max_drawdown": -0.240563277153944,
+    "nav_end": 12750089.355724689,
+    "nav_start": 300000.0,
+    "total_return": 41.50029785241563,
+    "n_obs": 2075,
+    "window_start": "2018-01-02",
+    "window_end": "2026-07-24",
+    "code": "R233_E1_NESTED",
+    "completed_trades": 1107,
+    "status": "ran",
+    "fee_schedule": "ROUND7_FLAT_5BP",
+    "compare_to": "R16_O01",
+    "restarted_capital": false,
+    "scenario": false,
+    "counts_as_alpha": true,
+    "round": "23.3",
+    "scope": "FULL_HISTORY_FIRST_TO_SECOND",
+    "initial_cash": 300000.0,
+    "economically_material": false,
+    "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+    "delta_cagr_vs_v5_not_used": 0.0,
+    "v5_nav_reference_not_a_benchmark": 12750089.355724689,
+    "economic_gate": {
+      "LEGACY": {
+        "delta_cagr": 0.0,
+        "delta_sharpe": 0.0,
+        "nav_rel": 0.0,
+        "delta_maxdd": -1.1102230246251565e-16,
+        "flags": {
+          "delta_cagr_ok": false,
+          "delta_sharpe_ok": false,
+          "nav_rel_ok": false,
+          "top_changed_ok": false,
+          "maxdd_ok": true,
+          "fee_direction_ok": true,
+          "not_only_2024_or_2025": true
+        },
+        "economically_material": false,
+        "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+        "compare_to": "R16_O01",
+        "implementation": "LEGACY"
+      },
+      "CORRECTED": {
+        "implementation": "CORRECTED",
+        "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+        "compare_to": "R16_O01",
+        "delta_cagr": 0.0,
+        "delta_sharpe": 0.0,
+        "delta_maxdd": -1.1102230246251565e-16,
+        "nav_improvement": 0.0,
+        "delta_terminal_nav_rmb": 0.0,
+        "relative_terminal_nav_change": 0.0,
+        "nav_improvement_ok": false,
+        "flags": {
+          "delta_cagr_ok": false,
+          "delta_sharpe_ok": false,
+          "nav_improvement_ok": false,
+          "top_changed_ok": null,
+          "maxdd_ok": true,
+          "fee_direction_ok": true,
+          "not_only_2024_or_2025": true
+        },
+        "statuses": {
+          "delta_cagr": "FAIL",
+          "delta_sharpe": "FAIL",
+          "nav_improvement": "FAIL",
+          "top_changed": "NOT_EVALUATED",
+          "maxdd": "PASS",
+          "fee_direction": "PASS",
+          "not_only_year": "PASS"
+        },
+        "economically_material": false,
+        "promotion_blocked_missing_evidence": true,
+        "evidence": {
+          "top_changed": {
+            "value": null,
+            "status": "NOT_EVALUATED",
+            "ok": null
+          },
+          "fee_same_direction": {
+            "value": true,
+            "status": "PASS",
+            "ok": true
+          },
+          "not_only_year": {
+            "value": true,
+            "status": "PASS",
+            "ok": true
+          }
+        }
+      },
+      "diffs": [
+        "legacy_defaulted_top_changed_false_when_arg_omitted"
+      ],
+      "promotion_decision_source": "CORRECTED",
+      "economically_material": false
+    },
+    "nav_improvement": 0.0,
+    "nav_improvement_ok": false,
+    "delta_terminal_nav_rmb": 0.0,
+    "relative_terminal_nav_change": 0.0,
+    "promotion_decision_source": "CORRECTED",
+    "nav_reconcile": {
+      "cash_plus_mv_equals_total": true,
+      "max_identity_gap": 0.0,
+      "tolerance": 0.1275008935572469,
+      "tolerance_rule": "max(0.01 RMB, 1e-8 * NAV)",
+      "end_nav": 12750089.355724689,
+      "n_days": 2076,
+      "status": "PASS"
+    },
+    "lineage_rows": 25874,
+    "lineage_path": "/data1/stock-mxy/课题/一进二策略/result/round23_3/e1/E1_NESTED_SELECTED/lineage_signal_to_exit.parquet"
+  },
+  "weights": [
+    {
+      "year": 2018,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_PRIOR_OOF"
+    },
+    {
+      "year": 2019,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2020,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2021,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2022,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2023,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2024,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2025,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2026,
+      "family": "E1",
+      "chosen": "t_0.90",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    }
+  ]
+}

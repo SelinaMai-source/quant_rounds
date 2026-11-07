@@ -1,0 +1,26 @@
+[round23_3] stage=source_audit
+[round23_3] stage=freeze
+[round23_3] stage=parity
+[round23_3] stage=base_oof
+[round23_3] stage=inner_fix
+[round23_3] stage=e1
+[round23_3] stage=e2
+[round23_3] stage=cond_inc
+[round23_3] stage=e3
+[round23_3] stage=e4
+[round23_3] stage=outer_bt
+[round23_3] stage=stress
+[round23_3] stage=stats
+[round23_3] stage=tests
+test_fallback_when_none_pass (core.round23_3.tests_round23_3.TestDefaultNotForcedWinner.test_fallback_when_none_pass) ... ok
+test_non_default_can_win (core.round23_3.tests_round23_3.TestDefaultNotForcedWinner.test_non_default_can_win) ... ok
+test_fallback_preserves_universe (core.round23_3.tests_round23_3.TestMissingLgbmNoShrink.test_fallback_preserves_universe) ... ok
+test_zero_weight_identity (core.round23_3.tests_round23_3.TestZeroLgbmIdentity.test_zero_weight_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.010s
+
+OK
+[round23_3] stage=decision
+[round23_3] stage=report
+{'source_audit': 'DONE', 'freeze': 'OK', 'parity': 'PASS', 'base_oof': 'DONE', 'inner_fix': 'PASS', 'e1': 'DONE', 'e2': 'DONE', 'cond_inc': 'DONE', 'e3': 'NOT_TRIGGERED', 'e4': 'DONE', 'outer_bt': 'DONE', 'stress': 'DONE', 'stats': 'DONE', 'tests': 'PASS', 'decision': 'KEEP_BASELINE_V5', 'report': 'DONE'}

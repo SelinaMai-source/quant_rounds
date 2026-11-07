@@ -1,0 +1,36 @@
+{
+  "status": "DONE",
+  "rows": [
+    {
+      "scenario": "S0",
+      "sharpe": 1.8756627913361097,
+      "cagr": 0.5499812832273525,
+      "nav_end": 12750089.355724689,
+      "completed_trades": 1107
+    },
+    {
+      "scenario": "S1",
+      "extra_buy_slippage_bps": 10,
+      "sharpe": 1.7827052870743498,
+      "cagr": 0.5132369545442814,
+      "nav_end": 10384034.185756255,
+      "completed_trades": 1107
+    },
+    {
+      "scenario": "S2",
+      "extra_buy_slippage_bps": 20,
+      "sharpe": 1.6866828843451014,
+      "cagr": 0.4765803786166216,
+      "nav_end": 8418763.978842476,
+      "completed_trades": 1107
+    },
+    {
+      "scenario": "S3",
+      "n_cancelled": 306,
+      "sharpe": 1.7908118930637222,
+      "cagr": 0.5206426015476766,
+      "nav_end": 10826951.905766126,
+      "completed_trades": 1107
+    }
+  ]
+}

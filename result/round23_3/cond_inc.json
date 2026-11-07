@@ -1,0 +1,14 @@
+{
+  "status": "DONE",
+  "e3_trigger": false,
+  "rows": [
+    {
+      "pair": "xgb_vs_lgbm",
+      "daily_pred_corr": 0.837234308927648,
+      "top1_agreement": 0.5798525798525799,
+      "e1_conditional_increment": false,
+      "e2_conditional_increment": false,
+      "e3_trigger": false
+    }
+  ]
+}

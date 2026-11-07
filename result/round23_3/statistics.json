@@ -1,0 +1,147 @@
+{
+  "bootstrap": {
+    "E1_NESTED": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": 0.0,
+        "delta_sharpe": 0.0,
+        "delta_cagr": 0.0,
+        "delta_maxdd": 0.0
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "delta_sharpe": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "delta_cagr": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "delta_maxdd": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    },
+    "E2_NESTED": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": 1.6463270454611378e-06,
+        "delta_sharpe": -0.009716557259938918,
+        "delta_cagr": 1.7003710199636757e-05,
+        "delta_maxdd": 0.009515295317922057
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -7.827222707021162e-05,
+          "high": 8.602487794025545e-05
+        },
+        "delta_sharpe": {
+          "low": -0.08711223285566727,
+          "high": 0.0669263089931073
+        },
+        "delta_cagr": {
+          "low": -0.0331410393983136,
+          "high": 0.03326055449995655
+        },
+        "delta_maxdd": {
+          "low": -0.027516739010904973,
+          "high": 0.03006132348361008
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    },
+    "E1_T075": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": -0.00014802984092938368,
+        "delta_sharpe": -0.11433521948547298,
+        "delta_cagr": -0.05602754580153735,
+        "delta_maxdd": -0.06337596162990367
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -0.0005773302362033966,
+          "high": 0.0002849982363698054
+        },
+        "delta_sharpe": {
+          "low": -0.5119774395936993,
+          "high": 0.2662654782698479
+        },
+        "delta_cagr": {
+          "low": -0.22505706956549099,
+          "high": 0.11197555707097542
+        },
+        "delta_maxdd": {
+          "low": -0.1395793476938823,
+          "high": 0.08624553633924423
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    },
+    "E2_L025": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": -0.0002748255835529423,
+        "delta_sharpe": -0.27590637147199604,
+        "delta_cagr": -0.10599233834369981,
+        "delta_maxdd": -0.04342884716628148
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -0.0005202440193331006,
+          "high": -4.418839641829194e-05
+        },
+        "delta_sharpe": {
+          "low": -0.5014751385973046,
+          "high": -0.05394928684901348
+        },
+        "delta_cagr": {
+          "low": -0.2087080095776697,
+          "high": -0.016467753515817727
+        },
+        "delta_maxdd": {
+          "low": -0.11081918947040666,
+          "high": 0.034698321433923214
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    }
+  },
+  "spa": {
+    "status": "BLOCKED_STAT_TEST",
+    "reason": "No module named 'arch'",
+    "method_not_used": "self_written_reality_check_spa_is_not_hansen_spa",
+    "candidates": [
+      "E2_NESTED",
+      "E1_T075",
+      "E2_L025"
+    ],
+    "n_alternatives": 3
+  }
+}

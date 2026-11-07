@@ -1,0 +1,45 @@
+{
+  "round": "23.3",
+  "frozen_before_new_nav_promotion": true,
+  "freeze_timestamp": "2026-11-08T03:29:23.562299+08:00",
+  "anchor": {
+    "code": "R16_O01",
+    "window": [
+      "2018-01-02",
+      "2026-07-24"
+    ],
+    "sharpe": 1.8756627913361097,
+    "cagr": 0.5499812832273525,
+    "max_drawdown": -0.24056327715394388,
+    "nav_end": 12750089.355724689,
+    "trades": 1107,
+    "capital": 300000,
+    "fee_schedule": "ROUND7_FLAT_5BP",
+    "information_lane": "LEGACY_OPEN_INFORMATION_LANE"
+  },
+  "ten_weights": [
+    0.75,
+    0.9,
+    1.0
+  ],
+  "lgbm_weights": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "default_w_ten": 0.9,
+  "default_w_lgbm": 0.0,
+  "inner_boot_n": 5000,
+  "inner_block": 20,
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "production_config_changed": false,
+  "experiments": [
+    "E1",
+    "E2",
+    "E3_conditional",
+    "E4"
+  ],
+  "status": "FROZEN"
+}

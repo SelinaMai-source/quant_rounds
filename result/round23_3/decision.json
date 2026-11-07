@@ -1,0 +1,24 @@
+{
+  "decision": "KEEP_BASELINE_V5",
+  "best_matched_candidate": {
+    "experiment": "E1_T090",
+    "w_ten": 0.9,
+    "sharpe": 1.8756627913361097,
+    "cagr": 0.5499812832273525,
+    "nav_end": 12750089.355724689,
+    "max_drawdown": -0.240563277153944,
+    "completed_trades": 1107.0,
+    "economically_material": false,
+    "source": "e1_results.csv",
+    "w_lgbm": NaN,
+    "status": NaN
+  },
+  "delta_sharpe": 0.0,
+  "delta_cagr": 0.0,
+  "economic_gate": false,
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "production_config_changed": false,
+  "parity": "PASS",
+  "e3": "NOT_TRIGGERED"
+}

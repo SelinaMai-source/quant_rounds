@@ -16,16 +16,34 @@ WT = {
     "round22_6": PUB_ROOT / "wt_round22_6",
     "round23_2": PUB_ROOT / "wt_round23_2",
     "round24_2": PUB_ROOT / "wt_round24_2",
+    "round23_3": PUB_ROOT / "wt_round23_3",
+    "round24_v5_migration": PUB_ROOT / "wt_round24_v5_migration",
 }
 RESULT_MAP = {
     "round22_6": ["round22_6"],
     "round23_2": ["round23_2"],
     "round24_2": ["round24_2", "round22_6_24_2_master"],
+    "round23_3": ["round23_3", "round23_3_round24_master"],
+    "round24_v5_migration": ["round24_v5_migration", "round23_3_round24_master"],
 }
 CODE_MAP = {
     "round22_6": ["core/research_integrity_v2", "core/round22_6", "tools/run_round22_6.py", "tools/publish_round_branch.py"],
     "round23_2": ["core/research_integrity_v2", "core/round23_2", "tools/run_round23_2.py", "tools/publish_round_branch.py"],
     "round24_2": ["core/research_integrity_v2", "core/round24_2", "tools/run_round24_2.py", "tools/run_round22_6_24_2.py", "tools/publish_round_branch.py"],
+    "round23_3": [
+        "core/research_integrity_v2",
+        "core/round23_3",
+        "core/round23_2",
+        "tools/run_round23_3.py",
+        "tools/publish_round_branch.py",
+    ],
+    "round24_v5_migration": [
+        "core/research_integrity_v2",
+        "core/round24_v5_migration",
+        "core/round24_2",
+        "tools/run_round24_v5_migration.py",
+        "tools/publish_round_branch.py",
+    ],
 }
 # shared deps needed to import
 SHARED = [
@@ -146,6 +164,8 @@ def publish_round(branch: str, *, message_code: str | None = None, message_resul
         "round22_6": "ROUND22_6_RESEARCH_REPORT.md",
         "round23_2": "ROUND23_2_RESEARCH_REPORT.md",
         "round24_2": "ROUND24_2_RESEARCH_REPORT.md",
+        "round23_3": "ROUND23_3_RESEARCH_REPORT.md",
+        "round24_v5_migration": "ROUND24_MIGRATION_RESEARCH_REPORT.md",
     }[branch]
     res_dir = RESULT_MAP[branch][0]
     (wt / "REPRODUCE.md").write_text(

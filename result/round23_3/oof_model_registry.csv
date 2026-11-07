@@ -1,0 +1,5 @@
+model,source,sha256,head,rows,trunc,eval_at
+XGBRanker_v5,/data1/stock-mxy/课题/一进二策略/result/round22_3/candidates/R223_E0/five_pred.parquet,8518ae7f32582dd42d068b0a7ff004b4a9a74970217eb86d5259645665213901,five,,,
+XGBRanker_v5,/data1/stock-mxy/课题/一进二策略/result/round22_3/candidates/R223_E0/ten_pred.parquet,19416b410c58458c123ac7a11da3a734ff20d24d2504a8e24460503a2fc1c97b,ten,,,
+lgbm_five,,,,46048.0,4.0,[1]
+lgbm_ten,,,,46048.0,5.0,[2]

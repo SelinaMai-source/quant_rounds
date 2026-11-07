@@ -1,0 +1,228 @@
+{
+  "status": "DONE",
+  "fixed": [
+    {
+      "experiment": "E2_L000",
+      "w_lgbm": 0.0,
+      "sharpe": 1.8756627913361097,
+      "cagr": 0.5499812832273525,
+      "nav_end": 12750089.355724689,
+      "max_drawdown": -0.240563277153944,
+      "completed_trades": 1107,
+      "economically_material": false
+    },
+    {
+      "experiment": "E2_L010",
+      "w_lgbm": 0.1,
+      "sharpe": 1.6549508429865307,
+      "cagr": 0.4736624695866549,
+      "nav_end": 8277483.412956128,
+      "max_drawdown": -0.24912800547427594,
+      "completed_trades": 1102,
+      "economically_material": false
+    },
+    {
+      "experiment": "E2_L025",
+      "w_lgbm": 0.25,
+      "sharpe": 1.5997564198641083,
+      "cagr": 0.4495754404251544,
+      "nav_end": 7188906.839533043,
+      "max_drawdown": -0.28399212432022547,
+      "completed_trades": 1105,
+      "economically_material": false
+    },
+    {
+      "experiment": "E2_L050",
+      "w_lgbm": 0.5,
+      "sharpe": 1.4583293764547132,
+      "cagr": 0.399256669534384,
+      "nav_end": 5313586.196916772,
+      "max_drawdown": -0.3086339267854704,
+      "completed_trades": 1106,
+      "economically_material": false
+    },
+    {
+      "experiment": "E2_NESTED_SELECTED",
+      "w_lgbm": null,
+      "sharpe": 1.8659462340761659,
+      "cagr": 0.549997369909659,
+      "nav_end": 12751221.573803224,
+      "max_drawdown": -0.23104798183602193,
+      "completed_trades": 1098,
+      "economically_material": false
+    }
+  ],
+  "nested": {
+    "cagr": 0.549997369909659,
+    "sharpe": 1.8659462340761659,
+    "max_drawdown": -0.23104798183602193,
+    "nav_end": 12751221.573803224,
+    "nav_start": 300000.0,
+    "total_return": 41.50407191267741,
+    "n_obs": 2075,
+    "window_start": "2018-01-02",
+    "window_end": "2026-07-24",
+    "code": "R233_E2_NESTED",
+    "completed_trades": 1098,
+    "status": "ran",
+    "fee_schedule": "ROUND7_FLAT_5BP",
+    "compare_to": "R16_O01",
+    "restarted_capital": false,
+    "scenario": false,
+    "counts_as_alpha": true,
+    "round": "23.3",
+    "scope": "FULL_HISTORY_FIRST_TO_SECOND",
+    "initial_cash": 300000.0,
+    "economically_material": false,
+    "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+    "delta_cagr_vs_v5_not_used": 1.608668230645982e-05,
+    "v5_nav_reference_not_a_benchmark": 12750089.355724689,
+    "economic_gate": {
+      "LEGACY": {
+        "delta_cagr": 1.608668230645982e-05,
+        "delta_sharpe": -0.009716557259943803,
+        "nav_rel": 8.880079558240062e-05,
+        "delta_maxdd": 0.009515295317921946,
+        "flags": {
+          "delta_cagr_ok": false,
+          "delta_sharpe_ok": false,
+          "nav_rel_ok": false,
+          "top_changed_ok": false,
+          "maxdd_ok": true,
+          "fee_direction_ok": true,
+          "not_only_2024_or_2025": true
+        },
+        "economically_material": false,
+        "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+        "compare_to": "R16_O01",
+        "implementation": "LEGACY"
+      },
+      "CORRECTED": {
+        "implementation": "CORRECTED",
+        "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+        "compare_to": "R16_O01",
+        "delta_cagr": 1.608668230645982e-05,
+        "delta_sharpe": -0.009716557259943803,
+        "delta_maxdd": 0.009515295317921946,
+        "nav_improvement": 8.880079558237775e-05,
+        "delta_terminal_nav_rmb": 1132.2180785350502,
+        "relative_terminal_nav_change": 8.880079558237775e-05,
+        "nav_improvement_ok": false,
+        "flags": {
+          "delta_cagr_ok": false,
+          "delta_sharpe_ok": false,
+          "nav_improvement_ok": false,
+          "top_changed_ok": null,
+          "maxdd_ok": true,
+          "fee_direction_ok": true,
+          "not_only_2024_or_2025": true
+        },
+        "statuses": {
+          "delta_cagr": "FAIL",
+          "delta_sharpe": "FAIL",
+          "nav_improvement": "FAIL",
+          "top_changed": "NOT_EVALUATED",
+          "maxdd": "PASS",
+          "fee_direction": "PASS",
+          "not_only_year": "PASS"
+        },
+        "economically_material": false,
+        "promotion_blocked_missing_evidence": true,
+        "evidence": {
+          "top_changed": {
+            "value": null,
+            "status": "NOT_EVALUATED",
+            "ok": null
+          },
+          "fee_same_direction": {
+            "value": true,
+            "status": "PASS",
+            "ok": true
+          },
+          "not_only_year": {
+            "value": true,
+            "status": "PASS",
+            "ok": true
+          }
+        }
+      },
+      "diffs": [
+        "legacy_defaulted_top_changed_false_when_arg_omitted"
+      ],
+      "promotion_decision_source": "CORRECTED",
+      "economically_material": false
+    },
+    "nav_improvement": 8.880079558237775e-05,
+    "nav_improvement_ok": false,
+    "delta_terminal_nav_rmb": 1132.2180785350502,
+    "relative_terminal_nav_change": 8.880079558237775e-05,
+    "promotion_decision_source": "CORRECTED",
+    "nav_reconcile": {
+      "cash_plus_mv_equals_total": true,
+      "max_identity_gap": 0.0,
+      "tolerance": 0.12751221573803223,
+      "tolerance_rule": "max(0.01 RMB, 1e-8 * NAV)",
+      "end_nav": 12751221.573803224,
+      "n_days": 2076,
+      "status": "PASS"
+    },
+    "lineage_rows": 25874,
+    "lineage_path": "/data1/stock-mxy/课题/一进二策略/result/round23_3/e2/E2_NESTED_SELECTED/lineage_signal_to_exit.parquet"
+  },
+  "weights": [
+    {
+      "year": 2018,
+      "family": "E2",
+      "chosen": "l_0.00",
+      "reason": "FALLBACK_DEFAULT_NO_PRIOR_OOF"
+    },
+    {
+      "year": 2019,
+      "family": "E2",
+      "chosen": "l_0.10",
+      "reason": "QUALIFIED_NON_DEFAULT"
+    },
+    {
+      "year": 2020,
+      "family": "E2",
+      "chosen": "l_0.00",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2021,
+      "family": "E2",
+      "chosen": "l_0.25",
+      "reason": "QUALIFIED_NON_DEFAULT"
+    },
+    {
+      "year": 2022,
+      "family": "E2",
+      "chosen": "l_0.00",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2023,
+      "family": "E2",
+      "chosen": "l_0.00",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2024,
+      "family": "E2",
+      "chosen": "l_0.00",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2025,
+      "family": "E2",
+      "chosen": "l_0.00",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    },
+    {
+      "year": 2026,
+      "family": "E2",
+      "chosen": "l_0.00",
+      "reason": "FALLBACK_DEFAULT_NO_QUALIFIED"
+    }
+  ]
+}

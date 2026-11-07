@@ -1,6 +1,6 @@
-# round23_2 报告索引
+# round23_3 报告索引
 
-- 主报告：`result/round23_2/ROUND23_2_RESEARCH_REPORT.md`
-- 裁决：`result/round23_2/FINAL_DECISION.md`
-- research_integrity_v2 sha256=`eb4ec8b6c170728fc8ea798093ba38e172c672326d23412252dab3215fd6b4ce`
+- 主报告：`result/round23_3/ROUND23_3_RESEARCH_REPORT.md`
+- 裁决：`result/round23_3/FINAL_DECISION.md`
+- research_integrity_v2 sha256=`17441147a3590e6359457651316a97ccede2533f57410d7e9f9e19581f95d6d3`
 

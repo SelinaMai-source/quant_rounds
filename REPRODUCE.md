@@ -1,4 +1,4 @@
-# Reproduce round23_2
+# Reproduce round23_3
 
 源审计起点见主仓库分支父提交。工作根：`/data1/stock-mxy/课题/一进二策略`
 
@@ -7,8 +7,8 @@
 - arch 可选；缺失则 SPA=BLOCKED_STAT_TEST
 
 ## 命令
-`python tools/run_round23_2.py --jobs 2 --resume`
-`python tools/run_round23_2.py --stage decision`
+`python tools/run_round23_3.py --jobs 2 --resume`
+`python tools/run_round23_3.py --stage decision`
 
 ## 已知阻断
 - 大型 parquet 仅以 MANIFEST 上传（server path + sha256）
