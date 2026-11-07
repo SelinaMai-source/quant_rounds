@@ -1,0 +1,71 @@
+{
+  "status": "ready",
+  "candidate": "R7_FS01122_DUAL90_10_CLEAN",
+  "five_head": {
+    "name": "five",
+    "panel_dir": "/home/mxy/Stock/data/first_board_hermes/aligned_original_candidate_full44_plus_d1_open_gap_v1",
+    "features": [
+      "g_prim_px_vol_corr",
+      "fb_close_seal_streak_norm",
+      "fb_last30_amount_ratio",
+      "h5_last_first_limit_value_change_sym",
+      "h1_consistent_buy_ratio",
+      "h1_last15m_volume_ratio",
+      "h4_large_net_to_turnover",
+      "h4_retail_net_to_turnover",
+      "g0_amount_log",
+      "g0_amt_vs_5",
+      "g1_ret_5",
+      "g3_days_since_limit",
+      "ind_seal_rate_excess",
+      "d1_open_gap"
+    ],
+    "target": "label_e2_net",
+    "label_end_column": "next2_date",
+    "rank_n_bins": 5,
+    "eval_metric": "ndcg@1"
+  },
+  "ten_head": {
+    "name": "ten",
+    "panel_dir": "/home/mxy/Stock/data/first_board_hermes/aligned_original_candidate_fs01122_chain_label_v1",
+    "features": [
+      "g_prim_px_vol_corr",
+      "fb_close_seal_streak_norm",
+      "fb_last30_amount_ratio",
+      "h5_last_first_limit_value_change_sym",
+      "h1_consistent_buy_ratio",
+      "h1_last15m_volume_ratio",
+      "h4_large_net_to_turnover",
+      "h4_retail_net_to_turnover",
+      "g0_amt_vs_5",
+      "g1_ret_5",
+      "g3_days_since_limit",
+      "ind_seal_rate_excess",
+      "d1_open_gap"
+    ],
+    "target": "label_exit_rule_net",
+    "label_end_column": "actual_exit_date",
+    "rank_n_bins": 10,
+    "eval_metric": "ndcg@2"
+  },
+  "model": {
+    "objective": "rank:ndcg",
+    "eval_metric": null,
+    "ndcg_exp_gain": true,
+    "n_estimators": 100,
+    "learning_rate": 0.05,
+    "max_depth": 2,
+    "min_child_weight": 1.0,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.0,
+    "tree_method": "hist",
+    "random_state": 17,
+    "n_jobs": 2
+  },
+  "baseline": "baseline_v3=R4_B05",
+  "baseline_mutation_allowed": false,
+  "legacy_anchor_runtime_dependency": false,
+  "written_at": "2026-09-28T06:31:19.432251+00:00"
+}

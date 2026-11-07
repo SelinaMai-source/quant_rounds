@@ -1,0 +1,1061 @@
+{
+  "status": "trained_oos",
+  "head": {
+    "name": "five",
+    "panel_dir": "/home/mxy/Stock/data/first_board_hermes/aligned_original_candidate_full44_plus_d1_open_gap_v1",
+    "features": [
+      "g_prim_px_vol_corr",
+      "fb_close_seal_streak_norm",
+      "fb_last30_amount_ratio",
+      "h5_last_first_limit_value_change_sym",
+      "h1_consistent_buy_ratio",
+      "h1_last15m_volume_ratio",
+      "h4_large_net_to_turnover",
+      "h4_retail_net_to_turnover",
+      "g0_amount_log",
+      "g0_amt_vs_5",
+      "g1_ret_5",
+      "g3_days_since_limit",
+      "ind_seal_rate_excess",
+      "d1_open_gap"
+    ],
+    "target": "label_e2_net",
+    "label_end_column": "next2_date",
+    "rank_n_bins": 5,
+    "eval_metric": "ndcg@1"
+  },
+  "walk_forward": "exact prior 3 calendar years train, next year predict",
+  "model": {
+    "objective": "rank:ndcg",
+    "eval_metric": "ndcg@1",
+    "ndcg_exp_gain": true,
+    "n_estimators": 100,
+    "learning_rate": 0.05,
+    "max_depth": 2,
+    "min_child_weight": 1.0,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.0,
+    "tree_method": "hist",
+    "random_state": 17,
+    "n_jobs": 2
+  },
+  "seeds": [
+    17,
+    42,
+    73,
+    101,
+    202
+  ],
+  "seed_rank_invariance": {
+    "passed": true,
+    "comparisons": [
+      {
+        "seed_index": 1,
+        "mismatch_rows": 0
+      },
+      {
+        "seed_index": 2,
+        "mismatch_rows": 0
+      },
+      {
+        "seed_index": 3,
+        "mismatch_rows": 0
+      },
+      {
+        "seed_index": 4,
+        "mismatch_rows": 0
+      }
+    ],
+    "rows": 45256
+  },
+  "rows": 45256,
+  "days": 2038,
+  "panel_manifest_sha256": "6caf979eba5f14938e9e6725d7b28ec1e1af167acfa79b97a5d261d4c182e131",
+  "prediction_sha256": "8518ae7f32582dd42d068b0a7ff004b4a9a74970217eb86d5259645665213901",
+  "feature_sha256": "a085bf9cbecfaaecfcadd18899737ed78b2bf32248949c20e552cf0bec697050",
+  "seed_reports": [
+    {
+      "seed": 17,
+      "rows": 45256,
+      "prediction_sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "folds": [
+        {
+          "predict_year": 2018,
+          "train_years": [
+            2015,
+            2017
+          ],
+          "train_rows_available": 11379,
+          "train_rows": 11379,
+          "train_days": 685,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3168,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 173,
+          "evaluation_rows": 2995,
+          "mean_daily_ndcg_at_1": 0.47565157750342935,
+          "top1_mean_target": -0.0031777056395742116
+        },
+        {
+          "predict_year": 2019,
+          "train_years": [
+            2016,
+            2018
+          ],
+          "train_rows_available": 8565,
+          "train_rows": 8565,
+          "train_days": 712,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4698,
+          "candidate_days": 244,
+          "label_missing_candidates_scored": 353,
+          "evaluation_rows": 4345,
+          "mean_daily_ndcg_at_1": 0.5380658436213992,
+          "top1_mean_target": 0.002973524089472598
+        },
+        {
+          "predict_year": 2020,
+          "train_years": [
+            2017,
+            2019
+          ],
+          "train_rows_available": 9531,
+          "train_rows": 9531,
+          "train_days": 719,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5848,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 398,
+          "evaluation_rows": 5450,
+          "mean_daily_ndcg_at_1": 0.5261707988980716,
+          "top1_mean_target": 0.006487756843437102
+        },
+        {
+          "predict_year": 2021,
+          "train_years": [
+            2018,
+            2020
+          ],
+          "train_rows_available": 12743,
+          "train_rows": 12743,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5736,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 235,
+          "evaluation_rows": 5501,
+          "mean_daily_ndcg_at_1": 0.5510973936899863,
+          "top1_mean_target": 0.005981343507585372
+        },
+        {
+          "predict_year": 2022,
+          "train_years": [
+            2019,
+            2021
+          ],
+          "train_rows_available": 15257,
+          "train_rows": 15257,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5579,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 321,
+          "evaluation_rows": 5258,
+          "mean_daily_ndcg_at_1": 0.5319444444444444,
+          "top1_mean_target": 0.0012320007480441577
+        },
+        {
+          "predict_year": 2023,
+          "train_years": [
+            2020,
+            2022
+          ],
+          "train_rows_available": 16180,
+          "train_rows": 16180,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4015,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 230,
+          "evaluation_rows": 3785,
+          "mean_daily_ndcg_at_1": 0.5268595041322314,
+          "top1_mean_target": -0.0012490411051525473
+        },
+        {
+          "predict_year": 2024,
+          "train_years": [
+            2021,
+            2023
+          ],
+          "train_rows_available": 14489,
+          "train_rows": 14489,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6784,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 856,
+          "evaluation_rows": 5928,
+          "mean_daily_ndcg_at_1": 0.5031120331950207,
+          "top1_mean_target": 0.00210434281104527
+        },
+        {
+          "predict_year": 2025,
+          "train_years": [
+            2022,
+            2024
+          ],
+          "train_rows_available": 14942,
+          "train_rows": 14942,
+          "train_days": 721,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6563,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 464,
+          "evaluation_rows": 6099,
+          "mean_daily_ndcg_at_1": 0.5030864197530864,
+          "top1_mean_target": 0.0026935952367795955
+        },
+        {
+          "predict_year": 2026,
+          "train_years": [
+            2023,
+            2025
+          ],
+          "train_rows_available": 15774,
+          "train_rows": 15774,
+          "train_days": 724,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3657,
+          "candidate_days": 117,
+          "label_missing_candidates_scored": 139,
+          "evaluation_rows": 3518,
+          "mean_daily_ndcg_at_1": 0.5085470085470085,
+          "top1_mean_target": 0.0028606991722796367
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "rows": 45256,
+      "prediction_sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "folds": [
+        {
+          "predict_year": 2018,
+          "train_years": [
+            2015,
+            2017
+          ],
+          "train_rows_available": 11379,
+          "train_rows": 11379,
+          "train_days": 685,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3168,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 173,
+          "evaluation_rows": 2995,
+          "mean_daily_ndcg_at_1": 0.47565157750342935,
+          "top1_mean_target": -0.0031777056395742116
+        },
+        {
+          "predict_year": 2019,
+          "train_years": [
+            2016,
+            2018
+          ],
+          "train_rows_available": 8565,
+          "train_rows": 8565,
+          "train_days": 712,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4698,
+          "candidate_days": 244,
+          "label_missing_candidates_scored": 353,
+          "evaluation_rows": 4345,
+          "mean_daily_ndcg_at_1": 0.5380658436213992,
+          "top1_mean_target": 0.002973524089472598
+        },
+        {
+          "predict_year": 2020,
+          "train_years": [
+            2017,
+            2019
+          ],
+          "train_rows_available": 9531,
+          "train_rows": 9531,
+          "train_days": 719,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5848,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 398,
+          "evaluation_rows": 5450,
+          "mean_daily_ndcg_at_1": 0.5261707988980716,
+          "top1_mean_target": 0.006487756843437102
+        },
+        {
+          "predict_year": 2021,
+          "train_years": [
+            2018,
+            2020
+          ],
+          "train_rows_available": 12743,
+          "train_rows": 12743,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5736,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 235,
+          "evaluation_rows": 5501,
+          "mean_daily_ndcg_at_1": 0.5510973936899863,
+          "top1_mean_target": 0.005981343507585372
+        },
+        {
+          "predict_year": 2022,
+          "train_years": [
+            2019,
+            2021
+          ],
+          "train_rows_available": 15257,
+          "train_rows": 15257,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5579,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 321,
+          "evaluation_rows": 5258,
+          "mean_daily_ndcg_at_1": 0.5319444444444444,
+          "top1_mean_target": 0.0012320007480441577
+        },
+        {
+          "predict_year": 2023,
+          "train_years": [
+            2020,
+            2022
+          ],
+          "train_rows_available": 16180,
+          "train_rows": 16180,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4015,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 230,
+          "evaluation_rows": 3785,
+          "mean_daily_ndcg_at_1": 0.5268595041322314,
+          "top1_mean_target": -0.0012490411051525473
+        },
+        {
+          "predict_year": 2024,
+          "train_years": [
+            2021,
+            2023
+          ],
+          "train_rows_available": 14489,
+          "train_rows": 14489,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6784,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 856,
+          "evaluation_rows": 5928,
+          "mean_daily_ndcg_at_1": 0.5031120331950207,
+          "top1_mean_target": 0.00210434281104527
+        },
+        {
+          "predict_year": 2025,
+          "train_years": [
+            2022,
+            2024
+          ],
+          "train_rows_available": 14942,
+          "train_rows": 14942,
+          "train_days": 721,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6563,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 464,
+          "evaluation_rows": 6099,
+          "mean_daily_ndcg_at_1": 0.5030864197530864,
+          "top1_mean_target": 0.0026935952367795955
+        },
+        {
+          "predict_year": 2026,
+          "train_years": [
+            2023,
+            2025
+          ],
+          "train_rows_available": 15774,
+          "train_rows": 15774,
+          "train_days": 724,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3657,
+          "candidate_days": 117,
+          "label_missing_candidates_scored": 139,
+          "evaluation_rows": 3518,
+          "mean_daily_ndcg_at_1": 0.5085470085470085,
+          "top1_mean_target": 0.0028606991722796367
+        }
+      ]
+    },
+    {
+      "seed": 73,
+      "rows": 45256,
+      "prediction_sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "folds": [
+        {
+          "predict_year": 2018,
+          "train_years": [
+            2015,
+            2017
+          ],
+          "train_rows_available": 11379,
+          "train_rows": 11379,
+          "train_days": 685,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3168,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 173,
+          "evaluation_rows": 2995,
+          "mean_daily_ndcg_at_1": 0.47565157750342935,
+          "top1_mean_target": -0.0031777056395742116
+        },
+        {
+          "predict_year": 2019,
+          "train_years": [
+            2016,
+            2018
+          ],
+          "train_rows_available": 8565,
+          "train_rows": 8565,
+          "train_days": 712,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4698,
+          "candidate_days": 244,
+          "label_missing_candidates_scored": 353,
+          "evaluation_rows": 4345,
+          "mean_daily_ndcg_at_1": 0.5380658436213992,
+          "top1_mean_target": 0.002973524089472598
+        },
+        {
+          "predict_year": 2020,
+          "train_years": [
+            2017,
+            2019
+          ],
+          "train_rows_available": 9531,
+          "train_rows": 9531,
+          "train_days": 719,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5848,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 398,
+          "evaluation_rows": 5450,
+          "mean_daily_ndcg_at_1": 0.5261707988980716,
+          "top1_mean_target": 0.006487756843437102
+        },
+        {
+          "predict_year": 2021,
+          "train_years": [
+            2018,
+            2020
+          ],
+          "train_rows_available": 12743,
+          "train_rows": 12743,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5736,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 235,
+          "evaluation_rows": 5501,
+          "mean_daily_ndcg_at_1": 0.5510973936899863,
+          "top1_mean_target": 0.005981343507585372
+        },
+        {
+          "predict_year": 2022,
+          "train_years": [
+            2019,
+            2021
+          ],
+          "train_rows_available": 15257,
+          "train_rows": 15257,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5579,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 321,
+          "evaluation_rows": 5258,
+          "mean_daily_ndcg_at_1": 0.5319444444444444,
+          "top1_mean_target": 0.0012320007480441577
+        },
+        {
+          "predict_year": 2023,
+          "train_years": [
+            2020,
+            2022
+          ],
+          "train_rows_available": 16180,
+          "train_rows": 16180,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4015,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 230,
+          "evaluation_rows": 3785,
+          "mean_daily_ndcg_at_1": 0.5268595041322314,
+          "top1_mean_target": -0.0012490411051525473
+        },
+        {
+          "predict_year": 2024,
+          "train_years": [
+            2021,
+            2023
+          ],
+          "train_rows_available": 14489,
+          "train_rows": 14489,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6784,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 856,
+          "evaluation_rows": 5928,
+          "mean_daily_ndcg_at_1": 0.5031120331950207,
+          "top1_mean_target": 0.00210434281104527
+        },
+        {
+          "predict_year": 2025,
+          "train_years": [
+            2022,
+            2024
+          ],
+          "train_rows_available": 14942,
+          "train_rows": 14942,
+          "train_days": 721,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6563,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 464,
+          "evaluation_rows": 6099,
+          "mean_daily_ndcg_at_1": 0.5030864197530864,
+          "top1_mean_target": 0.0026935952367795955
+        },
+        {
+          "predict_year": 2026,
+          "train_years": [
+            2023,
+            2025
+          ],
+          "train_rows_available": 15774,
+          "train_rows": 15774,
+          "train_days": 724,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3657,
+          "candidate_days": 117,
+          "label_missing_candidates_scored": 139,
+          "evaluation_rows": 3518,
+          "mean_daily_ndcg_at_1": 0.5085470085470085,
+          "top1_mean_target": 0.0028606991722796367
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "rows": 45256,
+      "prediction_sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "folds": [
+        {
+          "predict_year": 2018,
+          "train_years": [
+            2015,
+            2017
+          ],
+          "train_rows_available": 11379,
+          "train_rows": 11379,
+          "train_days": 685,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3168,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 173,
+          "evaluation_rows": 2995,
+          "mean_daily_ndcg_at_1": 0.47565157750342935,
+          "top1_mean_target": -0.0031777056395742116
+        },
+        {
+          "predict_year": 2019,
+          "train_years": [
+            2016,
+            2018
+          ],
+          "train_rows_available": 8565,
+          "train_rows": 8565,
+          "train_days": 712,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4698,
+          "candidate_days": 244,
+          "label_missing_candidates_scored": 353,
+          "evaluation_rows": 4345,
+          "mean_daily_ndcg_at_1": 0.5380658436213992,
+          "top1_mean_target": 0.002973524089472598
+        },
+        {
+          "predict_year": 2020,
+          "train_years": [
+            2017,
+            2019
+          ],
+          "train_rows_available": 9531,
+          "train_rows": 9531,
+          "train_days": 719,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5848,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 398,
+          "evaluation_rows": 5450,
+          "mean_daily_ndcg_at_1": 0.5261707988980716,
+          "top1_mean_target": 0.006487756843437102
+        },
+        {
+          "predict_year": 2021,
+          "train_years": [
+            2018,
+            2020
+          ],
+          "train_rows_available": 12743,
+          "train_rows": 12743,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5736,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 235,
+          "evaluation_rows": 5501,
+          "mean_daily_ndcg_at_1": 0.5510973936899863,
+          "top1_mean_target": 0.005981343507585372
+        },
+        {
+          "predict_year": 2022,
+          "train_years": [
+            2019,
+            2021
+          ],
+          "train_rows_available": 15257,
+          "train_rows": 15257,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5579,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 321,
+          "evaluation_rows": 5258,
+          "mean_daily_ndcg_at_1": 0.5319444444444444,
+          "top1_mean_target": 0.0012320007480441577
+        },
+        {
+          "predict_year": 2023,
+          "train_years": [
+            2020,
+            2022
+          ],
+          "train_rows_available": 16180,
+          "train_rows": 16180,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4015,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 230,
+          "evaluation_rows": 3785,
+          "mean_daily_ndcg_at_1": 0.5268595041322314,
+          "top1_mean_target": -0.0012490411051525473
+        },
+        {
+          "predict_year": 2024,
+          "train_years": [
+            2021,
+            2023
+          ],
+          "train_rows_available": 14489,
+          "train_rows": 14489,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6784,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 856,
+          "evaluation_rows": 5928,
+          "mean_daily_ndcg_at_1": 0.5031120331950207,
+          "top1_mean_target": 0.00210434281104527
+        },
+        {
+          "predict_year": 2025,
+          "train_years": [
+            2022,
+            2024
+          ],
+          "train_rows_available": 14942,
+          "train_rows": 14942,
+          "train_days": 721,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6563,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 464,
+          "evaluation_rows": 6099,
+          "mean_daily_ndcg_at_1": 0.5030864197530864,
+          "top1_mean_target": 0.0026935952367795955
+        },
+        {
+          "predict_year": 2026,
+          "train_years": [
+            2023,
+            2025
+          ],
+          "train_rows_available": 15774,
+          "train_rows": 15774,
+          "train_days": 724,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3657,
+          "candidate_days": 117,
+          "label_missing_candidates_scored": 139,
+          "evaluation_rows": 3518,
+          "mean_daily_ndcg_at_1": 0.5085470085470085,
+          "top1_mean_target": 0.0028606991722796367
+        }
+      ]
+    },
+    {
+      "seed": 202,
+      "rows": 45256,
+      "prediction_sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "folds": [
+        {
+          "predict_year": 2018,
+          "train_years": [
+            2015,
+            2017
+          ],
+          "train_rows_available": 11379,
+          "train_rows": 11379,
+          "train_days": 685,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3168,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 173,
+          "evaluation_rows": 2995,
+          "mean_daily_ndcg_at_1": 0.47565157750342935,
+          "top1_mean_target": -0.0031777056395742116
+        },
+        {
+          "predict_year": 2019,
+          "train_years": [
+            2016,
+            2018
+          ],
+          "train_rows_available": 8565,
+          "train_rows": 8565,
+          "train_days": 712,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4698,
+          "candidate_days": 244,
+          "label_missing_candidates_scored": 353,
+          "evaluation_rows": 4345,
+          "mean_daily_ndcg_at_1": 0.5380658436213992,
+          "top1_mean_target": 0.002973524089472598
+        },
+        {
+          "predict_year": 2020,
+          "train_years": [
+            2017,
+            2019
+          ],
+          "train_rows_available": 9531,
+          "train_rows": 9531,
+          "train_days": 719,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5848,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 398,
+          "evaluation_rows": 5450,
+          "mean_daily_ndcg_at_1": 0.5261707988980716,
+          "top1_mean_target": 0.006487756843437102
+        },
+        {
+          "predict_year": 2021,
+          "train_years": [
+            2018,
+            2020
+          ],
+          "train_rows_available": 12743,
+          "train_rows": 12743,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5736,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 235,
+          "evaluation_rows": 5501,
+          "mean_daily_ndcg_at_1": 0.5510973936899863,
+          "top1_mean_target": 0.005981343507585372
+        },
+        {
+          "predict_year": 2022,
+          "train_years": [
+            2019,
+            2021
+          ],
+          "train_rows_available": 15257,
+          "train_rows": 15257,
+          "train_days": 726,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 5579,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 321,
+          "evaluation_rows": 5258,
+          "mean_daily_ndcg_at_1": 0.5319444444444444,
+          "top1_mean_target": 0.0012320007480441577
+        },
+        {
+          "predict_year": 2023,
+          "train_years": [
+            2020,
+            2022
+          ],
+          "train_rows_available": 16180,
+          "train_rows": 16180,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 4015,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 230,
+          "evaluation_rows": 3785,
+          "mean_daily_ndcg_at_1": 0.5268595041322314,
+          "top1_mean_target": -0.0012490411051525473
+        },
+        {
+          "predict_year": 2024,
+          "train_years": [
+            2021,
+            2023
+          ],
+          "train_rows_available": 14489,
+          "train_rows": 14489,
+          "train_days": 723,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6784,
+          "candidate_days": 242,
+          "label_missing_candidates_scored": 856,
+          "evaluation_rows": 5928,
+          "mean_daily_ndcg_at_1": 0.5031120331950207,
+          "top1_mean_target": 0.00210434281104527
+        },
+        {
+          "predict_year": 2025,
+          "train_years": [
+            2022,
+            2024
+          ],
+          "train_rows_available": 14942,
+          "train_rows": 14942,
+          "train_days": 721,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 6563,
+          "candidate_days": 243,
+          "label_missing_candidates_scored": 464,
+          "evaluation_rows": 6099,
+          "mean_daily_ndcg_at_1": 0.5030864197530864,
+          "top1_mean_target": 0.0026935952367795955
+        },
+        {
+          "predict_year": 2026,
+          "train_years": [
+            2023,
+            2025
+          ],
+          "train_rows_available": 15774,
+          "train_rows": 15774,
+          "train_days": 724,
+          "validation_start": null,
+          "validation_rows": 0,
+          "validation_days": 0,
+          "best_iteration": null,
+          "best_score": null,
+          "candidate_rows_scored": 3657,
+          "candidate_days": 117,
+          "label_missing_candidates_scored": 139,
+          "evaluation_rows": 3518,
+          "mean_daily_ndcg_at_1": 0.5085470085470085,
+          "top1_mean_target": 0.0028606991722796367
+        }
+      ]
+    }
+  ],
+  "written_at": "2026-09-28T06:23:48.570125+00:00"
+}

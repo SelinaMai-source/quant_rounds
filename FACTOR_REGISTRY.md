@@ -1,0 +1,25 @@
+# baseline_v5 因子注册表
+
+共 **14** 列 Five / **13** 列 Ten（Ten = Five 去掉 `g0_amount_log`）。  
+特征顺序哈希：Five14=`be6c7cf6ff7f7f18bb22bd31340c4a6ca7aebc6dbf0d77c106872e1027128e27`；Ten13=`5627ba42ed47b38334b34c56d2b946fd5cc8f4e84fd745b7814df23d34382c34`。  
+缺失处理：**保留 NaN，训练折 complete-case；禁止 fillna(0)**。  
+信息车道：含 `d1_open_gap` → **`LEGACY_OPEN_INFORMATION_LANE`**（决策=D收盘；执行=D+1开盘；该列在 D+1 开盘才可得）。
+
+| 名称 | 头 | 公式/定义 | 回看 | available_at | 单位 | 缺失 | 来源 |
+|---|---|---|---|---|---|---|---|
+| `g_prim_px_vol_corr` | Five,Ten | D日分钟价与成交量相关系数（供应商分钟因子缓存） | 当日分钟序列 | D_close | corr[-1,1]预期 | NaN complete-case | 分钟因子缓存 / AmazingData |
+| `fb_close_seal_streak_norm` | Five,Ten | 从最后一根分钟向前连续收盘涨停根数 / 全日分钟数 | 当日分钟 | D_close | ratio[0,1] | NaN complete-case | 分钟+涨停价 |
+| `fb_last30_amount_ratio` | Five,Ten | sum(amount_{-30:}) / sum(amount_day) | 尾盘30分钟 | D_close | ratio | NaN complete-case | 分钟成交额 |
+| `h5_last_first_limit_value_change_sym` | Five,Ten | 末封单相对首封单的对称变化，压到[-1,1] | 当日涨停事件 | D_close | sym_change[-1,1] | NaN complete-case | daily_limit / 封单 |
+| `h1_consistent_buy_ratio` | Five,Ten | 供应商 PCV 映射：一致性买入占比 | 当日微观 | D_close | ratio | NaN complete-case | AmazingData L2 聚合 |
+| `h1_last15m_volume_ratio` | Five,Ten | 供应商 BCVP_15MIN：尾盘15分钟量占比 | 15分钟 | D_close | ratio | NaN complete-case | AmazingData L2 聚合 |
+| `h4_large_net_to_turnover` | Five,Ten | large_net_inflow / turnover_value | 当日 | D_close | ratio | NaN complete-case | 资金流 |
+| `h4_retail_net_to_turnover` | Five,Ten | retail_net_inflow / turnover_value | 当日 | D_close | ratio | NaN complete-case | 资金流 |
+| `g0_amount_log` | Five_only | log(1+max(amount)); amount<0→NaN | 当日 | D_close | log_CNY | NaN complete-case；禁止 fillna(0) | 日线成交额 |
+| `g0_amt_vs_5` | Five,Ten | amount_t / mean(amount_{t-1..t-5}); min_periods=5 | 5个交易日 | D_close | ratio | NaN complete-case | 日线成交额 |
+| `g1_ret_5` | Five,Ten | close_post_t / close_post_{t-5} - 1（后复权） | 5个该股交易日 | D_close | return | NaN complete-case | 后复权收盘 |
+| `g3_days_since_limit` | Five,Ten | 距上一收盘涨停的行数差；无历史填-1；v6曾+1修复 | 历史涨停 | D_close | days_or_-1 | 结构-1/NaN按面板 | 日线涨停事件 |
+| `ind_seal_rate_excess` | Five,Ten | 行业收盘封住率 − 全市场收盘封住率 | 当日截面 | D_close | rate_diff | NaN complete-case | 行业+涨停事件 |
+| `d1_open_gap` | Five,Ten | D+1开盘相对D收盘涨跌幅；(open_{D+1}/close_D)-1 | D+1开盘 | D+1_09:25/open — LEGACY_OPEN_INFORMATION_LANE | return | 非有限→剔除；融合层 gap_floor=-0.01 | 日线开收 |
+
+机器可读：`FACTOR_REGISTRY.csv`。权威叙述亦见 `docs/数据与策略详解.md` 第 8 章。

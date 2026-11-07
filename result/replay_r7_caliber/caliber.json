@@ -1,0 +1,30 @@
+{
+  "fee_schedule": "ROUND7_FLAT_5BP",
+  "engine": "local_executor → Stock run_fixed_dual_sleeve_top3_backtest",
+  "config_fn": "round7_fixed_sleeve_config",
+  "exit_mode": "close_from_d2",
+  "top_k": 2,
+  "rank_name_budget_nav_fractions": [
+    0.3,
+    0.1
+  ],
+  "name_budget": 10000.0,
+  "initial_cash": 300000.0,
+  "sleeve_count": 2,
+  "sleeve_cash": 150000.0,
+  "costs": {
+    "slippage_bps": 12.3,
+    "commission_bps": 1.0,
+    "transfer_fee_bps": 0.1,
+    "sell_tax_bps": 5.0
+  },
+  "historical_stamp_tax": false,
+  "cagr_daycount": 365.25,
+  "cagr_formula": "(final_asset / initial_cash) ** (1 / years) - 1; years=(last-first).days/365.25",
+  "sharpe_sqrt_days": 252,
+  "risk_free_rate": 0.0,
+  "metric_version": "r3_locked_window_v1",
+  "b03_in_round7_entry": false,
+  "validation_hooks": null,
+  "note": "与旧 R9 5bp flat 相同。HISTORICAL_FEE_CORRECTED（2023-08-28 前 10bp）不再是默认评价，除非用户明确要求。"
+}

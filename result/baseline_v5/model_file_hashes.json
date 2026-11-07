@@ -1,0 +1,545 @@
+{
+  "n": 90,
+  "files": [
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78343,
+      "sha256": "c89405e09dbc236e44b4c82428a8076bcd36288aae37f61578fc16e537d86023",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78490,
+      "sha256": "4311593c79b412dee5ecb2bb7ddd8ef992025e26df9d41663c64a9d28723641e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78447,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78245,
+      "sha256": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78190,
+      "sha256": "97848d4c54bd89e2268050101a1ef6cf51bcf44435fbea21d6e7d53dc2bbc9bb",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78323,
+      "sha256": "dc9fb14e6aef06d6dc7f4b13976537cddc1b740d6813af650f0d70462d4c5d8c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78388,
+      "sha256": "cf81e8675c883f878cfcff92e558c95d88389cc27d4da3faaab530de752c2a46",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78370,
+      "sha256": "cc3eed4421920a2c64a68ea927a877210cecf6db740b752f930dc507f423c75b",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78281,
+      "sha256": "7f2dd1d63ad6d05207ff5fb1c7240a53ac1dafc4aadaae18aefc0c436d986838",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78343,
+      "sha256": "c89405e09dbc236e44b4c82428a8076bcd36288aae37f61578fc16e537d86023",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78490,
+      "sha256": "4311593c79b412dee5ecb2bb7ddd8ef992025e26df9d41663c64a9d28723641e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78447,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78245,
+      "sha256": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78190,
+      "sha256": "97848d4c54bd89e2268050101a1ef6cf51bcf44435fbea21d6e7d53dc2bbc9bb",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78323,
+      "sha256": "dc9fb14e6aef06d6dc7f4b13976537cddc1b740d6813af650f0d70462d4c5d8c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78388,
+      "sha256": "cf81e8675c883f878cfcff92e558c95d88389cc27d4da3faaab530de752c2a46",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78370,
+      "sha256": "cc3eed4421920a2c64a68ea927a877210cecf6db740b752f930dc507f423c75b",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78281,
+      "sha256": "7f2dd1d63ad6d05207ff5fb1c7240a53ac1dafc4aadaae18aefc0c436d986838",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78343,
+      "sha256": "c89405e09dbc236e44b4c82428a8076bcd36288aae37f61578fc16e537d86023",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78490,
+      "sha256": "4311593c79b412dee5ecb2bb7ddd8ef992025e26df9d41663c64a9d28723641e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78447,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78245,
+      "sha256": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78190,
+      "sha256": "97848d4c54bd89e2268050101a1ef6cf51bcf44435fbea21d6e7d53dc2bbc9bb",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78323,
+      "sha256": "dc9fb14e6aef06d6dc7f4b13976537cddc1b740d6813af650f0d70462d4c5d8c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78388,
+      "sha256": "cf81e8675c883f878cfcff92e558c95d88389cc27d4da3faaab530de752c2a46",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78370,
+      "sha256": "cc3eed4421920a2c64a68ea927a877210cecf6db740b752f930dc507f423c75b",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78281,
+      "sha256": "7f2dd1d63ad6d05207ff5fb1c7240a53ac1dafc4aadaae18aefc0c436d986838",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78343,
+      "sha256": "c89405e09dbc236e44b4c82428a8076bcd36288aae37f61578fc16e537d86023",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78490,
+      "sha256": "4311593c79b412dee5ecb2bb7ddd8ef992025e26df9d41663c64a9d28723641e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78447,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78245,
+      "sha256": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78190,
+      "sha256": "97848d4c54bd89e2268050101a1ef6cf51bcf44435fbea21d6e7d53dc2bbc9bb",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78323,
+      "sha256": "dc9fb14e6aef06d6dc7f4b13976537cddc1b740d6813af650f0d70462d4c5d8c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78388,
+      "sha256": "cf81e8675c883f878cfcff92e558c95d88389cc27d4da3faaab530de752c2a46",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78370,
+      "sha256": "cc3eed4421920a2c64a68ea927a877210cecf6db740b752f930dc507f423c75b",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78281,
+      "sha256": "7f2dd1d63ad6d05207ff5fb1c7240a53ac1dafc4aadaae18aefc0c436d986838",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78343,
+      "sha256": "c89405e09dbc236e44b4c82428a8076bcd36288aae37f61578fc16e537d86023",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78490,
+      "sha256": "4311593c79b412dee5ecb2bb7ddd8ef992025e26df9d41663c64a9d28723641e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78447,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78245,
+      "sha256": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78190,
+      "sha256": "97848d4c54bd89e2268050101a1ef6cf51bcf44435fbea21d6e7d53dc2bbc9bb",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78323,
+      "sha256": "dc9fb14e6aef06d6dc7f4b13976537cddc1b740d6813af650f0d70462d4c5d8c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78388,
+      "sha256": "cf81e8675c883f878cfcff92e558c95d88389cc27d4da3faaab530de752c2a46",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78370,
+      "sha256": "cc3eed4421920a2c64a68ea927a877210cecf6db740b752f930dc507f423c75b",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78281,
+      "sha256": "7f2dd1d63ad6d05207ff5fb1c7240a53ac1dafc4aadaae18aefc0c436d986838",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78347,
+      "sha256": "b954bd8bcb447b15461bf385d6e6197adee72192853a36b08218579296900e7c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78271,
+      "sha256": "21a5e6c8be6bb554dbfba8ea993dd6968eafa0ddb71db7f004252b2a5dbc27c0",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78397,
+      "sha256": "dbec096f702e2046dfcab2fb203ae7e8231764117dfbdddf9805b52322985d79",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78381,
+      "sha256": "d7ccd0fd4848e2eaa6185f1ecbc5cacd83d6714e5b9f0165765561164b996a96",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78276,
+      "sha256": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78303,
+      "sha256": "010d6d5ca82a69d02b6ab78b1914d8d9de33c4db384a83dad16343a563c42e15",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78408,
+      "sha256": "2d8088499a511d2f26291b83f942bb6e0b50c3e9ab6748d92deaafe6ab3a8014",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78424,
+      "sha256": "14f33cb3197f17d448d20f64d144e575df1b447844549a744ed4b2871390ff1a",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78394,
+      "sha256": "df3cc8c7e0638502cc846fd3b46c35e602fb6cc3cd8a3dc650fb4cc0f2c861d5",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78347,
+      "sha256": "b954bd8bcb447b15461bf385d6e6197adee72192853a36b08218579296900e7c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78271,
+      "sha256": "21a5e6c8be6bb554dbfba8ea993dd6968eafa0ddb71db7f004252b2a5dbc27c0",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78397,
+      "sha256": "dbec096f702e2046dfcab2fb203ae7e8231764117dfbdddf9805b52322985d79",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78381,
+      "sha256": "d7ccd0fd4848e2eaa6185f1ecbc5cacd83d6714e5b9f0165765561164b996a96",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78276,
+      "sha256": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78303,
+      "sha256": "010d6d5ca82a69d02b6ab78b1914d8d9de33c4db384a83dad16343a563c42e15",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78408,
+      "sha256": "2d8088499a511d2f26291b83f942bb6e0b50c3e9ab6748d92deaafe6ab3a8014",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78424,
+      "sha256": "14f33cb3197f17d448d20f64d144e575df1b447844549a744ed4b2871390ff1a",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78394,
+      "sha256": "df3cc8c7e0638502cc846fd3b46c35e602fb6cc3cd8a3dc650fb4cc0f2c861d5",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78347,
+      "sha256": "b954bd8bcb447b15461bf385d6e6197adee72192853a36b08218579296900e7c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78271,
+      "sha256": "21a5e6c8be6bb554dbfba8ea993dd6968eafa0ddb71db7f004252b2a5dbc27c0",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78397,
+      "sha256": "dbec096f702e2046dfcab2fb203ae7e8231764117dfbdddf9805b52322985d79",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78381,
+      "sha256": "d7ccd0fd4848e2eaa6185f1ecbc5cacd83d6714e5b9f0165765561164b996a96",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78276,
+      "sha256": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78303,
+      "sha256": "010d6d5ca82a69d02b6ab78b1914d8d9de33c4db384a83dad16343a563c42e15",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78408,
+      "sha256": "2d8088499a511d2f26291b83f942bb6e0b50c3e9ab6748d92deaafe6ab3a8014",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78424,
+      "sha256": "14f33cb3197f17d448d20f64d144e575df1b447844549a744ed4b2871390ff1a",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78394,
+      "sha256": "df3cc8c7e0638502cc846fd3b46c35e602fb6cc3cd8a3dc650fb4cc0f2c861d5",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78347,
+      "sha256": "b954bd8bcb447b15461bf385d6e6197adee72192853a36b08218579296900e7c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78271,
+      "sha256": "21a5e6c8be6bb554dbfba8ea993dd6968eafa0ddb71db7f004252b2a5dbc27c0",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78397,
+      "sha256": "dbec096f702e2046dfcab2fb203ae7e8231764117dfbdddf9805b52322985d79",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78381,
+      "sha256": "d7ccd0fd4848e2eaa6185f1ecbc5cacd83d6714e5b9f0165765561164b996a96",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78276,
+      "sha256": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78303,
+      "sha256": "010d6d5ca82a69d02b6ab78b1914d8d9de33c4db384a83dad16343a563c42e15",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78408,
+      "sha256": "2d8088499a511d2f26291b83f942bb6e0b50c3e9ab6748d92deaafe6ab3a8014",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78424,
+      "sha256": "14f33cb3197f17d448d20f64d144e575df1b447844549a744ed4b2871390ff1a",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78394,
+      "sha256": "df3cc8c7e0638502cc846fd3b46c35e602fb6cc3cd8a3dc650fb4cc0f2c861d5",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/models/xgbranker_2023_2025_to_2026.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2015_2017_to_2018.json",
+      "bytes": 78347,
+      "sha256": "b954bd8bcb447b15461bf385d6e6197adee72192853a36b08218579296900e7c",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2015_2017_to_2018.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2016_2018_to_2019.json",
+      "bytes": 78271,
+      "sha256": "21a5e6c8be6bb554dbfba8ea993dd6968eafa0ddb71db7f004252b2a5dbc27c0",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2016_2018_to_2019.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2017_2019_to_2020.json",
+      "bytes": 78397,
+      "sha256": "dbec096f702e2046dfcab2fb203ae7e8231764117dfbdddf9805b52322985d79",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2017_2019_to_2020.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2018_2020_to_2021.json",
+      "bytes": 78381,
+      "sha256": "d7ccd0fd4848e2eaa6185f1ecbc5cacd83d6714e5b9f0165765561164b996a96",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2018_2020_to_2021.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2019_2021_to_2022.json",
+      "bytes": 78276,
+      "sha256": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2019_2021_to_2022.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2020_2022_to_2023.json",
+      "bytes": 78303,
+      "sha256": "010d6d5ca82a69d02b6ab78b1914d8d9de33c4db384a83dad16343a563c42e15",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2020_2022_to_2023.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2021_2023_to_2024.json",
+      "bytes": 78408,
+      "sha256": "2d8088499a511d2f26291b83f942bb6e0b50c3e9ab6748d92deaafe6ab3a8014",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2021_2023_to_2024.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2022_2024_to_2025.json",
+      "bytes": 78424,
+      "sha256": "14f33cb3197f17d448d20f64d144e575df1b447844549a744ed4b2871390ff1a",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2022_2024_to_2025.json"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/models/xgbranker_2023_2025_to_2026.json",
+      "bytes": 78394,
+      "sha256": "df3cc8c7e0638502cc846fd3b46c35e602fb6cc3cd8a3dc650fb4cc0f2c861d5",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/models/xgbranker_2023_2025_to_2026.json"
+    }
+  ]
+}

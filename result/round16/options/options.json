@@ -1,0 +1,83 @@
+{
+  "status": "DONE",
+  "results": {
+    "R16_O01": {
+      "cagr": 0.5361620306263046,
+      "sharpe": 1.8404039786206279,
+      "max_drawdown": -0.24792541309267202,
+      "completed_trades": 1107,
+      "total_return": 38.36541857398669,
+      "loyo_median": 0.4728785356395018,
+      "loyo_worst": 0.3333102258544358,
+      "yearly_returns": {
+        "2018": 0.37039974673399345,
+        "2019": 0.1009763027952133,
+        "2020": 0.32440515690764493,
+        "2021": 0.5953024615653948,
+        "2022": -0.07556886812182118,
+        "2023": 0.49928845262738974,
+        "2024": 2.359158240333082,
+        "2025": 1.4698914548387054,
+        "2026": 0.07388467567803714
+      },
+      "code": "R16_O01",
+      "status": "ran",
+      "out_dir": "/data1/stock-mxy/课题/一进二策略/result/round16/candidates/R16_O01",
+      "nav_path": "/data1/stock-mxy/课题/一进二策略/result/round16/candidates/R16_O01/nav.parquet",
+      "n_events": 332,
+      "skip": false
+    },
+    "R16_O02": {
+      "cagr": 0.4226222865722289,
+      "sharpe": 1.6150390057488562,
+      "max_drawdown": -0.23016546821089068,
+      "completed_trades": 1149,
+      "total_return": 19.408053038316517,
+      "loyo_median": 0.37197492287794154,
+      "loyo_worst": 0.28263744513715583,
+      "yearly_returns": {
+        "2018": 0.1618584112710575,
+        "2019": 0.05338680701523124,
+        "2020": 0.2491574263693419,
+        "2021": 0.5688767746166559,
+        "2022": -0.03442491251320112,
+        "2023": 0.489950961690677,
+        "2024": 1.3767737251068923,
+        "2025": 1.4259836168226077,
+        "2026": 0.02570094729707262
+      },
+      "code": "R16_O02",
+      "status": "ran",
+      "out_dir": "/data1/stock-mxy/课题/一进二策略/result/round16/candidates/R16_O02",
+      "nav_path": "/data1/stock-mxy/课题/一进二策略/result/round16/candidates/R16_O02/nav.parquet",
+      "n_events": 271,
+      "skip": false
+    },
+    "R16_O03": {
+      "code": "R16_O03",
+      "status": "INCONCLUSIVE_LOW_EVENT_COUNT",
+      "skip": true,
+      "cagr": null,
+      "sharpe": null,
+      "max_drawdown": null,
+      "n_events": 11
+    },
+    "R16_O04": {
+      "code": "R16_O04",
+      "status": "SKIP_O04",
+      "skip": true,
+      "cagr": null,
+      "sharpe": null,
+      "max_drawdown": null,
+      "reason": "no_cross_sectional_option_exposure_differentiation_on_same_day_universe"
+    }
+  },
+  "treat_dates": {
+    "R16_O01": 332,
+    "R16_O02": 271,
+    "R16_O03": 11
+  },
+  "engine": "run_r15_backtest+HISTORICAL_FEE_CORRECTED+B03",
+  "toy_nav": false,
+  "no_O05": true
+}

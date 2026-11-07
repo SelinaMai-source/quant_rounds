@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "runtime_dependency_on_legacy_anchor": false,
+  "evidence_role": "consumed_historical_development_recomputed_cleanly",
+  "decision_clock": "D close market context plus D+1 09:25 auction context",
+  "same_open_fill_execution_risk": true,
+  "input_rows": 38003,
+  "output_rows": 28607,
+  "output_days": 1238,
+  "rules": {
+    "development_period": [
+      "2018-01-01",
+      "2021-12-31"
+    ],
+    "style_low_quantile": 0.2,
+    "style_low_threshold": 0.32333333333333336,
+    "auction_high_quantile": 0.8,
+    "auction_high_threshold": 0.5993333333333334,
+    "breadth_min": 0.45,
+    "weak_style_multiplier": 0.75,
+    "auction_rescue_multiplier": 0.25,
+    "up_weak_multiplier": 0.5,
+    "active_days": 1238,
+    "all_days": 2035,
+    "multiplier_counts": {
+      "0.0": 797,
+      "0.25": 190,
+      "0.375": 74,
+      "0.5": 259,
+      "0.75": 151,
+      "1.0": 564
+    }
+  },
+  "source_sha256": "da06334c5113afc3c9671e477b25e07540ac89625902da6c79b135ec01860f4e",
+  "candidate_panel_sha256": "e3087779cdfb25549f267a49e1ba20fa9ea3ac5dc47a1ef5267a063277d233b3",
+  "market_context_sha256": "bf1010d8bbfbbfb575002c571b31608982ceef4ba0a3844c9bd5b2e6d67bea9c",
+  "output_sha256": "5313ddea618ad66da5d622e1820153a6adf50e9568be962bc460ca979cdf88bf",
+  "daily_state_sha256": "1a520e55f0eb169ba2fb339e92f2e06145268bbf5545d6d15c7faf368ecd704c",
+  "written_at": "2026-09-28T06:25:09.547812+00:00"
+}

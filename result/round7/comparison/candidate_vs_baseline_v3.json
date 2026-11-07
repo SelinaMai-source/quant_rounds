@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "candidate": "R7_FS01122_DUAL90_10_CLEAN",
+  "baseline": "baseline_v3=R4_B05",
+  "candidate_metrics": {
+    "total_return": 25.979409141148523,
+    "annualized_return": 0.46980280179436673,
+    "max_drawdown": -0.25415996098636673,
+    "sharpe_zero_rate": 1.6684780129023091,
+    "completed_trades": 2158,
+    "trade_win_rate": 0.4453197405004634,
+    "yearly_returns": {
+      "2018": 0.22059979866132418,
+      "2019": 0.08347882949948504,
+      "2020": 0.3122522296135384,
+      "2021": 0.7827214979039141,
+      "2022": -0.09547850241465572,
+      "2023": 0.7027076267970718,
+      "2024": 2.0771691841104,
+      "2025": 0.7646044617147196,
+      "2026": 0.04274992503027497
+    }
+  },
+  "baseline_metrics": {
+    "total_return": 5.238262710923988,
+    "annualized_return": 0.2385884921012511,
+    "max_drawdown": -0.14280601270603477,
+    "sharpe_zero_rate": 1.454286632400634,
+    "completed_trades": 877,
+    "trade_win_rate": 0.4789053591790194,
+    "yearly_returns": {
+      "2018": 0.0037804683465663125,
+      "2019": 0.14379852807406368,
+      "2020": 0.19413792455017265,
+      "2021": 0.09338038756330014,
+      "2022": 0.12498996310811084,
+      "2023": 0.2793981292028842,
+      "2024": 0.7509776470407385,
+      "2025": 0.47410466206803026,
+      "2026": 0.12017618268250141
+    }
+  },
+  "delta_candidate_minus_baseline": {
+    "total_return": 20.741146430224536,
+    "annualized_return": 0.23121430969311563,
+    "max_drawdown": -0.11135394828033196,
+    "sharpe_zero_rate": 0.21419138050167508,
+    "completed_trades": 1281.0,
+    "trade_win_rate": -0.03358561867855597
+  },
+  "historical_reference_non_binding": {
+    "total_return": 24.87723674,
+    "max_drawdown": -0.25425,
+    "completed_trades": 2158,
+    "label": "legacy anchor-replay result; non-binding reference"
+  },
+  "legacy_difference_attribution": {
+    "status": "complete",
+    "role": "post-run diagnostic only; legacy artifacts were not inputs to training, fusion, risk, or backtest",
+    "selection_audit": {
+      "five": {
+        "new_rows": 45256,
+        "legacy_rows": 46048,
+        "common_days": 2038,
+        "ordered_top2_equal_days": 2038,
+        "ordered_top2_equal_rate": 1.0
+      },
+      "ten": {
+        "new_rows": 45256,
+        "legacy_rows": 46048,
+        "common_days": 2038,
+        "ordered_top2_equal_days": 2038,
+        "ordered_top2_equal_rate": 1.0
+      },
+      "blend": {
+        "new_rows": 38003,
+        "legacy_rows": 38658,
+        "common_days": 2035,
+        "ordered_top2_equal_days": 2035,
+        "ordered_top2_equal_rate": 1.0
+      },
+      "risk": {
+        "new_rows": 28607,
+        "legacy_rows": 29144,
+        "common_days": 1238,
+        "ordered_top2_equal_days": 1238,
+        "ordered_top2_equal_rate": 1.0
+      }
+    },
+    "risk_common_key_multiplier_mismatches": 1101,
+    "thresholds": {
+      "clean_style_low": 0.32333333333333336,
+      "legacy_style_low": 0.33940000000000003,
+      "clean_auction_high": 0.5993333333333334,
+      "legacy_auction_high": 0.5993333333333334
+    },
+    "trade_key_counts": {
+      "both": 2158,
+      "left_only": 0,
+      "right_only": 0
+    },
+    "trade_multiplier_mismatches": 82,
+    "attribution": "Common-date Top2 selections are identical through both heads and the 90/10 blend. The return difference is caused by clean recalibration of daily risk allocations; changed sizing then compounds into different quantities and NAV.",
+    "written_at": "2026-09-28T06:30:53.136946+00:00"
+  },
+  "baseline_promoted": false,
+  "written_at": "2026-09-28T06:31:20.584911+00:00"
+}

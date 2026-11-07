@@ -1,0 +1,89 @@
+{
+  "n": 14,
+  "files": [
+    {
+      "relative_path": "result/round7/models/five/predictions.parquet",
+      "bytes": 168612,
+      "sha256": "8518ae7f32582dd42d068b0a7ff004b4a9a74970217eb86d5259645665213901",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed101/predictions.parquet",
+      "bytes": 380682,
+      "sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed101/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed17/predictions.parquet",
+      "bytes": 380682,
+      "sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed17/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed202/predictions.parquet",
+      "bytes": 380682,
+      "sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed202/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed42/predictions.parquet",
+      "bytes": 380682,
+      "sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed42/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/five/seed73/predictions.parquet",
+      "bytes": 380682,
+      "sha256": "6b78f521b1509ee37f0276b24fe2c9d8e33f782196b9014753f62246ee58f469",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/five/seed73/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/ten/predictions.parquet",
+      "bytes": 170842,
+      "sha256": "19416b410c58458c123ac7a11da3a734ff20d24d2504a8e24460503a2fc1c97b",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed101/predictions.parquet",
+      "bytes": 374591,
+      "sha256": "1eba9667e9c91060e29a1209149e621a0099525953370ae8492abc001033d841",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed101/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed17/predictions.parquet",
+      "bytes": 374591,
+      "sha256": "1eba9667e9c91060e29a1209149e621a0099525953370ae8492abc001033d841",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed17/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed202/predictions.parquet",
+      "bytes": 374591,
+      "sha256": "1eba9667e9c91060e29a1209149e621a0099525953370ae8492abc001033d841",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed202/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed42/predictions.parquet",
+      "bytes": 374591,
+      "sha256": "1eba9667e9c91060e29a1209149e621a0099525953370ae8492abc001033d841",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed42/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/models/ten/seed73/predictions.parquet",
+      "bytes": 374591,
+      "sha256": "1eba9667e9c91060e29a1209149e621a0099525953370ae8492abc001033d841",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/models/ten/seed73/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/predictions/clean_risk/predictions.parquet",
+      "bytes": 202920,
+      "sha256": "5313ddea618ad66da5d622e1820153a6adf50e9568be962bc460ca979cdf88bf",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/predictions/clean_risk/predictions.parquet"
+    },
+    {
+      "relative_path": "result/round7/predictions/dual90_10_gap_floor/predictions.parquet",
+      "bytes": 240602,
+      "sha256": "da06334c5113afc3c9671e477b25e07540ac89625902da6c79b135ec01860f4e",
+      "server_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round7/predictions/dual90_10_gap_floor/predictions.parquet"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "cagr": 0.5499812832273525,
+  "cagr_calendar_365_25": 0.5499812832273525,
+  "cagr_of_252": 0.5767445498514736,
+  "sharpe": 1.8756627913361097,
+  "max_drawdown": -0.24056327715394388,
+  "completed_trades": 1107,
+  "n_trading_observations": 2075,
+  "n_obs": 2075,
+  "n_nav_rows": 2076,
+  "total_return": 41.50029785241563,
+  "yearly_returns": {
+    "2018": 0.38463940409582253,
+    "2019": 0.11444672040054482,
+    "2020": 0.35444299783283406,
+    "2021": 0.6198409168432124,
+    "2022": -0.06551933499938356,
+    "2023": 0.5091216072612235,
+    "2024": 2.355684557967081,
+    "2025": 1.4706428306695094,
+    "2026": 0.07368584258455546
+  },
+  "nav_end": 12750089.355724689,
+  "fee_schedule": "ROUND7_FLAT_5BP",
+  "sell_tax_bps": 5.0,
+  "initial_cash": 300000.0,
+  "rank_name_budget_nav_fractions": [
+    0.3,
+    0.1
+  ],
+  "out_dir": "/data1/stock-mxy/课题/一进二策略/result/round22_3/parity/R223_V5_R16_O01",
+  "nav_path": "/data1/stock-mxy/课题/一进二策略/result/round22_3/parity/R223_V5_R16_O01/nav.parquet",
+  "trades_path": "/data1/stock-mxy/课题/一进二策略/result/round22_3/parity/R223_V5_R16_O01/trades.parquet",
+  "report_path": "/data1/stock-mxy/课题/一进二策略/result/round22_3/parity/R223_V5_R16_O01/report.json",
+  "validation_hooks": null,
+  "code": "baseline_v5",
+  "alias": "R16_O01",
+  "n_signal_dates": 332,
+  "formula": "PUT_SKEW25.shift(1) > rolling(252, min_periods=126).quantile(0.90) → apply_top2_veto rank=2 MIN_KEEP"
+}

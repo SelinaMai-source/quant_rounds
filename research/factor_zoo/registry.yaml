@@ -1,0 +1,184 @@
+# Round21 Factor Zoo（由真实产物落盘，不是假设桩）
+round: 21
+values_constructed: true
+n_factors: 24
+n_rejected: 18
+n_trials: 93
+decision: KEEP_BASELINE_V5
+auto_promote: false
+factory_steps:
+  - FactorDefinition
+  - DataAudit
+  - PIT
+  - IC
+  - Rolling
+  - Shape
+  - TopTail
+  - Redundancy
+  - ConditionalIC
+  - Combination
+  - ModelIncrementality
+  - PortfolioEvidence
+  - PromotionGate
+factors:
+- factor_id: r21_a1_vw_limit_gap
+  family: A
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_a2_minutes_to_reseal
+  family: A
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_a3_retouch_count
+  family: A
+  pit_status: PIT_PASS
+  redundancy_action: KEEP
+  zoo_status: FAIL
+  promotion_status: FAIL
+- factor_id: r21_a4_tail_seal_share
+  family: A
+  pit_status: PIT_PASS
+  redundancy_action: KEEP
+  zoo_status: FAIL
+  promotion_status: FAIL
+- factor_id: r21_b1_fb_amount_share
+  family: B
+  pit_status: PIT_PASS
+  redundancy_action: KEEP
+  zoo_status: FAIL
+  promotion_status: FAIL
+- factor_id: r21_b2_seal_rel_strength
+  family: B
+  pit_status: PIT_PASS
+  redundancy_action: KEEP
+  zoo_status: FAIL
+  promotion_status: FAIL
+- factor_id: r21_b3_amt_surprise_vs_peer
+  family: B
+  pit_status: PIT_PASS
+  redundancy_action: KEEP
+  zoo_status: FAIL
+  promotion_status: FAIL
+- factor_id: r21_b4_activity_x_resilience
+  family: B
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_c1_min1_amihud
+  family: C
+  pit_status: PIT_PASS
+  redundancy_action: DROP_REDUNDANT
+  zoo_status: FAIL
+  promotion_status: FAIL
+- factor_id: r21_c2_post_touch_amt_vs_impact
+  family: C
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_c3_post_touch_path_eff
+  family: C
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_c4_downside_quad_var
+  family: C
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_d1_log_holder_ratio
+  family: D
+  pit_status: PIT_PASS
+  redundancy_action: DROP_WEAK
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_d2_holder_daily_chg
+  family: D
+  pit_status: PIT_PASS
+  redundancy_action: DROP_WEAK
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_d3_holder_per_circ
+  family: D
+  pit_status: PIT_PASS
+  redundancy_action: DROP_WEAK
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_d4_holder_x_float
+  family: D
+  pit_status: PIT_PASS
+  redundancy_action: KEEP
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_e1_block_discount
+  family: E
+  pit_status: BLOCKED_PIT
+  redundancy_action: DROP_BLOCKED_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_e2_block_vol20_to_circ
+  family: E
+  pit_status: BLOCKED_PIT
+  redundancy_action: DROP_BLOCKED_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_e3_discount_wtd_pressure
+  family: E
+  pit_status: BLOCKED_PIT
+  redundancy_action: DROP_BLOCKED_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_e4_block_event_intensity_60
+  family: E
+  pit_status: BLOCKED_PIT
+  redundancy_action: DROP_BLOCKED_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_f1_fin_bal_chg
+  family: F
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_f2_fin_repay_pressure
+  family: F
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_f3_fin_buy_intensity
+  family: F
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+- factor_id: r21_f4_fin_bal_accel
+  family: F
+  pit_status: PIT_FAIL_COVERAGE
+  redundancy_action: DROP_PIT
+  zoo_status: SKIPPED
+  promotion_status: SKIPPED
+# round 21.4 n=17 rejected=0 decision=KEEP_BASELINE_V5
+# round 21.4 n=17 rejected=0 decision=KEEP_BASELINE_V5
+# round 22 n=32 rejected=21 decision=KEEP_BASELINE_V5
+# round 22 n=32 rejected=21 decision=KEEP_BASELINE_V5
+# round 22.1 n=32 decision=KEEP_BASELINE_V5
+# round 22.1 n=32 decision=KEEP_BASELINE_V5
+# round 22.1 n=32 decision=KEEP_BASELINE_V5
+# round 22.1 n=32 decision=KEEP_BASELINE_V5
+# round 22.2 n=7 decision=KEEP_BASELINE_V5
+# round 22.2 n=7 decision=KEEP_BASELINE_V5
+# round 22.2 n=7 decision=KEEP_BASELINE_V5
+# round 22.2 n=7 decision=KEEP_BASELINE_V5
+# round 22.3 n=5 decision=KEEP_BASELINE_V5
+# round 22.3 n=5 decision=KEEP_BASELINE_V5
+# round 22.3 n=5 decision=KEEP_BASELINE_V5
+
+# round 22.4-24 sidecar round22_24_evidence.csv decision follows each round report

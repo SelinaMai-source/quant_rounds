@@ -1,0 +1,25 @@
+family,factor_id,short,formula
+A,r21_a1_vw_limit_gap,量加权利差,"sum((limit_px - close_m) * amount_m | bar_sec >= touch_sec, close_m < limit_px) / sum(amount_m | bar_sec >= touch_sec, close_m < limit_px, amount_m > 0)"
+A,r21_a2_minutes_to_reseal,恢复分钟数,"(min(bar_sec | bar_sec >= touch_sec, close_m >= limit_px, bar_sec > first_leave_sec) - touch_sec) / 60"
+A,r21_a3_retouch_count,再触板次数,count(upcross_i) where upcross = (high_m[t] >= limit_px) & (close_m[t-1] < limit_px) & (bar_sec > touch_sec)
+A,r21_a4_tail_seal_share,末端封板占比,mean(I(close_m >= limit_px) | bar_sec >= 14:30 Asia/Shanghai)
+B,r21_b1_fb_amount_share,金额份额,amount_i / sum(amount_j | j in same-day first-board candidate pool)
+B,r21_b2_seal_rel_strength,封板相对强度,close_limit_value_i / median(close_limit_value_j | j in same-day first-board pool)
+B,r21_b3_amt_surprise_vs_peer,成交惊喜−peer,"(amount_i / mean(amount_i, 5d, min_periods=3)) - median(amount_j / mean(amount_j, 5d, min_periods=3) | j in same-day first-board pool)"
+B,r21_b4_activity_x_resilience,活跃×韧性交互,r21_b1_fb_amount_share * (1 / (1 + r21_a2_minutes_to_reseal))
+C,r21_c1_min1_amihud,分钟 Amihud,"mean(|close_m/open_m - 1| / amount_m | bar_sec >= touch_sec, amount_m > 0, open_m > 0)"
+C,r21_c2_post_touch_amt_vs_impact,触板后量vs冲击,"sum(amount_m | bar_sec >= touch_sec) / max(max(high_m)-min(low_m), tick) | bar_sec >= touch_sec"
+C,r21_c3_post_touch_path_eff,路径效率,abs(close_last_after_touch - close_at_touch) / sum(|close_m[t]-close_m[t-1]| | bar_sec >= touch_sec)
+C,r21_c4_downside_quad_var,下行二次变差,"sum(min(close_m[t]-close_m[t-1], 0)^2 | bar_sec >= touch_sec) / sum((close_m[t]-close_m[t-1])^2 | bar_sec >= touch_sec)"
+D,r21_d1_log_holder_ratio,log 户数比,log(HOLDER_NUM_t / HOLDER_NUM_{t-1})  where t ordered by ANN_DT per MARKET_CODE
+D,r21_d2_holder_daily_chg,日均变化,"(HOLDER_NUM_t - HOLDER_NUM_{t-1}) / max(calendar_days(ANN_DT_{t-1}, ANN_DT_t), 1)"
+D,r21_d3_holder_per_circ,户数/流通,HOLDER_NUM / circulating_shares  as-of asof_date=next_trading_day(ANN_DT)
+D,r21_d4_holder_x_float,户数×流通交互,log1p(HOLDER_NUM) * log1p(free_float_shares)
+E,r21_e1_block_discount,折价,1 - B_SHARE_PRICE / close_raw  on TRADE_DATE
+E,r21_e2_block_vol20_to_circ,20 日量/流通,"sum(B_SHARE_VOLUME, 20 trading days ending TRADE_DATE) / circulating_shares"
+E,r21_e3_discount_wtd_pressure,折价加权压力,"sum((1 - B_SHARE_PRICE/close_raw) * B_SHARE_AMOUNT, 20 trading days) / circulating_market_cap"
+E,r21_e4_block_event_intensity_60,60 日事件强度,"sum(B_FREQUENCY, 60 trading days ending TRADE_DATE)"
+F,r21_f1_fin_bal_chg,余额变化,financing_balance[available_at] / financing_balance[prev available_at] - 1
+F,r21_f2_fin_repay_pressure,还款压力,financing_repayment_value / financing_balance.shift(1)  aligned on available_at
+F,r21_f3_fin_buy_intensity,买入强度,financing_buy_value / amount  with margin.available_at ≤ decision_date
+F,r21_f4_fin_bal_accel,加速度,r21_f1_fin_bal_chg - r21_f1_fin_bal_chg.shift(1)  aligned on available_at

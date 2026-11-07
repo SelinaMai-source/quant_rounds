@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "ordering": [
+    "five-seed rank ensemble per head",
+    "finite d1_open_gap >= -0.01",
+    "per-head same-day percentile rerank",
+    "0.90 ten-bin + 0.10 five-bin",
+    "instrument_id ascending stable tie break"
+  ],
+  "gap_floor": -0.01,
+  "ten_weight": 0.9,
+  "input_rows": 45256,
+  "filtered_rows": 7253,
+  "output_rows": 38003,
+  "output_days": 2035,
+  "five_sha256": "8518ae7f32582dd42d068b0a7ff004b4a9a74970217eb86d5259645665213901",
+  "ten_sha256": "19416b410c58458c123ac7a11da3a734ff20d24d2504a8e24460503a2fc1c97b",
+  "candidate_panel_sha256": "e3087779cdfb25549f267a49e1ba20fa9ea3ac5dc47a1ef5267a063277d233b3",
+  "output_sha256": "da06334c5113afc3c9671e477b25e07540ac89625902da6c79b135ec01860f4e",
+  "written_at": "2026-09-28T06:25:06.872138+00:00"
+}

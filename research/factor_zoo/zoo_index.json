@@ -1,0 +1,48 @@
+{
+  "round": 21,
+  "root": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo",
+  "files": {
+    "registry_parquet": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/registry.parquet",
+    "registry_csv": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/registry.csv",
+    "families_csv": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/families.csv",
+    "lineage_parquet": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/lineage.parquet",
+    "lineage_csv": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/lineage.csv",
+    "similarity_csv": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/similarity.csv",
+    "evidence_parquet": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/evidence.parquet",
+    "evidence_csv": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/evidence.csv",
+    "rejected_archive_csv": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/rejected_archive.csv",
+    "trial_registry_csv": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/trial_registry.csv",
+    "registry_yaml": "/data1/stock-mxy/课题/一进二策略/research/factor_zoo/registry.yaml"
+  },
+  "n_registry": 24,
+  "n_rejected": 18,
+  "n_trials": 93,
+  "decision": "KEEP_BASELINE_V5",
+  "pit_pass": [
+    "r21_a3_retouch_count",
+    "r21_a4_tail_seal_share",
+    "r21_b1_fb_amount_share",
+    "r21_b2_seal_rel_strength",
+    "r21_b3_amt_surprise_vs_peer",
+    "r21_c1_min1_amihud",
+    "r21_d1_log_holder_ratio",
+    "r21_d2_holder_daily_chg",
+    "r21_d3_holder_per_circ",
+    "r21_d4_holder_x_float"
+  ],
+  "blocked_pit": [
+    "r21_e1_block_discount",
+    "r21_e2_block_vol20_to_circ",
+    "r21_e3_discount_wtd_pressure",
+    "r21_e4_block_event_intensity_60"
+  ],
+  "combo_selected": [
+    "r21_a3_retouch_count",
+    "r21_b1_fb_amount_share",
+    "r21_b2_seal_rel_strength",
+    "r21_b3_amt_surprise_vs_peer",
+    "r21_a4_tail_seal_share"
+  ],
+  "combo_sha256": "a0d69d33e57c8aabd7914681c7fc63064cdeca5b048eec6890dc56dce7953751",
+  "n_combo_registry": 28
+}

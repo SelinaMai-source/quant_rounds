@@ -1,0 +1,43 @@
+{
+  "status": "candidate_pass",
+  "candidate": "R7_FS01122_DUAL90_10_CLEAN",
+  "technical_acceptance": {
+    "max_live_sleeves_lte_2": true,
+    "no_negative_sleeve_cash": true,
+    "asset_identity": true,
+    "all_positions_exited": true,
+    "label_reconciliation": true
+  },
+  "performance": {
+    "total_return": 25.979409141148523,
+    "annualized_return": 0.46980280179436673,
+    "max_drawdown": -0.25415996098636673,
+    "sharpe_zero_rate": 1.6684780129023091,
+    "completed_trades": 2158,
+    "trade_win_rate": 0.4453197405004634,
+    "yearly_returns": {
+      "2018": 0.22059979866132418,
+      "2019": 0.08347882949948504,
+      "2020": 0.3122522296135384,
+      "2021": 0.7827214979039141,
+      "2022": -0.09547850241465572,
+      "2023": 0.7027076267970718,
+      "2024": 2.0771691841104,
+      "2025": 0.7646044617147196,
+      "2026": 0.04274992503027497
+    }
+  },
+  "delta_vs_baseline_v3": {
+    "total_return": 20.741146430224536,
+    "annualized_return": 0.23121430969311563,
+    "max_drawdown": -0.11135394828033196,
+    "sharpe_zero_rate": 0.21419138050167508,
+    "completed_trades": 1281.0,
+    "trade_win_rate": -0.03358561867855597
+  },
+  "baseline_v3_unchanged": true,
+  "baseline_v4_created": false,
+  "evidence_role": "consumed_historical_development; not final independent OOS",
+  "execution_warning": "d1_open_gap is known at 09:25 while the research fill uses the same daily open; results are not represented as directly executable live performance",
+  "written_at": "2026-09-28T06:31:20.585614+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "role": "post-run diagnostic only; legacy artifacts were not inputs to training, fusion, risk, or backtest",
+  "selection_audit": {
+    "five": {
+      "new_rows": 45256,
+      "legacy_rows": 46048,
+      "common_days": 2038,
+      "ordered_top2_equal_days": 2038,
+      "ordered_top2_equal_rate": 1.0
+    },
+    "ten": {
+      "new_rows": 45256,
+      "legacy_rows": 46048,
+      "common_days": 2038,
+      "ordered_top2_equal_days": 2038,
+      "ordered_top2_equal_rate": 1.0
+    },
+    "blend": {
+      "new_rows": 38003,
+      "legacy_rows": 38658,
+      "common_days": 2035,
+      "ordered_top2_equal_days": 2035,
+      "ordered_top2_equal_rate": 1.0
+    },
+    "risk": {
+      "new_rows": 28607,
+      "legacy_rows": 29144,
+      "common_days": 1238,
+      "ordered_top2_equal_days": 1238,
+      "ordered_top2_equal_rate": 1.0
+    }
+  },
+  "risk_common_key_multiplier_mismatches": 1101,
+  "thresholds": {
+    "clean_style_low": 0.32333333333333336,
+    "legacy_style_low": 0.33940000000000003,
+    "clean_auction_high": 0.5993333333333334,
+    "legacy_auction_high": 0.5993333333333334
+  },
+  "trade_key_counts": {
+    "both": 2158,
+    "left_only": 0,
+    "right_only": 0
+  },
+  "trade_multiplier_mismatches": 82,
+  "attribution": "Common-date Top2 selections are identical through both heads and the 90/10 blend. The return difference is caused by clean recalibration of daily risk allocations; changed sizing then compounds into different quantities and NAV.",
+  "written_at": "2026-09-28T06:30:53.136946+00:00"
+}

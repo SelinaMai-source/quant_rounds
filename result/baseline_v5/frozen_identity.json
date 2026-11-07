@@ -1,0 +1,27 @@
+{
+  "identity": "baseline_v5",
+  "alias": "R16_O01",
+  "parent": "R9_B03",
+  "window_start": "2018-01-02",
+  "window_end": "2026-07-24",
+  "initial_capital": 300000.0,
+  "sharpe": 1.8756627913361097,
+  "cagr": 0.5499812832273525,
+  "max_drawdown": -0.24056327715394388,
+  "nav_end": 12750089.355724689,
+  "completed_trades": 1107,
+  "n_obs": 2075,
+  "fee_schedule": "ROUND7_FLAT_5BP",
+  "fee_components": {
+    "slippage_bps": 12.3,
+    "commission_bps": 1.0,
+    "transfer_fee_bps": 0.1,
+    "sell_tax_bps": 5.0
+  },
+  "fusion": {
+    "ten": 0.9,
+    "five": 0.1
+  },
+  "information_lane": "LEGACY_OPEN_INFORMATION_LANE",
+  "o01_formula": "PUT_SKEW25.shift(1) > rolling(252, min_periods=126).quantile(0.90) → apply_top2_veto rank=2 MIN_KEEP"
+}
