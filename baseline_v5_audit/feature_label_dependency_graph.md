@@ -15,7 +15,7 @@ factor caches / single_model assets
                      fuse 90/10 (+ d1_open_gap filter)
                                   │
                                   ▼
-                     clean_risk → B03 → O01 → local_executor → NAV
+                     B03（非 clean_risk pred）→ O01 → local_executor → NAV
 ```
 
 关键边：

@@ -29,5 +29,6 @@
 
 实现：`core/round7/blend.py` / `core/round17/backtest.py::fuse_heads`。
 
-## 之后组合层
-clean_risk → B03 → O01 Top2 veto → local_executor。详见 execution 契约。
+## 之后组合层（权威 v5）
+`dual90_10` → **B03**（含 B01a×截面，**不含** clean_risk pred）→ O01 Top2 veto → local_executor。  
+发布文档写 clean_risk 进父链 → **BASELINE_CONTRACT_MISMATCH**（见 `b03_o01_contract.md`）。

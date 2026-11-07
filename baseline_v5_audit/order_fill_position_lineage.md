@@ -13,5 +13,6 @@ overlayed scores (post B03/O01)
 权威回放目录：`result/replay_r7_caliber/v5_R16_O01/`  
 交叉：`result/round22_3/parity/R223_V5_R16_O01/`（服务器课题树）。
 
-分配乘数：clean_risk 缩放 × B03 Top2 份额 × O01 Top2 veto。  
+分配乘数：B03 date_mult（B01a×截面）× B03 Top2 九格份额 × O01 Top2 veto。  
+（**不含** Round7 clean_risk 预测乘子；文档曾误写 → BASELINE_CONTRACT_MISMATCH。）  
 **无补单。** 未做实盘成交核验。

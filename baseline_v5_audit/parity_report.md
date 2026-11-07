@@ -17,6 +17,7 @@
 
 ## BASELINE_CONTRACT_MISMATCH（非指标）
 - `d1_open_gap` 注册表写 `(open/close_D)-1`；builder 为 `open/pre_close-1`。**未改代码。**
+- **clean_risk**：发布文档 / `baseline_v5/contract.py` 写 v5 父链含 clean_risk；权威回放链为 `dual90_10 → B03 → O01 → Fixed-Sleeve`，**不消费** clean_risk 预测（`load_locked_alpha` / `USED_LOCKED_ROUND7_RISK=False`）。**未改代码。**
 
 ## 声明
 未声称实盘成交已验证。CURRENT/生产配置未改。

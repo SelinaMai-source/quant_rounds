@@ -9,5 +9,10 @@
     "分钟路径与微观 PCV/BCVP 在二板宇宙上 BLOCKED_DATA（覆盖矩阵大量 coverage_ratio=0）",
     "d1_open_gap 为 BLOCKED_PIT/OPEN_INFORMATION",
     "g_prim_px_vol_corr 与 h1_* 供应商内部公式仍 UNVERIFIED/INCOMPLETE_SOURCE"
-  ]
+  ],
+  "baseline_contract_mismatches": [
+    "d1_open_gap_formula",
+    "clean_risk_in_v5_parent_chain"
+  ],
+  "followup_note": "勘误来自源码复核：v5 链不消费 clean_risk pred；B03 含 B01a×截面 date_mult"
 }

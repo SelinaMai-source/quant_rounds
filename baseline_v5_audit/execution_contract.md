@@ -1,7 +1,12 @@
 # baseline_v5 执行契约
 
 ## 引擎链
-`research_sleeve.run_heads_sleeve` → `fuse_heads` → `apply_b03` → `apply_top2_veto(O01)` → `round20.parity._run_r7` → `local_executor` → `first_board_hermes.fixed_sleeve_backtest.run_fixed_dual_sleeve_top3_backtest`
+
+权威 v5 回放：`dual90_10_gap_floor` → B03 overlay → O01 veto → `local_executor` → `fixed_sleeve_backtest`。
+
+研究入口（同执行器）：`research_sleeve.run_heads_sleeve` → `fuse_heads` → `apply_b03` → `apply_top2_veto(O01)` → `round20.parity._run_r7` → `local_executor`。
+
+**不含** Round7 clean_risk 预测乘子（文档曾误写 → 见 `b03_o01_contract.md`）。
 
 ## 时点
 | 阶段 | 时点 | 信息 |

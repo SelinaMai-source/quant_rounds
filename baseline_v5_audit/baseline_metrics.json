@@ -70,6 +70,13 @@
       "tag": "BASELINE_CONTRACT_MISMATCH",
       "registry": "(open_D+1/close_D)-1",
       "source": "open_D+1/pre_close_D+1 - 1"
+    },
+    {
+      "field": "clean_risk_in_v5_parent_chain",
+      "tag": "BASELINE_CONTRACT_MISMATCH",
+      "published_docs": "90/10 + clean_risk + B03 + O01",
+      "source_verified_chain": "dual90_10_gap_floor → B03 (B01a×XS + cell) → O01 → Fixed-Sleeve",
+      "evidence": "core/replay_round7/inject.py load_locked_alpha; USED_LOCKED_ROUND7_RISK=False; round20/parity.py"
     }
   ]
 }

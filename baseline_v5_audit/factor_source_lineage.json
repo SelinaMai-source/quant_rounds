@@ -7,7 +7,7 @@
     "tools/run_first_board_open_gap46.py adds d1_open_gap",
     "aligned_original_candidate_* panels",
     "core/round7 train → predictions",
-    "fuse 90/10 → clean_risk → B03 → O01 → local_executor"
+    "fuse 90/10 (dual90_10_gap_floor) → B03 (B01a×XS + cell; NOT clean_risk pred) → O01 → local_executor"
   ],
   "factors": {
     "g_prim_px_vol_corr": {
