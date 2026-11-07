@@ -1,0 +1,44 @@
+{
+  "round": "24_v5_migration",
+  "freeze_timestamp": "2026-11-08T03:32:07.926843+08:00",
+  "independent_of_first_to_second_promotion": true,
+  "do_not_compare_cagr_to_1to2_v5": true,
+  "perf_window": [
+    "2018-01-02",
+    "2026-07-24"
+  ],
+  "warmup_from": "2015-01-01",
+  "core3": [
+    "g0_amount_log",
+    "g0_amt_vs_5",
+    "g1_ret_5"
+  ],
+  "target7": [
+    "second_board_amount_log",
+    "second_board_turnover_surprise",
+    "second_board_return_5",
+    "first_to_second_amount_ratio",
+    "second_board_market_breadth",
+    "second_board_first_touch_time",
+    "second_board_tail_seal_fraction"
+  ],
+  "v5_migrated_planned": [
+    "g_prim_px_vol_corr",
+    "fb_close_seal_streak_norm",
+    "fb_last30_amount_ratio",
+    "h5_last_first_limit_value_change_sym",
+    "h1_consistent_buy_ratio",
+    "h1_last15m_volume_ratio",
+    "h4_large_net_to_turnover",
+    "h4_retail_net_to_turnover",
+    "g0_amount_log",
+    "g0_amt_vs_5",
+    "g1_ret_5",
+    "g3_days_since_prev_limit_before_streak",
+    "ind_seal_rate_excess"
+  ],
+  "d1_open_gap": "EXECUTION_ONLY",
+  "current_baseline_changed": false,
+  "auto_promote": false,
+  "production_config_changed": false
+}

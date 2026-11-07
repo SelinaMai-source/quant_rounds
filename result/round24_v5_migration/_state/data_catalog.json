@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "rows": [
+    {
+      "name": "hermes_v7",
+      "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features",
+      "exists": true
+    },
+    {
+      "name": "hermes_raw",
+      "path": "/data1/Stock/data/acquisitions/hermes-cn-a-2010-20260724-v7-rebuild/raw",
+      "exists": true
+    },
+    {
+      "name": "amazing",
+      "path": "/home/mxy/AmazingData",
+      "exists": true
+    }
+  ]
+}

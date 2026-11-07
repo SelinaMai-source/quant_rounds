@@ -1,37 +1,8 @@
 {
   "status": "NOT_FULLY_SELF_CONTAINED",
-  "fully_self_contained_parts": [
-    "策略规格文档与因子/模型注册表",
-    "Round7 Five/Ten 训练报告与 predictions（本分支已上传）",
-    "ROUND7_FLAT_5BP 权威回放 summary/report/nav/trades（本分支已上传）",
-    "不变量测试与契约数字"
+  "needs": [
+    "first_board_hermes via Stock src",
+    "Hermes/AmazingData market panels on server"
   ],
-  "external_required_for_full_retrain_or_engine_rerun": [
-    {
-      "name": "first_board_hermes.fixed_sleeve_backtest",
-      "path_hint": "/data1/stock-mxy/src 或 Stock PYTHONPATH",
-      "role": "正式 NAV 引擎"
-    },
-    {
-      "name": "Five panel",
-      "path_hint": "/data1/stock-mxy/data/first_board_hermes/aligned_original_candidate_full44_plus_d1_open_gap_v1",
-      "role": "Five14 训练/候选面板"
-    },
-    {
-      "name": "Ten panel",
-      "path_hint": "/data1/stock-mxy/data/first_board_hermes/aligned_original_candidate_fs01122_chain_label_v1",
-      "role": "Ten13 训练/候选面板"
-    },
-    {
-      "name": "Hermes v7 market bars",
-      "path_hint": "/data1/Stock/data/acquisitions/hermes-cn-a-2010-20260724-v7-rebuild",
-      "role": "开高低收/涨跌停执行"
-    },
-    {
-      "name": "option factor daily PUT_SKEW25",
-      "path_hint": "result/round16 因子日频与 options/treat_dates.json（信号日清单已上传）",
-      "role": "O01 veto 信号重建"
-    }
-  ],
-  "note": "GitHub 分支可独立核验冻结数字与规格；完整重训/重跑引擎仍需服务器数据与 Stock 只读库。"
+  "note": "\u670d\u52a1\u5668\u5b8c\u6574\u4f9d\u8d56\u53ef\u8dd1\uff1bGitHub \u5305\u4e0d\u542b\u4f9b\u5e94\u5546\u539f\u59cb\u5e93"
 }

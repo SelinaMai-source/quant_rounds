@@ -1,0 +1,11 @@
+{
+  "status": "FAIL_PARITY",
+  "n_parity": 150,
+  "n_comparable": 112,
+  "mismatch": 13,
+  "mismatch_rate_comparable": 0.11607142857142858,
+  "double_fee_in_nav": false,
+  "label_source": "simulate_single_opportunity",
+  "next2_date_forbidden_as_maturity": true,
+  "promotion_blocked": true
+}

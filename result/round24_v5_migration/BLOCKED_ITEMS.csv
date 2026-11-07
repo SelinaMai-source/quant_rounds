@@ -1,0 +1,12 @@
+item,reason,stage
+g_prim_px_vol_corr,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+fb_last30_amount_ratio,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+h5_last_first_limit_value_change_sym,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+h1_consistent_buy_ratio,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+h1_last15m_volume_ratio,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+h4_large_net_to_turnover,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+h4_retail_net_to_turnover,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+g3_days_since_prev_limit_before_streak,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+ind_seal_rate_excess,BLOCKED_DATA_OR_ZERO_COVERAGE,matrix
+V5DIRECT,second-board panel lacks identical-semantics Five14/Ten13 for frozen weight transfer; no zero-fill,matrix
+LABEL_EXECUTION_PARITY,comparable mismatch_rate=0.116>0.05; promotion blocked,labels

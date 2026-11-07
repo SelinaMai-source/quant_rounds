@@ -1,0 +1,64 @@
+{
+  "status": "DONE",
+  "copied": [
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/factor_registry.csv",
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/factor_formulas.md",
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/feature_order.json",
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/factor_source_lineage.json",
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/factor_pit_contract.md",
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/SECOND_TO_THIRD_FACTOR_MIGRATION_PLAN.md",
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/second_board_coverage_matrix.csv",
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/second_to_third_factor_mapping.csv",
+    "/data1/stock-mxy/课题/一进二策略/result/round24_v5_migration/baseline_audit/DATA_SOURCE_CATALOG.md"
+  ],
+  "five14": [
+    "g_prim_px_vol_corr",
+    "fb_close_seal_streak_norm",
+    "fb_last30_amount_ratio",
+    "h5_last_first_limit_value_change_sym",
+    "h1_consistent_buy_ratio",
+    "h1_last15m_volume_ratio",
+    "h4_large_net_to_turnover",
+    "h4_retail_net_to_turnover",
+    "g0_amount_log",
+    "g0_amt_vs_5",
+    "g1_ret_5",
+    "g3_days_since_limit",
+    "ind_seal_rate_excess",
+    "d1_open_gap"
+  ],
+  "ten13": [
+    "g_prim_px_vol_corr",
+    "fb_close_seal_streak_norm",
+    "fb_last30_amount_ratio",
+    "h5_last_first_limit_value_change_sym",
+    "h1_consistent_buy_ratio",
+    "h1_last15m_volume_ratio",
+    "h4_large_net_to_turnover",
+    "h4_retail_net_to_turnover",
+    "g0_amt_vs_5",
+    "g1_ret_5",
+    "g3_days_since_limit",
+    "ind_seal_rate_excess",
+    "d1_open_gap"
+  ],
+  "ten_excludes_g0_amount_log": true,
+  "n_verified_names": 14,
+  "hypotheses": [
+    {
+      "id": "H24M_FACTOR",
+      "claim": "逐因子按 baseline_v5 源码迁移，公式未核实则 UNVERIFIED/BLOCKED",
+      "pass_if": "mapping 表完整"
+    },
+    {
+      "id": "H24M_LABEL",
+      "claim": "标签唯一来自 simulate_single_opportunity，无 next2_date 成熟捷径",
+      "pass_if": "parity>=100"
+    },
+    {
+      "id": "H24M_DUAL",
+      "claim": "Five/Ten 双头可在剔除 d1_open_gap 后重训",
+      "pass_if": "V5DUAL ran 或 BLOCKED_FEATURE"
+    }
+  ]
+}

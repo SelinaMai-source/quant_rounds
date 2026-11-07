@@ -1,0 +1,169 @@
+year,feature_id,n_eligible,n_with_required_data,n_pit_safe,coverage_ratio,first_available,last_available,data_status,required_source,note
+2015,g_prim_px_vol_corr,5678,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2015,fb_close_seal_streak_norm,5678,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2015,fb_last30_amount_ratio,5678,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2015,h5_last_first_limit_value_change_sym,5678,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2015,h1_consistent_buy_ratio,5678,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2015,h1_last15m_volume_ratio,5678,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2015,h4_large_net_to_turnover,5678,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2015,h4_retail_net_to_turnover,5678,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2015,g0_amount_log,5678,5678,5678,1.0,2015-01-05,2015-12-31,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2015,g0_amt_vs_5,5678,5597,5597,0.985734,2015-01-05,2015-12-31,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2015,g1_ret_5,5678,5458,5458,0.961254,2015-01-05,2015-12-31,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2015,g3_days_since_limit,5678,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2015,ind_seal_rate_excess,5678,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2015,d1_open_gap,5678,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2016,g_prim_px_vol_corr,1154,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2016,fb_close_seal_streak_norm,1154,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2016,fb_last30_amount_ratio,1154,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2016,h5_last_first_limit_value_change_sym,1154,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2016,h1_consistent_buy_ratio,1154,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2016,h1_last15m_volume_ratio,1154,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2016,h4_large_net_to_turnover,1154,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2016,h4_retail_net_to_turnover,1154,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2016,g0_amount_log,1154,1154,1154,1.0,2016-01-04,2016-12-30,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2016,g0_amt_vs_5,1154,1127,1127,0.976603,2016-01-04,2016-12-30,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2016,g1_ret_5,1154,926,926,0.802426,2016-01-04,2016-12-29,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2016,g3_days_since_limit,1154,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2016,ind_seal_rate_excess,1154,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2016,d1_open_gap,1154,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2017,g_prim_px_vol_corr,1083,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2017,fb_close_seal_streak_norm,1083,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2017,fb_last30_amount_ratio,1083,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2017,h5_last_first_limit_value_change_sym,1083,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2017,h1_consistent_buy_ratio,1083,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2017,h1_last15m_volume_ratio,1083,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2017,h4_large_net_to_turnover,1083,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2017,h4_retail_net_to_turnover,1083,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2017,g0_amount_log,1083,1083,1083,1.0,2017-01-03,2017-12-29,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2017,g0_amt_vs_5,1083,1079,1079,0.996307,2017-01-03,2017-12-29,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2017,g1_ret_5,1083,645,645,0.595568,2017-01-03,2017-12-28,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2017,g3_days_since_limit,1083,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2017,ind_seal_rate_excess,1083,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2017,d1_open_gap,1083,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2018,g_prim_px_vol_corr,1615,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2018,fb_close_seal_streak_norm,1615,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2018,fb_last30_amount_ratio,1615,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2018,h5_last_first_limit_value_change_sym,1615,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2018,h1_consistent_buy_ratio,1615,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2018,h1_last15m_volume_ratio,1615,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2018,h4_large_net_to_turnover,1615,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2018,h4_retail_net_to_turnover,1615,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2018,g0_amount_log,1615,1615,1615,1.0,2018-01-02,2018-12-28,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2018,g0_amt_vs_5,1615,1612,1612,0.998142,2018-01-02,2018-12-28,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2018,g1_ret_5,1615,1513,1513,0.936842,2018-01-02,2018-12-28,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2018,g3_days_since_limit,1615,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2018,ind_seal_rate_excess,1615,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2018,d1_open_gap,1615,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2019,g_prim_px_vol_corr,2397,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2019,fb_close_seal_streak_norm,2397,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2019,fb_last30_amount_ratio,2397,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2019,h5_last_first_limit_value_change_sym,2397,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2019,h1_consistent_buy_ratio,2397,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2019,h1_last15m_volume_ratio,2397,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2019,h4_large_net_to_turnover,2397,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2019,h4_retail_net_to_turnover,2397,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2019,g0_amount_log,2397,2397,2397,1.0,2019-01-02,2019-12-31,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2019,g0_amt_vs_5,2397,2389,2389,0.996662,2019-01-02,2019-12-31,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2019,g1_ret_5,2397,2281,2281,0.951606,2019-01-02,2019-12-31,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2019,g3_days_since_limit,2397,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2019,ind_seal_rate_excess,2397,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2019,d1_open_gap,2397,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2020,g_prim_px_vol_corr,2924,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2020,fb_close_seal_streak_norm,2924,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2020,fb_last30_amount_ratio,2924,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2020,h5_last_first_limit_value_change_sym,2924,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2020,h1_consistent_buy_ratio,2924,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2020,h1_last15m_volume_ratio,2924,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2020,h4_large_net_to_turnover,2924,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2020,h4_retail_net_to_turnover,2924,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2020,g0_amount_log,2924,2924,2924,1.0,2020-01-02,2020-12-31,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2020,g0_amt_vs_5,2924,2913,2913,0.996238,2020-01-02,2020-12-31,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2020,g1_ret_5,2924,2769,2769,0.94699,2020-01-02,2020-12-31,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2020,g3_days_since_limit,2924,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2020,ind_seal_rate_excess,2924,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2020,d1_open_gap,2924,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2021,g_prim_px_vol_corr,3001,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2021,fb_close_seal_streak_norm,3001,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2021,fb_last30_amount_ratio,3001,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2021,h5_last_first_limit_value_change_sym,3001,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2021,h1_consistent_buy_ratio,3001,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2021,h1_last15m_volume_ratio,3001,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2021,h4_large_net_to_turnover,3001,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2021,h4_retail_net_to_turnover,3001,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2021,g0_amount_log,3001,3001,3001,1.0,2021-01-04,2021-12-31,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2021,g0_amt_vs_5,3001,2996,2996,0.998334,2021-01-04,2021-12-31,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2021,g1_ret_5,3001,2910,2910,0.969677,2021-01-04,2021-12-31,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2021,g3_days_since_limit,3001,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2021,ind_seal_rate_excess,3001,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2021,d1_open_gap,3001,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2022,g_prim_px_vol_corr,2707,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2022,fb_close_seal_streak_norm,2707,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2022,fb_last30_amount_ratio,2707,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2022,h5_last_first_limit_value_change_sym,2707,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2022,h1_consistent_buy_ratio,2707,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2022,h1_last15m_volume_ratio,2707,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2022,h4_large_net_to_turnover,2707,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2022,h4_retail_net_to_turnover,2707,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2022,g0_amount_log,2707,2707,2707,1.0,2022-01-04,2022-12-30,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2022,g0_amt_vs_5,2707,2697,2697,0.996306,2022-01-04,2022-12-30,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2022,g1_ret_5,2707,2653,2653,0.980052,2022-01-04,2022-12-30,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2022,g3_days_since_limit,2707,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2022,ind_seal_rate_excess,2707,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2022,d1_open_gap,2707,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2023,g_prim_px_vol_corr,1410,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2023,fb_close_seal_streak_norm,1410,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2023,fb_last30_amount_ratio,1410,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2023,h5_last_first_limit_value_change_sym,1410,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2023,h1_consistent_buy_ratio,1410,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2023,h1_last15m_volume_ratio,1410,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2023,h4_large_net_to_turnover,1410,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2023,h4_retail_net_to_turnover,1410,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2023,g0_amount_log,1410,1410,1410,1.0,2023-01-03,2023-12-29,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2023,g0_amt_vs_5,1410,1406,1406,0.997163,2023-01-03,2023-12-29,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2023,g1_ret_5,1410,1394,1394,0.988652,2023-01-03,2023-12-29,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2023,g3_days_since_limit,1410,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2023,ind_seal_rate_excess,1410,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2023,d1_open_gap,1410,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2024,g_prim_px_vol_corr,3410,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2024,fb_close_seal_streak_norm,3410,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2024,fb_last30_amount_ratio,3410,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2024,h5_last_first_limit_value_change_sym,3410,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2024,h1_consistent_buy_ratio,3410,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2024,h1_last15m_volume_ratio,3410,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2024,h4_large_net_to_turnover,3410,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2024,h4_retail_net_to_turnover,3410,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2024,g0_amount_log,3410,3410,3410,1.0,2024-01-02,2024-12-31,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2024,g0_amt_vs_5,3410,3403,3403,0.997947,2024-01-02,2024-12-31,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2024,g1_ret_5,3410,3409,3409,0.999707,2024-01-02,2024-12-31,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2024,g3_days_since_limit,3410,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2024,ind_seal_rate_excess,3410,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2024,d1_open_gap,3410,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2025,g_prim_px_vol_corr,2698,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2025,fb_close_seal_streak_norm,2698,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2025,fb_last30_amount_ratio,2698,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2025,h5_last_first_limit_value_change_sym,2698,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2025,h1_consistent_buy_ratio,2698,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2025,h1_last15m_volume_ratio,2698,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2025,h4_large_net_to_turnover,2698,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2025,h4_retail_net_to_turnover,2698,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2025,g0_amount_log,2698,2698,2698,1.0,2025-01-02,2025-12-31,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2025,g0_amt_vs_5,2698,2682,2682,0.99407,2025-01-02,2025-12-31,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2025,g1_ret_5,2698,2698,2698,1.0,2025-01-02,2025-12-31,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2025,g3_days_since_limit,2698,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2025,ind_seal_rate_excess,2698,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2025,d1_open_gap,2698,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION
+2026,g_prim_px_vol_corr,1624,0,0,0.0,,,BLOCKED_DATA,minute_vendor_cache,二板日分钟价量缓存未建
+2026,fb_close_seal_streak_norm,1624,0,0,0.0,,,BLOCKED_DATA,minute_bars+limit_up,二板分钟路径未建；首板close-limit快照不可复用
+2026,fb_last30_amount_ratio,1624,0,0,0.0,,,BLOCKED_DATA,minute_bars,同上
+2026,h5_last_first_limit_value_change_sym,1624,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_limit_events,Hermes limit_events theoretically available; not on sb panel
+2026,h1_consistent_buy_ratio,1624,0,0,0.0,,,BLOCKED_DATA,clickhouse_PCV,无二板 selection 微观抽取
+2026,h1_last15m_volume_ratio,1624,0,0,0.0,,,BLOCKED_DATA,clickhouse_BCVP,同上
+2026,h4_large_net_to_turnover,1624,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,需按二板键左连 money_flow
+2026,h4_retail_net_to_turnover,1624,0,0,0.0,,,RECOMPUTE_POSSIBLE,daily_money_flow,同上
+2026,g0_amount_log,1624,1624,1624,1.0,2026-01-05,2026-07-24,AVAILABLE_ADAPTED,daily_raw.amount,sb.r24_amount_log / amount
+2026,g0_amt_vs_5,1624,1613,1613,0.993227,2026-01-05,2026-07-24,AVAILABLE_ADAPTED,daily_raw.amount history,sb.r24_amt_vs_5
+2026,g1_ret_5,1624,1623,1623,0.999384,2026-01-05,2026-07-24,AVAILABLE_ADAPTED,close_post history,sb.r24_ret_5
+2026,g3_days_since_limit,1624,0,0,0.0,,,SEMANTIC_ISSUE,limit history,二板日语义退化
+2026,ind_seal_rate_excess,1624,0,0,0.0,,,RECOMPUTE_NEEDED,industry+limit_events,未迁到二板面板
+2026,d1_open_gap,1624,0,0,0.0,,,BLOCKED_PIT,D+1 open/pre_close,OPEN_INFORMATION

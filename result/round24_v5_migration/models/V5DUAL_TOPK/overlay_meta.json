@@ -1,0 +1,15 @@
+{
+  "n_days": 2043,
+  "skip_days": 985,
+  "half_days": 513,
+  "full_days": 545,
+  "mean_mult": 0.4129955947136564,
+  "min_mult": 0.0,
+  "round9_kind": "replacement_allocator",
+  "allocator": "B03_conservative",
+  "parent": "R8_E02",
+  "top1_lock": true,
+  "e02_multiplied": false,
+  "top2_nav_mean": 0.021855115026921196,
+  "top2_zero_days": 1449
+}

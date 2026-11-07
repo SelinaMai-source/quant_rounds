@@ -1,0 +1,108 @@
+{
+  "status": "trained_oos",
+  "seed": 17,
+  "features": [
+    "fb_close_seal_streak_norm",
+    "g0_amount_log",
+    "g0_amt_vs_5",
+    "g1_ret_5"
+  ],
+  "extras": [],
+  "target": "label_exit_rule_net",
+  "n_bins": 5,
+  "eval_metric": "ndcg@1",
+  "subsample": 1.0,
+  "colsample_bytree": 1.0,
+  "rows": 13119,
+  "folds": [
+    {
+      "predict_year": 2018,
+      "train_rows": 4790,
+      "test_rows": 1078
+    },
+    {
+      "predict_year": 2019,
+      "train_rows": 2041,
+      "test_rows": 1509
+    },
+    {
+      "predict_year": 2020,
+      "train_rows": 2911,
+      "test_rows": 1691
+    },
+    {
+      "predict_year": 2021,
+      "train_rows": 4205,
+      "test_rows": 1564
+    },
+    {
+      "predict_year": 2022,
+      "train_rows": 4703,
+      "test_rows": 1711
+    },
+    {
+      "predict_year": 2023,
+      "train_rows": 4928,
+      "test_rows": 852
+    },
+    {
+      "predict_year": 2024,
+      "train_rows": 4068,
+      "test_rows": 2073
+    },
+    {
+      "predict_year": 2025,
+      "train_rows": 4584,
+      "test_rows": 1635
+    },
+    {
+      "predict_year": 2026,
+      "train_rows": 4503,
+      "test_rows": 1006
+    }
+  ],
+  "train_clean_audit": {
+    "rows_before": 18323,
+    "rows_dropped_in_memory": 266,
+    "rows_after": 18057,
+    "require_target": true,
+    "base_required": [
+      "fb_close_seal_streak_norm",
+      "g0_amount_log",
+      "g0_amt_vs_5",
+      "g1_ret_5"
+    ],
+    "extras_allowed_nan": [],
+    "feature_missing_rows": {
+      "fb_close_seal_streak_norm": 18,
+      "g0_amount_log": 0,
+      "g0_amt_vs_5": 249,
+      "g1_ret_5": 70
+    },
+    "filled_with_zero": false,
+    "dropped_names_for_extra_nan": false
+  },
+  "candidate_clean_audit": {
+    "rows_before": 18323,
+    "rows_dropped_in_memory": 266,
+    "rows_after": 18057,
+    "require_target": false,
+    "base_required": [
+      "fb_close_seal_streak_norm",
+      "g0_amount_log",
+      "g0_amt_vs_5",
+      "g1_ret_5"
+    ],
+    "extras_allowed_nan": [],
+    "feature_missing_rows": {
+      "fb_close_seal_streak_norm": 18,
+      "g0_amount_log": 0,
+      "g0_amt_vs_5": 249,
+      "g1_ret_5": 70
+    },
+    "filled_with_zero": false,
+    "dropped_names_for_extra_nan": false
+  },
+  "filled_with_zero": false,
+  "label_bins_fit_inside_training_fold": true
+}

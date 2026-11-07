@@ -1,0 +1,29 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "test": "Five14/Ten13 Feature Order",
+      "pass": true
+    },
+    {
+      "test": "No D+1 Feature in D-close",
+      "pass": true
+    },
+    {
+      "test": "Label Actual Exit Maturity",
+      "pass": false
+    },
+    {
+      "test": "No Double Fees",
+      "pass": true
+    },
+    {
+      "test": "Production Config Unchanged",
+      "pass": true
+    },
+    {
+      "test": "Factor Mapping",
+      "pass": true
+    }
+  ]
+}

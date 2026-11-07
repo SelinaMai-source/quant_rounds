@@ -1,0 +1,111 @@
+{
+  "status": "DONE",
+  "rows": [
+    {
+      "code": "CASH",
+      "status": "CASH",
+      "sharpe": null,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "nav_end": 300000.0,
+      "trades": 0,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    },
+    {
+      "code": "T0",
+      "status": "ran",
+      "sharpe": 0.4093330357420038,
+      "cagr": 0.06949844594332566,
+      "max_drawdown": -0.5465381407686972,
+      "nav_end": 533065.2520414717,
+      "trades": 1158,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    },
+    {
+      "code": "K3",
+      "status": "ran",
+      "sharpe": 0.43082557667251464,
+      "cagr": 0.08103485206303507,
+      "max_drawdown": -0.6201710882339871,
+      "nav_end": 584314.1067505365,
+      "trades": 1243,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    },
+    {
+      "code": "K7",
+      "status": "ran",
+      "sharpe": 0.12763217086638126,
+      "cagr": -0.003188828289562462,
+      "max_drawdown": -0.5713876057567309,
+      "nav_end": 291913.0419988819,
+      "trades": 1260,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    },
+    {
+      "code": "V5F",
+      "status": "ran",
+      "sharpe": 0.510188453725241,
+      "cagr": 0.09912571410671922,
+      "max_drawdown": -0.4074677555388163,
+      "nav_end": 673462.8749948154,
+      "trades": 1228,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    },
+    {
+      "code": "V5T",
+      "status": "ran",
+      "sharpe": 0.5766588366736177,
+      "cagr": 0.12461659875884568,
+      "max_drawdown": -0.4983206620083851,
+      "nav_end": 819416.3634206874,
+      "trades": 1250,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    },
+    {
+      "code": "V5DUAL",
+      "status": "ran",
+      "sharpe": 0.5500493576887702,
+      "cagr": 0.11609340401315715,
+      "max_drawdown": -0.4656274077268203,
+      "nav_end": 767779.9571905799,
+      "trades": 1240,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    },
+    {
+      "code": "V5DIRECT",
+      "status": "BLOCKED_FEATURE_SEMANTICS",
+      "sharpe": null,
+      "cagr": null,
+      "max_drawdown": null,
+      "nav_end": null,
+      "trades": null,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    },
+    {
+      "code": "V5DUAL_TOPK",
+      "status": "ran",
+      "sharpe": 0.0383572759742186,
+      "cagr": -0.021919042767546304,
+      "max_drawdown": -0.5480744368530162,
+      "nav_end": 248181.92863031424,
+      "trades": 1248,
+      "promotion_blocked": true,
+      "compare_to_1to2_v5": false
+    }
+  ],
+  "usable_v5_features": [
+    "fb_close_seal_streak_norm",
+    "g0_amount_log",
+    "g0_amt_vs_5",
+    "g1_ret_5"
+  ],
+  "promotion_blocked": true
+}

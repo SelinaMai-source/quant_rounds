@@ -1,0 +1,114 @@
+{
+  "bootstrap": {
+    "K3": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": 7.953228349555288e-05,
+        "delta_sharpe": 0.021492540930510284,
+        "delta_cagr": 0.012021089708272203,
+        "delta_maxdd": -0.07363294746528992
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -0.0007086479979949291,
+          "high": 0.0008580724169563786
+        },
+        "delta_sharpe": {
+          "low": -0.7375890172282087,
+          "high": 0.7947676459783214
+        },
+        "delta_cagr": {
+          "low": -0.2031153976978836,
+          "high": 0.23026206734685853
+        },
+        "delta_maxdd": {
+          "low": -0.2960549813413031,
+          "high": 0.2809421725902423
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    },
+    "K7": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": -0.00025158835042914183,
+        "delta_sharpe": -0.2817008648756215,
+        "delta_cagr": -0.07562242705436606,
+        "delta_maxdd": -0.024849464988033643
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -0.0011916127372481218,
+          "high": 0.0006706119477524946
+        },
+        "delta_sharpe": {
+          "low": -1.187376315170399,
+          "high": 0.6192712669447901
+        },
+        "delta_cagr": {
+          "low": -0.32165822951448064,
+          "high": 0.16517531242486097
+        },
+        "delta_maxdd": {
+          "low": -0.4342881918145228,
+          "high": 0.20514189365725008
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    },
+    "V5DUAL": {
+      "status": "OK",
+      "n": 2075,
+      "block": 20,
+      "n_boot": 5000,
+      "seed": 17,
+      "evaluation_years_fixed": 8.234126984126984,
+      "point": {
+        "delta_mean": 0.00021141966595911415,
+        "delta_sharpe": 0.14071632194676986,
+        "delta_cagr": 0.048583121087552694,
+        "delta_maxdd": 0.0809107330418769
+      },
+      "ci95": {
+        "delta_mean": {
+          "low": -0.0006502722765917509,
+          "high": 0.0010564052114032108
+        },
+        "delta_sharpe": {
+          "low": -0.6782833503284831,
+          "high": 0.9500654185573394
+        },
+        "delta_cagr": {
+          "low": -0.1838884949369773,
+          "high": 0.28951277104530204
+        },
+        "delta_maxdd": {
+          "low": -0.2927744369115397,
+          "high": 0.29228105013883515
+        }
+      },
+      "note": "Delta Sharpe = Sharpe_c - Sharpe_b；不是差额序列的 Sharpe"
+    }
+  },
+  "spa": {
+    "status": "BLOCKED_STAT_TEST",
+    "reason": "No module named 'arch'",
+    "method_not_used": "self_written_reality_check_spa_is_not_hansen_spa",
+    "candidates": [
+      "K3",
+      "K7",
+      "V5DUAL"
+    ],
+    "n_alternatives": 3
+  }
+}

@@ -1,0 +1,61 @@
+[round24_v5_migration] stage=factor_audit
+[round24_v5_migration] stage=data_catalog
+[round24_v5_migration] stage=freeze
+[round24_v5_migration] stage=universe
+[round24_v5_migration] stage=limit_rules
+[round24_v5_migration] stage=factor_mapping
+[round24_v5_migration] stage=features
+[round24_v5_migration] stage=labels
+[round24_v5_migration] stage=matrix
+[xgb-rank] year=2018 train=4690 test=1066
+[xgb-rank] year=2019 train=1970 test=1508
+[xgb-rank] year=2020 train=2849 test=1690
+[xgb-rank] year=2021 train=4140 test=1561
+[xgb-rank] year=2022 train=4643 test=1710
+[xgb-rank] year=2023 train=4890 test=851
+[xgb-rank] year=2024 train=4031 test=2071
+[xgb-rank] year=2025 train=4524 test=1630
+[xgb-rank] year=2026 train=4442 test=1004
+[xgb-rank] year=2018 train=4676 test=1064
+[xgb-rank] year=2019 train=1966 test=1508
+[xgb-rank] year=2020 train=2846 test=1686
+[xgb-rank] year=2021 train=4134 test=1558
+[xgb-rank] year=2022 train=4636 test=1708
+[xgb-rank] year=2023 train=4881 test=851
+[xgb-rank] year=2024 train=4026 test=2068
+[xgb-rank] year=2025 train=4519 test=1629
+[xgb-rank] year=2026 train=4438 test=1004
+[xgb-rank] year=2018 train=4790 test=1078
+[xgb-rank] year=2019 train=2041 test=1509
+[xgb-rank] year=2020 train=2911 test=1691
+[xgb-rank] year=2021 train=4205 test=1564
+[xgb-rank] year=2022 train=4703 test=1711
+[xgb-rank] year=2023 train=4928 test=852
+[xgb-rank] year=2024 train=4068 test=2073
+[xgb-rank] year=2025 train=4584 test=1635
+[xgb-rank] year=2026 train=4503 test=1006
+[xgb-rank] year=2018 train=4681 test=1064
+[xgb-rank] year=2019 train=1966 test=1508
+[xgb-rank] year=2020 train=2846 test=1689
+[xgb-rank] year=2021 train=4137 test=1559
+[xgb-rank] year=2022 train=4640 test=1708
+[xgb-rank] year=2023 train=4885 test=851
+[xgb-rank] year=2024 train=4027 test=2070
+[xgb-rank] year=2025 train=4521 test=1630
+[xgb-rank] year=2026 train=4441 test=1004
+[xgb-rank] year=2018 train=4681 test=1064
+[xgb-rank] year=2019 train=1966 test=1508
+[xgb-rank] year=2020 train=2846 test=1689
+[xgb-rank] year=2021 train=4137 test=1559
+[xgb-rank] year=2022 train=4640 test=1708
+[xgb-rank] year=2023 train=4885 test=851
+[xgb-rank] year=2024 train=4027 test=2070
+[xgb-rank] year=2025 train=4521 test=1630
+[xgb-rank] year=2026 train=4441 test=1004
+[round24_v5_migration] stage=ablation
+[round24_v5_migration] stage=stress
+[round24_v5_migration] stage=stats
+[round24_v5_migration] stage=tests
+[round24_v5_migration] stage=decision
+[round24_v5_migration] stage=report
+{'factor_audit': 'DONE', 'data_catalog': 'DONE', 'freeze': 'FROZEN', 'universe': 'DONE', 'limit_rules': 'OK', 'factor_mapping': 'DONE', 'features': 'DONE', 'labels': 'FAIL_PARITY', 'matrix': 'DONE', 'ablation': 'DONE', 'stress': 'DONE', 'stats': 'DONE', 'tests': 'FAIL', 'decision': 'SECOND_TO_THIRD_RESEARCH_CANDIDATE', 'report': 'DONE'}

@@ -1,0 +1,40 @@
+{
+  "CORE3": [
+    "g0_amount_log",
+    "g0_amt_vs_5",
+    "g1_ret_5"
+  ],
+  "TARGET7": [
+    "second_board_amount_log",
+    "second_board_turnover_surprise",
+    "second_board_return_5",
+    "first_to_second_amount_ratio",
+    "second_board_market_breadth",
+    "second_board_first_touch_time",
+    "second_board_tail_seal_fraction"
+  ],
+  "V5_MIGRATED": [
+    "g_prim_px_vol_corr",
+    "fb_close_seal_streak_norm",
+    "fb_last30_amount_ratio",
+    "h5_last_first_limit_value_change_sym",
+    "h1_consistent_buy_ratio",
+    "h1_last15m_volume_ratio",
+    "h4_large_net_to_turnover",
+    "h4_retail_net_to_turnover",
+    "g0_amount_log",
+    "g0_amt_vs_5",
+    "g1_ret_5",
+    "g3_days_since_prev_limit_before_streak",
+    "ind_seal_rate_excess"
+  ],
+  "excluded_from_d_close_model": [
+    "d1_open_gap"
+  ],
+  "g3_new_id": "g3_days_since_prev_limit_before_streak",
+  "tail_seal_definition": "final continuous seal before close (second_board_tail_seal_fraction)",
+  "frozen_before_backtest": true,
+  "n_rows": 29701,
+  "filled_with_zero": false,
+  "mapping_rows": 14
+}

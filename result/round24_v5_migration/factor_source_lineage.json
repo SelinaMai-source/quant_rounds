@@ -1,0 +1,193 @@
+{
+  "panel_five": "/data1/stock-mxy/data/first_board_hermes/aligned_original_candidate_full44_plus_d1_open_gap_v1",
+  "panel_ten": "/data1/stock-mxy/data/first_board_hermes/aligned_original_candidate_fs01122_chain_label_v1",
+  "builder_chain": [
+    "AmazingData minute / ClickHouse micro / Hermes daily → factor caches",
+    "tools/build_first_board_single_model_assets.py / combine_first_board_factor_caches.py",
+    "tools/run_first_board_open_gap46.py adds d1_open_gap",
+    "aligned_original_candidate_* panels",
+    "core/round7 train → predictions",
+    "fuse 90/10 (dual90_10_gap_floor) → B03 (B01a×XS + cell; NOT clean_risk pred) → O01 → local_executor"
+  ],
+  "factors": {
+    "g_prim_px_vol_corr": {
+      "source_path": "tools/combine_first_board_factor_caches.py (PRIMITIVES) + AmazingData minute factor cache; listed in tools/build_first_board_single_model_assets.py MINUTE_PRIMITIVE_FEATURES",
+      "source_function": "cache merge of vendor minute primitive; NO in-repo correlation computation",
+      "source_sha256": "7a5d952a6192920708c9155903524cbaf864b94cfdd89dcd46ea4fa1f27e684b",
+      "formula_status": "VERIFIED_AS_VENDOR_CACHE_NO_LOCAL_FORMULA",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "fb_close_seal_streak_norm": {
+      "source_path": "src/first_board_hermes/single_model.py",
+      "source_function": "compute_minute_extension_factors",
+      "source_sha256": "cde225d3c0755cfe5231afcf7913a5d864df305b79f4cf7d41208014f71570ad",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "fb_last30_amount_ratio": {
+      "source_path": "src/first_board_hermes/single_model.py",
+      "source_function": "compute_minute_extension_factors",
+      "source_sha256": "cde225d3c0755cfe5231afcf7913a5d864df305b79f4cf7d41208014f71570ad",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "h5_last_first_limit_value_change_sym": {
+      "source_path": "tools/build_first_board_single_model_assets.py + single_model.symmetric_change",
+      "source_function": "symmetric_change(last_limit_value, first_limit_value)",
+      "source_sha256": "c8abd1c195bd9270f758161ea0fae91f297f24d4ad94e8256d5d99d0ee5ab868",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "h1_consistent_buy_ratio": {
+      "source_path": "tools/build_first_board_single_model_assets.py MICRO_RENAME; tools/extract_first_board_microstructure_clickhouse.py",
+      "source_function": "argMax(t1.PCV, t1.UPDATE_TIME) AS PCV → rename PCV→h1_consistent_buy_ratio",
+      "source_sha256": "88f3a8015fd1a63bf0521bc6e6dc2528f4b2fcf62c352f2ad4a23cadf928e21f",
+      "formula_status": "VENDOR_COLUMN_MAPPED_INTERNAL_FORMULA_UNVERIFIED",
+      "migration_class": "BLOCKED_DATA"
+    },
+    "h1_last15m_volume_ratio": {
+      "source_path": "同 h1_consistent_buy_ratio",
+      "source_function": "argMax(t1.BCVP_15MIN, UPDATE_TIME) → h1_last15m_volume_ratio",
+      "source_sha256": "88f3a8015fd1a63bf0521bc6e6dc2528f4b2fcf62c352f2ad4a23cadf928e21f",
+      "formula_status": "VENDOR_COLUMN_MAPPED_INTERNAL_FORMULA_UNVERIFIED",
+      "migration_class": "BLOCKED_DATA"
+    },
+    "h4_large_net_to_turnover": {
+      "source_path": "src/first_board_hermes/native_factors.py / dataset.py",
+      "source_function": "_safe_ratio(net_inflow_l, turnover_value)",
+      "source_sha256": "3e74e234244d50e8b28fd99166abcd98a5e6c4f8ba703b2d60907126b888f417",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "h4_retail_net_to_turnover": {
+      "source_path": "src/first_board_hermes/native_factors.py",
+      "source_function": "_safe_ratio(retail_net_inflow, turnover_value)",
+      "source_sha256": "3e74e234244d50e8b28fd99166abcd98a5e6c4f8ba703b2d60907126b888f417",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "g0_amount_log": {
+      "source_path": "src/first_board_hermes/dataset.py",
+      "source_function": "_compute_daily_features",
+      "source_sha256": "1903f43e9358bf5f6122b4ff2baddfc36c2e9370a8dc6229c97371e30bbbb3d0",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "SEMANTIC_REDEFINITION"
+    },
+    "g0_amt_vs_5": {
+      "source_path": "src/first_board_hermes/dataset.py",
+      "source_function": "_compute_daily_features",
+      "source_sha256": "1903f43e9358bf5f6122b4ff2baddfc36c2e9370a8dc6229c97371e30bbbb3d0",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "g1_ret_5": {
+      "source_path": "src/first_board_hermes/dataset.py",
+      "source_function": "_compute_daily_features",
+      "source_sha256": "1903f43e9358bf5f6122b4ff2baddfc36c2e9370a8dc6229c97371e30bbbb3d0",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "g3_days_since_limit": {
+      "source_path": "src/first_board_hermes/dataset.py",
+      "source_function": "_compute_daily_features",
+      "source_sha256": "1903f43e9358bf5f6122b4ff2baddfc36c2e9370a8dc6229c97371e30bbbb3d0",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "SEMANTIC_REDEFINITION"
+    },
+    "ind_seal_rate_excess": {
+      "source_path": "tools/build_first_board_single_model_assets.py",
+      "source_function": "compute_industry_features",
+      "source_sha256": "c8abd1c195bd9270f758161ea0fae91f297f24d4ad94e8256d5d99d0ee5ab868",
+      "formula_status": "SOURCE_VERIFIED",
+      "migration_class": "RECOMPUTE_ON_SECOND_BOARD"
+    },
+    "d1_open_gap": {
+      "source_path": "tools/run_first_board_open_gap46.py",
+      "source_function": "build_panels",
+      "source_sha256": "351b7625033eb8299b0444e89a4b6cca17431581816f98f5b0464406ea15fe32",
+      "formula_status": "SOURCE_VERIFIED_WITH_REGISTRY_MISMATCH",
+      "migration_class": "BLOCKED_PIT"
+    }
+  },
+  "builder_hashes": {
+    "single_model.py": {
+      "path": "/data1/stock-mxy/src/first_board_hermes/single_model.py",
+      "sha256": "cde225d3c0755cfe5231afcf7913a5d864df305b79f4cf7d41208014f71570ad",
+      "bytes": 27259
+    },
+    "dataset.py": {
+      "path": "/data1/stock-mxy/src/first_board_hermes/dataset.py",
+      "sha256": "1903f43e9358bf5f6122b4ff2baddfc36c2e9370a8dc6229c97371e30bbbb3d0",
+      "bytes": 26117
+    },
+    "native_factors.py": {
+      "path": "/data1/stock-mxy/src/first_board_hermes/native_factors.py",
+      "sha256": "3e74e234244d50e8b28fd99166abcd98a5e6c4f8ba703b2d60907126b888f417",
+      "bytes": 14489
+    },
+    "expansion_factors.py": {
+      "path": "/data1/stock-mxy/src/first_board_hermes/expansion_factors.py",
+      "sha256": "c8f810fdf9ed977ac7a523a68705883e4afc555f0f09adf153ae8b96670043c7",
+      "bytes": 13548
+    },
+    "baseline.py": {
+      "path": "/data1/stock-mxy/src/first_board_hermes/baseline.py",
+      "sha256": "dc4a5edd8a53de2a3b28281d738734464496f9085f437b568cbd08ce5df3fdf3",
+      "bytes": 21903
+    },
+    "fixed_sleeve_backtest.py": {
+      "path": "/data1/stock-mxy/src/first_board_hermes/fixed_sleeve_backtest.py",
+      "sha256": "b97e9bb3756c50c93eb8380699c82341f6f11baef550b7f41ba4b77295432a93",
+      "bytes": 47366
+    },
+    "build_first_board_single_model_assets.py": {
+      "path": "/data1/stock-mxy/tools/build_first_board_single_model_assets.py",
+      "sha256": "c8abd1c195bd9270f758161ea0fae91f297f24d4ad94e8256d5d99d0ee5ab868",
+      "bytes": 30840
+    },
+    "run_first_board_open_gap46.py": {
+      "path": "/data1/stock-mxy/tools/run_first_board_open_gap46.py",
+      "sha256": "351b7625033eb8299b0444e89a4b6cca17431581816f98f5b0464406ea15fe32",
+      "bytes": 8022
+    },
+    "extract_first_board_microstructure_clickhouse.py": {
+      "path": "/data1/stock-mxy/tools/extract_first_board_microstructure_clickhouse.py",
+      "sha256": "88f3a8015fd1a63bf0521bc6e6dc2528f4b2fcf62c352f2ad4a23cadf928e21f",
+      "bytes": 5284
+    },
+    "combine_first_board_factor_caches.py": {
+      "path": "/data1/stock-mxy/tools/combine_first_board_factor_caches.py",
+      "sha256": "7a5d952a6192920708c9155903524cbaf864b94cfdd89dcd46ea4fa1f27e684b",
+      "bytes": 5601
+    },
+    "round7_contract.py": {
+      "path": "/data1/stock-mxy/research_publish/wt_baseline_v5/core/round7/contract.py",
+      "sha256": "1301375a49380fca14aa3fae66d940c482bbc060128f83b58979bddf21340f89",
+      "bytes": 2588
+    },
+    "fold_ranker.py": {
+      "path": "/data1/stock-mxy/research_publish/wt_baseline_v5/core/fold_ranker.py",
+      "sha256": "0a21879ac5c410c4733f8e65cf35f9a4d365a0da0b90e70d8848ac790d9177f0",
+      "bytes": 10307
+    },
+    "research_sleeve.py": {
+      "path": "/data1/stock-mxy/research_publish/wt_baseline_v5/core/research_sleeve.py",
+      "sha256": "87634c442c96f69cedc06f5f6af9f386d64f9be4bf6d19cf431ee1335cfe2c1b",
+      "bytes": 10242
+    },
+    "local_executor.py": {
+      "path": "/data1/stock-mxy/research_publish/wt_baseline_v5/core/local_executor.py",
+      "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed",
+      "bytes": 45705
+    }
+  },
+  "baseline_contract_mismatches": [
+    {
+      "field": "d1_open_gap_formula",
+      "tag": "BASELINE_CONTRACT_MISMATCH",
+      "published_FACTOR_REGISTRY": "(open_{D+1}/close_D)-1",
+      "source_verified_builder": "tools/run_first_board_open_gap46.py :: D+1 open / D+1 pre_close - 1",
+      "action": "DO_NOT_EDIT_CODE_TO_FORCE_MATCH; record mismatch for audit"
+    }
+  ]
+}

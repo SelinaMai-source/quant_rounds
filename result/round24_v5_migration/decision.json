@@ -1,0 +1,21 @@
+{
+  "decision": "SECOND_TO_THIRD_RESEARCH_CANDIDATE",
+  "best_matched_candidate": "V5T",
+  "best_row": {
+    "code": "V5T",
+    "status": "ran",
+    "sharpe": 0.5766588366736177,
+    "cagr": 0.1246165987588456,
+    "max_drawdown": -0.4983206620083851,
+    "nav_end": 819416.3634206874,
+    "trades": 1250.0,
+    "promotion_blocked": true,
+    "compare_to_1to2_v5": false
+  },
+  "live_ready": false,
+  "forward_oos": "FORWARD_OOS_NOT_AVAILABLE",
+  "current_baseline_changed": false,
+  "production_config_changed": false,
+  "auto_promote": false,
+  "compare_to_1to2_v5": false
+}
