@@ -1,0 +1,11 @@
+{
+  "status": "FAIL_PARITY",
+  "n_rows": 202,
+  "formal_training_allowed": false,
+  "reason": "未解释错配，或对账只覆盖遗留退出而不是 CAUSAL_TARGET_V1。停止正式训练。",
+  "n_sample": 200,
+  "n_comparable": 153,
+  "n_unexplained_mismatch": 15,
+  "n_not_comparable": 47,
+  "code_fingerprint": "33e527b52a046a5678a3fb0092b634b7e44c99bfec4c7d2559322c7184cea6a8"
+}

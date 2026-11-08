@@ -1,0 +1,51 @@
+{
+  "tests": {
+    "T1_label_shuffle_keys_unchanged": {
+      "status": "NOT_EVALUATED",
+      "reason": "没有进入正式训练，没有可打乱的预测分数。"
+    },
+    "T2_prefix_replay": {
+      "status": "NOT_EVALUATED",
+      "reason": "严格 lane 没有已准入特征。"
+    },
+    "T3_future_perturbation": {
+      "status": "NOT_EVALUATED",
+      "reason": "没有正式 D 日信号可以扰动。"
+    },
+    "T4_version_backfill": {
+      "status": "PASS",
+      "visible_value": 1.0,
+      "argmax_value": 9.0,
+      "reason": "先限制 known_at 得到 1；先 argMax(update_time) 得到未来回填 9。主 lane 使用前者。"
+    },
+    "T5_cross_year_maturity": {
+      "status": "NOT_EVALUATED",
+      "reason": "正式训练未启动，没有 purge 计数。"
+    },
+    "T6_censor_extension": {
+      "status": "NOT_EVALUATED",
+      "reason": "没有正式截止决策可回写。"
+    },
+    "T7_future_eligibility": {
+      "status": "NOT_EVALUATED",
+      "reason": "候选清单未进入严格 lane。"
+    },
+    "T8_state_history": {
+      "status": "NOT_EVALUATED",
+      "reason": "行业 known_at 尚未证明可以回放历史成员。"
+    },
+    "T9_overlay_asof": {
+      "status": "BLOCKED_OVERLAY_PIT",
+      "reason": "没有重算的期权 known_at。B2/B4 不运行。"
+    },
+    "T10_cache_fingerprint": {
+      "status": "PASS",
+      "a": "a82a5e91355c2fee982af3bf85cc2322b3549846d5a098a0ca325fcfdbed9f8b",
+      "b": "176774baba2f88768f38b22d449acf51a9402a1d02a04d92ddf46c61ff89fd85",
+      "reason": "known_at 变化会改变指纹。",
+      "differ": true
+    }
+  },
+  "passed": 2,
+  "failed": 0
+}

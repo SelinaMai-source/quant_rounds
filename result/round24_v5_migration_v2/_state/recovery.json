@@ -1,0 +1,17 @@
+{
+  "status": "DONE",
+  "rows_downloaded_total": 0,
+  "jobs": 4,
+  "industry_sample": {
+    "exists": true,
+    "rows_sampled": 20000,
+    "known_at_min": "1996-03-12 00:00:00",
+    "known_at_max": "2026-07-24 00:00:00",
+    "share_known_after_effective": 0.0,
+    "sha256": "112930ff9eeec1da03e4668e0dc1232613319020c36bebe4f375216a1176b004"
+  },
+  "anchor_baseline_v5": "feda6870a26f6efe5d722fd9c3b11130ca266d85",
+  "anchor_migration": "68efe0a29c2b89c044ae916af3981e49ab5be345",
+  "note": "未下载新分区。本地表的 available_at 是回填时间，不能写成恢复完成。",
+  "code_fingerprint": "33e527b52a046a5678a3fb0092b634b7e44c99bfec4c7d2559322c7184cea6a8"
+}

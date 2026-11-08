@@ -20,4 +20,4 @@
 ## 阻断
 - 严格 lane 特征数为 0。标签 FAIL_PARITY（可比 153，未解释错配 15）。正式训练未运行。B0 只是工作日现金占位。
 
-run_code_commit 在结果提交里填写。
+run_code_commit=3e2b021a1f857dbe58849b149883c986340639d1

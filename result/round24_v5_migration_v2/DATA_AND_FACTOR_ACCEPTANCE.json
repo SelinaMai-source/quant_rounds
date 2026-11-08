@@ -1,0 +1,22 @@
+{
+  "status": "BLOCKED",
+  "full_allowed": false,
+  "reason": "严格 lane 没有任何同时具备来源、PIT 证据和公式验收的列。不运行名为 FULL 的模型。",
+  "admitted_strict_features": [],
+  "actual_five_feature_count": 0,
+  "actual_ten_feature_count": 0,
+  "partial_name": null,
+  "d1_open_gap_in_main_lane": false,
+  "regression_g0": {
+    "status": "DONE",
+    "n_overlap": 328,
+    "median_abs_log1p": 0.0,
+    "median_abs_log": 6.253625173258115e-09,
+    "accepted_formula": "log1p",
+    "reason": "首板重叠样本上 log1p(amount) 与原列中位绝对误差不大于 log(amount)。daily_raw 仍没有历史 known_at，所以不进入严格 lane。",
+    "strict_lane": false
+  },
+  "five_theory_count": 13,
+  "ten_theory_count": 12,
+  "ten_excludes_g0_amount_log": true
+}

@@ -1,0 +1,14 @@
+factor,source_table,pit_status,coverage_after,in_five,in_ten,reason,coverage_before
+g_prim_px_vol_corr,,BLOCKED,False,True,True,本地表没有同名供应商列，禁止用 price_volume_corr 改名。,0
+fb_close_seal_streak_norm,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0
+fb_last30_amount_ratio,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0
+h5_last_first_limit_value_change_sym,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0
+h1_consistent_buy_ratio,,BLOCKED_ACCESS,False,True,True,equ_h2l_factor_t1 不在本地，且没有已授权查询凭证。,0
+h1_last15m_volume_ratio,,BLOCKED_ACCESS,False,True,True,equ_h2l_factor_t1 不在本地，且没有已授权查询凭证。,0
+h4_large_net_to_turnover,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0
+h4_retail_net_to_turnover,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0
+g0_amount_log,,AVAILABILITY_UNVERIFIED,False,True,False,首板回归见 regression 字段；即使公式吻合，daily_raw 没有历史 known_at，仍不进入严格 lane。,0
+g0_amt_vs_5,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0
+g1_ret_5,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0
+r24v2_days_since_limit_before_current_streak,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0
+ind_seal_rate_excess,,AVAILABILITY_UNVERIFIED,False,True,True,没有可审计的 D 日 22:00 known_at。,0

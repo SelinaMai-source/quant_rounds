@@ -1,0 +1,11 @@
+{
+  "U_ALL2": {
+    "status": "NOT_BUILT",
+    "reason": "日线涨跌停没有历史 known_at，不能当成当时可知的股票池。"
+  },
+  "U_V5_PROMOTED": {
+    "status": "NOT_BUILT",
+    "reason": "首板资格锚定 D-1，但底层行情时点未验证。d1_open_gap 不进入该池。"
+  },
+  "immutable": false
+}
