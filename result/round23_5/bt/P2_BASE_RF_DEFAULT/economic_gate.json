@@ -1,0 +1,18 @@
+{
+  "delta_cagr": -0.49391919511682847,
+  "delta_sharpe": -1.446013898733473,
+  "nav_rel": 0.9624776652087594,
+  "delta_maxdd": -0.10694260379142262,
+  "flags": {
+    "delta_cagr_ok": false,
+    "delta_sharpe_ok": false,
+    "nav_rel_ok": true,
+    "top_changed_ok": true,
+    "maxdd_ok": false,
+    "fee_direction_ok": true,
+    "not_only_2024_or_2025": false
+  },
+  "economically_material": false,
+  "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+  "fee_note": "SAME_FEE_SCHEDULE"
+}

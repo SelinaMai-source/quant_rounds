@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "implementation": "arch.bootstrap.SPA",
+  "not_white_rc": true,
+  "n": 2075,
+  "block": 20,
+  "reps": 5000,
+  "pvalues": {
+    "lower": 0.4678,
+    "consistent": 0.4678,
+    "upper": 0.7678
+  },
+  "columns": [
+    "P1_BASE_A099",
+    "P2_BASE_RF_DEFAULT",
+    "P3_BASE_DD"
+  ],
+  "null": "benchmark is not inferior to the best model; loss is negative daily net return"
+}

@@ -1,0 +1,11 @@
+{
+  "decision": "NO_PAPER_ENSEMBLE_PROMOTED",
+  "best_paper_method": "NONE",
+  "notes": [
+    "P1_BASE_A099 economically_material=False flags={'delta_cagr_ok': False, 'delta_sharpe_ok': False, 'nav_rel_ok': True, 'top_changed_ok': True, 'maxdd_ok': True, 'fee_direction_ok': True, 'not_only_2024_or_2025': True}",
+    "P2_BASE_RF_DEFAULT economically_material=False flags={'delta_cagr_ok': False, 'delta_sharpe_ok': False, 'nav_rel_ok': True, 'top_changed_ok': True, 'maxdd_ok': False, 'fee_direction_ok': True, 'not_only_2024_or_2025': False}",
+    "P3_BASE_DD economically_material=False flags={'delta_cagr_ok': False, 'delta_sharpe_ok': False, 'nav_rel_ok': True, 'top_changed_ok': True, 'maxdd_ok': True, 'fee_direction_ok': True, 'not_only_2024_or_2025': False}"
+  ],
+  "live_ready": false,
+  "auto_promote": false
+}

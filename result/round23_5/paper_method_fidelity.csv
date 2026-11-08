@@ -1,0 +1,4 @@
+paper_id,fidelity,note
+P01_NARDARI_2024,METHOD_REPLICATION_ON_NEW_DATA,式(7)幂效用与单纯形；单袖套改为规则分数凸组合
+P04_BAI_2026,METHOD_REPLICATION_ON_NEW_DATA,三分位 stacking；省略大神经网络；RF 为 sklearn 默认 100 棵树
+P03_JENSEN_2026,DECISION_LAYER_NOT_FULL_PORTFOLIO_ML,离散动作，不是原文仓位网络
