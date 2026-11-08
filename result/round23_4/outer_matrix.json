@@ -1,0 +1,46 @@
+{
+  "status": "DONE",
+  "ratio": {
+    "ratio": 0.9960423587925228,
+    "raw_ratio": 0.9960423587925228,
+    "clipped": false,
+    "identifiable": true,
+    "reason": "INNER_PLANNED_EXPOSURE"
+  },
+  "overlay_meta_keys": [
+    "n_days",
+    "skip_days",
+    "half_days",
+    "full_days",
+    "mean_mult",
+    "min_mult",
+    "round9_kind",
+    "allocator",
+    "parent",
+    "top1_lock",
+    "e02_multiplied",
+    "top2_nav_mean"
+  ],
+  "r2": {
+    "sharpe": 1.7137614930533682,
+    "cagr": 0.48975491754015854,
+    "max_drawdown": -0.240563277153944,
+    "nav_end": 9083522.100338858,
+    "completed_trades": 1109
+  },
+  "r3": {
+    "sharpe": 1.8072149629593852,
+    "cagr": 0.5233768799549983,
+    "max_drawdown": -0.2877362832410054,
+    "nav_end": 10994652.01202771,
+    "completed_trades": 1106
+  },
+  "r4": {
+    "sharpe": 1.8808859957398565,
+    "cagr": 0.5498413557369592,
+    "max_drawdown": -0.23959027762313911,
+    "nav_end": 12740244.678041838,
+    "completed_trades": 1107
+  },
+  "outer_is_evaluation_only": true
+}

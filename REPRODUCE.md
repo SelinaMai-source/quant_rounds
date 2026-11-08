@@ -20,4 +20,4 @@
 ## 阻断
 - 遗留 E2 重放与 R0 已与公布数字对齐。R3 没有通过风险门。没有独立 forward，不是 LIVE_READY。
 
-run_code_commit 在结果提交里填写。
+run_code_commit=a7bcd24b05122259ded50a61a70a235c776d5f61

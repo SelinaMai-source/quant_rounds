@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "alpha_outcome": "ALPHA_NOT_PROMOTED",
+  "risk_outcome": "RISK_GATE_NOT_MET",
+  "risk_detail": {
+    "outcome": "RISK_GATE_NOT_MET",
+    "cagr_loss_vs_r0": 0.02660440327235425,
+    "ui_improve_vs_r0": -0.17314874894799495,
+    "ui_bootstrap_p05": -0.0129173048522613,
+    "advantage_vs_r4": false,
+    "live_ready": false,
+    "current_baseline_changed": false
+  },
+  "legacy_replay_status": "PASS",
+  "fail_parity_is_not_candidate": false,
+  "current_baseline_changed": false,
+  "production_config_changed": false,
+  "auto_promote": false,
+  "live_ready": false,
+  "information_contract": "LEGACY_OPEN_INFORMATION",
+  "code_fingerprint": "a24ad40d8daf668d86d256132670d3209e9931bc0f4bbe014e96a101144e26c3"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "DONE",
+  "n_days": 2075,
+  "cagr_annualization": "365.25 calendar span, same as core.metrics.attach_nav_metrics",
+  "sharpe_annualization": "sqrt(252)",
+  "primary_block": 20,
+  "sensitivity_blocks": [
+    10,
+    40
+  ],
+  "spa": {
+    "status": "BLOCKED_STAT_TEST",
+    "reason": "arch_import_failed"
+  },
+  "dropped_dates": 0,
+  "code_fingerprint": "2dcac11b90e41aa4938d2170012107a18a2c11a0cb5f6872af3175063340516c"
+}

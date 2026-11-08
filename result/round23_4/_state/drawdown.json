@@ -1,0 +1,37 @@
+{
+  "status": "DONE",
+  "r0_matches_published_v5": {
+    "sharpe": true,
+    "cagr": true,
+    "max_drawdown": true,
+    "nav_end": true,
+    "completed_trades": true,
+    "pass": true
+  },
+  "nav_reconcile_r0": {
+    "cash_plus_mv_equals_total": true,
+    "max_identity_gap": 0.0,
+    "tolerance": 0.1275008935572469,
+    "tolerance_rule": "max(0.01 RMB, 1e-8 * NAV)",
+    "end_nav": 12750089.355724689,
+    "n_days": 2076,
+    "status": "PASS"
+  },
+  "nav_reconcile_r1": {
+    "cash_plus_mv_equals_total": true,
+    "max_identity_gap": 0.0,
+    "tolerance": 0.12751221573803223,
+    "tolerance_rule": "max(0.01 RMB, 1e-8 * NAV)",
+    "end_nav": 12751221.573803224,
+    "n_days": 2076,
+    "status": "PASS"
+  },
+  "class_counts": {
+    "same_stock_different_qty": 634,
+    "common": 451,
+    "baseline_only": 22,
+    "candidate_only": 13
+  },
+  "comparison_contract": "LEGACY_OPEN_INFORMATION",
+  "code_fingerprint": "2dcac11b90e41aa4938d2170012107a18a2c11a0cb5f6872af3175063340516c"
+}

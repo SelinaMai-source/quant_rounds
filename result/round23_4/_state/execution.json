@@ -1,0 +1,11 @@
+{
+  "status": "DONE",
+  "limit_clip": "引擎 _modeled_buy_reference_price 将买入价夹在 [max(low,limit_down), min(high,limit_up)]，滑点不能以越限价格成交。",
+  "mechanism": {
+    "status": "OBSERVED",
+    "open_limit_up_rejections_in_r0": 306,
+    "refill": false
+  },
+  "deleted_scores": false,
+  "code_fingerprint": "2dcac11b90e41aa4938d2170012107a18a2c11a0cb5f6872af3175063340516c"
+}

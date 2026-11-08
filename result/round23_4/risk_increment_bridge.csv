@@ -1,0 +1,16 @@
+item,value,note
+terminal_nav_delta,1132.2180785350502,复利净值差
+sum_trade_cash_pnl_diff,1132.2180785387754,交易现金盈亏加总，不等于复利净值差
+fee_total_baseline,446540.19993530144,成本表合计
+fee_total_candidate,444762.69220677007,成本表合计
+cagr_baseline,0.5499812832273525,365.25
+cagr_candidate,0.549997369909659,365.25
+ulcer_baseline,0.09241594697663669,
+ulcer_candidate,0.09099600032931854,
+maxdd_baseline,-0.24056327715394388,
+maxdd_candidate,-0.2310479818360227,
+es95_baseline,0.03214578667148513,最差5%日收益的负均值
+es95_candidate,0.032250112738710215,
+window63_worst10_baseline,-0.188289944525309,
+window63_worst10_candidate,-0.1873384931846235,
+class_counts,"{""same_stock_different_qty"": 634, ""common"": 451, ""baseline_only"": 22, ""candidate_only"": 13}",
