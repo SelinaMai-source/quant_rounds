@@ -1,0 +1,246 @@
+freeze_id: R235_PREREG_V1
+frozen_before_outer_nav: true
+do_not_edit_after_outer_nav: true
+information_lane: LEGACY_OPEN_INFORMATION_COMPARISON
+max_formal_frameworks: 3
+frameworks:
+- P1_NARDARI
+- P2_BAI
+- P3_JENSEN
+not_a_weight_grid: true
+experiments:
+- experiment_id: P1_BASE_A099
+  paper_id: P01_NARDARI_2024
+  paper_method: equation (7) power utility, gamma=3, alpha=0.99
+  algorithm_equations: w=argmax sum_s alpha^(t-1-s) * ((w'R_s)^(1-gamma)-1)/(1-gamma),
+    sum w=1, w>=0
+  original_implementation: METHOD_REPLICATION_ON_NEW_DATA
+  v5_adaptation: P1_ADAPT_V5
+  input_features: historical complete-rule daily net returns only
+  training_objective: discounted power utility
+  hyperparameters:
+    gamma: 3
+    alpha: 0.99
+    min_months: 12
+  seed: 17
+  train_window: all rule months strictly before year Y
+  validation_window: Y-1 H1 and Y-1 H2 are not used to pick alpha
+  test_window: calendar year Y inside 2018-01-02..2026-07-24
+  fallback_policy: v5
+  data_dependencies: frozen rule ledgers
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  stop_conditions: do not add alpha grid points after results
+- experiment_id: P1_SENS_A100
+  paper_id: P01_NARDARI_2024
+  paper_method: equation (7) with alpha=1
+  algorithm_equations: same as P1_BASE with alpha=1
+  original_implementation: SENSITIVITY
+  v5_adaptation: same fallback
+  input_features: historical complete-rule daily net returns only
+  training_objective: discounted power utility
+  hyperparameters:
+    gamma: 3
+    alpha: 1.0
+    min_months: 12
+  seed: 17
+  train_window: months before Y
+  validation_window: not used for selection
+  test_window: year Y
+  fallback_policy: v5
+  data_dependencies: frozen rule ledgers
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  stop_conditions: recorded, not used to crown a winner
+- experiment_id: P1_SENS_A090
+  paper_id: P01_NARDARI_2024
+  paper_method: equation (7) with alpha=0.90
+  algorithm_equations: same as P1_BASE with alpha=0.90
+  original_implementation: SENSITIVITY
+  v5_adaptation: same fallback
+  input_features: historical complete-rule daily net returns only
+  training_objective: discounted power utility
+  hyperparameters:
+    gamma: 3
+    alpha: 0.9
+    min_months: 12
+  seed: 17
+  train_window: months before Y
+  validation_window: not used for selection
+  test_window: year Y
+  fallback_policy: v5
+  data_dependencies: frozen rule ledgers
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  stop_conditions: recorded, not used to crown a winner
+- experiment_id: P2_BASE_RF_DEFAULT
+  paper_id: P04_BAI_2026
+  paper_method: classification stacking, multinomial logistic meta
+  algorithm_equations: 3-class labels at train-fold 33/67 percentiles; RF OOF probabilities
+    plus existing OOF ranks; logistic meta
+  original_implementation: METHOD_REPLICATION_ON_NEW_DATA
+  v5_adaptation: P2_ADAPT_V5
+  input_features: existing Five14 features for RF only; meta reads OOF
+  training_objective: multiclass log loss
+  hyperparameters:
+    n_estimators: 100
+    max_depth: null
+    C: 1.0
+    n_classes: 3
+  seed: 17
+  train_window: labels with actual_exit_date before year Y
+  validation_window: no depth search on Y-1
+  test_window: year Y
+  fallback_policy: v5
+  data_dependencies: XGB OOF, LGBM OOF, training panel
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  stop_conditions: no neural net and no extra depth after results
+- experiment_id: P2_SENS_DEPTH4
+  paper_id: P04_BAI_2026
+  paper_method: RF max_depth=4
+  algorithm_equations: same stacking with depth 4
+  original_implementation: SENSITIVITY
+  v5_adaptation: fallback v5
+  input_features: Five14
+  training_objective: multiclass log loss
+  hyperparameters:
+    n_estimators: 100
+    max_depth: 4
+    C: 1.0
+  seed: 17
+  train_window: mature labels before Y
+  validation_window: not used for selection
+  test_window: year Y
+  fallback_policy: v5
+  data_dependencies: same as base
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  stop_conditions: recorded, not selected on outer Sharpe
+- experiment_id: P2_SENS_DEPTH8
+  paper_id: P04_BAI_2026
+  paper_method: RF max_depth=8
+  algorithm_equations: same stacking with depth 8
+  original_implementation: SENSITIVITY
+  v5_adaptation: fallback v5
+  input_features: Five14
+  training_objective: multiclass log loss
+  hyperparameters:
+    n_estimators: 100
+    max_depth: 8
+    C: 1.0
+  seed: 17
+  train_window: mature labels before Y
+  validation_window: not used for selection
+  test_window: year Y
+  fallback_policy: v5
+  data_dependencies: same as base
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  stop_conditions: recorded, not selected on outer Sharpe
+- experiment_id: P3_BASE_DD
+  paper_id: P03_JENSEN_2026
+  paper_method: discrete implementable-utility selector
+  algorithm_equations: U=mean(net)-lambda_to*turnover-lambda_dd*ulcer
+  original_implementation: DECISION_LAYER_NOT_FULL_PORTFOLIO_ML
+  v5_adaptation: P3_ADAPT_MATCHED
+  input_features: executor net, turnover, drawdown penalty
+  training_objective: implementable utility on executor ledgers
+  hyperparameters:
+    lambda_turnover: 0.0
+    lambda_drawdown: 1.0
+  seed: 17
+  train_window: executor days strictly before Y
+  validation_window: Y-1 not used to retune lambda
+  test_window: year Y
+  fallback_policy: keep v5
+  data_dependencies: action ledgers from the same sleeve engine
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  - exposure
+  stop_conditions: no extra actions and no outer lambda search
+- experiment_id: P3_SENS_NET
+  paper_id: P03_JENSEN_2026
+  paper_method: utility with both lambdas at 0
+  algorithm_equations: U=mean(net)
+  original_implementation: SENSITIVITY
+  v5_adaptation: matched exposure if needed
+  input_features: executor net
+  training_objective: mean executor net
+  hyperparameters:
+    lambda_turnover: 0.0
+    lambda_drawdown: 0.0
+  seed: 17
+  train_window: days before Y
+  validation_window: not used
+  test_window: year Y
+  fallback_policy: keep v5
+  data_dependencies: action ledgers
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  stop_conditions: recorded, not selected on outer Sharpe
+- experiment_id: P3_SENS_BOTH
+  paper_id: P03_JENSEN_2026
+  paper_method: utility with turnover and drawdown penalties
+  algorithm_equations: U=mean(net)-1*turnover-1*ulcer
+  original_implementation: SENSITIVITY
+  v5_adaptation: matched exposure if needed
+  input_features: executor net, turnover, ulcer
+  training_objective: penalized executor utility
+  hyperparameters:
+    lambda_turnover: 1.0
+    lambda_drawdown: 1.0
+  seed: 17
+  train_window: days before Y
+  validation_window: not used
+  test_window: year Y
+  fallback_policy: keep v5
+  data_dependencies: action ledgers
+  cost_contract: ROUND7_FLAT unchanged
+  statistical_family: paired daily net versus v5
+  primary_metric: sharpe
+  secondary_metrics:
+  - cagr
+  - maxdd
+  - ulcer
+  stop_conditions: recorded, not selected on outer Sharpe

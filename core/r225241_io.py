@@ -29,6 +29,7 @@ _ALLOWED = (
     "round23_4",
     "round24_v5_migration_v2",
     "round23_4_round24_v2_master",
+    "round23_5",
 )
 
 

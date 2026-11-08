@@ -1,0 +1,82 @@
+{
+  "source_note": "用户于 2026-11-08 指定：下列正文就是先前 Deep Research 的 10 篇论文报告。停止搜索替代书目。Hansen SPA 与 White Reality Check 不计入这 10 篇。",
+  "grade_freeze_id": "R235_FEASIBILITY_GRADES_V1",
+  "frozen_before_any_round23_5_pnl": true,
+  "paper_count": 10,
+  "excluded_from_ten": [
+    "Hansen SPA",
+    "White Reality Check"
+  ],
+  "papers": [
+    {
+      "paper_id": "P01_NARDARI_2024",
+      "verification_status": "VERIFIED_SSRN_WORKING_PAPER",
+      "verification_note": "SSRN 4217088 与 2024-12-19 EFMA 稿核对到作者、标题与式(7)(5)。无期刊 DOI，不编造。",
+      "grade": "B",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P02_SHI_2026",
+      "verification_status": "VERIFIED",
+      "verification_note": "JBF DOI 与 SSRN 4884029 核对。期刊作者顺序为 Shi, Qiu, Gu, Shu；与用户简称 Shi, Shu, Gu & Qiu 是同一组作者。",
+      "grade": "C",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P03_JENSEN_2026",
+      "verification_status": "VERIFIED",
+      "verification_note": "RFS DOI 10.1093/rfs/hhag022 与 SFI 22-63 核对。",
+      "grade": "B",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P04_BAI_2026",
+      "verification_status": "VERIFIED",
+      "verification_note": "FAJ DOI、arXiv:2108.02283 与 CFA Institute 目录核对。",
+      "grade": "B",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P05_GKX_2020",
+      "verification_status": "VERIFIED",
+      "verification_note": "RFS 33(5) 2223-2273，DOI 10.1093/rfs/hhaa009。",
+      "grade": "B",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P06_YANG_2020",
+      "verification_status": "VERIFIED",
+      "verification_note": "ACM DOI 10.1145/3383455.3422540，ICAIF 2020。",
+      "grade": "D",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P07_DEEPTRADER_2021",
+      "verification_status": "VERIFIED_IDENTITY_HYPERPARAMETERS_UNSPECIFIED",
+      "verification_note": "AAAI 2021 论文身份与作者已核对。结构与超参保持 UNSPECIFIED。",
+      "grade": "D",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P08_MASAAT_2024",
+      "verification_status": "VERIFIED",
+      "verification_note": "DOI 10.1109/IJCNN60899.2024.10650941 与作者核对。",
+      "grade": "D",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P09_LIU_JIA_2023",
+      "verification_status": "VERIFIED",
+      "verification_note": "DOI 10.1111/coin.12617。完整作者是 Chen, Liu, Jia；用户简称 Liu & Jia 指向同一篇，不另找论文。",
+      "grade": "D",
+      "source_code_url": "UNSPECIFIED"
+    },
+    {
+      "paper_id": "P10_AAF_2024",
+      "verification_status": "VERIFIED_SSRN_WORKING_PAPER",
+      "verification_note": "SSRN 4781685 核对作者、标题与 Sharpe 节点目标。无期刊 DOI。",
+      "grade": "C",
+      "source_code_url": "UNSPECIFIED"
+    }
+  ]
+}
