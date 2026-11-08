@@ -25,6 +25,7 @@ def run_windowed_sleeve(
     backtest_end: str | pd.Timestamp | None = None,
     initial_cash: float = 300_000.0,
     already_overlayed: bool = False,
+    prepared_market: Any = None,
     extra: dict[str, Any] | None = None,
     resume: bool = True,
     fail_on_full_history: bool = True,
@@ -99,7 +100,7 @@ def run_windowed_sleeve(
 
     result = run_local_fixed_sleeve_backtest(
         frame[keep],
-        market()["prepared"],
+        prepared_market if prepared_market is not None else market()["prepared"],
         config=config,
         start_date=bt_start,
         end_date=bt_end,
