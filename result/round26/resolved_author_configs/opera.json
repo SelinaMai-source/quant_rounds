@@ -1,0 +1,28 @@
+{
+  "method": "opera",
+  "commit": "24070db124c14df022c9356a3b517599ffd95148",
+  "files": {
+    "R/BOA.R": {
+      "sha256": "98e0bda5506b2609146f312ed059f0ac448baae553940602c43889702c4ad6e3"
+    },
+    "R/mixture.R": {
+      "sha256": "73713841d802b6f6bdac9a4a4fdcdf7eede66408e6dba3fdfc9183fe33ab7a0d"
+    },
+    "R/loss.R": {
+      "sha256": "0ee69dc998543880396c7123644295adbb4e9a698d2933d6f5734891944dd58a"
+    },
+    "DESCRIPTION": {
+      "sha256": "c489066ad69502cc7416f0ab2960d67eda68c2237fb7fcc88f02afdae584883d"
+    }
+  },
+  "resolutions": {},
+  "reference": {
+    "entry": "mixture",
+    "model": "BOA",
+    "loss.type": "square",
+    "loss.gradient": true,
+    "prior": "uniform",
+    "update": "author default, 2.2 r^2",
+    "test": "deterministic 40-step 4-expert stream"
+  }
+}

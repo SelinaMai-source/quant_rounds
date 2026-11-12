@@ -1,0 +1,56 @@
+{
+  "method": "AlphaGen",
+  "commit": "259687e8f316994426416c530a94842a2fe6405e",
+  "files": {
+    "scripts/rl.py": {
+      "sha256": "9cf2f018432306d31669f718cf67fbc03afdc8496a4cd3205b78a85fc857b072"
+    },
+    "alphagen/config.py": {
+      "sha256": "345ba56b9766728b81ed7c3f763a61996949f6b10245a0994ad4c9e0e54559f9"
+    }
+  },
+  "resolutions": {
+    "scripts/rl.py": {
+      "read_alphagpt_init_pool@27": {},
+      "build_parser@38": {},
+      "build_chat_client@51": {},
+      "run_single_experiment@158": {
+        "seed": "0",
+        "instruments": "'csi300'",
+        "pool_capacity": "10",
+        "steps": "200000",
+        "alphagpt_init": "False",
+        "use_llm": "False",
+        "llm_every_n_steps": "25000",
+        "drop_rl_n": "5",
+        "llm_replace_n": "3"
+      },
+      "main@278": {
+        "random_seeds": "0",
+        "pool_capacity": "20",
+        "instruments": "'csi300'",
+        "alphagpt_init": "False",
+        "use_llm": "False",
+        "drop_rl_n": "10",
+        "steps": "None",
+        "llm_every_n_steps": "25000"
+      },
+      "__init__@63": {
+        "verbose": "0",
+        "chat_session": "None",
+        "llm_every_n_steps": "25000",
+        "drop_rl_n": "5"
+      },
+      "_on_step@84": {},
+      "_on_rollout_end@87": {},
+      "save_checkpoint@107": {},
+      "show_pool_state@115": {},
+      "_try_use_llm@126": {},
+      "pool@149": {},
+      "env_core@154": {},
+      "get_dataset@198": {},
+      "build_pool@215": {}
+    },
+    "alphagen/config.py": {}
+  }
+}

@@ -1,0 +1,1 @@
+aggregation.py contains ports of SuperLearner method.NNLS (GPL-3, Eric Polley and coauthors) and opera BOA (LGPL, opera authors). This port is distributed under GPL-3. Source URLs and exact commits are recorded in source_lock.json; no proprietary data is included. Original R implementations remain in external locked downloads.

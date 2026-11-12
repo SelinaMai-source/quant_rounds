@@ -1,0 +1,297 @@
+{
+  "method": "TRA",
+  "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+  "files": {
+    "examples/benchmarks/TRA/configs/config_alstm.yaml": {
+      "sha256": "43346cc3a626d9006b4dd641390425e78bd808e9cbb5271a340f2d199ff86f5a"
+    },
+    "examples/benchmarks/TRA/configs/config_alstm_tra.yaml": {
+      "sha256": "d110eb738ed355aea240b38d09ca580e4a7555c3d0cde1edb3824ef46f157f4a"
+    },
+    "examples/benchmarks/TRA/src/model.py": {
+      "sha256": "3dc690d2788b6776d7df482fdb7ac056e794600cca96d51f973230b42b03bceb"
+    }
+  },
+  "resolutions": {
+    "examples/benchmarks/TRA/configs/config_alstm.yaml": {
+      "qlib_init": {
+        "provider_uri": "~/.qlib/qlib_data/cn_data",
+        "region": "cn"
+      },
+      "data_loader_config": {
+        "class": "StaticDataLoader",
+        "module_path": "qlib.data.dataset.loader",
+        "kwargs": {
+          "config": {
+            "feature": "data/feature.pkl",
+            "label": "data/label.pkl"
+          }
+        }
+      },
+      "model_config": {
+        "input_size": 16,
+        "hidden_size": 256,
+        "num_layers": 2,
+        "num_heads": 2,
+        "use_attn": true,
+        "dropout": 0.1
+      },
+      "num_states": 1,
+      "tra_config": {
+        "num_states": 1,
+        "hidden_size": 16,
+        "tau": 1.0,
+        "src_info": "LR_TPE"
+      },
+      "task": {
+        "model": {
+          "class": "TRAModel",
+          "module_path": "src/model.py",
+          "trusted": true,
+          "kwargs": {
+            "lr": 0.0002,
+            "n_epochs": 500,
+            "max_steps_per_epoch": 100,
+            "early_stop": 20,
+            "seed": 1000,
+            "logdir": "output/test/alstm",
+            "model_type": "LSTM",
+            "model_config": {
+              "input_size": 16,
+              "hidden_size": 256,
+              "num_layers": 2,
+              "num_heads": 2,
+              "use_attn": true,
+              "dropout": 0.1
+            },
+            "tra_config": {
+              "num_states": 1,
+              "hidden_size": 16,
+              "tau": 1.0,
+              "src_info": "LR_TPE"
+            },
+            "lamb": 1.0,
+            "rho": 0.99,
+            "freeze_model": false,
+            "model_init_state": null
+          }
+        },
+        "dataset": {
+          "class": "MTSDatasetH",
+          "module_path": "src/dataset.py",
+          "trusted": true,
+          "kwargs": {
+            "handler": {
+              "class": "DataHandler",
+              "module_path": "qlib.data.dataset.handler",
+              "kwargs": {
+                "data_loader": {
+                  "class": "StaticDataLoader",
+                  "module_path": "qlib.data.dataset.loader",
+                  "kwargs": {
+                    "config": {
+                      "feature": "data/feature.pkl",
+                      "label": "data/label.pkl"
+                    }
+                  }
+                }
+              }
+            },
+            "segments": {
+              "train": [
+                "2007-10-30",
+                "2016-05-27"
+              ],
+              "valid": [
+                "2016-09-26",
+                "2018-05-29"
+              ],
+              "test": [
+                "2018-09-21",
+                "2020-06-30"
+              ]
+            },
+            "seq_len": 60,
+            "horizon": 21,
+            "num_states": 1,
+            "batch_size": 1024
+          }
+        }
+      }
+    },
+    "examples/benchmarks/TRA/configs/config_alstm_tra.yaml": {
+      "qlib_init": {
+        "provider_uri": "~/.qlib/qlib_data/cn_data",
+        "region": "cn"
+      },
+      "data_loader_config": {
+        "class": "StaticDataLoader",
+        "module_path": "qlib.data.dataset.loader",
+        "kwargs": {
+          "config": {
+            "feature": "data/feature.pkl",
+            "label": "data/label.pkl"
+          }
+        }
+      },
+      "model_config": {
+        "input_size": 16,
+        "hidden_size": 256,
+        "num_layers": 2,
+        "num_heads": 2,
+        "use_attn": true,
+        "dropout": 0.1
+      },
+      "num_states": 10,
+      "tra_config": {
+        "num_states": 10,
+        "hidden_size": 16,
+        "tau": 1.0,
+        "src_info": "LR_TPE"
+      },
+      "task": {
+        "model": {
+          "class": "TRAModel",
+          "module_path": "src/model.py",
+          "trusted": true,
+          "kwargs": {
+            "lr": 0.0001,
+            "n_epochs": 500,
+            "max_steps_per_epoch": 100,
+            "early_stop": 20,
+            "seed": 1000,
+            "logdir": "output/test/alstm_tra",
+            "model_type": "LSTM",
+            "model_config": {
+              "input_size": 16,
+              "hidden_size": 256,
+              "num_layers": 2,
+              "num_heads": 2,
+              "use_attn": true,
+              "dropout": 0.1
+            },
+            "tra_config": {
+              "num_states": 10,
+              "hidden_size": 16,
+              "tau": 1.0,
+              "src_info": "LR_TPE"
+            },
+            "lamb": 2.0,
+            "rho": 0.99,
+            "freeze_model": true,
+            "model_init_state": "output/test/alstm_tra_init/model.bin"
+          }
+        },
+        "dataset": {
+          "class": "MTSDatasetH",
+          "module_path": "src/dataset.py",
+          "trusted": true,
+          "kwargs": {
+            "handler": {
+              "class": "DataHandler",
+              "module_path": "qlib.data.dataset.handler",
+              "kwargs": {
+                "data_loader": {
+                  "class": "StaticDataLoader",
+                  "module_path": "qlib.data.dataset.loader",
+                  "kwargs": {
+                    "config": {
+                      "feature": "data/feature.pkl",
+                      "label": "data/label.pkl"
+                    }
+                  }
+                }
+              }
+            },
+            "segments": {
+              "train": [
+                "2007-10-30",
+                "2016-05-27"
+              ],
+              "valid": [
+                "2016-09-26",
+                "2018-05-29"
+              ],
+              "test": [
+                "2018-09-21",
+                "2020-06-30"
+              ]
+            },
+            "seq_len": 60,
+            "horizon": 21,
+            "num_states": 10,
+            "batch_size": 1024
+          }
+        }
+      }
+    },
+    "examples/benchmarks/TRA/src/model.py": {
+      "evaluate@535": {},
+      "average_params@546": {},
+      "shoot_infs@566": {},
+      "sinkhorn@585": {
+        "n_iters": "3",
+        "epsilon": "0.01"
+      },
+      "__init__@27": {
+        "model_type": "'LSTM'",
+        "lr": "0.001",
+        "n_epochs": "500",
+        "early_stop": "50",
+        "smooth_steps": "5",
+        "max_steps_per_epoch": "None",
+        "freeze_model": "False",
+        "model_init_state": "None",
+        "lamb": "0.0",
+        "rho": "0.99",
+        "seed": "None",
+        "logdir": "None",
+        "eval_train": "True",
+        "eval_test": "False",
+        "avg_params": "True"
+      },
+      "train_epoch@94": {},
+      "test_epoch@146": {
+        "return_pred": "False"
+      },
+      "fit@203": {
+        "evals_result": "dict()"
+      },
+      "predict@314": {
+        "segment": "'test'"
+      },
+      "__init__@340": {
+        "input_size": "16",
+        "hidden_size": "64",
+        "num_layers": "2",
+        "use_attn": "True",
+        "dropout": "0.0",
+        "input_drop": "0.0",
+        "noise_level": "0.0"
+      },
+      "forward@377": {},
+      "__init__@398": {
+        "dropout": "0.1",
+        "max_len": "5000"
+      },
+      "forward@410": {},
+      "__init__@428": {
+        "input_size": "16",
+        "hidden_size": "64",
+        "num_layers": "2",
+        "num_heads": "2",
+        "dropout": "0.0",
+        "input_drop": "0.0",
+        "noise_level": "0.0"
+      },
+      "forward@459": {},
+      "__init__@489": {
+        "num_states": "1",
+        "hidden_size": "8",
+        "tau": "1.0",
+        "src_info": "'LR_TPE'"
+      },
+      "forward@507": {}
+    }
+  }
+}
