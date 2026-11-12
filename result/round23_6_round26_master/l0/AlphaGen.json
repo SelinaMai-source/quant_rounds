@@ -1,0 +1,20 @@
+{
+  "method": "AlphaGen",
+  "seed": 0,
+  "level": "L0_ALGORITHM",
+  "data": "SYNTHETIC_ALGORITHM_TEST_NOT_REFERENCE",
+  "started_at": 1794491118.1894639,
+  "pool_size": 5,
+  "pool_weights": [
+    0.048014249299970405,
+    0.4380907736323228,
+    0.05491649232367348,
+    0.04188673518488797,
+    0.013747477933224853
+  ],
+  "pool_evaluations": 6,
+  "policy_parameters_changed": 21,
+  "status": "ALGORITHM_CORE_UPDATE_PASSED",
+  "limitations": "author expression evaluation, synergistic pool and original LSTM policy on synthetic OHLCV tensors; finite 64-token rollout test, not L1",
+  "elapsed_seconds": 3.919517993927002
+}

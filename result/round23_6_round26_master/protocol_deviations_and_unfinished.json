@@ -1,0 +1,30 @@
+{
+  "overall": "PARTIAL_NOT_PROTOCOL_COMPLETE",
+  "deviations": [
+    {
+      "requirement": "Complete resolved config export before every L0 result",
+      "actual": "Some neural/core L0 code was executed from locked official source before its full JSON config export; all full L1 training remains unstarted. No result-based hyperparameter selection was performed.",
+      "state": "DEVIATION_RETAINED"
+    },
+    {
+      "requirement": "Full L1 and L2 of all ten papers, portfolio P1 execution and complete factor matrix",
+      "actual": "Not completed. Missing implementations and unexecuted independent work are explicit, not misclassified as access denial.",
+      "state": "UNFINISHED"
+    },
+    {
+      "requirement": "Resumable partial data recovery",
+      "actual": "The first FI-2010 curl retry truncated a partial file; original failure log is retained, no completed download is claimed.",
+      "state": "RECOVERY_FAILURE_RETAINED"
+    },
+    {
+      "requirement": "Correct legacy decision time and prompt matured feedback",
+      "actual": "Initial BOA used signal D 09:00. Repaired to canonical next1_date 09:30; original forecast/weight/return artifacts retained, NNLS output unchanged, BOA three scenarios and statistics rerun.",
+      "state": "REPAIRED_WITH_SUPERSEDED_RESULTS_RETAINED"
+    },
+    {
+      "requirement": "Only read/calculate BOA label loss after maturity",
+      "actual": "Moved gradient/label access from pending-queue construction into maturity-filtered feedback consumption. All BOA scores compared exactly equal after the control-flow repair.",
+      "state": "REPAIRED_EXACT_NUMERICAL_INVARIANCE"
+    }
+  ]
+}

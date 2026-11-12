@@ -1,0 +1,32 @@
+{
+  "method": "RSR",
+  "tensorflow_version": "1.15.5",
+  "python_version": "3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:21) \n[GCC 9.4.0]",
+  "L0": "ALGORITHM_CORE_UPDATE_PASSED",
+  "records": [
+    {
+      "module": "rank_lstm.py",
+      "status": "OFFICIAL_TF1_GRAPH_UPDATE_PASSED",
+      "loss": 0.9516373872756958,
+      "changed_variables": 4,
+      "prediction_shape": [
+        8,
+        1
+      ],
+      "source_sha256": "ea7e9db8cfe46e89462fdba5d906ef30071270ee38c8d2ad3df3679bbfc90414",
+      "scope": "unchanged complete graph construction from author train method, synthetic inputs, finite one-step update; no L1 claim"
+    },
+    {
+      "module": "relation_rank_lstm.py",
+      "status": "OFFICIAL_TF1_GRAPH_UPDATE_PASSED",
+      "loss": 0.9012631773948669,
+      "changed_variables": 8,
+      "prediction_shape": [
+        8,
+        1
+      ],
+      "source_sha256": "d4c6826b3c30dc27c5cf69abc71a2cb405c9b0c27658bc588f13fcf341f4c39e",
+      "scope": "unchanged complete graph construction from author train method, synthetic inputs, finite one-step update; no L1 claim"
+    }
+  ]
+}

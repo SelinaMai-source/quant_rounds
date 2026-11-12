@@ -1,0 +1,18 @@
+[
+  {
+    "method": "MASTER",
+    "source_uri": "https://1drv.ms/f/c/652674690cc447e6/Eu8Kxv4xxTFMtDQqTW0IU0UB8rnpjACA5twMi8BA_PfbSA",
+    "action": "public author reference source GET",
+    "rows_recovered": 0,
+    "status": "CONNECTION_ERROR",
+    "error_type": "URLError"
+  },
+  {
+    "method": "DoubleAdapt",
+    "source_uri": "https://github.com/chenditc/investment_data/releases/download/2023-06-01/qlib_bin.tar.gz",
+    "action": "public author reference source GET",
+    "rows_recovered": 0,
+    "status": "CONNECTION_ERROR",
+    "error_type": "URLError"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "overall": "PARTIAL",
+  "missing": [
+    "baseline_parity.json",
+    "oof_registry.parquet",
+    "model_registry.csv",
+    "yearly_metrics.csv",
+    "top1_top2_actual_pnl.csv",
+    "risk_metrics.csv",
+    "execution_sensitivity.csv",
+    "bootstrap_results.csv",
+    "spa_results.json"
+  ],
+  "note": "Missing artifacts reflect incomplete work, not successful empty placeholder outputs."
+}

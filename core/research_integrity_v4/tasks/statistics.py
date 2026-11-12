@@ -9,7 +9,7 @@ def sharpe(a,axis=0):
  s=np.std(a,axis=axis,ddof=1);return np.divide(np.mean(a,axis=axis),s,out=np.zeros_like(s),where=s>0)*np.sqrt(252)
 def risk(nav):
  a=np.asarray(nav,float);r=a[1:]/a[:-1]-1
- path=np.r_[INITIAL,a];dd=path/np.maximum.accumulate(path)-1
+ path=np.r_[INITIAL,a];dd=path[1:]/np.maximum.accumulate(path)[1:]-1
  es=-np.mean(r[r<=np.quantile(r,.05)])
  duration=0;longest=0
  for v in dd:
@@ -73,6 +73,16 @@ for code in primary:
  for x in sens:
   if x['experiment_id']==code:x['fee_direction_ok']=bool(np.sign(deltas[0])==np.sign(deltas[1])==np.sign(deltas[2]))
 pd.DataFrame(sens).to_csv(R/'execution_sensitivity.csv',index=False)
+# Retain the economically executed pre-repair extra-delay version in the watched
+# same-cost statistical family. It is not eligible for paper fidelity/promotion.
+retired=R/'superseded_prediction_timestamp/bt/C11_BOA/nav.parquet'
+if retired.exists():
+ oldnav=pd.read_parquet(retired)
+ if not pd.to_datetime(oldnav.trade_date).equals(dates):raise ValueError('Retired run calendar mismatch')
+ olda=oldnav.total_asset.to_numpy(float);oldcode='C11_BOA_SUPERSEDED_EXTRA_DAY_DELAY'
+ curves[oldcode]=np.r_[olda[0]/INITIAL-1,olda[1:]/olda[:-1]-1];primary.append(oldcode)
+ pd.DataFrame(curves,index=dates).rename_axis('trade_date').to_csv(R/'daily_returns.csv.gz')
+
 # Deduplicate identical daily paths before all-candidate SPA.
 unique=[];seen=set();aliases={}
 for code in primary:
@@ -97,5 +107,5 @@ for block,nsamples in [(20,5000),(10,1000),(40,1000)]:
   boot.append({'experiment_id':code,'block':block,'n':nsamples,'delta_Sharpe_q05':float(np.quantile(a[:,0],.05)),'delta_Sharpe_q50':float(np.quantile(a[:,0],.5)),'delta_Sharpe_q95':float(np.quantile(a[:,0],.95)),'delta_CAGR_q05':float(np.quantile(a[:,1],.05)),'delta_CAGR_q95':float(np.quantile(a[:,1],.95)),'paired':True,'cagr_years':years})
 pd.DataFrame(boot).to_csv(R/'bootstrap_results.csv',index=False)
 spa=SPA(-base_ret,np.column_stack([-curves[c][1:] for c in unique]),block_size=20,reps=5000,bootstrap='circular',seed=0)
-spa.compute();(R/'spa_results.json').write_text(json.dumps({'status':'COMPUTED','pvalues':spa.pvalues.to_dict(),'candidate_family':unique,'deduplicated':aliases,'scope':'same legacy-v5 economic scope; all executed new aggregation candidates and their controls; no paper-reference metrics','repeated_historical_development':True},indent=2))
+spa.compute();(R/'spa_results.json').write_text(json.dumps({'status':'COMPUTED','pvalues':spa.pvalues.to_dict(),'candidate_family':unique,'deduplicated':aliases,'scope':'same legacy-v5 economic scope; all current aggregation candidates, controls and retained pre-repair extra-delay BOA run; no paper-reference metrics','repeated_historical_development':True},indent=2))
 print(allr[['experiment_id','CAGR','Sharpe','MaxDD','CompletedTrades']].to_string(index=False))

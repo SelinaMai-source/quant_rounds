@@ -1,0 +1,5 @@
+{
+  "state": "RECOVERED",
+  "actual_error": "csv.DictWriter default CRLF triggered git diff --check trailing-whitespace errors",
+  "fix": "Set lineterminator to LF; no scientific results changed"
+}

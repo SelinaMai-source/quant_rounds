@@ -1,0 +1,27 @@
+{
+  "method": "DeepLOB",
+  "seed": 0,
+  "level": "L0_ALGORITHM",
+  "data": "SYNTHETIC_ALGORITHM_TEST_NOT_REFERENCE",
+  "started_at": 1794491945.466557,
+  "status": "ALGORITHM_UPDATE_PASSED",
+  "loss": 1.1227530241012573,
+  "parameters_changed": 62,
+  "prediction_shape": [
+    4,
+    3
+  ],
+  "author_cell_sha256": "60ec843ecef872293f16ebd14a7425d0979dadd12bbf19523254a83ed752c81e",
+  "notebook_sha256": "f6875dc98cdc893575b2deb68a635c70f013de91e941ce89eb6f1d75c945cf8e",
+  "reference_config": {
+    "k": 4,
+    "T": 100,
+    "epochs": 50,
+    "batch_size": 64,
+    "optimizer": "Adam",
+    "lr": 0.0001,
+    "loss": "CrossEntropyLoss applied to author softmax output, unchanged"
+  },
+  "limitations": "Synthetic tensors for L0; not FI-2010 L1 or A-share LOB",
+  "elapsed_seconds": 11.655990600585938
+}

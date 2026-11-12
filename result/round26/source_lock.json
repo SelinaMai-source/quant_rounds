@@ -7,9 +7,14 @@
     "clone_error": "",
     "commit": "583dbb9b1c83bc36b3079c516fc7321e636c1da4",
     "licenses": {},
-    "paper_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "paper_sha256": null,
     "paper_bytes": 0,
-    "paper_is_pdf": false
+    "paper_is_pdf": false,
+    "license_evidence": [
+      "GPL-3"
+    ],
+    "paper_local_valid_pdf": false,
+    "entrypoint": "R/SuperLearner.R; R/method.R::method.NNLS"
   },
   {
     "method": "opera",
@@ -21,7 +26,12 @@
     "licenses": {},
     "paper_sha256": "9d703f947d4edf47362f8f3abe84dc43fc5f07096aa4a0a58a767fd4159cb7f1",
     "paper_bytes": 264564,
-    "paper_is_pdf": true
+    "paper_is_pdf": true,
+    "license_evidence": [
+      "LGPL"
+    ],
+    "paper_local_valid_pdf": true,
+    "entrypoint": "R/mixture.R; R/BOA.R"
   },
   {
     "method": "TRA",
@@ -35,7 +45,12 @@
     },
     "paper_sha256": "0e5eabf862cd382b63ac2943c2248e0b4826b842145c96c69f34676837bad383",
     "paper_bytes": 3331462,
-    "paper_is_pdf": true
+    "paper_is_pdf": true,
+    "license_evidence": [
+      "MIT"
+    ],
+    "paper_local_valid_pdf": true,
+    "entrypoint": "examples/benchmarks/TRA/run.sh; configs/config_alstm.yaml; src/model.py"
   },
   {
     "method": "DoubleAdapt",
@@ -47,7 +62,12 @@
     "licenses": {},
     "paper_sha256": "169763d27bdbd139c72f8d2c88c7085f96e61ff956e219b62c13d6fedd8ace65",
     "paper_bytes": 1360567,
-    "paper_is_pdf": true
+    "paper_is_pdf": true,
+    "license_evidence": [
+      "UNSPECIFIED_NO_THIRD_PARTY_CODE_REDISTRIBUTED"
+    ],
+    "paper_local_valid_pdf": true,
+    "entrypoint": "main.py; run.sh GRU/csi300; src/model.py"
   },
   {
     "method": "AlphaGen",
@@ -59,7 +79,12 @@
     "licenses": {},
     "paper_sha256": "95d334214a2d75e758c589ee7c6e4e90dcd77d5be47ca171449db3a25f64868f",
     "paper_bytes": 1833481,
-    "paper_is_pdf": true
+    "paper_is_pdf": true,
+    "license_evidence": [
+      "UNSPECIFIED_NO_THIRD_PARTY_CODE_REDISTRIBUTED"
+    ],
+    "paper_local_valid_pdf": true,
+    "entrypoint": "scripts/rl.py with original LSTM policy, no HARLA/LLM"
   },
   {
     "method": "AlphaForge",
@@ -71,6 +96,72 @@
     "licenses": {},
     "paper_sha256": "2cdbf35a34897f82ff80e0d0e42c11ef960eec6bfdfd6912160270f0b512e03e",
     "paper_bytes": 3059480,
-    "paper_is_pdf": true
+    "paper_is_pdf": true,
+    "license_evidence": [
+      "UNSPECIFIED_NO_THIRD_PARTY_CODE_REDISTRIBUTED"
+    ],
+    "paper_local_valid_pdf": true,
+    "entrypoint": "train_AFF.py; combine_AFF.py"
+  },
+  {
+    "method": "MASTER",
+    "repo": "https://github.com/SJTU-DMTai/MASTER",
+    "paper": "https://arxiv.org/pdf/2312.15235",
+    "clone_returncode": 0,
+    "commit": "de8f58557096abde4216a701b35fc4368158d111",
+    "paper_sha256": "7f535d61deffada8ae0c63577489d20d1c87a2044998321968d8b886375734ec",
+    "paper_is_pdf": true,
+    "paper_bytes": 451322,
+    "license_evidence": [
+      "LICENSE:092708495d13ce475c76f1a25b52f3aa15ae0bae490a245eb2378d0d543ab736"
+    ],
+    "paper_local_valid_pdf": true,
+    "entrypoint": "main.py; master.py; base_model.py; qlib-update"
+  },
+  {
+    "method": "RD-Agent",
+    "repo": "https://github.com/microsoft/RD-Agent",
+    "paper": "https://arxiv.org/pdf/2505.15155",
+    "clone_returncode": 0,
+    "commit": "484776c211e4fbbeef03e0ec00d6bbee7362a4f4",
+    "paper_sha256": "5df0919520ec1a9d556f6a20bc10e9d2d1dc11cada2e6913b871239df63a2df2",
+    "paper_is_pdf": true,
+    "paper_bytes": 3392847,
+    "license_evidence": [
+      "LICENSE:c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    ],
+    "paper_local_valid_pdf": true,
+    "entrypoint": "rdagent/app/qlib_rd_loop; official factor/model workflow"
+  },
+  {
+    "method": "DeepLOB",
+    "repo": "https://github.com/zcakhaa/DeepLOB-Deep-Convolutional-Neural-Networks-for-Limit-Order-Books",
+    "paper": "https://arxiv.org/pdf/1808.03668",
+    "clone_returncode": 128,
+    "error": "Cloning into '/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/DeepLOB'...\nfatal: unable to access 'https://github.com/zcakhaa/DeepLOB-Deep-Convolutional-Neural-Networks-for-Limit-Order-Books/': SSL connection timeout\n",
+    "paper_sha256": "f50d57a80644ac427433824b540c9bc713ffd2249c2042ba975d986078295913",
+    "paper_is_pdf": true,
+    "paper_bytes": 640497,
+    "commit": "ff14d7c2fd38bdfc143389786993d0f0236d4eb8",
+    "code_recovery": "pinned GitHub connector fetch; source files outside release tree",
+    "clone_status": "original clone failed or incomplete; source API recovery succeeded",
+    "license_evidence": [
+      "UNSPECIFIED_NO_THIRD_PARTY_CODE_REDISTRIBUTED"
+    ],
+    "paper_local_valid_pdf": true,
+    "entrypoint": "jupyter_pytorch/run_train_pytorch.ipynb"
+  },
+  {
+    "method": "RSR",
+    "repo": "https://github.com/fulifeng/Temporal_Relational_Stock_Ranking",
+    "commit": "cfbb01bdf194b81bc5893a1b37aff1c0d0d2a82d",
+    "code_recovery": "pinned GitHub connector fetch; source files outside release tree",
+    "clone_status": "original clone failed or incomplete; source API recovery succeeded",
+    "license_evidence": [
+      "UNSPECIFIED_NO_THIRD_PARTY_CODE_REDISTRIBUTED"
+    ],
+    "paper_local_valid_pdf": true,
+    "paper_sha256": "735675e846e548f35c139ad96c6fda2f6a936a3f65150b0a249ad36fffcc386f",
+    "entrypoint": "training/rank_lstm.py; training/relation_rank_lstm.py"
   }
 ]

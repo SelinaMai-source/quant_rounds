@@ -1,0 +1,12 @@
+[
+  {
+    "endpoint": "http://127.0.0.1:11434/v1/models",
+    "status": "NO_LOCAL_MODEL_ENDPOINT",
+    "error_type": "URLError"
+  },
+  {
+    "endpoint": "http://127.0.0.1:8000/v1/models",
+    "status": "NO_LOCAL_MODEL_ENDPOINT",
+    "error_type": "URLError"
+  }
+]

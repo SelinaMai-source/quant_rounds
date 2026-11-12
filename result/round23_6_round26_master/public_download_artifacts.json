@@ -1,0 +1,58 @@
+[
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/RSR_embeddings",
+    "bytes": 569780725,
+    "sha256": "205973c74fb15fa46f10c96f92280aa38bcee1d8067357ced3500223b846acd0",
+    "status": "PRESENT_REQUIRES_SCHEMA_VALIDATION",
+    "redistributed": false
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/FI2010.zip",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "PARTIAL_TRANSFER",
+    "redistributed": false
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/RSR_source.zip",
+    "bytes": 28683722,
+    "sha256": "e4b6cc4e1e9022365903a561cbf8861f66bea99622bef0dfbaaa3e51a70ba571",
+    "status": "PARTIAL_TRANSFER",
+    "redistributed": false
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/MASTER_mega_metadata.json",
+    "bytes": 707,
+    "sha256": "c32bb1c0c535c8afd3497a63fa79b237264a8c21bf7c55dcd49e404e10784424",
+    "status": "PRESENT_REQUIRES_SCHEMA_VALIDATION",
+    "redistributed": false
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/range_headers.txt",
+    "bytes": 39,
+    "sha256": "f55260227c507b4e203ec14ceb78ce8e64d11734111bed9bd18936a3bd4d48f3",
+    "status": "PRESENT_REQUIRES_SCHEMA_VALIDATION",
+    "redistributed": false
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/TRA/kdd21/feature.pkl",
+    "bytes": 170914741,
+    "sha256": "8e652185d768a9f39802ff3e35f309e5b1fe61d5bdbc2be175b9558846685d8b",
+    "status": "PRESENT_REQUIRES_SCHEMA_VALIDATION",
+    "redistributed": false
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/TRA/kdd21/ret.pkl",
+    "bytes": 30198419,
+    "sha256": "edd2ff6cff66d3caa029b27016e2cc2dff8d19f6bab7a0a105bfd1180b59cba4",
+    "status": "PRESENT_REQUIRES_SCHEMA_VALIDATION",
+    "redistributed": false
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/TRA/kdd21/label.pkl",
+    "bytes": 30198406,
+    "sha256": "1f2ec1162e7d40661257fcf2db9223f9c9107caec3e1f469f4d2328f94f20cee",
+    "status": "PRESENT_REQUIRES_SCHEMA_VALIDATION",
+    "redistributed": false
+  }
+]

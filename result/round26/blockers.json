@@ -1,0 +1,24 @@
+[
+  {
+    "method": "RD-Agent",
+    "category": "BLOCKED_LLM_ACCESS",
+    "evidence": [
+      "local_llm_direct_probe.json",
+      "llm_access_probe.json"
+    ],
+    "data_permission_entry": false
+  },
+  {
+    "method": "DeepLOB",
+    "category": "BLOCKED_LOB_DATA",
+    "evidence": "amazing_probe.json",
+    "reason": "Actual authorized historical product is five-level Level1, not ten-level LOB",
+    "data_permission_entry": false
+  },
+  {
+    "method": "E3_ANNOUNCEMENTS",
+    "category": "AUTH_REQUIRED",
+    "source_uri": "clickhouse://127.0.0.1:18123/hermes/fdmt_ef_new",
+    "data_permission_entry": true
+  }
+]

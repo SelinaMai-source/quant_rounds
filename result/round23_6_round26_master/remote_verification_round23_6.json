@@ -1,0 +1,56 @@
+{
+  "branch": "round23_6",
+  "commit": "efcb7da982566e6aaf1e0be8a1ce8353835569ac",
+  "remote_sha": "efcb7da982566e6aaf1e0be8a1ce8353835569ac",
+  "REMOTE_SHA_VERIFIED": true,
+  "remote_content_verified": [
+    {
+      "path": "result/round23_6/ROUND23_6_ENSEMBLE_REPORT.md",
+      "bytes": 5719,
+      "sha256": "398454bea89f8bca07be829a1f794255e272d1551b5366f501ce4822e1db3786"
+    },
+    {
+      "path": "tools/run_round23_6.py",
+      "bytes": 212,
+      "sha256": "7924f277a1f20ede5b4f212ffc18f5b8aa52d33a73df64d283868762fb1ff8c5"
+    },
+    {
+      "path": "core/research_integrity_v4/test_time_safety.py",
+      "bytes": 1941,
+      "sha256": "20b8b3d214100cdcd960ce1ef5c1931b18946a9a9a0cbcfad79bb74385803488"
+    },
+    {
+      "path": "result/round23_6/all_results.csv",
+      "bytes": 7803,
+      "sha256": "93dfe5475a1babac90935c1e00545626a5cfee78e6fd404f2ee13f0ff3a67743"
+    },
+    {
+      "path": "result/round23_6/无权限数据.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "result/round23_6/source_dependency_manifest.csv",
+      "bytes": 165552,
+      "sha256": "ba9dbd9efa51038883704b027941d862544c137d7c24bad65d1ba4b9b7f8d459"
+    },
+    {
+      "path": "result/round23_6/artifact_manifest.csv",
+      "bytes": 380207,
+      "sha256": "00bbcd69ac7f9f382e520c112382cb982339f49a60b0218d4dfafcc897dd9817"
+    },
+    {
+      "path": "core/round23_6/meta.py",
+      "bytes": 12070,
+      "sha256": "442be6f8e04c1291df28e561ce4a980c73b1a4b7528fe6d4a842499f7bcad430"
+    }
+  ],
+  "release_scan": {
+    "files_checked_since_frozen_anchor": 1504,
+    "bytes_checked": 81243296,
+    "credential_findings": 0,
+    "large_file_findings": 0
+  },
+  "status": "PARTIAL",
+  "url": "https://github.com/SelinaMai-source/quant_rounds/tree/round23_6"
+}

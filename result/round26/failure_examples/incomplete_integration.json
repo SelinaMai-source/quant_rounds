@@ -1,0 +1,12 @@
+{
+  "state": "NOT_RUN_FULL_REAL_DATA_MUTATION_TESTS",
+  "input_schema": [
+    "trade_date",
+    "instrument_id",
+    "label_available_at",
+    "original head feature whitelist"
+  ],
+  "actual_model_registry_sha256": "dd2d633b246202ae12caff5a118509ab10d93dead76175ea4388f17cc467304a",
+  "candidate_input_sha256": "b4905e71e05008b6cb905eec5fc956fbd92ed63e6b45250469966bf37c3ced81",
+  "reason": "unit tests and cutoff registries do not substitute for full end-to-end future-mutation/prefix replay"
+}

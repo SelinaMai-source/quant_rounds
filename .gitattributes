@@ -1,3 +1,6 @@
 
 # Preserve exact upstream snapshot bytes, including Markdown hard line breaks.
 research/canonical_dependencies/** -whitespace
+# Preserve byte-exact runtime evidence rather than stripping original stdout.
+result/**/*.log -whitespace
+result/round23_6_round26_master/data_inventory_input.md -whitespace

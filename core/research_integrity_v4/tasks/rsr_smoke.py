@@ -23,3 +23,5 @@ for filename,classname in [('rank_lstm.py','RankLSTM'),('relation_rank_lstm.py',
   records.append({'module':filename,'status':'OFFICIAL_TF1_GRAPH_UPDATE_PASSED','loss':float(loss),'changed_variables':changed,'prediction_shape':list(pred.shape),'source_sha256':hashlib.sha256(source.encode()).hexdigest(),'scope':'unchanged complete graph construction from author train method, synthetic inputs, finite one-step update; no L1 claim'})
  except Exception as e:records.append({'module':filename,'status':'FAILED_RUNTIME','error':str(e),'traceback':traceback.format_exc()})
 (R/'RSR.json').write_text(json.dumps({'method':'RSR','tensorflow_version':tf.__version__,'python_version':sys.version,'L0':'ALGORITHM_CORE_UPDATE_PASSED' if all(x['status'].endswith('PASSED') for x in records) else 'FAILED_RUNTIME','records':records},indent=2));print(json.dumps(records))
+
+if any(x['status']!='OFFICIAL_TF1_GRAPH_UPDATE_PASSED' for x in records):raise SystemExit(1)

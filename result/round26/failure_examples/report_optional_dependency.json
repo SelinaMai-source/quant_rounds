@@ -1,0 +1,7 @@
+{
+  "evidence_origin": "actual tool traceback",
+  "error_type": "ImportError",
+  "missing_module": "tabulate",
+  "resolution": "render the static Markdown comparison table without an extra dependency",
+  "state": "RECOVERED"
+}

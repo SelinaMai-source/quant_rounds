@@ -5,7 +5,7 @@ import hashlib,json,os,re,subprocess
 
 def _git(root,*args):
  p=subprocess.run(['git','-C',str(root),*args],capture_output=True)
- if p.returncode:raise RuntimeError(p.stderr.decode(errors='replace')[-2000:])
+ if p.returncode:raise RuntimeError((p.stdout+p.stderr).decode(errors='replace')[-2000:])
  return p.stdout
 
 
@@ -54,6 +54,7 @@ def publish(root,branch,commit=True,dry_run=False):
  remote=_git(root,'ls-remote','origin','refs/heads/'+branch).decode().split()[0]
  if head!=remote:raise RuntimeError('Remote SHA mismatch')
  _git(root,'fetch','origin','refs/heads/'+branch)
+ if _git(root,'rev-parse','FETCH_HEAD').decode().strip()!=head:raise RuntimeError('Remote changed during verification')
  report='ROUND23_6_ENSEMBLE_REPORT.md' if branch=='round23_6' else 'ROUND26_ALPHA_REPORT.md'
  selected=['result/'+branch+'/'+report,'tools/run_'+branch+'.py','core/research_integrity_v4/test_time_safety.py','result/'+branch+'/all_results.csv','result/'+branch+'/无权限数据.md','result/'+branch+'/source_dependency_manifest.csv','result/'+branch+'/artifact_manifest.csv']
  if branch=='round23_6':selected.append('core/round23_6/meta.py')

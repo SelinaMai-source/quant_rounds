@@ -1,0 +1,92 @@
+[
+  {
+    "gate": "A",
+    "status": "PASS_ONE_REAL_FOLD_SCOPE_ONLY",
+    "evidence": "diagnostics/future_mutation/integration_result.json; not full pipeline coverage"
+  },
+  {
+    "gate": "B",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "C",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "D",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "E",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "F",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "G",
+    "status": "PASS_FIXED_OFFICIAL_R_EXAMPLE",
+    "evidence": "r_reference/numerical_parity.json"
+  },
+  {
+    "gate": "H",
+    "status": "PASS_CONSTRUCTED_NON_EQUIVALENCE_ONLY",
+    "evidence": "test_time_safety.py; no tradable portfolio implementation"
+  },
+  {
+    "gate": "I",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "J",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "K",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "L",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "M",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "N",
+    "status": "PASS_ACTUAL_PLAN_IDENTITY_SCOPE",
+    "evidence": "execution_sensitivity.csv and bt/*/planned_order_identities.csv.gz; no replacement selected"
+  },
+  {
+    "gate": "O",
+    "status": "PARTIAL_NAV_ACCOUNTING_PASS",
+    "evidence": "ledger_checks.json; full unrealized PnL bridge remains unresolved"
+  },
+  {
+    "gate": "P",
+    "status": "NOT_RUN_FULL_REAL_DATA_INTEGRATION",
+    "evidence": "No blanket PASS claimed"
+  },
+  {
+    "gate": "Q",
+    "status": "NO_CROSS_LINE_WINNER_IMPORTED",
+    "evidence": "No Round26 learned factor package exists; baseline/production refs remain unchanged"
+  },
+  {
+    "gate": "R",
+    "status": "PASS_FORMAT_AND_ACTUAL_AUTH_EVIDENCE",
+    "evidence": "Only fdmt_ef_new query AUTH_REQUIRED is listed in Round26/master; Round23.6 is empty"
+  }
+]

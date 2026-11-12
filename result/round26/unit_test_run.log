@@ -1,0 +1,14 @@
+test_frozen_scope (core.research_integrity_v4.test_protocol.ProtocolTest.test_frozen_scope) ... ok
+test_day_feedback_permutation (core.research_integrity_v4.test_aggregation.AggregationTests.test_day_feedback_permutation) ... ok
+test_exact_single_expert (core.research_integrity_v4.test_aggregation.AggregationTests.test_exact_single_expert) ... ok
+test_unmatured_feedback_keeps_weights (core.research_integrity_v4.test_aggregation.AggregationTests.test_unmatured_feedback_keeps_weights) ... ok
+test_actual_maturity_and_future_label_mutation (core.research_integrity_v4.test_time_safety.TimeSafetyTests.test_actual_maturity_and_future_label_mutation) ... ok
+test_asof_prefix (core.research_integrity_v4.test_time_safety.TimeSafetyTests.test_asof_prefix) ... ok
+test_formula_future_and_private_inputs_rejected (core.research_integrity_v4.test_time_safety.TimeSafetyTests.test_formula_future_and_private_inputs_rejected) ... ok
+test_future_revision_of_old_event_is_invisible (core.research_integrity_v4.test_time_safety.TimeSafetyTests.test_future_revision_of_old_event_is_invisible) ... ok
+test_score_blending_is_not_portfolio_blending (core.research_integrity_v4.test_time_safety.TimeSafetyTests.test_score_blending_is_not_portfolio_blending) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.021s
+
+OK
