@@ -1,0 +1,214 @@
+{
+  "method": "DoubleAdapt",
+  "commit": "e20b6e46ccbd2b6b8180ff3db62f68b16721684c",
+  "files": {
+    "main.py": {
+      "sha256": "d4fa9c6136e0974abef0bdcd4aab23f0de1a774fcc96aef4f1929975fd66738b"
+    },
+    "run.sh": {
+      "sha256": "d6e0fc71a501ddc30f8b8a43d497510f518c307e4db1d126581a21fb7fa9cc01"
+    },
+    "src/model.py": {
+      "sha256": "3b13456684a4a969b0a2f399bac922967074f9f34fcefd93d31849b268b41749"
+    },
+    "src/net.py": {
+      "sha256": "aa8a17c44672d45730561167001c123f8b1c8ede7b070621acfffd5490b77f43"
+    }
+  },
+  "resolutions": {
+    "main.py": {
+      "__init__@28": {
+        "data_dir": "'cn_data'",
+        "market": "'csi300'",
+        "model_type": "'linear'",
+        "alpha": "360",
+        "lr": "0.001",
+        "early_stop": "8",
+        "horizon": "1",
+        "rank_label": "True",
+        "h_path": "None",
+        "train_start": "None",
+        "test_start": "None",
+        "test_end": "None"
+      },
+      "basic_task@47": {},
+      "__init__@126": {
+        "data_dir": "'cn_data'",
+        "root_path": "'~/.qlib/qlib_data/'",
+        "calendar_path": "None",
+        "market": "'csi300'",
+        "horizon": "1",
+        "alpha": "360",
+        "x_dim": "None",
+        "step": "20",
+        "model_name": "'GRU'",
+        "lr": "0.001",
+        "lr_ma": "None",
+        "lr_da": "0.01",
+        "lr_x": "None",
+        "lr_y": "None",
+        "online_lr": "None",
+        "reg": "0.5",
+        "weight_decay": "0",
+        "num_head": "8",
+        "tau": "10",
+        "first_order": "True",
+        "adapt_x": "True",
+        "adapt_y": "True",
+        "naive": "False",
+        "preprocess_tensor": "True",
+        "use_extra": "False",
+        "tag": "None",
+        "rank_label": "False",
+        "h_path": "None",
+        "test_start": "None",
+        "test_end": "None"
+      },
+      "experiment_name@283": {},
+      "basic_task@288": {},
+      "_load_data@303": {},
+      "_init_model@321": {},
+      "offline_training@333": {
+        "segments": "None",
+        "data": "None",
+        "reload_path": "None",
+        "save_path": "None"
+      },
+      "online_training@363": {
+        "segments": "None",
+        "data": "None",
+        "reload_path": "None",
+        "framework": "None"
+      },
+      "_evaluate_metrics@421": {},
+      "workflow@444": {
+        "checkpoint_dir": "'./checkpoints/'",
+        "reload_path": "None"
+      }
+    },
+    "src/model.py": {
+      "__init__@35": {
+        "lr_model": "0.001",
+        "online_lr": "None",
+        "x_dim": "None",
+        "need_permute": "True",
+        "over_patience": "8",
+        "begin_valid_epoch": "0"
+      },
+      "_init_framework@54": {
+        "x_dim": "None",
+        "lr_model": "0.001",
+        "weight_decay": "0.0",
+        "need_permute": "False"
+      },
+      "_init_meta_optimizer@58": {},
+      "state_dict@61": {
+        "destination": "None",
+        "prefix": "''",
+        "keep_vars": "False"
+      },
+      "load_state_dict@76": {},
+      "override_online_lr_@88": {},
+      "fit@94": {
+        "checkpoint_path": "''"
+      },
+      "_run_epoch@136": {
+        "tqdm_show": "False"
+      },
+      "_run_task@178": {},
+      "inference@190": {
+        "date_slice": "slice(None, None)"
+      },
+      "__init__@234": {
+        "lr_model": "0.001",
+        "lr_da": "0.01",
+        "lr_ma": "0.001",
+        "lr_x": "None",
+        "lr_y": "None",
+        "online_lr": "None",
+        "weight_decay": "0",
+        "reg": "0.5",
+        "adapt_x": "True",
+        "adapt_y": "True",
+        "first_order": "True",
+        "factor_num": "6",
+        "x_dim": "360",
+        "need_permute": "True",
+        "num_head": "8",
+        "temperature": "10",
+        "begin_valid_epoch": "0"
+      },
+      "_init_framework@272": {
+        "x_dim": "None",
+        "lr_model": "0.001",
+        "need_permute": "False",
+        "num_head": "8",
+        "temperature": "10",
+        "factor_num": "6",
+        "lr_ma": "None",
+        "weight_decay": "0"
+      },
+      "_init_meta_optimizer@279": {
+        "lr_da": "0.01",
+        "lr_x": "None",
+        "lr_y": "None"
+      },
+      "override_online_lr_@287": {},
+      "_run_task@301": {}
+    },
+    "src/net.py": {
+      "cosine@10": {
+        "eps": "1e-08"
+      },
+      "__init__@30": {},
+      "forward@36": {
+        "inverse": "False"
+      },
+      "__init__@43": {
+        "num_head": "4",
+        "temperature": "4",
+        "hid_dim": "32"
+      },
+      "forward@53": {
+        "inverse": "False"
+      },
+      "__init__@62": {},
+      "forward@67": {},
+      "__init__@72": {
+        "num_head": "4",
+        "temperature": "4"
+      },
+      "forward@80": {},
+      "__init__@90": {
+        "x_dim": "None",
+        "lr": "0.001",
+        "weight_decay": "0",
+        "need_permute": "False"
+      },
+      "forward@112": {
+        "model": "None"
+      },
+      "__init__@132": {
+        "x_dim": "None",
+        "lr": "0.001",
+        "weight_decay": "0",
+        "need_permute": "False",
+        "num_head": "8",
+        "temperature": "10"
+      },
+      "forward@145": {
+        "model": "None",
+        "transform": "False"
+      }
+    }
+  },
+  "reference": {
+    "forecast_model": "GRU",
+    "market": "csi300",
+    "data_dir": "crowd_data",
+    "rank_label": false,
+    "num_head": 8,
+    "tau": 10,
+    "source": "README DoubleAdapt single main command; base GRU config from author qlib still required before L1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "method": "SuperLearner",
+  "commit": "583dbb9b1c83bc36b3079c516fc7321e636c1da4",
+  "files": {
+    "R/SuperLearner.R": {
+      "sha256": "0e2c0f5553e98bc898496455e32123ff4532df35d8a25300dfbdb84097bd2100"
+    },
+    "R/method.R": {
+      "sha256": "d91229f064498968c5154f1cfda8592ce74307c8352b16dba86f1a7c76d73318"
+    },
+    "DESCRIPTION": {
+      "sha256": "495cf41fb303346ec19fade1c3e81e2f1945c6b6253ed6eea52ec8546b50bcbf"
+    }
+  },
+  "resolutions": {},
+  "reference": {
+    "entry": "method.NNLS().computeCoef; official SuperLearner example with SL.mean/SL.glm",
+    "method": "method.NNLS",
+    "family": "gaussian",
+    "obsWeights": "ones",
+    "normalization": "raw NNLS coefficients / sum iff sum > 0",
+    "R_package_version": "2.0-41; locked git R source sourced over installed dependency package"
+  }
+}

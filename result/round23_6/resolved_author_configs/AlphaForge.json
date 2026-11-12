@@ -1,0 +1,35 @@
+{
+  "method": "AlphaForge",
+  "commit": "d0cfc27df23c60f271bc885fd43027b86b787746",
+  "files": {
+    "combine_AFF.py": {
+      "sha256": "cdbfa6926b398166ae112384d27f4101953e2c447a17af5bbe6955f179102c41"
+    },
+    "exp_AFF_calc_result.ipynb": {
+      "sha256": "1cb654e10cbfb45951ce41bbde24b2b1625ad6784eb9de1ce9d2a989761d8183"
+    }
+  },
+  "resolutions": {
+    "combine_AFF.py": {
+      "load_alpha_pool@12": {},
+      "load_alpha_pool_by_path@18": {},
+      "load_ppo_path@24": {},
+      "get_feat_sign@37": {},
+      "chunk_batch_spearmanr@45": {
+        "chunk_size": "100"
+      },
+      "get_tensor_metrics@55": {},
+      "get_tensor_metrics_raw@88": {},
+      "main@102": {
+        "instruments": "'csi500'",
+        "train_end_year": "2020",
+        "freq": "'day'",
+        "seeds": "'[0]'",
+        "cuda": "0",
+        "save_name": "'test'",
+        "n_factors": "10",
+        "window": "'inf'"
+      }
+    }
+  }
+}
