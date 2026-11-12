@@ -88,7 +88,13 @@ def run_meta(resume=True):
     path=D/f'calibrator_{column}_{year}.joblib';joblib.dump(m,path)
     calreg.append({'head':name,'year':year,'expert':column,'fit_cutoff':str(cut),'max_training_label_available_at':str(hist.label_available_at.max()),'train_start':str(hist.trade_date.min()),'train_end':str(hist.trade_date.max()),'rows':len(hist),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
    calibrated.append(p)
-  bank=pd.concat(calibrated,ignore_index=True).sort_values(KEY);bank.to_parquet(D/'calibrated_oof.parquet',index=False)
+  bank=pd.concat(calibrated,ignore_index=True).sort_values(KEY)
+  decision_map=pd.read_parquet(C/f'result/round22_3/data/{name}_candidate.parquet',columns=KEY+['next1_date'])
+  decision_map['trade_date']=pd.to_datetime(decision_map.trade_date);decision_map['instrument_id']=decision_map.instrument_id.astype(str)
+  decision_map['prediction_at']=pd.to_datetime(decision_map.next1_date)+pd.Timedelta(hours=9,minutes=30)
+  bank=bank.merge(decision_map[KEY+['prediction_at']],on=KEY,how='left',validate='one_to_one')
+  if bank.prediction_at.isna().any():raise RuntimeError('Legacy next-open decision time unavailable')
+  bank.to_parquet(D/'calibrated_oof.parquet',index=False)
   (D/'calibrator_registry.json').write_text(json.dumps(calreg,indent=2))
   outputs[name]={k:[] for k in ['SL','BOA','EQ','XGB','LGBM','RIDGE','MEAN']}
   for year in range(2018,2027):
@@ -109,7 +115,8 @@ def run_meta(resume=True):
    pending=[];stream=pd.concat([hist.assign(outer=False),p.assign(outer=True)],ignore_index=True).sort_values(KEY)
    preds={};pend=[]
    for day,block in stream.groupby('trade_date',sort=True):
-    decision=pd.Timestamp(day)+pd.Timedelta(hours=9) # legacy opening lane; today's close feedback is not available
+    decision=pd.Timestamp(block.prediction_at.iloc[0])
+    if not block.prediction_at.eq(decision).all():raise RuntimeError('Inconsistent same-day legacy decision timestamps')
     due=[r for r in pend if r['mature_at']<decision];pend=[r for r in pend if r['mature_at']>=decision]
     if due:
      # Each maturity date contributes one equal-date update, independent of stock ordering.
