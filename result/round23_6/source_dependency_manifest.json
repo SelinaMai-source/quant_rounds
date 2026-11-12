@@ -1,0 +1,8 @@
+{
+  "canonical_project": "/data1/stock-mxy/课题/一进二策略",
+  "runtime_dependencies": "Stock/src read-only, ZyQuant 2.0.10; canonical existing core and result dependency files hashed during audit",
+  "raw_vendor_data": "server-only; not redistributed",
+  "standalone_reproduction_without_server_data": false,
+  "base_git_dependencies": "all tracked files inherited from 2c28c2083097a28cda921c59c28b254c30cd0976",
+  "worktree": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/round23_6"
+}

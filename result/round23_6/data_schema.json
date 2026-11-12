@@ -1,0 +1,31 @@
+{
+  "candidate_manifest": [
+    "signal_date",
+    "instrument_id",
+    "decision_at",
+    "eligibility_version"
+  ],
+  "time_fields": [
+    "event_time",
+    "known_at",
+    "retrieved_at",
+    "revision_time"
+  ],
+  "oof": [
+    "model_hash",
+    "fit_cutoff",
+    "train_start",
+    "train_end",
+    "max_training_label_available_at"
+  ],
+  "prediction_universe": "independent of label mask",
+  "maturity": "actual source evidence required, no fixed D+2 for Ten",
+  "financial_industry_moneyflow": "as-of revisions; no full-history argMax",
+  "gate_states": [
+    "PASS",
+    "FAIL",
+    "PARTIALLY_VERIFIED",
+    "NOT_RUN",
+    "BLOCKED"
+  ]
+}
