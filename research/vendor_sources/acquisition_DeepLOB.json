@@ -1,0 +1,10 @@
+{
+  "method": "DeepLOB",
+  "repo": "https://github.com/zcakhaa/DeepLOB-Deep-Convolutional-Neural-Networks-for-Limit-Order-Books",
+  "paper": "https://arxiv.org/pdf/1808.03668",
+  "clone_returncode": 128,
+  "error": "Cloning into '/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/vendor/DeepLOB'...\nfatal: unable to access 'https://github.com/zcakhaa/DeepLOB-Deep-Convolutional-Neural-Networks-for-Limit-Order-Books/': SSL connection timeout\n",
+  "paper_sha256": "f50d57a80644ac427433824b540c9bc713ffd2249c2042ba975d986078295913",
+  "paper_is_pdf": true,
+  "paper_bytes": 640497
+}

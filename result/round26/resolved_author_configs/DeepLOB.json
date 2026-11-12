@@ -1,0 +1,21 @@
+{
+  "method": "DeepLOB",
+  "files": {
+    "run_train_pytorch.ipynb": {
+      "sha256": "f6875dc98cdc893575b2deb68a635c70f013de91e941ce89eb6f1d75c945cf8e"
+    }
+  },
+  "L1_started": false,
+  "resolved_before_L1": true,
+  "author_notebook": {
+    "k": 4,
+    "T": 100,
+    "epochs": 50,
+    "batch_size": 64,
+    "optimizer": "Adam",
+    "lr": 0.0001,
+    "criterion": "CrossEntropyLoss",
+    "normalization": "author DecPre files; 80/20 train/valid; original test7/8/9",
+    "boundary_safety": "stock/day IDs must be verified before claiming strict L1"
+  }
+}

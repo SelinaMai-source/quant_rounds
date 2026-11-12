@@ -1,0 +1,3 @@
+
+# Preserve exact upstream snapshot bytes, including Markdown hard line breaks.
+research/canonical_dependencies/** -whitespace

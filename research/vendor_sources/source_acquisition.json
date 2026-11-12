@@ -1,0 +1,76 @@
+[
+  {
+    "method": "SuperLearner",
+    "repo": "https://github.com/ecpolley/SuperLearner",
+    "paper": "https://doi.org/10.2202/1544-6115.1309",
+    "clone_returncode": 0,
+    "clone_error": "",
+    "commit": "583dbb9b1c83bc36b3079c516fc7321e636c1da4",
+    "licenses": {},
+    "paper_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "paper_bytes": 0,
+    "paper_is_pdf": false
+  },
+  {
+    "method": "opera",
+    "repo": "https://github.com/Dralliag/opera",
+    "paper": "https://arxiv.org/pdf/1404.1356",
+    "clone_returncode": 0,
+    "clone_error": "",
+    "commit": "24070db124c14df022c9356a3b517599ffd95148",
+    "licenses": {},
+    "paper_sha256": "9d703f947d4edf47362f8f3abe84dc43fc5f07096aa4a0a58a767fd4159cb7f1",
+    "paper_bytes": 264564,
+    "paper_is_pdf": true
+  },
+  {
+    "method": "TRA",
+    "repo": "https://github.com/microsoft/qlib",
+    "paper": "https://arxiv.org/pdf/2106.12950",
+    "clone_returncode": 0,
+    "clone_error": "",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "licenses": {
+      "LICENSE": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    "paper_sha256": "0e5eabf862cd382b63ac2943c2248e0b4826b842145c96c69f34676837bad383",
+    "paper_bytes": 3331462,
+    "paper_is_pdf": true
+  },
+  {
+    "method": "DoubleAdapt",
+    "repo": "https://github.com/SJTU-DMTai/DoubleAdapt",
+    "paper": "https://arxiv.org/pdf/2306.09862",
+    "clone_returncode": 0,
+    "clone_error": "",
+    "commit": "e20b6e46ccbd2b6b8180ff3db62f68b16721684c",
+    "licenses": {},
+    "paper_sha256": "169763d27bdbd139c72f8d2c88c7085f96e61ff956e219b62c13d6fedd8ace65",
+    "paper_bytes": 1360567,
+    "paper_is_pdf": true
+  },
+  {
+    "method": "AlphaGen",
+    "repo": "https://github.com/ICT-FinD-Lab/alphagen",
+    "paper": "https://arxiv.org/pdf/2306.12964",
+    "clone_returncode": 0,
+    "clone_error": "",
+    "commit": "259687e8f316994426416c530a94842a2fe6405e",
+    "licenses": {},
+    "paper_sha256": "95d334214a2d75e758c589ee7c6e4e90dcd77d5be47ca171449db3a25f64868f",
+    "paper_bytes": 1833481,
+    "paper_is_pdf": true
+  },
+  {
+    "method": "AlphaForge",
+    "repo": "https://github.com/DulyHao/AlphaForge",
+    "paper": "https://arxiv.org/pdf/2406.18394",
+    "clone_returncode": 0,
+    "clone_error": "",
+    "commit": "d0cfc27df23c60f271bc885fd43027b86b787746",
+    "licenses": {},
+    "paper_sha256": "2cdbf35a34897f82ff80e0d0e42c11ef960eec6bfdfd6912160270f0b512e03e",
+    "paper_bytes": 3059480,
+    "paper_is_pdf": true
+  }
+]
