@@ -1,0 +1,17 @@
+{
+  "method": "TRA",
+  "seed": 0,
+  "level": "L0_ALGORITHM",
+  "data": "SYNTHETIC_ALGORITHM_TEST_NOT_REFERENCE",
+  "started_at": 1794491112.0025675,
+  "loss": 7.402509689331055,
+  "parameters_changed": 18,
+  "parameter_count": 885172,
+  "prediction_shape": [
+    8
+  ],
+  "source_core": "legacy src/model.py LSTM+TRA+author Sinkhorn and OT objective",
+  "status": "ALGORITHM_CORE_UPDATE_PASSED",
+  "limitations": "Full author TRAModel wrapper, dataset and L1 not covered by this finite core test",
+  "elapsed_seconds": 1.0369293689727783
+}

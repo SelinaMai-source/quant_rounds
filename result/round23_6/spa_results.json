@@ -3,7 +3,7 @@
   "pvalues": {
     "lower": 0.489,
     "consistent": 0.489,
-    "upper": 0.8712
+    "upper": 0.8716
   },
   "candidate_family": [
     "C01_P1_SCORE_A099",
@@ -12,11 +12,12 @@
     "META_CTRL_EQ",
     "META_CTRL_LGBM",
     "META_CTRL_MEAN",
-    "META_CTRL_RIDGE"
+    "META_CTRL_RIDGE",
+    "C11_BOA_SUPERSEDED_EXTRA_DAY_DELAY"
   ],
   "deduplicated": {
     "META_CTRL_XGB": "NUMERICALLY_IDENTICAL_TO_BASELINE_ATOL_1e-12"
   },
-  "scope": "same legacy-v5 economic scope; all executed new aggregation candidates and their controls; no paper-reference metrics",
+  "scope": "same legacy-v5 economic scope; all current aggregation candidates, controls and retained pre-repair extra-delay BOA run; no paper-reference metrics",
   "repeated_historical_development": true
 }

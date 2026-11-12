@@ -1,0 +1,7 @@
+{
+  "status": "SUPERSEDED_TIMESTAMP_AND_FEEDBACK_DELAY_REPAIR",
+  "actual_issue": "Prediction_at was signal D 09:00 instead of actual next1_date 09:30 legacy-open decision; matured feedback consequently lagged an extra day.",
+  "prior_results_retained": true,
+  "hyperparameter_selection": false,
+  "extra_backtests_to_rerun": 3
+}

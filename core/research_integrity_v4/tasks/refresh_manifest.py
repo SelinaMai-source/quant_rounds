@@ -1,6 +1,6 @@
 from pathlib import Path
 import hashlib,csv,sys
-B=Path('/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution')
+B=Path(__file__).resolve().parent
 for branch in sys.argv[1:] or ['round23_6','round26']:
  W=B/branch;R=W/'result'/branch
  roots=[R,W/'core/research_integrity_v4',W/'core'/branch,W/'research/canonical_dependencies',W/'research/literature_round23_6_26',W/'research/vendor_sources']

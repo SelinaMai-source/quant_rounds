@@ -88,7 +88,13 @@ def run_meta(resume=True):
     path=D/f'calibrator_{column}_{year}.joblib';joblib.dump(m,path)
     calreg.append({'head':name,'year':year,'expert':column,'fit_cutoff':str(cut),'max_training_label_available_at':str(hist.label_available_at.max()),'train_start':str(hist.trade_date.min()),'train_end':str(hist.trade_date.max()),'rows':len(hist),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
    calibrated.append(p)
-  bank=pd.concat(calibrated,ignore_index=True).sort_values(KEY);bank.to_parquet(D/'calibrated_oof.parquet',index=False)
+  bank=pd.concat(calibrated,ignore_index=True).sort_values(KEY)
+  decision_map=pd.read_parquet(C/f'result/round22_3/data/{name}_candidate.parquet',columns=KEY+['next1_date'])
+  decision_map['trade_date']=pd.to_datetime(decision_map.trade_date);decision_map['instrument_id']=decision_map.instrument_id.astype(str)
+  decision_map['prediction_at']=pd.to_datetime(decision_map.next1_date)+pd.Timedelta(hours=9,minutes=30)
+  bank=bank.merge(decision_map[KEY+['prediction_at']],on=KEY,how='left',validate='one_to_one')
+  if bank.prediction_at.isna().any():raise RuntimeError('Legacy next-open decision time unavailable')
+  bank.to_parquet(D/'calibrated_oof.parquet',index=False)
   (D/'calibrator_registry.json').write_text(json.dumps(calreg,indent=2))
   outputs[name]={k:[] for k in ['SL','BOA','EQ','XGB','LGBM','RIDGE','MEAN']}
   for year in range(2018,2027):
@@ -109,13 +115,21 @@ def run_meta(resume=True):
    pending=[];stream=pd.concat([hist.assign(outer=False),p.assign(outer=True)],ignore_index=True).sort_values(KEY)
    preds={};pend=[]
    for day,block in stream.groupby('trade_date',sort=True):
-    decision=pd.Timestamp(day)+pd.Timedelta(hours=9) # legacy opening lane; today's close feedback is not available
+    decision=pd.Timestamp(block.prediction_at.iloc[0])
+    if not block.prediction_at.eq(decision).all():raise RuntimeError('Inconsistent same-day legacy decision timestamps')
     due=[r for r in pend if r['mature_at']<decision];pend=[r for r in pend if r['mature_at']>=decision]
     if due:
      # Each maturity date contributes one equal-date update, independent of stock ordering.
      for md in sorted(set(r['mature_at'].normalize() for r in due)):
       rows=[r for r in due if r['mature_at'].normalize()==md]
-      boa.update_regret(np.mean([r['regret'] for r in rows],axis=0))
+      regrets=[]
+      for feedback in rows:
+       # Read the label and compute its gradient ONLY after maturity.
+       realized=stream.loc[feedback['feedback_key'],target]
+       if np.isfinite(realized):
+        yy=float(transform(realized));saved=feedback['prediction'];zz=feedback['experts']
+        regrets.append(2*(saved-yy)*(saved-zz))
+      if regrets:boa.update_regret(np.mean(regrets,axis=0))
       feedback_rows.append({'head':name,'outer_year':year,'decision_at':str(decision),'feedback_date':str(md),'rows':len(rows),'max_mature_at':str(max(r['mature_at'] for r in rows))})
     w=boa.weights().copy()
     for idx,row in block.iterrows():
@@ -125,9 +139,8 @@ def run_meta(resume=True):
      if row['outer']:
       preds[(row.trade_date,row.instrument_id)]=ps
       forecast_rows.append({'head':name,'outer_year':year,'signal_date':row.trade_date,'instrument_id':row.instrument_id,'prediction_at':decision,'label_available_at':row.label_available_at,'prediction':ps,**{('expert_'+col):float(zs[i]) for i,col in enumerate(columns)},**{('weight_'+col):float(w[i]) for i,col in enumerate(columns)}})
-     if pd.notna(row.label_available_at) and np.isfinite(row[target]):
-      target_value=float(transform(row[target]));regret=2*(ps-target_value)*(ps-zs)
-      pend.append({'mature_at':pd.Timestamp(row.label_available_at),'regret':regret})
+     if pd.notna(row.label_available_at):
+      pend.append({'mature_at':pd.Timestamp(row.label_available_at),'feedback_key':idx,'experts':zs.copy(),'prediction':ps})
     if block['outer'].any():
      weights_rows.extend({'method':'BOA','head':name,'outer_year':year,'date':str(day),'expert':col,'weight':float(w[i]),'q01':low,'q99':high} for i,col in enumerate(columns))
    for method in outputs[name]:

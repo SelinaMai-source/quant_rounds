@@ -1,0 +1,16 @@
+{
+  "method": "DoubleAdapt",
+  "seed": 0,
+  "level": "L0_ALGORITHM",
+  "data": "SYNTHETIC_ALGORITHM_TEST_NOT_REFERENCE",
+  "started_at": 1794491114.8729172,
+  "parameters_changed": 31,
+  "prediction_shape": [
+    8
+  ],
+  "prediction_finite": true,
+  "status": "ALGORITHM_UPDATE_PASSED",
+  "compatibility_patch": "cuda device -> available cuda else cpu; saved diff required",
+  "source": "author DoubleAdaptManager._run_task with data and model adapters",
+  "elapsed_seconds": 1.4300708770751953
+}

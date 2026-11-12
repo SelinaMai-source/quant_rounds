@@ -1,0 +1,8 @@
+{
+  "status": "EXACT_SCORE_INVARIANCE_VERIFIED",
+  "BOA_prediction_rows": 38003,
+  "label_and_gradient_read": "performed only inside maturity-filtered feedback branch",
+  "feedback_timing_bound_verified": true,
+  "new_economic_backtests_needed": false,
+  "reason": "All executed strategy input scores are byte-value identical after this control-flow repair."
+}

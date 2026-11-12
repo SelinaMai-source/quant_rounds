@@ -52,7 +52,7 @@ def main(default_round=None):
     else:state['round26_statistics']={'status':'NOT_APPLICABLE_NO_NEW_CANDIDATE','reason':'No invented candidate returns or p-values.'}
    elif stage=='report':task('report','report.py')
    elif stage=='publish':
-    task('package','package.py')
+    task('package','package.py',args=[round_])
     task('refresh_manifest','refresh_manifest.py',args=[round_])
     from core.research_integrity_v4.release import publish
     state['publish']=publish(EXEC/round_,round_,commit=True)

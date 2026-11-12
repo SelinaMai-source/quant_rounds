@@ -1,7 +1,8 @@
 from pathlib import Path
 import json,shutil,hashlib,subprocess,os,re,importlib.metadata,datetime
+import sys
 import pandas as pd
-B=Path('/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution');C=B.parents[1];M=C/'result/round23_6_round26_master'
+B=Path(__file__).resolve().parent;C=B.parents[1];M=C/'result/round23_6_round26_master'
 def sha(p):
  h=hashlib.sha256()
  with Path(p).open('rb') as f:
@@ -21,12 +22,12 @@ for p in (B/'public_data').rglob('*'):
  if not p.is_file():continue
  files.append({'path':str(p),'bytes':p.stat().st_size,'sha256':sha(p),'status':'PARTIAL_TRANSFER' if p.suffix=='.part' or p.name in ['RSR_source.zip','FI2010.zip','FI2010_master.zip'] else 'PRESENT_REQUIRES_SCHEMA_VALIDATION','redistributed':False})
 dump(M/'public_download_artifacts.json',files)
-for branch in ['round23_6','round26']:
+for branch in sys.argv[1:] or ['round23_6','round26']:
  W=B/branch;R=C/'result'/branch;out=W/'result'/branch
  taskdir=W/'core/research_integrity_v4/tasks';taskdir.mkdir(parents=True,exist_ok=True)
  for name in ['audit_data','baseline','trace_baseline','p1_replay','p1_monthly','r_reference','smoke','rsr_smoke','statistics','probe_amazing','report']:
   p=B/(name+'.py')
-  text=p.read_text().replace('B=Path('/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution')',"B=Path('/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution')")
+  text=p.read_text().replace('B=Path(__file__).resolve().parent',"B=Path('/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution')")
   (taskdir/p.name).write_text(text)
  shutil.copy2(B/'round23_6/core/round23_6/meta.py',taskdir/'meta.py')
  # Keep exact committed canonical dependencies as a separate source snapshot,

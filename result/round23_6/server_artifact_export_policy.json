@@ -8,15 +8,15 @@
   },
   {
     "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/calibrated_oof.parquet",
-    "sha256": "80e31b98eec5fa6910fe900d6aaf6fb1efae8137865269f9eaac439d63c83beb",
-    "size": 1836696,
+    "sha256": "8ecdd994e692f6f49801ff6455855b9902010e59f7d815067fd1825046815342",
+    "size": 1866563,
     "repo_path": "result/round23_6/expert_bank/ten/calibrated_oof.parquet",
     "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
   },
   {
     "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/calibrated_oof.parquet",
-    "sha256": "69765e17c0e3d32064e00da539c9a678ea0fcd98fa5e9b22638f254e0c8e98cb",
-    "size": 1796522,
+    "sha256": "75dc049caff3994fcbef4ccab156b211572a0385708f0eb41e66561124ff45c1",
+    "size": 1826397,
     "repo_path": "result/round23_6/expert_bank/five/calibrated_oof.parquet",
     "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
   },

@@ -1,0 +1,4 @@
+{
+  "definition": "Use initial capital as a peak guard, then compute UI over the actual NAV observations, without a duplicated artificial initial-zero observation.",
+  "changed": "UI denominator only; returns, CAGR, Sharpe, MaxDD, bootstrap and SPA are unchanged."
+}
