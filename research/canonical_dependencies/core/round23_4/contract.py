@@ -1,0 +1,50 @@
+"""R23.4 冻结契约。阈值是本轮研究规则，不是已证明最优。"""
+
+from __future__ import annotations
+
+from core.paths import RESULT_ROOT
+
+ROOT = RESULT_ROOT / "round23_4"
+R23_3 = RESULT_ROOT / "round23_3"
+ANCHOR_BASELINE_V5 = "feda6870a26f6efe5d722fd9c3b11130ca266d85"
+ANCHOR_ROUND23_3 = "0d20428fb85003a0a8f383a0e38cefaefe19e961"
+ANCHOR_ROUND24 = "68efe0a29c2b89c044ae916af3981e49ab5be345"
+
+EVAL_START = "2018-01-02"
+EVAL_END = "2026-07-24"
+INITIAL_CASH = 300_000.0
+
+REF_V5 = {
+    "sharpe": 1.8756627913361097,
+    "cagr": 0.5499812832273525,
+    "max_drawdown": -0.24056327715394388,
+    "nav_end": 12750089.355724689,
+    "completed_trades": 1107,
+}
+REF_E2 = {
+    "sharpe": 1.8659462340761659,
+    "cagr": 0.549997369909659,
+    "max_drawdown": -0.23104798183602193,
+    "nav_end": 12751221.573803224,
+    "completed_trades": 1098,
+}
+
+# 新研究矩阵只用这三个权重。遗留 E2 重放仍用 R23.3 的候选集（含 0.50）。
+NEW_LGBM_WEIGHTS = (0.0, 0.10, 0.25)
+LEGACY_LGBM_WEIGHTS = (0.0, 0.10, 0.25, 0.50)
+RANK_FRACTIONS = (0.30, 0.10)
+
+MIN_INNER_DAYS = 120
+MIN_INNER_TRADES = 40
+MAXDD_WORSEN = 0.02
+LOG_GROWTH_TOLERANCE = 0.01  # 年化 log 增长，不是 1 个百分点 CAGR
+UI_IMPROVE_MIN = 0.05
+UI_BLOCK_WORSE = 0.02
+BOOT_N = 5000
+BOOT_BLOCK = 20
+BOOT_LB_Q = 0.10
+INNER_LOOKBACK_MONTHS = 36
+
+CURRENT_BASELINE_CHANGED = False
+PRODUCTION_CONFIG_CHANGED = False
+AUTO_PROMOTE = False

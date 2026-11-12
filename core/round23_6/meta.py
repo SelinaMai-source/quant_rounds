@@ -28,7 +28,7 @@ def run_meta(resume=True):
  from first_board_hermes.baseline import daily_relevance
  parity=json.loads((R/'r_reference/numerical_parity.json').read_text())
  if parity['status']!='PASS':raise RuntimeError('Official R parity gate failed')
- registry=[];outputs={};weights_rows=[];feedback_rows=[]
+ registry=[];outputs={};weights_rows=[];feedback_rows=[];forecast_rows=[]
  for name,head in [('five',FIVE_HEAD),('ten',TEN_HEAD)]:
   target=head.target;features=list(head.features);maturity=head.label_end_column
   cols=list(dict.fromkeys(KEY+features+[target,maturity]))
@@ -122,7 +122,9 @@ def run_meta(resume=True):
      raw=row[columns].to_numpy(dtype=float)
      if not np.isfinite(raw).all():continue
      zs=transform(raw);ps=float(zs@w)
-     if row['outer']:preds[(row.trade_date,row.instrument_id)]=ps
+     if row['outer']:
+      preds[(row.trade_date,row.instrument_id)]=ps
+      forecast_rows.append({'head':name,'outer_year':year,'signal_date':row.trade_date,'instrument_id':row.instrument_id,'prediction_at':decision,'label_available_at':row.label_available_at,'prediction':ps,**{('expert_'+col):float(zs[i]) for i,col in enumerate(columns)},**{('weight_'+col):float(w[i]) for i,col in enumerate(columns)}})
      if pd.notna(row.label_available_at) and np.isfinite(row[target]):
       target_value=float(transform(row[target]));regret=2*(ps-target_value)*(ps-zs)
       pend.append({'mature_at':pd.Timestamp(row.label_available_at),'regret':regret})
@@ -138,6 +140,7 @@ def run_meta(resume=True):
  pd.DataFrame(registry).to_csv(R/'model_registry.csv',index=False)
  pd.DataFrame(weights_rows).to_csv(R/'meta_weights_by_time_SL_BOA.csv',index=False)
  pd.DataFrame(feedback_rows).to_csv(R/'online_feedback_ledger.csv',index=False)
+ pd.DataFrame(forecast_rows).to_parquet(R/'online_forecast_ledger.parquet',index=False)
  base=pd.read_parquet(R/'frozen_components.parquet');base=base[['signal_date','instrument_id','v5']].rename(columns={'signal_date':'trade_date'})
  scoresdir=R/'scores';scoresdir.mkdir(exist_ok=True)
  for method in outputs['five']:

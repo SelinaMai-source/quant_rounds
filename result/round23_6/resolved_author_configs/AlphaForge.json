@@ -2,11 +2,11 @@
   "method": "AlphaForge",
   "commit": "d0cfc27df23c60f271bc885fd43027b86b787746",
   "files": {
+    "train_AFF.py": {
+      "sha256": "2ee15d7a209af3ba1c8514e1812a6d231f820808bc4d5e9b9e8d1b21afa77647"
+    },
     "combine_AFF.py": {
       "sha256": "cdbfa6926b398166ae112384d27f4101953e2c447a17af5bbe6955f179102c41"
-    },
-    "exp_AFF_calc_result.ipynb": {
-      "sha256": "1cb654e10cbfb45951ce41bbde24b2b1625ad6784eb9de1ce9d2a989761d8183"
     }
   },
   "resolutions": {
@@ -31,5 +31,7 @@
         "window": "'inf'"
       }
     }
-  }
+  },
+  "L1_started": false,
+  "resolved_before_L1": true
 }

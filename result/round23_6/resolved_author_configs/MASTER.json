@@ -1,0 +1,34 @@
+{
+  "method": "MASTER",
+  "files": {
+    "main.py": {
+      "sha256": "40225b71e357c2a4618dce3fbfc9f5c4c531522f3c4d92234c29d8913712784e"
+    },
+    "master.py": {
+      "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+    },
+    "base_model.py": {
+      "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+    },
+    "qlib-update/pytorch_master_ts.py": {
+      "sha256": "2728b737c3bef64beab3d125802a232edc01624d22383ae50f378ffd72d0f97a"
+    }
+  },
+  "L1_started": false,
+  "resolved_before_L1": true,
+  "author_main": {
+    "universe": "csi300",
+    "prefix": "opensource",
+    "d_feat": 158,
+    "d_model": 256,
+    "t_nhead": 4,
+    "s_nhead": 2,
+    "dropout": 0.5,
+    "market_dims": 63,
+    "beta": 5,
+    "n_epoch": 1,
+    "lr": 1e-05,
+    "train_stop_loss_thred": 0.95,
+    "validation": "infer_processor; label mask only for loss/metrics"
+  }
+}

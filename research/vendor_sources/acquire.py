@@ -6,7 +6,7 @@ for name,repo,paper in sources:
  p=ROOT/'vendor'/name
  r={'method':name,'repo':'https://github.com/'+repo,'paper':paper}
  if not (p/'.git').exists():
-  proc=subprocess.run(['git','clone','--depth','1',r['repo'],str(p)],capture_output=True,text=True,timeout=180)
+  proc=subprocess.run(['git','clone','--depth','1','--filter=blob:none',r['repo'],str(p)],capture_output=True,text=True,timeout=1200)
   r['clone_returncode']=proc.returncode;r['clone_error']=proc.stderr[-1000:] if proc.returncode else ''
  if (p/'.git').exists():
   r['commit']=subprocess.check_output(['git','-C',str(p),'rev-parse','HEAD'],text=True).strip()

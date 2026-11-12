@@ -1,0 +1,23 @@
+{
+  "method": "RSR",
+  "files": {
+    "training/rank_lstm.py": {
+      "sha256": "ea7e9db8cfe46e89462fdba5d906ef30071270ee38c8d2ad3df3679bbfc90414"
+    },
+    "training/relation_rank_lstm.py": {
+      "sha256": "d4c6826b3c30dc27c5cf69abc71a2cb405c9b0c27658bc588f13fcf341f4c39e"
+    }
+  },
+  "L1_started": false,
+  "resolved_before_L1": true,
+  "author_NASDAQ_command": {
+    "relation": "wikidata",
+    "seq": 16,
+    "unit": 64,
+    "alpha": 0.1,
+    "lr": 0.001,
+    "epochs": 50,
+    "embedding_file": "NASDAQ_rank_lstm_seq-16_unit-64_2.csv.npy",
+    "backbone": "TensorFlow1 BasicLSTMCell"
+  }
+}
