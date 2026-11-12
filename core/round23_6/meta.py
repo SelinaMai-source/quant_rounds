@@ -122,7 +122,14 @@ def run_meta(resume=True):
      # Each maturity date contributes one equal-date update, independent of stock ordering.
      for md in sorted(set(r['mature_at'].normalize() for r in due)):
       rows=[r for r in due if r['mature_at'].normalize()==md]
-      boa.update_regret(np.mean([r['regret'] for r in rows],axis=0))
+      regrets=[]
+      for feedback in rows:
+       # Read the label and compute its gradient ONLY after maturity.
+       realized=stream.loc[feedback['feedback_key'],target]
+       if np.isfinite(realized):
+        yy=float(transform(realized));saved=feedback['prediction'];zz=feedback['experts']
+        regrets.append(2*(saved-yy)*(saved-zz))
+      if regrets:boa.update_regret(np.mean(regrets,axis=0))
       feedback_rows.append({'head':name,'outer_year':year,'decision_at':str(decision),'feedback_date':str(md),'rows':len(rows),'max_mature_at':str(max(r['mature_at'] for r in rows))})
     w=boa.weights().copy()
     for idx,row in block.iterrows():
@@ -132,9 +139,8 @@ def run_meta(resume=True):
      if row['outer']:
       preds[(row.trade_date,row.instrument_id)]=ps
       forecast_rows.append({'head':name,'outer_year':year,'signal_date':row.trade_date,'instrument_id':row.instrument_id,'prediction_at':decision,'label_available_at':row.label_available_at,'prediction':ps,**{('expert_'+col):float(zs[i]) for i,col in enumerate(columns)},**{('weight_'+col):float(w[i]) for i,col in enumerate(columns)}})
-     if pd.notna(row.label_available_at) and np.isfinite(row[target]):
-      target_value=float(transform(row[target]));regret=2*(ps-target_value)*(ps-zs)
-      pend.append({'mature_at':pd.Timestamp(row.label_available_at),'regret':regret})
+     if pd.notna(row.label_available_at):
+      pend.append({'mature_at':pd.Timestamp(row.label_available_at),'feedback_key':idx,'experts':zs.copy(),'prediction':ps})
     if block['outer'].any():
      weights_rows.extend({'method':'BOA','head':name,'outer_year':year,'date':str(day),'expert':col,'weight':float(w[i]),'q01':low,'q99':high} for i,col in enumerate(columns))
    for method in outputs[name]:
