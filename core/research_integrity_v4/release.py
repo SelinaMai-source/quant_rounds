@@ -5,7 +5,7 @@ import hashlib,json,os,re,subprocess
 
 def _git(root,*args):
  p=subprocess.run(['git','-C',str(root),*args],capture_output=True)
- if p.returncode:raise RuntimeError(p.stderr.decode(errors='replace')[-2000:])
+ if p.returncode:raise RuntimeError((p.stdout+p.stderr).decode(errors='replace')[-2000:])
  return p.stdout
 
 

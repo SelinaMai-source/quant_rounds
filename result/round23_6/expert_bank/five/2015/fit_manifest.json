@@ -1,0 +1,93 @@
+[
+  {
+    "head": "five",
+    "year": 2015,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2015/xgb_17.json",
+    "model_hash": "33c88c59320097f5b1d83f89d5c1201d3632b9a8fc4285be61dc308f7ee9c524",
+    "fit_cutoff": "2015-01-01 00:00:00",
+    "train_start": "2014-01-02 00:00:00",
+    "train_end": "2014-12-29 00:00:00",
+    "max_training_label_available_at": "2014-12-31 22:00:00",
+    "train_rows": 2412,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2015,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2015/xgb_42.json",
+    "model_hash": "33c88c59320097f5b1d83f89d5c1201d3632b9a8fc4285be61dc308f7ee9c524",
+    "fit_cutoff": "2015-01-01 00:00:00",
+    "train_start": "2014-01-02 00:00:00",
+    "train_end": "2014-12-29 00:00:00",
+    "max_training_label_available_at": "2014-12-31 22:00:00",
+    "train_rows": 2412,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2015,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2015/xgb_73.json",
+    "model_hash": "33c88c59320097f5b1d83f89d5c1201d3632b9a8fc4285be61dc308f7ee9c524",
+    "fit_cutoff": "2015-01-01 00:00:00",
+    "train_start": "2014-01-02 00:00:00",
+    "train_end": "2014-12-29 00:00:00",
+    "max_training_label_available_at": "2014-12-31 22:00:00",
+    "train_rows": 2412,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2015,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2015/xgb_101.json",
+    "model_hash": "33c88c59320097f5b1d83f89d5c1201d3632b9a8fc4285be61dc308f7ee9c524",
+    "fit_cutoff": "2015-01-01 00:00:00",
+    "train_start": "2014-01-02 00:00:00",
+    "train_end": "2014-12-29 00:00:00",
+    "max_training_label_available_at": "2014-12-31 22:00:00",
+    "train_rows": 2412,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2015,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2015/xgb_202.json",
+    "model_hash": "33c88c59320097f5b1d83f89d5c1201d3632b9a8fc4285be61dc308f7ee9c524",
+    "fit_cutoff": "2015-01-01 00:00:00",
+    "train_start": "2014-01-02 00:00:00",
+    "train_end": "2014-12-29 00:00:00",
+    "max_training_label_available_at": "2014-12-31 22:00:00",
+    "train_rows": 2412,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2015,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2015/lgbm.txt",
+    "model_hash": "16237b92e0a0138d468e9d7e2074ae94feb3cb73c5c6744f09b79ebefb81f433",
+    "fit_cutoff": "2015-01-01 00:00:00",
+    "train_start": "2014-01-02 00:00:00",
+    "train_end": "2014-12-29 00:00:00",
+    "max_training_label_available_at": "2014-12-31 22:00:00",
+    "train_rows": 2412,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2015,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2015/ridge.joblib",
+    "model_hash": "a45a76771b01bcf0aaaba496ec65e7b14520f31f501060ced0a26d60fea43b75",
+    "fit_cutoff": "2015-01-01 00:00:00",
+    "train_start": "2014-01-02 00:00:00",
+    "train_end": "2014-12-29 00:00:00",
+    "max_training_label_available_at": "2014-12-31 22:00:00",
+    "train_rows": 2412,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  }
+]

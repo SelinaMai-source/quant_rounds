@@ -1,0 +1,93 @@
+[
+  {
+    "head": "five",
+    "year": 2021,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2021/xgb_17.json",
+    "model_hash": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+    "fit_cutoff": "2021-01-01 00:00:00",
+    "train_start": "2018-01-02 00:00:00",
+    "train_end": "2020-12-29 00:00:00",
+    "max_training_label_available_at": "2020-12-31 22:00:00",
+    "train_rows": 12743,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2021,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2021/xgb_42.json",
+    "model_hash": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+    "fit_cutoff": "2021-01-01 00:00:00",
+    "train_start": "2018-01-02 00:00:00",
+    "train_end": "2020-12-29 00:00:00",
+    "max_training_label_available_at": "2020-12-31 22:00:00",
+    "train_rows": 12743,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2021,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2021/xgb_73.json",
+    "model_hash": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+    "fit_cutoff": "2021-01-01 00:00:00",
+    "train_start": "2018-01-02 00:00:00",
+    "train_end": "2020-12-29 00:00:00",
+    "max_training_label_available_at": "2020-12-31 22:00:00",
+    "train_rows": 12743,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2021,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2021/xgb_101.json",
+    "model_hash": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+    "fit_cutoff": "2021-01-01 00:00:00",
+    "train_start": "2018-01-02 00:00:00",
+    "train_end": "2020-12-29 00:00:00",
+    "max_training_label_available_at": "2020-12-31 22:00:00",
+    "train_rows": 12743,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2021,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2021/xgb_202.json",
+    "model_hash": "13ee51898304ec41d1cef190d255500b74c09bd19cea53df75a9ac0f4b0d678e",
+    "fit_cutoff": "2021-01-01 00:00:00",
+    "train_start": "2018-01-02 00:00:00",
+    "train_end": "2020-12-29 00:00:00",
+    "max_training_label_available_at": "2020-12-31 22:00:00",
+    "train_rows": 12743,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2021,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2021/lgbm.txt",
+    "model_hash": "3ee93a2299d048b4673fe2921d4954e6f11b8ab0c8a01deaffccfbc1927d65d0",
+    "fit_cutoff": "2021-01-01 00:00:00",
+    "train_start": "2018-01-02 00:00:00",
+    "train_end": "2020-12-29 00:00:00",
+    "max_training_label_available_at": "2020-12-31 22:00:00",
+    "train_rows": 12743,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  },
+  {
+    "head": "five",
+    "year": 2021,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/five/2021/ridge.joblib",
+    "model_hash": "caecf67739cc75fbb99148398603e151d43ff795659b25e06003d99bee5a5346",
+    "fit_cutoff": "2021-01-01 00:00:00",
+    "train_start": "2018-01-02 00:00:00",
+    "train_end": "2020-12-29 00:00:00",
+    "max_training_label_available_at": "2020-12-31 22:00:00",
+    "train_rows": 12743,
+    "target": "label_e2_net",
+    "maturity_source": "next2_date"
+  }
+]

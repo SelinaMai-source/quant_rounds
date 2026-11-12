@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ONE_REAL_FOLD_SCOPE_ONLY",
+  "head": "five",
+  "outer_year": 2018,
+  "seed": 17,
+  "mutated_future_or_immature_target_rows": 46181,
+  "matrix_hashes": [
+    "07b85dc7b5c47495d83ac1de57c46f0329a99c816813673fc0a1d78009fbc517",
+    "07b85dc7b5c47495d83ac1de57c46f0329a99c816813673fc0a1d78009fbc517"
+  ],
+  "prediction_rows_compared": 3168,
+  "overlayed_rows_compared": 2110,
+  "new_diagnostic_model_fits": 2,
+  "scope_limit": "This does not cover the complete NNLS/BOA/neural pipeline or all years, revisions and prefixes."
+}

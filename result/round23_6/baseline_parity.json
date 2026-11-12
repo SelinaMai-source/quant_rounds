@@ -1,0 +1,56 @@
+{
+  "overlayed": {
+    "status": "PASS",
+    "rows": 25874
+  },
+  "nav": {
+    "status": "PASS",
+    "rows": 2076
+  },
+  "trades": {
+    "status": "PASS",
+    "rows": 1107
+  },
+  "positions": {
+    "status": "PASS",
+    "rows": 1327
+  },
+  "costs": {
+    "status": "PASS",
+    "rows": 2214
+  },
+  "rejections": {
+    "status": "PASS",
+    "rows": 1209
+  },
+  "cashflows": {
+    "status": "PASS",
+    "rows": 0
+  },
+  "sleeve_states": {
+    "status": "PASS",
+    "rows": 4152
+  },
+  "status": "PASS",
+  "candidate_key_score_and_ranking": "overlayed frame comparison includes full keys/scores/allocation and sorted order",
+  "plan_order_parity": "PASS actual original executor _open_cohort call intents and pre-trade capital compared; final quantities checked in trades",
+  "full_plan_order_trace": "NOT_INSTRUMENTED",
+  "plan_order_trace": {
+    "status": "PASS",
+    "rows": 2096,
+    "fields": [
+      "signal_date",
+      "entry_date",
+      "sleeve_id",
+      "sleeve_cash_before",
+      "entry_portfolio_nav",
+      "planned_exit_date",
+      "instrument_id",
+      "score",
+      "selection_rank",
+      "allocation_multiplier"
+    ],
+    "evidence": "diagnostics/*/plan_trace.csv.gz"
+  },
+  "execution_time_chain": "LEGACY_OPEN_INFORMATION; not a strict contemporaneous fill proof; original engine may clip modeled fills against full-day high/low"
+}

@@ -111,4 +111,7 @@ def run(method):
  except Exception as e:
   r.update(status='FAILED_RUNTIME',error_type=type(e).__name__,error=str(e));(S/(method+'.traceback.txt')).write_text(traceback.format_exc())
  r['elapsed_seconds']=time.time()-r['started_at'];(S/(method+'.json')).write_text(json.dumps(r,indent=2));print(json.dumps(r),flush=True)
-if __name__=='__main__':run(sys.argv[1])
+if __name__=='__main__':
+ run(sys.argv[1])
+ record=json.loads((S/(sys.argv[1]+'.json')).read_text())
+ raise SystemExit(1 if record.get('status','').startswith('FAILED') else 0)

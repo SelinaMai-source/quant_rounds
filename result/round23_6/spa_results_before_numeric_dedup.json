@@ -1,0 +1,21 @@
+{
+  "status": "COMPUTED",
+  "pvalues": {
+    "lower": 0.489,
+    "consistent": 0.489,
+    "upper": 0.8712
+  },
+  "candidate_family": [
+    "C01_P1_SCORE_A099",
+    "C10_SL",
+    "C11_BOA",
+    "META_CTRL_EQ",
+    "META_CTRL_LGBM",
+    "META_CTRL_MEAN",
+    "META_CTRL_RIDGE",
+    "META_CTRL_XGB"
+  ],
+  "deduplicated": {},
+  "scope": "same legacy-v5 economic scope; all executed new aggregation candidates and their controls; no paper-reference metrics",
+  "repeated_historical_development": true
+}

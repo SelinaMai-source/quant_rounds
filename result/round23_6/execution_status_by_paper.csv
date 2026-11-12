@@ -1,0 +1,5 @@
+paper_id,method,branch,L0,L1,L2,limitations
+COMBO-01,SuperLearner,round23_6,OFFICIAL_R_PARITY_PASS,REFERENCE_PARTIAL_OFFICIAL_SYNTHETIC_EXAMPLE_AND_NO_DELAY_STREAM,ADAPTATION_BACKTEST_EXECUTED_INTEGRATION_PENDING,Not full original-paper L1 numerical study; legacy information lane and full real-data integration tests remain incomplete.
+COMBO-02,opera,round23_6,OFFICIAL_R_PARITY_PASS,REFERENCE_PARTIAL_OFFICIAL_SYNTHETIC_EXAMPLE_AND_NO_DELAY_STREAM,ADAPTATION_BACKTEST_EXECUTED_INTEGRATION_PENDING,Not full original-paper L1 numerical study; legacy information lane and full real-data integration tests remain incomplete.
+COMBO-03,TRA,round23_6,ALGORITHM_CORE_UPDATE_PASSED,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,NOT_IMPLEMENTED,"Full author TRAModel wrapper, dataset and L1 not covered by this finite core test"
+COMBO-04,DoubleAdapt,round23_6,ALGORITHM_UPDATE_PASSED,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,NOT_IMPLEMENTED,Finite official core update only; full author training/evaluation and target adapters are unfinished.

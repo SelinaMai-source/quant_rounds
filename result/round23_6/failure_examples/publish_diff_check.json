@@ -1,0 +1,5 @@
+{
+  "status": "RECOVERED",
+  "actual_error": "result/round23_6/r_reference/R.log:10 new blank line at EOF",
+  "resolution": "Raw runtime logs retain exact bytes and are narrowly exempted from whitespace checking; implementation code is still checked. No result or source logic changed."
+}

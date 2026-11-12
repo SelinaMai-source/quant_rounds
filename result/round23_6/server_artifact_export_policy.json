@@ -1,0 +1,191 @@
+[
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/frozen_components.parquet",
+    "sha256": "9d441e2dda43124e1e0ed8bf3d34efc598ce2fa687b69659caa8a58c9937f1b1",
+    "size": 1498541,
+    "export": "SERVER_ONLY_DERIVED_INPUT",
+    "reason": "contains candidate input gap alongside prediction components"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/calibrated_oof.parquet",
+    "sha256": "80e31b98eec5fa6910fe900d6aaf6fb1efae8137865269f9eaac439d63c83beb",
+    "size": 1836696,
+    "repo_path": "result/round23_6/expert_bank/ten/calibrated_oof.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/calibrated_oof.parquet",
+    "sha256": "69765e17c0e3d32064e00da539c9a678ea0fcd98fa5e9b22638f254e0c8e98cb",
+    "size": 1796522,
+    "repo_path": "result/round23_6/expert_bank/five/calibrated_oof.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2020/predictions.parquet",
+    "sha256": "8b9ac10c9191dacba83609a763e3c8a1fe672c019ee54cd45a39824fbad1587e",
+    "size": 215637,
+    "repo_path": "result/round23_6/expert_bank/five/2020/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2016/predictions.parquet",
+    "sha256": "5de69ad5e9566a94ae31a28a70504b77f90573345e795aa7470bc657df51af62",
+    "size": 138637,
+    "repo_path": "result/round23_6/expert_bank/five/2016/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2019/predictions.parquet",
+    "sha256": "332ed6f0b88d7f94a29cfa76a96f0915afc710a7c5cec0fb93258a731369039d",
+    "size": 176167,
+    "repo_path": "result/round23_6/expert_bank/five/2019/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2026/predictions.parquet",
+    "sha256": "5fbabe84fdbd287a59d7acc1071d554ed25aad64c8ed6b05149a17c46aca3181",
+    "size": 142512,
+    "repo_path": "result/round23_6/expert_bank/five/2026/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2025/predictions.parquet",
+    "sha256": "b04a0a93449d6bc7f4b67f4c450dca3cc5746ed0c4fadd0076de654dbc43a663",
+    "size": 238635,
+    "repo_path": "result/round23_6/expert_bank/five/2025/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2022/predictions.parquet",
+    "sha256": "e1f0725a1c59f7c6885695e4f5c22a3054c5dcbb8eadf44b98cc11b9e49e0fa5",
+    "size": 204209,
+    "repo_path": "result/round23_6/expert_bank/five/2022/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2024/predictions.parquet",
+    "sha256": "159af28388abd3c158f604c2245b7653e5f8fc984760e26a0bf5d4eff79c1e95",
+    "size": 245757,
+    "repo_path": "result/round23_6/expert_bank/five/2024/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2018/predictions.parquet",
+    "sha256": "1884419b8cb9c3ab850de65a5be264bed5eff1b04537c338025e638e57bb340b",
+    "size": 122178,
+    "repo_path": "result/round23_6/expert_bank/five/2018/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2023/predictions.parquet",
+    "sha256": "4acf1fcaace1379e38d382e0c1e0e9c305fb7e64341ea2bde779d33a1e6922cd",
+    "size": 150121,
+    "repo_path": "result/round23_6/expert_bank/five/2023/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2021/predictions.parquet",
+    "sha256": "eb40706116767013b005763f58e850d0ae555afd14488c39ca6aad87876a6a0a",
+    "size": 209372,
+    "repo_path": "result/round23_6/expert_bank/five/2021/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2017/predictions.parquet",
+    "sha256": "c149b9b281302ccbd59c71dfad3140c9b3b1008fd36cc07550737bde6cc182d6",
+    "size": 93830,
+    "repo_path": "result/round23_6/expert_bank/five/2017/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2015/predictions.parquet",
+    "sha256": "2ef929be351a0b5489c1678f6da5dbd93912d7b561ff34cbe2e879bf9b9475c0",
+    "size": 237817,
+    "repo_path": "result/round23_6/expert_bank/five/2015/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2020/predictions.parquet",
+    "sha256": "b6537f857d3cb27eaac243525ae0d5f2b91654cc9872e7976e3498c9bc8d01fd",
+    "size": 219222,
+    "repo_path": "result/round23_6/expert_bank/ten/2020/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2016/predictions.parquet",
+    "sha256": "6addd104fba09d00ebc8987c63bb5f8e3ebcdec4e69aab37091221719600de38",
+    "size": 140552,
+    "repo_path": "result/round23_6/expert_bank/ten/2016/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2019/predictions.parquet",
+    "sha256": "8621916c92952999a86e85335cb9e48d59ceeabcc0ca511a33b3b964018b60ad",
+    "size": 178729,
+    "repo_path": "result/round23_6/expert_bank/ten/2019/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2026/predictions.parquet",
+    "sha256": "8565f7efbadb3acd61437d5bfbb810176b2a09d5be859f6950ea43353c8b3c03",
+    "size": 144365,
+    "repo_path": "result/round23_6/expert_bank/ten/2026/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2025/predictions.parquet",
+    "sha256": "06af53d03f48e5126d7b180d095ba93393ec6551eda9862a72aaae87968cbc81",
+    "size": 242335,
+    "repo_path": "result/round23_6/expert_bank/ten/2025/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2022/predictions.parquet",
+    "sha256": "e451cc6496ea5a531e9064c1d5dd5f7caf5ed98463976d80a561781a0d0fa8f5",
+    "size": 207527,
+    "repo_path": "result/round23_6/expert_bank/ten/2022/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2024/predictions.parquet",
+    "sha256": "d51503b88c8d2469ec572705be44ee0136e263b3a80d788f3c8f4a1e8cfce049",
+    "size": 249645,
+    "repo_path": "result/round23_6/expert_bank/ten/2024/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2018/predictions.parquet",
+    "sha256": "22208f06467ca16c4995d97e48433a6959808043e52964e5b409e6b3d48e96c9",
+    "size": 123642,
+    "repo_path": "result/round23_6/expert_bank/ten/2018/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2023/predictions.parquet",
+    "sha256": "072f315282db6e5eca5b380731520733c062b571143111c352f355d448a6eb2d",
+    "size": 151921,
+    "repo_path": "result/round23_6/expert_bank/ten/2023/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2021/predictions.parquet",
+    "sha256": "2faed067dfccec979bbc7230f55a4dba44f4fe2c1b0117de2aa5825d20639183",
+    "size": 212197,
+    "repo_path": "result/round23_6/expert_bank/ten/2021/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2017/predictions.parquet",
+    "sha256": "2eb9a065eb73b17a31a9394e00ab82901e14d96535e20085d4570a5fb0b9518e",
+    "size": 94612,
+    "repo_path": "result/round23_6/expert_bank/ten/2017/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  },
+  {
+    "server_path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2015/predictions.parquet",
+    "sha256": "6d18f97b3123738696bc799c10d58a2af0dc36cb7800153859e20f126c6680e6",
+    "size": 242398,
+    "repo_path": "result/round23_6/expert_bank/ten/2015/predictions.parquet",
+    "export": "DERIVED_PREDICTIONS_WITH_TARGET_VALUES_REMOVED"
+  }
+]

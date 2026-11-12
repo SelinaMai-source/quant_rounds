@@ -1,0 +1,93 @@
+[
+  {
+    "head": "ten",
+    "year": 2022,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/ten/2022/xgb_17.json",
+    "model_hash": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+    "fit_cutoff": "2022-01-01 00:00:00",
+    "train_start": "2019-01-02 00:00:00",
+    "train_end": "2021-12-29 00:00:00",
+    "max_training_label_available_at": "2021-12-31 22:00:00",
+    "train_rows": 15488,
+    "target": "label_exit_rule_net",
+    "maturity_source": "actual_exit_date"
+  },
+  {
+    "head": "ten",
+    "year": 2022,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/ten/2022/xgb_42.json",
+    "model_hash": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+    "fit_cutoff": "2022-01-01 00:00:00",
+    "train_start": "2019-01-02 00:00:00",
+    "train_end": "2021-12-29 00:00:00",
+    "max_training_label_available_at": "2021-12-31 22:00:00",
+    "train_rows": 15488,
+    "target": "label_exit_rule_net",
+    "maturity_source": "actual_exit_date"
+  },
+  {
+    "head": "ten",
+    "year": 2022,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/ten/2022/xgb_73.json",
+    "model_hash": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+    "fit_cutoff": "2022-01-01 00:00:00",
+    "train_start": "2019-01-02 00:00:00",
+    "train_end": "2021-12-29 00:00:00",
+    "max_training_label_available_at": "2021-12-31 22:00:00",
+    "train_rows": 15488,
+    "target": "label_exit_rule_net",
+    "maturity_source": "actual_exit_date"
+  },
+  {
+    "head": "ten",
+    "year": 2022,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/ten/2022/xgb_101.json",
+    "model_hash": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+    "fit_cutoff": "2022-01-01 00:00:00",
+    "train_start": "2019-01-02 00:00:00",
+    "train_end": "2021-12-29 00:00:00",
+    "max_training_label_available_at": "2021-12-31 22:00:00",
+    "train_rows": 15488,
+    "target": "label_exit_rule_net",
+    "maturity_source": "actual_exit_date"
+  },
+  {
+    "head": "ten",
+    "year": 2022,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/ten/2022/xgb_202.json",
+    "model_hash": "5b29c0447477db3e68dea2ebe29d6930341abc73f7a7dae7dee5f9809825da19",
+    "fit_cutoff": "2022-01-01 00:00:00",
+    "train_start": "2019-01-02 00:00:00",
+    "train_end": "2021-12-29 00:00:00",
+    "max_training_label_available_at": "2021-12-31 22:00:00",
+    "train_rows": 15488,
+    "target": "label_exit_rule_net",
+    "maturity_source": "actual_exit_date"
+  },
+  {
+    "head": "ten",
+    "year": 2022,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/ten/2022/lgbm.txt",
+    "model_hash": "d57412074d87fbf5b5240d8f372f61b203135fdb68691dfbd7ae9f6531e7ceee",
+    "fit_cutoff": "2022-01-01 00:00:00",
+    "train_start": "2019-01-02 00:00:00",
+    "train_end": "2021-12-29 00:00:00",
+    "max_training_label_available_at": "2021-12-31 22:00:00",
+    "train_rows": 15488,
+    "target": "label_exit_rule_net",
+    "maturity_source": "actual_exit_date"
+  },
+  {
+    "head": "ten",
+    "year": 2022,
+    "model_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_6/expert_bank/ten/2022/ridge.joblib",
+    "model_hash": "0ebc08263207491fb2d97459de47d5c13fc1fbbb1d2d69f6d7eb4d3d7a25eb65",
+    "fit_cutoff": "2022-01-01 00:00:00",
+    "train_start": "2019-01-02 00:00:00",
+    "train_end": "2021-12-29 00:00:00",
+    "max_training_label_available_at": "2021-12-31 22:00:00",
+    "train_rows": 15488,
+    "target": "label_exit_rule_net",
+    "maturity_source": "actual_exit_date"
+  }
+]

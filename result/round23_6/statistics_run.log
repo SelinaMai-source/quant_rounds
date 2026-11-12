@@ -1,0 +1,30 @@
+/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/statistics.py:97: RuntimeWarning: The loss differential has a variance of 0 for the models [7], for example because a model is identical to the benchmark. The studentized test statistic of these models is not meaningful and the p-values of the SPA, and the superior models of StepM, are not reliable if they are included. Remove these models before testing.
+  spa=SPA(-base_ret,np.column_stack([-curves[c][1:] for c in unique]),block_size=20,reps=5000,bootstrap='circular',seed=0)
+       experiment_id      CAGR    Sharpe     MaxDD  CompletedTrades
+              C00_V5  0.549981  1.875663 -0.240563             1107
+           C00_V5_S1  0.513237  1.782705 -0.252967             1107
+           C00_V5_S2  0.476580  1.686683 -0.268758             1107
+   C01_P1_SCORE_A099  0.553927  1.917863 -0.244437             1114
+C01_P1_SCORE_A099_S1  0.515534  1.820227 -0.255750             1114
+C01_P1_SCORE_A099_S2  0.477997  1.722391 -0.269025             1114
+              C10_SL  0.005274  0.127089 -0.672186             1262
+           C10_SL_S1 -0.023305 -0.023079 -0.717713             1259
+           C10_SL_S2 -0.050851 -0.173779 -0.763377             1253
+             C11_BOA  0.033875  0.271635 -0.569445             1251
+          C11_BOA_S1  0.001705  0.109125 -0.636155             1250
+          C11_BOA_S2 -0.024303 -0.027110 -0.688624             1249
+        META_CTRL_EQ  0.230281  1.169124 -0.274892             1213
+     META_CTRL_EQ_S1  0.199829  1.043118 -0.301020             1214
+     META_CTRL_EQ_S2  0.170238  0.916919 -0.334697             1212
+      META_CTRL_LGBM  0.246290  1.015990 -0.306258             1128
+   META_CTRL_LGBM_S1  0.214971  0.915051 -0.314027             1128
+   META_CTRL_LGBM_S2  0.185872  0.818588 -0.321831             1128
+      META_CTRL_MEAN  0.087820  0.533151 -0.461238             1270
+   META_CTRL_MEAN_S1  0.059337  0.397571 -0.514202             1266
+   META_CTRL_MEAN_S2  0.031980  0.263132 -0.558579             1263
+     META_CTRL_RIDGE -0.002466  0.086836 -0.672186             1265
+  META_CTRL_RIDGE_S1 -0.030093 -0.059702 -0.717713             1262
+  META_CTRL_RIDGE_S2 -0.060044 -0.225299 -0.763377             1257
+       META_CTRL_XGB  0.549981  1.875663 -0.240563             1107
+    META_CTRL_XGB_S1  0.513237  1.782705 -0.252967             1107
+    META_CTRL_XGB_S2  0.476580  1.686683 -0.268758             1107

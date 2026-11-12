@@ -1,0 +1,11 @@
+paper_id,method,L0,L1,Ashare_metrics_claimed,limitations
+COMBO-01,SuperLearner,OFFICIAL_R_PARITY_PASS,REFERENCE_PARTIAL_OFFICIAL_SYNTHETIC_EXAMPLE_AND_NO_DELAY_STREAM,False,Not full original-paper L1 numerical study; legacy information lane and full real-data integration tests remain incomplete.
+COMBO-02,opera,OFFICIAL_R_PARITY_PASS,REFERENCE_PARTIAL_OFFICIAL_SYNTHETIC_EXAMPLE_AND_NO_DELAY_STREAM,False,Not full original-paper L1 numerical study; legacy information lane and full real-data integration tests remain incomplete.
+COMBO-03,TRA,ALGORITHM_CORE_UPDATE_PASSED,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,False,"Full author TRAModel wrapper, dataset and L1 not covered by this finite core test"
+COMBO-04,DoubleAdapt,ALGORITHM_UPDATE_PASSED,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,False,Finite official core update only; full author training/evaluation and target adapters are unfinished.
+ALPHA-01,AlphaGen,ALGORITHM_CORE_UPDATE_PASSED,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,False,"author expression evaluation, synergistic pool and original LSTM policy on synthetic OHLCV tensors; finite 64-token rollout test, not L1"
+ALPHA-02,AlphaForge,COMPONENT_UPDATE_ONLY_NOT_FULL_GENERATOR_TRAINING,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,False,"Official NetG_DCGAN and NetP updated on a finite synthetic example; the published adversarial loss, collector, mining loop and dynamic combination were not executed. train_AFF.py does exist; no upstream-missing-code blocker is asserted."
+ALPHA-03,RSR,ALGORITHM_CORE_UPDATE_PASSED,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,False,Finite official core update only; full author training/evaluation and target adapters are unfinished.
+ALPHA-04,MASTER,ALGORITHM_UPDATE_PASSED,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,False,Finite official core update only; full author training/evaluation and target adapters are unfinished.
+ALPHA-05,RD-Agent,BLOCKED_LLM_ACCESS,BLOCKED_LLM_ACCESS,False,No configured authorized local LLM endpoint; direct probes and listening-port audit retained. Zero added LLM budget; no private data sent externally. No manual factors substituted.
+ALPHA-06,DeepLOB,ALGORITHM_UPDATE_PASSED,NOT_RUN_REFERENCE_RECOVERY_INCOMPLETE,False,"Synthetic tensors for L0; not FI-2010 L1 or A-share LOB Authorized real sample contains five levels, not required ten levels. This is a data/schema gap, not a fabricated subscription denial."

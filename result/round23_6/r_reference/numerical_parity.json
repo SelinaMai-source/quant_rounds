@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "max_absolute_errors": {
+    "SL_raw": 4.718447854656915e-16,
+    "SL_normalized": 3.3306690738754696e-16,
+    "BOA_prediction": 1.457167719820518e-16,
+    "BOA_weights": 7.771561172376096e-16,
+    "BOA_final": 3.885780586188048e-16
+  },
+  "source": "locked official R source with installed dependency package; no-delay BOA gradient defaults",
+  "L1_status": "REFERENCE_PARTIAL official synthetic example only, not full paper original numerical study"
+}

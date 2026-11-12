@@ -1,0 +1,7 @@
+{
+  "evidence_origin": "observed actual tool execution traceback, reconstructed after log rotation",
+  "error_type": "RuntimeError",
+  "error": "refusing to write historical or foreign result: result/round23_6/bt/C00_V5/overlay_meta.json",
+  "resolution": "process-local allowed output tuple extended only to round23_6, round26 and their master; canonical source file unchanged",
+  "state": "RECOVERED"
+}

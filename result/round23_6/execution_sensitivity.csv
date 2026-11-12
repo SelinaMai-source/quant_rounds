@@ -1,0 +1,52 @@
+experiment_id,scenario,status,open_limit_up_rejections,plan_identities_preserved,replacement_count,trace_evidence,fee_direction_ok,candidate_CAGR,baseline_CAGR,candidate_Sharpe,baseline_Sharpe,nav_improvement,delta_CAGR,delta_Sharpe
+C00_V5,S3,ALREADY_ENFORCED,307.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C00_V5_S1,S3,ALREADY_ENFORCED,307.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C00_V5_S2,S3,ALREADY_ENFORCED,307.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C01_P1_SCORE_A099,S3,ALREADY_ENFORCED,301.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,True,,,,,,,
+C01_P1_SCORE_A099_S1,S3,ALREADY_ENFORCED,301.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C01_P1_SCORE_A099_S2,S3,ALREADY_ENFORCED,301.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C10_SL,S3,ALREADY_ENFORCED,50.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,True,,,,,,,
+C10_SL_S1,S3,ALREADY_ENFORCED,50.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C10_SL_S2,S3,ALREADY_ENFORCED,50.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C11_BOA,S3,ALREADY_ENFORCED,66.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,True,,,,,,,
+C11_BOA_S1,S3,ALREADY_ENFORCED,66.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C11_BOA_S2,S3,ALREADY_ENFORCED,66.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_EQ,S3,ALREADY_ENFORCED,122.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,True,,,,,,,
+META_CTRL_EQ_S1,S3,ALREADY_ENFORCED,122.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_EQ_S2,S3,ALREADY_ENFORCED,122.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_LGBM,S3,ALREADY_ENFORCED,273.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,True,,,,,,,
+META_CTRL_LGBM_S1,S3,ALREADY_ENFORCED,273.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_LGBM_S2,S3,ALREADY_ENFORCED,273.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_MEAN,S3,ALREADY_ENFORCED,112.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,True,,,,,,,
+META_CTRL_MEAN_S1,S3,ALREADY_ENFORCED,112.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_MEAN_S2,S3,ALREADY_ENFORCED,112.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_RIDGE,S3,ALREADY_ENFORCED,48.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,True,,,,,,,
+META_CTRL_RIDGE_S1,S3,ALREADY_ENFORCED,48.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_RIDGE_S2,S3,ALREADY_ENFORCED,48.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_XGB,S3,ALREADY_ENFORCED,307.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,True,,,,,,,
+META_CTRL_XGB_S1,S3,ALREADY_ENFORCED,307.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+META_CTRL_XGB_S2,S3,ALREADY_ENFORCED,307.0,True,0.0,all trades and nonnull rejected instruments belong to original per-date top-two plan; canonical engine loops only scheduled picks,,,,,,,,
+C01_P1_SCORE_A099,S0,,,,,,True,0.5539270332022608,0.5499812832273525,1.9178625690151911,1.8756627913361064,0.021990888617648086,0.003945749974908264,0.04219977767908478
+C01_P1_SCORE_A099,S1,,,,,,True,0.5155339105384897,0.5132369545442814,1.8202274531194282,1.7827052870743472,0.013061621989922445,0.002296955994208316,0.03752216604508107
+C01_P1_SCORE_A099,S2,,,,,,True,0.4779966984966597,0.4765803786166216,1.7223911452190925,1.6866828843450985,0.008236415747771897,0.0014163198800380972,0.035708260873994035
+C10_SL,S0,,,,,,True,0.005273870762978694,0.5499812832273525,0.12708851546053823,1.8756627913361064,-0.9753876653704685,-0.5447074124643738,-1.7485742758755682
+C10_SL,S1,,,,,,True,-0.02330508225904504,0.5132369545442814,-0.023079136041469724,1.7827052870743472,-0.9763878927426121,-0.5365420368033265,-1.8057844231158169
+C10_SL,S2,,,,,,True,-0.050851234639920695,0.4765803786166216,-0.17377937724285072,1.6866828843450985,-0.9771992053224771,-0.5274316132565423,-1.8604622615879491
+C11_BOA,S0,,,,,,True,0.033874980865290505,0.5499812832273525,0.2716351754153511,1.8756627913361064,-0.9687108816687762,-0.516106302362062,-1.6040276159207552
+C11_BOA,S1,,,,,,True,0.001704663004282292,0.5132369545442814,0.10912544003307119,1.7827052870743472,-0.970685410314035,-0.5115322915399991,-1.673579847041276
+C11_BOA,S2,,,,,,True,-0.024303041961477145,0.4765803786166216,-0.027110137443238806,1.6866828843450985,-0.9711295234791998,-0.5008834205780988,-1.7137930217883373
+META_CTRL_EQ,S0,,,,,,True,0.2302807725162943,0.5499812832273525,1.1691240764272481,1.8756627913361064,-0.8614314066786346,-0.3197005107110582,-0.7065387149088582
+META_CTRL_EQ,S1,,,,,,True,0.1998292271916371,0.5132369545442814,1.043118305410449,1.7827052870743472,-0.8626957643201036,-0.3134077273526443,-0.7395869816638982
+META_CTRL_EQ,S2,,,,,,True,0.1702379219495571,0.4765803786166216,0.91691856731645,1.6866828843450985,-0.8632233601693489,-0.3063424566670645,-0.7697643170286484
+META_CTRL_LGBM,S0,,,,,,True,0.24628961041471098,0.5499812832273525,1.0159897697996259,1.8756627913361064,-0.8452241166470773,-0.30369167281264153,-0.8596730215364805
+META_CTRL_LGBM,S1,,,,,,True,0.21497075832905943,0.5132369545442814,0.9150511182354544,1.7827052870743472,-0.8471441522127403,-0.298266196215222,-0.8676541688388928
+META_CTRL_LGBM,S2,,,,,,True,0.1858721965676542,0.4765803786166216,0.818588155809378,1.6866828843450985,-0.8467766098054343,-0.2907081820489674,-0.8680947285357205
+META_CTRL_MEAN,S0,,,,,,True,0.08781994662049408,0.5499812832273525,0.5331507851555086,1.8756627913361064,-0.9516516157883854,-0.46216133660685843,-1.3425120061805977
+META_CTRL_MEAN,S1,,,,,,True,0.05933678895211547,0.5132369545442814,0.39757134039343783,1.7827052870743472,-0.9526912902000253,-0.45390016559216595,-1.3851339466809094
+META_CTRL_MEAN,S2,,,,,,True,0.03198022088165953,0.4765803786166216,0.2631315722448438,1.6866828843450985,-0.9533510109814888,-0.4446001577349621,-1.4235513121002548
+META_CTRL_RIDGE,S0,,,,,,True,-0.002466483990320567,0.5499812832273525,0.08683589574784341,1.8756627913361064,-0.9769626819809991,-0.5524477672176731,-1.788826895588263
+META_CTRL_RIDGE,S1,,,,,,True,-0.030093020319962194,0.5132369545442814,-0.05970184556869789,1.7827052870743472,-0.9777556039054606,-0.5433299748642436,-1.8424071326430451
+META_CTRL_RIDGE,S2,,,,,,True,-0.06004401237100432,0.4765803786166216,-0.22529926394648003,1.6866828843450985,-0.9790209089716932,-0.5366243909876259,-1.9119821482915786
+META_CTRL_XGB,S0,,,,,,True,0.5499812832273525,0.5499812832273525,1.8756627913361064,1.8756627913361064,0.0,0.0,0.0
+META_CTRL_XGB,S1,,,,,,True,0.5132369545442814,0.5132369545442814,1.7827052870743472,1.7827052870743472,0.0,0.0,0.0
+META_CTRL_XGB,S2,,,,,,True,0.4765803786166216,0.4765803786166216,1.6866828843450985,1.6866828843450985,0.0,0.0,0.0
