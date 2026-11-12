@@ -1,0 +1,84 @@
+{
+  "freeze_id": "R236_R26_V1",
+  "input_sha256": "8ee4d1f6c84e02fee8b09758476ff673b98c4e5e1bada419d24bf168ed85ee08",
+  "source_anchor": "2c28c2083097a28cda921c59c28b254c30cd0976",
+  "baseline_anchor": "feda6870a26f6efe5d722fd9c3b11130ca266d85",
+  "branch": "round26",
+  "outer_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "outer_window": "Y-3..Y-1 -> Y",
+  "generation": "Y-3..Y-2; validation Y-1; freeze before Y",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "initial_cash": 300000,
+  "evaluation": [
+    "2018-01-02",
+    "2026-07-24"
+  ],
+  "lanes": [
+    "LEGACY_V5_COMPARISON",
+    "NEW_SIGNAL_D22",
+    "PAPER_REFERENCE",
+    "TARGET_PIT_SUBPERIOD"
+  ],
+  "protocol": "research/literature_round23_6_26/MASTER_PROMPT.md",
+  "alpha_grid": [
+    0.9,
+    0.91,
+    0.92,
+    0.93,
+    0.94,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "gamma": 3,
+  "bootstrap": {
+    "paired": true,
+    "circular": true,
+    "block20": 5000,
+    "block10": 1000,
+    "block40": 1000
+  },
+  "spa": "arch.bootstrap.SPA loss=-net_return",
+  "random_method_seed_selection": false,
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "AUTO_PROMOTE": false,
+  "ROUND24_EXECUTED": false,
+  "reference_configuration": "Author config resolved and separately committed before its execution; unresolved config blocks dependent training, not other methods",
+  "stage_order": [
+    "source",
+    "audit",
+    "L0",
+    "L1",
+    "L2",
+    "backtest",
+    "stats",
+    "report",
+    "publish"
+  ],
+  "resource": {
+    "max_cpu_training_tasks": 1,
+    "max_gpu_training_tasks": 1,
+    "max_memory_fraction": 0.7,
+    "L1_gpu_hours": 24,
+    "L2_gpu_hours": 96,
+    "additional_paid_budget": 0
+  }
+}
