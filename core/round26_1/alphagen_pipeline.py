@@ -7,6 +7,21 @@ from core.round26_1.market import C,B,R
 from core.research_integrity_v5.cache import identity,sha
 PYTHON=C/'research/round23_6_26_execution/env/bin/python'
 
+def archive_attempt_metadata(arm,year,seed):
+ """A resumed attempt must not erase the preceding measured resource segment."""
+ runbase=B/'alphagen_runs'/arm/str(year)/str(seed)
+ files=list((R/'worker_profiles').glob(f'{arm}_{year}_{seed}_*.json'))
+ for name in ['RESOURCES.json','STATUS.json','RESUME.json','PROGRESS.json','HEARTBEAT.json','COMPLETE.json']:
+  files.extend(runbase.glob('*/'+name))
+ if not files:return
+ dest=R/'attempt_history'/arm/str(seed)/str(year)/str(time.time_ns())
+ dest.mkdir(parents=True,exist_ok=True);manifest=[]
+ for source in files:
+  relative=source.relative_to(C)
+  target=dest/relative;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target)
+  manifest.append({'original':str(source),'snapshot':str(target.relative_to(dest)),'bytes':target.stat().st_size,'sha256':sha(target)})
+ (dest/'manifest.json').write_text(json.dumps({'note':'actual prior-attempt profiles/statuses before launching another process; original checkpoint directories retained server-side','artifacts':manifest},ensure_ascii=False,indent=2))
+
 def copy_completed(row):
  directory=Path(row['directory']);dest=R/'completed_factors'/row['arm']/str(row['seed'])/str(row['year']);dest.mkdir(parents=True,exist_ok=True)
  for name in ['CONTRACT.json','FROZEN_FACTOR.json','SELECTED_CHECKPOINT.json','factor_predictions.parquet','RESOURCES.json','RESOLVED_PPO.json','COMPLETE.json']:
@@ -20,6 +35,7 @@ def copy_completed(row):
  (dest/'large_checkpoint_manifest.json').write_text(json.dumps(artifacts,ensure_ascii=False,indent=2))
 
 def fold_job(arm,year,seed):
+ archive_attempt_metadata(arm,year,seed)
  log=R/'logs'/f'{arm}_{year}_{seed}.log';log.parent.mkdir(parents=True,exist_ok=True);runbase=B/'alphagen_runs'/arm/str(year)/str(seed);prior={str(p):p.stat().st_mtime_ns for p in runbase.glob('*/RESOLVED_PPO.json')};started=time.time();env=os.environ.copy();env['PYTHONDONTWRITEBYTECODE']='1'
  with log.open('a') as stream:
   process=subprocess.Popen([str(PYTHON),'-u','-m','core.round26_1.alphagen_worker','--arm',arm,'--year',str(year),'--seed',str(seed),'--resume'],cwd=C,stdout=stream,stderr=subprocess.STDOUT,env=env)
@@ -37,7 +53,19 @@ def fold_job(arm,year,seed):
  if row['status']=='FACTOR_OOF_YEAR_COMPLETE':copy_completed(row)
  return row
 
+def assert_no_other_controller():
+ import psutil
+ for proc in psutil.process_iter(['pid','uids','cmdline']):
+  if proc.pid==os.getpid():continue
+  try:
+   if proc.uids().real!=os.getuid():continue
+   args=proc.cmdline()
+   if any(Path(a).name=='continue_round23_7_round26_1.py' for a in args) and '--deliverable' in args and args[args.index('--deliverable')+1] in ['D3','all']:
+    raise RuntimeError(f'Existing D3 controller PID {proc.pid}; do not launch duplicate CPU learners. Resume only after that process has exited.')
+  except (psutil.NoSuchProcess,psutil.AccessDenied):continue
+
 def run(jobs=1,publish=False):
+ assert_no_other_controller()
  if jobs not in [1,2]:raise ValueError('at most2 CPU training processes')
  R.mkdir(parents=True,exist_ok=True);registry=[]
  if (R/'factor_run_registry.csv').exists():registry=pd.read_csv(R/'factor_run_registry.csv').to_dict('records')
