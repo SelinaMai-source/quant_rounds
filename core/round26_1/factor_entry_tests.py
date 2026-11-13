@@ -25,12 +25,13 @@ def run(factor, arm, seed_label):
             cutoff=pd.Timestamp(f'{year}-01-01')
             baseline=None
             for case in ['original','future_labels_deleted','future_labels_permuted','immature_labels_permuted','future_features_changed']:
+                mutation_counts={'training_rows':0,'prediction_rows':0}
                 def reader(path,*args,**kwargs):
                     frame=original_read(path,*args,**kwargs)
                     name=Path(path).name
                     if name not in [f'{head.name}_training.parquet',f'{head.name}_candidate.parquet']:
                         return frame
-                    frame=frame.copy()
+                    frame=frame.copy();before_intervention=frame.copy()
                     dates=pd.to_datetime(frame.trade_date)
                     rng=np.random.default_rng(231726)
                     if name.endswith('_candidate.parquet'):
@@ -38,6 +39,7 @@ def run(factor, arm, seed_label):
                         assert head.target not in frame.columns and head.label_end_column not in frame.columns
                     elif case in ['future_labels_deleted','future_labels_permuted']:
                         mask=dates.ge(cutoff)
+                        mutation_counts['training_rows']=int(mask.sum())
                         if case=='future_labels_deleted':
                             frame.loc[mask,head.target]=np.nan
                             frame.loc[mask,head.label_end_column]=pd.NaT
@@ -45,10 +47,16 @@ def run(factor, arm, seed_label):
                             frame.loc[mask,head.target]=rng.permutation(frame.loc[mask,head.target].to_numpy())
                     elif case=='immature_labels_permuted':
                         mask=dates.lt(cutoff)&(pd.to_datetime(frame[head.label_end_column])+pd.Timedelta(hours=15)).ge(cutoff)
-                        frame.loc[mask,head.target]=rng.permutation(frame.loc[mask,head.target].to_numpy())
+                        mutation_counts['training_rows']=int(mask.sum())
+                        prior=frame.loc[mask,head.target].to_numpy();corrupt=rng.permutation(prior)
+                        if len(prior) and np.array_equal(prior,corrupt,equal_nan=True):corrupt=np.nan_to_num(prior,nan=0.)+1e6
+                        frame.loc[mask,head.target]=corrupt
                     if case=='future_features_changed':
                         mask=dates.ge(pd.Timestamp(f'{year+1}-01-01'))
+                        mutation_counts['training_rows' if name.endswith('_training.parquet') else 'prediction_rows']=int(mask.sum())
                         frame.loc[mask,list(head.features)]=rng.normal(1e6,1e4,size=(int(mask.sum()),len(head.features)))
+                    changed=~(frame.eq(before_intervention)|(frame.isna()&before_intervention.isna())).all(axis=1)
+                    mutation_counts['training_rows' if name.endswith('_training.parquet') else 'prediction_rows']=int(changed.sum())
                     return frame
                 # A separate immutable directory forces the production fit loop to run.
                 with patch.object(pd,'read_parquet',reader):
@@ -61,8 +69,8 @@ def run(factor, arm, seed_label):
                     pd.testing.assert_frame_equal(a,baseline[0],check_exact=True)
                     pd.testing.assert_frame_equal(p,baseline[1],check_exact=True)
                     pd.testing.assert_frame_equal(frame,baseline[2],check_exact=True)
-                rows.append({'arm':arm,'seed':str(seed_label),'head':head.name,'outer_year':year,'case':case,'cold_fit':True,'five_tree_models':5,'train_rows':len(a),'prediction_rows':len(p),'input_and_scores_exact':True,'fit_cutoff':str(cutoff),'max_training_label_available_at':str(a.label_available_at.max()),'model_directory':str(path),'fingerprint':fp})
+                rows.append({'arm':arm,'seed':str(seed_label),'head':head.name,'outer_year':year,'case':case,'perturbed_training_rows':mutation_counts['training_rows'],'perturbed_prediction_rows':mutation_counts['prediction_rows'],'perturbation_scope_status':('ORIGINAL_CONTROL' if case=='original' else 'NONEMPTY_INTERVENTION' if sum(mutation_counts.values()) else 'NOT_EVALUATED_NO_FUTURE_ROWS'),'cold_fit':True,'five_tree_models':5,'train_rows':len(a),'prediction_rows':len(p),'input_and_scores_exact':True,'fit_cutoff':str(cutoff),'max_training_label_available_at':str(a.label_available_at.max()),'model_directory':str(path),'fingerprint':fp})
     pd.DataFrame(rows).to_csv(dest/'actual_entry_counterfactuals.csv',index=False)
-    result={'status':'PASS_ACTUAL_XGB_ADD_ENTRY','source_factor':identity(factor),'tested_heads':['five','ten'],'folds':[2023,2024,2026],'actual_fit_configs':len(rows),'actual_tree_models':len(rows)*5,'future_label_deletion_permutation':True,'unmature_label_permutation':True,'future_feature_prefix_invariance':True,'counterfactual_PPO_retraining':'NOT_RUN; generation input tensor invariance tested separately','scope':'Nested OOF factor held fixed; complete real XGB ADD fit/predict entry. Not a full PPO counterfactual retraining proof.'}
+    result={'status':'PASS_ACTUAL_XGB_ADD_ENTRY','source_factor':identity(factor),'tested_heads':['five','ten'],'folds':[2023,2024,2026],'actual_fit_configs':len(rows),'actual_tree_models':len(rows)*5,'future_label_deletion_permutation':True,'unmature_label_permutation':True,'future_feature_prefix_invariance':'nonempty folds only; latest2026 has no2027+ data and is NOT_EVALUATED_NO_FUTURE_ROWS','counterfactual_PPO_retraining':'NOT_RUN; generation input tensor invariance tested separately','scope':'Nested OOF factor held fixed; complete real XGB ADD fit/predict entry. Not a full PPO counterfactual retraining proof.'}
     (dest/'STATUS.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
     return result
