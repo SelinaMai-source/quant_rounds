@@ -1,0 +1,18 @@
+{
+  "PASS": true,
+  "scope": "all original real-event records 2018-2026, both portfolio weight arms; actual simulator entry",
+  "mutated_fields": [
+    "target_quantity execution preview",
+    "desired_fractional_quantity",
+    "shadow_rejection_before_quantity"
+  ],
+  "unchanged": [
+    "recommendation",
+    "target_projection",
+    "net_orders",
+    "rejections",
+    "trades",
+    "NAV"
+  ],
+  "limits": "original market execution still uses legacy high/low clip, not a live fill proof"
+}

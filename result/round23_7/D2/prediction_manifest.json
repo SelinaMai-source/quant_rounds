@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_7/D2/v5_frozen_expert_predictions.parquet",
+    "bytes": 266227,
+    "sha256": "53f65761c1bf7d6bc54bfb749cc5b36cc93463b802f424a302de301ded6c94d6",
+    "schema": "signal_date: timestamp[ns]\ninstrument_id: string\nscore: double\nprediction_at: timestamp[ns, tz=Asia/Shanghai]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 623",
+    "rows": 38003
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_7/D2/five_frozen_expert_predictions.parquet",
+    "bytes": 175128,
+    "sha256": "7785cf2c51f40bcf728fe3d2c8e539cbfef003e41bbc79af9e985073215d0788",
+    "schema": "signal_date: timestamp[ns]\ninstrument_id: string\nscore: double\nprediction_at: timestamp[ns, tz=Asia/Shanghai]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 623",
+    "rows": 38003
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_7/D2/ten_frozen_expert_predictions.parquet",
+    "bytes": 205612,
+    "sha256": "9ea71113cc916075422cba82481121e66dd18e7bcdf6dfb83a39564debfe3dac",
+    "schema": "signal_date: timestamp[ns]\ninstrument_id: string\nscore: double\nprediction_at: timestamp[ns, tz=Asia/Shanghai]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 623",
+    "rows": 38003
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_7/D2/lgbm_frozen_expert_predictions.parquet",
+    "bytes": 262948,
+    "sha256": "fd48827595e830a2e6a17e1b93a23987d6f0ac1a9d04828b0e0c2935645f272c",
+    "schema": "signal_date: timestamp[ns]\ninstrument_id: string\nscore: double\nprediction_at: timestamp[ns, tz=Asia/Shanghai]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 623",
+    "rows": 38003
+  }
+]

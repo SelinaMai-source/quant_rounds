@@ -1,0 +1,1 @@
+服务器项目根：research/round23_6_26_execution/env/bin/python tools/continue_round23_7_round26_1.py --deliverable D2 --resume --jobs 1 --seed 17。实际run_manifest及每个不可变目录的contract/COMPLETE绑定代码、数据/标签/成熟、参数/环境、资金执行与上游。原始供应商库不上传。

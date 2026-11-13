@@ -1,0 +1,23 @@
+{
+  "expert": "ten",
+  "PASS": true,
+  "checks": {
+    "nav": {
+      "PASS": true,
+      "rows": 2076
+    },
+    "trades": {
+      "PASS": true,
+      "rows": 1080
+    },
+    "positions": {
+      "PASS": true,
+      "rows": 1296
+    },
+    "costs": {
+      "PASS": true,
+      "rows": 2160
+    }
+  },
+  "adapter": "same target projection routine for all weights; no vertex-specialized execution bypass"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "COMPUTED",
+  "pvalues": {
+    "lower": 0.4728,
+    "consistent": 0.4728,
+    "upper": 0.7814
+  },
+  "alternatives": [
+    "P_SCORE",
+    "P_EQUAL",
+    "P_FIXED"
+  ],
+  "deduplicated": {},
+  "loss": "negative actual portfolio daily return",
+  "historical_development": true
+}

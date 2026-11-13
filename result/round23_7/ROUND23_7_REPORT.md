@@ -1,6 +1,17 @@
-# Round23.7 执行进度
+# Round23.7
 
-D0 与 D1 已实际执行并审计。D1结论为REJECT_CURRENT_CONFIGURATION；N-U CAGR54.56%/Sharpe1.857，N-R CAGR54.10%/Sharpe1.855，均弱于v5。完整结果、失败记录和证据见D0/REPORT.md、D1/REPORT.md及STATUS.json。D2、D4尚未在本提交完成。
+D0、D1与D2已实际执行和审计，保留报告中的遗留与资源计量限制。N-U/N-R、P-EQUAL/P-FIXED均未通过冻结收益门。
+
+|方法|CAGR|Sharpe|MaxDD|
+|---|---:|---:|---:|
+|v5|54.9981%|1.8757|-24.0563%|
+|N-U|54.5645%|1.8573|-23.2892%|
+|N-R|54.0999%|1.8554|-23.3221%|
+|P-SCORE|55.3927%|1.9179|-24.4437%|
+|P-EQUAL|38.6096%|1.7653|-23.0631%|
+|P-FIXED|50.1003%|1.8354|-22.8893%|
+
+完整交付报告：D0/REPORT.md、D1/REPORT.md、D2/REPORT.md；D4尚未在本提交执行。无可靠替代v5的实验证据。继续按冻结顺序D3→D4→D5，不扩搜索。
 
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE

@@ -1,0 +1,1 @@
+当前P-EQUAL/P-FIXED均归档为REJECT_CURRENT_CONFIGURATION_RETURN_GATE。保留风险改善观察及已验证账户适配；不启动完整FLEXPOOL，不调alpha/gamma，不升级v5。继续独立D3。

@@ -1,0 +1,130 @@
+[
+  {
+    "expert": "v5",
+    "PASS": true,
+    "checks": {
+      "nav": {
+        "PASS": true,
+        "rows": 2076
+      },
+      "trades": {
+        "PASS": true,
+        "rows": 1107
+      },
+      "positions": {
+        "PASS": true,
+        "rows": 1327
+      },
+      "costs": {
+        "PASS": true,
+        "rows": 2214
+      },
+      "all_planned_buy_intents": {
+        "PASS": true,
+        "rows": 2096
+      },
+      "rejected_order_lot_lineage": {
+        "PASS": true,
+        "rows": 1209
+      }
+    },
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D2/immutable_vertices/v5/5980e0cc7389452c7537d7da1639d449f09cefa8c38ad8650685c8424baae0f0",
+    "fingerprint": "5980e0cc7389452c7537d7da1639d449f09cefa8c38ad8650685c8424baae0f0"
+  },
+  {
+    "expert": "five",
+    "PASS": true,
+    "checks": {
+      "nav": {
+        "PASS": true,
+        "rows": 2076
+      },
+      "trades": {
+        "PASS": true,
+        "rows": 1228
+      },
+      "positions": {
+        "PASS": true,
+        "rows": 1384
+      },
+      "costs": {
+        "PASS": true,
+        "rows": 2456
+      },
+      "all_planned_buy_intents": {
+        "PASS": true,
+        "rows": 2096
+      },
+      "rejected_order_lot_lineage": {
+        "PASS": true,
+        "rows": 1024
+      }
+    },
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D2/immutable_vertices/five/bab4b645298aabf29c87ae2efaa441d199b8e65266adcd080fdfc92bc4763e30",
+    "fingerprint": "bab4b645298aabf29c87ae2efaa441d199b8e65266adcd080fdfc92bc4763e30"
+  },
+  {
+    "expert": "ten",
+    "PASS": true,
+    "checks": {
+      "nav": {
+        "PASS": true,
+        "rows": 2076
+      },
+      "trades": {
+        "PASS": true,
+        "rows": 1080
+      },
+      "positions": {
+        "PASS": true,
+        "rows": 1296
+      },
+      "costs": {
+        "PASS": true,
+        "rows": 2160
+      },
+      "all_planned_buy_intents": {
+        "PASS": true,
+        "rows": 2096
+      },
+      "rejected_order_lot_lineage": {
+        "PASS": true,
+        "rows": 1232
+      }
+    },
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D2/immutable_vertices/ten/d6443cc338f0d9fa4be0ce8cc9b0fc4c13f2047bf1618406dd163ebabb6fa1e1",
+    "fingerprint": "d6443cc338f0d9fa4be0ce8cc9b0fc4c13f2047bf1618406dd163ebabb6fa1e1"
+  },
+  {
+    "expert": "lgbm",
+    "PASS": true,
+    "checks": {
+      "nav": {
+        "PASS": true,
+        "rows": 2076
+      },
+      "trades": {
+        "PASS": true,
+        "rows": 1141
+      },
+      "positions": {
+        "PASS": true,
+        "rows": 1362
+      },
+      "costs": {
+        "PASS": true,
+        "rows": 2282
+      },
+      "all_planned_buy_intents": {
+        "PASS": true,
+        "rows": 2096
+      },
+      "rejected_order_lot_lineage": {
+        "PASS": true,
+        "rows": 1176
+      }
+    },
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D2/immutable_vertices/lgbm/aefc8a4bc949734835e48a290290fb8d38cee9df299480e08b705638fe273669",
+    "fingerprint": "aefc8a4bc949734835e48a290290fb8d38cee9df299480e08b705638fe273669"
+  }
+]

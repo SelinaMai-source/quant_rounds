@@ -23,6 +23,13 @@ def main():
    run(resume=a.resume,seed=a.seed);evidence()
    import subprocess
    subprocess.run([sys.executable,str(C/'research/round23_7_26_1_execution/finalize_d1.py')],check=True)
+  elif d=='D2':
+   from core.round23_7.d2_complete import run
+   from core.round23_7.d2_policy_replay import run as policy_replay
+   from core.round23_7.d2_evidence import run as evidence
+   run();policy_replay();evidence()
+   import subprocess
+   subprocess.run([sys.executable,str(C/'research/round23_7_26_1_execution/finalize_d2.py')],check=True)
   else:raise NotImplementedError(d+' has no implemented execution entry yet; no completion status written')
   if a.publish:
    from core.research_integrity_v5.publish import publish

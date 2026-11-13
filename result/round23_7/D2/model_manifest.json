@@ -1,0 +1,16 @@
+{
+  "predictive_model_training": "none in D2; frozen source expert predictions",
+  "annual_utility_weight_models": 8,
+  "policy_contract": {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_7/D2/CONTRACT.yaml",
+    "bytes": 2048,
+    "sha256": "ed290c0c8cd48d312cca41c712770cd4fd173aadab65328e3fb6f6552b19db06"
+  },
+  "annual_weights": {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_7/D2/weights_validation.json",
+    "bytes": 1011,
+    "sha256": "dfe33beff3eb702bd4a1227ba4b5d672cab93017756af9c73da1aecff46ff6dc"
+  },
+  "original_native_model_and_feature_contracts": "parent baseline_v5 audit and D0 read audit; source experts independent of D1",
+  "optimizer": ".99 alpha, gamma3, original frozen utility, no search"
+}

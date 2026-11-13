@@ -1,0 +1,94 @@
+[
+  {
+    "expert": "v5",
+    "PASS": true,
+    "checks": {
+      "nav": {
+        "PASS": true,
+        "rows": 2076
+      },
+      "trades": {
+        "PASS": true,
+        "rows": 1107
+      },
+      "positions": {
+        "PASS": true,
+        "rows": 1327
+      },
+      "costs": {
+        "PASS": true,
+        "rows": 2214
+      }
+    },
+    "adapter": "same target projection routine for all weights; no vertex-specialized execution bypass"
+  },
+  {
+    "expert": "five",
+    "PASS": true,
+    "checks": {
+      "nav": {
+        "PASS": true,
+        "rows": 2076
+      },
+      "trades": {
+        "PASS": true,
+        "rows": 1228
+      },
+      "positions": {
+        "PASS": true,
+        "rows": 1384
+      },
+      "costs": {
+        "PASS": true,
+        "rows": 2456
+      }
+    },
+    "adapter": "same target projection routine for all weights; no vertex-specialized execution bypass"
+  },
+  {
+    "expert": "ten",
+    "PASS": true,
+    "checks": {
+      "nav": {
+        "PASS": true,
+        "rows": 2076
+      },
+      "trades": {
+        "PASS": true,
+        "rows": 1080
+      },
+      "positions": {
+        "PASS": true,
+        "rows": 1296
+      },
+      "costs": {
+        "PASS": true,
+        "rows": 2160
+      }
+    },
+    "adapter": "same target projection routine for all weights; no vertex-specialized execution bypass"
+  },
+  {
+    "expert": "lgbm",
+    "PASS": true,
+    "checks": {
+      "nav": {
+        "PASS": true,
+        "rows": 2076
+      },
+      "trades": {
+        "PASS": true,
+        "rows": 1141
+      },
+      "positions": {
+        "PASS": true,
+        "rows": 1362
+      },
+      "costs": {
+        "PASS": true,
+        "rows": 2282
+      }
+    },
+    "adapter": "same target projection routine for all weights; no vertex-specialized execution bypass"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "code": "P_EQUAL",
+    "comparison": {
+      "nav": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "trades": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "positions": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "costs": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE"
+    },
+    "native_shadows_unchanged": true,
+    "preview_forecast_removed": true
+  },
+  {
+    "code": "P_FIXED",
+    "comparison": {
+      "nav": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "trades": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "positions": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "costs": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE"
+    },
+    "native_shadows_unchanged": true,
+    "preview_forecast_removed": true
+  },
+  {
+    "code": "P_EQUAL_S1",
+    "comparison": {
+      "nav": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "trades": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "positions": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "costs": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE"
+    },
+    "native_shadows_unchanged": true,
+    "preview_forecast_removed": true
+  },
+  {
+    "code": "P_FIXED_S1",
+    "comparison": {
+      "nav": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "trades": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "positions": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "costs": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE"
+    },
+    "native_shadows_unchanged": true,
+    "preview_forecast_removed": true
+  },
+  {
+    "code": "P_EQUAL_S2",
+    "comparison": {
+      "nav": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "trades": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "positions": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "costs": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE"
+    },
+    "native_shadows_unchanged": true,
+    "preview_forecast_removed": true
+  },
+  {
+    "code": "P_FIXED_S2",
+    "comparison": {
+      "nav": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "trades": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "positions": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE",
+      "costs": "MATCH_WITHIN_FIXED_FLOAT_TOLERANCE"
+    },
+    "native_shadows_unchanged": true,
+    "preview_forecast_removed": true
+  }
+]

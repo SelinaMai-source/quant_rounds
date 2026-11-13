@@ -1,0 +1,17 @@
+..E
+======================================================================
+ERROR: test_corporate_action_kernel (core.round23_7.test_portfolio.PortfolioTest.test_corporate_action_kernel)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/test_portfolio.py", line 27, in test_corporate_action_kernel
+    f._apply_actions(day,[s],{(day,'A'):[{'cash_per_share':.5,'share_ratio':.2,'event_id':'synthetic_actual_kernel_test'}]},ledger)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/src/first_board_hermes/fixed_sleeve_backtest.py", line 899, in _apply_actions
+    "cohort_id": position.cohort_id, "instrument_id": position.instrument_id,
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'types.SimpleNamespace' object has no attribute 'cohort_id'
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.104s
+
+FAILED (errors=1)
