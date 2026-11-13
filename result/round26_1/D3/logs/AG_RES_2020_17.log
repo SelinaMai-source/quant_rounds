@@ -14,3 +14,4 @@ AlphaGen heartbeat AG_RES 2020 17 22436 pool 20
   def _apply(self, operand: Tensor) -> Tensor: return operand.std(dim=-1)
 AlphaGen heartbeat AG_RES 2020 17 24577 pool 20
 AlphaGen heartbeat AG_RES 2020 17 26686 pool 20
+AlphaGen heartbeat AG_RES 2020 17 28673 pool 20
