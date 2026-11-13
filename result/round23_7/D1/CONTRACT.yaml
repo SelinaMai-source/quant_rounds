@@ -1,0 +1,46 @@
+{
+  "deliverable": "D1",
+  "models": [
+    "N0",
+    "N1_N-U",
+    "N2_N-R"
+  ],
+  "formula": "0.1*((1-betaF)*xF+betaF*lF)+0.9*((1-betaT)*xT+betaT*lT)",
+  "beta_bounds": [
+    0,
+    0.25
+  ],
+  "temperature": 0.1,
+  "regularization": 0.1,
+  "training_top": 5,
+  "pair_sources": [
+    1,
+    2
+  ],
+  "tie_break": "instrument_id",
+  "target": "same Ten original executed-action net-return, UNFILLED_ACTION zero separated, unresolved missing excluded only from training",
+  "cap_quantile": 0.95,
+  "min_dates": 200,
+  "min_pairs": 500,
+  "outer_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "fit": "prior3years mature genuine OOF only, annual frozen",
+  "early_history": "audit recovered original expert OOF; if unavailable no training-in-sample fill, beta0 fallback with active and full tables",
+  "optim": "deterministic scipy L-BFGS-B analytical gradient, nonconvergence beta0",
+  "grid_search": false,
+  "inner_halves": "diagnostics only no selection",
+  "selection": "no Outer performance selection",
+  "scope": "legacy-v5 development history",
+  "economic_gate": "inherited frozen gate unchanged",
+  "citation": "https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent/",
+  "note": "project RankNet-style adaptation, not paper alpha replication"
+}
