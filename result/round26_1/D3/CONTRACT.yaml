@@ -1,0 +1,113 @@
+{
+  "deliverable": "D3",
+  "source_commit": "259687e8f316994426416c530a94842a2fe6405e",
+  "source_core": [
+    "alphagen/data/expression.py",
+    "alphagen/models/linear_alpha_pool.py::MseAlphaPool",
+    "alphagen/rl/policy.py::LSTMSharedNet",
+    "sb3_contrib.MaskablePPO"
+  ],
+  "arms": [
+    "AG_RAW",
+    "AG_RES"
+  ],
+  "seeds_order": [
+    17,
+    42,
+    73
+  ],
+  "factor_outer_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "head_evaluation_years": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "primary_window": [
+    "2023-01-03",
+    "2026-07-24"
+  ],
+  "initial_cash": 300000,
+  "warmup_reason": "baseline feature-complete panels begin2013; earliest full3y bank2016, genuinely historical return-calibration starts2017; generation2y+validation1y first2020, nested head train2020-2022 gives first2023. Same matched window for both arms, decided before any generation/performance. Earlier bank2015 is partial lookback and is not used.",
+  "raw_market_fields": [
+    "open",
+    "close",
+    "high",
+    "low",
+    "volume",
+    "amount"
+  ],
+  "VWAP": "amount_CNY/volume_shares; audit against daily high/low; no semantic substitute",
+  "adjustment": "raw observed price series; no current post-adjustment factors used. Test perturbing future corporate adjustment columns leaves all consumed features unchanged; raw price split-discontinuity limitation disclosed.",
+  "rolling": "full daily stock histories with100 trading-day author backtrack before mapping known candidate keys; no future days",
+  "prediction_universe": "then-known frozen qualification independent of future target presence",
+  "generation_split": "OuterY prior3years: first2train, last1validation; labels truly mature at each cutoff",
+  "residual": "Ridge alpha10 temporal OOF calibration of baseline XGB90/10 percentile score into same-unit Ten net return; first fit2017 uses only2016 genuine3y-trained expert OOF",
+  "budget_per_arm_fold_seed": {
+    "env_steps": 100000,
+    "effective_expression_evaluations_max": 20000,
+    "stop": "whichever first, no additional training for weak performance",
+    "pool_capacity": 20,
+    "max_expr_length_author_token_count": 20,
+    "max_backtrack_days": 100,
+    "max_future_days": 0
+  },
+  "ppo": {
+    "architecture": "original LSTMSharedNet layers2 d_model128 dropout0.1",
+    "gamma": 1.0,
+    "ent_coef": 0.01,
+    "batch_size": 128,
+    "n_steps": 2048,
+    "n_epochs": 10,
+    "learning_rate": 0.0003,
+    "clip_range": 0.2,
+    "gae_lambda": 0.95,
+    "optimizer": "author/SB3 Adam unchanged",
+    "runtime": "existing torch2.15 CPU / sb3-contrib2.9.2, no package upgrade",
+    "device": "CPU; CUDA not visible in existing torch runtime"
+  },
+  "pool": {
+    "class": "MseAlphaPool",
+    "l1_alpha": 0.005,
+    "optimizer": "unchanged original default Adam lr5e-4,max_steps10000,tolerance500"
+  },
+  "checkpoints": {
+    "every_env_steps": 10000,
+    "terminal": true,
+    "selection": "highest validation composite-pool IC; exact tie earliest step",
+    "last_partial_rollout": "callback ends exactly at100000; preserve pool state, report PPO last fully optimized rollout and untrained tail separately; no hidden budget overshoot"
+  },
+  "refit": "after selecting AST only refit pool weights on mature prior3years; no new expression search",
+  "calculator_adaptation": "map complete daily expressions to then-known candidates, original normalization/IC; exclude training/reward dates with fewer than2 mature targets, never drop inference candidates for target availability; padding restored as NaN",
+  "add_trials": [
+    "A0_native_matched",
+    "A1_Five_Add",
+    "A2_Ten_Add",
+    "A3_Both_Add"
+  ],
+  "head_model": "original XGB Five14/Ten13 params/order and5seeds; extra z appended; original base complete-case universe retained, new factor NaN handled natively not filtered by future y",
+  "dedup": "perHead prior3y mature training only, most correlated old feature iff absSpearman>=.60; run Remove-only and Replace, no IC performance pre-gate",
+  "seed_composite": "only equal3 after prior-training scale normalization; never best seed",
+  "cost_stress": "A3 each individual seed and equal3 for both arms +matched baseline S1/S2; secondary A1/A2/Remove/Replace retain S0 explicitly",
+  "resource": {
+    "max_cpu_training_tasks": 2,
+    "max_gpu_training_tasks": 1,
+    "torch_threads_per_task": 2,
+    "peak_RSS_pause_GiB": 16,
+    "additional_paid_budget": 0,
+    "original_full_budgets_preserved": true
+  },
+  "no_LLM": true,
+  "no_HARLA": true,
+  "no_cross_line_winners": true,
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false
+}
