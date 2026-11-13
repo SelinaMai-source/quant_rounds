@@ -16,6 +16,9 @@ def prepare(branch):
  if src.exists():shutil.copytree(src,w/'result'/branch,dirs_exist_ok=True,ignore=shutil.ignore_patterns('*.partial.*'))
  tools=C/'tools/continue_round23_7_round26_1.py'
  if tools.exists():shutil.copy2(tools,w/'tools'/tools.name)
+ for script in ['finalize_d0.py','finalize_d1.py']:
+  src=B/script
+  if src.exists():shutil.copy2(src,w/'research/round23_7_round26_1'/script)
  # All self-owned source, contracts and derived output files bind to exact bytes.
  roots=[w/'core/research_integrity_v5',w/'core'/branch,w/'result'/branch,w/'research/round23_7_round26_1']
  rows=[]
