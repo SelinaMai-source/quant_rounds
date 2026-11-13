@@ -86,7 +86,7 @@
     "last_partial_rollout": "callback ends exactly at100000; preserve pool state, report PPO last fully optimized rollout and untrained tail separately; no hidden budget overshoot"
   },
   "refit": "after selecting AST only refit pool weights on mature prior3years; no new expression search",
-  "calculator_adaptation": "map complete daily expressions to then-known candidates, original normalization/IC; exclude training/reward dates with fewer than2 mature targets, never drop inference candidates for target availability; padding restored as NaN",
+  "calculator_adaptation": "map complete daily expressions to then-known candidates, original normalization/IC; exclude training/reward dates with fewer than2 mature targets, never drop inference candidates for target availability; padding restored as NaN; fixed padding1024 (not policy input), known D first-board domain before next-open filter; both reward arms use identical available historical baseline-calibrated target rows",
   "add_trials": [
     "A0_native_matched",
     "A1_Five_Add",
@@ -109,5 +109,12 @@
   "no_HARLA": true,
   "no_cross_line_winners": true,
   "CURRENT_BASELINE_CHANGED": false,
-  "PRODUCTION_CONFIG_CHANGED": false
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "preflight_coverage": {
+    "first_board_max_per_day": 754,
+    "post2017_max": 545,
+    "padding512_assertion_failed_before_generation": true,
+    "padding_bound_after_preflight": 1024,
+    "no_candidate_truncation": true
+  }
 }
