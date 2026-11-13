@@ -1,0 +1,40 @@
+{
+  "deliverable": "D2",
+  "experts": [
+    "v5",
+    "five",
+    "ten",
+    "frozen_lgbm_dual"
+  ],
+  "shadow": "original executor trace before each open/close action; not final trades reconstructed backwards",
+  "real_account": 300000,
+  "weights": [
+    "P-EQUAL25%",
+    "P-FIXED original P1_A099 annually recomputed prior-history only"
+  ],
+  "P-SCORE": "exact original score replay",
+  "vertex_gate": "all four one-hot target projections must match original expert orders/quantity/metadata/cash/positions/costs/NAV before economic comparisons",
+  "kernel": "Stock _open_cohort/_close_position/_apply_actions + local_executor original shadow loops; no simplified prices/fees",
+  "policy_adapter": {
+    "events": "open after original actions, then close; no lookahead beyond inherited legacy bar-fill channel",
+    "target": "sum expert desired asset weights at each union event, no Top2 truncation",
+    "constraints": [
+      "T+1 locked lots retained",
+      "sell blocked retained and logged",
+      "no leverage",
+      "no blocked-order redistribution",
+      "net same stock before actual order",
+      "single-account costs once"
+    ],
+    "buy_phase": "open only; close positive tracking error retained to next open rather than invent close buys",
+    "sell_phase": "original close predicate at close; original open predicate for combination net reduction at open, disclosed new portfolio-policy adapter",
+    "lots": "board100; float quantity tolerance1e-7shares, preserve locked/unchanged odd lots; proportional cash scale with deterministic largest remainders, instrument tie-break",
+    "metadata": "representative highest-weight same-stock intent, instrument tie-break, original metadata at a vertex"
+  },
+  "no_adaptive_alpha": true,
+  "no_monthly_update": true,
+  "no_new_risk_grid": true,
+  "decision_if_vertex_failure": "do not start economic portfolio comparisons; repair and retain exact mismatches",
+  "costs": "ROUND7_FLAT_5BP; S1/S2 paired extra buy10/20bp; S3 already-originalconstraint",
+  "baseline_changed": false
+}
