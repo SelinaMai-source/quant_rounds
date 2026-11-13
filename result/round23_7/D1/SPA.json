@@ -1,0 +1,15 @@
+{
+  "status": "COMPUTED",
+  "pvalues": {
+    "lower": 0.5376,
+    "consistent": 0.6064,
+    "upper": 0.6064
+  },
+  "alternatives": [
+    "N1",
+    "N2"
+  ],
+  "deduplicated": {},
+  "loss": "negative actual portfolio daily return",
+  "historical_development": true
+}

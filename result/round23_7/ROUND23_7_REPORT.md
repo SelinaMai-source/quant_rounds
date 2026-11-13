@@ -1,6 +1,6 @@
-# round23_7
+# Round23.7 执行进度
 
-D0 已执行；D1–D5 尚未在本报告提交时执行。逐项状态与实际证据见 D0/REPORT.md、D0/STATUS.json。不能把其余未执行交付算作完成或外部阻断。
+D0 与 D1 已实际执行并审计。D1结论为REJECT_CURRENT_CONFIGURATION；N-U CAGR54.56%/Sharpe1.857，N-R CAGR54.10%/Sharpe1.855，均弱于v5。完整结果、失败记录和证据见D0/REPORT.md、D1/REPORT.md及STATUS.json。D2、D4尚未在本提交完成。
 
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE

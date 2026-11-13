@@ -1,0 +1,56 @@
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+/root/miniconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMRanker was fitted with feature names
+  warnings.warn(
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+D1 warmup restored five 2016
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+/root/miniconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMRanker was fitted with feature names
+  warnings.warn(
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+D1 warmup restored five 2017
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+/root/miniconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMRanker was fitted with feature names
+  warnings.warn(
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+D1 warmup restored ten 2016
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+/root/miniconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMRanker was fitted with feature names
+  warnings.warn(
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+D1 warmup restored ten 2017
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from core.round23_7.d1 import run; run()
+                                       ~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/d1.py", line 68, in run
+    so,sr,_,_=predict_all(shifted,method);np.testing.assert_allclose(sr[['betaF','betaT']],registry[['betaF','betaT']],atol=1e-10,rtol=0);np.testing.assert_allclose(so.score,out.score,atol=1e-10,rtol=0)
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/numpy/testing/_private/utils.py", line 1714, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/numpy/testing/_private/utils.py", line 920, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0, atol=1e-10
+
+Mismatched elements: 2 / 18 (11.1%)
+Max absolute difference among violations: 1.11072956e-10
+Max relative difference among violations: 1.0649721e-09
+ ACTUAL: array([[0.      , 0.25    ],
+       [0.006691, 0.25    ],
+       [0.023457, 0.25    ],...
+ DESIRED: array([[0.      , 0.25    ],
+       [0.006691, 0.25    ],
+       [0.023457, 0.25    ],...

@@ -1,0 +1,60 @@
+[
+  {
+    "method": "N1",
+    "test": "same_date_target_constant",
+    "max_beta_float_difference": 0.0,
+    "numerical_tolerance": 1e-08,
+    "stock_order": "PASS_EXACT",
+    "original_failed_1e-10_check_retained": true
+  },
+  {
+    "method": "N1",
+    "outer_year": 2018,
+    "future_and_immature_mutation": "PASS_EXACT",
+    "prediction_rows": 2640,
+    "plans": "PASS_EXACT"
+  },
+  {
+    "method": "N1",
+    "outer_year": 2022,
+    "future_and_immature_mutation": "PASS_EXACT",
+    "prediction_rows": 4669,
+    "plans": "PASS_EXACT"
+  },
+  {
+    "method": "N1",
+    "outer_year": 2026,
+    "future_and_immature_mutation": "PASS_EXACT",
+    "prediction_rows": 2388,
+    "plans": "PASS_EXACT"
+  },
+  {
+    "method": "N2",
+    "test": "same_date_target_constant",
+    "max_beta_float_difference": 0.0,
+    "numerical_tolerance": 1e-08,
+    "stock_order": "PASS_EXACT",
+    "original_failed_1e-10_check_retained": true
+  },
+  {
+    "method": "N2",
+    "outer_year": 2018,
+    "future_and_immature_mutation": "PASS_EXACT",
+    "prediction_rows": 2640,
+    "plans": "PASS_EXACT"
+  },
+  {
+    "method": "N2",
+    "outer_year": 2022,
+    "future_and_immature_mutation": "PASS_EXACT",
+    "prediction_rows": 4669,
+    "plans": "PASS_EXACT"
+  },
+  {
+    "method": "N2",
+    "outer_year": 2026,
+    "future_and_immature_mutation": "PASS_EXACT",
+    "prediction_rows": 2388,
+    "plans": "PASS_EXACT"
+  }
+]

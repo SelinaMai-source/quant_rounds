@@ -1,0 +1,69 @@
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+/root/miniconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMRanker was fitted with feature names
+  warnings.warn(
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+D1 warmup restored five 2016
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+/root/miniconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMRanker was fitted with feature names
+  warnings.warn(
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+D1 warmup restored five 2017
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+/root/miniconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMRanker was fitted with feature names
+  warnings.warn(
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+D1 warmup restored ten 2016
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+/root/miniconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMRanker was fitted with feature names
+  warnings.warn(
+/root/miniconda3/lib/python3.13/site-packages/lightgbm/sklearn.py:861: UserWarning: Found 'eval_at' in params. Will use it instead of 'eval_at' argument
+  _log_warning(f"Found '{alias}' in params. Will use it instead of 'eval_at' argument")
+D1 warmup restored ten 2017
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from core.round23_7.d1 import run; run()
+                                       ~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/d1.py", line 75, in run
+    pd.testing.assert_frame_equal(aa,bb,check_exact=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/_testing/asserters.py", line 1303, in assert_frame_equal
+    assert_series_equal(
+    ~~~~~~~~~~~~~~~~~~~^
+        lcol,
+        ^^^^^
+    ...<12 lines>...
+        check_flags=False,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/_testing/asserters.py", line 1021, in assert_series_equal
+    assert_numpy_array_equal(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        lv,
+        ^^^
+    ...<3 lines>...
+        index_values=left.index,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/_testing/asserters.py", line 696, in assert_numpy_array_equal
+    _raise(left, right, err_msg)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/_testing/asserters.py", line 690, in _raise
+    raise_assert_detail(obj, msg, left, right, index_values=index_values)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/_testing/asserters.py", line 620, in raise_assert_detail
+    raise AssertionError(msg)
+AssertionError: DataFrame.iloc[:, 1] (column name="instrument_id") are different
+
+DataFrame.iloc[:, 1] (column name="instrument_id") values are different (0.06315 %)
+[index]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, ...]
+[left]:  [000672.XSHE, 000789.XSHE, 002372.XSHE, 600426.XSHG, 000703.XSHE, 000885.XSHE, 600801.XSHG, 600176.XSHG, 600507.XSHG, 600802.XSHG, 600188.XSHG, 600353.XSHG, 300451.XSHE, 000600.XSHE, 600008.XSHG, 300675.XSHE, 600550.XSHG, 603969.XSHG, 603616.XSHG, 601992.XSHG, 000958.XSHE, 002342.XSHE, 002282.XSHE, 600874.XSHG, 002457.XSHE, 300334.XSHE, 603778.XSHG, 000923.XSHE, 002542.XSHE, 002350.XSHE, 600846.XSHG, 002158.XSHE, 002494.XSHE, 600155.XSHG, 000605.XSHE, 300107.XSHE, 300374.XSHE, 601808.XSHG, 300409.XSHE, 000836.XSHE, 002430.XSHE, 002353.XSHE, 600293.XSHG, 600516.XSHG, 002127.XSHE, 600871.XSHG, 300191.XSHE, 600822.XSHG, 600191.XSHG, 603225.XSHG, 002447.XSHE, 000517.XSHE, 000718.XSHE, 601100.XSHG, 002102.XSHE, 000514.XSHE, 000014.XSHE, 600596.XSHG, 600823.XSHG, 002208.XSHE, 002110.XSHE, 000010.XSHE, 002714.XSHE, 600652.XSHG, 002826.XSHE, 000573.XSHE, 300276.XSHE, 002876.XSHE, 002616.XSHE, 600684.XSHG, 002063.XSHE, 002369.XSHE, 002235.XSHE, 002131.XSHE, 002152.XSHE, 000681.XSHE, 002379.XSHE, 002503.XSHE, 300541.XSHE, 300176.XSHE, 600193.XSHG, 300002.XSHE, 002610.XSHE, 000021.XSHE, 300085.XSHE, 300662.XSHE, 603106.XSHG, 300462.XSHE, 600246.XSHG, 002230.XSHE, 600209.XSHG, 002587.XSHE, 600571.XSHG, 600446.XSHG, 002842.XSHE, 002001.XSHE, 000800.XSHE, 300561.XSHE, 002895.XSHE, 600202.XSHG, ...]
+[right]: [000672.XSHE, 000789.XSHE, 002372.XSHE, 600426.XSHG, 000703.XSHE, 000885.XSHE, 600801.XSHG, 600176.XSHG, 600507.XSHG, 600802.XSHG, 600188.XSHG, 600353.XSHG, 300451.XSHE, 000600.XSHE, 600008.XSHG, 300675.XSHE, 600550.XSHG, 603969.XSHG, 603616.XSHG, 601992.XSHG, 000958.XSHE, 002342.XSHE, 002282.XSHE, 600874.XSHG, 002457.XSHE, 300334.XSHE, 603778.XSHG, 000923.XSHE, 002542.XSHE, 002350.XSHE, 600846.XSHG, 002158.XSHE, 002494.XSHE, 600155.XSHG, 000605.XSHE, 300107.XSHE, 300374.XSHE, 601808.XSHG, 300409.XSHE, 000836.XSHE, 002430.XSHE, 002353.XSHE, 600293.XSHG, 600516.XSHG, 002127.XSHE, 600871.XSHG, 300191.XSHE, 600822.XSHG, 600191.XSHG, 603225.XSHG, 002447.XSHE, 000517.XSHE, 000718.XSHE, 601100.XSHG, 002102.XSHE, 000514.XSHE, 000014.XSHE, 600596.XSHG, 600823.XSHG, 002208.XSHE, 002110.XSHE, 000010.XSHE, 002714.XSHE, 600652.XSHG, 002826.XSHE, 000573.XSHE, 300276.XSHE, 002876.XSHE, 002616.XSHE, 600684.XSHG, 002063.XSHE, 002369.XSHE, 002235.XSHE, 002131.XSHE, 002152.XSHE, 000681.XSHE, 002379.XSHE, 002503.XSHE, 300541.XSHE, 300176.XSHE, 600193.XSHG, 300002.XSHE, 002610.XSHE, 000021.XSHE, 300085.XSHE, 300662.XSHE, 603106.XSHG, 300462.XSHE, 600246.XSHG, 002230.XSHE, 600209.XSHG, 002587.XSHE, 600571.XSHG, 600446.XSHG, 002842.XSHE, 002001.XSHE, 000800.XSHE, 300561.XSHE, 002895.XSHE, 600202.XSHG, ...]

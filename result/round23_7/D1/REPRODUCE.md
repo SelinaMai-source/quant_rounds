@@ -1,0 +1,1 @@
+项目根：research/round23_6_26_execution/env/bin/python tools/continue_round23_7_round26_1.py --deliverable D1 --resume --jobs 1 --seed 17。完整不可变交易产物路径见run_manifest；含代码/环境/数据/schema/标签/成熟/参数/执行/上游的合同及完成标记随每组上传。原始供应商面板仅上传身份/schema/path，不上传原库。

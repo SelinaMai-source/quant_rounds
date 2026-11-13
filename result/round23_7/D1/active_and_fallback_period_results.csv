@@ -1,0 +1,5 @@
+method,scope,days,candidate_cumulative_return,baseline_cumulative_return,note
+N1,ACTIVE_MODEL_YEARS,2075,40.49378934120412,41.50029785241705,"actual full-run daily return slice, no restarted-account claim"
+N1,FALLBACK_MODEL_YEARS,0,,,"actual full-run daily return slice, no restarted-account claim"
+N2,ACTIVE_MODEL_YEARS,2075,39.43859315351585,41.50029785241705,"actual full-run daily return slice, no restarted-account claim"
+N2,FALLBACK_MODEL_YEARS,0,,,"actual full-run daily return slice, no restarted-account claim"

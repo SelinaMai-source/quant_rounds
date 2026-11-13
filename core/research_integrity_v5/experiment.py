@@ -30,6 +30,8 @@ def backtest(round_,code,scores,bps=0,upstream=(),resume=True):
  finally:pd.read_parquet=read
  _INPUT_CLOSURE.update(inputs);inputs=list(_INPUT_CLOSURE)
  root=Path(m['snapshot_path']);inputs+=list((root/'daily_raw').rglob('*.parquet'))+[root/'manifest.json']
+ inputs += [C/f'result/round22_3/data/{h}_{kind}.parquet' for h in ['five','ten'] for kind in ['training','candidate']]
+ inputs += [C/'result/round23_6/frozen_components.parquet']
  # Overlay caches may be warm: include the file dependencies of the module closure.
  # These exact series are also bound directly by their data hashes, preventing stale cached context hits.
  from core.round16_5.engine import o01_signal_dates
@@ -40,6 +42,6 @@ def backtest(round_,code,scores,bps=0,upstream=(),resume=True):
   if cached:
    if not resume:raise RuntimeError('Identical immutable run exists; resume required to reuse')
    summary=json.loads((dest/'summary.json').read_text())
-  else:summary=run_round7(dest,overlay,{'code':code,'scope':'LEGACY_V5_COMPARISON','experiment_fingerprint':fp},resume=False,validation_hooks={'buy_extra_slippage_bps':float(bps)} if bps else None,already_overlayed=True,apply_v5_gate=False)
+  else:summary=run_round7(dest,overlay,{'code':code,'scope':'LEGACY_V5_COMPARISON','experiment_fingerprint':fp},resume=False,scenario=bool(bps),counts_as_alpha=not bool(bps) and not code.startswith('D0'),validation_hooks={'buy_extra_slippage_bps':float(bps)} if bps else None,already_overlayed=True,apply_v5_gate=False)
  final=cache/fp
  return summary,final,{'experiment_fingerprint':fp,'cache_hit':cached,'path':str(final)}

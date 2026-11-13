@@ -1,0 +1,22 @@
+{
+  "IMPLEMENTED": true,
+  "UNIT_TESTED": true,
+  "REFERENCE_RUN_COMPLETE": "NOT_APPLICABLE_PROJECT_ADAPTATION",
+  "TARGET_OOF_COMPLETE": true,
+  "BACKTEST_COMPLETE": true,
+  "EVIDENCE_COMPLETE": true,
+  "new_warmup_base_fits": 4,
+  "two_parameter_fits": 18,
+  "economic_backtests": 9,
+  "runtime_seconds": 277.56264185905457,
+  "remaining": [],
+  "primary_annual_parameter_models": 18,
+  "new_warmup_fit_executions_including_failed_diagnostic_attempt": 12,
+  "unique_warmup_base_models": 4,
+  "inner_diagnostic_fits": 36,
+  "constant_shift_note": "Two pre-economic failures retained (1e-10 coefficient comparison, then exact tie order); canonicalize beta8dec and recompute KKT. Final beta/score/order invariants exact; no economic result had run before correction",
+  "economic_run_executions_including_cache_provenance_replays": 18,
+  "unique_economic_configurations": 9,
+  "cache_provenance_replays": 9,
+  "decision": "REJECT_CURRENT_CONFIGURATION"
+}

@@ -13,6 +13,16 @@ def main():
    from core.research_integrity_v5.d0 import run
    from core.research_integrity_v5.audit_execution import run as execution
    run(resume=a.resume,seed=a.seed);execution()
+   from core.research_integrity_v5.d0_cache_proof import run as cache_proof
+   cache_proof()
+   import subprocess
+   subprocess.run([sys.executable,str(C/'research/round23_7_26_1_execution/finalize_d0.py')],check=True)
+  elif d=='D1':
+   from core.round23_7.d1 import run
+   from core.round23_7.evidence import run as evidence
+   run(resume=a.resume,seed=a.seed);evidence()
+   import subprocess
+   subprocess.run([sys.executable,str(C/'research/round23_7_26_1_execution/finalize_d1.py')],check=True)
   else:raise NotImplementedError(d+' has no implemented execution entry yet; no completion status written')
   if a.publish:
    from core.research_integrity_v5.publish import publish
