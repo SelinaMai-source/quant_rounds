@@ -13,7 +13,7 @@ def prepare(branch):
   src=C/'core'/n
   if src.exists():shutil.copytree(src,w/'core'/n,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
  src=C/'result'/branch
- if src.exists():shutil.copytree(src,w/'result'/branch,dirs_exist_ok=True,ignore=shutil.ignore_patterns('*.partial.*'))
+ if src.exists():shutil.copytree(src,w/'result'/branch,dirs_exist_ok=True,ignore=shutil.ignore_patterns('*.partial.*','residual_true_OOF.parquet','baseline_true_OOF_scores.parquet'))
  tools=C/'tools/continue_round23_7_round26_1.py'
  if tools.exists():shutil.copy2(tools,w/'tools'/tools.name)
  for script in ['finalize_d0.py','finalize_d1.py','finalize_d2.py']:

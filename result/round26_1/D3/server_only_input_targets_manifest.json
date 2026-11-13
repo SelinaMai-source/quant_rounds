@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/residual_true_OOF.parquet",
+      "bytes": 1436847,
+      "sha256": "be97c306ec7ba82ebd7dfeab88d8491da64d1ee3577c14bdb90a469d06928b02",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nfive: double\nten: double\nv5_score: double\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nmu_v5: double\nresidual: double\ncalibration_fit_cutoff: timestamp[ms]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1345",
+      "rows": 40728
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/baseline_true_OOF_scores.parquet",
+      "bytes": 847651,
+      "sha256": "b7cd265f246b8ce6611da80f5afa5de6d24b1f4561e2497d22faa84b3336fbd2",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nfive: double\nten: double\nv5_score: double\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 965",
+      "rows": 43721
+    }
+  ],
+  "raw_provider_libraries_and_joint_training_targets_not_uploaded": true,
+  "recovery": "reconstructed by source market.calibrated_residual from exact server inputs; code and schema/hash/path published"
+}

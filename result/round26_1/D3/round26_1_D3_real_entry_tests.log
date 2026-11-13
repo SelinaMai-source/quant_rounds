@@ -1,0 +1,79 @@
+[
+  {
+    "test": "real predictor label column deletion",
+    "old_reader_failed": true,
+    "new_reader_PASS": true,
+    "real_candidate_keys": 5623,
+    "feature_and_key_hashes_unchanged": true
+  },
+  {
+    "test": "source exact metric memoization",
+    "pairs": 16,
+    "PASS_BIT_EXACT": true,
+    "repeated_source_seconds": 3.0020736660808325,
+    "repeated_cached_seconds": 0.01116606593132019,
+    "cache_scope": "one immutable domain/target/maturity instance, AST and tensor-version keys; no persistent cross-fold cache"
+  },
+  {
+    "test": "in-memory target mutation invalidates metric cache",
+    "PASS": true
+  },
+  {
+    "test": "real full-sequence future data / company adjustment perturbation",
+    "PASS_EXACT_FEATURE_AND_FACTOR": true,
+    "note": "raw observed prices consumed, no post-adjustment columns; not a proof against vendor revisions of past raw observations"
+  },
+  {
+    "test": "generation fit cutoff future/immature mutation",
+    "coverage": [
+      {
+        "outer_year": 2020,
+        "target": "label_exit_rule_net",
+        "PASS_EXACT_REAL_FIT_INPUT": true,
+        "mature_rows": 4490,
+        "max_label_available": "2018-12-28 15:00:00",
+        "full_counterfactual_PPO_retrain": "NOT_RUN; actual full-input tensors/qualification identical, frozen-seed PPO accesses only these tensors"
+      },
+      {
+        "outer_year": 2020,
+        "target": "residual",
+        "PASS_EXACT_REAL_FIT_INPUT": true,
+        "mature_rows": 4490,
+        "max_label_available": "2018-12-28 15:00:00",
+        "full_counterfactual_PPO_retrain": "NOT_RUN; actual full-input tensors/qualification identical, frozen-seed PPO accesses only these tensors"
+      },
+      {
+        "outer_year": 2023,
+        "target": "label_exit_rule_net",
+        "PASS_EXACT_REAL_FIT_INPUT": true,
+        "mature_rows": 9433,
+        "max_label_available": "2021-12-31 15:00:00",
+        "full_counterfactual_PPO_retrain": "NOT_RUN; actual full-input tensors/qualification identical, frozen-seed PPO accesses only these tensors"
+      },
+      {
+        "outer_year": 2023,
+        "target": "residual",
+        "PASS_EXACT_REAL_FIT_INPUT": true,
+        "mature_rows": 9433,
+        "max_label_available": "2021-12-31 15:00:00",
+        "full_counterfactual_PPO_retrain": "NOT_RUN; actual full-input tensors/qualification identical, frozen-seed PPO accesses only these tensors"
+      },
+      {
+        "outer_year": 2026,
+        "target": "label_exit_rule_net",
+        "PASS_EXACT_REAL_FIT_INPUT": true,
+        "mature_rows": 7953,
+        "max_label_available": "2024-12-31 15:00:00",
+        "full_counterfactual_PPO_retrain": "NOT_RUN; actual full-input tensors/qualification identical, frozen-seed PPO accesses only these tensors"
+      },
+      {
+        "outer_year": 2026,
+        "target": "residual",
+        "PASS_EXACT_REAL_FIT_INPUT": true,
+        "mature_rows": 7953,
+        "max_label_available": "2024-12-31 15:00:00",
+        "full_counterfactual_PPO_retrain": "NOT_RUN; actual full-input tensors/qualification identical, frozen-seed PPO accesses only these tensors"
+      }
+    ]
+  }
+]

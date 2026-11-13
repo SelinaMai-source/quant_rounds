@@ -1,0 +1,42 @@
+{
+  "records": [
+    {
+      "stage": "local_actual_partition_rows",
+      "table": "daily_intraday_factors",
+      "partitions": 36,
+      "rows": 1122825,
+      "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features/daily_intraday_factors"
+    },
+    {
+      "stage": "local_actual_partition_rows",
+      "table": "daily_money_flow",
+      "partitions": 36,
+      "rows": 0,
+      "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features/daily_money_flow"
+    },
+    {
+      "stage": "actual_authorized_or_default_read_only_recovery_probe",
+      "table": "equ_h2l_factor_t1",
+      "query": "SELECT TRADE_DATE, PCV, BCVP_15MIN FROM hermes.equ_h2l_factor_t1 WHERE TRADE_DATE BETWEEN '2010-01-01' AND '2012-12-31' LIMIT 1 FORMAT JSONEachRow",
+      "HTTP_status": 401,
+      "status": "AUTHENTICATION_FAILED",
+      "using_existing_process_credential": false,
+      "raw_rows_not_uploaded": true,
+      "response_detail": "Code: 194. DB::Exception: default: Authentication failed: password is incorrect, or there is no user with such name.\n\nIf you use ClickHouse Cloud, the password can be reset at https://clickhouse.cloud/\non the settings page for the corresponding service.\n\nIf you have installed ClickHouse and forgot password you can reset it in the configuration file.\nThe password for default user is typically located at /etc/clickhouse-server/users.d/default-password.xml\nand deleting this file will reset the pass"
+    },
+    {
+      "stage": "actual_authorized_or_default_read_only_recovery_probe",
+      "table": "mkt_equ_mf_new",
+      "query": "SELECT * FROM hermes.mkt_equ_mf_new WHERE TRADE_DATE BETWEEN '2010-01-01' AND '2012-12-31' LIMIT 1 FORMAT JSONEachRow",
+      "HTTP_status": 401,
+      "status": "AUTHENTICATION_FAILED",
+      "using_existing_process_credential": false,
+      "raw_rows_not_uploaded": true,
+      "response_detail": "Code: 194. DB::Exception: default: Authentication failed: password is incorrect, or there is no user with such name.\n\nIf you use ClickHouse Cloud, the password can be reset at https://clickhouse.cloud/\non the settings page for the corresponding service.\n\nIf you have installed ClickHouse and forgot password you can reset it in the configuration file.\nThe password for default user is typically located at /etc/clickhouse-server/users.d/default-password.xml\nand deleting this file will reset the pass"
+    }
+  ],
+  "consequence": "Only earlier baseline/residual warmup expansion affected; raw OHLCV AlphaGen2020+ and matched2023+ continue. No private root env opened, no guessed microfeature substitutes.",
+  "complete_baseline_panel_start": "2013",
+  "first_full3year_baseline_OOF": "2016",
+  "first_temporal_return_calibration": "2017"
+}

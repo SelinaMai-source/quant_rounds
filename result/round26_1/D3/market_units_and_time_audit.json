@@ -1,0 +1,32 @@
+{
+  "snapshot_manifest": {
+    "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features/manifest.json",
+    "bytes": 538626,
+    "sha256": "281ceafdce0c22b65f4b2820e83284f35027a6a7ad9806ab215a7973983e8eb4"
+  },
+  "rows": 11070760,
+  "start": "2016-01-04 00:00:00",
+  "end": "2026-07-24 00:00:00",
+  "stock_ids": 5782,
+  "field_units": {
+    "prices": "CNY/share raw observed",
+    "amount": "CNY",
+    "volume": "shares",
+    "vwap": "amount/volume"
+  },
+  "positive_amount_volume_rows": 10883084,
+  "VWAP_inside_daily_range_with2cent_tolerance": 10883063,
+  "VWAP_inconsistent_rows_masked": 21,
+  "features": [
+    "open",
+    "close",
+    "high",
+    "low",
+    "volume",
+    "vwap"
+  ],
+  "post_adjustment_columns_consumed": [],
+  "event_time": "exchange daily close reconstructed; decisions in frozen downstream legacy next-open lane",
+  "vendor_source_updated_at": "not treated as proof of historical first-publication; market observations reconstructed, source revision limitation retained",
+  "current_listing_list_used": false
+}

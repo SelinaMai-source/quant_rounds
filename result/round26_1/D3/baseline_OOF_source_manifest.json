@@ -1,0 +1,156 @@
+[
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2016/predictions.parquet",
+    "bytes": 138637,
+    "sha256": "5de69ad5e9566a94ae31a28a70504b77f90573345e795aa7470bc657df51af62",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 3676
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2016/predictions.parquet",
+    "bytes": 140552,
+    "sha256": "6addd104fba09d00ebc8987c63bb5f8e3ebcdec4e69aab37091221719600de38",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 3676
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2017/predictions.parquet",
+    "bytes": 93830,
+    "sha256": "c149b9b281302ccbd59c71dfad3140c9b3b1008fd36cc07550737bde6cc182d6",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 2382
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2017/predictions.parquet",
+    "bytes": 94612,
+    "sha256": "2eb9a065eb73b17a31a9394e00ab82901e14d96535e20085d4570a5fb0b9518e",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 2382
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2018/predictions.parquet",
+    "bytes": 122178,
+    "sha256": "1884419b8cb9c3ab850de65a5be264bed5eff1b04537c338025e638e57bb340b",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 3241
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2018/predictions.parquet",
+    "bytes": 123642,
+    "sha256": "22208f06467ca16c4995d97e48433a6959808043e52964e5b409e6b3d48e96c9",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 3241
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2019/predictions.parquet",
+    "bytes": 176167,
+    "sha256": "332ed6f0b88d7f94a29cfa76a96f0915afc710a7c5cec0fb93258a731369039d",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 4711
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2019/predictions.parquet",
+    "bytes": 178729,
+    "sha256": "8621916c92952999a86e85335cb9e48d59ceeabcc0ca511a33b3b964018b60ad",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 4711
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2020/predictions.parquet",
+    "bytes": 215637,
+    "sha256": "8b9ac10c9191dacba83609a763e3c8a1fe672c019ee54cd45a39824fbad1587e",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 5863
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2020/predictions.parquet",
+    "bytes": 219222,
+    "sha256": "b6537f857d3cb27eaac243525ae0d5f2b91654cc9872e7976e3498c9bc8d01fd",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 5863
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2021/predictions.parquet",
+    "bytes": 209372,
+    "sha256": "eb40706116767013b005763f58e850d0ae555afd14488c39ca6aad87876a6a0a",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 5749
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2021/predictions.parquet",
+    "bytes": 212197,
+    "sha256": "2faed067dfccec979bbc7230f55a4dba44f4fe2c1b0117de2aa5825d20639183",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 5749
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2022/predictions.parquet",
+    "bytes": 204209,
+    "sha256": "e1f0725a1c59f7c6885695e4f5c22a3054c5dcbb8eadf44b98cc11b9e49e0fa5",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 5600
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2022/predictions.parquet",
+    "bytes": 207527,
+    "sha256": "e451cc6496ea5a531e9064c1d5dd5f7caf5ed98463976d80a561781a0d0fa8f5",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 5600
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2023/predictions.parquet",
+    "bytes": 150121,
+    "sha256": "4acf1fcaace1379e38d382e0c1e0e9c305fb7e64341ea2bde779d33a1e6922cd",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 4027
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2023/predictions.parquet",
+    "bytes": 151921,
+    "sha256": "072f315282db6e5eca5b380731520733c062b571143111c352f355d448a6eb2d",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 4027
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2024/predictions.parquet",
+    "bytes": 245757,
+    "sha256": "159af28388abd3c158f604c2245b7653e5f8fc984760e26a0bf5d4eff79c1e95",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 6792
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2024/predictions.parquet",
+    "bytes": 249645,
+    "sha256": "d51503b88c8d2469ec572705be44ee0136e263b3a80d788f3c8f4a1e8cfce049",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 6792
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2025/predictions.parquet",
+    "bytes": 238635,
+    "sha256": "b04a0a93449d6bc7f4b67f4c450dca3cc5746ed0c4fadd0076de654dbc43a663",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 6584
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2025/predictions.parquet",
+    "bytes": 242335,
+    "sha256": "06af53d03f48e5126d7b180d095ba93393ec6551eda9862a72aaae87968cbc81",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 6584
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/five/2026/predictions.parquet",
+    "bytes": 142512,
+    "sha256": "5fbabe84fdbd287a59d7acc1071d554ed25aad64c8ed6b05149a17c46aca3181",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_e2_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1353",
+    "rows": 3667
+  },
+  {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/expert_bank/ten/2026/predictions.parquet",
+    "bytes": 144365,
+    "sha256": "8565f7efbadb3acd61437d5bfbb810176b2a09d5be859f6950ea43353c8b3c03",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nxgb: double\nlgbm: double\nridge: double\nmean: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1367",
+    "rows": 3667
+  }
+]

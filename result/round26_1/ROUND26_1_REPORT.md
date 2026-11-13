@@ -1,6 +1,1 @@
-# round26_1
-
-D0 已执行；D1–D5 尚未在本报告提交时执行。逐项状态与实际证据见 D0/REPORT.md、D0/STATUS.json。不能把其余未执行交付算作完成或外部阻断。
-
-CURRENT_BASELINE_CHANGED=FALSE
-PRODUCTION_CONFIG_CHANGED=FALSE
+# Round26.1\n\nD0已执行，D3源码与真实数据集成测试已完成；当前完整PPO/嵌套OOF/Add未完成，详见D3/REPORT.md与STATUS.json。D5尚未执行。\n\nCURRENT_BASELINE_CHANGED=FALSE\nPRODUCTION_CONFIG_CHANGED=FALSE\n

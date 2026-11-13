@@ -1,0 +1,49 @@
+{
+  "status": "SUPERSEDED_RESTART_REQUIRED",
+  "reason": "prediction domain unnecessarily required future label columns; no future labels were used to select keys, but deletion of columns fails interface",
+  "external_block": false,
+  "new_fingerprint_must_miss_old_models": true,
+  "full100000_budget_unchanged": true,
+  "process_snapshots": [
+    {
+      "pid": 1392696,
+      "argv": [
+        "research/round23_6_26_execution/env/bin/python",
+        "-u",
+        "-m",
+        "core.round26_1.alphagen_worker",
+        "--arm",
+        "AG_RAW",
+        "--year",
+        "2020",
+        "--seed",
+        "17",
+        "--resume"
+      ],
+      "CPU_user_seconds_observed": 2235.36,
+      "CPU_system_seconds_observed": 48.71,
+      "RSS_bytes_at_interrupt": 2887737344,
+      "age_wall_seconds_observed": 1433.533432483673
+    },
+    {
+      "pid": 1394419,
+      "argv": [
+        "research/round23_6_26_execution/env/bin/python",
+        "-u",
+        "-m",
+        "core.round26_1.alphagen_worker",
+        "--arm",
+        "AG_RES",
+        "--year",
+        "2020",
+        "--seed",
+        "17",
+        "--resume"
+      ],
+      "CPU_user_seconds_observed": 1712.39,
+      "CPU_system_seconds_observed": 66.1,
+      "RSS_bytes_at_interrupt": 2879729664,
+      "age_wall_seconds_observed": 1094.1439995765686
+    }
+  ]
+}

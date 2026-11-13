@@ -26,4 +26,8 @@ for p in C.glob('result/round23_7_D0*.log'):shutil.copy2(p,r/p.name)
 # Public D0 artifacts and identical correctness module copied to both independent lines.
 out=C/'result/round26_1/D0';shutil.copytree(r,out,dirs_exist_ok=True)
 for branch in ['round23_7','round26_1']:
- base=C/'result'/branch;base.mkdir(exist_ok=True);(base/'无权限数据.md').write_bytes(b'');(base/('ROUND23_7_REPORT.md' if branch=='round23_7' else 'ROUND26_1_REPORT.md')).write_text('# '+branch+'\n\nD0 已执行；D1–D5 尚未在本报告提交时执行。逐项状态与实际证据见 D0/REPORT.md、D0/STATUS.json。不能把其余未执行交付算作完成或外部阻断。\n\nCURRENT_BASELINE_CHANGED=FALSE\nPRODUCTION_CONFIG_CHANGED=FALSE\n')
+ base=C/'result'/branch;base.mkdir(exist_ok=True)
+ permission=base/'无权限数据.md'
+ if not permission.exists():permission.write_bytes(b'')
+ main=base/('ROUND23_7_REPORT.md' if branch=='round23_7' else 'ROUND26_1_REPORT.md')
+ if not main.exists():main.write_text('# '+branch+'\n\nD0已执行，范围见D0/REPORT.md；其他交付不在D0阶段冒称完成。\n\nCURRENT_BASELINE_CHANGED=FALSE\nPRODUCTION_CONFIG_CHANGED=FALSE\n')

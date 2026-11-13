@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/alphagen_data.py", line 46, in __init__
+    full=bars();q=factor_candidates();q=q.loc[q.trade_date.between(pd.Timestamp(start),pd.Timestamp(end))].copy();self.keys=q[KEY].copy();calendar=pd.DatetimeIndex(full.index.get_level_values('trade_date').unique().sort_values());a=int(calendar.searchsorted(pd.Timestamp(start)));z=int(calendar.searchsorted(pd.Timestamp(end),side='right'));assert a>=100 and z>a
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/market.py", line 13, in bars
+    snapshot=DataSnapshot(SNAP);f=snapshot.table('daily_raw',start='2016-01-01',end='2026-07-24',cutoff=snapshot.metadata.as_of_date,fields=['trade_date','instrument_id','open','close','high','low','volume','amount'])
+                                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/zyquant/data/snapshot.py", line 423, in table
+    self._guard(end, cutoff)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/zyquant/data/snapshot.py", line 567, in _guard
+    if end > cutoff_date:
+       ^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'datetime.date'

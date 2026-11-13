@@ -1,0 +1,122 @@
+[
+  {
+    "year": 2017,
+    "fit_cutoff": "2017-01-01 00:00:00",
+    "train_start": "2016-01-05 00:00:00",
+    "train_end": "2016-12-28 00:00:00",
+    "max_training_label_available_at": "2016-12-30 15:00:00",
+    "alpha": 10,
+    "slope": 0.01064631904513611,
+    "intercept": -0.010966879422138923,
+    "rows": 2914,
+    "training_matrix_sha256": "c690458fdba1f1755427950a09dc020f570fec008e038a819147ae2f1d5a152a"
+  },
+  {
+    "year": 2018,
+    "fit_cutoff": "2018-01-01 00:00:00",
+    "train_start": "2016-01-05 00:00:00",
+    "train_end": "2017-12-27 00:00:00",
+    "max_training_label_available_at": "2017-12-29 15:00:00",
+    "alpha": 10,
+    "slope": 0.010768982225893247,
+    "intercept": -0.012085648567325483,
+    "rows": 4897,
+    "training_matrix_sha256": "64e81d86b5825a2928a1c1f856b7c92e1a4a2e0555d3389e51c45bfc8ad8ef7f"
+  },
+  {
+    "year": 2019,
+    "fit_cutoff": "2019-01-01 00:00:00",
+    "train_start": "2016-01-05 00:00:00",
+    "train_end": "2018-12-26 00:00:00",
+    "max_training_label_available_at": "2018-12-28 15:00:00",
+    "alpha": 10,
+    "slope": 0.012331657791773787,
+    "intercept": -0.014158371567036941,
+    "rows": 7408,
+    "training_matrix_sha256": "6cf8a7948fa920140f756465d3fd79232b0905e1e8d2608dd9d2065b746cc2d2"
+  },
+  {
+    "year": 2020,
+    "fit_cutoff": "2020-01-01 00:00:00",
+    "train_start": "2017-01-03 00:00:00",
+    "train_end": "2019-12-27 00:00:00",
+    "max_training_label_available_at": "2019-12-31 15:00:00",
+    "alpha": 10,
+    "slope": 0.013192847380193471,
+    "intercept": -0.0155312895420865,
+    "rows": 8182,
+    "training_matrix_sha256": "6fdc5f963ff3ae95ce692d2e255830c1f2195142e43f693d962acb3f79261c79"
+  },
+  {
+    "year": 2021,
+    "fit_cutoff": "2021-01-01 00:00:00",
+    "train_start": "2018-01-02 00:00:00",
+    "train_end": "2020-12-29 00:00:00",
+    "max_training_label_available_at": "2020-12-31 15:00:00",
+    "alpha": 10,
+    "slope": 0.013985918361665396,
+    "intercept": -0.011210288726778223,
+    "rows": 10896,
+    "training_matrix_sha256": "33b8aa71d2a2fea5ec36fa3f2e6d2445f4aae907103d51d796bd6266e6be7f37"
+  },
+  {
+    "year": 2022,
+    "fit_cutoff": "2022-01-01 00:00:00",
+    "train_start": "2019-01-02 00:00:00",
+    "train_end": "2021-12-29 00:00:00",
+    "max_training_label_available_at": "2021-12-31 15:00:00",
+    "alpha": 10,
+    "slope": 0.014090921470658942,
+    "intercept": -0.00923425306710592,
+    "rows": 13140,
+    "training_matrix_sha256": "1793b7614b49e5f5622ae70f1faa4687c06a8b2b32a2acfab4556c66a31ce335"
+  },
+  {
+    "year": 2023,
+    "fit_cutoff": "2023-01-01 00:00:00",
+    "train_start": "2020-01-02 00:00:00",
+    "train_end": "2022-12-28 00:00:00",
+    "max_training_label_available_at": "2022-12-30 15:00:00",
+    "alpha": 10,
+    "slope": 0.011605395996446792,
+    "intercept": -0.006588543533704223,
+    "rows": 13874,
+    "training_matrix_sha256": "87e0bce013d3b409a85a3a400c5c51b4a1ef66c430cad0388c529fb2f39c6d78"
+  },
+  {
+    "year": 2024,
+    "fit_cutoff": "2024-01-01 00:00:00",
+    "train_start": "2021-01-04 00:00:00",
+    "train_end": "2023-12-27 00:00:00",
+    "max_training_label_available_at": "2023-12-29 15:00:00",
+    "alpha": 10,
+    "slope": 0.011991784535986316,
+    "intercept": -0.00907799349803031,
+    "rows": 12226,
+    "training_matrix_sha256": "78c91bf2c76ab39b5ef0873e37b6d5e5f8df5e9b7513dc5dab440b3b29cc8642"
+  },
+  {
+    "year": 2025,
+    "fit_cutoff": "2025-01-01 00:00:00",
+    "train_start": "2022-01-04 00:00:00",
+    "train_end": "2024-12-27 00:00:00",
+    "max_training_label_available_at": "2024-12-31 15:00:00",
+    "alpha": 10,
+    "slope": 0.010170961691697684,
+    "intercept": -0.0064304612129127015,
+    "rows": 12382,
+    "training_matrix_sha256": "72823feac29a167c1209e908f707dd60a814385ed9912d049ba60590a6f64a77"
+  },
+  {
+    "year": 2026,
+    "fit_cutoff": "2026-01-01 00:00:00",
+    "train_start": "2023-01-03 00:00:00",
+    "train_end": "2025-12-29 00:00:00",
+    "max_training_label_available_at": "2025-12-31 15:00:00",
+    "alpha": 10,
+    "slope": 0.012696821407053444,
+    "intercept": -0.007618703022116261,
+    "rows": 13017,
+    "training_matrix_sha256": "f690bcf285e76be553f7ae330379ad5654b4c6faa3e214e20e0c9da1c2c4b8d7"
+  }
+]
