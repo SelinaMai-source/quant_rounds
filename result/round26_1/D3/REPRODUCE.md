@@ -1,1 +1,1 @@
-项目根：research/round23_6_26_execution/env/bin/python tools/continue_round23_7_round26_1.py --deliverable D3 --resume --jobs 2 --seed 17 --publish。\n
+项目根：research/round23_6_26_execution/env/bin/python tools/continue_round23_7_round26_1.py --deliverable D3 --resume --jobs 2 --seed 17 --publish。

@@ -1,0 +1,6 @@
+{
+  "PASS_EXACT": true,
+  "rows": 38003,
+  "score_and_tie_convention": "literal0.90/0.10, original average daily percentile, fixed instrument tie break; no rerank of combined score",
+  "source": "frozen baseline components and original E0 independent head forecasts"
+}
