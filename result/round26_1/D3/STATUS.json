@@ -1,5 +1,5 @@
 {
-  "status": "IMPLEMENTED_AND_REAL_DATA_TESTED_RESTART_PENDING",
+  "status": "REAL_ORIGINAL_PPO_RUNNING",
   "IMPLEMENTED": true,
   "UNIT_TESTED": true,
   "REFERENCE_RUN_COMPLETE": false,
@@ -16,5 +16,8 @@
   ],
   "new_fingerprint_requires_full_restart": true,
   "CURRENT_BASELINE_CHANGED": false,
-  "PRODUCTION_CONFIG_CHANGED": false
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "real_matched_baseline_scenarios_completed": 3,
+  "candidate_backtests_completed": 0,
+  "live_snapshot": "LIVE_PPO_SNAPSHOT.json"
 }
