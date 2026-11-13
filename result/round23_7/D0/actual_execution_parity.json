@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "PASS": true,
+    "rows": 2076
+  },
+  "trades": {
+    "PASS": true,
+    "rows": 1107
+  },
+  "positions": {
+    "PASS": true,
+    "rows": 1327
+  },
+  "costs": {
+    "PASS": true,
+    "rows": 2214
+  },
+  "sleeve_states": {
+    "PASS": true,
+    "rows": 4152
+  },
+  "rejections": {
+    "PASS": true,
+    "rows": 1209
+  },
+  "cashflows": {
+    "PASS": true,
+    "rows": 0
+  },
+  "overlayed": {
+    "PASS": true,
+    "rows": 25874
+  }
+}

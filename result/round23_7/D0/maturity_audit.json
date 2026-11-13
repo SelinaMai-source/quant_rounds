@@ -1,0 +1,16 @@
+{
+  "Five": {
+    "policy": "fixed D+1 open to D+2 close with label tradability; not Ten actual exit",
+    "checked_rows": 59276,
+    "formula_max_error": 0.0,
+    "matures": "next2 exchange close 15:00"
+  },
+  "Ten": {
+    "policy": "first executable close from D+2, close limit-up hold; actual_exit_date",
+    "actual_executed_labels_checked": 1107,
+    "return_max_error": 5.551115123125783e-16,
+    "exit_mismatches": 0,
+    "unexecuted_action_labels": "audited source logic and dates; exhaustive all-candidate market replay not yet covered"
+  },
+  "event_time_vs_provider_known_at": "market exchange close reconstructed; exact vendor ingestion/publication versions unavailable; derived microfeatures retain source-specific PIT limitations"
+}

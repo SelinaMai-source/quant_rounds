@@ -1,0 +1,35 @@
+D0 mutation five 2018 original PASS
+D0 mutation five 2018 future_labels_deleted PASS
+D0 mutation five 2018 future_labels_permuted PASS
+D0 mutation five 2018 immature_labels_permuted PASS
+D0 mutation five 2018 future_feature_backfill PASS
+D0 mutation five 2022 original PASS
+D0 mutation five 2022 future_labels_deleted PASS
+D0 mutation five 2022 future_labels_permuted PASS
+D0 mutation five 2022 immature_labels_permuted PASS
+D0 mutation five 2022 future_feature_backfill PASS
+D0 mutation five 2026 original PASS
+D0 mutation five 2026 future_labels_deleted PASS
+D0 mutation five 2026 future_labels_permuted PASS
+D0 mutation five 2026 immature_labels_permuted PASS
+D0 mutation five 2026 future_feature_backfill PASS
+D0 mutation ten 2018 original PASS
+D0 mutation ten 2018 future_labels_deleted PASS
+D0 mutation ten 2018 future_labels_permuted PASS
+D0 mutation ten 2018 immature_labels_permuted PASS
+D0 mutation ten 2018 future_feature_backfill PASS
+D0 mutation ten 2022 original PASS
+D0 mutation ten 2022 future_labels_deleted PASS
+D0 mutation ten 2022 future_labels_permuted PASS
+D0 mutation ten 2022 immature_labels_permuted PASS
+D0 mutation ten 2022 future_feature_backfill PASS
+D0 mutation ten 2026 original PASS
+D0 mutation ten 2026 future_labels_deleted PASS
+D0 mutation ten 2026 future_labels_permuted PASS
+D0 mutation ten 2026 immature_labels_permuted PASS
+D0 mutation ten 2026 future_feature_backfill PASS
+/root/miniconda3/lib/python3.13/site-packages/pandas/core/nanops.py:1632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+/root/miniconda3/lib/python3.13/site-packages/pandas/core/nanops.py:1632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+{"IMPLEMENTED": true, "UNIT_TESTED": true, "REFERENCE_RUN_COMPLETE": false, "TARGET_OOF_COMPLETE": false, "BACKTEST_COMPLETE": false, "EVIDENCE_COMPLETE": false, "actual_mutation_model_fits": 30, "covered_heads": ["five", "ten"], "covered_model_folds": [2018, 2022, 2026], "all_year_boundaries": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026], "uncovered": ["neural models not yet implemented", "all-candidate Ten action market replay", "vendor historical revisions of derived microfeatures", "new-model integrated tests must accompany each deliverable"], "ledger_all_pass": true, "seconds": 204.65247774124146, "experiment_fingerprint": "010a69c438795e200bc37ec5a66717fcf454e86ead63a914712445c80f87f874", "scope": "actual XGB entry and original overlay; not blanket no leakage"}

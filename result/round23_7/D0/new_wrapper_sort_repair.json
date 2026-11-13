@@ -1,0 +1,8 @@
+{
+  "error": "new wrapper applied overlay before stable score/instrument sorting; O01 method-first tie order changed",
+  "fix": "same stable order as canonical run_round7 before overlay",
+  "corrected_parity": "PASS nav, trades, overlay, positions, costs, rejections and sleeve states",
+  "invalidated_run": "D0_CACHE_V5/707f438d72fec5cece57092144d296b60aa37f9dc694fccb7a34dee21a8540f5",
+  "invalid_run_economic_eligibility": false,
+  "original_baseline_changed": false
+}
