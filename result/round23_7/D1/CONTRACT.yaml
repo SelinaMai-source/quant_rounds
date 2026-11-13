@@ -42,5 +42,11 @@
   "scope": "legacy-v5 development history",
   "economic_gate": "inherited frozen gate unchanged",
   "citation": "https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent/",
-  "note": "project RankNet-style adaptation, not paper alpha replication"
+  "note": "project RankNet-style adaptation, not paper alpha replication",
+  "numerical_precision_amendment": {
+    "reason": "pre-economic integration test found float64 common-target shift changed solver beta by 1.11e-10 and tied-stock order",
+    "repair": "canonicalize converged beta to 8 decimal places, recompute projected KKT <=1e-7; no coefficient grid search or objective/threshold change",
+    "test": "require exact beta, scores and stock order under datewise constant addition; preserve both failed diagnostic logs",
+    "economic_results_inspected": false
+  }
 }
