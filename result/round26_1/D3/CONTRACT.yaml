@@ -116,5 +116,14 @@
     "padding512_assertion_failed_before_generation": true,
     "padding_bound_after_preflight": 1024,
     "no_candidate_truncation": true
-  }
+  },
+  "pre_economic_correctness_repair": {
+    "reason": "predictor candidate loader unnecessarily requested future label columns; deletion broke inference despite identical qualified keys",
+    "fix": "factor candidate loader reads only D-known KEY/eligibility; mature reward labels separate",
+    "test": "real-data label column deletion and unchanged feature/key SHA; original versus memoized IC bit-exact; target tensor version mutation invalidates in-memory cache",
+    "cache_performance": "only memoize exact original single/mutual correlations within immutable domain/target instance; no loss/reward/optimizer changes",
+    "old_runs": "two interrupted partial PPO jobs retained with old source/checkpoints/resources; never reused after changed fingerprint",
+    "restart": "full100000 steps each arm/fold/seed, same architecture, seed and budgets; no Outer economic result had been run"
+  },
+  "earlier_warmup_recovery": "actual2010-2012 snapshots inspected; moneyflow rows0, intraday incomplete. Read-only PCV/BCVP and moneyflow recovery queries returned AUTHENTICATION_FAILED; no root credentials opened. Only earlier-window extension affected; frozen matched2023 raw-OHLCV pipeline continues."
 }
