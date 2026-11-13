@@ -1,0 +1,33 @@
+{
+  "deliverable": "D0",
+  "protocol_sha256": "6a0113661abf56a104413691b245487b0a3d45946dd1d75d2cf75ec9fba3c833",
+  "parent": "efcb7da982566e6aaf1e0be8a1ce8353835569ac",
+  "scope": [
+    "fingerprint_content_identity_atomic_cache",
+    "actual_label_maturity",
+    "both_heads_early_middle_late_mutation_and_year_boundaries",
+    "ledger_cash_nav_bridge",
+    "SL_BOA_diagnostics_no_search"
+  ],
+  "baseline": "R16_O01",
+  "evaluation": [
+    "2018-01-02",
+    "2026-07-24"
+  ],
+  "seed": 17,
+  "fit_window_years": 3,
+  "max_cpu_training_tasks": 2,
+  "max_gpu_training_tasks": 1,
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "ROUND24_EXECUTED": false,
+  "deferred": [
+    "AlphaForge",
+    "DoubleAdapt",
+    "RD-Agent",
+    "DeepLOB",
+    "RSR",
+    "complete_FLEXPOOL"
+  ],
+  "status": "FROZEN_BEFORE_NEW_EXPERIMENTS"
+}
