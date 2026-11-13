@@ -6,7 +6,7 @@
   "TARGET_OOF_COMPLETE": false,
   "BACKTEST_COMPLETE": false,
   "EVIDENCE_COMPLETE": false,
-  "full_PPO_folds_completed": 0,
+  "full_PPO_folds_completed": 1,
   "superseded_partial_PPO_jobs": 2,
   "actual_real_candidate_rows_preflight": 5623,
   "tests": "real_entry_tests.json; baseline endpoint exact; actual early/middle/late RAW/RES fit input cutoffs; original exact metric memoization",
@@ -19,5 +19,13 @@
   "PRODUCTION_CONFIG_CHANGED": false,
   "real_matched_baseline_scenarios_completed": 3,
   "candidate_backtests_completed": 0,
-  "live_snapshot": "LIVE_PPO_SNAPSHOT.json"
+  "live_snapshot": "LIVE_PPO_SNAPSHOT.json",
+  "running_folds": [
+    {
+      "arm": "AG_RES",
+      "year": 2020,
+      "seed": 17
+    }
+  ],
+  "complete_models_not_full_D3": true
 }

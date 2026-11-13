@@ -1,0 +1,866 @@
+[
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/10240/READY.json",
+    "bytes": 184,
+    "sha256": "97ac20ac8e1674da9db8b16b9070905840b69f1924d6943988824315c6ccf904"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/10240/policy.zip",
+    "bytes": 6187070,
+    "sha256": "3e7d5bf05f1f74dce9a062c851230f28477dfdb85c8147d664b487a16ca3d22e"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/10240/state.pkl",
+    "bytes": 35409,
+    "sha256": "ea74ff7472dbc5e0a120b1fc3f191881a4f3475cef8f48afc3db1d4e81cd0a48"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/12288/READY.json",
+    "bytes": 184,
+    "sha256": "0330dcd88797c10983d108cb9922a543191b04ae7403436ac2dd93318df77267"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/12288/policy.zip",
+    "bytes": 6187071,
+    "sha256": "71d4bff67bd444e9c699d035342d469b17d935131f00e3e14f74e3ea6e289ce3"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/12288/state.pkl",
+    "bytes": 43433,
+    "sha256": "8e3f7071908e903681fe939e95dfe21836b29e5c815da3672aaf09744fd2bb9a"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/14336/READY.json",
+    "bytes": 184,
+    "sha256": "47ba7a7fd3cf8392c9e6df78f2ff8689c040662df99465ee2ffccab788f8967d"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/14336/policy.zip",
+    "bytes": 6187082,
+    "sha256": "c96344f43012897ea9778b9c1297a3380c0331729ba67b91ba468e681e7d20d6"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/14336/state.pkl",
+    "bytes": 54741,
+    "sha256": "6bd4e5deefd712927549efd3e80f38ff8099547732940e65912f0e77b18a2758"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/16384/READY.json",
+    "bytes": 184,
+    "sha256": "69723052e670bc5a9a7a780587f9e274ce149daa6dbd6c86a705f9423d64f5fc"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/16384/policy.zip",
+    "bytes": 6187071,
+    "sha256": "9626a2d718789192c2fcad2405cfb27b5bf5c1177e4f1ff30bdedff0aeac0054"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/16384/state.pkl",
+    "bytes": 78528,
+    "sha256": "29adba25dfe4cf788897b48563eee887e42b64bdd31b6a10430f5a4a95823a35"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/18432/READY.json",
+    "bytes": 184,
+    "sha256": "146f914acf884f483b63686f3e0c6d8e1b9663c51116eed2852b351163f3178f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/18432/policy.zip",
+    "bytes": 6187071,
+    "sha256": "e6ea9e48b69a4322a461cced059fded955bc0f6b02230b4f774d3d048585ebb7"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/18432/state.pkl",
+    "bytes": 103846,
+    "sha256": "121f2d8fd0ffc2ac0c9cbad07f9d9eb164af012e00ef2e53806d5aaa570785fa"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/2048/READY.json",
+    "bytes": 183,
+    "sha256": "fefeecbf33fc2b3232fce6ea494d76c893acc7804a0f29c9ed8452140243ef1f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/2048/policy.zip",
+    "bytes": 6187070,
+    "sha256": "6ce219af0819977b2ac05a4cd9df172e21fd43a53710b88ef4beb9c2368854e2"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/2048/state.pkl",
+    "bytes": 21298,
+    "sha256": "e794048b51925fba2cb501428323f6838749e0c15a72512693b9da45be8e8dea"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/20480/READY.json",
+    "bytes": 184,
+    "sha256": "71b5d1ce988bcf2d288b0581ba284084f9aa3eed75e4d54363103a99e77bc214"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/20480/policy.zip",
+    "bytes": 6187071,
+    "sha256": "600dfaefece419d4e0078dc618cfa9c12c881b798ad80f527f6827392e6d667b"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/20480/state.pkl",
+    "bytes": 139071,
+    "sha256": "1990fa8eaaa3f803d016ab141653fb382a5a867c2b91508925ac42ff3afe11ca"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/22528/READY.json",
+    "bytes": 184,
+    "sha256": "bd14cb9d190440e510eafaaa050f097d677fe9e464bf17f787667718bbcd94b9"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/22528/policy.zip",
+    "bytes": 6187072,
+    "sha256": "f0f3d19047db6363b6f45cdb4a1069abcd4dccc453852715b6495bcd1aa542d8"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/22528/state.pkl",
+    "bytes": 182325,
+    "sha256": "5c88bc4f2e674317830318b91f72cde6ac9f6b0e584893583335fa7399e61d8b"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/24576/READY.json",
+    "bytes": 184,
+    "sha256": "71fb8d9eb8557c2202b9167b063cd515c442809cb4ebb71e18eeb0051c48e73c"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/24576/policy.zip",
+    "bytes": 6187072,
+    "sha256": "b3191104e336afc777c6ae861b23424cf0fa19e013d07feb13f163584cf44348"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/24576/state.pkl",
+    "bytes": 226762,
+    "sha256": "578f41dc1fe1bd648dcf8aeba978fc491ba0f40e28c991f2e5ed249afed02951"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/26624/READY.json",
+    "bytes": 184,
+    "sha256": "35bfe76558bdaa24419ae24c851875e5d857a8ee32ae97c7910f36cb35688246"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/26624/policy.zip",
+    "bytes": 6187072,
+    "sha256": "1aa7d1b1abfa1042822595a13f211163860551665a625b55d34901c89a50cdbe"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/26624/state.pkl",
+    "bytes": 274155,
+    "sha256": "846f118a0b99607e1c9b6f1b0e8e4773f12d4c287f1938806817c98fae7322a1"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/28672/READY.json",
+    "bytes": 184,
+    "sha256": "aa792944e84e608f20654b2f66ee22eb759e1c7915fbd76f4e37854e4a12a56a"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/28672/policy.zip",
+    "bytes": 6187072,
+    "sha256": "64a19bd5435d7e0650f45684c0b8c7ebf6773d037e1f02620b774046a3adf304"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/28672/state.pkl",
+    "bytes": 310580,
+    "sha256": "fdc3c406d554adc5a002c3c96844c1eaeee4ec026e05145d2f19a4be8485b90f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/30720/READY.json",
+    "bytes": 184,
+    "sha256": "163a8142cf0dc4bbbe894c55aa30975adba767e1187d47d556ce493ebd32badc"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/30720/policy.zip",
+    "bytes": 6187083,
+    "sha256": "823b48655ec9dd20f994dc7521863b8a740d243f6caec75d0c9e7428e64ab7eb"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/30720/state.pkl",
+    "bytes": 345087,
+    "sha256": "2253cfa0479c5e93daff23b1d830d9c696a41e4ac84319670fa343482527e73c"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/32768/READY.json",
+    "bytes": 184,
+    "sha256": "68fcb8ba2debe95e5646a3ac2e5b97742e4acf4064e885980cfad604528e14ed"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/32768/policy.zip",
+    "bytes": 6187072,
+    "sha256": "2f9b552eb0dbca69e33a8c6eed3eebe7213797f00925219c4d4a8afbff67487f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/32768/state.pkl",
+    "bytes": 381355,
+    "sha256": "56b3fee78ae56bd955d57fb41f0575169cc0ee07312b0fab5b9c278cb1f01982"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/34816/READY.json",
+    "bytes": 184,
+    "sha256": "1e245718d66263b8a168658cf5383619ecf44a077fe9c20fd5242daea15a0237"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/34816/policy.zip",
+    "bytes": 6187072,
+    "sha256": "3cedaac70af3005873da6cc02fb49657a75ed3b3e7bf923a7afb768641c7411c"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/34816/state.pkl",
+    "bytes": 418270,
+    "sha256": "f9100d13b7f31bee4e93a782ab3e725b9ef1d5816816b6c29403309da8277a28"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/36864/READY.json",
+    "bytes": 184,
+    "sha256": "4cef88dd4ccbf0ab41b685d8efe90705e13073042a52eb38ef8132691d130b9c"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/36864/policy.zip",
+    "bytes": 6187083,
+    "sha256": "865dce1ac2f36086dcccf57caf0462bfde2e3a5fd75e0bb44059f0f1cdda7c85"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/36864/state.pkl",
+    "bytes": 448745,
+    "sha256": "d13e6acf192901d2f291d85591ddf760ca57a55044a3d5db9668dee04202f45f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/38912/READY.json",
+    "bytes": 184,
+    "sha256": "d7fba37c1bf8b467d09ba612dd77d2be6c1e7726e9c14fff7e195999920fe311"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/38912/policy.zip",
+    "bytes": 6187072,
+    "sha256": "63ccc1fbfe25e2fbe5e79bc042243859d3184d61ec9a232217791ee635ec92bd"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/38912/state.pkl",
+    "bytes": 466779,
+    "sha256": "4275815f86b85fdf085074755627160bf51eefe5746047497ee6396ee696f277"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/4096/READY.json",
+    "bytes": 183,
+    "sha256": "84febaaf75fd6b09469ef343725ca47485c95a6a31021e7429785df0b181256d"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/4096/policy.zip",
+    "bytes": 6187070,
+    "sha256": "0c689ebfbc735083deeec793f868f303abe53310b69e4413afee92a66f4bc5a2"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/4096/state.pkl",
+    "bytes": 22359,
+    "sha256": "ff575a1293f018d2e86cdb434575b4d72cfc3ce73a7d2f3a5a76d4ff17208e91"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/40960/READY.json",
+    "bytes": 184,
+    "sha256": "95ea874b6153d55bcf30309c151e6015b05fe1287cc725be0df012da75b94d5e"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/40960/policy.zip",
+    "bytes": 6187071,
+    "sha256": "f53151bef8ccf7c860516db209dff62475ffcc78c399f70512fd013dbf4502b5"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/40960/state.pkl",
+    "bytes": 500030,
+    "sha256": "1a539ec519926e0c5259a16f752a038e8ece3a59790cfe22aecfb2803a232ca6"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/43008/READY.json",
+    "bytes": 184,
+    "sha256": "6fef99bd162873d529a59be0b18a6fa76b7977eb00100aa78bc2c2c13b86f7e1"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/43008/policy.zip",
+    "bytes": 6187072,
+    "sha256": "8ad9c71bf5a28ae449d851192ba0fe7120643fe23ae154ce5f489e7c14734e1f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/43008/state.pkl",
+    "bytes": 530274,
+    "sha256": "5f7eda944899f61c6d1f3e0cbd4800d953177d274aa3814ada8631a5e0d9ed0e"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/45056/READY.json",
+    "bytes": 184,
+    "sha256": "0c99c39a95efc59537da0d1a1dd84016d9708b240def92301d79cd163e4e8f5a"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/45056/policy.zip",
+    "bytes": 6187083,
+    "sha256": "0483e3fba9ab3677dcad2d0cf2bae383365a010fbbcd0bd58539f9441ac96b36"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/45056/state.pkl",
+    "bytes": 545323,
+    "sha256": "b8250f8403feb7dbdb0bdae1736d71d01f8ffc3e83fdadc8a0f7dbe6178af512"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/47104/READY.json",
+    "bytes": 184,
+    "sha256": "541e4faab11ea39cb75003bf76c7d704aa1165c806927a59d0c308fc88a3caa7"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/47104/policy.zip",
+    "bytes": 6187072,
+    "sha256": "7b27ecb5583637b4945b0a0417fe405efef991dbb2030ba449bb99242b17260a"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/47104/state.pkl",
+    "bytes": 571332,
+    "sha256": "08442a68dbeb84dbe0689c3a07b81b91979f07f8c2f45a58c6fc6eef5aac8ef6"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/49152/READY.json",
+    "bytes": 184,
+    "sha256": "bc74ba36fd3956e70ddd3651b0049b2a7a493221ed27ced77af3637828ba9ec3"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/49152/policy.zip",
+    "bytes": 6187072,
+    "sha256": "b0d6e76f36a28c7d29f7203a3eca06e1a8ebb7f22e7a852bd6d21cb727e04c77"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/49152/state.pkl",
+    "bytes": 589231,
+    "sha256": "1ea470cdbfa5ebe837a7d1e3d4e2d03fc061b3dfe4687d04da83180ed9110610"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/51200/READY.json",
+    "bytes": 184,
+    "sha256": "2c31a7f1381d0c14474b980f8aa8b9c2458dbd35607b20149344fef59c5cd35f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/51200/policy.zip",
+    "bytes": 6187070,
+    "sha256": "7aee77f846f4316115459a87422f83b3fac35ae870d73a0c5c2b4c4b358d86be"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/51200/state.pkl",
+    "bytes": 612821,
+    "sha256": "45fd60ed34f4f3430aebd2fda3d0bec76f0a52a465abe3ca29f82d1ede51d8c1"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/53248/READY.json",
+    "bytes": 184,
+    "sha256": "96c552fc76908b6c0e22459c1144acc3ca0dfb6748b5b891123ee27d3e6c00e9"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/53248/policy.zip",
+    "bytes": 6187084,
+    "sha256": "02f7c71000c1cdbeb06aa2fc0b28bf31551d4706b65cf2ffcd8097f977714e34"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/53248/state.pkl",
+    "bytes": 628289,
+    "sha256": "a96d258719779e8131530f955f129788f4039e0c20ca6019ca9663b9e87ef7c6"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/55296/READY.json",
+    "bytes": 184,
+    "sha256": "7aae1ecb377de7cc23c38808b432f95d7f13c8a42658896a7b23c5d7f9cd79a1"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/55296/policy.zip",
+    "bytes": 6187072,
+    "sha256": "c65cc0f8ceb0e44c2d889427c63dc31b268ed213730e6e0a5c45f0cc057dc601"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/55296/state.pkl",
+    "bytes": 653981,
+    "sha256": "d95fa26112d144a7190cbcabc56024b42789ca819dab5c6366fdd715f4b6b6fb"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/57344/READY.json",
+    "bytes": 184,
+    "sha256": "ac1574ea543e518c6a91fb1a0a1e803ca7f9669462987b64f80ee451e308d97f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/57344/policy.zip",
+    "bytes": 6187084,
+    "sha256": "61d43be4d8043a9653e9971467398f086c525342dbe7701cbdd6b1b1e6f7ce81"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/57344/state.pkl",
+    "bytes": 680949,
+    "sha256": "9c64f2be3b4280f4e08bd4c8d9e74872ec730f86b95b38cf9d1d559992b23732"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/59392/READY.json",
+    "bytes": 184,
+    "sha256": "3dc61a3ce7d1a860a9a1172f80a2b13ab2c7ed974e8063cd41231b39bdce0ba6"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/59392/policy.zip",
+    "bytes": 6187072,
+    "sha256": "373c514e987f3c7e51e55037c47e6affadc19247a4b53177566d29612c43eb1d"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/59392/state.pkl",
+    "bytes": 693084,
+    "sha256": "fa8bbe30ded63028dbcb1998598c5732a0c46ee4240eef70dcf15c893733fc5c"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/6144/READY.json",
+    "bytes": 183,
+    "sha256": "eaae8e7668e2ece6a520eddd6ed644c7e1ce1f92b746020ef83b46b7e12445b3"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/6144/policy.zip",
+    "bytes": 6187070,
+    "sha256": "a9e838af2f8b37f2d7e82473d4191e89f7c45a46e513d7d2e0a3b9f766b3d8b0"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/6144/state.pkl",
+    "bytes": 24218,
+    "sha256": "5fb60f68e7d665136c673098ff0740721788cd96fc3caee80fb5fca3674d4fb0"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/61440/READY.json",
+    "bytes": 184,
+    "sha256": "02ec6e4da80741ec4399215337091cb2b4031eaa4ed2c1914bb5d84a02aff72f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/61440/policy.zip",
+    "bytes": 6187084,
+    "sha256": "8aa23ec40ee4ccf42199f4e9c720a44154fa8f57e81117f7fa15c71569b4de67"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/61440/state.pkl",
+    "bytes": 720131,
+    "sha256": "3082560d349404d7f55ad3b247d755a1df57fa252bcaae6384f679d261e9ac88"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/63488/READY.json",
+    "bytes": 184,
+    "sha256": "157eae8db8e3d70a52cfd944585172b5ac172e74d7edf0730a70fb0c7930b2b3"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/63488/policy.zip",
+    "bytes": 6187072,
+    "sha256": "53970bc09e8b7737d844c4e329d9048bb4ef37ee4471f5f97b49bf06b9b92bbe"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/63488/state.pkl",
+    "bytes": 748311,
+    "sha256": "2f438b6512c854a8215f27ce9fff0268d380efe16f64df61b3e2a53a41656ad2"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/65536/READY.json",
+    "bytes": 184,
+    "sha256": "44ba439b9395e5559018732807a0231efa9ae0686c5ff71260434fb50286702f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/65536/policy.zip",
+    "bytes": 6187084,
+    "sha256": "0d4f94b400abbe98ece8b728704af460b85e35103bc5c931ecfd0092ec2c9220"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/65536/state.pkl",
+    "bytes": 774208,
+    "sha256": "0dd6c0130aeee5bd19017ea08a672a6a5f0e05197047f5c4209c2910e8917b7f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/67584/READY.json",
+    "bytes": 184,
+    "sha256": "4e46458a2eb559111383abecf74e499b115c3f8be6590f4c7fadaa90f5c89b38"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/67584/policy.zip",
+    "bytes": 6187072,
+    "sha256": "167cdd9d5a8d87cae3fa471eeef562fa758985464f5e5b45f9abd9939a137f78"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/67584/state.pkl",
+    "bytes": 790968,
+    "sha256": "7ec962008190fa8d81901560c5fa2dcf6dcc15cece365c0646d4263a9bb8637f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/69632/READY.json",
+    "bytes": 184,
+    "sha256": "1bf05310d4af06de0d9140cd075e7f65b56e630bd729fd92e7cdcbf9d22cdcf6"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/69632/policy.zip",
+    "bytes": 6187084,
+    "sha256": "80cf82d24f4e960124357f0505913e1d157707f1ec2c0afedc27dc1ca5309f97"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/69632/state.pkl",
+    "bytes": 812063,
+    "sha256": "f0b1ef97d24f7e3c26e2de5f918fc7869862d016195472dbf21175e468d8fb4d"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/71680/READY.json",
+    "bytes": 184,
+    "sha256": "85a6aa4c0dcf733166f7d869fe5927b86e14127e6d166b038bcfb3f63fcb2fe9"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/71680/policy.zip",
+    "bytes": 6187071,
+    "sha256": "9819ee6c008da12cc379fd6b36653ac6ea4d58d1fb6b21a27577bb79abb767fc"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/71680/state.pkl",
+    "bytes": 839703,
+    "sha256": "b394597bf36d0fb5bac0564d8ca4c2e2a5260c4bfa164f4c100e6babd7e42679"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/73728/READY.json",
+    "bytes": 184,
+    "sha256": "c97d701ab9bd1d661d589356fc5eca48f407befb675c3174b5a11c57f016bda7"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/73728/policy.zip",
+    "bytes": 6187084,
+    "sha256": "c4596f8d7dd2799e0089cbca5a4f220f47968e1ee7e1dd16b9c1aefdc61c8a8c"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/73728/state.pkl",
+    "bytes": 849434,
+    "sha256": "4c1725495f3baf74ae69dd0358a0743846ab24e8de139eada24bf88b03e92c3b"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/75776/READY.json",
+    "bytes": 184,
+    "sha256": "e4dc2e845ff81306f83f6ec357b533861022ff3c8808bcd435bd49f6fb548d7c"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/75776/policy.zip",
+    "bytes": 6187072,
+    "sha256": "0cb00e6cc3b38da57c12ef41b1342b003bc385deee5f1ac3e02052163b38c797"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/75776/state.pkl",
+    "bytes": 866305,
+    "sha256": "95b1e070fcc0fd9aa4cb6d9ae7b79e3464bdbb4d14d95c85752e87c638641fb2"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/77824/READY.json",
+    "bytes": 184,
+    "sha256": "2fa177343331ec828d798ad3c0bb754bf36cdf9301052b7fde4465dcd835b07e"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/77824/policy.zip",
+    "bytes": 6187084,
+    "sha256": "1f9187e095e5b92d8b325421e7a11b08bc25c755ae7f39fc13cd3ddc75bfd0d0"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/77824/state.pkl",
+    "bytes": 883679,
+    "sha256": "fb2ec83703ce1c8ca033b628ee21abf2d05167ce35fb1d226d3e82d2573675ea"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/79872/READY.json",
+    "bytes": 184,
+    "sha256": "3c0d47771d85fb30bcadc0a174c26f373a7b21c44436c84e5ddc7777f0752a99"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/79872/policy.zip",
+    "bytes": 6187084,
+    "sha256": "9d15c47125d2c9aa53717a2f26c7dca10c5300c369a3d0f4b7020c6f82cb9aee"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/79872/state.pkl",
+    "bytes": 901630,
+    "sha256": "72b55d3994540cb58390f319f9983b0bdbc1accea363616791d7ab43b14ce5ae"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/8192/READY.json",
+    "bytes": 183,
+    "sha256": "f2c57a25d22c970de5557d722d59ebafa1c3e273cb3c80401fa733823ebb47e9"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/8192/policy.zip",
+    "bytes": 6187070,
+    "sha256": "8d3b8a62b9095abc3a1d12b5f25a76c6d013224f9e738ae7bf0d94e46a6aa43a"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/8192/state.pkl",
+    "bytes": 28811,
+    "sha256": "f5bfe82c7037431eee17f41f3194e294a8b48956e970661804b7544bb7f611e0"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/81920/READY.json",
+    "bytes": 184,
+    "sha256": "f1cd4dbb9d7b2fb1aea9c282b1d5b06fd6c57e4704224ea1ddcc4efb56fd7e67"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/81920/policy.zip",
+    "bytes": 6187084,
+    "sha256": "5475b72f068280815964f297d111ce92d4279f5371b273db76269187f3146d06"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/81920/state.pkl",
+    "bytes": 916718,
+    "sha256": "c0f2872cea91ca041810ac7093fe583c3270684379fc414aacabad4019776ad5"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/83968/READY.json",
+    "bytes": 184,
+    "sha256": "ba73f1a73d2e4b2f5a2a04e85356af3318b86488e79f998cd1c8d0f9871c287d"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/83968/policy.zip",
+    "bytes": 6187084,
+    "sha256": "e9c9e4e4fbb500e6a7e375f510d86b30507bd493572cf5d1d9b80e0a8ede8463"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/83968/state.pkl",
+    "bytes": 937117,
+    "sha256": "09bf93006d5b03584b275d9a76fa444562149d31fac894fbe33113a3a1c72031"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/86016/READY.json",
+    "bytes": 184,
+    "sha256": "ad9c1afe49bef5f7f757a0ef7e09b3fb197a540176432d475c4e62174d10f321"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/86016/policy.zip",
+    "bytes": 6187084,
+    "sha256": "9381431aa81807e1390227d1d6580302e852ca8de40f2765ee175cfe2ee31a32"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/86016/state.pkl",
+    "bytes": 954889,
+    "sha256": "3396da289ab6b8a0c8a697d617f9a995e917c8a6c5af5dd5bc665f1ec77cac58"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/88064/READY.json",
+    "bytes": 184,
+    "sha256": "7de19c5faddeb415c27bcaf579aac0cee15ddc7ac6d6c877f621184f4cebada0"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/88064/policy.zip",
+    "bytes": 6187084,
+    "sha256": "18ef346e430de42296f08a5c39025b24a885ce1c72bd315417467decbe9efca4"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/88064/state.pkl",
+    "bytes": 970152,
+    "sha256": "01a1e381672962bba3df14a4cf64df58c1a39eb7df80b102846a5e7723949cac"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/90112/READY.json",
+    "bytes": 184,
+    "sha256": "482b9c1d0bc8510ad83e672b9ca2d4d499bf1ada97307e86c64538fc5c303e05"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/90112/policy.zip",
+    "bytes": 6187084,
+    "sha256": "f158599e0d5b26c8092cae064a37ec00069e7c23d0df5d81e2360ddfa8ed5a52"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/90112/state.pkl",
+    "bytes": 987672,
+    "sha256": "b2cd8cf3fc57941ec8e0aeacae040d4ba316caeec527193129332e0faede5604"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/92160/READY.json",
+    "bytes": 184,
+    "sha256": "a3207eea1458e57c233e246eded802de624fe5578c03afa6a6489bef6e6da4e3"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/92160/policy.zip",
+    "bytes": 6187084,
+    "sha256": "0eda8e84a11cd6bc0b1a6f2e7e3e3328523bbda95d936ad446d5de5471b9a90f"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/92160/state.pkl",
+    "bytes": 1001431,
+    "sha256": "0fe5090c20323c86721e52a109033c7ec306b2f6d6492b0dee3da67e288dad37"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/94208/READY.json",
+    "bytes": 184,
+    "sha256": "5b7d65600792200db47edefe0672950d790228f3ec2c9476157e27477bd39694"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/94208/policy.zip",
+    "bytes": 6187084,
+    "sha256": "9371851b9ab75b07b537d62c1510b9cbe01152171d9fb3318f327791e8c02114"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/94208/state.pkl",
+    "bytes": 1016431,
+    "sha256": "b8f0111560acca782f8f52161a11dd81feb9f4b457c1a8c19c25e4a96745d0db"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/96256/READY.json",
+    "bytes": 184,
+    "sha256": "443830fc582f521f3212a57937bf2131cd316132c6935bfc2e0fe9b99d420181"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/96256/policy.zip",
+    "bytes": 6187084,
+    "sha256": "6076188b639fb5f534f02e557a8fe93ca4a029b973779b5b3600f2bd7020f659"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/96256/state.pkl",
+    "bytes": 1031636,
+    "sha256": "f394e5e38ae381ecb09ddeb64eaae77db2788957d19af18ec76bf16a43089f33"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/98304/READY.json",
+    "bytes": 184,
+    "sha256": "3efc0fcc9a1572c07e242f91ce79780f0c1ed5e10e170fd0788c99053857b715"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/98304/policy.zip",
+    "bytes": 6187085,
+    "sha256": "4f010e082cebd651dc8f19b39ac0c3cf74da63853aabf28306d2579c1b18b1b1"
+  },
+  {
+    "schema": "original SB3 policy zip / own AST+RNG state; raw StockData excluded",
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/resume_slots/98304/state.pkl",
+    "bytes": 1046227,
+    "sha256": "8d64de02baf171d0779615320edbd6ffff771ad2b5e3ea828cd1595919d80253"
+  }
+]

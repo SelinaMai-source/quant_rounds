@@ -9,7 +9,9 @@ from core.round26_1.alphagen_data import ast_load,guard
 
 def report(registry,stage_seed):
  r=evaluate(R,baseline='AG_A0');r['scope']='MATCHED_2023_NESTED_FACTOR_OOF_DEVELOPMENT';r['initial_cash']=300000.;r['window_start']='2023-01-03';r['window_end']='2026-07-24';r.to_csv(R/'all_results.csv',index=False);reg=pd.DataFrame(registry);complete=reg.loc[reg.status.eq('FACTOR_OOF_YEAR_COMPLETE')];pit=[];expressions=0;steps=0
+ from core.round26_1.completed_factor_audit import audit as audit_completed_generation
  for z in complete.itertuples(index=False):
+  audit_completed_generation(Path(z.directory))
   d=Path(z.directory);state=json.loads((d/'FROZEN_FACTOR.json').read_text());[guard(ast_load(node)) for node in state['ASTs']];assert pd.Timestamp(state['max_training_label_available_at'])<pd.Timestamp(state['fit_cutoff']);p=pd.read_parquet(d/'factor_predictions.parquet');expected=factor_candidates();expected=expected.loc[expected.trade_date.dt.year.eq(int(z.year)),KEY].reset_index(drop=True);pd.testing.assert_frame_equal(p[KEY].reset_index(drop=True),expected,check_exact=True);assert not any('label' in n or n.startswith('next') for n in p.columns);steps+=state['generation_env_steps'];expressions+=state['valid_evaluations'];pit.append({'arm':z.arm,'seed':z.seed,'year':z.year,'candidate_rows':len(p),'forecast_keys_independent_of_labels':True,'ASTs_all_positive_past_time_offsets':True,'fit_cutoff':state['fit_cutoff'],'max_training_label_available_at':state['max_training_label_available_at'],'original_env_steps':state['generation_env_steps'],'effective_expressions':state['valid_evaluations'],'pool_size':len(state['ASTs']),'status':'PASS_FROZEN_FORMULA_TIME_KEY_SCOPE'})
  pd.DataFrame(pit).to_csv(R/'factor_PIT_and_budget_evidence.csv',index=False)
  from core.round7.contract import FIVE_HEAD,TEN_HEAD
