@@ -1,0 +1,18 @@
+{
+  "scope": "all frozen candidate actions 2018-2026 in original market snapshot",
+  "rows": 46234,
+  "stored_valid": 43586,
+  "replayed_valid": 43586,
+  "label_max_abs_error": 0.0,
+  "valid_to_missing": 0,
+  "exit_mismatches_on_valid": 0,
+  "source": {
+    "path": "/data1/stock-mxy/src/first_board_hermes/fixed_sleeve_backtest.py",
+    "bytes": 47366,
+    "sha256": "b97e9bb3756c50c93eb8380699c82341f6f11baef550b7f41ba4b77295432a93"
+  },
+  "snapshot": "/home/mxy/Stock/data/datasets/hermes-cn-a-2010-20260724-v7-all-features",
+  "corporate_action_events_in_original_prepared_market": 0,
+  "legacy_caveat": "source loader has no corporate actions passed; original fill clips high/low; parity is not live/PIT proof",
+  "PASS": true
+}

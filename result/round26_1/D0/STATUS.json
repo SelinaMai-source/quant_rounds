@@ -1,0 +1,39 @@
+{
+  "IMPLEMENTED": true,
+  "UNIT_TESTED": true,
+  "REFERENCE_RUN_COMPLETE": "NOT_APPLICABLE_D0",
+  "TARGET_OOF_COMPLETE": "NOT_APPLICABLE_D0",
+  "BACKTEST_COMPLETE": true,
+  "EVIDENCE_COMPLETE": true,
+  "actual_mutation_model_fits": 30,
+  "covered_heads": [
+    "five",
+    "ten"
+  ],
+  "covered_model_folds": [
+    2018,
+    2022,
+    2026
+  ],
+  "all_year_boundaries": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "uncovered": [
+    "vendor historical revisions of inherited derived microfeatures",
+    "new-model tests must accompany D1/D3/D4/D5",
+    "corporate-action behavior not observed: original loader supplies zero action events"
+  ],
+  "ledger_all_pass": true,
+  "seconds": 204.65247774124146,
+  "experiment_fingerprint": "010a69c438795e200bc37ec5a66717fcf454e86ead63a914712445c80f87f874",
+  "scope": "actual XGB entry and original overlay; not blanket no leakage",
+  "status": "D0_COMPLETE_WITH_EXPLICIT_LEGACY_LIMITS"
+}
