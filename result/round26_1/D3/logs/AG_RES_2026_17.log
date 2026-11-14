@@ -3,3 +3,86 @@ Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or conta
 Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
 See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
 AlphaGen heartbeat AG_RES 2026 17 8193 pool 20
+AlphaGen progress AG_RES 2026 17 10000 expr 55 pool 20 valIC 0.02032117359340191
+/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/AlphaGen/alphagen/data/expression.py:379: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/ReduceOps.cpp:1927.)
+  def _apply(self, operand: Tensor) -> Tensor: return operand.std(dim=-1)
+AlphaGen heartbeat AG_RES 2026 17 12896 pool 20
+/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/AlphaGen/alphagen/data/expression.py:383: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/ReduceOps.cpp:1927.)
+  def _apply(self, operand: Tensor) -> Tensor: return operand.var(dim=-1)
+AlphaGen heartbeat AG_RES 2026 17 16886 pool 20
+AlphaGen heartbeat AG_RES 2026 17 19926 pool 20
+AlphaGen progress AG_RES 2026 17 20000 expr 249 pool 20 valIC -0.01441261451691389
+AlphaGen heartbeat AG_RES 2026 17 21770 pool 20
+AlphaGen heartbeat AG_RES 2026 17 23317 pool 20
+AlphaGen heartbeat AG_RES 2026 17 24741 pool 20
+AlphaGen heartbeat AG_RES 2026 17 26283 pool 20
+AlphaGen heartbeat AG_RES 2026 17 27526 pool 20
+AlphaGen heartbeat AG_RES 2026 17 28673 pool 20
+AlphaGen heartbeat AG_RES 2026 17 29672 pool 20
+AlphaGen progress AG_RES 2026 17 30000 expr 1043 pool 20 valIC -0.017652325332164764
+AlphaGen heartbeat AG_RES 2026 17 30721 pool 20
+AlphaGen heartbeat AG_RES 2026 17 32009 pool 20
+AlphaGen heartbeat AG_RES 2026 17 33045 pool 20
+AlphaGen heartbeat AG_RES 2026 17 34033 pool 20
+AlphaGen heartbeat AG_RES 2026 17 35000 pool 20
+AlphaGen heartbeat AG_RES 2026 17 36246 pool 20
+AlphaGen heartbeat AG_RES 2026 17 37189 pool 20
+AlphaGen heartbeat AG_RES 2026 17 38656 pool 20
+AlphaGen progress AG_RES 2026 17 40000 expr 2476 pool 20 valIC -0.0014868563739582896
+AlphaGen heartbeat AG_RES 2026 17 40001 pool 20
+AlphaGen heartbeat AG_RES 2026 17 41198 pool 20
+AlphaGen heartbeat AG_RES 2026 17 42612 pool 20
+AlphaGen heartbeat AG_RES 2026 17 44001 pool 20
+AlphaGen heartbeat AG_RES 2026 17 45273 pool 20
+AlphaGen heartbeat AG_RES 2026 17 46644 pool 20
+AlphaGen heartbeat AG_RES 2026 17 47811 pool 20
+AlphaGen heartbeat AG_RES 2026 17 49106 pool 20
+AlphaGen progress AG_RES 2026 17 50000 expr 4341 pool 20 valIC 0.006253102328628302
+AlphaGen heartbeat AG_RES 2026 17 50277 pool 20
+AlphaGen heartbeat AG_RES 2026 17 51403 pool 20
+AlphaGen heartbeat AG_RES 2026 17 52610 pool 20
+AlphaGen heartbeat AG_RES 2026 17 53736 pool 20
+AlphaGen heartbeat AG_RES 2026 17 55198 pool 20
+AlphaGen heartbeat AG_RES 2026 17 56587 pool 20
+AlphaGen heartbeat AG_RES 2026 17 57918 pool 20
+AlphaGen heartbeat AG_RES 2026 17 59126 pool 20
+AlphaGen progress AG_RES 2026 17 60000 expr 6459 pool 20 valIC -0.009734855964779854
+AlphaGen heartbeat AG_RES 2026 17 60127 pool 20
+AlphaGen heartbeat AG_RES 2026 17 61177 pool 20
+AlphaGen heartbeat AG_RES 2026 17 62079 pool 20
+AlphaGen heartbeat AG_RES 2026 17 63287 pool 20
+AlphaGen heartbeat AG_RES 2026 17 64218 pool 20
+AlphaGen heartbeat AG_RES 2026 17 65537 pool 20
+AlphaGen heartbeat AG_RES 2026 17 67170 pool 20
+AlphaGen heartbeat AG_RES 2026 17 68621 pool 20
+AlphaGen progress AG_RES 2026 17 70000 expr 8433 pool 20 valIC -0.00277880416251719
+AlphaGen heartbeat AG_RES 2026 17 70073 pool 20
+AlphaGen heartbeat AG_RES 2026 17 71296 pool 20
+AlphaGen heartbeat AG_RES 2026 17 72277 pool 20
+AlphaGen heartbeat AG_RES 2026 17 73430 pool 20
+AlphaGen heartbeat AG_RES 2026 17 74664 pool 20
+AlphaGen heartbeat AG_RES 2026 17 76034 pool 20
+AlphaGen heartbeat AG_RES 2026 17 77706 pool 20
+AlphaGen heartbeat AG_RES 2026 17 79026 pool 20
+AlphaGen progress AG_RES 2026 17 80000 expr 10690 pool 20 valIC 0.009402431547641754
+AlphaGen heartbeat AG_RES 2026 17 80282 pool 20
+AlphaGen heartbeat AG_RES 2026 17 81443 pool 20
+AlphaGen heartbeat AG_RES 2026 17 82579 pool 20
+AlphaGen heartbeat AG_RES 2026 17 83942 pool 20
+AlphaGen heartbeat AG_RES 2026 17 84969 pool 20
+AlphaGen heartbeat AG_RES 2026 17 86052 pool 20
+AlphaGen heartbeat AG_RES 2026 17 87085 pool 20
+AlphaGen heartbeat AG_RES 2026 17 88088 pool 20
+AlphaGen heartbeat AG_RES 2026 17 89259 pool 20
+AlphaGen progress AG_RES 2026 17 90000 expr 12806 pool 20 valIC -0.006198700983077288
+AlphaGen heartbeat AG_RES 2026 17 90269 pool 20
+AlphaGen heartbeat AG_RES 2026 17 91426 pool 20
+AlphaGen heartbeat AG_RES 2026 17 92701 pool 20
+AlphaGen heartbeat AG_RES 2026 17 94087 pool 20
+AlphaGen heartbeat AG_RES 2026 17 95090 pool 20
+AlphaGen heartbeat AG_RES 2026 17 96257 pool 20
+AlphaGen heartbeat AG_RES 2026 17 97447 pool 20
+AlphaGen heartbeat AG_RES 2026 17 98332 pool 20
+AlphaGen heartbeat AG_RES 2026 17 99600 pool 20
+AlphaGen progress AG_RES 2026 17 100000 expr 14838 pool 20 valIC -0.007551226764917374
+WORKER_RESULT {"arm": "AG_RES", "year": 2026, "seed": 17, "directory": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2026/17/013f3829c1a031a6b0f319ea014ba76a3dfe86bd26ab051630fca57598909bd0", "status": "FACTOR_OOF_YEAR_COMPLETE"}
