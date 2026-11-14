@@ -1,0 +1,296 @@
+[
+  {
+    "arm": "AG_RAW",
+    "seed": 17,
+    "year": 2020,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/factor_predictions.parquet",
+      "bytes": 65608,
+      "sha256": "43090b9a6a92b69e663027d5072882441437911ec8c76fd72481d92a4dbd0d4f",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 5863
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/FROZEN_FACTOR.json",
+      "bytes": 7564,
+      "sha256": "52afb91f2ecba836b43ca78bf32f2cebf7d7dd737c02a8b9179531068c82d1eb"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 15056,
+    "fit_cutoff": "2020-01-01",
+    "max_training_label_available_at": "2019-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RAW",
+    "seed": 17,
+    "year": 2021,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2021/17/f718cdad2d235374db20f92226354e0d243c9833c8859ecb7e4fd01c64c26ee4/factor_predictions.parquet",
+      "bytes": 64831,
+      "sha256": "a660e61eb71ce35c8d24f441badf43b4c730623506ab1c58dfdc75a9fe53ffd7",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 5749
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2021/17/f718cdad2d235374db20f92226354e0d243c9833c8859ecb7e4fd01c64c26ee4/FROZEN_FACTOR.json",
+      "bytes": 7093,
+      "sha256": "e58861f09148429e6f23be5a3523ab73dc60b2c16ceba7bd197e6be9da6849b6"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 14464,
+    "fit_cutoff": "2021-01-01",
+    "max_training_label_available_at": "2020-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RAW",
+    "seed": 17,
+    "year": 2022,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2022/17/fe0a32c0c9f7b5deff85075f09529155695aa2a18ed20cc79c596df97a661a48/factor_predictions.parquet",
+      "bytes": 63463,
+      "sha256": "9c5d73aa903334a935276c1be218e39897a3bd5549e062068799a1b853235df4",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 5600
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2022/17/fe0a32c0c9f7b5deff85075f09529155695aa2a18ed20cc79c596df97a661a48/FROZEN_FACTOR.json",
+      "bytes": 7489,
+      "sha256": "64357dff96804bcd5ce6b239b4faf8f2d0a4156b929be20f83015e68c6eb1b45"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 14300,
+    "fit_cutoff": "2022-01-01",
+    "max_training_label_available_at": "2021-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RAW",
+    "seed": 17,
+    "year": 2023,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2023/17/a30b77e38b282f938c43eec8922dc76cd942c4c1f2078837248615bfc5e447ea/factor_predictions.parquet",
+      "bytes": 49539,
+      "sha256": "9a55be725fdb7c5bbf112fee5f55457a1b518bee239c39ceef9db8e73aef6973",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 4027
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2023/17/a30b77e38b282f938c43eec8922dc76cd942c4c1f2078837248615bfc5e447ea/FROZEN_FACTOR.json",
+      "bytes": 5947,
+      "sha256": "520fa469531b1a79d02bc8827cce0abf9b250dfd943f5f4e661c052247d513d8"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 16339,
+    "fit_cutoff": "2023-01-01",
+    "max_training_label_available_at": "2022-12-30 15:00:00"
+  },
+  {
+    "arm": "AG_RAW",
+    "seed": 17,
+    "year": 2024,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2024/17/669ac9d192a7c36e7df3034e371191bc664100b549a412da139e6b33baa5cd6e/factor_predictions.parquet",
+      "bytes": 75058,
+      "sha256": "7241a13fa6e878c766d6c6a448e63ece97db6dad910b26d311723ed647f52145",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 6792
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2024/17/669ac9d192a7c36e7df3034e371191bc664100b549a412da139e6b33baa5cd6e/FROZEN_FACTOR.json",
+      "bytes": 7387,
+      "sha256": "8cfe781c2ff530a024a887ad2f812007af25d59fde440af789386e62728f74a0"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 16443,
+    "fit_cutoff": "2024-01-01",
+    "max_training_label_available_at": "2023-12-29 15:00:00"
+  },
+  {
+    "arm": "AG_RAW",
+    "seed": 17,
+    "year": 2025,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2025/17/7bd8f921d4804dd984857efe52df78c0019b7c8fc34bbc2aa6b3b20519733001/factor_predictions.parquet",
+      "bytes": 73411,
+      "sha256": "0b4890dabc1fc62505ec900b764a00000078e1489676090dcf5bec7ba60f8c39",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 6584
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2025/17/7bd8f921d4804dd984857efe52df78c0019b7c8fc34bbc2aa6b3b20519733001/FROZEN_FACTOR.json",
+      "bytes": 6331,
+      "sha256": "8da4698afd95fcb3ceddec4f8fe925361df932976f41255f88092906d583b4a7"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 14954,
+    "fit_cutoff": "2025-01-01",
+    "max_training_label_available_at": "2024-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RAW",
+    "seed": 17,
+    "year": 2026,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2026/17/5b0461bb5fb9b06ea7ff11a0cf3ba64657ce24f001b5dd6562f8802a9401dbe7/factor_predictions.parquet",
+      "bytes": 46955,
+      "sha256": "c661a7677000be9124f1ea9cccddd510bb11f9c1c482635a27c33bbdfe44b86f",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 3667
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2026/17/5b0461bb5fb9b06ea7ff11a0cf3ba64657ce24f001b5dd6562f8802a9401dbe7/FROZEN_FACTOR.json",
+      "bytes": 6688,
+      "sha256": "738bd7d2ec32e95159adf2acd7826c959e347b0e3972e3842137f2002065f599"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 14391,
+    "fit_cutoff": "2026-01-01",
+    "max_training_label_available_at": "2025-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RES",
+    "seed": 17,
+    "year": 2020,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2020/17/5e57091e6252d216846b6b09f36327b4540e57cb33c83be74fa4e17578d39dd9/factor_predictions.parquet",
+      "bytes": 65612,
+      "sha256": "bf18630504476b15359a9f5d330cde89c84acf65819f33e7ee5d409efbf98dec",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 5863
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2020/17/5e57091e6252d216846b6b09f36327b4540e57cb33c83be74fa4e17578d39dd9/FROZEN_FACTOR.json",
+      "bytes": 9458,
+      "sha256": "7888f06a79af6cdfbfb74b86a4cee758cf2bf27f414dd83b90a8f3c8c2ebb770"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 12324,
+    "fit_cutoff": "2020-01-01",
+    "max_training_label_available_at": "2019-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RES",
+    "seed": 17,
+    "year": 2021,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2021/17/f6a0b71f7b60fff31b6c44601fac8b3f10906f45a702ad4c6dab727d7354d8c5/factor_predictions.parquet",
+      "bytes": 64831,
+      "sha256": "6679299ea919e384b26d887d30ed282cba4a558ebe007f2703cfb6b9b95bad53",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 5749
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2021/17/f6a0b71f7b60fff31b6c44601fac8b3f10906f45a702ad4c6dab727d7354d8c5/FROZEN_FACTOR.json",
+      "bytes": 7006,
+      "sha256": "d28ac084aa9075fb0781a139bea3aad3c6d1f1074435f9cb8ea0f9c14e08fce1"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 16023,
+    "fit_cutoff": "2021-01-01",
+    "max_training_label_available_at": "2020-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RES",
+    "seed": 17,
+    "year": 2022,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2022/17/75b71966f1e5f2bd4e0b0b1e48a1ebeb6ee4bb84be6041f9a7b2fcc376a1b091/factor_predictions.parquet",
+      "bytes": 63459,
+      "sha256": "1cb51da1595dde0e6f0c1ce5ef5d4fcb166769865a748677bc6080e1b330e384",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 5600
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2022/17/75b71966f1e5f2bd4e0b0b1e48a1ebeb6ee4bb84be6041f9a7b2fcc376a1b091/FROZEN_FACTOR.json",
+      "bytes": 8280,
+      "sha256": "677bc8016a07bd8f8faf25e49f74dcd6c8232173ef57fbb7b5dae275ac7dfb42"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 15612,
+    "fit_cutoff": "2022-01-01",
+    "max_training_label_available_at": "2021-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RES",
+    "seed": 17,
+    "year": 2023,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2023/17/a434e7b7e3445365b2a4d1e2dd9c4943107e41255b47d28cd68df523d1746851/factor_predictions.parquet",
+      "bytes": 49539,
+      "sha256": "7954837cd85aae0a53affc22f9bea4ae34d727054a54e96d4436e70440d643a4",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 4027
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2023/17/a434e7b7e3445365b2a4d1e2dd9c4943107e41255b47d28cd68df523d1746851/FROZEN_FACTOR.json",
+      "bytes": 6383,
+      "sha256": "3d643e7974307981c5b4aae2bd802d5c7e3f9a5fdf9d3f8bd6d4054b2aa754a5"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 17208,
+    "fit_cutoff": "2023-01-01",
+    "max_training_label_available_at": "2022-12-30 15:00:00"
+  },
+  {
+    "arm": "AG_RES",
+    "seed": 17,
+    "year": 2024,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2024/17/ab3657dac0e5eeee3f3131f79cb21081eff0fe5f921bd129549e493f5ff1966a/factor_predictions.parquet",
+      "bytes": 75054,
+      "sha256": "af80aa1ebafa63e91d412376536e07928b7459486523b1ff7063c7079ad22467",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 6792
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2024/17/ab3657dac0e5eeee3f3131f79cb21081eff0fe5f921bd129549e493f5ff1966a/FROZEN_FACTOR.json",
+      "bytes": 7272,
+      "sha256": "dca4646e06e49b33d0e62284a820fe2a41dde791b694f5f586b4ddc959cad716"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 14356,
+    "fit_cutoff": "2024-01-01",
+    "max_training_label_available_at": "2023-12-29 15:00:00"
+  },
+  {
+    "arm": "AG_RES",
+    "seed": 17,
+    "year": 2025,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2025/17/fe4965d0e44280f410346c4e171be5df9e200124e4999afcc0e1f1ed2de53a5e/factor_predictions.parquet",
+      "bytes": 73415,
+      "sha256": "ffc0d335047d285e2bcf5474b2f2ee4da7f6355a03d24024709218948f1ca775",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 6584
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2025/17/fe4965d0e44280f410346c4e171be5df9e200124e4999afcc0e1f1ed2de53a5e/FROZEN_FACTOR.json",
+      "bytes": 6826,
+      "sha256": "951ef323bbd594229a561b6ff0ff9de8cce3de5d7f937f664cf2c6a536278252"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 14526,
+    "fit_cutoff": "2025-01-01",
+    "max_training_label_available_at": "2024-12-31 15:00:00"
+  },
+  {
+    "arm": "AG_RES",
+    "seed": 17,
+    "year": 2026,
+    "factor_file": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2026/17/013f3829c1a031a6b0f319ea014ba76a3dfe86bd26ab051630fca57598909bd0/factor_predictions.parquet",
+      "bytes": 46959,
+      "sha256": "de6dfa48b872373daf2ac1d5cf14a79a232531f02cbf8010fa066dda2a74b664",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1075",
+      "rows": 3667
+    },
+    "frozen_model": {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2026/17/013f3829c1a031a6b0f319ea014ba76a3dfe86bd26ab051630fca57598909bd0/FROZEN_FACTOR.json",
+      "bytes": 7189,
+      "sha256": "870cff5132ffc9e00ae67ecb173a50eab1cc93ea0c9370f78b5d32e431e0373f"
+    },
+    "generation_steps": 100000,
+    "valid_evaluations": 14838,
+    "fit_cutoff": "2026-01-01",
+    "max_training_label_available_at": "2025-12-31 15:00:00"
+  }
+]

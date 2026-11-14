@@ -84,3 +84,20 @@ AlphaGen heartbeat AG_RAW 2026 17 75821 pool 20
 AlphaGen heartbeat AG_RAW 2026 17 76923 pool 20
 AlphaGen heartbeat AG_RAW 2026 17 77857 pool 20
 AlphaGen heartbeat AG_RAW 2026 17 78944 pool 20
+AlphaGen progress AG_RAW 2026 17 80000 expr 10829 pool 20 valIC 0.0030916875693947077
+AlphaGen heartbeat AG_RAW 2026 17 80010 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 81314 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 82505 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 83845 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 85094 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 86286 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 88012 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 89407 pool 20
+AlphaGen progress AG_RAW 2026 17 90000 expr 12461 pool 20 valIC -0.0011169133940711617
+AlphaGen heartbeat AG_RAW 2026 17 91012 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 92663 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 94209 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 96257 pool 20
+AlphaGen heartbeat AG_RAW 2026 17 98305 pool 20
+AlphaGen progress AG_RAW 2026 17 100000 expr 14391 pool 20 valIC -0.0011169133940711617
+WORKER_RESULT {"arm": "AG_RAW", "year": 2026, "seed": 17, "directory": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2026/17/5b0461bb5fb9b06ea7ff11a0cf3ba64657ce24f001b5dd6562f8802a9401dbe7", "status": "FACTOR_OOF_YEAR_COMPLETE"}

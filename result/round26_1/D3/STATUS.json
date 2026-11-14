@@ -6,7 +6,7 @@
   "TARGET_OOF_COMPLETE": false,
   "BACKTEST_COMPLETE": false,
   "EVIDENCE_COMPLETE": false,
-  "full_PPO_folds_completed": 13,
+  "full_PPO_folds_completed": 14,
   "superseded_partial_PPO_jobs": 2,
   "actual_real_candidate_rows_preflight": 5623,
   "tests": "real_entry_tests.json; baseline endpoint exact; actual early/middle/late RAW/RES fit input cutoffs; original exact metric memoization",
@@ -20,21 +20,17 @@
   "real_matched_baseline_scenarios_completed": 3,
   "candidate_backtests_completed": 0,
   "live_snapshot": "LIVE_PPO_SNAPSHOT.json",
-  "running_folds": [
-    {
-      "pid": 1545836,
-      "arm": "AG_RAW",
-      "year": 2026,
-      "seed": 17
-    }
-  ],
+  "running_folds": [],
   "complete_models_not_full_D3": true,
-  "observed_UTC": "2026-11-14T06:56:52.079850+00:00",
+  "observed_UTC": "2026-11-14T07:12:06.134504+00:00",
   "full_counterfactual_PPO_retraining": "IMPLEMENTED_AND_FROZEN_NOT_YET_RUN",
   "candidate_backtest_scenarios_executed": 0,
   "actual_no_factor_head_configs": 8,
   "actual_no_factor_tree_models_current_configs": 40,
   "primary_baseline": "MATCHED_REPAIRED_NO_FACTOR_BASELINE",
   "prediction_signal_end": "2026-07-01",
-  "mark_to_market_end": "2026-07-24"
+  "mark_to_market_end": "2026-07-24",
+  "generation_seed17_complete": true,
+  "full_counterfactual_PPO_status": "RUNNING_NOT_PASSED",
+  "full_counterfactual_PPO_completed": 0
 }
