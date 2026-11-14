@@ -1,0 +1,32 @@
+{
+  "status": "FROZEN_BEFORE_COUNTERFACTUAL_EXECUTION",
+  "purpose": "Required actual-model temporal counterfactuals, not additional alpha search",
+  "models": {
+    "arms": [
+      "AG_RAW",
+      "AG_RES"
+    ],
+    "outer_years": [
+      2020,
+      2023,
+      2026
+    ],
+    "seed": 17,
+    "diagnostic_model_count": 6
+  },
+  "entry": "actual alphagen_train.run_fold; unchanged original LSTMSharedNet MaskablePPO and MseAlphaPool",
+  "budget_per_diagnostic": "100000 environment steps or20000 source-evaluated expressions, first budget reached; same architecture, parameters and seeds as corresponding original",
+  "intervention": "At each actual training/validation/refit cutoff, delete target values dated at/after that cutoff and permute values of earlier rows whose targets are not yet mature; independent local RNG171717 so original global policy RNG is untouched. If an immature singleton/all-equal permutation is unchanged, corrupt it by1e6, explicitly diagnostic only. Label maturity timestamps unchanged. Market data fixed.",
+  "required_equality": [
+    "actual train/validation post-mask target and market tensor identities",
+    "selected checkpoint and all frozen ASTs",
+    "refitted weights",
+    "all complete prediction keys and values, exactly"
+  ],
+  "cache": "separate immutable namespace; wrapper source, diagnostic protocol, baseline model/contract and original full fingerprint bound; no original model/checkpoint overwritten; complete cache checks and actual per-invocation vs reused counts reported",
+  "sequence": "After original seed17 all years complete and before its Add path, at most requested1/2 CPU learners. Shared preprocessing serialized. Then resume fixed42/73 sequence.",
+  "not_covered": "Full vendor revision reconstruction or full market-bar counterfactual PPO retraining; real historical input prefix perturbations remain separately scoped.",
+  "performance_selection": "None; no counterfactual factor enters economic trial and no budget extended due to poor results",
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false
+}

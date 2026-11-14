@@ -56,7 +56,13 @@ def fit_head(arm,seed_label,head,year,factor_path,mode,remove=None,*,cache_names
     out['score']=pd.concat(ranks,axis=1).mean(axis=1);out['fit_cutoff']=pd.Timestamp(f'{year}-01-01');out['max_training_label_available_at']=a.label_available_at.max();out.to_parquet(dest/'predictions.parquet',index=False);(dest/'MODEL_REGISTRY.json').write_text(json.dumps({'parameters':params,'models':models,'input_fingerprint':fp},ensure_ascii=False,indent=2))
  final=cache/fp;return pd.read_parquet(final/'predictions.parquet'),final,fp,cached
 
-def run_models(banks):
+def run_models(banks,*,jobs=None):
+ if jobs is None:
+  import sys
+  jobs=int(sys.argv[sys.argv.index('--jobs')+1]) if '--jobs' in sys.argv else 1
+ if any(str(seed)=='17' for _,seed in banks):
+  from core.round26_1.generation_counterfactual import ensure as ensure_full_PPO_counterfactuals
+  ensure_full_PPO_counterfactuals(jobs=jobs)
  from core.round7.contract import FIVE_HEAD,TEN_HEAD
  from core.round23_3.contract import E0
  from core.round26_1.factor_models import canonical_fuse as fuse_heads

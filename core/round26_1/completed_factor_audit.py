@@ -8,7 +8,7 @@ from core.round26_1.alphagen_data import ast_load,guard
 from core.research_integrity_v5.cache import sha
 
 
-def audit(directory):
+def audit(directory,*,output_root=None):
     directory=Path(directory).resolve()
     s=json.loads((directory/'FROZEN_FACTOR.json').read_text())
     complete=json.loads((directory/'COMPLETE.json').read_text())
@@ -40,7 +40,7 @@ def audit(directory):
             else:invalid+=1
     assert (attempts,source_evaluated,invalid)==(s['attempted_expressions'],s['valid_evaluations'],s['invalid_expressions'])
     result={'status':'PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS','arm':arm,'seed':seed,'outer_year':year,'source_directory':str(directory),'env_steps':s['generation_env_steps'],'source_evaluation_calls_including_duplicates_and_source_rejections':source_evaluated,'unique_source_evaluated_ASTs':s['unique_valid_expressions'],'invalid_attempts_retained':invalid,'source_pool_admissible_eval_counter':last_source_pool_eval,'pool_size':len(s['ASTs']),'selected_validation_step':selected['env_steps'],'selected_validation_IC_not_strategy_performance':selected['validation_pool_IC'],'prediction_rows':len(p),'prediction_dates':p.trade_date.nunique(),'missing_factor_rows':int(p.z_AG.isna().sum()),'prediction_keys_exact_D_known_domain':True,'maturity_and_AST_scope_pass':True,'all_selection_checkpoints_compared':len(checkpoints),'last_fully_optimized_rollout':s['last_fully_optimized_rollout'],'unoptimized_environment_tail_steps':s['generation_env_steps']-s['last_fully_optimized_rollout'],'target_outer_return_used_for_selection':False,'candidate_backtest_complete':False,'remaining':'nested years, Five/Ten/Both Add, real backtest and conditional evidence; full counterfactual PPO retraining not run'}
-    dest=R/'generation_audits'/arm/str(seed);dest.mkdir(parents=True,exist_ok=True)
+    dest=(Path(output_root) if output_root is not None else R/'generation_audits'/arm/str(seed));dest.mkdir(parents=True,exist_ok=True)
     (dest/f'{year}.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
     return result
 if __name__=='__main__':

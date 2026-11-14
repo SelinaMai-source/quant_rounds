@@ -86,7 +86,7 @@ def run(jobs=1,publish=False):
   if not all_complete:
    (R/'STATUS.json').write_text(json.dumps({'status':'PARTIAL_GENERATION','IMPLEMENTED':True,'UNIT_TESTED':True,'TARGET_OOF_COMPLETE':False,'BACKTEST_COMPLETE':False,'EVIDENCE_COMPLETE':False,'unfinished':required,'later_seeds_not_started':'seed17/previous seed must finish its complete path first'},ensure_ascii=False,indent=2));return
   from core.round26_1.factor_models import build_factor_banks,run_models
-  banks=build_factor_banks(pd.DataFrame(registry),seeds=(seed,),include_composite=False);run_models(banks)
+  banks=build_factor_banks(pd.DataFrame(registry),seeds=(seed,),include_composite=False);run_models(banks,jobs=jobs)
   from core.round26_1.factor_evidence import report
   report(registry,stage_seed=seed)
   if publish:
@@ -94,7 +94,7 @@ def run(jobs=1,publish=False):
    push('round26_1',f'D3 checkpoint: complete real AlphaGen seed{seed} OOF, Add and evidence')
  # Three-seed combination uses prior-generation training scales, never winner selection.
  from core.round26_1.factor_models import build_factor_banks,run_models
- banks=build_factor_banks(pd.DataFrame(registry),seeds=(17,42,73),include_composite=True);run_models({key:path for key,path in banks.items() if key[1]=='EQ3'})
+ banks=build_factor_banks(pd.DataFrame(registry),seeds=(17,42,73),include_composite=True);run_models({key:path for key,path in banks.items() if key[1]=='EQ3'},jobs=jobs)
  from core.round26_1.factor_evidence import report
  report(registry,stage_seed='EQ3')
  if publish:
