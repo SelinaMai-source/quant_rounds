@@ -8,6 +8,8 @@ from core.research_integrity_v5.cache import identity,sha
 from core.round26_1.alphagen_data import ast_load,guard
 
 def report(registry,stage_seed):
+ from core.round26_1.counterfactual_artifacts import export_completed
+ export_completed()
  r=evaluate(R,baseline='AG_A0');r['scope']='MATCHED_2023_NESTED_FACTOR_OOF_DEVELOPMENT';r['initial_cash']=300000.;r['window_start']='2023-01-03';r['window_end']='2026-07-24';r.to_csv(R/'all_results.csv',index=False);reg=pd.DataFrame(registry);complete=reg.loc[reg.status.eq('FACTOR_OOF_YEAR_COMPLETE')];pit=[];expressions=0;steps=0
  from core.round26_1.completed_factor_audit import audit as audit_completed_generation
  for z in complete.itertuples(index=False):

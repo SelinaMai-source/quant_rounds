@@ -1,0 +1,35 @@
+{
+  "status": "PARTIAL_REAL_RUN_PREFIX_CHECK",
+  "cases": [
+    {
+      "arm": "AG_RAW",
+      "year": 2020,
+      "train_post_mask_identity_exact": true,
+      "validation_post_mask_identity_exact": true,
+      "completed_prefix_checkpoints": [
+        {
+          "checkpoint": "010000.json",
+          "complete_checkpoint_record_exact": true
+        }
+      ],
+      "scope": "Observed actual full-record checkpoint prefixes only. Full100000-step test NOT_COMPLETE, not EVIDENCE_COMPLETE."
+    },
+    {
+      "arm": "AG_RES",
+      "year": 2020,
+      "train_post_mask_identity_exact": true,
+      "validation_post_mask_identity_exact": true,
+      "completed_prefix_checkpoints": [
+        {
+          "checkpoint": "010000.json",
+          "complete_checkpoint_record_exact": true
+        },
+        {
+          "checkpoint": "020000.json",
+          "complete_checkpoint_record_exact": true
+        }
+      ],
+      "scope": "Observed actual full-record checkpoint prefixes only. Full100000-step test NOT_COMPLETE, not EVIDENCE_COMPLETE."
+    }
+  ]
+}

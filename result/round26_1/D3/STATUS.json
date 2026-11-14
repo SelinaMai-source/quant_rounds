@@ -31,6 +31,6 @@
   "prediction_signal_end": "2026-07-01",
   "mark_to_market_end": "2026-07-24",
   "generation_seed17_complete": true,
-  "full_counterfactual_PPO_status": "RUNNING_NOT_PASSED",
-  "full_counterfactual_PPO_completed": 0
+  "full_counterfactual_PPO_status": "ONE_PASSED_FIVE_NOT_COMPLETE",
+  "full_counterfactual_PPO_completed": 1
 }
