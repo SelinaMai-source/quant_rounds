@@ -26,17 +26,29 @@ def run(arm,year,baseline):
         actual=(~(before.eq(changed[column])|(before.isna()&changed[column].isna()))).sum()
         original_init(self,domain,changed,column,cutoff)
         interventions.append({'domain_start':domain.identity['start'],'domain_end':domain.identity['end'],'cutoff':str(cutoff),'target_column':column,'future_target_values_deleted':int((future&before.notna()).sum()),'immature_rows_selected':int(immature.sum()),'actual_changed_target_rows':int(actual),'post_mask_identity':self.identity})
+        training.atomic_json(attempt_directory/f'intervention_{len(interventions):02d}.json',interventions[-1])
     def contract(parameters,inputs,*args,**kwargs):
         parameters=dict(parameters);parameters['full_counterfactual_test']=contract_metadata
         return original_contract(parameters,inputs,*args,**kwargs)
     previous_result=json.loads((dest/'RESULT.json').read_text()) if (dest/'RESULT.json').exists() else None
     completed_before={p.parent.resolve() for p in (B/'counterfactual_generators'/'alphagen_runs'/arm/str(year)/'17').glob('*/COMPLETE.json')}
-    stamp=str(time.time_ns())
+    stamp=str(time.time_ns());attempt_directory=dest/'attempts'/stamp
+    training.atomic_json(attempt_directory/'contract_metadata.json',contract_metadata)
     with measured(dest/f'whole_worker_{stamp}_RESOURCES.json'):
         with patch.object(training.MatureCalculator,'__init__',init),patch.object(training,'full_contract',contract),patch.object(training,'B',B/'counterfactual_generators'):
             directory=training.run_fold(arm,year,17,resume=True)
+        training.atomic_json(attempt_directory/'resolved_directory.json',{'directory':str(directory)})
         cache_hit=directory.resolve() in completed_before
-        if cache_hit and previous_result and previous_result['diagnostic']==str(directory):interventions=previous_result['interventions']
+        if cache_hit:
+            if previous_result and previous_result['diagnostic']==str(directory):interventions=previous_result['interventions']
+            if len(interventions)<3:
+                for history in sorted((dest/'attempts').iterdir(),reverse=True):
+                    meta=history/'contract_metadata.json';resolved=history/'resolved_directory.json'
+                    if not meta.exists() or not resolved.exists():continue
+                    if json.loads(meta.read_text())!=contract_metadata or json.loads(resolved.read_text())['directory']!=str(directory):continue
+                    saved=[json.loads(p.read_text()) for p in sorted(history.glob('intervention_[0-9][0-9].json'))]
+                    if len(saved)>=3:interventions=saved;break
+        assert len(interventions)>=3,'Training, validation and refit intervention provenance required; cannot infer missing history from a cache hit'
         assert (directory/'COMPLETE.json').exists(),'Full diagnostic PPO generation did not complete'
         before=json.loads((baseline/'FROZEN_FACTOR.json').read_text());after=json.loads((directory/'FROZEN_FACTOR.json').read_text())
         assert before['ASTs']==after['ASTs'],'ASTs changed under unavailable targets'
