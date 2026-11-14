@@ -1,0 +1,16 @@
+{
+  "status": "MATCHED_REPAIRED_NO_FACTOR_BASELINE_REQUIRED",
+  "original_v5_is_unchanged": true,
+  "old_window_prediction_rows": 16764,
+  "matched_window_prediction_rows": 17419,
+  "different_score_or_key_rows": 655,
+  "same_original_feature_order_and_parameters": true,
+  "no_z_AG_input": true,
+  "head_configurations": 8,
+  "actual_tree_files_current_configs": 40,
+  "primary_comparison": "matched no-factor learner replay; old original window baseline retained in BASELINE_PREFLIGHT stage",
+  "factor_input_to_baseline": false,
+  "no_placeholder_factor_created": true,
+  "optional_factor_manifest": null,
+  "no_decision_based_on_candidate_economic_results": true
+}

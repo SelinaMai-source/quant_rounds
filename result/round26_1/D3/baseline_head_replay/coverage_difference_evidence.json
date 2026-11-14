@@ -1,0 +1,19 @@
+{
+  "source": {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/baseline_head_replay/legacy_vs_matched_fused_predictions.parquet",
+    "bytes": 208146,
+    "sha256": "5cdfba64a4116a5a7d85bce643678201459392f7e6de0251edbd02f93ed9433d",
+    "schema": "signal_date: timestamp[ns]\ninstrument_id: string\nscore_legacy: double\nscore_matched: double\n_merge: dictionary<values=string, indices=int8, ordered=0>\ndifferent_score_or_key: bool\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 890",
+    "rows": 17419
+  },
+  "old_only_rows": 0,
+  "new_only_rows": 655,
+  "common_rows": 16764,
+  "changed_scores_on_common_keys": 0,
+  "added_date_min": "2026-06-02 00:00:00",
+  "added_date_max": "2026-07-01 00:00:00",
+  "added_signal_dates": 21,
+  "old_date_max": "2026-06-01 00:00:00",
+  "new_date_max": "2026-07-01 00:00:00",
+  "reason_scope": "Observed prediction-coverage difference; not evidence that old labels leaked. No difference on common keys if count0."
+}
