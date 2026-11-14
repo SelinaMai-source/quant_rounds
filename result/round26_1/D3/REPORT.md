@@ -53,3 +53,5 @@ PRODUCTION_CONFIG_CHANGED=FALSE
 完整PPO时间反事实检查点：RAW2020已完成100000环境步，AST、重估权重与完整预测同原运行精确一致；其余五项尚未完成。实际模型、原预测、配置、全部表达式尝试和大checkpoint精确路径/大小/SHA见generation_counterfactual_tests/AG_RAW/2020/completed_artifacts/manifest.json。未将该诊断作为新增Alpha或收益试验。
 
 完整PPO时间反事实最新检查点：RAW2020和RES2020均完成完整预算并通过AST、重估权重及全部预测精确一致性验证，当前2/6，其余四项未完成。两项诊断工件和大checkpoint内容身份见generation_counterfactual_tests各自completed_artifacts/manifest.json；无新增经济试验。
+
+完整PPO时间反事实最新检查点：RAW2020、RES2020、RAW2023均完成完整预算并通过AST、重估权重和全部预测精确一致性验证，当前3/6；RES2023、RAW2026正在运行，RES2026未完成。三项已完成诊断工件见各自completed_artifacts/manifest.json。仍无新增经济试验。
