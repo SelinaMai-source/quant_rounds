@@ -24,5 +24,25 @@
   "all_seeds_equally_reported_no_best_seed": true,
   "completed_checkpoint_seed": 42,
   "CURRENT_BASELINE_CHANGED": false,
-  "PRODUCTION_CONFIG_CHANGED": false
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "running_folds": [
+    {
+      "pid": 1919131,
+      "arm": "AG_RAW",
+      "year": 2020,
+      "seed": 73
+    },
+    {
+      "pid": 1919799,
+      "arm": "AG_RES",
+      "year": 2020,
+      "seed": 73
+    }
+  ],
+  "full_PPO_folds_completed": 28,
+  "candidate_backtest_scenarios_executed": 22,
+  "observed_UTC": "2026-11-14T19:08:36.835012+00:00",
+  "effective_expression_evaluations_semantics": "source evaluation calls including duplicates and source pool rejections; unique ASTs and invalid attempts separate",
+  "generation_count_scope": "Completed current original models only; incomplete/failed attempts are retained separately",
+  "generation_progress_does_not_complete_economic_path": true
 }
