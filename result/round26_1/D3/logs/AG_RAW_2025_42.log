@@ -9,3 +9,68 @@ See the migration guide at https://gymnasium.farama.org/introduction/migration_g
 AlphaGen heartbeat AG_RAW 2025 42 8109 pool 20
 AlphaGen progress AG_RAW 2025 42 10000 expr 71 pool 20 valIC 0.011396835558116436
 AlphaGen heartbeat AG_RAW 2025 42 12245 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 14917 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 17223 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 18766 pool 20
+AlphaGen progress AG_RAW 2025 42 20000 expr 506 pool 20 valIC 0.050058797001838684
+AlphaGen heartbeat AG_RAW 2025 42 20139 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 21106 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 22343 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 23449 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 24577 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 25793 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 26625 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 27618 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 28673 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 29780 pool 20
+AlphaGen progress AG_RAW 2025 42 30000 expr 1792 pool 20 valIC 0.060975268483161926
+AlphaGen heartbeat AG_RAW 2025 42 30789 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 32041 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 33104 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 34232 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 35370 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 36704 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 37875 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 39008 pool 20
+AlphaGen progress AG_RAW 2025 42 40000 expr 3591 pool 20 valIC 0.05220295861363411
+AlphaGen heartbeat AG_RAW 2025 42 40342 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 41619 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 43009 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 44515 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 45847 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 47513 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 48904 pool 20
+AlphaGen progress AG_RAW 2025 42 50000 expr 5647 pool 20 valIC 0.06392370909452438
+AlphaGen heartbeat AG_RAW 2025 42 50180 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 51444 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 52759 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 53953 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 55322 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 57207 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 58755 pool 20
+AlphaGen progress AG_RAW 2025 42 60000 expr 7763 pool 20 valIC 0.06244701147079468
+AlphaGen heartbeat AG_RAW 2025 42 60499 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 62286 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 64246 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 66078 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 67768 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 69633 pool 20
+AlphaGen progress AG_RAW 2025 42 70000 expr 9854 pool 20 valIC 0.06244701147079468
+AlphaGen heartbeat AG_RAW 2025 42 71681 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 73729 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 75777 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 77484 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 79344 pool 20
+AlphaGen progress AG_RAW 2025 42 80000 expr 12169 pool 20 valIC 0.06372090429067612
+AlphaGen heartbeat AG_RAW 2025 42 81108 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 83398 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 85923 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 88230 pool 20
+AlphaGen progress AG_RAW 2025 42 90000 expr 14769 pool 20 valIC 0.06114957109093666
+AlphaGen heartbeat AG_RAW 2025 42 90951 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 93364 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 94815 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 96586 pool 20
+AlphaGen heartbeat AG_RAW 2025 42 98736 pool 20
+AlphaGen progress AG_RAW 2025 42 100000 expr 17275 pool 20 valIC 0.048639338463544846
+WORKER_RESULT {"arm": "AG_RAW", "year": 2025, "seed": 42, "directory": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2025/42/a962830ae237d470239d599ee99bb59fce35eeef634fdb83f51361475106de70", "status": "FACTOR_OOF_YEAR_COMPLETE"}
