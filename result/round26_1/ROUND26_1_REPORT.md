@@ -1,15 +1,8 @@
-# Round26.1
+# Round26.1执行状态
 
-D0已执行，D3源码与真实数据集成测试已完成；当前完整PPO/嵌套OOF/Add未完成，详见D3/REPORT.md与STATUS.json。D5尚未执行。
+D0已执行（覆盖和限制见D0报告）。D3运行中，尚未完成：3/42个完整原始PPO生成折，候选Add回测0；匹配原生基准3种成本情景已执行。D5尚未实施/运行，不属于外部数据阻断。
+
+已完成生成模型和精确资源见D3/completed_generation_models.csv；各模型冻结因子和完整预测见D3/completed_factors，审计见D3/generation_audits。D3/REPORT.md列出实际成绩范围及仍缺证据，STATUS/registry保留失败或未完成状态。当前没有已验收的v5替代方案。
 
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE
-
-
-匹配原生基准已实际执行S0/S1/S2（2023-01-03起独立300000初资，保留原overlay预热）：S0 CAGR1.091193 / Sharpe2.652736 / MaxDD-0.232264 /469笔；S1 CAGR1.035140，S2 CAGR0.982186。精确结果见matched_baseline_results.csv、账本风险表与各运行manifest。这些不是AlphaGen候选成绩。当前完整PPO折0，两个原始PPO在真实A股运行；目标OOF、候选Add回测和完整证据仍未完成。
-
-
-首个完整真实生成折：AG_RAW/2020/seed17已完成100000环境步；15064次尝试、15056次原求值调用（含重复和原池拒绝）、4449个不同有效求值AST、8次异常尝试全部保留。原池准入eval计数6829。按验证IC选30000步检查点，冻结20条AST并仅在2020前成熟历史重估权重；最大训练成熟时间2019-12-31 15:00。对2020全部5863条D已知候选、243天完成预测，缺值0；10个检查点选择、预算、AST、成熟时间和工件哈希均实测核验。PPO完整优化至98304步，末尾1696环境步未进行PPO优化，分别计数。完整生成折1/42，候选Add回测0；这些事实不等于D3完成，也不是策略收益。原生成本体wall3436.065秒，CPU user5180.627/system64.606秒，采样RSS峰3.656GB；含加载的进程生命周期峰值见资源表。RES同折仍运行。
-
-
-AG_RES/2020/seed17也已完成100000环境步：12324次原求值调用，6268个不同有效求值AST，13次异常保留，原池准入计数7895；冻结20条AST，对同样5863条候选/243天完整预测、缺值0，全部工件审计通过。RES原生成本体wall4349.049秒，CPU user6449.668/system124.289秒，采样RSS峰4.097GB。当前2/42个生成折完成，2021年两臂已启动，候选Add回测0；未用Outer2020收益选择公式，也不将验证IC当策略成绩。精确进度与资源见completed_generation_models.csv及generation_audits。
