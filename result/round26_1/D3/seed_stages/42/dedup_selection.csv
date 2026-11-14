@@ -1,0 +1,17 @@
+arm,seed,head,outer_year,most_correlated_old_feature,rho,threshold,high_correlation,selection_scope,rows,fit_cutoff
+AG_RAW,42,five,2023,g0_amount_log,0.6192244507085836,0.6,True,prior3y original base-complete mature rows only,16180,2023-01-01
+AG_RAW,42,five,2024,g0_amount_log,0.5311811132945482,0.6,False,prior3y original base-complete mature rows only,14489,2024-01-01
+AG_RAW,42,five,2025,g0_amount_log,0.5223959583476138,0.6,False,prior3y original base-complete mature rows only,14942,2025-01-01
+AG_RAW,42,five,2026,g0_amount_log,0.37201841517436096,0.6,False,prior3y original base-complete mature rows only,15774,2026-01-01
+AG_RAW,42,ten,2023,h1_consistent_buy_ratio,0.44831418207817575,0.6,False,prior3y original base-complete mature rows only,16422,2023-01-01
+AG_RAW,42,ten,2024,h1_consistent_buy_ratio,0.35840946064252505,0.6,False,prior3y original base-complete mature rows only,14644,2024-01-01
+AG_RAW,42,ten,2025,fb_close_seal_streak_norm,-0.30477682937568007,0.6,False,prior3y original base-complete mature rows only,15168,2025-01-01
+AG_RAW,42,ten,2026,fb_close_seal_streak_norm,-0.3122447172647982,0.6,False,prior3y original base-complete mature rows only,15997,2026-01-01
+AG_RES,42,five,2023,g0_amount_log,0.5202170736578153,0.6,False,prior3y original base-complete mature rows only,16180,2023-01-01
+AG_RES,42,five,2024,g0_amount_log,0.40808707748793593,0.6,False,prior3y original base-complete mature rows only,14489,2024-01-01
+AG_RES,42,five,2025,g0_amount_log,0.3007153761579308,0.6,False,prior3y original base-complete mature rows only,14942,2025-01-01
+AG_RES,42,five,2026,g1_ret_5,-0.2594481887288679,0.6,False,prior3y original base-complete mature rows only,15774,2026-01-01
+AG_RES,42,ten,2023,h1_consistent_buy_ratio,0.3407366260451166,0.6,False,prior3y original base-complete mature rows only,16422,2023-01-01
+AG_RES,42,ten,2024,fb_close_seal_streak_norm,-0.3104872208696767,0.6,False,prior3y original base-complete mature rows only,14644,2024-01-01
+AG_RES,42,ten,2025,fb_close_seal_streak_norm,-0.23690751123506715,0.6,False,prior3y original base-complete mature rows only,15168,2025-01-01
+AG_RES,42,ten,2026,g1_ret_5,-0.25820280974710724,0.6,False,prior3y original base-complete mature rows only,15997,2026-01-01
