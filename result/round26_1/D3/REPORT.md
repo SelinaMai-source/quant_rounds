@@ -51,3 +51,5 @@ PRODUCTION_CONFIG_CHANGED=FALSE
 预测覆盖与控制回放：预测候选清单截至2026-07-01，2026-07-24是估值和退出尾部，并非新增预测覆盖。原v5冻结预测截至2026-06-01；真实无因子控制重放新增655个键，公共16764键分数完全一致。主比较采用匹配覆盖的无因子控制，详见CANDIDATE_COVERAGE_CONTRACT.md及baseline_head_replay/coverage_difference_evidence.json；覆盖修复不算因子收益。实际控制为8个head/year配置、40棵XGB模型和3个原生成本情景。
 
 完整PPO时间反事实检查点：RAW2020已完成100000环境步，AST、重估权重与完整预测同原运行精确一致；其余五项尚未完成。实际模型、原预测、配置、全部表达式尝试和大checkpoint精确路径/大小/SHA见generation_counterfactual_tests/AG_RAW/2020/completed_artifacts/manifest.json。未将该诊断作为新增Alpha或收益试验。
+
+完整PPO时间反事实最新检查点：RAW2020和RES2020均完成完整预算并通过AST、重估权重及全部预测精确一致性验证，当前2/6，其余四项未完成。两项诊断工件和大checkpoint内容身份见generation_counterfactual_tests各自completed_artifacts/manifest.json；无新增经济试验。
