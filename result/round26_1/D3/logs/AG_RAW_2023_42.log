@@ -9,3 +9,62 @@ AlphaGen heartbeat AG_RAW 2023 42 8193 pool 20
   def _apply(self, operand: Tensor) -> Tensor: return operand.var(dim=-1)
 AlphaGen progress AG_RAW 2023 42 10000 expr 49 pool 20 valIC 0.04024975746870041
 AlphaGen heartbeat AG_RAW 2023 42 14337 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 18433 pool 20
+AlphaGen progress AG_RAW 2023 42 20000 expr 187 pool 20 valIC 0.041185714304447174
+AlphaGen heartbeat AG_RAW 2023 42 21420 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 23405 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 25125 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 26786 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 28673 pool 20
+AlphaGen progress AG_RAW 2023 42 30000 expr 750 pool 20 valIC 0.035238806158304214
+AlphaGen heartbeat AG_RAW 2023 42 30644 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 32002 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 33274 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 34645 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 35601 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 36820 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 38274 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 39698 pool 20
+AlphaGen progress AG_RAW 2023 42 40000 expr 2136 pool 20 valIC 0.03532033786177635
+AlphaGen heartbeat AG_RAW 2023 42 41454 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 43564 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 45941 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 47666 pool 20
+AlphaGen progress AG_RAW 2023 42 50000 expr 4220 pool 20 valIC 0.027929997071623802
+AlphaGen heartbeat AG_RAW 2023 42 50348 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 53249 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 56029 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 59245 pool 20
+AlphaGen progress AG_RAW 2023 42 60000 expr 6869 pool 20 valIC 0.043627072125673294
+AlphaGen heartbeat AG_RAW 2023 42 60689 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 62888 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 64488 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 66970 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 69119 pool 20
+AlphaGen progress AG_RAW 2023 42 70000 expr 9701 pool 20 valIC 0.053462445735931396
+AlphaGen heartbeat AG_RAW 2023 42 70632 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 72321 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 73731 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 74944 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 76023 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 77411 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 78845 pool 20
+AlphaGen progress AG_RAW 2023 42 80000 expr 12082 pool 20 valIC 0.03965888172388077
+AlphaGen heartbeat AG_RAW 2023 42 80652 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 81966 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 83488 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 85117 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 86375 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 87719 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 88852 pool 20
+AlphaGen progress AG_RAW 2023 42 90000 expr 14242 pool 20 valIC 0.04280000180006027
+AlphaGen heartbeat AG_RAW 2023 42 90113 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 91442 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 92591 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 93921 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 95425 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 96737 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 98350 pool 20
+AlphaGen heartbeat AG_RAW 2023 42 99885 pool 20
+AlphaGen progress AG_RAW 2023 42 100000 expr 16531 pool 20 valIC 0.045750901103019714
+WORKER_RESULT {"arm": "AG_RAW", "year": 2023, "seed": 42, "directory": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2023/42/30327a22f4ae2a87ad246b8eabc420a6ed9c4929c1e2e1defff32f6edb3e308a", "status": "FACTOR_OOF_YEAR_COMPLETE"}

@@ -7,3 +7,70 @@ See the migration guide at https://gymnasium.farama.org/introduction/migration_g
 AlphaGen heartbeat AG_RES 2023 42 7622 pool 20
 /data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/AlphaGen/alphagen/data/expression.py:383: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/ReduceOps.cpp:1927.)
   def _apply(self, operand: Tensor) -> Tensor: return operand.var(dim=-1)
+AlphaGen progress AG_RES 2023 42 10000 expr 75 pool 20 valIC -0.0010659637628123164
+AlphaGen heartbeat AG_RES 2023 42 10991 pool 20
+AlphaGen heartbeat AG_RES 2023 42 14530 pool 20
+AlphaGen heartbeat AG_RES 2023 42 17192 pool 20
+AlphaGen heartbeat AG_RES 2023 42 19472 pool 20
+AlphaGen progress AG_RES 2023 42 20000 expr 337 pool 20 valIC 0.009825097396969795
+AlphaGen heartbeat AG_RES 2023 42 21089 pool 20
+AlphaGen heartbeat AG_RES 2023 42 22529 pool 20
+AlphaGen heartbeat AG_RES 2023 42 23905 pool 20
+AlphaGen heartbeat AG_RES 2023 42 25148 pool 20
+AlphaGen heartbeat AG_RES 2023 42 26274 pool 20
+AlphaGen heartbeat AG_RES 2023 42 27335 pool 20
+AlphaGen heartbeat AG_RES 2023 42 28673 pool 20
+AlphaGen heartbeat AG_RES 2023 42 29674 pool 20
+AlphaGen progress AG_RES 2023 42 30000 expr 1265 pool 20 valIC 0.03810596838593483
+AlphaGen heartbeat AG_RES 2023 42 30616 pool 20
+AlphaGen heartbeat AG_RES 2023 42 31489 pool 20
+AlphaGen heartbeat AG_RES 2023 42 32599 pool 20
+AlphaGen heartbeat AG_RES 2023 42 33583 pool 20
+AlphaGen heartbeat AG_RES 2023 42 34542 pool 20
+AlphaGen heartbeat AG_RES 2023 42 35408 pool 20
+AlphaGen heartbeat AG_RES 2023 42 36520 pool 20
+AlphaGen heartbeat AG_RES 2023 42 37392 pool 20
+AlphaGen heartbeat AG_RES 2023 42 38808 pool 20
+AlphaGen progress AG_RES 2023 42 40000 expr 3151 pool 20 valIC 0.04301502928137779
+AlphaGen heartbeat AG_RES 2023 42 40250 pool 20
+AlphaGen heartbeat AG_RES 2023 42 41535 pool 20
+AlphaGen heartbeat AG_RES 2023 42 42634 pool 20
+AlphaGen heartbeat AG_RES 2023 42 43789 pool 20
+AlphaGen heartbeat AG_RES 2023 42 45057 pool 20
+AlphaGen heartbeat AG_RES 2023 42 46700 pool 20
+AlphaGen heartbeat AG_RES 2023 42 48057 pool 20
+AlphaGen heartbeat AG_RES 2023 42 49663 pool 20
+AlphaGen progress AG_RES 2023 42 50000 expr 5601 pool 20 valIC 0.04252809286117554
+AlphaGen heartbeat AG_RES 2023 42 51664 pool 20
+AlphaGen heartbeat AG_RES 2023 42 54320 pool 20
+AlphaGen heartbeat AG_RES 2023 42 57494 pool 20
+AlphaGen progress AG_RES 2023 42 60000 expr 8209 pool 20 valIC 0.04252809286117554
+AlphaGen heartbeat AG_RES 2023 42 60839 pool 20
+AlphaGen heartbeat AG_RES 2023 42 63492 pool 20
+AlphaGen heartbeat AG_RES 2023 42 66001 pool 20
+AlphaGen heartbeat AG_RES 2023 42 68241 pool 20
+AlphaGen heartbeat AG_RES 2023 42 69953 pool 20
+AlphaGen progress AG_RES 2023 42 70000 expr 10828 pool 20 valIC 0.038508154451847076
+AlphaGen heartbeat AG_RES 2023 42 71446 pool 20
+AlphaGen heartbeat AG_RES 2023 42 72796 pool 20
+AlphaGen heartbeat AG_RES 2023 42 74492 pool 20
+AlphaGen heartbeat AG_RES 2023 42 75777 pool 20
+AlphaGen heartbeat AG_RES 2023 42 77417 pool 20
+AlphaGen heartbeat AG_RES 2023 42 78656 pool 20
+AlphaGen progress AG_RES 2023 42 80000 expr 13172 pool 20 valIC 0.037797410041093826
+AlphaGen heartbeat AG_RES 2023 42 80418 pool 20
+AlphaGen heartbeat AG_RES 2023 42 82266 pool 20
+AlphaGen heartbeat AG_RES 2023 42 83992 pool 20
+AlphaGen heartbeat AG_RES 2023 42 86213 pool 20
+AlphaGen heartbeat AG_RES 2023 42 88510 pool 20
+AlphaGen progress AG_RES 2023 42 90000 expr 15572 pool 20 valIC 0.033503733575344086
+AlphaGen heartbeat AG_RES 2023 42 90113 pool 20
+AlphaGen heartbeat AG_RES 2023 42 91883 pool 20
+AlphaGen heartbeat AG_RES 2023 42 93329 pool 20
+AlphaGen heartbeat AG_RES 2023 42 94793 pool 20
+AlphaGen heartbeat AG_RES 2023 42 96053 pool 20
+AlphaGen heartbeat AG_RES 2023 42 97128 pool 20
+AlphaGen heartbeat AG_RES 2023 42 98335 pool 20
+AlphaGen heartbeat AG_RES 2023 42 99886 pool 20
+AlphaGen progress AG_RES 2023 42 100000 expr 17915 pool 20 valIC 0.035863667726516724
+WORKER_RESULT {"arm": "AG_RES", "year": 2023, "seed": 42, "directory": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2023/42/468f3bc77e37af00bcdb0837daee3e3bc884b5a5d54fef0261fcd08df4552991", "status": "FACTOR_OOF_YEAR_COMPLETE"}
