@@ -7,12 +7,6 @@ D0已执行（覆盖和限制见D0报告）。D3运行中，尚未完成：14/42
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE
 
-阶段检查点：seed17的RAW/RES共14个年度生成折已完整生成并审计；全研究仍为14/42，尚无候选Add回测。六个完整PPO时间反事实现已启动2020年两臂，未完成时不得标PASS。真实干预记录见generation_counterfactual_tests/*/*/attempts。
+当前完整PPO时间反事实状态：RAW/RES的2020、2023共四项已完成完整预算并通过AST、重估权重及全部预测精确一致性验证；2026两项正在运行，当前4/6。模型、预测、全部表达式尝试及大checkpoint精确路径/大小/SHA见各自generation_counterfactual_tests/*/*/completed_artifacts/manifest.json。该诊断不新增经济试验。
 
-预测覆盖与控制回放：预测候选清单截至2026-07-01，2026-07-24是估值和退出尾部，并非新增预测覆盖。原v5冻结预测截至2026-06-01；真实无因子控制重放新增655个键，公共16764键分数完全一致。主比较采用匹配覆盖的无因子控制，详见CANDIDATE_COVERAGE_CONTRACT.md及baseline_head_replay/coverage_difference_evidence.json；覆盖修复不算因子收益。实际控制为8个head/year配置、40棵XGB模型和3个原生成本情景。
-
-完整PPO时间反事实检查点：RAW2020已完成100000环境步，AST、重估权重与完整预测同原运行精确一致；其余五项尚未完成。实际模型、原预测、配置、全部表达式尝试和大checkpoint精确路径/大小/SHA见generation_counterfactual_tests/AG_RAW/2020/completed_artifacts/manifest.json。未将该诊断作为新增Alpha或收益试验。
-
-完整PPO时间反事实最新检查点：RAW2020和RES2020均完成完整预算并通过AST、重估权重及全部预测精确一致性验证，当前2/6，其余四项未完成。两项诊断工件和大checkpoint内容身份见generation_counterfactual_tests各自completed_artifacts/manifest.json；无新增经济试验。
-
-完整PPO时间反事实最新检查点：RAW2020、RES2020、RAW2023均完成完整预算并通过AST、重估权重和全部预测精确一致性验证，当前3/6；RES2023、RAW2026正在运行，RES2026未完成。三项已完成诊断工件见各自completed_artifacts/manifest.json。仍无新增经济试验。
+比较范围：预测候选截至2026-07-01，07-24是估值及退出尾部；原v5冻结预测截至06-01，真实无因子控制补入655键，公共16764键融合分数完全一致。主比较采用匹配覆盖的真实无因子控制（8个head/year配置、40棵XGB及3个原生成本情景），不将覆盖变化当因子收益。详见CANDIDATE_COVERAGE_CONTRACT.md及baseline_head_replay/coverage_difference_evidence.json。

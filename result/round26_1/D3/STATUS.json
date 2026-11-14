@@ -22,7 +22,7 @@
   "live_snapshot": "LIVE_PPO_SNAPSHOT.json",
   "running_folds": [],
   "complete_models_not_full_D3": true,
-  "observed_UTC": "2026-11-14T07:12:06.134504+00:00",
+  "observed_UTC": "2026-11-14T09:25:35.683841+00:00",
   "full_counterfactual_PPO_retraining": "IMPLEMENTED_AND_FROZEN_NOT_YET_RUN",
   "candidate_backtest_scenarios_executed": 0,
   "actual_no_factor_head_configs": 8,
@@ -31,6 +31,6 @@
   "prediction_signal_end": "2026-07-01",
   "mark_to_market_end": "2026-07-24",
   "generation_seed17_complete": true,
-  "full_counterfactual_PPO_status": "THREE_PASSED_THREE_NOT_COMPLETE",
-  "full_counterfactual_PPO_completed": 3
+  "full_counterfactual_PPO_status": "FOUR_PASSED_TWO_RUNNING",
+  "full_counterfactual_PPO_completed": 4
 }

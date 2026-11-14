@@ -60,3 +60,14 @@ AlphaGen heartbeat AG_RES 2023 17 74732 pool 20
 AlphaGen heartbeat AG_RES 2023 17 77287 pool 20
 AlphaGen heartbeat AG_RES 2023 17 79873 pool 20
 AlphaGen progress AG_RES 2023 17 80000 expr 12340 pool 20 valIC 0.04973046854138374
+AlphaGen heartbeat AG_RES 2023 17 81818 pool 20
+AlphaGen heartbeat AG_RES 2023 17 83893 pool 20
+AlphaGen heartbeat AG_RES 2023 17 86017 pool 20
+AlphaGen heartbeat AG_RES 2023 17 88651 pool 20
+AlphaGen progress AG_RES 2023 17 90000 expr 14859 pool 20 valIC 0.04021528735756874
+AlphaGen heartbeat AG_RES 2023 17 91296 pool 20
+AlphaGen heartbeat AG_RES 2023 17 93889 pool 20
+AlphaGen heartbeat AG_RES 2023 17 96486 pool 20
+AlphaGen heartbeat AG_RES 2023 17 98535 pool 20
+AlphaGen progress AG_RES 2023 17 100000 expr 17208 pool 20 valIC 0.04021528735756874
+FULL_PPO_COUNTERFACTUAL_RESULT {"arm": "AG_RES", "year": 2023, "status": "PASS_FULL_ORIGINAL_PPO_UNAVAILABLE_TARGET_COUNTERFACTUAL", "directory": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/counterfactual_generators/alphagen_runs/AG_RES/2023/17/e7f8567a97e0a9f5b9105e8c876b407515c962464066bee656be72a9f8c0a3f8"}
