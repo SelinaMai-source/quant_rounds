@@ -7,3 +7,62 @@ AlphaGen heartbeat AG_RES 2022 73 7913 pool 20
   def _apply(self, operand: Tensor) -> Tensor: return operand.var(dim=-1)
 AlphaGen progress AG_RES 2022 73 10000 expr 78 pool 20 valIC 0.0319509357213974
 AlphaGen heartbeat AG_RES 2022 73 11205 pool 20
+AlphaGen heartbeat AG_RES 2022 73 13603 pool 20
+AlphaGen heartbeat AG_RES 2022 73 15587 pool 20
+AlphaGen heartbeat AG_RES 2022 73 17157 pool 20
+AlphaGen heartbeat AG_RES 2022 73 18575 pool 20
+/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/AlphaGen/alphagen/data/expression.py:379: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/ReduceOps.cpp:1927.)
+  def _apply(self, operand: Tensor) -> Tensor: return operand.std(dim=-1)
+AlphaGen heartbeat AG_RES 2022 73 19803 pool 20
+AlphaGen progress AG_RES 2022 73 20000 expr 617 pool 20 valIC 0.03506537526845932
+AlphaGen heartbeat AG_RES 2022 73 20809 pool 20
+AlphaGen heartbeat AG_RES 2022 73 21903 pool 20
+AlphaGen heartbeat AG_RES 2022 73 22926 pool 20
+AlphaGen heartbeat AG_RES 2022 73 24079 pool 20
+AlphaGen heartbeat AG_RES 2022 73 24957 pool 20
+AlphaGen heartbeat AG_RES 2022 73 26026 pool 20
+AlphaGen heartbeat AG_RES 2022 73 26799 pool 20
+AlphaGen heartbeat AG_RES 2022 73 27799 pool 20
+AlphaGen heartbeat AG_RES 2022 73 28673 pool 20
+AlphaGen heartbeat AG_RES 2022 73 29551 pool 20
+AlphaGen progress AG_RES 2022 73 30000 expr 1957 pool 20 valIC 0.033500391989946365
+AlphaGen heartbeat AG_RES 2022 73 30552 pool 20
+AlphaGen heartbeat AG_RES 2022 73 31501 pool 20
+AlphaGen heartbeat AG_RES 2022 73 32634 pool 20
+AlphaGen heartbeat AG_RES 2022 73 33607 pool 20
+AlphaGen heartbeat AG_RES 2022 73 34766 pool 20
+AlphaGen heartbeat AG_RES 2022 73 35919 pool 20
+AlphaGen heartbeat AG_RES 2022 73 36878 pool 20
+AlphaGen heartbeat AG_RES 2022 73 37991 pool 20
+AlphaGen heartbeat AG_RES 2022 73 39016 pool 20
+AlphaGen progress AG_RES 2022 73 40000 expr 3812 pool 20 valIC 0.03424089029431343
+AlphaGen heartbeat AG_RES 2022 73 40131 pool 20
+AlphaGen heartbeat AG_RES 2022 73 41237 pool 20
+AlphaGen heartbeat AG_RES 2022 73 42447 pool 20
+AlphaGen heartbeat AG_RES 2022 73 43505 pool 20
+AlphaGen heartbeat AG_RES 2022 73 44799 pool 20
+AlphaGen heartbeat AG_RES 2022 73 46039 pool 20
+AlphaGen heartbeat AG_RES 2022 73 47350 pool 20
+AlphaGen heartbeat AG_RES 2022 73 48563 pool 20
+AlphaGen heartbeat AG_RES 2022 73 49490 pool 20
+AlphaGen progress AG_RES 2022 73 50000 expr 5619 pool 20 valIC 0.0414847768843174
+AlphaGen heartbeat AG_RES 2022 73 50589 pool 20
+AlphaGen heartbeat AG_RES 2022 73 51559 pool 20
+AlphaGen heartbeat AG_RES 2022 73 52842 pool 20
+AlphaGen heartbeat AG_RES 2022 73 53925 pool 20
+AlphaGen heartbeat AG_RES 2022 73 55199 pool 20
+AlphaGen heartbeat AG_RES 2022 73 56167 pool 20
+AlphaGen heartbeat AG_RES 2022 73 57181 pool 20
+AlphaGen heartbeat AG_RES 2022 73 58123 pool 20
+AlphaGen heartbeat AG_RES 2022 73 59216 pool 20
+AlphaGen progress AG_RES 2022 73 60000 expr 7598 pool 20 valIC 0.03907525911927223
+AlphaGen heartbeat AG_RES 2022 73 60181 pool 20
+AlphaGen heartbeat AG_RES 2022 73 61376 pool 20
+AlphaGen heartbeat AG_RES 2022 73 62424 pool 20
+AlphaGen heartbeat AG_RES 2022 73 63516 pool 20
+AlphaGen heartbeat AG_RES 2022 73 65153 pool 20
+AlphaGen heartbeat AG_RES 2022 73 66670 pool 20
+AlphaGen heartbeat AG_RES 2022 73 67912 pool 20
+AlphaGen heartbeat AG_RES 2022 73 69312 pool 20
+AlphaGen progress AG_RES 2022 73 70000 expr 9497 pool 20 valIC 0.017919087782502174
+AlphaGen heartbeat AG_RES 2022 73 70442 pool 20
