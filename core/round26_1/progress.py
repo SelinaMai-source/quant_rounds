@@ -1,6 +1,6 @@
 """Refresh factual pre-Add checkpoints from completed original generation files."""
 from pathlib import Path
-import datetime,json
+import datetime,json,os,psutil
 import pandas as pd
 from core.round26_1.market import C,R
 from core.round26_1.completed_factor_audit import audit
@@ -17,7 +17,15 @@ def refresh(publish=False):
     models=pd.DataFrame(rows);models.to_csv(R/'completed_generation_models.csv',index=False)
     runs=pd.read_csv(R/'run_manifest.csv') if (R/'run_manifest.csv').exists() else pd.DataFrame(columns=['method','scenario'])
     candidate_runs=int(runs.method.ne('AG_A0').sum())
-    s=json.loads((R/'STATUS.json').read_text());s['full_PPO_folds_completed']=len(models);s['candidate_backtest_scenarios_executed']=candidate_runs;s['observed_UTC']=datetime.datetime.now(datetime.timezone.utc).isoformat();(R/'STATUS.json').write_text(json.dumps(s,ensure_ascii=False,indent=2))
+    s=json.loads((R/'STATUS.json').read_text());active=[]
+    for proc in psutil.process_iter(['pid','cmdline','uids']):
+        try:
+            if proc.uids().real!=os.getuid():continue
+            args=proc.cmdline()
+            if 'core.round26_1.alphagen_worker' not in args:continue
+            active.append({'pid':proc.pid,'arm':args[args.index('--arm')+1],'year':int(args[args.index('--year')+1]),'seed':int(args[args.index('--seed')+1])})
+        except (psutil.NoSuchProcess,psutil.AccessDenied,ValueError,IndexError):continue
+    s['running_folds']=active;s['full_PPO_folds_completed']=len(models);s['candidate_backtest_scenarios_executed']=candidate_runs;s['observed_UTC']=datetime.datetime.now(datetime.timezone.utc).isoformat();(R/'STATUS.json').write_text(json.dumps(s,ensure_ascii=False,indent=2))
     # Once actual Add evidence exists its scientific report owns the main report.
     if not candidate_runs:
         small=models[['arm','seed','year','env_steps','frozen_ASTs','complete_prediction_rows','missing_factor_rows','selected_validation_IC_not_strategy_performance']].to_csv(index=False)
