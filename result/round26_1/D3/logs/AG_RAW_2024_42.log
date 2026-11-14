@@ -9,3 +9,84 @@ AlphaGen heartbeat AG_RAW 2024 42 7722 pool 20
   def _apply(self, operand: Tensor) -> Tensor: return operand.var(dim=-1)
 AlphaGen progress AG_RAW 2024 42 10000 expr 73 pool 20 valIC 0.07430851459503174
 AlphaGen heartbeat AG_RAW 2024 42 11744 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 14337 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 16417 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 18247 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 19492 pool 20
+AlphaGen progress AG_RAW 2024 42 20000 expr 530 pool 20 valIC 0.03466121852397919
+AlphaGen heartbeat AG_RAW 2024 42 20698 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 21922 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 22829 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 23927 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 24863 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 26002 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 27042 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 28188 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 29116 pool 20
+AlphaGen progress AG_RAW 2024 42 30000 expr 1777 pool 20 valIC 0.038217879831790924
+AlphaGen heartbeat AG_RAW 2024 42 30061 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 30940 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 32051 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 33215 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 34436 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 35335 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 36372 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 37263 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 38460 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 39449 pool 20
+AlphaGen progress AG_RAW 2024 42 40000 expr 3522 pool 20 valIC 0.049342285841703415
+AlphaGen heartbeat AG_RAW 2024 42 40697 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 41926 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 43140 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 44736 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 46180 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 47504 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 49153 pool 20
+AlphaGen progress AG_RAW 2024 42 50000 expr 5375 pool 20 valIC 0.05984082445502281
+AlphaGen heartbeat AG_RAW 2024 42 50332 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 51231 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 52441 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 53561 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 54932 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 55995 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 57220 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 58328 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 59393 pool 20
+AlphaGen progress AG_RAW 2024 42 60000 expr 7147 pool 20 valIC 0.03008851408958435
+AlphaGen heartbeat AG_RAW 2024 42 60513 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 61709 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 63123 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 64029 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 65344 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 66343 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 67585 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 68927 pool 20
+AlphaGen progress AG_RAW 2024 42 70000 expr 9047 pool 20 valIC 0.02705039642751217
+AlphaGen heartbeat AG_RAW 2024 42 70274 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 71681 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 73108 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 74461 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 75777 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 77187 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 78310 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 79338 pool 20
+AlphaGen progress AG_RAW 2024 42 80000 expr 10962 pool 20 valIC 0.009029466658830643
+AlphaGen heartbeat AG_RAW 2024 42 80325 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 81699 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 82819 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 83988 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 85370 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 86405 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 87550 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 88844 pool 20
+AlphaGen progress AG_RAW 2024 42 90000 expr 12949 pool 20 valIC 0.005464440677314997
+AlphaGen heartbeat AG_RAW 2024 42 90305 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 91608 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 92716 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 94028 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 95430 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 96557 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 98048 pool 20
+AlphaGen heartbeat AG_RAW 2024 42 99227 pool 20
+AlphaGen progress AG_RAW 2024 42 100000 expr 15001 pool 20 valIC 0.007820772007107735
+WORKER_RESULT {"arm": "AG_RAW", "year": 2024, "seed": 42, "directory": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2024/42/9961cee4a486a8c36c112e04ed0cb4cfda209ecd0834746ae2cbecaf2581932f", "status": "FACTOR_OOF_YEAR_COMPLETE"}

@@ -10,14 +10,14 @@
   "counterfactual_PPO_full_retraining": "PASS_SIX_REAL_FULL_BUDGET_TESTS",
   "counterfactual_PPO_models": 6,
   "head_counterfactual_actual_tree_fits": 300,
-  "completed_original_PPO_models": 22,
+  "completed_original_PPO_models": 24,
   "no_factor_control_tree_files_current_configs": 40,
   "no_factor_control_status": "MATCHED_REPAIRED_NO_FACTOR_BASELINE_REQUIRED",
   "completed_control_tree_files_all_fingerprints": 80,
   "signal_scope_end": "2026-07-01",
   "mark_to_market_end": "2026-07-24",
-  "PPO_env_steps": 2200000,
-  "effective_expression_evaluations": 328345,
+  "PPO_env_steps": 2400000,
+  "effective_expression_evaluations": 358737,
   "head_model_configs": 16,
   "actual_XGB_files_current_configs": 80,
   "economic_configurations_executed": 13,
@@ -28,21 +28,21 @@
   "effective_expression_evaluations_semantics": "source evaluation calls including duplicates and source pool rejections; unique ASTs and invalid attempts separate",
   "running_folds": [
     {
-      "pid": 1780015,
+      "pid": 1801066,
       "arm": "AG_RAW",
-      "year": 2024,
+      "year": 2025,
       "seed": 42
     },
     {
-      "pid": 1780499,
+      "pid": 1801796,
       "arm": "AG_RES",
-      "year": 2024,
+      "year": 2025,
       "seed": 42
     }
   ],
-  "full_PPO_folds_completed": 22,
+  "full_PPO_folds_completed": 24,
   "candidate_backtest_scenarios_executed": 10,
-  "observed_UTC": "2026-11-14T15:17:19.929768+00:00",
+  "observed_UTC": "2026-11-14T16:32:27.852821+00:00",
   "generation_count_scope": "Completed current original models only; incomplete/failed attempts are retained separately",
   "generation_progress_does_not_complete_economic_path": true
 }
