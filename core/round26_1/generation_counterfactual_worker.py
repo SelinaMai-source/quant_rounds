@@ -17,7 +17,7 @@ def run(arm,year,baseline):
     contract_metadata={'diagnostic_only':'unavailable target intervention; not additional alpha search','seed':17,'year':year,'arm':arm,'source':identity(__file__),'orchestrator_source':identity(C/'core/round26_1/generation_counterfactual.py'),'baseline_model':identity(baseline/'FROZEN_FACTOR.json'),'baseline_contract':identity(baseline/'CONTRACT.json'),'protocol':identity(R/'PPO_COUNTERFACTUAL_TEST_CONTRACT.json'),'budget':'same100000 environment steps/20000 source-evaluated expressions; original model/optimizer/seed'}
     def init(self,domain,targets,column,cutoff):
         changed=targets.copy();date=pd.to_datetime(changed.trade_date);available=pd.to_datetime(changed.label_available_at);cut=pd.Timestamp(cutoff)
-        future=date.ge(cut);immature=date.lt(cut)&available.ge(cut)
+        future=date.ge(cut);immature=date.lt(cut)&~available.lt(cut)
         before=changed[column].copy();changed.loc[future,column]=np.nan
         rng=np.random.default_rng(171717)
         values=changed.loc[immature,column].to_numpy();corrupt=rng.permutation(values)
@@ -26,11 +26,11 @@ def run(arm,year,baseline):
         actual=(~(before.eq(changed[column])|(before.isna()&changed[column].isna()))).sum()
         keys=['trade_date','instrument_id']
         mapped=domain.keys.merge(targets[keys+[column,'label_available_at']],on=keys,how='left',validate='one_to_one').merge(changed[keys+[column]].rename(columns={column:'counterfactual_target'}),on=keys,how='left',validate='one_to_one')
-        in_domain_immature=pd.to_datetime(mapped.label_available_at).ge(cut)
+        in_domain_immature=~pd.to_datetime(mapped.label_available_at).lt(cut)
         in_domain_changed=~(mapped[column].eq(mapped.counterfactual_target)|(mapped[column].isna()&mapped.counterfactual_target.isna()))
         assert int((in_domain_immature&in_domain_changed).sum())>0,'No actual unavailable target intervention inside this real feature domain'
         original_init(self,domain,changed,column,cutoff)
-        interventions.append({'domain_start':domain.identity['start'],'domain_end':domain.identity['end'],'cutoff':str(cutoff),'target_column':column,'future_target_values_deleted':int((future&before.notna()).sum()),'immature_rows_selected':int(immature.sum()),'actual_changed_target_rows':int(actual),'in_domain_changed_target_rows':int(in_domain_changed.sum()),'in_domain_immature_changed_target_rows':int((in_domain_immature&in_domain_changed).sum()),'post_mask_identity':self.identity})
+        interventions.append({'domain_start':domain.identity['start'],'domain_end':domain.identity['end'],'cutoff':str(cutoff),'target_column':column,'future_target_values_deleted':int((future&before.notna()).sum()),'immature_rows_selected':int(immature.sum()),'unknown_available_at_rows_selected':int((immature&available.isna()).sum()),'actual_changed_target_rows':int(actual),'in_domain_changed_target_rows':int(in_domain_changed.sum()),'in_domain_immature_changed_target_rows':int((in_domain_immature&in_domain_changed).sum()),'post_mask_identity':self.identity})
         training.atomic_json(attempt_directory/f'intervention_{len(interventions):02d}.json',interventions[-1])
     def contract(parameters,inputs,*args,**kwargs):
         parameters=dict(parameters);parameters['full_counterfactual_test']=contract_metadata

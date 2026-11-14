@@ -16,7 +16,7 @@
   },
   "entry": "actual alphagen_train.run_fold; unchanged original LSTMSharedNet MaskablePPO and MseAlphaPool",
   "budget_per_diagnostic": "100000 environment steps or20000 source-evaluated expressions, first budget reached; same architecture, parameters and seeds as corresponding original",
-  "intervention": "At each actual training/validation/refit cutoff, delete target values dated at/after that cutoff and permute values of earlier rows whose targets are not yet mature; independent local RNG171717 so original global policy RNG is untouched. If an immature singleton/all-equal permutation is unchanged, corrupt it by1e6, explicitly diagnostic only. Label maturity timestamps unchanged. Market data fixed.",
+  "intervention": "At each actual training/validation/refit cutoff, delete target values dated at/after that cutoff and permute values of earlier rows whose targets are not yet mature; independent local RNG171717 so original global policy RNG is untouched. If an immature singleton/all-equal permutation is unchanged, corrupt it by1e6, explicitly diagnostic only. Label maturity timestamps unchanged. Market data fixed. Unknown/NaT availability is not mature and is included in corruption; no inferred release time is fabricated.",
   "required_equality": [
     "actual train/validation post-mask target and market tensor identities",
     "selected checkpoint and all frozen ASTs",
