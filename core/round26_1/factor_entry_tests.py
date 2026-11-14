@@ -20,6 +20,7 @@ def run(factor, arm, seed_label):
     dest.mkdir(parents=True,exist_ok=True)
     rows=[]
     original_read=pd.read_parquet
+    original_contract=fm.full_contract
     for head in [FIVE_HEAD,TEN_HEAD]:
         for year in [2023,2024,2026]:
             cutoff=pd.Timestamp(f'{year}-01-01')
@@ -58,8 +59,13 @@ def run(factor, arm, seed_label):
                     changed=~(frame.eq(before_intervention)|(frame.isna()&before_intervention.isna())).all(axis=1)
                     mutation_counts['training_rows' if name.endswith('_training.parquet') else 'prediction_rows']=int(changed.sum())
                     return frame
+                def diagnostic_contract(parameters,inputs,*args,**kwargs):
+                    # In-memory raw-panel interventions are explicit derivation parameters,
+                    # rather than pretending the unchanged source files have new bytes.
+                    parameters['diagnostic_context']={'case':case,'intervention_seed':231726,'source':identity(__file__),'actual_changed_rows':dict(mutation_counts),'economic_trial':False}
+                    return original_contract(parameters,inputs,*args,**kwargs)
                 # A separate immutable directory forces the production fit loop to run.
-                with patch.object(pd,'read_parquet',reader):
+                with patch.object(pd,'read_parquet',reader),patch.object(fm,'full_contract',diagnostic_contract):
                     a,p=fm.prepare(head,year,factor)
                     frame,path,fp,cached=fm.fit_head(arm,seed_label,head,year,factor,'ADD',cache_namespace=dest/head.name/str(year)/case)
                 assert not cached,'Counterfactual must be an actual cold fit'
