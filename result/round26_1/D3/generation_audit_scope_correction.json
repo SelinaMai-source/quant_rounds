@@ -1,0 +1,8 @@
+{
+  "change": "Clarify generation artifact audit scope; remove hardcoded global statements about unfinished backtests and PPO retraining",
+  "validation_assertions_changed": false,
+  "model_generation_code_changed": false,
+  "generation_contract_changed": false,
+  "before_source_SHA256": "b68e6cbf10ed2ff889df09805d49591c7d78871e7d00c657a9a1db3488e7158a",
+  "after_source_SHA256": "62bbe1b12f84597111f2d2a99a52ab89d1fa99cc6941aaf22abae9a87dd4e552"
+}

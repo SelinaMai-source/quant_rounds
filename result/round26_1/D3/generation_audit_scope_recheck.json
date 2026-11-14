@@ -1,0 +1,168 @@
+{
+  "status": "PASS_UNCHANGED_GENERATION_VALIDATION_AFTER_SCOPE_CLARIFICATION",
+  "cases": [
+    {
+      "kind": "original_generation",
+      "arm": "AG_RAW",
+      "year": 2020,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RES",
+      "year": 2020,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RAW",
+      "year": 2021,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RES",
+      "year": 2021,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RAW",
+      "year": 2022,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RES",
+      "year": 2022,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RES",
+      "year": 2023,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RAW",
+      "year": 2023,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RES",
+      "year": 2024,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RAW",
+      "year": 2024,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RAW",
+      "year": 2025,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RES",
+      "year": 2025,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RES",
+      "year": 2026,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RAW",
+      "year": 2026,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "original_generation",
+      "arm": "AG_RAW",
+      "year": 2020,
+      "seed": 42,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS",
+      "generation_code_closure_still_exact": true
+    },
+    {
+      "kind": "full_PPO_counterfactual",
+      "arm": "AG_RAW",
+      "year": 2020,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS"
+    },
+    {
+      "kind": "full_PPO_counterfactual",
+      "arm": "AG_RAW",
+      "year": 2026,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS"
+    },
+    {
+      "kind": "full_PPO_counterfactual",
+      "arm": "AG_RAW",
+      "year": 2023,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS"
+    },
+    {
+      "kind": "full_PPO_counterfactual",
+      "arm": "AG_RES",
+      "year": 2020,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS"
+    },
+    {
+      "kind": "full_PPO_counterfactual",
+      "arm": "AG_RES",
+      "year": 2026,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS"
+    },
+    {
+      "kind": "full_PPO_counterfactual",
+      "arm": "AG_RES",
+      "year": 2023,
+      "seed": 17,
+      "status": "PASS_ACTUAL_COMPLETED_GENERATION_ARTIFACTS"
+    }
+  ],
+  "learning_or_backtests_performed": 0
+}

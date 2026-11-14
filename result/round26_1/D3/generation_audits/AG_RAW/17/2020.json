@@ -21,6 +21,7 @@
   "last_fully_optimized_rollout": 98304,
   "unoptimized_environment_tail_steps": 1696,
   "target_outer_return_used_for_selection": false,
-  "candidate_backtest_complete": false,
-  "remaining": "nested years, Five/Ten/Both Add, real backtest and conditional evidence; full counterfactual PPO retraining not run"
+  "candidate_backtest_complete": null,
+  "candidate_backtest_assessment": "NOT_ASSESSED_BY_GENERATION_ARTIFACT_AUDIT",
+  "scope": "Frozen generation artifacts only. Aggregate research and full PPO counterfactual status are assessed separately in D3/STATUS.json and generation_counterfactual_tests/STATUS.json."
 }
