@@ -10,7 +10,7 @@ def generation_workers():
     result=[]
     for proc in psutil.process_iter(['pid','cmdline','uids']):
         try:
-            if proc.uids().real==os.getuid() and 'core.round26_1.alphagen_worker' in proc.cmdline():result.append(proc.pid)
+            if proc.uids().real==os.getuid() and any(m in proc.cmdline() for m in ['core.round26_1.alphagen_worker','core.round26_1.generation_counterfactual_worker']):result.append(proc.pid)
         except (psutil.NoSuchProcess,psutil.AccessDenied):continue
     return result
 
