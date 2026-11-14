@@ -24,5 +24,6 @@
   "all_seeds_equally_reported_no_best_seed": true,
   "completed_checkpoint_seed": 17,
   "CURRENT_BASELINE_CHANGED": false,
-  "PRODUCTION_CONFIG_CHANGED": false
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "effective_expression_evaluations_semantics": "source evaluation calls including duplicates and source pool rejections; distinct ASTs and invalid attempts reported separately"
 }

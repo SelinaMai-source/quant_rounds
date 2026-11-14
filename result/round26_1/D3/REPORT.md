@@ -2,7 +2,7 @@
 
 状态：PARTIAL_SEED_CHECKPOINT。这是锁定原表达式求值、MseAlphaPool协同优化、原LSTMSharedNet与MaskablePPO的预算化A股适配，不是随机公式、合成样本更新，也不冒称原论文完整CSI300数值复现。
 
-已完成PPO模型 14，env steps 1400000。每折上限100000环境步/20000有效表达式，未为弱结果加搜索。val只用Outer前一年成熟标签选checkpoint；AST冻结后仅重估先前年份池权重。所有AST、权重、检查点、尝试/失效表达式与模型及资源manifest保留。
+已完成PPO模型 14，env steps 1400000。每折上限100000环境步/20000次原求值调用（含重复及原池拒绝），未为弱结果加搜索。val只用Outer前一年成熟标签选checkpoint；AST冻结后仅重估先前年份池权重。所有AST、权重、检查点、尝试/失效表达式与模型及资源manifest保留。
 
 D日已知首板domain在完整股票OHLCV序列上先rolling再映射；无next1/next2/label进入表达式。未用未来标签决定预测池。RAW与RES使用相同历史有效目标行，RES是收益率减真正历史OOF校准收益，不是减百分位。原normalize/零分母语义保留，训练loss只用截止前成熟目标。
 
@@ -28,3 +28,5 @@ AG_RES_17_A3_BOTH_ADD,0.8631026741593313,2.3364585370834487,-0.2350376116657984,
 
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE
+
+计数口径：STATUS兼容字段effective_expression_evaluations表示原表达式求值调用次数，含重复及原池拒绝，不是不同AST数、优化更新数或新增经济试验数。不同AST、异常、池准入和PPO更新分别见completed_generation_models.csv及各工件审计。
