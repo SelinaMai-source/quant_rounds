@@ -24,8 +24,13 @@ def run(arm,year,baseline):
         if len(values) and np.array_equal(values,corrupt,equal_nan=True):corrupt=np.nan_to_num(values,nan=0.)+1e6
         changed.loc[immature,column]=corrupt
         actual=(~(before.eq(changed[column])|(before.isna()&changed[column].isna()))).sum()
+        keys=['trade_date','instrument_id']
+        mapped=domain.keys.merge(targets[keys+[column,'label_available_at']],on=keys,how='left',validate='one_to_one').merge(changed[keys+[column]].rename(columns={column:'counterfactual_target'}),on=keys,how='left',validate='one_to_one')
+        in_domain_immature=pd.to_datetime(mapped.label_available_at).ge(cut)
+        in_domain_changed=~(mapped[column].eq(mapped.counterfactual_target)|(mapped[column].isna()&mapped.counterfactual_target.isna()))
+        assert int((in_domain_immature&in_domain_changed).sum())>0,'No actual unavailable target intervention inside this real feature domain'
         original_init(self,domain,changed,column,cutoff)
-        interventions.append({'domain_start':domain.identity['start'],'domain_end':domain.identity['end'],'cutoff':str(cutoff),'target_column':column,'future_target_values_deleted':int((future&before.notna()).sum()),'immature_rows_selected':int(immature.sum()),'actual_changed_target_rows':int(actual),'post_mask_identity':self.identity})
+        interventions.append({'domain_start':domain.identity['start'],'domain_end':domain.identity['end'],'cutoff':str(cutoff),'target_column':column,'future_target_values_deleted':int((future&before.notna()).sum()),'immature_rows_selected':int(immature.sum()),'actual_changed_target_rows':int(actual),'in_domain_changed_target_rows':int(in_domain_changed.sum()),'in_domain_immature_changed_target_rows':int((in_domain_immature&in_domain_changed).sum()),'post_mask_identity':self.identity})
         training.atomic_json(attempt_directory/f'intervention_{len(interventions):02d}.json',interventions[-1])
     def contract(parameters,inputs,*args,**kwargs):
         parameters=dict(parameters);parameters['full_counterfactual_test']=contract_metadata
