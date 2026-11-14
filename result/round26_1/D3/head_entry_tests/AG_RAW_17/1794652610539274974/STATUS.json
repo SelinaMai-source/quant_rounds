@@ -1,0 +1,27 @@
+{
+  "status": "PASS_ACTUAL_XGB_ADD_ENTRY",
+  "source_factor": {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/factor_banks/AG_RAW/17/OOF_factor.parquet",
+    "bytes": 342250,
+    "sha256": "80a5074d73a4a0db1bf9726f1f521ccc6d7cb152a8ab5ad3c5494ed645e8aa47",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nz_AG: float\narm: string\nseed: int64\nfactor_outer_year: int64\nfactor_fit_cutoff: timestamp[ms]\nfactor_model_hash: string\nprior_training_scale_mean: double\nprior_training_scale_std: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1376",
+    "rows": 38282
+  },
+  "tested_heads": [
+    "five",
+    "ten"
+  ],
+  "folds": [
+    2023,
+    2024,
+    2026
+  ],
+  "actual_fit_configs": 30,
+  "actual_tree_models": 150,
+  "future_label_deletion_permutation": true,
+  "unmature_label_permutation": true,
+  "unmature_label_scope": "Includes unknown/NaT availability; it is never classified as mature",
+  "future_feature_prefix_invariance": "nonempty folds only; latest2026 has no2027+ data and is NOT_EVALUATED_NO_FUTURE_ROWS",
+  "counterfactual_PPO_retraining": "NOT_PERFORMED_BY_THIS_TEST; full original PPO retraining evidence is recorded separately in generation_counterfactual_tests",
+  "scope": "Nested OOF factor held fixed; complete real XGB ADD fit/predict entry. Not a full PPO counterfactual retraining proof."
+}

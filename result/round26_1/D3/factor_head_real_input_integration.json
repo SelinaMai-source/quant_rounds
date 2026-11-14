@@ -1,0 +1,167 @@
+{
+  "status": "PASS_REAL_GENERATED_FACTOR_HEAD_INPUT_INTEGRATION",
+  "actual_learner_fits": 0,
+  "cold_fit_and_prediction_tests": "PENDING_SIX_FULL_PPO_COUNTERFACTUALS",
+  "cases": [
+    {
+      "arm": "AG_RAW",
+      "head": "five",
+      "year": 2023,
+      "train_rows": 16180,
+      "prediction_rows": 4015,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RAW",
+      "head": "five",
+      "year": 2024,
+      "train_rows": 14489,
+      "prediction_rows": 6784,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RAW",
+      "head": "five",
+      "year": 2025,
+      "train_rows": 14942,
+      "prediction_rows": 6563,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RAW",
+      "head": "five",
+      "year": 2026,
+      "train_rows": 15774,
+      "prediction_rows": 3657,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RAW",
+      "head": "ten",
+      "year": 2023,
+      "train_rows": 16422,
+      "prediction_rows": 4015,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RAW",
+      "head": "ten",
+      "year": 2024,
+      "train_rows": 14644,
+      "prediction_rows": 6784,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RAW",
+      "head": "ten",
+      "year": 2025,
+      "train_rows": 15168,
+      "prediction_rows": 6563,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RAW",
+      "head": "ten",
+      "year": 2026,
+      "train_rows": 15997,
+      "prediction_rows": 3657,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RES",
+      "head": "five",
+      "year": 2023,
+      "train_rows": 16180,
+      "prediction_rows": 4015,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RES",
+      "head": "five",
+      "year": 2024,
+      "train_rows": 14489,
+      "prediction_rows": 6784,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RES",
+      "head": "five",
+      "year": 2025,
+      "train_rows": 14942,
+      "prediction_rows": 6563,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RES",
+      "head": "five",
+      "year": 2026,
+      "train_rows": 15774,
+      "prediction_rows": 3657,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RES",
+      "head": "ten",
+      "year": 2023,
+      "train_rows": 16422,
+      "prediction_rows": 4015,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RES",
+      "head": "ten",
+      "year": 2024,
+      "train_rows": 14644,
+      "prediction_rows": 6784,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RES",
+      "head": "ten",
+      "year": 2025,
+      "train_rows": 15168,
+      "prediction_rows": 6563,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    },
+    {
+      "arm": "AG_RES",
+      "head": "ten",
+      "year": 2026,
+      "train_rows": 15997,
+      "prediction_rows": 3657,
+      "missing_training_factor": 0,
+      "missing_prediction_factor": 0,
+      "original_features_targets_and_keys_exact_control": true
+    }
+  ]
+}

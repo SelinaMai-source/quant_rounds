@@ -1,0 +1,1094 @@
+{
+  "status": "PASS_SIX_COMPLETE_ORIGINAL_PPO_COUNTERFACTUALS",
+  "cases": [
+    {
+      "ASTs_weights_predictions_exact": true,
+      "actual_complete_environment_steps": 100000,
+      "actual_training_this_invocation_env_steps": 100000,
+      "arm": "AG_RAW",
+      "baseline": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6",
+      "cache_hit_existing_complete_counterfactual": false,
+      "contract": {
+        "arm": "AG_RAW",
+        "baseline_contract": {
+          "bytes": 192850,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/CONTRACT.json",
+          "sha256": "ac1ff762d864a5116792c231f0920b27922f20fe453182fbac08ab121a043fce"
+        },
+        "baseline_model": {
+          "bytes": 7564,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2020/17/5d737fe767e80d38d070e45004a93149f13fd62dddc971ae2c44bd042d9736a6/FROZEN_FACTOR.json",
+          "sha256": "52afb91f2ecba836b43ca78bf32f2cebf7d7dd737c02a8b9179531068c82d1eb"
+        },
+        "budget": "same100000 environment steps/20000 source-evaluated expressions; original model/optimizer/seed",
+        "diagnostic_only": "unavailable target intervention; not additional alpha search",
+        "orchestrator_source": {
+          "bytes": 3086,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual.py",
+          "sha256": "b5963a9c1cfe90da14374a6b6797d2a9d2640d784375c4eac71f0c0dd7e005d2"
+        },
+        "protocol": {
+          "bytes": 2202,
+          "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/PPO_COUNTERFACTUAL_TEST_CONTRACT.json",
+          "sha256": "492ecab7161e4f316fe73194d43b3f3c119b86787251b38da2f7722b8bb33abb"
+        },
+        "seed": 17,
+        "source": {
+          "bytes": 7855,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual_worker.py",
+          "sha256": "acbebcee492f0ac2ffc524e62b6af1081f426eda3021c88d76caa27ca735a3c6"
+        },
+        "year": 2020
+      },
+      "diagnostic": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/counterfactual_generators/alphagen_runs/AG_RAW/2020/17/47f3c16fc856693cb19c052aa3f44a6623d070a6d913934e63a777db3e3e0fc7",
+      "diagnostic_only": true,
+      "economic_backtests": 0,
+      "interventions": [
+        {
+          "actual_changed_target_rows": 33641,
+          "cutoff": "2019-01-01",
+          "domain_end": "2018-12-31",
+          "domain_start": "2017-01-01",
+          "future_target_values_deleted": 33614,
+          "immature_rows_selected": 220,
+          "in_domain_changed_target_rows": 27,
+          "in_domain_immature_changed_target_rows": 27,
+          "post_mask_identity": {
+            "active_dates": 466,
+            "cutoff": "2019-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 487,
+              "candidate_keys_sha256": "2b3301a68f94865f175fa33e1b8bac45c3b527465908d261efbc3c8f9d104f67",
+              "candidate_rows": 5623,
+              "end": "2018-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "a3079d47cd3c184f94a9aa066431f8b3bebfdf461a53b3d24c9bb52017ff0810",
+              "market_tensor_shape": [
+                587,
+                6,
+                2514
+              ],
+              "prediction_target_mask": false,
+              "start": "2017-01-01"
+            },
+            "mature_target_rows": 4490,
+            "max_training_label_available_at": "2018-12-28 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "76ebd657032b70787cafa2c9fdc74e6d2f1919df5ef46c24ff05f79416608ec3"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 206
+        },
+        {
+          "actual_changed_target_rows": 29963,
+          "cutoff": "2020-01-01",
+          "domain_end": "2019-12-31",
+          "domain_start": "2019-01-01",
+          "future_target_values_deleted": 29907,
+          "immature_rows_selected": 514,
+          "in_domain_changed_target_rows": 47,
+          "in_domain_immature_changed_target_rows": 47,
+          "post_mask_identity": {
+            "active_dates": 242,
+            "cutoff": "2020-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 244,
+              "candidate_keys_sha256": "b05956c360aee6f89e1218d6ef5bbb23a40b22651bbb08085a8932922e6b45fc",
+              "candidate_rows": 4711,
+              "end": "2019-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "388b3a4ac8f024326fd11a5fadc1122c9afae351489212393dd4a4c56ad8f95e",
+              "market_tensor_shape": [
+                344,
+                6,
+                2432
+              ],
+              "prediction_target_mask": false,
+              "start": "2019-01-01"
+            },
+            "mature_target_rows": 3678,
+            "max_training_label_available_at": "2019-12-31 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "fe499da5ac83cde90de0d5dceeca599a497496b403b2601112259c23889d0164"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 485
+        },
+        {
+          "actual_changed_target_rows": 29963,
+          "cutoff": "2020-01-01",
+          "domain_end": "2019-12-31",
+          "domain_start": "2017-01-01",
+          "future_target_values_deleted": 29907,
+          "immature_rows_selected": 514,
+          "in_domain_changed_target_rows": 56,
+          "in_domain_immature_changed_target_rows": 56,
+          "post_mask_identity": {
+            "active_dates": 710,
+            "cutoff": "2020-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 731,
+              "candidate_keys_sha256": "1766ae3543ba5ab763c9316e9811c3dcb866eac13f37ac0e7ee0ec5190a1fb0b",
+              "candidate_rows": 10334,
+              "end": "2019-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "d476885fc9483b509cdac174d1a11e67ab2ffa840a70038591d3ef442fdde109",
+              "market_tensor_shape": [
+                831,
+                6,
+                3057
+              ],
+              "prediction_target_mask": false,
+              "start": "2017-01-01"
+            },
+            "mature_target_rows": 8182,
+            "max_training_label_available_at": "2019-12-31 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "2c4c97b32d4ec92374f794ef0a8db72efbbe1553673ee81b42e5a566a013a9f8"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 485
+        }
+      ],
+      "scope": "Actual run_fold and original LSTM PPO, validation selection, pool refit and complete inference. Future/immature targets changed at each stage cutoff. Market data fixed; not a vendor-revision reconstruction proof.",
+      "seed": 17,
+      "status": "PASS_FULL_ORIGINAL_PPO_UNAVAILABLE_TARGET_COUNTERFACTUAL",
+      "year": 2020
+    },
+    {
+      "ASTs_weights_predictions_exact": true,
+      "actual_complete_environment_steps": 100000,
+      "actual_training_this_invocation_env_steps": 100000,
+      "arm": "AG_RES",
+      "baseline": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2020/17/5e57091e6252d216846b6b09f36327b4540e57cb33c83be74fa4e17578d39dd9",
+      "cache_hit_existing_complete_counterfactual": false,
+      "contract": {
+        "arm": "AG_RES",
+        "baseline_contract": {
+          "bytes": 192817,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2020/17/5e57091e6252d216846b6b09f36327b4540e57cb33c83be74fa4e17578d39dd9/CONTRACT.json",
+          "sha256": "ad21e7d11df012134b58e457a0dfd81a00e459dbda45d4604edba942b95788fe"
+        },
+        "baseline_model": {
+          "bytes": 9458,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2020/17/5e57091e6252d216846b6b09f36327b4540e57cb33c83be74fa4e17578d39dd9/FROZEN_FACTOR.json",
+          "sha256": "7888f06a79af6cdfbfb74b86a4cee758cf2bf27f414dd83b90a8f3c8c2ebb770"
+        },
+        "budget": "same100000 environment steps/20000 source-evaluated expressions; original model/optimizer/seed",
+        "diagnostic_only": "unavailable target intervention; not additional alpha search",
+        "orchestrator_source": {
+          "bytes": 3086,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual.py",
+          "sha256": "b5963a9c1cfe90da14374a6b6797d2a9d2640d784375c4eac71f0c0dd7e005d2"
+        },
+        "protocol": {
+          "bytes": 2202,
+          "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/PPO_COUNTERFACTUAL_TEST_CONTRACT.json",
+          "sha256": "492ecab7161e4f316fe73194d43b3f3c119b86787251b38da2f7722b8bb33abb"
+        },
+        "seed": 17,
+        "source": {
+          "bytes": 7855,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual_worker.py",
+          "sha256": "acbebcee492f0ac2ffc524e62b6af1081f426eda3021c88d76caa27ca735a3c6"
+        },
+        "year": 2020
+      },
+      "diagnostic": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/counterfactual_generators/alphagen_runs/AG_RES/2020/17/59fe291c7b73a51796a87b06f1b6e538652548b769c87b9fc5da9f55ac08b714",
+      "diagnostic_only": true,
+      "economic_backtests": 0,
+      "interventions": [
+        {
+          "actual_changed_target_rows": 33641,
+          "cutoff": "2019-01-01",
+          "domain_end": "2018-12-31",
+          "domain_start": "2017-01-01",
+          "future_target_values_deleted": 33614,
+          "immature_rows_selected": 220,
+          "in_domain_changed_target_rows": 27,
+          "in_domain_immature_changed_target_rows": 27,
+          "post_mask_identity": {
+            "active_dates": 466,
+            "cutoff": "2019-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 487,
+              "candidate_keys_sha256": "2b3301a68f94865f175fa33e1b8bac45c3b527465908d261efbc3c8f9d104f67",
+              "candidate_rows": 5623,
+              "end": "2018-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "a3079d47cd3c184f94a9aa066431f8b3bebfdf461a53b3d24c9bb52017ff0810",
+              "market_tensor_shape": [
+                587,
+                6,
+                2514
+              ],
+              "prediction_target_mask": false,
+              "start": "2017-01-01"
+            },
+            "mature_target_rows": 4490,
+            "max_training_label_available_at": "2018-12-28 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "e5bdf4196939703acd3581ef0b4477fbedb157a503e42e6437ef7ca60f0ba728"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 206
+        },
+        {
+          "actual_changed_target_rows": 29963,
+          "cutoff": "2020-01-01",
+          "domain_end": "2019-12-31",
+          "domain_start": "2019-01-01",
+          "future_target_values_deleted": 29907,
+          "immature_rows_selected": 514,
+          "in_domain_changed_target_rows": 47,
+          "in_domain_immature_changed_target_rows": 47,
+          "post_mask_identity": {
+            "active_dates": 242,
+            "cutoff": "2020-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 244,
+              "candidate_keys_sha256": "b05956c360aee6f89e1218d6ef5bbb23a40b22651bbb08085a8932922e6b45fc",
+              "candidate_rows": 4711,
+              "end": "2019-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "388b3a4ac8f024326fd11a5fadc1122c9afae351489212393dd4a4c56ad8f95e",
+              "market_tensor_shape": [
+                344,
+                6,
+                2432
+              ],
+              "prediction_target_mask": false,
+              "start": "2019-01-01"
+            },
+            "mature_target_rows": 3678,
+            "max_training_label_available_at": "2019-12-31 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "f704879d00b1799ca720e8235b581bd97f38aa40d5652dd25b0ae10cc7e2e6ac"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 485
+        },
+        {
+          "actual_changed_target_rows": 29963,
+          "cutoff": "2020-01-01",
+          "domain_end": "2019-12-31",
+          "domain_start": "2017-01-01",
+          "future_target_values_deleted": 29907,
+          "immature_rows_selected": 514,
+          "in_domain_changed_target_rows": 56,
+          "in_domain_immature_changed_target_rows": 56,
+          "post_mask_identity": {
+            "active_dates": 710,
+            "cutoff": "2020-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 731,
+              "candidate_keys_sha256": "1766ae3543ba5ab763c9316e9811c3dcb866eac13f37ac0e7ee0ec5190a1fb0b",
+              "candidate_rows": 10334,
+              "end": "2019-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "d476885fc9483b509cdac174d1a11e67ab2ffa840a70038591d3ef442fdde109",
+              "market_tensor_shape": [
+                831,
+                6,
+                3057
+              ],
+              "prediction_target_mask": false,
+              "start": "2017-01-01"
+            },
+            "mature_target_rows": 8182,
+            "max_training_label_available_at": "2019-12-31 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "da47392978b28bb8d91839faab45392f4fee76604f24201f59060ee69c2dabc5"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 485
+        }
+      ],
+      "scope": "Actual run_fold and original LSTM PPO, validation selection, pool refit and complete inference. Future/immature targets changed at each stage cutoff. Market data fixed; not a vendor-revision reconstruction proof.",
+      "seed": 17,
+      "status": "PASS_FULL_ORIGINAL_PPO_UNAVAILABLE_TARGET_COUNTERFACTUAL",
+      "year": 2020
+    },
+    {
+      "ASTs_weights_predictions_exact": true,
+      "actual_complete_environment_steps": 100000,
+      "actual_training_this_invocation_env_steps": 100000,
+      "arm": "AG_RAW",
+      "baseline": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2023/17/a30b77e38b282f938c43eec8922dc76cd942c4c1f2078837248615bfc5e447ea",
+      "cache_hit_existing_complete_counterfactual": false,
+      "contract": {
+        "arm": "AG_RAW",
+        "baseline_contract": {
+          "bytes": 192851,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2023/17/a30b77e38b282f938c43eec8922dc76cd942c4c1f2078837248615bfc5e447ea/CONTRACT.json",
+          "sha256": "2de02e1cfe7f33b250ddd1e597bed6dee0e80ca13229246c0a6a5cbeeb6831f4"
+        },
+        "baseline_model": {
+          "bytes": 5947,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2023/17/a30b77e38b282f938c43eec8922dc76cd942c4c1f2078837248615bfc5e447ea/FROZEN_FACTOR.json",
+          "sha256": "520fa469531b1a79d02bc8827cce0abf9b250dfd943f5f4e661c052247d513d8"
+        },
+        "budget": "same100000 environment steps/20000 source-evaluated expressions; original model/optimizer/seed",
+        "diagnostic_only": "unavailable target intervention; not additional alpha search",
+        "orchestrator_source": {
+          "bytes": 3086,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual.py",
+          "sha256": "b5963a9c1cfe90da14374a6b6797d2a9d2640d784375c4eac71f0c0dd7e005d2"
+        },
+        "protocol": {
+          "bytes": 2202,
+          "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/PPO_COUNTERFACTUAL_TEST_CONTRACT.json",
+          "sha256": "492ecab7161e4f316fe73194d43b3f3c119b86787251b38da2f7722b8bb33abb"
+        },
+        "seed": 17,
+        "source": {
+          "bytes": 7855,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual_worker.py",
+          "sha256": "acbebcee492f0ac2ffc524e62b6af1081f426eda3021c88d76caa27ca735a3c6"
+        },
+        "year": 2023
+      },
+      "diagnostic": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/counterfactual_generators/alphagen_runs/AG_RAW/2023/17/6ec678b598296fd8821d1fff45e7a85044a64bd253481c543a78abf3e8b77f33",
+      "diagnostic_only": true,
+      "economic_backtests": 0,
+      "interventions": [
+        {
+          "actual_changed_target_rows": 20513,
+          "cutoff": "2022-01-01",
+          "domain_end": "2021-12-31",
+          "domain_start": "2020-01-01",
+          "future_target_values_deleted": 20434,
+          "immature_rows_selected": 996,
+          "in_domain_changed_target_rows": 62,
+          "in_domain_immature_changed_target_rows": 62,
+          "post_mask_identity": {
+            "active_dates": 483,
+            "cutoff": "2022-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 486,
+              "candidate_keys_sha256": "73d3f94756a18c0cb4416de48d568138a6c6c6bd5cd160aa7acd0df49cbe5bf3",
+              "candidate_rows": 11612,
+              "end": "2021-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "81eaafab9cccd5840d0f8175a555ca76e09ba56d2b8b65e31b08094aacabc0f3",
+              "market_tensor_shape": [
+                586,
+                6,
+                3656
+              ],
+              "prediction_target_mask": false,
+              "start": "2020-01-01"
+            },
+            "mature_target_rows": 9433,
+            "max_training_label_available_at": "2021-12-31 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "f5ae17b04241bfb1c71cfc99f25ed5b6b4a221633722d05ae23bb2ea09630da6"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 956
+        },
+        {
+          "actual_changed_target_rows": 16060,
+          "cutoff": "2023-01-01",
+          "domain_end": "2022-12-31",
+          "domain_start": "2022-01-01",
+          "future_target_values_deleted": 16005,
+          "immature_rows_selected": 1224,
+          "in_domain_changed_target_rows": 35,
+          "in_domain_immature_changed_target_rows": 35,
+          "post_mask_identity": {
+            "active_dates": 239,
+            "cutoff": "2023-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 242,
+              "candidate_keys_sha256": "1d126b2399d300edde2d772fad39fd9dfaf623d10c31e91da99aef3b89cb9183",
+              "candidate_rows": 5600,
+              "end": "2022-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "d594d89e6415d68f3e87cff86d97623df94e03279aed2f7f602d9bf13cc85660",
+              "market_tensor_shape": [
+                342,
+                6,
+                2789
+              ],
+              "prediction_target_mask": false,
+              "start": "2022-01-01"
+            },
+            "mature_target_rows": 4401,
+            "max_training_label_available_at": "2022-12-30 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "3f48e5f824f861644cdd9ac963a37ff0fcb189c03f01242e158614a8e1e89036"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 1196
+        },
+        {
+          "actual_changed_target_rows": 16060,
+          "cutoff": "2023-01-01",
+          "domain_end": "2022-12-31",
+          "domain_start": "2020-01-01",
+          "future_target_values_deleted": 16005,
+          "immature_rows_selected": 1224,
+          "in_domain_changed_target_rows": 42,
+          "in_domain_immature_changed_target_rows": 42,
+          "post_mask_identity": {
+            "active_dates": 724,
+            "cutoff": "2023-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 728,
+              "candidate_keys_sha256": "dc6da9ad5677eb8df130c6037e23293a2a0545b0691868c50086147ed43b3ebd",
+              "candidate_rows": 17212,
+              "end": "2022-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "e12314062a85cd152540784c9f29291bdf75ec3c6be43308b1678d3ca8164a18",
+              "market_tensor_shape": [
+                828,
+                6,
+                4004
+              ],
+              "prediction_target_mask": false,
+              "start": "2020-01-01"
+            },
+            "mature_target_rows": 13874,
+            "max_training_label_available_at": "2022-12-30 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "bb7ce0977dd86081235228ffcf1e4b943d6a614a25879020ee206ac511506be3"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 1196
+        }
+      ],
+      "scope": "Actual run_fold and original LSTM PPO, validation selection, pool refit and complete inference. Future/immature targets changed at each stage cutoff. Market data fixed; not a vendor-revision reconstruction proof.",
+      "seed": 17,
+      "status": "PASS_FULL_ORIGINAL_PPO_UNAVAILABLE_TARGET_COUNTERFACTUAL",
+      "year": 2023
+    },
+    {
+      "ASTs_weights_predictions_exact": true,
+      "actual_complete_environment_steps": 100000,
+      "actual_training_this_invocation_env_steps": 100000,
+      "arm": "AG_RES",
+      "baseline": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2023/17/a434e7b7e3445365b2a4d1e2dd9c4943107e41255b47d28cd68df523d1746851",
+      "cache_hit_existing_complete_counterfactual": false,
+      "contract": {
+        "arm": "AG_RES",
+        "baseline_contract": {
+          "bytes": 192818,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2023/17/a434e7b7e3445365b2a4d1e2dd9c4943107e41255b47d28cd68df523d1746851/CONTRACT.json",
+          "sha256": "9465df579bb86543761526b061e1228c4a0b6555a48d85b19235f8ce3fdbbf3e"
+        },
+        "baseline_model": {
+          "bytes": 6383,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2023/17/a434e7b7e3445365b2a4d1e2dd9c4943107e41255b47d28cd68df523d1746851/FROZEN_FACTOR.json",
+          "sha256": "3d643e7974307981c5b4aae2bd802d5c7e3f9a5fdf9d3f8bd6d4054b2aa754a5"
+        },
+        "budget": "same100000 environment steps/20000 source-evaluated expressions; original model/optimizer/seed",
+        "diagnostic_only": "unavailable target intervention; not additional alpha search",
+        "orchestrator_source": {
+          "bytes": 3086,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual.py",
+          "sha256": "b5963a9c1cfe90da14374a6b6797d2a9d2640d784375c4eac71f0c0dd7e005d2"
+        },
+        "protocol": {
+          "bytes": 2202,
+          "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/PPO_COUNTERFACTUAL_TEST_CONTRACT.json",
+          "sha256": "492ecab7161e4f316fe73194d43b3f3c119b86787251b38da2f7722b8bb33abb"
+        },
+        "seed": 17,
+        "source": {
+          "bytes": 7855,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual_worker.py",
+          "sha256": "acbebcee492f0ac2ffc524e62b6af1081f426eda3021c88d76caa27ca735a3c6"
+        },
+        "year": 2023
+      },
+      "diagnostic": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/counterfactual_generators/alphagen_runs/AG_RES/2023/17/e7f8567a97e0a9f5b9105e8c876b407515c962464066bee656be72a9f8c0a3f8",
+      "diagnostic_only": true,
+      "economic_backtests": 0,
+      "interventions": [
+        {
+          "actual_changed_target_rows": 20513,
+          "cutoff": "2022-01-01",
+          "domain_end": "2021-12-31",
+          "domain_start": "2020-01-01",
+          "future_target_values_deleted": 20434,
+          "immature_rows_selected": 996,
+          "in_domain_changed_target_rows": 62,
+          "in_domain_immature_changed_target_rows": 62,
+          "post_mask_identity": {
+            "active_dates": 483,
+            "cutoff": "2022-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 486,
+              "candidate_keys_sha256": "73d3f94756a18c0cb4416de48d568138a6c6c6bd5cd160aa7acd0df49cbe5bf3",
+              "candidate_rows": 11612,
+              "end": "2021-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "81eaafab9cccd5840d0f8175a555ca76e09ba56d2b8b65e31b08094aacabc0f3",
+              "market_tensor_shape": [
+                586,
+                6,
+                3656
+              ],
+              "prediction_target_mask": false,
+              "start": "2020-01-01"
+            },
+            "mature_target_rows": 9433,
+            "max_training_label_available_at": "2021-12-31 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "2eb8b70138ec9d8d550645c24461b219d74e0376a24750a1e6ae26d7c05a7230"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 956
+        },
+        {
+          "actual_changed_target_rows": 16060,
+          "cutoff": "2023-01-01",
+          "domain_end": "2022-12-31",
+          "domain_start": "2022-01-01",
+          "future_target_values_deleted": 16005,
+          "immature_rows_selected": 1224,
+          "in_domain_changed_target_rows": 35,
+          "in_domain_immature_changed_target_rows": 35,
+          "post_mask_identity": {
+            "active_dates": 239,
+            "cutoff": "2023-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 242,
+              "candidate_keys_sha256": "1d126b2399d300edde2d772fad39fd9dfaf623d10c31e91da99aef3b89cb9183",
+              "candidate_rows": 5600,
+              "end": "2022-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "d594d89e6415d68f3e87cff86d97623df94e03279aed2f7f602d9bf13cc85660",
+              "market_tensor_shape": [
+                342,
+                6,
+                2789
+              ],
+              "prediction_target_mask": false,
+              "start": "2022-01-01"
+            },
+            "mature_target_rows": 4401,
+            "max_training_label_available_at": "2022-12-30 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "1540788a4a9b00cfacff41387f854ae7b285644e3123af411232b0cac3d10324"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 1196
+        },
+        {
+          "actual_changed_target_rows": 16060,
+          "cutoff": "2023-01-01",
+          "domain_end": "2022-12-31",
+          "domain_start": "2020-01-01",
+          "future_target_values_deleted": 16005,
+          "immature_rows_selected": 1224,
+          "in_domain_changed_target_rows": 42,
+          "in_domain_immature_changed_target_rows": 42,
+          "post_mask_identity": {
+            "active_dates": 724,
+            "cutoff": "2023-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 728,
+              "candidate_keys_sha256": "dc6da9ad5677eb8df130c6037e23293a2a0545b0691868c50086147ed43b3ebd",
+              "candidate_rows": 17212,
+              "end": "2022-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "e12314062a85cd152540784c9f29291bdf75ec3c6be43308b1678d3ca8164a18",
+              "market_tensor_shape": [
+                828,
+                6,
+                4004
+              ],
+              "prediction_target_mask": false,
+              "start": "2020-01-01"
+            },
+            "mature_target_rows": 13874,
+            "max_training_label_available_at": "2022-12-30 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "08a3ebc7af8a3d0120a48239b2cf102bab668827be4509908b9989e15d54737a"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 1196
+        }
+      ],
+      "scope": "Actual run_fold and original LSTM PPO, validation selection, pool refit and complete inference. Future/immature targets changed at each stage cutoff. Market data fixed; not a vendor-revision reconstruction proof.",
+      "seed": 17,
+      "status": "PASS_FULL_ORIGINAL_PPO_UNAVAILABLE_TARGET_COUNTERFACTUAL",
+      "year": 2023
+    },
+    {
+      "ASTs_weights_predictions_exact": true,
+      "actual_complete_environment_steps": 100000,
+      "actual_training_this_invocation_env_steps": 100000,
+      "arm": "AG_RAW",
+      "baseline": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2026/17/5b0461bb5fb9b06ea7ff11a0cf3ba64657ce24f001b5dd6562f8802a9401dbe7",
+      "cache_hit_existing_complete_counterfactual": false,
+      "contract": {
+        "arm": "AG_RAW",
+        "baseline_contract": {
+          "bytes": 192851,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2026/17/5b0461bb5fb9b06ea7ff11a0cf3ba64657ce24f001b5dd6562f8802a9401dbe7/CONTRACT.json",
+          "sha256": "18528dafd9b8f302b6eff3c2811396226c4f1bfd0e920079db78b15d460996d4"
+        },
+        "baseline_model": {
+          "bytes": 6688,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RAW/2026/17/5b0461bb5fb9b06ea7ff11a0cf3ba64657ce24f001b5dd6562f8802a9401dbe7/FROZEN_FACTOR.json",
+          "sha256": "738bd7d2ec32e95159adf2acd7826c959e347b0e3972e3842137f2002065f599"
+        },
+        "budget": "same100000 environment steps/20000 source-evaluated expressions; original model/optimizer/seed",
+        "diagnostic_only": "unavailable target intervention; not additional alpha search",
+        "orchestrator_source": {
+          "bytes": 3086,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual.py",
+          "sha256": "b5963a9c1cfe90da14374a6b6797d2a9d2640d784375c4eac71f0c0dd7e005d2"
+        },
+        "protocol": {
+          "bytes": 2202,
+          "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/PPO_COUNTERFACTUAL_TEST_CONTRACT.json",
+          "sha256": "492ecab7161e4f316fe73194d43b3f3c119b86787251b38da2f7722b8bb33abb"
+        },
+        "seed": 17,
+        "source": {
+          "bytes": 7855,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual_worker.py",
+          "sha256": "acbebcee492f0ac2ffc524e62b6af1081f426eda3021c88d76caa27ca735a3c6"
+        },
+        "year": 2026
+      },
+      "diagnostic": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/counterfactual_generators/alphagen_runs/AG_RAW/2026/17/5abaf97c61075a4fa28669c4ffa2c786aeb654b0af8240f11d1bf8650e6cf05a",
+      "diagnostic_only": true,
+      "economic_backtests": 0,
+      "interventions": [
+        {
+          "actual_changed_target_rows": 8073,
+          "cutoff": "2025-01-01",
+          "domain_end": "2024-12-31",
+          "domain_start": "2023-01-01",
+          "future_target_values_deleted": 8029,
+          "immature_rows_selected": 2158,
+          "in_domain_changed_target_rows": 34,
+          "in_domain_immature_changed_target_rows": 34,
+          "post_mask_identity": {
+            "active_dates": 482,
+            "cutoff": "2025-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 484,
+              "candidate_keys_sha256": "8a1ca44d77053d5ff9ab32883b290a45e8ff5e41dcc15d48575ec7ac604ff450",
+              "candidate_rows": 10819,
+              "end": "2024-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "2715a7512c610d8a1165ca615549116f9d9e2e68136c75c7eb029367ba124a5e",
+              "market_tensor_shape": [
+                584,
+                6,
+                3858
+              ],
+              "prediction_target_mask": false,
+              "start": "2023-01-01"
+            },
+            "mature_target_rows": 7953,
+            "max_training_label_available_at": "2024-12-31 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "d592beee3e03b8eb3d3e8e1f10ac36bd6dbd00c1a18c184142f3bf26a1b609e4"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 2135
+        },
+        {
+          "actual_changed_target_rows": 3021,
+          "cutoff": "2026-01-01",
+          "domain_end": "2025-12-31",
+          "domain_start": "2025-01-01",
+          "future_target_values_deleted": 2954,
+          "immature_rows_selected": 2555,
+          "in_domain_changed_target_rows": 41,
+          "in_domain_immature_changed_target_rows": 41,
+          "post_mask_identity": {
+            "active_dates": 241,
+            "cutoff": "2026-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 243,
+              "candidate_keys_sha256": "8a4b7b5246a17345323124ab0ee332feb9af548335634048c3de0d5ebe8f00b9",
+              "candidate_rows": 6584,
+              "end": "2025-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "ddb9b48962ecc956c83860624cf5d6b9f20f527d2b2db1dae5c8747679ab1fe6",
+              "market_tensor_shape": [
+                343,
+                6,
+                3323
+              ],
+              "prediction_target_mask": false,
+              "start": "2025-01-01"
+            },
+            "mature_target_rows": 5041,
+            "max_training_label_available_at": "2025-12-31 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "937592681e405273f909c5916ca0d89c184932bfea8828636d9ddcfb1d39bd38"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 2521
+        },
+        {
+          "actual_changed_target_rows": 3021,
+          "cutoff": "2026-01-01",
+          "domain_end": "2025-12-31",
+          "domain_start": "2023-01-01",
+          "future_target_values_deleted": 2954,
+          "immature_rows_selected": 2555,
+          "in_domain_changed_target_rows": 53,
+          "in_domain_immature_changed_target_rows": 53,
+          "post_mask_identity": {
+            "active_dates": 725,
+            "cutoff": "2026-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 727,
+              "candidate_keys_sha256": "db0486b6abb4e1875701bee00dcdff3ee7b81648e9d546ac714c8840a07a1051",
+              "candidate_rows": 17403,
+              "end": "2025-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "c23f4b74a77f5a916a8f4dbf7f8b2829888dc8be6b4186436fabb0781b12062c",
+              "market_tensor_shape": [
+                827,
+                6,
+                4380
+              ],
+              "prediction_target_mask": false,
+              "start": "2023-01-01"
+            },
+            "mature_target_rows": 13017,
+            "max_training_label_available_at": "2025-12-31 15:00:00",
+            "target_column": "label_exit_rule_net",
+            "target_tensor_sha256": "847f53f9138176eeaa55ce3bb44bec1fb3d6241d5e9394b7e4735579e68483c0"
+          },
+          "target_column": "label_exit_rule_net",
+          "unknown_available_at_rows_selected": 2521
+        }
+      ],
+      "scope": "Actual run_fold and original LSTM PPO, validation selection, pool refit and complete inference. Future/immature targets changed at each stage cutoff. Market data fixed; not a vendor-revision reconstruction proof.",
+      "seed": 17,
+      "status": "PASS_FULL_ORIGINAL_PPO_UNAVAILABLE_TARGET_COUNTERFACTUAL",
+      "year": 2026
+    },
+    {
+      "ASTs_weights_predictions_exact": true,
+      "actual_complete_environment_steps": 100000,
+      "actual_training_this_invocation_env_steps": 100000,
+      "arm": "AG_RES",
+      "baseline": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2026/17/013f3829c1a031a6b0f319ea014ba76a3dfe86bd26ab051630fca57598909bd0",
+      "cache_hit_existing_complete_counterfactual": false,
+      "contract": {
+        "arm": "AG_RES",
+        "baseline_contract": {
+          "bytes": 192818,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2026/17/013f3829c1a031a6b0f319ea014ba76a3dfe86bd26ab051630fca57598909bd0/CONTRACT.json",
+          "sha256": "8838a6118b1f87280211314af005299be4407867c7de885868e3970df7025995"
+        },
+        "baseline_model": {
+          "bytes": 7189,
+          "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2026/17/013f3829c1a031a6b0f319ea014ba76a3dfe86bd26ab051630fca57598909bd0/FROZEN_FACTOR.json",
+          "sha256": "870cff5132ffc9e00ae67ecb173a50eab1cc93ea0c9370f78b5d32e431e0373f"
+        },
+        "budget": "same100000 environment steps/20000 source-evaluated expressions; original model/optimizer/seed",
+        "diagnostic_only": "unavailable target intervention; not additional alpha search",
+        "orchestrator_source": {
+          "bytes": 3086,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual.py",
+          "sha256": "b5963a9c1cfe90da14374a6b6797d2a9d2640d784375c4eac71f0c0dd7e005d2"
+        },
+        "protocol": {
+          "bytes": 2202,
+          "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D3/PPO_COUNTERFACTUAL_TEST_CONTRACT.json",
+          "sha256": "492ecab7161e4f316fe73194d43b3f3c119b86787251b38da2f7722b8bb33abb"
+        },
+        "seed": 17,
+        "source": {
+          "bytes": 7855,
+          "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/generation_counterfactual_worker.py",
+          "sha256": "acbebcee492f0ac2ffc524e62b6af1081f426eda3021c88d76caa27ca735a3c6"
+        },
+        "year": 2026
+      },
+      "diagnostic": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/counterfactual_generators/alphagen_runs/AG_RES/2026/17/a12e97a468e3c9a2f65a9c20de033d1378db2928ece31c276d9acb12cc66aa11",
+      "diagnostic_only": true,
+      "economic_backtests": 0,
+      "interventions": [
+        {
+          "actual_changed_target_rows": 8073,
+          "cutoff": "2025-01-01",
+          "domain_end": "2024-12-31",
+          "domain_start": "2023-01-01",
+          "future_target_values_deleted": 8029,
+          "immature_rows_selected": 2158,
+          "in_domain_changed_target_rows": 34,
+          "in_domain_immature_changed_target_rows": 34,
+          "post_mask_identity": {
+            "active_dates": 482,
+            "cutoff": "2025-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 484,
+              "candidate_keys_sha256": "8a1ca44d77053d5ff9ab32883b290a45e8ff5e41dcc15d48575ec7ac604ff450",
+              "candidate_rows": 10819,
+              "end": "2024-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "2715a7512c610d8a1165ca615549116f9d9e2e68136c75c7eb029367ba124a5e",
+              "market_tensor_shape": [
+                584,
+                6,
+                3858
+              ],
+              "prediction_target_mask": false,
+              "start": "2023-01-01"
+            },
+            "mature_target_rows": 7953,
+            "max_training_label_available_at": "2024-12-31 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "f301c451d2cd29de063ecae06d769805e2f492a58d2e256b08dfa9913fe88d3a"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 2135
+        },
+        {
+          "actual_changed_target_rows": 3021,
+          "cutoff": "2026-01-01",
+          "domain_end": "2025-12-31",
+          "domain_start": "2025-01-01",
+          "future_target_values_deleted": 2954,
+          "immature_rows_selected": 2555,
+          "in_domain_changed_target_rows": 41,
+          "in_domain_immature_changed_target_rows": 41,
+          "post_mask_identity": {
+            "active_dates": 241,
+            "cutoff": "2026-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 243,
+              "candidate_keys_sha256": "8a4b7b5246a17345323124ab0ee332feb9af548335634048c3de0d5ebe8f00b9",
+              "candidate_rows": 6584,
+              "end": "2025-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "ddb9b48962ecc956c83860624cf5d6b9f20f527d2b2db1dae5c8747679ab1fe6",
+              "market_tensor_shape": [
+                343,
+                6,
+                3323
+              ],
+              "prediction_target_mask": false,
+              "start": "2025-01-01"
+            },
+            "mature_target_rows": 5041,
+            "max_training_label_available_at": "2025-12-31 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "886a0b3e57db88399fc9e3c50a91980e7906da7c9a39f557f5fa670855dbda28"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 2521
+        },
+        {
+          "actual_changed_target_rows": 3021,
+          "cutoff": "2026-01-01",
+          "domain_end": "2025-12-31",
+          "domain_start": "2023-01-01",
+          "future_target_values_deleted": 2954,
+          "immature_rows_selected": 2555,
+          "in_domain_changed_target_rows": 53,
+          "in_domain_immature_changed_target_rows": 53,
+          "post_mask_identity": {
+            "active_dates": 725,
+            "cutoff": "2026-01-01",
+            "feature_domain": {
+              "backtrack": 100,
+              "calendar_days": 727,
+              "candidate_keys_sha256": "db0486b6abb4e1875701bee00dcdff3ee7b81648e9d546ac714c8840a07a1051",
+              "candidate_rows": 17403,
+              "end": "2025-12-31",
+              "features": [
+                "open",
+                "close",
+                "high",
+                "low",
+                "volume",
+                "vwap"
+              ],
+              "future_days": 0,
+              "market_tensor_sha256": "c23f4b74a77f5a916a8f4dbf7f8b2829888dc8be6b4186436fabb0781b12062c",
+              "market_tensor_shape": [
+                827,
+                6,
+                4380
+              ],
+              "prediction_target_mask": false,
+              "start": "2023-01-01"
+            },
+            "mature_target_rows": 13017,
+            "max_training_label_available_at": "2025-12-31 15:00:00",
+            "target_column": "residual",
+            "target_tensor_sha256": "bd509184680b615579dd6213049379a3c61db69bbd4cc99c7271939f6434aab2"
+          },
+          "target_column": "residual",
+          "unknown_available_at_rows_selected": 2521
+        }
+      ],
+      "scope": "Actual run_fold and original LSTM PPO, validation selection, pool refit and complete inference. Future/immature targets changed at each stage cutoff. Market data fixed; not a vendor-revision reconstruction proof.",
+      "seed": 17,
+      "status": "PASS_FULL_ORIGINAL_PPO_UNAVAILABLE_TARGET_COUNTERFACTUAL",
+      "year": 2026
+    }
+  ],
+  "diagnostic_only": true,
+  "economic_backtests": 0,
+  "market_revision_retraining": "NOT_RUN; historical input prefix invariance audited separately"
+}

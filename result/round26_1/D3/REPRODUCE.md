@@ -1,1 +1,1 @@
-项目根：research/round23_6_26_execution/env/bin/python tools/continue_round23_7_round26_1.py --deliverable D3 --resume --jobs 2 --seed 17 --publish。
+服务器项目根：research/round23_6_26_execution/env/bin/python tools/continue_round23_7_round26_1.py --deliverable D3 --resume --jobs 2 --seed 17 --publish。先17完整全链路，再42/73，最后等权3seed。供应商原库及训练目标面板仅保留精确路径/schema/SHA，不上传；原PPO大checkpoint见各折large_checkpoint_manifest。

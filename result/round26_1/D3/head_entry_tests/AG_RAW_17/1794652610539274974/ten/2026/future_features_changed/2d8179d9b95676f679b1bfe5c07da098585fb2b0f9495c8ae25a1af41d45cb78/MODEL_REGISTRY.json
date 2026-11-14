@@ -1,0 +1,179 @@
+{
+  "parameters": {
+    "arm": "AG_RAW",
+    "factor_seed": "17",
+    "head": "ten",
+    "year": 2026,
+    "mode": "ADD",
+    "remove": null,
+    "feature_order": [
+      "g_prim_px_vol_corr",
+      "fb_close_seal_streak_norm",
+      "fb_last30_amount_ratio",
+      "h5_last_first_limit_value_change_sym",
+      "h1_consistent_buy_ratio",
+      "h1_last15m_volume_ratio",
+      "h4_large_net_to_turnover",
+      "h4_retail_net_to_turnover",
+      "g0_amt_vs_5",
+      "g1_ret_5",
+      "g3_days_since_limit",
+      "ind_seal_rate_excess",
+      "d1_open_gap",
+      "z_AG"
+    ],
+    "tree_seeds": [
+      17,
+      42,
+      73,
+      101,
+      202
+    ],
+    "XGB_params": {
+      "objective": "rank:ndcg",
+      "eval_metric": null,
+      "ndcg_exp_gain": true,
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_child_weight": 1.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "reg_lambda": 1.0,
+      "reg_alpha": 0.0,
+      "tree_method": "hist",
+      "random_state": 17,
+      "n_jobs": 2
+    },
+    "rank_bins": 10,
+    "eval_metric": "ndcg@2",
+    "fit_cutoff": "2026-01-01",
+    "max_training_label_available_at": "2025-12-31 15:00:00",
+    "train_start": "2023-01-03 00:00:00",
+    "train_end": "2025-12-29 00:00:00",
+    "training_keys_hash": "f0440a136b1fe1570ce307dc58715d1c065a7f396e9be7eccbb91f2df5209243",
+    "training_values_and_labels_hash": "8b0d8bf855138daf1b0678c1b2a12ecfb7862191b8b8a7832c9169e9f8b4b7c3",
+    "prediction_values_hash": "dbcb38c4346eb0772c58165b20539d62458487ce75a2ff1068b7c53a486f32e9",
+    "prediction_keys_hash": "ee312020e96d1e1d21531ae8b1bf8da7a67c9cb935b5ec875c093ae6f95b1554",
+    "OOF_factor_assertion": "every training row factor_fit_cutoff <= row calendar-year start, not current-Outer formula fit values",
+    "original_feature_target_hash": "87f7a5a59451ae1e71034f0f8729736df7afef2233ec75ef0c11a02d73b752b5",
+    "prediction_original_feature_hash": "dcb7a14f766800a8a6137abd0b38e938b46ae273f9e390ac92740c7256115e94",
+    "diagnostic_context": {
+      "case": "future_features_changed",
+      "intervention_seed": 231726,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/factor_entry_tests.py",
+        "bytes": 6664,
+        "sha256": "1b6431800f94e74ad2e2b53a516cd41afbe947e5ca4eaae5d15420956e74dbab"
+      },
+      "actual_changed_rows": {
+        "training_rows": 0,
+        "prediction_rows": 0
+      },
+      "economic_trial": false
+    }
+  },
+  "models": [
+    {
+      "seed": 17,
+      "sha256": "60e40ef5aac28ff48f5af9039d371b7183124208cc36875c0d469b2a407f0751",
+      "features": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_AG"
+      ]
+    },
+    {
+      "seed": 42,
+      "sha256": "60e40ef5aac28ff48f5af9039d371b7183124208cc36875c0d469b2a407f0751",
+      "features": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_AG"
+      ]
+    },
+    {
+      "seed": 73,
+      "sha256": "60e40ef5aac28ff48f5af9039d371b7183124208cc36875c0d469b2a407f0751",
+      "features": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_AG"
+      ]
+    },
+    {
+      "seed": 101,
+      "sha256": "60e40ef5aac28ff48f5af9039d371b7183124208cc36875c0d469b2a407f0751",
+      "features": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_AG"
+      ]
+    },
+    {
+      "seed": 202,
+      "sha256": "60e40ef5aac28ff48f5af9039d371b7183124208cc36875c0d469b2a407f0751",
+      "features": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_AG"
+      ]
+    }
+  ],
+  "input_fingerprint": "2d8179d9b95676f679b1bfe5c07da098585fb2b0f9495c8ae25a1af41d45cb78"
+}

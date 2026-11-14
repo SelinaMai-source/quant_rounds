@@ -1,0 +1,7 @@
+experiment_id,decision,economic_gate_pass,missing_economic_evidence,changed_top1_top2_plan_rows,changed_top1_top2_real_entry_rows,paired_cost_direction,outside_2024_2025_log_relative_wealth,delta_cagr_ok,delta_sharpe_ok,nav_improvement_ok,top_changed_ok,maxdd_ok,fee_direction_ok,not_only_2024_or_2025
+AG_RAW_17_A1_FIVE_ADD,REJECT_CURRENT_CONFIGURATION,False,True,66,22,,0.041204457625255805,False,False,False,True,True,,True
+AG_RAW_17_A2_TEN_ADD,REJECT_CURRENT_CONFIGURATION,False,True,236,111,,0.2581501978663766,False,False,False,True,True,,True
+AG_RAW_17_A3_BOTH_ADD,REJECT_CURRENT_CONFIGURATION,False,False,266,124,False,0.26109507691965106,False,False,False,True,True,False,True
+AG_RES_17_A1_FIVE_ADD,REJECT_CURRENT_CONFIGURATION,False,True,35,13,,-0.02138919058455761,False,False,False,True,True,,False
+AG_RES_17_A2_TEN_ADD,REJECT_CURRENT_CONFIGURATION,False,True,182,76,,0.09964795733139592,False,False,False,True,True,,True
+AG_RES_17_A3_BOTH_ADD,REJECT_CURRENT_CONFIGURATION,False,False,199,86,False,0.13406355237235007,False,False,False,True,True,False,True

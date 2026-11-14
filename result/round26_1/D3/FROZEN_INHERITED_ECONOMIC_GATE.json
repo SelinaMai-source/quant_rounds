@@ -1,0 +1,21 @@
+{
+  "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+  "thresholds": {
+    "id": "R21_3_ECONOMIC_MATERIALITY_V1",
+    "delta_cagr_min_abs": 0.01,
+    "delta_sharpe_min": 0.05,
+    "nav_rel_min": 0.01,
+    "maxdd_worse_max_abs": 0.02,
+    "nav_abs_min": 127500.89355724689
+  },
+  "canonical_threshold_hash": "0bf20fed62e839ebae207b2f03e2c480ce9f370ed54ad8a5039eb226ef85241e",
+  "raw_file": "/data1/stock-mxy/课题/一进二策略/core/round21_4/contract.py",
+  "raw_file_hash": "35bff8add6b4dfb79bae14e852cfcdae3904ff611a9ed4a621ddf64263aac5ad",
+  "gate_code_hash": "e89c30f4b50e22887bf0eebbe607abc76e9295d81d473fd18dda1796d7771607",
+  "freeze_timestamp": "2026-11-14T18:43:02.471113+08:00",
+  "implementation": {
+    "LEGACY": "core.round22_3.contract.material_vs_v5（绝对值 nav_rel；缺证据默认真）",
+    "CORRECTED": "research_integrity_v2.economic_gate.evaluate_economic_gate"
+  },
+  "promotion_uses": "CORRECTED"
+}

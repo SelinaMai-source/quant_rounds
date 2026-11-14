@@ -1,5 +1,19 @@
 {
-  "status": "NO_NONIDENTICAL_ALTERNATIVES",
-  "alternatives": [],
-  "deduplicated": {}
+  "status": "COMPUTED",
+  "pvalues": {
+    "lower": 0.6194,
+    "consistent": 0.9594,
+    "upper": 0.9594
+  },
+  "alternatives": [
+    "AG_RAW_17_A1_FIVE_ADD",
+    "AG_RAW_17_A2_TEN_ADD",
+    "AG_RAW_17_A3_BOTH_ADD",
+    "AG_RES_17_A1_FIVE_ADD",
+    "AG_RES_17_A2_TEN_ADD",
+    "AG_RES_17_A3_BOTH_ADD"
+  ],
+  "deduplicated": {},
+  "loss": "negative actual portfolio daily return",
+  "historical_development": true
 }
