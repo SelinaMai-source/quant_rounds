@@ -71,6 +71,11 @@ def run_models(banks,*,jobs=None):
  # A0 same explicit matched calendar/capital/execution, original full-history overlay warmup.
  base=fuse_heads(source['five'],source['ten'])
  frozen=pd.read_parquet(C/'result/round23_6/frozen_components.parquet')[['signal_date','instrument_id','v5']].rename(columns={'v5':'score'});keys=['signal_date','instrument_id'];pd.testing.assert_frame_equal(base.sort_values(keys).reset_index(drop=True),frozen.sort_values(keys).reset_index(drop=True),check_exact=True)
+ from core.round26_1.baseline_control import replay as replay_no_factor
+ factor_control=R/'factor_banks/AG_RAW/17/OOF_factor.parquet'
+ if not factor_control.exists():raise RuntimeError('Original seed17 real OOF bank required for no-factor control contract')
+ source,baseline_proof=replay_no_factor(source,factor_control)
+ base=fuse_heads(source['five'],source['ten'])
  for bps in [0,10,20]:
   code='AG_A0'+('' if bps==0 else '_S'+str(bps//10));path,fp,hit=execute('round26_1',code,base,bps=bps);registry.append({'method':'AG_A0','scenario':'S'+str(bps//10),'code':code,'path':str(path),'experiment_fingerprint':fp,'cache_hit':hit})
  for (arm,seed_label),factor in banks.items():
@@ -101,7 +106,7 @@ def run_models(banks,*,jobs=None):
    for bps in ([0,10,20] if variant=='A3_BOTH_ADD' else [0]):
     code=method+('' if bps==0 else '_S'+str(bps//10));path,fp,hit=execute('round26_1',code,scores,bps=bps,upstream=[identity(factor)]);registry.append({'method':method,'scenario':'S'+str(bps//10),'code':code,'path':str(path),'experiment_fingerprint':fp,'cache_hit':hit});print('AlphaGen actual Add trial',code,flush=True)
  stage='EQ3' if any(s=='EQ3' for _,s in banks) else '_'.join(sorted({s for _,s in banks}));stage_dir=R/'seed_stages'/stage;stage_dir.mkdir(parents=True,exist_ok=True);pd.DataFrame(registry).to_csv(stage_dir/'run_manifest.csv',index=False);pd.DataFrame(modelrecords).to_csv(stage_dir/'head_model_manifest.csv',index=False);pd.DataFrame(correlations).to_csv(stage_dir/'dedup_selection.csv',index=False)
- all_runs=pd.concat([pd.read_csv(p) for p in (R/'seed_stages').glob('*/run_manifest.csv')],ignore_index=True).drop_duplicates('code',keep='last');all_runs.to_csv(R/'run_manifest.csv',index=False);pd.DataFrame(correlations).to_csv(R/'training_only_dedup_selection.csv',index=False);pd.concat([pd.read_csv(p) for p in (R/'seed_stages').glob('*/head_model_manifest.csv')],ignore_index=True).drop_duplicates(['arm','seed','head','year','mode'],keep='last').to_csv(R/'head_model_manifest.csv',index=False);pd.concat([pd.read_csv(p) for p in (R/'seed_stages').glob('*/dedup_selection.csv')],ignore_index=True).drop_duplicates(['arm','seed','head','outer_year'],keep='last').to_csv(R/'training_only_dedup_selection.csv',index=False)
+ all_runs=pd.concat([pd.read_csv(p) for p in sorted((R/'seed_stages').glob('*/run_manifest.csv'),key=lambda p:({'BASELINE_PREFLIGHT':0,'17':1,'42':2,'73':3,'EQ3':4}.get(p.parent.name,-1),str(p)))],ignore_index=True).drop_duplicates('code',keep='last');all_runs.to_csv(R/'run_manifest.csv',index=False);pd.DataFrame(correlations).to_csv(R/'training_only_dedup_selection.csv',index=False);pd.concat([pd.read_csv(p) for p in (R/'seed_stages').glob('*/head_model_manifest.csv')],ignore_index=True).drop_duplicates(['arm','seed','head','year','mode'],keep='last').to_csv(R/'head_model_manifest.csv',index=False);pd.concat([pd.read_csv(p) for p in (R/'seed_stages').glob('*/dedup_selection.csv')],ignore_index=True).drop_duplicates(['arm','seed','head','outer_year'],keep='last').to_csv(R/'training_only_dedup_selection.csv',index=False)
  from core.round26_1.factor_entry_tests import run as test_actual_head_entry
  for (arm,seed_label),factor in banks.items():test_actual_head_entry(factor,arm,seed_label)
  return registry

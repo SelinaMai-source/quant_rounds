@@ -1,0 +1,9 @@
+# A0真实无因子重放控制：候选经济结果出现前冻结
+
+用真实已生成的seed17 RAW OOF bank验证键覆盖，但不将z_AG输入模型。通过实际fit_head入口，对Five/Ten的2023—2026八个Head年度配置，各按原五个树seed拟合：原特征顺序、原参数、原目标、真实成熟截止、原训练/预测资格和日内融合规则。保存40个树模型及输入/配置/资源/原始预测manifest。
+
+先确认旧E0融合端点精确等于冻结v5。随后比较同窗口重放无因子融合端点：完全一致则记录EXACT_FUSED_ENDPOINT_PARITY；不一致则不将差异算作因子增量，明确使用MATCHED_REPAIRED_NO_FACTOR_BASELINE。所有Add、Remove-only、Replace的未改Head也使用这个相同无因子入口的预测，相关回退同理。报告旧v5参考与新匹配控制的差异及原因，不修改正式baseline_v5/CURRENT/生产配置。
+
+条件Head OOF增量相对真实重放的同口径无因子Head计算，并限定最终匹配合法候选键。主回测比较区间和300000初资不变。旧窗口原生基准已执行的三种情景全部保留在BASELINE_PREFLIGHT及原不可变运行目录，不删除、不覆盖。聚合manifest按BASELINE_PREFLIGHT→17→42→73→EQ3固定顺序处理，不能靠目录遍历顺序误取旧基准。
+
+这属于既定A0和入模集成正确性验证，不增加候选方法或搜索空间。当前尚无AlphaGen候选经济回测结果，不依绩效选择控制口径。
