@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-11-15T04:05:03.745541+00:00",
+  "stage": "BEFORE_ANY_FULL_TARGET_FIT_OR_BACKTEST",
+  "failure_log": "causal_queue_replay_integration.log",
+  "observed_failure": "RuntimeError: Tensors must have same number of dimensions: got 2 and 1",
+  "source": "legacy author LSTM.forward: att_out=(rnn_out*scores).sum(dim=1).squeeze()",
+  "cause": "sum already has shape[batch,hidden]; unrestricted squeeze removes batch dimension when exactly one candidate",
+  "correction": "target-only exact author LSTM forward with redundant final squeeze omitted; retain all parameters/operations and state_dict keys; batch>1 numerical outputs and original OT-step parameters must remain exact",
+  "reference_source_unchanged": true,
+  "not_external_blocker": true,
+  "no_hyperparameter_search_or_performance_seen": true
+}

@@ -1,13 +1,14 @@
 """Queue, real inference membership and exact original OT-step integration."""
 from types import SimpleNamespace
 from pathlib import Path
-import json,copy
+import json,copy,tempfile
 import numpy as np
 import pandas as pd
 import torch
 from core.round23_7.tra_reference import R,config,load_author
 from core.round23_7.tra_causal import CausalDataset,Bundle,causal_model_class,NAT
 from core.round23_7.tra_data import traded_history
+from core.round23_7.tra_fit import observed_class
 
 def fixture():
     dates=pd.bdate_range('2015-01-05',periods=70)
@@ -36,6 +37,12 @@ def run():
     assert np.array_equal(after[0,slot,6:],expected)
     assert ds.feedback_audit['unmature_label_reads']==0
     assert ds.feedback_audit['mature_missing_target_rows']>0
+    interventions=[]
+    def future_feedback(y,available,cutoff):
+        out=y.copy();mask=(available==NAT)|(available>cutoff);out[mask]=1e6
+        interventions.append(int(mask.sum()));return out
+    ds.feedback_provider=future_feedback
+    assert np.array_equal(after,ds.batch_data([50])) and min(interventions)>0
     model_class,provenance=causal_model_class();_,author=load_author()
     model_cfg,_=config('init',R/'not_written_fixture')
     model_cfg.update(logdir=None);model_cfg['model_config']['input_size']=6
@@ -81,7 +88,29 @@ def run():
         torch.manual_seed(7317);pa=t1.tra(t1.model(torch.from_numpy(da[:,:,:6])),torch.from_numpy(da[:,:-21,6:]))[0]
         torch.manual_seed(7317);pz=t1.tra(t1.model(torch.from_numpy(dz[:,:,:6])),torch.from_numpy(dz[:,:-21,6:]))[0]
     assert torch.equal(pa,pz) and torch.isfinite(pa).all()
+    assert CausalDataset(mutant,2026,10,1024,inference_bundle=base).prepare('test').bundle is base
+    # Run the complete small synthetic causal forecast loop, then restore the
+    # actual initial queue/RNG and perturb as-of-unavailable labels at each day.
+    # This is integration only; the real full-fit diagnostics are separate.
+    with tempfile.TemporaryDirectory(prefix='causal_forecast_fixture_',dir=work) as tmp:
+        cfg=copy.deepcopy(model_cfg);cfg['logdir']=tmp
+        observed=observed_class(model_class)(**cfg)
+        first=CausalDataset(fixture(),2015,3,512).prepare('test')
+        _,forecast_original=observed.test_epoch(first,return_pred=True)
+        snapshot=np.load(Path(tmp)/'OUTER_INITIAL_MEMORY.npz')
+        replay=CausalDataset(fixture(),2015,3,512,feedback_provider=future_feedback).prepare('test')
+        for name in ['predictions','recorded','record_kind']:getattr(replay,name)[:]=snapshot[name]
+        plain=model_class(**{**model_cfg,'logdir':None})
+        plain.model.load_state_dict(observed.model.state_dict());plain.tra.load_state_dict(observed.tra.state_dict())
+        torch.set_rng_state(torch.load(Path(tmp)/'OUTER_INITIAL_TORCH_RNG.pt',weights_only=True))
+        _,forecast_mutant=plain.test_epoch(replay,return_pred=True)
+        pd.testing.assert_frame_equal(forecast_original,forecast_mutant,check_exact=True)
+        assert replay.feedback_audit['mature_label_reads']>0
     result={'status':'PASS_CAUSAL_ADAPTER_INTEGRATION','variable_delay_exceeding_author21_exclusion_masked':True,'NaT_never_released':True,'saved_expert_outputs_exact':True,'release_after_actual_maturity_matches_original_normalized_squared_error':True,'original_vs_adapted_actual_one_step_MSE_OT_parameters_exact':True,'T0_T1_same_frozen_backbone_inputs_and_default_budget':True,'real2026_forecast_nodes_after_all_labels_erased':len(a.indices),'real_model_forecast_entry_exact_after_label_erasure_rows':len(valid),'fixture_is_not_full_reference_or_target_run':True,'full_fit_counterfactuals_still_pending':True,'queue_fixture_audit':ds.feedback_audit}
+    (R/'CAUSAL_INTEGRATION.json').write_text(json.dumps(result,indent=2))
+    result['full_fixture_causal_forecast_replay_rows']=len(forecast_original)
+    result['actual_asof_unavailable_label_interventions']=len(interventions)
+    result['asof_interventions_all_nonempty']=min(interventions)>0
     (R/'CAUSAL_INTEGRATION.json').write_text(json.dumps(result,indent=2))
     (R/'ADAPTER_SOURCE_PROVENANCE.json').write_text(json.dumps(provenance,indent=2))
     print(json.dumps(result),flush=True)

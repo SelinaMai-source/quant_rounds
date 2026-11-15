@@ -11,9 +11,12 @@
   "fixture_is_not_full_reference_or_target_run": true,
   "full_fit_counterfactuals_still_pending": true,
   "queue_fixture_audit": {
-    "mature_label_reads": 1,
+    "mature_label_reads": 2,
     "unmature_label_reads": 0,
     "saved_expert_prediction_writes": 3,
-    "mature_missing_target_rows": 3
-  }
+    "mature_missing_target_rows": 4
+  },
+  "full_fixture_causal_forecast_replay_rows": 70,
+  "actual_asof_unavailable_label_interventions": 50,
+  "asof_interventions_all_nonempty": true
 }

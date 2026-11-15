@@ -10,5 +10,14 @@
   "REFERENCE_IMPLEMENTED": true,
   "REFERENCE_INTEGRATION_PASS": true,
   "reference_pid": 2199283,
-  "reference_log": "result/round23_7/D4/full_author_reference.log"
+  "reference_log": "result/round23_7/D4/full_author_reference.log",
+  "TARGET_DATA_COMPLETE": true,
+  "TARGET_CAUSAL_ADAPTER_IMPLEMENTED": true,
+  "CAUSAL_INTEGRATION_PASS": true,
+  "BACKEND_SCORE_INTEGRATION_PASS": true,
+  "TARGET_FULL_FIT_WORKER_IMPLEMENTED": true,
+  "TARGET_CONTROLLER_IMPLEMENTED": false,
+  "completed_full_target_models": 0,
+  "completed_full_reference_phases": 0,
+  "full_target_fit_counterfactuals_complete": false
 }

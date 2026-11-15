@@ -25,7 +25,7 @@ class Bundle:
 
 class CausalDataset:
     """Author-compatible batches; predict membership never depends on a target."""
-    def __init__(self,bundle,year,num_states,batch_size,*,prediction_sink=None):
+    def __init__(self,bundle,year,num_states,batch_size,*,prediction_sink=None,inference_bundle=None,feedback_provider=None):
         self.bundle=bundle;self.year=int(year);self.num_states=int(num_states)
         self.seq_len=60;self.horizon=21;self.batch_size=batch_size;self.drop_last=False;self.shuffle=True
         self.params=(batch_size,False,True);self.segment='all';self._index=bundle.index
@@ -34,10 +34,16 @@ class CausalDataset:
         self.record_kind=np.zeros(len(bundle.keys),dtype='int8')
         self.indices=np.arange(len(bundle.keys));self.feedback_audit={'mature_label_reads':0,'unmature_label_reads':0,'saved_expert_prediction_writes':0}
         self.prediction_sink=prediction_sink
+        self.inference_bundle=inference_bundle
+        self.feedback_provider=feedback_provider
     def prepare(self,segments):
         if isinstance(segments,(list,tuple)):return [self.prepare(s) for s in segments]
         if segments not in ['train','valid','test']:raise ValueError(segments)
-        obj=copy.copy(self);obj.segment=segments;b=self.bundle
+        obj=copy.copy(self);obj.segment=segments
+        if segments=='test' and self.inference_bundle is not None:
+            assert self.bundle.keys.equals(self.inference_bundle.keys)
+            obj.bundle=self.inference_bundle
+        b=obj.bundle
         train_cut=pd.Timestamp(f'{self.year-1}-01-01').value;outer_cut=pd.Timestamp(f'{self.year}-01-01').value
         if segments=='test':
             end=pd.Timestamp(f'{self.year+1}-01-01').value
@@ -90,7 +96,15 @@ class CausalDataset:
         if len(selected):
             assert np.all(b.available[selected]!=NAT) and np.all(b.available[selected]<=asof[rows,0])
             # First read of labels for feedback occurs only after the above gate.
-            target=b.y[selected]
+            if self.feedback_provider is None:target=b.y[selected]
+            else:
+                target=np.empty(len(selected),dtype='float32')
+                cutoffs=asof[rows,0]
+                for cutoff in np.unique(cutoffs):
+                    subset=cutoffs==cutoff
+                    mutated=self.feedback_provider(b.y,b.available,int(cutoff))
+                    assert mutated.shape==b.y.shape
+                    target[subset]=mutated[selected[subset]]
             finite=np.isfinite(target)
             self.feedback_audit['mature_missing_target_rows']=self.feedback_audit.get('mature_missing_target_rows',0)+int((~finite).sum())
             rows,slots,selected,target=rows[finite],slots[finite],selected[finite],target[finite]
@@ -123,8 +137,22 @@ def causal_model_class():
     test=test.replace(old_test,'        data_set.record_predictions(index, all_preds)  # actual-exit queue; no unknown-label read')
     namespace=dict(author.__dict__)
     exec(compile(train+'\n'+test,'<locked_TRA_exact_maturity_adapter>','exec'),namespace)
+    original_forward=textwrap.dedent(inspect.getsource(author.LSTM.forward))
+    forward=original_forward.replace('(rnn_out * scores).sum(dim=1).squeeze()', '(rnn_out * scores).sum(dim=1)')
+    assert forward!=original_forward
+    forward_namespace=dict(author.__dict__)
+    exec(compile(forward,'<locked_TRA_singleton_shape_compatibility>','exec'),forward_namespace)
+    class TargetLSTM(author.LSTM):
+        pass
+    TargetLSTM.forward=forward_namespace['forward']
+    original_init=textwrap.dedent(inspect.getsource(author.TRAModel.__init__))
+    init=original_init.replace('self.model = eval(model_type)(**model_config).to(device)', 'assert model_type == "LSTM", "Only the frozen author LSTM is permitted"\n    self.model = TargetLSTM(**model_config).to(device)')
+    assert init!=original_init
+    namespace['TargetLSTM']=TargetLSTM
+    exec(compile(init,'<locked_TRA_data_cardinality_constructor>','exec'),namespace)
     class CausalTRAModel(author.TRAModel):
         pass
-    CausalTRAModel.train_epoch=namespace['train_epoch'];CausalTRAModel.test_epoch=namespace['test_epoch']
+    CausalTRAModel.__init__=namespace['__init__'];CausalTRAModel.train_epoch=namespace['train_epoch'];CausalTRAModel.test_epoch=namespace['test_epoch']
     provenance={'original_source':str(Path(author.__file__)),'train_original_sha256':hashlib.sha256(original_train.encode()).hexdigest(),'test_original_sha256':hashlib.sha256(original_test.encode()).hexdigest(),'train_adapted_sha256':hashlib.sha256(train.encode()).hexdigest(),'test_adapted_sha256':hashlib.sha256(test.encode()).hexdigest(),'changes':['training memory assignment replaced by saved expert predictions','test error calculation and memory assignment replaced by saved expert predictions; Outer labels unavailable to loss/metrics'],'unchanged':['author LSTM','TRA router and stochastic Gumbel routing','MSE','Sinkhorn OT','optimizers','parameter averaging','fit and default early stopping'],'train_adapted_source':train,'test_adapted_source':test}
+    provenance.update(singleton_compatibility='remove redundant squeeze after sum; retain [batch,hidden] for batch1; original reference untouched',lstm_original_sha256=hashlib.sha256(original_forward.encode()).hexdigest(),lstm_adapted_sha256=hashlib.sha256(forward.encode()).hexdigest(),constructor_original_sha256=hashlib.sha256(original_init.encode()).hexdigest(),constructor_adapted_sha256=hashlib.sha256(init.encode()).hexdigest(),lstm_adapted_source=forward,constructor_adapted_source=init)
     return CausalTRAModel,provenance

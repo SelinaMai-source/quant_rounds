@@ -1,0 +1,25 @@
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:36,  2.71it/s]  1%|          | 1/100 [00:00<00:36,  2.70it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:29,  3.39it/s]  1%|          | 1/100 [00:00<00:29,  3.39it/s]
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/causal_forecast_fixture_s9u_czo0 is not empty
+TRA_TARGET EVALUATE_BEGIN epoch -1 step -1 {'segment': 'test', 'return_pred': True}
+  0%|          | 0/70 [00:00<?, ?it/s]  0%|          | 0/70 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/test_tra_causal.py", line 118, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/test_tra_causal.py", line 99, in run
+    _,forecast_original=observed.test_epoch(first,return_pred=True)
+                        ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/tra_fit.py", line 40, in test_epoch
+    result=super().test_epoch(dataset,return_pred=return_pred)
+  File "<locked_TRA_exact_maturity_adapter>", line 67, in test_epoch
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/model.py", line 391, in forward
+    last_out = torch.cat([last_out, att_out], dim=1)
+RuntimeError: Tensors must have same number of dimensions: got 2 and 1

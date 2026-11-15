@@ -1,0 +1,13 @@
+{
+  "status": "PASS_REAL_SCORE_ENDPOINT_AND_WHOLE_DAY_FALLBACK",
+  "formal_baseline_rows": 38003,
+  "matched_baseline_rows": 38658,
+  "common_formal_scores_exact": true,
+  "new_actual_prediction_keys": 655,
+  "original_complete_feature_filter_applied_without_targets": true,
+  "all_legal_XGB_predictions_finite": true,
+  "single_missing_head_value_restores_complete_day_exactly": true,
+  "all_other_days_exact": true,
+  "backtest_not_run_by_this_test": true,
+  "previous_722_added_included67_nonfinite_bank_placeholders": "retained in target_data_attempts/control_preflight_before_complete_feature_filter; no economic run used it"
+}
