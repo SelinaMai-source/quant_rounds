@@ -1,0 +1,25 @@
+{
+  "frozen_UTC": "2026-11-15T08:57:18.569256+00:00",
+  "scope": "target A-share fits and exact causal forecast replays only; original running public reference unaffected",
+  "runtime_flags": {
+    "CPU_threads": 2,
+    "CPU_interop_threads": 2,
+    "torch_deterministic_algorithms": true,
+    "mkldnn_deterministic": true
+  },
+  "reason": "explicit reproducible CPU kernel policy before the first real target fit, supporting strict cold-fit/forecast/account comparisons",
+  "evidence": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/REFERENCE_PARITY_RETEST_AUDIT.json",
+    "bytes": 2424,
+    "sha256": "d013bddf8e241bd91942db0107d001a41eb368c5b795f97e011641b00d978583"
+  },
+  "cause_of_prior_transient_failure": "unresolved; ten default and ten deterministic one-batch diagnostics did not reproduce it; flags are not claimed to prove the cause or cure",
+  "research_models_already_trained_when_frozen": 0,
+  "real_target_accounts_already_run_when_frozen": 0,
+  "unchanged": "author architecture, LSTM/TRA/MSE/Sinkhorn formulas, optimizer/hyperparameters/seeds, data/labels/maturity,500epoch cap/20patience/100batch cap, T0/T1 frozen shared backbone, original Stock execution",
+  "no_numerical_tolerance_relaxation": true,
+  "exact_full_fit_and_forecast_and_order_tests_still_required": true,
+  "author_public_reference_model_or_runtime_edited": false,
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false
+}
