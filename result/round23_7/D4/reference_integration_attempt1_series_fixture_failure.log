@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/utils/mod.py", line 238, in init_instance_by_config
+    return klass(**cls_kwargs, **try_kwargs, **kwargs)
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/handler.py", line 150, in __init__
+    self.setup_data()
+    ~~~~~~~~~~~~~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/handler.py", line 194, in setup_data
+    self._data = lazy_sort_index(self.data_loader.load(self.instruments, self.start_time, self.end_time))
+                                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/loader.py", line 255, in load
+    self._maybe_load_raw_data()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/loader.py", line 276, in _maybe_load_raw_data
+    {fields_group: load_dataset(path_or_obj) for fields_group, path_or_obj in self._config.items()},
+                   ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/utils/__init__.py", line 954, in load_dataset
+    if not os.path.exists(path_or_obj):
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 19, in exists
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not Series
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/test_tra_reference.py", line 54, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/test_tra_reference.py", line 33, in run
+    left,right=dataset(),dataset()
+               ~~~~~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/test_tra_reference.py", line 32, in dataset
+    return dsmod.MTSDatasetH(**cfg)
+           ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py", line 109, in __init__
+    super().__init__(handler, segments, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/__init__.py", line 119, in __init__
+    self.handler: DataHandler = init_instance_by_config(handler, accept_types=DataHandler)
+                                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/utils/mod.py", line 243, in init_instance_by_config
+    return klass(**cls_kwargs, **kwargs)
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/handler.py", line 150, in __init__
+    self.setup_data()
+    ~~~~~~~~~~~~~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/handler.py", line 194, in setup_data
+    self._data = lazy_sort_index(self.data_loader.load(self.instruments, self.start_time, self.end_time))
+                                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/loader.py", line 255, in load
+    self._maybe_load_raw_data()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/loader.py", line 276, in _maybe_load_raw_data
+    {fields_group: load_dataset(path_or_obj) for fields_group, path_or_obj in self._config.items()},
+                   ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/utils/__init__.py", line 954, in load_dataset
+    if not os.path.exists(path_or_obj):
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 19, in exists
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not Series

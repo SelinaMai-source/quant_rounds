@@ -1,0 +1,10 @@
+{
+  "status": "PASS_REFERENCE_INTEGRATION",
+  "public_loader_rows": 2512790,
+  "full_original_default_configs_unchanged": true,
+  "public_data_and_locked_source_hashes_pass": true,
+  "observer_vs_original_one_batch_loss_and_all_parameters_exact": true,
+  "original_cross_stock_boundary_issue_reproduced": true,
+  "fixture_only_not_reference_completion": true,
+  "target_adapter_not_tested_here": true
+}
