@@ -1,10 +1,14 @@
 {
-  "status": "FROZEN_NOT_YET_IMPLEMENTED",
+  "status": "REFERENCE_RUNNING_TARGET_ADAPTER_IN_PROGRESS",
   "IMPLEMENTED": false,
   "UNIT_TESTED": false,
   "REFERENCE_RUN_COMPLETE": false,
   "TARGET_OOF_COMPLETE": false,
   "BACKTEST_COMPLETE": false,
   "EVIDENCE_COMPLETE": false,
-  "external_blocker": false
+  "external_blocker": false,
+  "REFERENCE_IMPLEMENTED": true,
+  "REFERENCE_INTEGRATION_PASS": true,
+  "reference_pid": 2199283,
+  "reference_log": "result/round23_7/D4/full_author_reference.log"
 }

@@ -1,0 +1,22 @@
+{
+  "original_source": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/model.py",
+  "train_original_sha256": "00d0d71a35f744665276ddeecf3e6df53cd24a69116adfa222540346528fa70b",
+  "test_original_sha256": "1767b5d9903ae041cd1b7a3538d782fe31d654337500a97b04683f4efab00eaa",
+  "train_adapted_sha256": "47a6f77c2a8bd2c5746b3437bc0ad66e381c1ed06dc6ac63d61f0ef6648b343a",
+  "test_adapted_sha256": "79d4fbacc4cfaa05429f9e154e2e1b447579dcc70b061a8a6b9ec8bc5141eb3a",
+  "changes": [
+    "training memory assignment replaced by saved expert predictions",
+    "test error calculation and memory assignment replaced by saved expert predictions; Outer labels unavailable to loss/metrics"
+  ],
+  "unchanged": [
+    "author LSTM",
+    "TRA router and stochastic Gumbel routing",
+    "MSE",
+    "Sinkhorn OT",
+    "optimizers",
+    "parameter averaging",
+    "fit and default early stopping"
+  ],
+  "train_adapted_source": "def train_epoch(self, data_set):\n    self.model.train()\n    self.tra.train()\n\n    data_set.train()\n\n    max_steps = self.n_epochs\n    if self.max_steps_per_epoch is not None:\n        max_steps = min(self.max_steps_per_epoch, self.n_epochs)\n\n    count = 0\n    total_loss = 0\n    total_count = 0\n    for batch in tqdm(data_set, total=max_steps):\n        count += 1\n        if count > max_steps:\n            break\n\n        self.global_step += 1\n\n        data, label, index = batch[\"data\"], batch[\"label\"], batch[\"index\"]\n\n        feature = data[:, :, : -self.tra.num_states]\n        hist_loss = data[:, : -data_set.horizon, -self.tra.num_states :]\n\n        hidden = self.model(feature)\n        pred, all_preds, prob = self.tra(hidden, hist_loss)\n\n        loss = (pred - label).pow(2).mean()\n\n        L = (all_preds.detach() - label[:, None]).pow(2)\n        L -= L.min(dim=-1, keepdim=True).values  # normalize & ensure positive input\n\n        data_set.record_predictions(index, all_preds.detach())  # actual-exit queue\n\n        if prob is not None:\n            P = sinkhorn(-L, epsilon=0.01)  # sample assignment matrix\n            lamb = self.lamb * (self.rho**self.global_step)\n            reg = prob.log().mul(P).sum(dim=-1).mean()\n            loss = loss - lamb * reg\n\n        loss.backward()\n        self.optimizer.step()\n        self.optimizer.zero_grad()\n\n        total_loss += loss.item()\n        total_count += len(pred)\n\n    total_loss /= total_count\n\n    return total_loss\n",
+  "test_adapted_source": "def test_epoch(self, data_set, return_pred=False):\n    self.model.eval()\n    self.tra.eval()\n    data_set.eval()\n\n    preds = []\n    metrics = []\n    for batch in tqdm(data_set):\n        data, label, index = batch[\"data\"], batch[\"label\"], batch[\"index\"]\n\n        feature = data[:, :, : -self.tra.num_states]\n        hist_loss = data[:, : -data_set.horizon, -self.tra.num_states :]\n\n        with torch.no_grad():\n            hidden = self.model(feature)\n            pred, all_preds, prob = self.tra(hidden, hist_loss)\n\n        data_set.record_predictions(index, all_preds)  # actual-exit queue; no unknown-label read\n\n        X = np.c_[\n            pred.cpu().numpy(),\n            label.cpu().numpy(),\n        ]\n        columns = [\"score\", \"label\"]\n        if prob is not None:\n            X = np.c_[X, all_preds.cpu().numpy(), prob.cpu().numpy()]\n            columns += [\"score_%d\" % d for d in range(all_preds.shape[1])] + [\n                \"prob_%d\" % d for d in range(all_preds.shape[1])\n            ]\n\n        pred = pd.DataFrame(X, index=index.cpu().numpy(), columns=columns)\n\n        metrics.append(evaluate(pred))\n\n        if return_pred:\n            preds.append(pred)\n\n    metrics = pd.DataFrame(metrics)\n    metrics = {\n        \"MSE\": metrics.MSE.mean(),\n        \"MAE\": metrics.MAE.mean(),\n        \"IC\": metrics.IC.mean(),\n        \"ICIR\": metrics.IC.mean() / metrics.IC.std(),\n    }\n\n    if return_pred:\n        preds = pd.concat(preds, axis=0)\n        preds.index = data_set.restore_index(preds.index)\n        preds.index = preds.index.swaplevel()\n        preds.sort_index(inplace=True)\n\n    return metrics, preds\n"
+}

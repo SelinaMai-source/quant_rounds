@@ -1,0 +1,15 @@
+{
+  "UTC": "2026-11-15T03:46:09.355705+00:00",
+  "stage": "BEFORE_ANY_ASHARE_FIT_OR_BACKTEST",
+  "evidence": "target_data_attempts/before_no_trade_observation_clarification/invalid_sequence_reason_summary.json",
+  "observed_invalid_sequences": 4270,
+  "all_reasons": "VWAP_UNDEFINED_NONTRADING_HISTORY",
+  "original_frozen_phrase": "60 full historical stock trading observations",
+  "bug": "zero-volume and zero-amount no-trade snapshot quotation rows were counted as trading observations",
+  "correction": "exclude only rows volume==0 AND amount==0 from each stock historical observation timeline before constructing60-observation windows; never impute VWAP; current prediction candidate keys unchanged",
+  "maturity": "actual label availability gate remains authoritative; author21-observation recency exclusion remains additionally active",
+  "missing_policy": "genuinely absent/inconsistent traded observation remains invalid and causes whole-day original-v5 fallback",
+  "no_target_performance_seen": true,
+  "original_contract_sha256": "e5cb3b407bd69066bc25eb71ff7eeebd88e24002d97007b100c79472a76d3734",
+  "previous_data_cache_preserved": true
+}

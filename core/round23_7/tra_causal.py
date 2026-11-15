@@ -1,0 +1,130 @@
+"""Original TRA/OT with an actual-exit maturity queue and D-known data adapter."""
+from pathlib import Path
+import copy,hashlib,inspect,json,textwrap
+import numpy as np
+import pandas as pd
+import torch
+from core.round23_7.tra_reference import load_author
+
+NAT=np.iinfo(np.int64).min
+
+class Bundle:
+    def __init__(self,path,head,*,target_override=None):
+        self.path=Path(path)
+        self.keys=pd.read_parquet(self.path/'candidate_keys.parquet')
+        self.x=np.load(self.path/'features.npy',mmap_mode='r')
+        self.history=np.load(self.path/'history_candidate_indices.npy',mmap_mode='r')
+        self.valid=np.load(self.path/'valid.npy',mmap_mode='r')
+        label=pd.read_parquet(self.path/f'{head}_targets.parquet') if target_override is None else target_override.copy()
+        assert self.keys.equals(label[['trade_date','instrument_id']])
+        self.y=label.target.to_numpy('float32',copy=True)
+        self.available=pd.to_datetime(label.label_available_at).to_numpy('datetime64[ns]').view('i8')
+        self.times=pd.to_datetime(self.keys.trade_date).to_numpy('datetime64[ns]').view('i8')
+        self.index=pd.MultiIndex.from_frame(self.keys[['instrument_id','trade_date']]).set_names(['instrument','datetime'])
+        assert self.x.shape==(len(self.keys),60,6) and self.history.shape==(len(self.keys),60)
+
+class CausalDataset:
+    """Author-compatible batches; predict membership never depends on a target."""
+    def __init__(self,bundle,year,num_states,batch_size,*,prediction_sink=None):
+        self.bundle=bundle;self.year=int(year);self.num_states=int(num_states)
+        self.seq_len=60;self.horizon=21;self.batch_size=batch_size;self.drop_last=False;self.shuffle=True
+        self.params=(batch_size,False,True);self.segment='all';self._index=bundle.index
+        self.predictions=np.full((len(bundle.keys),num_states),np.nan,dtype='float32')
+        self.recorded=np.zeros(len(bundle.keys),dtype=bool)
+        self.record_kind=np.zeros(len(bundle.keys),dtype='int8')
+        self.indices=np.arange(len(bundle.keys));self.feedback_audit={'mature_label_reads':0,'unmature_label_reads':0,'saved_expert_prediction_writes':0}
+        self.prediction_sink=prediction_sink
+    def prepare(self,segments):
+        if isinstance(segments,(list,tuple)):return [self.prepare(s) for s in segments]
+        if segments not in ['train','valid','test']:raise ValueError(segments)
+        obj=copy.copy(self);obj.segment=segments;b=self.bundle
+        train_cut=pd.Timestamp(f'{self.year-1}-01-01').value;outer_cut=pd.Timestamp(f'{self.year}-01-01').value
+        if segments=='test':
+            end=pd.Timestamp(f'{self.year+1}-01-01').value
+            # Label, maturity and sequence validity do not select prediction nodes.
+            selected=(b.times>=outer_cut)&(b.times<end)
+        else:
+            start=pd.Timestamp(f'{self.year-3 if segments=="train" else self.year-1}-01-01').value
+            cutoff=train_cut if segments=='train' else outer_cut
+            selected=(b.times>=start)&(b.times<cutoff)&(b.available!=NAT)&(b.available<cutoff)&np.isfinite(b.y)&b.valid
+        obj.indices=np.flatnonzero(selected)
+        assert len(obj.indices)>0,f'No actual {segments} samples for{self.year}'
+        return obj
+    def train(self):self.batch_size,self.drop_last,self.shuffle=self.params
+    def eval(self):self.batch_size=-1;self.drop_last=False;self.shuffle=False
+    def clear_memory(self):
+        self.predictions.fill(np.nan);self.recorded.fill(False);self.record_kind.fill(0)
+    def restore_index(self,index):
+        if isinstance(index,torch.Tensor):index=index.detach().cpu().numpy()
+        return self._index[np.asarray(index)]
+    def record_predictions(self,index,predictions):
+        if isinstance(index,torch.Tensor):index=index.detach().cpu().numpy()
+        if isinstance(predictions,torch.Tensor):predictions=predictions.detach().cpu().numpy()
+        index=np.asarray(index,dtype='int64');predictions=np.asarray(predictions,dtype='float32')
+        assert predictions.shape==(len(index),self.num_states)
+        self.predictions[index]=predictions;self.recorded[index]=np.isfinite(predictions).all(axis=1)
+        self.record_kind[index]={'train':1,'valid':2,'test':3}[self.segment]
+        self.feedback_audit['saved_expert_prediction_writes']+=len(index)
+        if self.prediction_sink is not None:self.prediction_sink(self.segment,index,predictions.copy())
+    def _batches(self):
+        indexes=self.indices.copy()
+        if self.batch_size<0:
+            # Source author evaluation is daily, chronological and complete.
+            dates=self.bundle.times[indexes]
+            starts=np.r_[0,np.flatnonzero(dates[1:]!=dates[:-1])+1,len(indexes)]
+            return [indexes[a:b] for a,b in zip(starts[:-1],starts[1:])]
+        if self.shuffle:np.random.shuffle(indexes)
+        return [indexes[i:i+self.batch_size] for i in range(0,len(indexes),self.batch_size) if not self.drop_last or i+self.batch_size<=len(indexes)]
+    def __len__(self):return len(self._batches()) if self.batch_size<0 else (len(self.indices)+self.batch_size-1)//self.batch_size
+    def batch_data(self,index):
+        b=self.bundle;index=np.asarray(index,dtype='int64')
+        data=np.zeros((len(index),60,6+self.num_states),dtype='float32')
+        data[:,:,:6]=b.x[index]
+        ids=np.asarray(b.history[index]);safe=np.maximum(ids,0)
+        asof=b.times[index,None]+pd.Timedelta(hours=15).value
+        available=b.available[safe]
+        allowed=(ids>=0)&self.recorded[safe]&(available!=NAT)&(available<=asof)
+        # Keep author recency exclusion, plus exact maturity regardless of horizon.
+        allowed[:,-self.horizon:]=False
+        rows,slots=np.nonzero(allowed);selected=ids[rows,slots]
+        if len(selected):
+            assert np.all(b.available[selected]!=NAT) and np.all(b.available[selected]<=asof[rows,0])
+            # First read of labels for feedback occurs only after the above gate.
+            target=b.y[selected]
+            finite=np.isfinite(target)
+            self.feedback_audit['mature_missing_target_rows']=self.feedback_audit.get('mature_missing_target_rows',0)+int((~finite).sum())
+            rows,slots,selected,target=rows[finite],slots[finite],selected[finite],target[finite]
+            loss=(self.predictions[selected]-target[:,None])**2
+            loss-=loss.min(axis=1,keepdims=True)
+            data[rows,slots,6:]=loss
+            self.feedback_audit['mature_label_reads']+=len(selected)
+        return data
+    def __iter__(self):
+        for index in self._batches():
+            data=self.batch_data(index)
+            # Unknown Outer labels are not passed into original test metrics/loss.
+            labels=np.full(len(index),np.nan,dtype='float32') if self.segment=='test' else self.bundle.y[index]
+            yield {'data':torch.from_numpy(data),'label':torch.from_numpy(labels.copy()),'index':torch.from_numpy(index.copy())}
+
+def causal_model_class():
+    _,author=load_author()
+    train=textwrap.dedent(inspect.getsource(author.TRAModel.train_epoch))
+    test=textwrap.dedent(inspect.getsource(author.TRAModel.test_epoch))
+    original_train=train;original_test=test
+    old='data_set.assign_data(index, L)  # save loss to memory'
+    assert train.count(old)==1
+    train=train.replace(old,'data_set.record_predictions(index, all_preds.detach())  # actual-exit queue')
+    old_test='''        L = (all_preds - label[:, None]).pow(2)
+
+        L -= L.min(dim=-1, keepdim=True).values  # normalize & ensure positive input
+
+        data_set.assign_data(index, L)  # save loss to memory'''
+    assert test.count(old_test)==1,'locked author source changed'
+    test=test.replace(old_test,'        data_set.record_predictions(index, all_preds)  # actual-exit queue; no unknown-label read')
+    namespace=dict(author.__dict__)
+    exec(compile(train+'\n'+test,'<locked_TRA_exact_maturity_adapter>','exec'),namespace)
+    class CausalTRAModel(author.TRAModel):
+        pass
+    CausalTRAModel.train_epoch=namespace['train_epoch'];CausalTRAModel.test_epoch=namespace['test_epoch']
+    provenance={'original_source':str(Path(author.__file__)),'train_original_sha256':hashlib.sha256(original_train.encode()).hexdigest(),'test_original_sha256':hashlib.sha256(original_test.encode()).hexdigest(),'train_adapted_sha256':hashlib.sha256(train.encode()).hexdigest(),'test_adapted_sha256':hashlib.sha256(test.encode()).hexdigest(),'changes':['training memory assignment replaced by saved expert predictions','test error calculation and memory assignment replaced by saved expert predictions; Outer labels unavailable to loss/metrics'],'unchanged':['author LSTM','TRA router and stochastic Gumbel routing','MSE','Sinkhorn OT','optimizers','parameter averaging','fit and default early stopping'],'train_adapted_source':train,'test_adapted_source':test}
+    return CausalTRAModel,provenance
