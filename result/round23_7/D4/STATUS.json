@@ -1,5 +1,5 @@
 {
-  "status": "REFERENCE_RUNNING_CPU8_FULL_TARGET_PIPELINE_READY",
+  "status": "REFERENCE_INIT_COMPLETE_ROUTE_RUNNING",
   "IMPLEMENTED": true,
   "UNIT_TESTED": true,
   "REFERENCE_RUN_COMPLETE": false,
@@ -18,7 +18,7 @@
   "TARGET_FULL_FIT_WORKER_IMPLEMENTED": true,
   "TARGET_CONTROLLER_IMPLEMENTED": true,
   "completed_full_target_models": 0,
-  "completed_full_reference_phases": 0,
+  "completed_full_reference_phases": 1,
   "full_target_fit_counterfactuals_complete": false,
   "FULL_TARGET_COUNTERFACTUAL_IMPLEMENTED": true,
   "FULL_REFERENCE_BENCHMARK_IMPLEMENTED": true,
@@ -42,5 +42,12 @@
     "CPU_interop_threads": 2,
     "torch_deterministic_algorithms": true,
     "mkldnn_deterministic": true
-  }
+  },
+  "completed_reference_phase_names": [
+    "init"
+  ],
+  "init_epochs_completed": 49,
+  "init_best_epoch": 28,
+  "init_stop_reason": "AUTHOR_EARLY_STOP20",
+  "updated_UTC": "2026-11-15T21:35:35.916104+00:00"
 }

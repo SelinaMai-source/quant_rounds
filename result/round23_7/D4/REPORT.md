@@ -41,3 +41,6 @@ PRODUCTION_CONFIG_CHANGED=FALSE
 
 <!-- ACTIVE_CODE_DATA_HASH_AUDIT -->
 实际运行中复核：当前公开参考契约绑定的239个源码文件及6个输入文件均逐字节SHA匹配，见reference/RUNNING_SOURCE_DATA_AUDIT_20261115_*.json。该复核证明本次冻结文件未漂移，不代表完整参考或目标研究已完成；后续默认停止及全部真实检验仍须完成。
+
+<!-- PUBLIC_INIT_COMPLETE_20261115 -->
+公开作者参考init阶段已真实完成：49个完整epoch，best epoch=28，严格满足连续20次验证未改善的作者默认停止条件，global_step=4899；完整checkpoint、预测、49行日志、STOPPING_AUDIT及输入/模型manifest已保存。原作者最终测试指标MSE=0.1598477992、MAE=0.3234504645、IC=0.0409109791、ICIR=0.3025278028。实测本阶段wall=52839.772秒、CPU user=323564.129秒、CPU system=83893.442秒、采样峰值RSS=2419265536字节，GPU=0。这些仅是公开init结果，不是最终10-state路由参考，更不是A股成绩。完整route阶段已继续运行，REFERENCE_RUN_COMPLETE仍为false；真实A股模型及账户仍为0。
