@@ -10,6 +10,10 @@ from core.round23_7.tra_reference import C,B,R
 SNAP=Path('/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features')
 KEY=['trade_date','instrument_id'];CHANNELS=['open','close','high','low','volume','vwap']
 
+def traded_history(stock):
+    """No-trade quotations are not trading observations; never invent a VWAP."""
+    return stock.loc[~(stock.volume.eq(0)&stock.amount.eq(0))].sort_values('trade_date')
+
 def candidates():
     parts=[]
     for head in [FIVE_HEAD,TEN_HEAD]:
@@ -43,7 +47,7 @@ def targets(q,head):
 
 def contract():
     import zyquant
-    inputs=[SNAP/'manifest.json',R/'CONTRACT.yaml']+sorted((SNAP/'daily_raw').rglob('*.parquet'))
+    inputs=[SNAP/'manifest.json',R/'CONTRACT.yaml',R/'DATA_OBSERVATION_CLARIFICATION.json']+sorted((SNAP/'daily_raw').rglob('*.parquet'))
     inputs += [C/f'result/round22_3/data/{h}_{kind}.parquet' for h in ['five','ten'] for kind in ['training','candidate']]
     return {'code':source_manifest([Path(__file__),C/'core/research_integrity_v5/cache.py',C/'core/round7/contract.py',Path(zyquant.__file__).parent]), 'third_party':{'zyquant':'2.0.10 existing API, no upgrades'},'dirty_diff':{n:hashlib.sha256(subprocess.check_output(['git','-C',str(B/n),'diff','HEAD'])).hexdigest() for n in ['round23_7','round26_1']},'environment':{d.metadata['Name']:d.version for d in importlib.metadata.distributions() if d.metadata['Name']},'parameters':{'sequence':60,'channels':CHANNELS,'prices':'each past price/current observed close -1','volume':'each past volume/current observed volume -1','raw_window':['2014-10-01','2026-07-24'],'missing':'invalid sequence, no semantic replacement; whole-day downstream fallback'},'seed':17,'features':CHANNELS,'universe':'union of then-known hard first-board/universe-eligible head candidate keys; never read target in candidate selector','calibration':'per-window observed final close and volume, no fitted future statistics','data':[identity(p) for p in inputs],'label':'Five label_e2_net; Ten label_exit_rule_net; original training/candidate labels checked for conflicts','maturity':'Five next2_date15:00; Ten actual_exit_date15:00; local exchange event time; unavailable remains NaT','windows':'full stock daily history before mapping candidates; target years2018..2026','execution':'data preparation only, frozen original executor is downstream','upstream':[]}
 
@@ -65,7 +69,7 @@ def prepare():
             valid=np.zeros(len(q),dtype=bool);source_groups=bars.groupby('instrument_id',sort=False)
             for instrument,group in q.groupby('instrument_id',sort=False):
                 if instrument not in source_groups.indices:continue
-                stock=source_groups.get_group(instrument).sort_values('trade_date')
+                stock=traded_history(source_groups.get_group(instrument))
                 dates=stock.trade_date.to_numpy('datetime64[ns]');values=stock[CHANNELS].to_numpy('float64')
                 positions=np.searchsorted(dates,group.trade_date.to_numpy('datetime64[ns]'))
                 signal_at={int(loc):int(idx) for idx,loc in zip(group.index,positions) if loc<len(dates) and dates[loc]==q.loc[idx,'trade_date'].to_datetime64()}
@@ -83,6 +87,9 @@ def prepare():
             q.to_parquet(dest/'candidate_keys.parquet',index=False)
             for head in [FIVE_HEAD,TEN_HEAD]:targets(q,head).to_parquet(dest/f'{head.name}_targets.parquet',index=False)
             audit={'candidate_rows':len(q),'candidate_start':str(q.trade_date.min()),'candidate_end':str(q.trade_date.max()),'candidate_selection_reads_target':False,'raw_rows':len(bars),'raw_start':str(bars.trade_date.min()),'raw_end':str(bars.trade_date.max()),'channels':CHANNELS,'valid_sequences':int(valid.sum()),'invalid_sequences':int((~valid).sum()),'missing_policy':'whole-day v5 fallback, not label-based row deletion','VWAP_inconsistent_source_rows_masked':int(inconsistent.sum()),'full_stock_history_before_candidate_mapping':True,'stock_boundary_clipped':True,'post_adjustment_fields_consumed':[],'current_listing_list_used':False,'vendor_revision_PIT_proven':False,'snapshot_manifest':identity(SNAP/'manifest.json')}
+            (dest/'DATA_AUDIT.json').write_text(json.dumps(audit,indent=2))
+            audit['observation_clarification']=identity(R/'DATA_OBSERVATION_CLARIFICATION.json')
+            audit['zero_volume_zero_amount_no_trade_quotations_excluded']=int((bars.volume.eq(0)&bars.amount.eq(0)).sum())
             (dest/'DATA_AUDIT.json').write_text(json.dumps(audit,indent=2))
     path=root/fp
     exported=R/'target_data';exported.mkdir(parents=True,exist_ok=True)

@@ -7,6 +7,7 @@ import pandas as pd
 import torch
 from core.round23_7.tra_reference import R,config,load_author
 from core.round23_7.tra_causal import CausalDataset,Bundle,causal_model_class,NAT
+from core.round23_7.tra_data import traded_history
 
 def fixture():
     dates=pd.bdate_range('2015-01-05',periods=70)
@@ -18,6 +19,9 @@ def fixture():
 
 def run():
     torch.set_num_threads(2)
+    quote=pd.DataFrame({'trade_date':pd.date_range('2020-01-01',periods=4),'volume':[1,0,1,0],'amount':[2,0,2,1]})
+    traded=traded_history(quote)
+    assert traded.index.tolist()==[0,2,3] and traded_history(quote.iloc[:2]).equals(traded.iloc[:1])
     b=fixture();b.available[10]=(pd.Timestamp(b.keys.trade_date.iloc[45])+pd.Timedelta(hours=15)).value
     b.available[12]=NAT;b.y[13]=np.nan
     ds=CausalDataset(b,2018,3,512);ds.segment='test'
@@ -64,6 +68,9 @@ def run():
     manifest=json.loads((R/'target_data/server_only_inputs_manifest.json').read_text())
     root=Path(next(x['path'] for x in manifest if x['path'].endswith('/candidate_keys.parquet'))).parent
     base=Bundle(root,'ten');unknown=pd.read_parquet(root/'ten_targets.parquet');unknown['target']=np.nan;unknown['label_available_at']=pd.NaT
+    rr,ss=np.nonzero(base.history>=0);old=base.history[rr,ss]
+    instruments=base.keys.instrument_id.to_numpy()
+    assert (instruments[rr]==instruments[old]).all() and (base.times[old]<=base.times[rr]).all()
     mutant=Bundle(root,'ten',target_override=unknown)
     a=CausalDataset(base,2026,10,1024).prepare('test');z=CausalDataset(mutant,2026,10,1024).prepare('test')
     assert np.array_equal(a.indices,z.indices)

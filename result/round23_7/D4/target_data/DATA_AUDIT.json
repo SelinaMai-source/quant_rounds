@@ -14,8 +14,8 @@
     "volume",
     "vwap"
   ],
-  "valid_sequences": 54560,
-  "invalid_sequences": 4270,
+  "valid_sequences": 58830,
+  "invalid_sequences": 0,
   "missing_policy": "whole-day v5 fallback, not label-based row deletion",
   "VWAP_inconsistent_source_rows_masked": 21,
   "full_stock_history_before_candidate_mapping": true,
@@ -27,5 +27,11 @@
     "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features/manifest.json",
     "bytes": 538626,
     "sha256": "281ceafdce0c22b65f4b2820e83284f35027a6a7ad9806ab215a7973983e8eb4"
-  }
+  },
+  "observation_clarification": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/DATA_OBSERVATION_CLARIFICATION.json",
+    "bytes": 1152,
+    "sha256": "564a1b1a00c4e0fb4e4752985eefeed002aaebf36cf035d574b610a890fb084f"
+  },
+  "zero_volume_zero_amount_no_trade_quotations_excluded": 298507
 }

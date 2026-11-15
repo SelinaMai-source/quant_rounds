@@ -1,0 +1,24 @@
+{
+  "UTC": "2026-11-15T03:53:00.231768+00:00",
+  "stage": "BEFORE_ANY_ASHARE_FIT_OR_BACKTEST",
+  "primary_window": [
+    "2018-01-02",
+    "2026-07-24"
+  ],
+  "initial_cash": 300000,
+  "D_known_candidate_end": "2026-07-01",
+  "original_frozen_score_end": "2026-06-01 00:00:00",
+  "formal_baseline_unchanged": true,
+  "primary_control": "genuine original5-seed XGB expert-bank head predictions2018..2026 with same original head complete-feature and next-open gap eligibility; require exact original fused scores on all common old keys; added date coverage separately audited, never counted as TRA alpha",
+  "secondary_control": "original frozen v5 scores on same2018..2026 calendar and cash, retained separately",
+  "forecast": "neural forecasts retain all D-known first-board keys regardless of target; downstream frozen legacy legal pool uses original feature/gap eligibility, not target; same legal keys for T0/T1/control",
+  "fallback": "if any required legal head prediction missing/nonfinite on a day, use whole-day primary no-factor control; never rerank remaining rows as substitute",
+  "no_performance_seen": true,
+  "formal_baseline_input": {
+    "path": "/data1/stock-mxy/课题/一进二策略/result/round23_6/frozen_components.parquet",
+    "bytes": 1498541,
+    "sha256": "9d441e2dda43124e1e0ed8bf3d34efc598ce2fa687b69659caa8a58c9937f1b1",
+    "schema": "signal_date: timestamp[ns]\ninstrument_id: string\nfive: double\nten: double\nd1_open_gap: double\npct_five: double\npct_ten: double\nv5: double\nlgbm_five: double\nlgbm_ten: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1262",
+    "rows": 38003
+  }
+}
