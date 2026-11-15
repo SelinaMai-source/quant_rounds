@@ -9,3 +9,67 @@ AlphaGen heartbeat AG_RES 2026 73 7388 pool 20
   def _apply(self, operand: Tensor) -> Tensor: return operand.var(dim=-1)
 AlphaGen progress AG_RES 2026 73 10000 expr 78 pool 20 valIC 0.00035578085226006806
 AlphaGen heartbeat AG_RES 2026 73 10804 pool 20
+AlphaGen heartbeat AG_RES 2026 73 13705 pool 20
+AlphaGen heartbeat AG_RES 2026 73 15712 pool 20
+AlphaGen heartbeat AG_RES 2026 73 17368 pool 20
+AlphaGen heartbeat AG_RES 2026 73 18734 pool 20
+AlphaGen progress AG_RES 2026 73 20000 expr 605 pool 20 valIC -0.007924872450530529
+AlphaGen heartbeat AG_RES 2026 73 20073 pool 20
+AlphaGen heartbeat AG_RES 2026 73 21164 pool 20
+AlphaGen heartbeat AG_RES 2026 73 22194 pool 20
+AlphaGen heartbeat AG_RES 2026 73 23105 pool 20
+AlphaGen heartbeat AG_RES 2026 73 24167 pool 20
+AlphaGen heartbeat AG_RES 2026 73 24935 pool 20
+AlphaGen heartbeat AG_RES 2026 73 26031 pool 20
+AlphaGen heartbeat AG_RES 2026 73 26826 pool 20
+AlphaGen heartbeat AG_RES 2026 73 27887 pool 20
+AlphaGen heartbeat AG_RES 2026 73 28836 pool 20
+AlphaGen heartbeat AG_RES 2026 73 29874 pool 20
+AlphaGen progress AG_RES 2026 73 30000 expr 2047 pool 20 valIC 0.007817561738193035
+AlphaGen heartbeat AG_RES 2026 73 30732 pool 20
+AlphaGen heartbeat AG_RES 2026 73 31936 pool 20
+AlphaGen heartbeat AG_RES 2026 73 32887 pool 20
+AlphaGen heartbeat AG_RES 2026 73 33988 pool 20
+AlphaGen heartbeat AG_RES 2026 73 34999 pool 20
+AlphaGen heartbeat AG_RES 2026 73 36425 pool 20
+AlphaGen heartbeat AG_RES 2026 73 37392 pool 20
+AlphaGen heartbeat AG_RES 2026 73 38795 pool 20
+AlphaGen heartbeat AG_RES 2026 73 39890 pool 20
+AlphaGen progress AG_RES 2026 73 40000 expr 4068 pool 20 valIC 0.007948019541800022
+AlphaGen heartbeat AG_RES 2026 73 40961 pool 20
+AlphaGen heartbeat AG_RES 2026 73 42310 pool 20
+AlphaGen heartbeat AG_RES 2026 73 43466 pool 20
+AlphaGen heartbeat AG_RES 2026 73 45333 pool 20
+AlphaGen heartbeat AG_RES 2026 73 47919 pool 20
+AlphaGen progress AG_RES 2026 73 50000 expr 6361 pool 20 valIC 0.0070200408808887005
+AlphaGen heartbeat AG_RES 2026 73 50878 pool 20
+AlphaGen heartbeat AG_RES 2026 73 53249 pool 20
+AlphaGen heartbeat AG_RES 2026 73 55796 pool 20
+AlphaGen heartbeat AG_RES 2026 73 57564 pool 20
+AlphaGen heartbeat AG_RES 2026 73 58774 pool 20
+AlphaGen heartbeat AG_RES 2026 73 59994 pool 20
+AlphaGen progress AG_RES 2026 73 60000 expr 8894 pool 20 valIC 0.005222166422754526
+AlphaGen heartbeat AG_RES 2026 73 61259 pool 20
+AlphaGen heartbeat AG_RES 2026 73 62276 pool 20
+AlphaGen heartbeat AG_RES 2026 73 63558 pool 20
+AlphaGen heartbeat AG_RES 2026 73 65168 pool 20
+AlphaGen heartbeat AG_RES 2026 73 66785 pool 20
+AlphaGen heartbeat AG_RES 2026 73 68476 pool 20
+AlphaGen progress AG_RES 2026 73 70000 expr 11180 pool 20 valIC 0.009606817737221718
+AlphaGen heartbeat AG_RES 2026 73 70137 pool 20
+AlphaGen heartbeat AG_RES 2026 73 72228 pool 20
+AlphaGen heartbeat AG_RES 2026 73 73558 pool 20
+AlphaGen heartbeat AG_RES 2026 73 74940 pool 20
+AlphaGen heartbeat AG_RES 2026 73 76572 pool 20
+AlphaGen heartbeat AG_RES 2026 73 78534 pool 20
+AlphaGen progress AG_RES 2026 73 80000 expr 13502 pool 20 valIC 0.013511857949197292
+AlphaGen heartbeat AG_RES 2026 73 80453 pool 20
+AlphaGen heartbeat AG_RES 2026 73 81921 pool 20
+AlphaGen heartbeat AG_RES 2026 73 83724 pool 20
+AlphaGen heartbeat AG_RES 2026 73 84909 pool 20
+AlphaGen heartbeat AG_RES 2026 73 86017 pool 20
+AlphaGen heartbeat AG_RES 2026 73 87381 pool 20
+AlphaGen heartbeat AG_RES 2026 73 88484 pool 20
+AlphaGen progress AG_RES 2026 73 90000 expr 15797 pool 20 valIC -0.001703818328678608
+AlphaGen heartbeat AG_RES 2026 73 90303 pool 20
+AlphaGen heartbeat AG_RES 2026 73 92161 pool 20
