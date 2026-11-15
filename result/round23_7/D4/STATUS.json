@@ -1,5 +1,5 @@
 {
-  "status": "PUBLIC_REFERENCE_CPU8_RESTART_PREPARED",
+  "status": "REFERENCE_RUNNING_CPU8_FULL_TARGET_PIPELINE_READY",
   "IMPLEMENTED": true,
   "UNIT_TESTED": true,
   "REFERENCE_RUN_COMPLETE": false,
@@ -9,7 +9,7 @@
   "external_blocker": false,
   "REFERENCE_IMPLEMENTED": true,
   "REFERENCE_INTEGRATION_PASS": true,
-  "reference_pid": null,
+  "reference_pid": 2265722,
   "reference_log": "result/round23_7/D4/full_author_reference_cpu8.log",
   "TARGET_DATA_COMPLETE": true,
   "TARGET_CAUSAL_ADAPTER_IMPLEMENTED": true,
@@ -22,5 +22,13 @@
   "full_target_fit_counterfactuals_complete": false,
   "FULL_TARGET_COUNTERFACTUAL_IMPLEMENTED": true,
   "FULL_REFERENCE_BENCHMARK_IMPLEMENTED": true,
-  "prior_attempt": "explicit runtime restart, source partial retained, not a full reference"
+  "prior_attempt": "explicit runtime restart, source partial retained, not a full reference",
+  "target_controller_pid": 2265907,
+  "target_controller_log": "result/round23_7/D4/full_target_pipeline_cpu8_reference.log",
+  "reference_CPU_threads": 8,
+  "target_CPU_threads": 2,
+  "reference_attempts_incomplete_retained": 1,
+  "target_data_cache": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/dee8d2c4165ee7c5f84cf24b5233db87f43c6d0c736635e519abb0bf45bea6d1",
+  "TARGET_DATA_IMPORT_CLOSURE_FIX_PASS": true,
+  "REAL_TARGET_DATA_SECOND_ENTRY_CACHE_HIT": true
 }

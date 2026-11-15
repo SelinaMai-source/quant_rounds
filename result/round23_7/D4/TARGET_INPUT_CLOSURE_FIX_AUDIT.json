@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FULL_REAL_DATA_BYTES_IDENTICAL_AFTER_CACHE_INVALIDATION",
+  "old_cache": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/1405e913e6e35af0d2d37884c8a56e108ce0b91251d0e77d3b8eefc5a45fd59e",
+  "new_cache": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/dee8d2c4165ee7c5f84cf24b5233db87f43c6d0c736635e519abb0bf45bea6d1",
+  "changed_fingerprint": true,
+  "actual_data_artifacts_byte_identity": {
+    "features.npy": true,
+    "history_candidate_indices.npy": true,
+    "valid.npy": true,
+    "observation_counts.npy": true,
+    "candidate_keys.parquet": true,
+    "five_targets.parquet": true,
+    "ten_targets.parquet": true
+  },
+  "imported_reference_paths_resources_and_round7_paths_bound": true,
+  "python_interpreter_bound": true,
+  "actual_public_reference_source_edited": false,
+  "real_target_models_before_fix": 0,
+  "actual_second_entry_cache_hit": true,
+  "actual_second_entry_stdout": "TRA_TARGET_DATA /data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/dee8d2c4165ee7c5f84cf24b5233db87f43c6d0c736635e519abb0bf45bea6d1 cache_hit True",
+  "actual_second_entry_wall_seconds": 3.3217782489955425
+}

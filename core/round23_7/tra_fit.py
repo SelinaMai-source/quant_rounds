@@ -1,7 +1,7 @@
 """Full-budget target TRA folds; no target training before author reference."""
 from pathlib import Path
 from dataclasses import asdict
-import argparse,copy,datetime,hashlib,importlib.metadata,json,os,shutil,signal,subprocess,threading,time,resource
+import argparse,copy,datetime,hashlib,importlib.metadata,json,os,shutil,signal,subprocess,threading,time,resource,sys
 import numpy as np
 import pandas as pd
 import torch
@@ -98,6 +98,7 @@ def fit(head,year,seed,phase,data,*,init_state=None,fit_label_override=None,name
     inputs.append(R/'STATE_ISOLATION_CLARIFICATION.json')
     c={'code':source_manifest(own+[A/'src/model.py',A/'src/dataset.py']),'third_party':{'locked_legacy_TRA_commit':verify_frozen()['source_commit']},'dirty_diff':{n:hashlib.sha256(subprocess.check_output(['git','-C',str(B/n),'diff','HEAD'])).hexdigest() for n in ['round23_7','round26_1']},'environment':{d.metadata['Name']:d.version for d in importlib.metadata.distributions() if d.metadata['Name']},'parameters':parameters,'seed':int(seed),'features':['open','close','high','low','volume','vwap'],'universe':'all D-known first-board nodes; maturity filters training/validation loss only','calibration':'original author regression loss/OT; observed price/volume window normalization','data':[identity(p) for p in inputs],'label':head+' original net policy target','maturity':'actual per-head exit at local exchange15:00; variable-delay queue masks every historical feedback read','windows':{'outer_year':int(year),'train':[f'{year-3}-01-01',f'{year-1}-01-01'],'valid':[f'{year-1}-01-01',f'{year}-01-01']},'execution':'forecast learner only; unchanged original Stock executor downstream','upstream':[identity(init_state)] if init_state else []}
     c['execution']={'engine':'unchanged local_executor -> original Stock fixed_sleeve','native_config':native_config,'B03_O01':'original frozen overlays','head_fusion':'90%Ten+10%Five after original legal domain ranks','target_policy':'original per-head target/maturity sources, hashed above','extra_buy_slippage':'only downstream paired S1/S2; labels and learner remain frozen baseline cost'}
+    c['environment']['__python_interpreter__']=sys.version
     fp=fingerprint(c);root=B/'TRA_target_models'/namespace/str(seed)/str(year)/head/phase
     stop=threading.Event();prior=signal.getsignal(signal.SIGUSR1)
     def exceeded(*_):raise MemoryError('Actual self RSS exceeded16GiB; frozen model/budget not reduced')

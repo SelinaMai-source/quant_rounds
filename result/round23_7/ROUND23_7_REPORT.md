@@ -11,7 +11,10 @@ D0、D1与D2已实际执行和审计，保留报告中的遗留与资源计量�
 |P-EQUAL|38.6096%|1.7653|-23.0631%|
 |P-FIXED|50.1003%|1.8354|-22.8893%|
 
-完整交付报告：D0/REPORT.md、D1/REPORT.md、D2/REPORT.md；D4尚未在本提交执行。无可靠替代v5的实验证据。继续按冻结顺序D3→D4→D5，不扩搜索。
+完整交付报告：D0/REPORT.md、D1/REPORT.md、D2/REPORT.md及[D4主报告](D4/REPORT.md)。是否形成替代候选以各自冻结门与完整证据为准，不自动升级，不扩搜索。
 
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE
+
+<!-- D4_REAL_EXECUTION_CHECKPOINT -->
+D4完整代码、集成、目标数据与缓存修复已实现；公开参考CPU8完整默认运行中，旧CPU2未完成尝试和一次未复现的单批精确断言失败均保留。真实A股目标拟合0、真实回测0、完整参考阶段0；非外部阻断，未标完成。当前无可靠替代v5的完整证据。

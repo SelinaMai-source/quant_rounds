@@ -1,6 +1,6 @@
 """D-known candidate sequences and separate, exit-mature target records for TRA."""
 from pathlib import Path
-import importlib.metadata,json,subprocess,hashlib
+import importlib.metadata,json,subprocess,hashlib,sys
 import numpy as np
 import pandas as pd
 from core.research_integrity_v5.cache import identity,source_manifest,fingerprint,transaction
@@ -49,7 +49,10 @@ def contract():
     import zyquant
     inputs=[SNAP/'manifest.json',R/'CONTRACT.yaml',R/'DATA_OBSERVATION_CLARIFICATION.json',R/'OBSERVATION_WARMUP_CLARIFICATION.json']+sorted((SNAP/'daily_raw').rglob('*.parquet'))
     inputs += [C/f'result/round22_3/data/{h}_{kind}.parquet' for h in ['five','ten'] for kind in ['training','candidate']]
-    return {'code':source_manifest([Path(__file__),C/'core/research_integrity_v5/cache.py',C/'core/round7/contract.py',Path(zyquant.__file__).parent]), 'third_party':{'zyquant':'2.0.10 existing API, no upgrades'},'dirty_diff':{n:hashlib.sha256(subprocess.check_output(['git','-C',str(B/n),'diff','HEAD'])).hexdigest() for n in ['round23_7','round26_1']},'environment':{d.metadata['Name']:d.version for d in importlib.metadata.distributions() if d.metadata['Name']},'parameters':{'sequence':60,'channels':CHANNELS,'prices':'each past price/current observed close -1','volume':'each past volume/current observed volume -1','raw_window':['2010-01-01','2026-07-24'],'missing':'invalid sequence, no semantic replacement; whole-day downstream fallback'},'seed':17,'features':CHANNELS,'universe':'union of then-known hard first-board/universe-eligible head candidate keys; never read target in candidate selector','calibration':'per-window observed final close and volume, no fitted future statistics','data':[identity(p) for p in inputs],'label':'Five label_e2_net; Ten label_exit_rule_net; original training/candidate labels checked for conflicts','maturity':'Five next2_date15:00; Ten actual_exit_date15:00; local exchange event time; unavailable remains NaT','windows':'full stock daily history before mapping candidates; target years2018..2026','execution':'data preparation only, frozen original executor is downstream','upstream':[]}
+    own=[Path(__file__),C/'core/research_integrity_v5/cache.py',C/'core/research_integrity_v5/resources.py',C/'core/round7/contract.py',C/'core/paths.py',C/'core/round23_7/tra_reference.py',Path(zyquant.__file__).parent]
+    environment={d.metadata['Name']:d.version for d in importlib.metadata.distributions() if d.metadata['Name']}
+    environment['__python_interpreter__']=sys.version
+    return {'code':source_manifest(own), 'third_party':{'zyquant':'2.0.10 existing API, no upgrades'},'dirty_diff':{n:hashlib.sha256(subprocess.check_output(['git','-C',str(B/n),'diff','HEAD'])).hexdigest() for n in ['round23_7','round26_1']},'environment':environment,'parameters':{'sequence':60,'channels':CHANNELS,'prices':'each past price/current observed close -1','volume':'each past volume/current observed volume -1','raw_window':['2010-01-01','2026-07-24'],'missing':'invalid sequence, no semantic replacement; whole-day downstream fallback'},'seed':17,'features':CHANNELS,'universe':'union of then-known hard first-board/universe-eligible head candidate keys; never read target in candidate selector','calibration':'per-window observed final close and volume, no fitted future statistics','data':[identity(p) for p in inputs],'label':'Five label_e2_net; Ten label_exit_rule_net; original training/candidate labels checked for conflicts','maturity':'Five next2_date15:00; Ten actual_exit_date15:00; local exchange event time; unavailable remains NaT','windows':'full stock daily history before mapping candidates; target years2018..2026','execution':'data preparation only, frozen original executor is downstream','upstream':[]}
 
 def prepare():
     import pyarrow

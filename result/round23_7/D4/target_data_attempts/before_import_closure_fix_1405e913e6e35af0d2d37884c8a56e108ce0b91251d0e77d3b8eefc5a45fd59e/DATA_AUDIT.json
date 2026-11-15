@@ -1,0 +1,44 @@
+{
+  "candidate_rows": 58830,
+  "candidate_start": "2015-01-05 00:00:00",
+  "candidate_end": "2026-07-01 00:00:00",
+  "candidate_selection_reads_target": false,
+  "raw_rows": 14522056,
+  "raw_start": "2010-01-04 00:00:00",
+  "raw_end": "2026-07-24 00:00:00",
+  "channels": [
+    "open",
+    "close",
+    "high",
+    "low",
+    "volume",
+    "vwap"
+  ],
+  "valid_sequences": 58830,
+  "invalid_sequences": 0,
+  "missing_policy": "whole-day v5 fallback, not label-based row deletion",
+  "VWAP_inconsistent_source_rows_masked": 21,
+  "full_stock_history_before_candidate_mapping": true,
+  "stock_boundary_clipped": true,
+  "post_adjustment_fields_consumed": [],
+  "current_listing_list_used": false,
+  "vendor_revision_PIT_proven": false,
+  "snapshot_manifest": {
+    "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features/manifest.json",
+    "bytes": 538626,
+    "sha256": "281ceafdce0c22b65f4b2820e83284f35027a6a7ad9806ab215a7973983e8eb4"
+  },
+  "observation_clarification": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/DATA_OBSERVATION_CLARIFICATION.json",
+    "bytes": 1152,
+    "sha256": "564a1b1a00c4e0fb4e4752985eefeed002aaebf36cf035d574b610a890fb084f"
+  },
+  "zero_volume_zero_amount_no_trade_quotations_excluded": 424155,
+  "observation_warmup_clarification": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/OBSERVATION_WARMUP_CLARIFICATION.json",
+    "bytes": 690,
+    "sha256": "01382c4b0904ad7bc0bc744da42b633e9ff63fd05cf9674824cd9b134bbe4218"
+  },
+  "full60_observations_sequences": 58826,
+  "author_zero_padded_short_available_histories": 4
+}
