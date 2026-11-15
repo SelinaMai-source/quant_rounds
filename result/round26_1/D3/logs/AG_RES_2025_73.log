@@ -57,3 +57,19 @@ AlphaGen heartbeat AG_RES 2025 73 73496 pool 20
 AlphaGen heartbeat AG_RES 2025 73 74608 pool 20
 AlphaGen heartbeat AG_RES 2025 73 75945 pool 20
 AlphaGen heartbeat AG_RES 2025 73 77283 pool 20
+AlphaGen heartbeat AG_RES 2025 73 78717 pool 20
+AlphaGen progress AG_RES 2025 73 80000 expr 13498 pool 20 valIC 0.0106057645753026
+AlphaGen heartbeat AG_RES 2025 73 80070 pool 20
+AlphaGen heartbeat AG_RES 2025 73 81794 pool 20
+AlphaGen heartbeat AG_RES 2025 73 83579 pool 20
+AlphaGen heartbeat AG_RES 2025 73 85122 pool 20
+AlphaGen heartbeat AG_RES 2025 73 87192 pool 20
+AlphaGen heartbeat AG_RES 2025 73 89532 pool 20
+AlphaGen progress AG_RES 2025 73 90000 expr 15654 pool 20 valIC 0.001340049202553928
+AlphaGen heartbeat AG_RES 2025 73 91260 pool 20
+AlphaGen heartbeat AG_RES 2025 73 92462 pool 20
+AlphaGen heartbeat AG_RES 2025 73 94998 pool 20
+AlphaGen heartbeat AG_RES 2025 73 97223 pool 20
+AlphaGen heartbeat AG_RES 2025 73 99635 pool 20
+AlphaGen progress AG_RES 2025 73 100000 expr 18063 pool 20 valIC 0.013610690832138062
+WORKER_RESULT {"arm": "AG_RES", "year": 2025, "seed": 73, "directory": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/alphagen_runs/AG_RES/2025/73/85e2e622fff82999da84eb8dacbf528ee52d25ab6db3076ecc65ec1b72a2bc04", "status": "FACTOR_OOF_YEAR_COMPLETE"}
