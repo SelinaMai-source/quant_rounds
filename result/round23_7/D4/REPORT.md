@@ -38,3 +38,6 @@ PRODUCTION_CONFIG_CHANGED=FALSE
 目标CPU确定性运行标志已在真实目标模型0、原账户0时先提交冻结e2489d4843a5b241c0eff468e825d8aab5f3c189。目标拟合与回放固定2线程/2 interop、torch deterministic algorithms=True、MKLDNN deterministic=True；所有模型公式、优化器、seed和500/20/100预算不变。实际标志与补充协议逐项核验并绑定模型fingerprint和FIT_AUDIT，保存随机状态的回放也必须匹配该策略；公开参考8线程默认运行未改动。
 
 该环境下重新实际通过因果核心集成（原作者/适配MSE及OT单步全参数精确一致、真实2026清空标签仍保留3667个节点）、完整合成默认停止IO（37/21/52epoch）及139节点checkpoint/RNG回放（变更和删除未来/未成熟标签非空且精确一致）。日志均以_deterministic_runtime命名。不是声称确定性标志已经解释或治愈先前一次未知原因的短暂断言失败；完整真实冷拟合及订单检验仍须通过，不放宽数值容差、不计这些fixture为真实模型。
+
+<!-- ACTIVE_CODE_DATA_HASH_AUDIT -->
+实际运行中复核：当前公开参考契约绑定的239个源码文件及6个输入文件均逐字节SHA匹配，见reference/RUNNING_SOURCE_DATA_AUDIT_20261115_*.json。该复核证明本次冻结文件未漂移，不代表完整参考或目标研究已完成；后续默认停止及全部真实检验仍须完成。
