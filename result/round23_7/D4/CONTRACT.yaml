@@ -1,0 +1,121 @@
+{
+  "deliverable": "D4",
+  "frozen_UTC": "2026-11-15T03:24:02.319945+00:00",
+  "source": "microsoft/qlib legacy paper implementation, examples/benchmarks/TRA/src; not the integrated qlib.contrib TRA",
+  "source_commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+  "source_and_configs_sha256": {
+    "examples/benchmarks/TRA/src/model.py": "3dc690d2788b6776d7df482fdb7ac056e794600cca96d51f973230b42b03bceb",
+    "examples/benchmarks/TRA/src/dataset.py": "5ba6d61a9f81210ba5b97f67bd6aa017cdf326d1eab843c97f7f64a6a161eb2d",
+    "examples/benchmarks/TRA/configs/config_alstm.yaml": "43346cc3a626d9006b4dd641390425e78bd808e9cbb5271a340f2d199ff86f5a",
+    "examples/benchmarks/TRA/configs/config_alstm_tra_init.yaml": "1aa3edc56d62487344d057b24d6b7b5b5673b64fb083c153e140145934519b4e",
+    "examples/benchmarks/TRA/configs/config_alstm_tra.yaml": "d110eb738ed355aea240b38d09ca580e4a7555c3d0cde1edb3824ef46f157f4a"
+  },
+  "public_reference_inputs": {
+    "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/TRA/kdd21/feature.pkl": {
+      "bytes": 170914741,
+      "sha256": "8e652185d768a9f39802ff3e35f309e5b1fe61d5bdbc2be175b9558846685d8b"
+    },
+    "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/TRA/kdd21/label.pkl": {
+      "bytes": 30198406,
+      "sha256": "1f2ec1162e7d40661257fcf2db9223f9c9107caec3e1f469f4d2328f94f20cee"
+    },
+    "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/public_data/TRA/kdd21/ret.pkl": {
+      "bytes": 30198419,
+      "sha256": "edd2ff6cff66d3caa029b27016e2cc2dff8d19f6bab7a0a105bfd1180b59cba4"
+    }
+  },
+  "reference": {
+    "seed": 17,
+    "config_sequence": [
+      "config_alstm_tra_init.yaml",
+      "config_alstm_tra.yaml"
+    ],
+    "full_author_default_stopping": true,
+    "epochs_max": 500,
+    "early_stop": 20,
+    "max_train_batches_per_epoch": 100,
+    "backbone": "author LSTM 16 input, 256 hidden, 2 layers, attention, dropout .1",
+    "init_states": 3,
+    "route_states": 10,
+    "init_batch": 512,
+    "route_batch": 1024,
+    "sequence": 60,
+    "horizon": 21,
+    "init_lr": 0.0002,
+    "route_lr": 0.0001,
+    "init_lamb": 1.0,
+    "route_lamb": 2.0,
+    "rho": 0.99,
+    "router_hidden": 16,
+    "tau": 1.0,
+    "src_info": "LR_TPE",
+    "freeze_backbone_after_init": true,
+    "splits": "unchanged author train2007-10-30..2016-05-27, valid2016-09-26..2018-05-29, test2018-09-21..2020-06-30",
+    "test_used_for_selection": false,
+    "reference_scope": "public implementation reference, not proof of vendor historical PIT or A-share strategy profitability"
+  },
+  "adaptation": {
+    "models": [
+      "T0 author single prediction head",
+      "T1 original TRA+Sinkhorn OT,10 states"
+    ],
+    "seeds_in_order": [
+      17,
+      42,
+      73
+    ],
+    "outer_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "heads": [
+      "Five original policy-exit net target",
+      "Ten original policy-exit net target"
+    ],
+    "split": "prior3 calendar years, first2 train, last1 validation; all train/validation target availability strictly before their segment cutoff; Outer never used for pretraining, OT or early stop",
+    "shared_pretrain": "one author3-state init backbone per head/year/seed, shared by T0/T1; both main arms same frozen backbone, lr1e-4, batch1024 and default stop; sole arm difference is1 versus10 heads and corresponding original TRA/OT",
+    "input_data_change": "6 raw OHLCV/VWAP channels,60 full historical stock trading observations ending at signal D. Price channels divided by current observed close minus1; volume divided by current observed volume minus1. No future adjustment factors, d1_open_gap, D3 factors or D1 beta. Input_size=6 is explicit data-dimensional adaptation; other backbone/router parameters unchanged. Both arms identical input. Missing or nonpositive denominator invalidates prediction, no semantic proxy.",
+    "stock_sequence_boundary": "clip start at current instrument start; pad missing early observations with zero. Author reference boundary behavior retained and separately disclosed; target adapter must not cross to another stock.",
+    "prediction_universe": "complete D-known frozen first-board eligibility independent of unknown target or future exit. Full daily history is built before candidate mapping.",
+    "routing_memory": "store all expert predictions when each historical candidate is predicted. Compute normalized squared expert error only when its actual exit-based label is available. Per prediction, mask every historical error whose availability exceeds the then-current D close; never fixed-horizon substitution. Retain author21-slot recency exclusion in addition to actual maturity masking. Outer weights frozen; only legitimately matured historical errors can update router memory.",
+    "training_memory": "original author training/OT loop and shuffled batches on segment-mature labels; historical memory is additionally masked by per-sample signal time and actual label availability. Reset between fit/evaluation passes; retain author parameter averaging and original stopping.",
+    "output": "complete candidate scores; daily percentile-rank head outputs fused90%Ten+10%Five, fixed. Any missing required candidate/head prediction triggers whole-day original v5 fallback; no target-driven row deletion.",
+    "evaluation_window": [
+      "2018-01-02",
+      "2026-07-24"
+    ],
+    "initial_cash": 300000,
+    "scenarios": [
+      "S0",
+      "S1 +10bp buy slippage",
+      "S2 +20bp buy slippage",
+      "S3 original active limit-up constraint identity proof"
+    ],
+    "executor": "unchanged local_executor -> Stock fixed_sleeve; original B03/O01, positions, costs and exits"
+  },
+  "tests": {
+    "before_reference": "source/config/data checksum verification; original dataset/model batch equivalence and full-budget stopping config integration tests; one-step fixtures explicitly not reference completion",
+    "target_integration": "full-stock-history boundaries, no label-based inference filtering, T0/T1 same inputs and backbone checksum, maturity queue with variable delayed labels, saved expert outputs and exact whole-day fallback",
+    "actual_counterfactuals": "seed17 T1 early2018/mid2022/late2026, both Five/Ten: full default-budget cold shared-init+T1 fit with post-cutoff/unavailable target corruption and identical eligible training inputs; exact forecast and selected checkpoint comparison. Separately replay future/unmature outer-label interventions through actual causal prediction entry. Do not claim unchanged input hashes alone are full fitting tests."
+  },
+  "risk": "inherited signed economic gate unchanged; paired circular block bootstrap20days/5000 plus10/40days1000 each, actual daily PnL/fees/exposure/yearly/risk/SPA; report T1 versus T0 and original same-window v5, never attribute backbone-only improvement to routing",
+  "resource": {
+    "CPU_training_tasks_max": 2,
+    "torch_threads_per_task": 2,
+    "RSS_guard_GiB": 16,
+    "GPU_available": false,
+    "paid_services": 0,
+    "no_default_budget_reduction": true
+  },
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "no_two_to_three": true,
+  "objective_failure_policy": "retain genuine errors/failed attempts and evidence; do not classify NOT_IMPLEMENTED or slow CPU training as an external blocker; continue independent D5 after D4 delivery or actual objective blocker"
+}

@@ -1,0 +1,27 @@
+{
+  "observed_UTC": "2026-11-13T23:01:28.521570+00:00",
+  "protected_remote_refs_unchanged": {
+    "baseline_v5": "feda6870a26f6efe5d722fd9c3b11130ca266d85",
+    "round23_5": "2c28c2083097a28cda921c59c28b254c30cd0976",
+    "round23_6": "efcb7da982566e6aaf1e0be8a1ce8353835569ac",
+    "round26": "ec1816154347622c4ecf401c65489c9a1479f5b7"
+  },
+  "shared_source_hashes_equal": true,
+  "shared_files": {
+    "cache.py": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c",
+    "resources.py": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08",
+    "d0_cache_proof.py": "24e32da05a323a01d03051928efca37b6db27606975c3bddd9adf04b777b809f",
+    "window_backtest.py": "977121066d21c7cda7e746d7511a01572e8ced688382380a991c1565769aed94",
+    "__init__.py": "0356d171c1c847877a87f5dea9da8e1694e03f31c58b884e3fa781527fbda780",
+    "audit_execution.py": "ad61e3c9f41e16ef9971bb5c848bcca7abfb2e5dbeadf15cf7b3efcaefce87b9",
+    "experiment.py": "e411a2afedab7a9e254879293e7206f7dbc3d17e214388f597e15712e6a6f45c",
+    "d0.py": "e33ecf650a2741427d71e4b08b580ee31bcf01c1d61e4104cc1a07d8a9654909",
+    "model.py": "dbdeb48bc79ae1af4e5de7db656fc6248e501d4186d4abb784e37c38c0e7fda0",
+    "test_cache.py": "3115371be3b3b1555fc1a7e407d2c21c5e141210287e2151b53ce493a6f01473",
+    "publish.py": "c69952b582fb74fb8ac8485db523586606daa6927600d168f784a28be4b04e04",
+    "evaluation.py": "ad6f1a9692fda7e0d7dc4dfb65a2f5c385fa8d0fd1932092924d587fb2f0ee03"
+  },
+  "scope": "checkpoint audit, not final completion claim",
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false
+}
