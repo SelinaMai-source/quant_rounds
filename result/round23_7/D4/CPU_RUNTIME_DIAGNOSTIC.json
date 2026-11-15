@@ -1,0 +1,20 @@
+[
+  {
+    "threads": 2,
+    "seconds_per_original_forward": 0.5345440108329058,
+    "max_abs_delta_vs2": 0.0,
+    "scope": "synthetic CPU runtime-only original LSTM inference; no research fit or alpha result"
+  },
+  {
+    "threads": 4,
+    "seconds_per_original_forward": 0.3195343051105738,
+    "max_abs_delta_vs2": 0.0,
+    "scope": "synthetic CPU runtime-only original LSTM inference; no research fit or alpha result"
+  },
+  {
+    "threads": 8,
+    "seconds_per_original_forward": 0.2506508745253086,
+    "max_abs_delta_vs2": 0.0,
+    "scope": "synthetic CPU runtime-only original LSTM inference; no research fit or alpha result"
+  }
+]

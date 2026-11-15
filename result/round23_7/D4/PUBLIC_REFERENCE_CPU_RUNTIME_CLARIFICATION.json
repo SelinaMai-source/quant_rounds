@@ -1,0 +1,45 @@
+{
+  "frozen_UTC": "2026-11-15T06:49:03.739126+00:00",
+  "scope": "public author reference runtime only; not A-share target hyperparameters",
+  "amendment": "public reference torch intraop threads2 ->8; interop remains2. A-share target workers remain2 threads. No architecture/data/seed/optimizer/epoch/early-stop/train-batch change.",
+  "evidence": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/CPU_RUNTIME_DIAGNOSTIC.json",
+    "bytes": 638,
+    "sha256": "80cd30cad2fa3e7b4f6640f40afa5fb946c4d99849ff9ee2cf73ef9dd508de70"
+  },
+  "diagnostic_results": [
+    {
+      "threads": 2,
+      "seconds_per_original_forward": 0.5345440108329058,
+      "max_abs_delta_vs2": 0.0,
+      "scope": "synthetic CPU runtime-only original LSTM inference; no research fit or alpha result"
+    },
+    {
+      "threads": 4,
+      "seconds_per_original_forward": 0.3195343051105738,
+      "max_abs_delta_vs2": 0.0,
+      "scope": "synthetic CPU runtime-only original LSTM inference; no research fit or alpha result"
+    },
+    {
+      "threads": 8,
+      "seconds_per_original_forward": 0.2506508745253086,
+      "max_abs_delta_vs2": 0.0,
+      "scope": "synthetic CPU runtime-only original LSTM inference; no research fit or alpha result"
+    }
+  ],
+  "available_logical_CPU_affinity": 40,
+  "observed_host_load_average": [
+    2.18,
+    2.15,
+    2.16
+  ],
+  "quota_visibility": "cgroup files not mounted at standard paths; do not infer an unlimited quota. Use8 of40 available logical CPUs,1 reference learner, no other own CPU learner active.",
+  "selection_basis": "measured original LSTM runtime and output identity, not validation or backtest performance",
+  "prior_attempt": "seed17 init epoch4 in progress, no completed full phase or research result; interrupt explicitly, retain partial cache, failure metadata, logs and actual resource profile",
+  "restart": "same exact seed17 public dataset and original default two-phase stopping, fresh fingerprint; prior partial does not hit cache",
+  "max_CPU_training_tasks": 2,
+  "reference_RSS_guard_GiB": 16,
+  "all_prior_freeze_fields_except_public_CPU_threads_retained": true,
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false
+}
