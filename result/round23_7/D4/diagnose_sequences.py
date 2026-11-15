@@ -10,10 +10,12 @@ manifest=json.loads((R/'target_data/server_only_inputs_manifest.json').read_text
 path=Path(next(x['path'] for x in manifest if x['path'].endswith('/candidate_keys.parquet'))).parent
 q=pd.read_parquet(path/'candidate_keys.parquet')
 invalid=~np.load(path/'valid.npy')
-snapshot=DataSnapshot(SNAP)
-bars=snapshot.table('daily_raw',start=pd.Timestamp('2014-10-01').date(),end=pd.Timestamp('2026-07-24').date(),cutoff=snapshot.metadata.as_of_date,fields=KEY+['open','close','high','low','volume','amount'])
-bars['trade_date']=pd.to_datetime(bars.trade_date);bars['instrument_id']=bars.instrument_id.astype(str)
-groups=bars.groupby('instrument_id',sort=False);records=[]
+records=[]
+if invalid.any():
+    snapshot=DataSnapshot(SNAP)
+    bars=snapshot.table('daily_raw',start=pd.Timestamp('2010-01-01').date(),end=pd.Timestamp('2026-07-24').date(),cutoff=snapshot.metadata.as_of_date,fields=KEY+['open','close','high','low','volume','amount'])
+    bars['trade_date']=pd.to_datetime(bars.trade_date);bars['instrument_id']=bars.instrument_id.astype(str)
+    groups=bars.groupby('instrument_id',sort=False)
 for instrument,signals in q.loc[invalid].groupby('instrument_id',sort=False):
     stock=traded_history(groups.get_group(instrument)) if instrument in groups.indices else None
     for row in signals.itertuples():
@@ -35,5 +37,5 @@ for instrument,signals in q.loc[invalid].groupby('instrument_id',sort=False):
 result=pd.DataFrame(records,columns=KEY+['reasons'])
 result.to_csv(R/'target_data/invalid_sequence_reasons.csv.gz',index=False)
 counts=result.reasons.str.split('|').explode().value_counts().to_dict()
-(R/'target_data/invalid_sequence_reason_summary.json').write_text(json.dumps({'invalid_candidate_sequences':len(result),'reason_counts_overlap':counts,'undefined_VWAP_on_no_trade_days_is_not_an_access_permission_failure':True,'no_VWAP_proxy_or_label_based_candidate_deletion':True,'frozen_policy':'whole-day original v5 fallback on incomplete required predictions; invalid candidates remain in forecast universe'},indent=2))
+(R/'target_data/invalid_sequence_reason_summary.json').write_text(json.dumps({'data_cache':str(path),'data_COMPLETE_sha256':__import__('hashlib').sha256((path/'COMPLETE.json').read_bytes()).hexdigest(),'raw_window_start':'2010-01-01','invalid_candidate_sequences':len(result),'reason_counts_overlap':counts,'undefined_VWAP_on_no_trade_days_is_not_an_access_permission_failure':True,'no_VWAP_proxy_or_label_based_candidate_deletion':True,'frozen_policy':'whole-day original v5 fallback on incomplete required predictions; invalid candidates remain in forecast universe'},indent=2))
 print(json.dumps(counts),flush=True)
