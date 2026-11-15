@@ -1,0 +1,69 @@
+{
+  "inputs_sha256": {
+    "daily_returns.csv.gz": "fd245b17989abc7e282b34cb27b3e02435a81d8a5328a18d03dad1ba2e5af906",
+    "all_results.csv": "716cd3b7060290813ffb4f905e4ede8c4972c3336d69957c33b90021281b4bdb"
+  },
+  "scope": "S0; all frozen Both-Add seeds and equal3, no winner selection; individual and Remove/Replace results remain in full tables",
+  "checks": [
+    {
+      "experiment_id": "AG_A0",
+      "terminal_wealth": 13.544284439458645,
+      "max_drawdown": -0.232263672729349,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_RAW_17_A3_BOTH_ADD",
+      "terminal_wealth": 7.990043667869975,
+      "max_drawdown": -0.24755861216319286,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_RAW_42_A3_BOTH_ADD",
+      "terminal_wealth": 5.6248702195263,
+      "max_drawdown": -0.3052434754224702,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_RAW_73_A3_BOTH_ADD",
+      "terminal_wealth": 7.161077917751354,
+      "max_drawdown": -0.27472800312791856,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_RAW_EQ3_A3_BOTH_ADD",
+      "terminal_wealth": 7.761400287506755,
+      "max_drawdown": -0.2580116103493837,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_A0",
+      "terminal_wealth": 13.544284439458645,
+      "max_drawdown": -0.232263672729349,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_RES_17_A3_BOTH_ADD",
+      "terminal_wealth": 9.127433380339443,
+      "max_drawdown": -0.23503761166579606,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_RES_42_A3_BOTH_ADD",
+      "terminal_wealth": 6.379457495173451,
+      "max_drawdown": -0.28808325804232227,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_RES_73_A3_BOTH_ADD",
+      "terminal_wealth": 6.1304691794769886,
+      "max_drawdown": -0.20917859301430486,
+      "matches_actual_result_table": true
+    },
+    {
+      "experiment_id": "AG_RES_EQ3_A3_BOTH_ADD",
+      "terminal_wealth": 9.454829348019986,
+      "max_drawdown": -0.26182407086310233,
+      "matches_actual_result_table": true
+    }
+  ]
+}

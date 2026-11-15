@@ -2,7 +2,7 @@
 
 状态：D3_COMPLETE。这是锁定原表达式求值、MseAlphaPool协同优化、原LSTMSharedNet与MaskablePPO的预算化A股适配，不是随机公式、合成样本更新，也不冒称原论文完整CSI300数值复现。
 
-已完成PPO模型 42，env steps 4200000。每折上限100000环境步/20000有效表达式，未为弱结果加搜索。val只用Outer前一年成熟标签选checkpoint；AST冻结后仅重估先前年份池权重。所有AST、权重、检查点、尝试/失效表达式与模型及资源manifest保留。
+当前已完成原始PPO生成模型42/42，完成模型环境步4200000。每折上限100000环境步/20000次原求值调用（含重复及原池拒绝），未为弱结果加搜索。val只用Outer前一年成熟标签选checkpoint；AST冻结后仅重估先前年份池权重。所有AST、权重、检查点、尝试/失效表达式与模型及资源manifest保留。
 
 D日已知首板domain在完整股票OHLCV序列上先rolling再映射；无next1/next2/label进入表达式。未用未来标签决定预测池。RAW与RES使用相同历史有效目标行，RES是收益率减真正历史OOF校准收益，不是减百分位。原normalize/零分母语义保留，训练loss只用截止前成熟目标。
 
@@ -52,3 +52,13 @@ AG_RES_EQ3_REPLACE_FIVE,1.0704248650233978,2.6186185750138637,-0.232087671679334
 
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE
+
+<!-- LIVE_GENERATION_PROGRESS -->
+当前原始生成完成42/42；上方入模、经济门与风险结果仍对应已完成的seed检查点EQ3，不将新生成折冒称新经济回测。已完成当前模型合计4200000环境步、645011次原求值调用（含重复及原池拒绝）；不同AST、异常及PPO更新单列，失败/未完成尝试另存，不计入此完成模型合计。
+完整PPO时间反事实六项已通过。原始生成工件审计只验证工件；研究总状态以本STATUS及真实结果表为准。
+
+最终交付：42/42原始生成折、6/6完整PPO诊断、70个入模配置（350棵实际XGB）、240个真实入口反事实配置（1200棵实际XGB）、49个经济配置已完成。EVIDENCE_COMPLETE表示冻结实验和审计交付完成，不表示任何候选获准升级。
+
+主要Both-Add结果的全部三个种子与等权组合见[净值与回撤图](primary_NAV_drawdown.png)。图表由plot_primary_risk.py读取真实daily_returns生成，包含初始净值1；每条曲线终值及MaxDD均独立核对结果表，审计见primary_plot_audit.json。
+
+AG_RAW_EQ3_REPLACE_FIVE：CAGR=1.134743、Sharpe=2.693788、MaxDD=-0.228588，相对匹配无因子对照存在正增量，但只有5个实际买入身份变化，费用压力为UNKNOWN，状态为INSUFFICIENT_COST_EVIDENCE。冻结协议明确次要Add/Remove/Replace保留S0，本轮不事后扩大试验、挑选该历史赢家或自动晋升。原继承经济门的Top1/Top2变化条件为>0，并非20笔；实际变化数量完整保留。所有Both-Add均未过原门槛。其他方法继续独立执行。
