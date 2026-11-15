@@ -1,9 +1,9 @@
 {
   "status": "COMPUTED",
   "pvalues": {
-    "lower": 0.4876,
-    "consistent": 0.8724,
-    "upper": 0.8904
+    "lower": 0.529,
+    "consistent": 0.9074,
+    "upper": 0.9226
   },
   "alternatives": [
     "AG_RAW_17_A1_FIVE_ADD",
@@ -19,7 +19,13 @@
     "AG_RAW_42_REPLACE_FIVE",
     "AG_RES_42_A1_FIVE_ADD",
     "AG_RES_42_A2_TEN_ADD",
-    "AG_RES_42_A3_BOTH_ADD"
+    "AG_RES_42_A3_BOTH_ADD",
+    "AG_RAW_73_A1_FIVE_ADD",
+    "AG_RAW_73_A2_TEN_ADD",
+    "AG_RAW_73_A3_BOTH_ADD",
+    "AG_RES_73_A1_FIVE_ADD",
+    "AG_RES_73_A2_TEN_ADD",
+    "AG_RES_73_A3_BOTH_ADD"
   ],
   "deduplicated": {},
   "loss": "negative actual portfolio daily return",
