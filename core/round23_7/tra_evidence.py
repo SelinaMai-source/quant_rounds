@@ -60,11 +60,23 @@ def report(stage_seed=None):
     else:combined=results
     combined.to_csv(R/'all_results.csv',index=False)
     risk_plot(combined)
+    diagnostic=R/'counterfactual_tests/native_order_replays/run_manifest.csv'
+    diagnostic_count=0
+    if diagnostic.exists():
+        probes=pd.read_csv(diagnostic);diagnostic_count=len(probes)
+        anchor=Path(runs.set_index('code').loc['TRA_T1_17','path'])
+        for row in probes.itertuples(index=False):
+            pd.testing.assert_frame_equal(pd.read_parquet(anchor/'nav.parquet'),pd.read_parquet(Path(row.path)/'nav.parquet'),check_exact=True)
+        spa_path=R/'SPA.json';proof=json.loads(spa_path.read_text())
+        proof['registered_nonalpha_full_account_replay_aliases']={row.code:'TRA_T1_17' for row in probes.itertuples(index=False)}
+        proof['nonalpha_replay_returns_exactly_verified_against_primary_trial']=True
+        spa_path.write_text(json.dumps(proof,indent=2))
     cold_path=R/'counterfactual_tests/STATUS.json'
     cold=json.loads(cold_path.read_text()) if cold_path.exists() else {}
     full=len(complete_seeds)==3 and cold.get('status')=='PASS_SIX_REAL_FULL_BUDGET_CASES'
     reference=json.loads((R/'REFERENCE_STATUS.json').read_text())
     status={'status':'D4_COMPLETE' if full else 'PARTIAL_SEED_CHECKPOINT','IMPLEMENTED':True,'UNIT_TESTED':True,'REFERENCE_RUN_COMPLETE':reference.get('status')=='REFERENCE_RUN_COMPLETE','TARGET_OOF_COMPLETE':len(complete_seeds)==3,'BACKTEST_COMPLETE':len(complete_seeds)==3,'EVIDENCE_COMPLETE':full,'completed_seed_paths':complete_seeds,'last_checkpoint_seed':stage_seed,'configured_original_target_models_completed':int((registry.namespace.eq('original')&registry.status.eq('FULL_TARGET_FIT_COMPLETE')).sum()),'configured_counterfactual_target_models_completed':int((registry.namespace.eq('cold_unavailable_targets')&registry.status.eq('FULL_TARGET_FIT_COMPLETE')).sum()),'failed_registry_rows':int(registry.status.ne('FULL_TARGET_FIT_COMPLETE').sum()),'full_model_counterfactual_status':cold.get('status','NOT_RUN'),'actual_native_economic_configurations':len(combined),'CURRENT_BASELINE_CHANGED':False,'PRODUCTION_CONFIG_CHANGED':False,'external_blocker':False,'signal_end':'2026-07-01','valuation_end':'2026-07-24','synthetic_fixtures_are_not_research_models':True}
+    status['actual_native_diagnostic_configurations']=diagnostic_count
     (R/'STATUS.json').write_text(json.dumps(status,indent=2))
     summary=combined.loc[combined.scenario.eq('S0'),['experiment_id','CAGR','Sharpe','MaxDD','TerminalNAV','trades']]
     text=('# D4 TRA — '+status['status']+'\n\n'
@@ -76,6 +88,7 @@ def report(stage_seed=None):
           '![全部已完成固定种子的实际净值与回撤](primary_NAV_drawdown.png)\n\n'
           '全部S1/S2、年度收益、费用/滑点、敞口/换手、真实Top1/Top2净PnL、人民币NAV桥、最差63日/UI/ES95、配对Bootstrap和SPA见结果表。S3为原执行器已有开盘封板拒单约束，实际拒单身份见S3_identity_evidence.csv，不复制成绩冒充新实验。T1相对T0的同成本结果和独立配对检验见paired_T1_vs_T0；不可把T1相对v5的全部变化都算成路由贡献。\n\n'
           '原有符号经济门逐项结果见economic_decisions.csv/json；不放宽门槛、不挑选历史赢家、不自动晋升。全部三个种子独立报告。完整冷拟合与真实Outer未来/未成熟标签回放见counterfactual_tests，尚未完成的seed和测试以STATUS为准。\n\n'
+          '完整Outer另做当时不可用标签删除，不永久删除之后已合法成熟的反馈。订单反事实调用原Stock完整账户：一个原始S0加六个冷拟合标签变体，共七个诊断配置；全部overlay计划输入、成交、拒单、持仓、袖套、现金流、费用及NAV须精确一致，并再次对照主要TRA_T1_17实际NAV。独立登记于counterfactual_tests/native_order_replays，SPA明示相同路径别名，不冒充新alpha备择或七个新经济候选。\n\n'
           '模型、预测和实测资源见target_models与worker_profiles，原始大输入仅提供路径/schema/字节SHA清单，不上传私人面板。训练内输出不冒称历史OOF；工程合成fixture不计真实模型。所有早期失败和澄清保留。供应商历史修订、legacy D+1开盘缺口/日内高低价成交与零公司行动覆盖限制仍保留，不声称独立未用测试或实盘证明。\n\n'
           'CURRENT_BASELINE_CHANGED=FALSE\nPRODUCTION_CONFIG_CHANGED=FALSE\n')
     (R/'REPORT.md').write_text(text)
@@ -83,7 +96,12 @@ def report(stage_seed=None):
     (R/'DECISION.md').write_text('固定原经济门，不自动升级；T1还必须相对同骨干T0评估。\n\n```csv\n'+decision.to_csv(index=False)+'```\n')
     (R/'REPRODUCE.md').write_text('在现有授权服务器的项目根目录运行，使用现有env及已锁定作者源码/原始数据，不升级ZyQuant。\n\n```bash\nPYTHONDONTWRITEBYTECODE=1 research/round23_6_26_execution/env/bin/python -B tools/continue_round23_7_round26_1.py --deliverable D4 --resume --jobs 2 --seed 17 --publish\n```\n\n固定17全路径→42→73，不能选优种子；恢复前检查无重复控制进程。模型缓存核验完整源码、数据/标签/成熟时间、参数、执行契约和全部完成工件。完整参考先于目标训练。实际server-only输入路径与SHA见target_data/server_only_inputs_manifest.json。\n')
     model_manifest=[]
-    for p in sorted((R/'target_models').glob('**/model.bin')):model_manifest.append(identity(p))
+    import torch
+    for p in sorted((R/'target_models').glob('**/model.bin')):
+        item=identity(p);state=torch.load(p,map_location='cpu',weights_only=True)
+        item['format']='torch state dictionaries: model, tra'
+        item['tensor_schema']={group:{name:{'shape':list(tensor.shape),'dtype':str(tensor.dtype)} for name,tensor in state[group].items()} for group in ['model','tra']}
+        item['contract']=identity(p.parent/'contract.json');model_manifest.append(item)
     (R/'MODEL_ARTIFACTS.json').write_text(json.dumps(model_manifest,indent=2))
     parent=C/'result/round23_7/ROUND23_7_REPORT.md'
     original=parent.read_text();marker='\n<!-- D4_REAL_EXECUTION_CHECKPOINT -->'

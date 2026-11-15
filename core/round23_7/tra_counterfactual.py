@@ -59,17 +59,18 @@ def replay_forecast(original,data,head,year):
     selected=torch.load(original/'model.bin',map_location='cpu',weights_only=True)
     model.model.load_state_dict(selected['model']);model.tra.load_state_dict(selected['tra'])
     bundle=Bundle(data,head);events=[]
-    def perturb(values,available,cutoff):
+    def perturb(values,available,cutoff,delete=False):
         changed=values.copy();mask=(available==NAT)|(available>cutoff)
-        changed[mask]=np.where(np.isfinite(changed[mask]),changed[mask]+1e6,1e6)
+        changed[mask]=np.nan if delete else np.where(np.isfinite(changed[mask]),changed[mask]+1e6,1e6)
         in_year=(bundle.times>=pd.Timestamp(f'{year}-01-01').value)&(bundle.times<pd.Timestamp(f'{year+1}-01-01').value)
-        count=int((mask&in_year).sum());assert count>0
-        events.append({'asof':str(pd.Timestamp(cutoff)),'actual_changed_unavailable_targets':int(mask.sum()),'in_forecast_year_changed_unavailable_targets':count})
+        actual=mask&~np.isnan(values) if delete else mask
+        count=int((actual&in_year).sum());assert count>0
+        events.append({'case':'delete_asof_unavailable' if delete else 'perturb_asof_unavailable','asof':str(pd.Timestamp(cutoff)),'actual_changed_unavailable_targets':int(actual.sum()),'in_forecast_year_changed_unavailable_targets':count})
         return changed
     state=np.load(original/'OUTER_INITIAL_MEMORY.npz')
     assert not state['recorded'].any(),'Outer must start from a fresh model-specific queue'
     results=[]
-    for name,provider in [('original',None),('future_and_unmature_labels',perturb)]:
+    for name,provider in [('original',None),('future_and_unmature_labels',perturb),('delete_asof_future_and_unmature_labels',lambda v,a,c:perturb(v,a,c,delete=True))]:
         dataset=CausalDataset(bundle,year,cfg['tra_config']['num_states'],1024,feedback_provider=provider).prepare('test')
         for field in ['predictions','recorded','record_kind']:getattr(dataset,field)[:]=state[field]
         torch.set_rng_state(torch.load(original/'OUTER_INITIAL_TORCH_RNG.pt',map_location='cpu',weights_only=True))
@@ -98,6 +99,42 @@ def one_case(data,head,year,registry):
     result={'status':'PASS_FULL_DEFAULT_FIT_AND_CAUSAL_FORECAST_COUNTERFACTUAL','head':head,'year':year,'init':init,'T1':route,'init_exact':initial,'T1_exact':trained,'forecast_replay':forecast,'namespace_is_diagnostic_not_extra_alpha':True}
     (folder/'RESULT.json').write_text(json.dumps(result,indent=2));return result
 
+def actual_order_replays(results,registry):
+    """Actual original-account replays, not an inference from equal score hashes."""
+    from core.round23_7.tra_backtest import baseline_sources,materialize,execute
+    _,baseline,_=baseline_sources();frames={};upstream=[]
+    selected=registry.loc[registry.namespace.eq('original')&registry.seed.eq(17)&registry.phase.eq('T1')]
+    for head in ['five','ten']:
+        rows=selected.loc[selected['head'].eq(head)].sort_values('year')
+        assert len(rows)==9 and rows.status.eq('FULL_TARGET_FIT_COMPLETE').all()
+        parts=[]
+        for row in rows.itertuples(index=False):
+            p=Path(row.path)/'forecast.parquet';parts.append(pd.read_parquet(p)[['trade_date','instrument_id','score']]);upstream.append(identity(p))
+        frames[head]=pd.concat(parts,ignore_index=True).rename(columns={'trade_date':'signal_date'})
+    original,fallback=materialize(frames['five'],frames['ten'],baseline)
+    base_path,base_fp,base_hit=execute('TRA_CF_SEED17_ORIGINAL_S0',original,upstream=upstream)
+    folder=R/'counterfactual_tests/native_order_replays';folder.mkdir(parents=True,exist_ok=True)
+    rows=[{'code':'TRA_CF_SEED17_ORIGINAL_S0','path':str(base_path),'fingerprint':base_fp,'cache_hit':base_hit,'scenario':'S0','diagnostic_only':True,'economic_path_alias':'TRA_T1_17'}]
+    pd.DataFrame(rows).to_csv(folder/'run_manifest.csv',index=False)
+    names=['overlayed','trades','rejections','positions','sleeve_states','nav','cashflows','costs'];checks=[]
+    reference={name:pd.read_parquet(base_path/(name+'.parquet')) for name in names}
+    for case in sorted(results,key=lambda x:(x['year'],x['head'])):
+        head,year=case['head'],case['year'];mutant=Path(case['T1']['path'])/'forecast.parquet'
+        other=frames[head].loc[~frames[head].signal_date.dt.year.eq(year)]
+        replacement=pd.read_parquet(mutant)[['trade_date','instrument_id','score']].rename(columns={'trade_date':'signal_date'})
+        pair=dict(frames);pair[head]=pd.concat([other,replacement],ignore_index=True)
+        scores,changed_fallback=materialize(pair['five'],pair['ten'],baseline)
+        pd.testing.assert_frame_equal(original,scores,check_exact=True)
+        pd.testing.assert_frame_equal(fallback,changed_fallback,check_exact=True)
+        code=f'TRA_CF_{year}_{head.upper()}_UNAVAILABLE_LABELS_S0'
+        path,fp,hit=execute(code,scores,upstream=upstream+[identity(mutant)])
+        rows.append({'code':code,'path':str(path),'fingerprint':fp,'cache_hit':hit,'scenario':'S0','diagnostic_only':True,'economic_path_alias':'TRA_T1_17'})
+        pd.DataFrame(rows).to_csv(folder/'run_manifest.csv',index=False)
+        for name in names:pd.testing.assert_frame_equal(reference[name],pd.read_parquet(path/(name+'.parquet')),check_exact=True)
+        checks.append({'head':head,'year':year,'original_path':str(base_path),'mutated_path':str(path),'all_actual_original_engine_tables_exact':names,'candidate_scores_and_whole_day_fallback_exact':True})
+    status={'status':'PASS_SIX_REAL_FULL_ACCOUNT_ORDER_REPLAYS','actual_native_diagnostic_configurations':len(rows),'full_account_replay_comparisons':len(checks),'checks':checks,'economic_path_alias':'TRA_T1_17','scope':'one actual original S0 account plus six label-mutated replays; not seven new alpha alternatives; all attempts retained'}
+    (folder/'STATUS.json').write_text(json.dumps(status,indent=2));return status
+
 def run(data,jobs=2):
     assert jobs in [1,2];torch.set_num_threads(2)
     if torch.get_num_interop_threads()!=2:torch.set_num_interop_threads(2)
@@ -112,5 +149,12 @@ def run(data,jobs=2):
                 failed={'status':'FAILED_COUNTERFACTUAL_NOT_EXTERNAL_BLOCKER','head':head,'year':year,'error':repr(error),'traceback':traceback.format_exc()}
                 folder=R/'counterfactual_tests'/str(year)/head;folder.mkdir(parents=True,exist_ok=True);(folder/'FAILED.json').write_text(json.dumps(failed,indent=2));results.append(failed)
     passed=sum(v['status']=='PASS_FULL_DEFAULT_FIT_AND_CAUSAL_FORECAST_COUNTERFACTUAL' for v in results)
-    status={'status':'PASS_SIX_REAL_FULL_BUDGET_CASES' if passed==6 else 'FAILED_OR_PARTIAL_REAL_COUNTERFACTUALS','cases':len(results),'passed':passed,'full_cold_target_models_required':12,'scope':'each case independently reruns complete original-default init and T1, plus actual full Outer pointwise unavailable-label prediction replay','alpha_candidates_added':0}
+    native=None
+    if passed==6:
+        try:native=actual_order_replays(results,registry)
+        except Exception as error:
+            native={'status':'FAILED_REAL_ACCOUNT_REPLAY_NOT_EXTERNAL_BLOCKER','error':repr(error),'traceback':traceback.format_exc()}
+            (R/'counterfactual_tests/FAILED_NATIVE_REPLAY.json').write_text(json.dumps(native,indent=2))
+    full=passed==6 and native is not None and native['status']=='PASS_SIX_REAL_FULL_ACCOUNT_ORDER_REPLAYS'
+    status={'status':'PASS_SIX_REAL_FULL_BUDGET_CASES' if full else 'FAILED_OR_PARTIAL_REAL_COUNTERFACTUALS','cases':len(results),'passed':passed,'full_cold_target_models_required':12,'scope':'each case independently reruns complete original-default init and T1, actual full Outer pointwise unavailable-label prediction replay and original-engine account/order replay','actual_order_replay':native,'alpha_candidates_added':0}
     (R/'counterfactual_tests/STATUS.json').write_text(json.dumps(status,indent=2));return results

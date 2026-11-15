@@ -30,5 +30,9 @@
   "reference_attempts_incomplete_retained": 1,
   "target_data_cache": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/dee8d2c4165ee7c5f84cf24b5233db87f43c6d0c736635e519abb0bf45bea6d1",
   "TARGET_DATA_IMPORT_CLOSURE_FIX_PASS": true,
-  "REAL_TARGET_DATA_SECOND_ENTRY_CACHE_HIT": true
+  "REAL_TARGET_DATA_SECOND_ENTRY_CACHE_HIT": true,
+  "SYNTHETIC_CHECKPOINT_RNG_REPLAY_IO_PASS": true,
+  "FULL_TARGET_ORDER_REPLAY_IMPLEMENTED": true,
+  "FULL_TARGET_ORDER_REPLAY_COMPLETE": false,
+  "configured_native_diagnostic_accounts": 7
 }
