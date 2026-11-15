@@ -1,0 +1,54 @@
+{
+  "snapshot_UTC": "2026-11-15T07:50:49.283088+00:00",
+  "scope": "partial public init phase; log-derived epoch observations, not completed author reference or A-share model",
+  "snapshot_only_not_current_status": true,
+  "CPU_threads": 8,
+  "seed": 17,
+  "completed_epochs_observed": 2,
+  "epochs": [
+    {
+      "epoch": 0,
+      "train": {
+        "global_step": 99,
+        "metrics": {
+          "MSE": 0.14978120559212987,
+          "MAE": 0.3129830422353927,
+          "IC": 0.10130449859918354,
+          "ICIR": 0.7936978224559399
+        }
+      },
+      "valid": {
+        "global_step": 99,
+        "metrics": {
+          "MSE": 0.16659242320274015,
+          "MAE": 0.33153505233990155,
+          "IC": 0.00042939118777055263,
+          "ICIR": 0.0037356574427045825
+        }
+      }
+    },
+    {
+      "epoch": 1,
+      "train": {
+        "global_step": 199,
+        "metrics": {
+          "MSE": 0.14912311707571915,
+          "MAE": 0.31216623787715514,
+          "IC": 0.10525310067806116,
+          "ICIR": 0.832967958095098
+        }
+      },
+      "valid": {
+        "global_step": 199,
+        "metrics": {
+          "MSE": 0.165440170039736,
+          "MAE": 0.33014337669334975,
+          "IC": 0.007343044657525122,
+          "ICIR": 0.06485721500428439
+        }
+      }
+    }
+  ],
+  "full_reference_phase_complete_at_snapshot": false,
+  "target_models_completed_at_snapshot": 0
+}

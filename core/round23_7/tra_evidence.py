@@ -77,7 +77,6 @@ def report(stage_seed=None):
     reference=json.loads((R/'REFERENCE_STATUS.json').read_text())
     status={'status':'D4_COMPLETE' if full else 'PARTIAL_SEED_CHECKPOINT','IMPLEMENTED':True,'UNIT_TESTED':True,'REFERENCE_RUN_COMPLETE':reference.get('status')=='REFERENCE_RUN_COMPLETE','TARGET_OOF_COMPLETE':len(complete_seeds)==3,'BACKTEST_COMPLETE':len(complete_seeds)==3,'EVIDENCE_COMPLETE':full,'completed_seed_paths':complete_seeds,'last_checkpoint_seed':stage_seed,'configured_original_target_models_completed':int((registry.namespace.eq('original')&registry.status.eq('FULL_TARGET_FIT_COMPLETE')).sum()),'configured_counterfactual_target_models_completed':int((registry.namespace.eq('cold_unavailable_targets')&registry.status.eq('FULL_TARGET_FIT_COMPLETE')).sum()),'failed_registry_rows':int(registry.status.ne('FULL_TARGET_FIT_COMPLETE').sum()),'full_model_counterfactual_status':cold.get('status','NOT_RUN'),'actual_native_economic_configurations':len(combined),'CURRENT_BASELINE_CHANGED':False,'PRODUCTION_CONFIG_CHANGED':False,'external_blocker':False,'signal_end':'2026-07-01','valuation_end':'2026-07-24','synthetic_fixtures_are_not_research_models':True}
     status['actual_native_diagnostic_configurations']=diagnostic_count
-    (R/'STATUS.json').write_text(json.dumps(status,indent=2))
     summary=combined.loc[combined.scenario.eq('S0'),['experiment_id','CAGR','Sharpe','MaxDD','TerminalNAV','trades']]
     text=('# D4 TRA — '+status['status']+'\n\n'
           '公开旧作者实现参考与A股目标回测分开。作者参考两阶段完整默认停止结果见reference/original_benchmark_results.csv；原作者切片可跨股票的已知缺陷保留披露，公开参考不是目标PIT证明。目标数据按股票边界、真实成熟时间及独立预测期队列适配。\n\n'
@@ -107,4 +106,7 @@ def report(stage_seed=None):
     original=parent.read_text();marker='\n<!-- D4_REAL_EXECUTION_CHECKPOINT -->'
     original=original.split(marker)[0]
     parent.write_text(original+marker+'\nD4实际状态：'+status['status']+'；已完成种子路径'+str(complete_seeds)+'。完整作者参考、真实目标模型、T0/T1同骨干回测、时间反事实与全部风险见[D4主报告](D4/REPORT.md)。不把合成集成测试叫真实研究，不修改正式v5/CURRENT。\n')
+    # Commit the stage state only after every report/decision/model manifest
+    # exists; a failed report must never publish EVIDENCE_COMPLETE prematurely.
+    temporary=R/'STATUS.json.partial.report';temporary.write_text(json.dumps(status,indent=2));temporary.replace(R/'STATUS.json')
     return status
