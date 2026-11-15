@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import torch
 from core.round23_7.tra_reference import R,config,load_author
-from core.round23_7.tra_causal import CausalDataset,Bundle,causal_model_class,NAT
+from core.round23_7.tra_causal import CausalDataset,Bundle,causal_model_class,NAT,configure_target_runtime
 from core.round23_7.tra_data import traded_history
 from core.round23_7.tra_fit import observed_class
 
@@ -19,7 +19,7 @@ def fixture():
     return SimpleNamespace(keys=keys,x=np.zeros((70,60,6),dtype='float32'),history=history,valid=np.ones(70,dtype=bool),y=np.linspace(-.03,.03,70,dtype='float32'),available=(dates+pd.Timedelta(days=2,hours=15)).to_numpy().view('i8'),times=dates.to_numpy().view('i8'),index=pd.MultiIndex.from_frame(keys[['instrument_id','trade_date']]).set_names(['instrument','datetime']))
 
 def run():
-    torch.set_num_threads(2)
+    configure_target_runtime()
     quote=pd.DataFrame({'trade_date':pd.date_range('2020-01-01',periods=4),'volume':[1,0,1,0],'amount':[2,0,2,1]})
     traded=traded_history(quote)
     assert traded.index.tolist()==[0,2,3] and traded_history(quote.iloc[:2]).equals(traded.iloc[:1])

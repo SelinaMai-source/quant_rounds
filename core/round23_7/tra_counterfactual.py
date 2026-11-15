@@ -7,7 +7,7 @@ import pandas as pd
 import torch
 from core.research_integrity_v5.cache import identity,sha
 from core.round23_7.tra_reference import B,R,config
-from core.round23_7.tra_causal import Bundle,CausalDataset,causal_model_class,NAT
+from core.round23_7.tra_causal import Bundle,CausalDataset,causal_model_class,NAT,configure_target_runtime
 from core.round23_7.tra_runtime import run_job,save_registry
 from core.round23_7.tra_fit import value_hash
 _FORECAST_RNG_LOCK=threading.Lock()
@@ -51,7 +51,9 @@ def compare_fits(original,mutant):
 
 def replay_forecast(original,data,head,year):
     original=Path(original);data=Path(data)
-    cfg=json.loads((original/'contract.json').read_text())['parameters']['model']
+    parameters=json.loads((original/'contract.json').read_text())['parameters']
+    assert configure_target_runtime()==parameters['target_runtime']
+    cfg=parameters['model']
     cfg['logdir']=None
     # Restore the exact upstream init path, then the selected full checkpoint.
     cfg['model_init_state']=cfg['model_init_state']['path']
@@ -136,8 +138,7 @@ def actual_order_replays(results,registry):
     (folder/'STATUS.json').write_text(json.dumps(status,indent=2));return status
 
 def run(data,jobs=2):
-    assert jobs in [1,2];torch.set_num_threads(2)
-    if torch.get_num_interop_threads()!=2:torch.set_num_interop_threads(2)
+    assert jobs in [1,2];configure_target_runtime()
     registry=pd.read_csv(R/'target_run_registry.csv');results=[]
     # run_job launches one child learner at a time in each case; never exceed2.
     with ThreadPoolExecutor(max_workers=jobs) as pool:

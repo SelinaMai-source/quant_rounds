@@ -2,6 +2,9 @@
   "status": "PASS_SYNTHETIC_CHECKPOINT_RNG_AND_FULL_CAUSAL_REPLAY_IO",
   "scope": "random unfitted checkpoints,70 synthetic dates, mixed1/2/3-node days; no author reference completion, no A-share fit or account replay",
   "forecast_rows": 139,
+  "comparison_replay_passes": 3,
+  "baseline_forecast_creation_passes": 1,
+  "total_full_forward_passes": 4,
   "future_mutation_and_deletion_nonempty_exact": true,
   "result": {
     "status": "PASS_REAL_FULL_OUTER_FORECAST_REPLAY",
@@ -630,9 +633,5 @@
     "no_in_sample_history_transferred": true
   },
   "actual_research_models_trained": 0,
-  "actual_native_accounts_run": 0,
-  "comparison_replay_passes": 3,
-  "baseline_forecast_creation_passes": 1,
-  "total_full_forward_passes": 4,
-  "prior_log_field_scope": "original log field3 counts replay comparisons; one baseline creation pass is additional, total4; no extra run performed"
+  "actual_native_accounts_run": 0
 }

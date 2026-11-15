@@ -34,3 +34,7 @@ PRODUCTION_CONFIG_CHANGED=FALSE
 完整目标反事实现增加实际原Stock账户重放：一个原seed17 T1 S0账户与早/中/晚两个Head六个冷拟合标签变体，共七个诊断配置。要求全部overlay计划输入、成交、拒单、持仓、袖套、费用、现金流及NAV逐项精确一致；不是新增alpha候选，登记独立manifest并在SPA中注明与TRA_T1_17相同路径别名。当前均未运行，等待完整参考和真实seed17模型，不能将新增代码标为实际回放完成。
 
 保存checkpoint、初始空队列和Torch RNG后的完整预测回放IO集成已用70个合成日期、每日1/2/3个节点实际通过；139个节点，1次原始预测生成加3次比较回放共4次完整前向。未来/未成熟标签扰动及当时不可用标签删除均非空且预测精确一致。权重为随机未拟合fixture，不计研究训练、公开参考或真实账户。日志synthetic_checkpoint_rng_replay_integration.log；首次3字段指比较回放，不含创建基线，审计JSON已明确总次数4。完整真实六组冷拟合和原账户测试仍为NOT_RUN。
+
+目标CPU确定性运行标志已在真实目标模型0、原账户0时先提交冻结e2489d4843a5b241c0eff468e825d8aab5f3c189。目标拟合与回放固定2线程/2 interop、torch deterministic algorithms=True、MKLDNN deterministic=True；所有模型公式、优化器、seed和500/20/100预算不变。实际标志与补充协议逐项核验并绑定模型fingerprint和FIT_AUDIT，保存随机状态的回放也必须匹配该策略；公开参考8线程默认运行未改动。
+
+该环境下重新实际通过因果核心集成（原作者/适配MSE及OT单步全参数精确一致、真实2026清空标签仍保留3667个节点）、完整合成默认停止IO（37/21/52epoch）及139节点checkpoint/RNG回放（变更和删除未来/未成熟标签非空且精确一致）。日志均以_deterministic_runtime命名。不是声称确定性标志已经解释或治愈先前一次未知原因的短暂断言失败；完整真实冷拟合及订单检验仍须通过，不放宽数值容差、不计这些fixture为真实模型。

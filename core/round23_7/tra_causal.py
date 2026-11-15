@@ -8,6 +8,14 @@ from core.round23_7.tra_reference import load_author
 
 NAT=np.iinfo(np.int64).min
 
+def configure_target_runtime():
+    """Frozen target CPU reproducibility policy, without changing model math."""
+    torch.set_num_threads(2)
+    if torch.get_num_interop_threads()!=2:torch.set_num_interop_threads(2)
+    torch.use_deterministic_algorithms(True)
+    torch.backends.mkldnn.deterministic=True
+    return {'CPU_threads':torch.get_num_threads(),'CPU_interop_threads':torch.get_num_interop_threads(),'torch_deterministic_algorithms':torch.are_deterministic_algorithms_enabled(),'mkldnn_deterministic':torch.backends.mkldnn.deterministic}
+
 class Bundle:
     def __init__(self,path,head,*,target_override=None):
         self.path=Path(path)

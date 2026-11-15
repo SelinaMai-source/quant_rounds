@@ -9,7 +9,7 @@ import psutil
 from core.research_integrity_v5.cache import identity,source_manifest,fingerprint,transaction,hit
 from core.research_integrity_v5.resources import measured
 from core.round23_7.tra_reference import C,B,R,A,config,verify_frozen
-from core.round23_7.tra_causal import Bundle,CausalDataset,causal_model_class
+from core.round23_7.tra_causal import Bundle,CausalDataset,causal_model_class,configure_target_runtime
 
 def value_hash(values):
     h=hashlib.sha256()
@@ -58,8 +58,8 @@ def fit(head,year,seed,phase,data,*,init_state=None,fit_label_override=None,name
     assert status.get('status')=='REFERENCE_RUN_COMPLETE','Full author reference still pending; do not start A-share learning'
     assert phase in ['init','T0','T1'] and head in ['five','ten'] and seed in [17,42,73]
     assert int(year) in range(2018,2027)
-    verify_frozen();torch.set_num_threads(2)
-    if torch.get_num_interop_threads()!=2:torch.set_num_interop_threads(2)
+    verify_frozen();runtime=configure_target_runtime()
+    assert runtime==json.loads((R/'TARGET_DETERMINISTIC_RUNTIME_CLARIFICATION.json').read_text())['runtime_flags']
     data=Path(data);marker=json.loads((data/'COMPLETE.json').read_text());assert hit(data,marker['experiment_fingerprint'])
     original=Bundle(data,head)
     override=pd.read_parquet(fit_label_override) if fit_label_override else None
@@ -85,6 +85,7 @@ def fit(head,year,seed,phase,data,*,init_state=None,fit_label_override=None,name
     base,patch=causal_model_class()
     parameters={'head':head,'year':int(year),'seed':int(seed),'phase':phase,'model':copy.deepcopy(cfg),'batch_size':batch,'dataset_identities':identities,'adapter_train_sha256':patch['train_adapted_sha256'],'adapter_test_sha256':patch['test_adapted_sha256'],'CPU_threads':2,'RSS_limit_GiB':16,'fit_label_override':identity(fit_label_override) if fit_label_override else None,'inference_feedback':'original observed targets released only at their actual event time; fit-only counterfactual label overrides never replace legitimately observed Outer feedback'}
     parameters['model'].pop('logdir',None)
+    parameters['target_runtime']=runtime
     if init_state:parameters['model']['model_init_state']=identity(init_state)
     own=[Path(__file__),C/'core/round23_7/tra_causal.py',C/'core/round23_7/tra_reference.py',C/'core/research_integrity_v5/cache.py',C/'core/research_integrity_v5/resources.py']
     from core.local_executor import round7_fixed_sleeve_config
@@ -96,6 +97,7 @@ def fit(head,year,seed,phase,data,*,init_state=None,fit_label_override=None,name
     inputs.append(R/'SINGLETON_SHAPE_COMPATIBILITY.json')
     inputs.append(R/'FROZEN_BACKBONE_ROUNDING_COMPATIBILITY.json')
     inputs.append(R/'STATE_ISOLATION_CLARIFICATION.json')
+    inputs.append(R/'TARGET_DETERMINISTIC_RUNTIME_CLARIFICATION.json')
     c={'code':source_manifest(own+[A/'src/model.py',A/'src/dataset.py']),'third_party':{'locked_legacy_TRA_commit':verify_frozen()['source_commit']},'dirty_diff':{n:hashlib.sha256(subprocess.check_output(['git','-C',str(B/n),'diff','HEAD'])).hexdigest() for n in ['round23_7','round26_1']},'environment':{d.metadata['Name']:d.version for d in importlib.metadata.distributions() if d.metadata['Name']},'parameters':parameters,'seed':int(seed),'features':['open','close','high','low','volume','vwap'],'universe':'all D-known first-board nodes; maturity filters training/validation loss only','calibration':'original author regression loss/OT; observed price/volume window normalization','data':[identity(p) for p in inputs],'label':head+' original net policy target','maturity':'actual per-head exit at local exchange15:00; variable-delay queue masks every historical feedback read','windows':{'outer_year':int(year),'train':[f'{year-3}-01-01',f'{year-1}-01-01'],'valid':[f'{year-1}-01-01',f'{year}-01-01']},'execution':'forecast learner only; unchanged original Stock executor downstream','upstream':[identity(init_state)] if init_state else []}
     c['execution']={'engine':'unchanged local_executor -> original Stock fixed_sleeve','native_config':native_config,'B03_O01':'original frozen overlays','head_fusion':'90%Ten+10%Five after original legal domain ranks','target_policy':'original per-head target/maturity sources, hashed above','extra_buy_slippage':'only downstream paired S1/S2; labels and learner remain frozen baseline cost'}
     c['environment']['__python_interpreter__']=sys.version
@@ -133,6 +135,7 @@ def fit(head,year,seed,phase,data,*,init_state=None,fit_label_override=None,name
                     audit={'status':'PASS_FULL_AUTHOR_DEFAULT_TARGET_FIT','head':head,'seed':seed,'year':year,'phase':phase,'epochs_completed':epochs,'best_epoch':best,'stop_reason':'AUTHOR_MAX_EPOCHS' if epochs==500 else 'AUTHOR_EARLY_STOP20','global_step':model.global_step,'all_default_model_parameters_except_data_dimension_and_T0_ablation':True,'dataset':identities,'forecast_rows':len(predictions),'forecast_invalid_input_rows':int((~valid_inputs).sum()),'forecast_missing_on_valid_inputs':0,'initial_backbone_value_sha256':initial_backbone,'final_backbone_value_sha256':final_backbone,'frozen_backbone_unchanged':initial_backbone==final_backbone if phase!='init' else None,'queue_audit':dataset.feedback_audit,'training_prediction_records_are_not_OOF':True,'no_second_level_learner':True,'outer_labels_not_used_for_early_stop':True}
                     (dest/'FIT_AUDIT.json').write_text(json.dumps(audit,indent=2));(dest/'ADAPTER_SOURCE_PROVENANCE.json').write_text(json.dumps(patch,indent=2))
                     audit.update(stopping)
+                    audit['target_runtime']=runtime
                     audit['outer_initial_queue']='empty annual-model-specific queue; no train/validation fitted history transferred'
                     audit['validation_prediction_nodes']='all D-known nodes; only mature validation metric labels used'
                     assert model.global_step+1==epochs*min(100,len(train))

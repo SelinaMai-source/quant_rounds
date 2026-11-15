@@ -1,0 +1,1009 @@
+TRA_TARGET EVALUATE_BEGIN epoch -1 step -1 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 99.42it/s]
+TRA_TARGET EVALUATE_END epoch -1 step -1 {'segment': 'train', 'metrics': {'MSE': np.float64(0.16049382716049385), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-0.08333333333333337), 'ICIR': np.float64(-0.096764124964523)}}
+TRA_TARGET TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:15,  6.51it/s]  1%|          | 1/100 [00:00<00:15,  6.50it/s]
+TRA_TARGET TRAIN_END epoch 0 step 0 {'loss': 0.08716856771045262}
+TRA_TARGET EVALUATE_BEGIN epoch 0 step 0 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 110.42it/s]
+TRA_TARGET EVALUATE_END epoch 0 step 0 {'segment': 'train', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-0.16666666666666666), 'ICIR': np.float64(-0.17902871850985824)}}
+TRA_TARGET EVALUATE_BEGIN epoch 0 step 0 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 104.42it/s]
+TRA_TARGET EVALUATE_END epoch 0 step 0 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.16666666666666663), 'ICIR': np.float64(0.1601281538050871)}}
+TRA_TARGET TRAIN_BEGIN epoch 1 step 0 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:09, 10.24it/s]
+TRA_TARGET TRAIN_END epoch 1 step 1 {'loss': 0.08892780542373657}
+TRA_TARGET EVALUATE_BEGIN epoch 1 step 1 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.05it/s]
+TRA_TARGET EVALUATE_END epoch 1 step 1 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2098765432098766), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666667), 'ICIR': np.float64(-0.566138517072298)}}
+TRA_TARGET EVALUATE_BEGIN epoch 1 step 1 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.46it/s]
+TRA_TARGET EVALUATE_END epoch 1 step 1 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.16666666666666657), 'ICIR': np.float64(0.2886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 2 step 1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:09, 10.29it/s]
+TRA_TARGET TRAIN_END epoch 2 step 2 {'loss': 0.07681375079684788}
+TRA_TARGET EVALUATE_BEGIN epoch 2 step 2 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.00it/s]
+TRA_TARGET EVALUATE_END epoch 2 step 2 {'segment': 'train', 'metrics': {'MSE': np.float64(0.20987654320987656), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666667), 'ICIR': np.float64(-0.566138517072298)}}
+TRA_TARGET EVALUATE_BEGIN epoch 2 step 2 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.76it/s]
+TRA_TARGET EVALUATE_END epoch 2 step 2 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.271604938271605), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.8333333333333331), 'ICIR': np.float64(-2.886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 3 step 2 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:09, 10.70it/s]
+TRA_TARGET TRAIN_END epoch 3 step 3 {'loss': 0.07522463136249119}
+TRA_TARGET EVALUATE_BEGIN epoch 3 step 3 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.04it/s]
+TRA_TARGET EVALUATE_END epoch 3 step 3 {'segment': 'train', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.4879500364742666)}}
+TRA_TARGET EVALUATE_BEGIN epoch 3 step 3 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.92it/s]
+TRA_TARGET EVALUATE_END epoch 3 step 3 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.09876543209876544), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.33333333333333326), 'ICIR': np.float64(0.4364357804719847)}}
+TRA_TARGET TRAIN_BEGIN epoch 4 step 3 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:08, 12.20it/s]
+TRA_TARGET TRAIN_END epoch 4 step 4 {'loss': 0.08174692922168308}
+TRA_TARGET EVALUATE_BEGIN epoch 4 step 4 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.74it/s]
+TRA_TARGET EVALUATE_END epoch 4 step 4 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.25925925925925924), 'IC': np.float64(0.1666666666666666), 'ICIR': np.float64(0.22140372138502376)}}
+TRA_TARGET EVALUATE_BEGIN epoch 4 step 4 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.36it/s]
+TRA_TARGET EVALUATE_END epoch 4 step 4 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 5 step 4 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:08, 12.31it/s]
+TRA_TARGET TRAIN_END epoch 5 step 5 {'loss': 0.07834533188078138}
+TRA_TARGET EVALUATE_BEGIN epoch 5 step 5 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 109.70it/s]
+TRA_TARGET EVALUATE_END epoch 5 step 5 {'segment': 'train', 'metrics': {'MSE': np.float64(0.23456790123456792), 'MAE': np.float64(0.40740740740740744), 'IC': np.float64(-0.5833333333333334), 'ICIR': np.float64(-0.9979654098963522)}}
+TRA_TARGET EVALUATE_BEGIN epoch 5 step 5 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 124.75it/s]
+TRA_TARGET EVALUATE_END epoch 5 step 5 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.271604938271605), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.8333333333333331), 'ICIR': np.float64(-2.886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 6 step 5 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:08, 12.21it/s]
+TRA_TARGET TRAIN_END epoch 6 step 6 {'loss': 0.07492389281590779}
+TRA_TARGET EVALUATE_BEGIN epoch 6 step 6 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.84it/s]
+TRA_TARGET EVALUATE_END epoch 6 step 6 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2098765432098766), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666666), 'ICIR': np.float64(-0.5661385170722978)}}
+TRA_TARGET EVALUATE_BEGIN epoch 6 step 6 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.87it/s]
+TRA_TARGET EVALUATE_END epoch 6 step 6 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.09876543209876544), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.33333333333333326), 'ICIR': np.float64(0.4364357804719847)}}
+TRA_TARGET TRAIN_BEGIN epoch 7 step 6 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.61it/s]
+TRA_TARGET TRAIN_END epoch 7 step 7 {'loss': 0.08363162808948094}
+TRA_TARGET EVALUATE_BEGIN epoch 7 step 7 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.59it/s]
+TRA_TARGET EVALUATE_END epoch 7 step 7 {'segment': 'train', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.38069349381344053)}}
+TRA_TARGET EVALUATE_BEGIN epoch 7 step 7 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.18it/s]
+TRA_TARGET EVALUATE_END epoch 7 step 7 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.43643578047198484)}}
+TRA_TARGET TRAIN_BEGIN epoch 8 step 7 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.41it/s]
+TRA_TARGET TRAIN_END epoch 8 step 8 {'loss': 0.07526445388793945}
+TRA_TARGET EVALUATE_BEGIN epoch 8 step 8 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.78it/s]
+TRA_TARGET EVALUATE_END epoch 8 step 8 {'segment': 'train', 'metrics': {'MSE': np.float64(0.16049382716049385), 'MAE': np.float64(0.3333333333333334), 'IC': np.float64(-0.08333333333333337), 'ICIR': np.float64(-0.12539246564387987)}}
+TRA_TARGET EVALUATE_BEGIN epoch 8 step 8 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 119.76it/s]
+TRA_TARGET EVALUATE_END epoch 8 step 8 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 9 step 8 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.58it/s]
+TRA_TARGET TRAIN_END epoch 9 step 9 {'loss': 0.07394574085871379}
+TRA_TARGET EVALUATE_BEGIN epoch 9 step 9 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.21it/s]
+TRA_TARGET EVALUATE_END epoch 9 step 9 {'segment': 'train', 'metrics': {'MSE': np.float64(0.09876543209876544), 'MAE': np.float64(0.1851851851851852), 'IC': np.float64(0.3333333333333333), 'ICIR': np.float64(0.38069349381344053)}}
+TRA_TARGET EVALUATE_BEGIN epoch 9 step 9 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.03it/s]
+<locked_TRA_exact_maturity_adapter>:95: RuntimeWarning: divide by zero encountered in scalar divide
+TRA_TARGET EVALUATE_END epoch 9 step 9 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.07407407407407408), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.49999999999999983), 'ICIR': np.float64(inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 10 step 9 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.61it/s]
+TRA_TARGET TRAIN_END epoch 10 step 10 {'loss': 0.07049424118465847}
+TRA_TARGET EVALUATE_BEGIN epoch 10 step 10 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 111.90it/s]
+TRA_TARGET EVALUATE_END epoch 10 step 10 {'segment': 'train', 'metrics': {'MSE': np.float64(0.09876543209876544), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.33333333333333326), 'ICIR': np.float64(0.4879500364742665)}}
+TRA_TARGET EVALUATE_BEGIN epoch 10 step 10 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 112.83it/s]
+TRA_TARGET EVALUATE_END epoch 10 step 10 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-5.551115123125783e-17), 'ICIR': np.float64(-6.409875621278547e-17)}}
+TRA_TARGET TRAIN_BEGIN epoch 11 step 10 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.78it/s]
+TRA_TARGET TRAIN_END epoch 11 step 11 {'loss': 0.08230145110024346}
+TRA_TARGET EVALUATE_BEGIN epoch 11 step 11 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.27it/s]
+TRA_TARGET EVALUATE_END epoch 11 step 11 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.40740740740740744), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-1.1009637651263606)}}
+TRA_TARGET EVALUATE_BEGIN epoch 11 step 11 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.99it/s]
+TRA_TARGET EVALUATE_END epoch 11 step 11 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 12 step 11 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.60it/s]
+TRA_TARGET TRAIN_END epoch 12 step 12 {'loss': 0.08535932170020209}
+TRA_TARGET EVALUATE_BEGIN epoch 12 step 12 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.63it/s]
+TRA_TARGET EVALUATE_END epoch 12 step 12 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-9.25185853854297e-18), 'ICIR': np.float64(-1.194409801374794e-17)}}
+TRA_TARGET EVALUATE_BEGIN epoch 12 step 12 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.74it/s]
+TRA_TARGET EVALUATE_END epoch 12 step 12 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.49999999999999994), 'ICIR': np.float64(-0.5773502691896257)}}
+TRA_TARGET TRAIN_BEGIN epoch 13 step 12 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.39it/s]
+TRA_TARGET TRAIN_END epoch 13 step 13 {'loss': 0.0751307209332784}
+TRA_TARGET EVALUATE_BEGIN epoch 13 step 13 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.10it/s]
+TRA_TARGET EVALUATE_END epoch 13 step 13 {'segment': 'train', 'metrics': {'MSE': np.float64(0.16049382716049385), 'MAE': np.float64(0.3333333333333334), 'IC': np.float64(-0.08333333333333337), 'ICIR': np.float64(-0.12539246564387987)}}
+TRA_TARGET EVALUATE_BEGIN epoch 13 step 13 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 114.13it/s]
+TRA_TARGET EVALUATE_END epoch 13 step 13 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.43643578047198484)}}
+TRA_TARGET TRAIN_BEGIN epoch 14 step 13 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.52it/s]
+TRA_TARGET TRAIN_END epoch 14 step 14 {'loss': 0.07403204176161024}
+TRA_TARGET EVALUATE_BEGIN epoch 14 step 14 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 112.83it/s]
+TRA_TARGET EVALUATE_END epoch 14 step 14 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1851851851851852), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.24999999999999997), 'ICIR': np.float64(-0.3042903097250923)}}
+TRA_TARGET EVALUATE_BEGIN epoch 14 step 14 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 111.28it/s]
+TRA_TARGET EVALUATE_END epoch 14 step 14 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.09876543209876544), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.33333333333333326), 'ICIR': np.float64(0.4364357804719847)}}
+TRA_TARGET TRAIN_BEGIN epoch 15 step 14 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.49it/s]
+TRA_TARGET TRAIN_END epoch 15 step 15 {'loss': 0.07469960716035631}
+TRA_TARGET EVALUATE_BEGIN epoch 15 step 15 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.62it/s]
+TRA_TARGET EVALUATE_END epoch 15 step 15 {'segment': 'train', 'metrics': {'MSE': np.float64(0.16049382716049385), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.08333333333333331), 'ICIR': np.float64(-0.1253924656438798)}}
+TRA_TARGET EVALUATE_BEGIN epoch 15 step 15 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 108.02it/s]
+TRA_TARGET EVALUATE_END epoch 15 step 15 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.43643578047198484)}}
+TRA_TARGET TRAIN_BEGIN epoch 16 step 15 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.68it/s]
+TRA_TARGET TRAIN_END epoch 16 step 16 {'loss': 0.07730485995610555}
+TRA_TARGET EVALUATE_BEGIN epoch 16 step 16 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.00it/s]
+TRA_TARGET EVALUATE_END epoch 16 step 16 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.25925925925925924), 'IC': np.float64(0.16666666666666663), 'ICIR': np.float64(0.22140372138502382)}}
+TRA_TARGET EVALUATE_BEGIN epoch 16 step 16 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.98it/s]
+TRA_TARGET EVALUATE_END epoch 16 step 16 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.07407407407407407), 'MAE': np.float64(0.2222222222222222), 'IC': np.float64(0.5), 'ICIR': np.float64(inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 17 step 16 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.60it/s]
+TRA_TARGET TRAIN_END epoch 17 step 17 {'loss': 0.07995057768291897}
+TRA_TARGET EVALUATE_BEGIN epoch 17 step 17 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.24it/s]
+TRA_TARGET EVALUATE_END epoch 17 step 17 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.16666666666666666), 'ICIR': np.float64(0.3227486121839514)}}
+TRA_TARGET EVALUATE_BEGIN epoch 17 step 17 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.54it/s]
+TRA_TARGET EVALUATE_END epoch 17 step 17 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.271604938271605), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.8333333333333331), 'ICIR': np.float64(-2.886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 18 step 17 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.52it/s]
+TRA_TARGET TRAIN_END epoch 18 step 18 {'loss': 0.0666847891277737}
+TRA_TARGET EVALUATE_BEGIN epoch 18 step 18 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 122.87it/s]
+TRA_TARGET EVALUATE_END epoch 18 step 18 {'segment': 'train', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.33333333333333326), 'ICIR': np.float64(-0.4879500364742665)}}
+TRA_TARGET EVALUATE_BEGIN epoch 18 step 18 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 119.01it/s]
+TRA_TARGET EVALUATE_END epoch 18 step 18 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.12345679012345678), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(0.16666666666666666), 'ICIR': np.float64(0.2886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 19 step 18 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.55it/s]
+TRA_TARGET TRAIN_END epoch 19 step 19 {'loss': 0.0639593866136339}
+TRA_TARGET EVALUATE_BEGIN epoch 19 step 19 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.89it/s]
+TRA_TARGET EVALUATE_END epoch 19 step 19 {'segment': 'train', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.33333333333333326), 'ICIR': np.float64(-0.4879500364742665)}}
+TRA_TARGET EVALUATE_BEGIN epoch 19 step 19 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.25it/s]
+TRA_TARGET EVALUATE_END epoch 19 step 19 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 20 step 19 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.62it/s]
+TRA_TARGET TRAIN_END epoch 20 step 20 {'loss': 0.06663265493181017}
+TRA_TARGET EVALUATE_BEGIN epoch 20 step 20 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.69it/s]
+TRA_TARGET EVALUATE_END epoch 20 step 20 {'segment': 'train', 'metrics': {'MSE': np.float64(0.13580246913580246), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.08333333333333329), 'ICIR': np.float64(0.1253924656438797)}}
+TRA_TARGET EVALUATE_BEGIN epoch 20 step 20 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 111.09it/s]
+TRA_TARGET EVALUATE_END epoch 20 step 20 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 21 step 20 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.38it/s]
+TRA_TARGET TRAIN_END epoch 21 step 21 {'loss': 0.06874365939034356}
+TRA_TARGET EVALUATE_BEGIN epoch 21 step 21 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.73it/s]
+TRA_TARGET EVALUATE_END epoch 21 step 21 {'segment': 'train', 'metrics': {'MSE': np.float64(0.12345679012345678), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.1666666666666666), 'ICIR': np.float64(0.3227486121839513)}}
+TRA_TARGET EVALUATE_BEGIN epoch 21 step 21 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.60it/s]
+TRA_TARGET EVALUATE_END epoch 21 step 21 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.33333333333333326), 'ICIR': np.float64(-0.4364357804719847)}}
+TRA_TARGET TRAIN_BEGIN epoch 22 step 21 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.57it/s]
+TRA_TARGET TRAIN_END epoch 22 step 22 {'loss': 0.05945406357447306}
+TRA_TARGET EVALUATE_BEGIN epoch 22 step 22 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.59it/s]
+TRA_TARGET EVALUATE_END epoch 22 step 22 {'segment': 'train', 'metrics': {'MSE': np.float64(0.11111111111111112), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.25), 'ICIR': np.float64(0.30429030972509225)}}
+TRA_TARGET EVALUATE_BEGIN epoch 22 step 22 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 114.67it/s]
+TRA_TARGET EVALUATE_END epoch 22 step 22 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 23 step 22 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.58it/s]
+TRA_TARGET TRAIN_END epoch 23 step 23 {'loss': 0.06135718690024482}
+TRA_TARGET EVALUATE_BEGIN epoch 23 step 23 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.15it/s]
+TRA_TARGET EVALUATE_END epoch 23 step 23 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1851851851851852), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.24999999999999997), 'ICIR': np.float64(-0.3042903097250923)}}
+TRA_TARGET EVALUATE_BEGIN epoch 23 step 23 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.24it/s]
+TRA_TARGET EVALUATE_END epoch 23 step 23 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 24 step 23 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:08, 12.30it/s]
+TRA_TARGET TRAIN_END epoch 24 step 24 {'loss': 0.0775032639503479}
+TRA_TARGET EVALUATE_BEGIN epoch 24 step 24 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.70it/s]
+TRA_TARGET EVALUATE_END epoch 24 step 24 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2098765432098766), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666666), 'ICIR': np.float64(-0.5661385170722979)}}
+TRA_TARGET EVALUATE_BEGIN epoch 24 step 24 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.27it/s]
+TRA_TARGET EVALUATE_END epoch 24 step 24 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 25 step 24 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:09, 10.92it/s]
+TRA_TARGET TRAIN_END epoch 25 step 25 {'loss': 0.06868551174799602}
+TRA_TARGET EVALUATE_BEGIN epoch 25 step 25 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.10it/s]
+TRA_TARGET EVALUATE_END epoch 25 step 25 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1358024691358025), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0833333333333333), 'ICIR': np.float64(0.12539246564387974)}}
+TRA_TARGET EVALUATE_BEGIN epoch 25 step 25 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 111.74it/s]
+TRA_TARGET EVALUATE_END epoch 25 step 25 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.271604938271605), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.8333333333333331), 'ICIR': np.float64(-2.886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 26 step 25 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.43it/s]
+TRA_TARGET TRAIN_END epoch 26 step 26 {'loss': 0.06611228651470608}
+TRA_TARGET EVALUATE_BEGIN epoch 26 step 26 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.77it/s]
+TRA_TARGET EVALUATE_END epoch 26 step 26 {'segment': 'train', 'metrics': {'MSE': np.float64(0.16049382716049385), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-0.08333333333333337), 'ICIR': np.float64(-0.096764124964523)}}
+TRA_TARGET EVALUATE_BEGIN epoch 26 step 26 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.10it/s]
+TRA_TARGET EVALUATE_END epoch 26 step 26 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(3.700743415417188e-17), 'ICIR': np.float64(4.273250414185698e-17)}}
+TRA_TARGET TRAIN_BEGIN epoch 27 step 26 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.54it/s]
+TRA_TARGET TRAIN_END epoch 27 step 27 {'loss': 0.06907086902194554}
+TRA_TARGET EVALUATE_BEGIN epoch 27 step 27 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 107.39it/s]
+TRA_TARGET EVALUATE_END epoch 27 step 27 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1851851851851852), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.24999999999999997), 'ICIR': np.float64(-0.3042903097250923)}}
+TRA_TARGET EVALUATE_BEGIN epoch 27 step 27 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.60it/s]
+TRA_TARGET EVALUATE_END epoch 27 step 27 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-0.16666666666666666), 'ICIR': np.float64(-0.16012815380508713)}}
+TRA_TARGET TRAIN_BEGIN epoch 28 step 27 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:09, 10.23it/s]
+TRA_TARGET TRAIN_END epoch 28 step 28 {'loss': 0.06041464540693495}
+TRA_TARGET EVALUATE_BEGIN epoch 28 step 28 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.09it/s]
+TRA_TARGET EVALUATE_END epoch 28 step 28 {'segment': 'train', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(-0.16666666666666663), 'ICIR': np.float64(-0.17902871850985821)}}
+TRA_TARGET EVALUATE_BEGIN epoch 28 step 28 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 114.19it/s]
+TRA_TARGET EVALUATE_END epoch 28 step 28 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.12345679012345678), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.16666666666666666), 'ICIR': np.float64(0.2886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 29 step 28 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:09, 10.35it/s]
+TRA_TARGET TRAIN_END epoch 29 step 29 {'loss': 0.06232974264356825}
+TRA_TARGET EVALUATE_BEGIN epoch 29 step 29 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.35it/s]
+TRA_TARGET EVALUATE_END epoch 29 step 29 {'segment': 'train', 'metrics': {'MSE': np.float64(0.20987654320987656), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666666), 'ICIR': np.float64(-0.5661385170722979)}}
+TRA_TARGET EVALUATE_BEGIN epoch 29 step 29 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.59it/s]
+TRA_TARGET EVALUATE_END epoch 29 step 29 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1728395061728395), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.16666666666666663), 'ICIR': np.float64(-0.28867513459481275)}}
+TRA_TARGET TRAIN_BEGIN epoch 30 step 29 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:09, 10.74it/s]
+TRA_TARGET TRAIN_END epoch 30 step 30 {'loss': 0.05985426240497165}
+TRA_TARGET EVALUATE_BEGIN epoch 30 step 30 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 107.20it/s]
+TRA_TARGET EVALUATE_END epoch 30 step 30 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641975), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.4166666666666667), 'ICIR': np.float64(0.8475793795260131)}}
+TRA_TARGET EVALUATE_BEGIN epoch 30 step 30 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 120.02it/s]
+TRA_TARGET EVALUATE_END epoch 30 step 30 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.5), 'ICIR': np.float64(-0.5773502691896258)}}
+TRA_TARGET TRAIN_BEGIN epoch 31 step 30 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:09, 10.75it/s]
+TRA_TARGET TRAIN_END epoch 31 step 31 {'loss': 0.0683671236038208}
+TRA_TARGET EVALUATE_BEGIN epoch 31 step 31 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.06it/s]
+TRA_TARGET EVALUATE_END epoch 31 step 31 {'segment': 'train', 'metrics': {'MSE': np.float64(0.13580246913580246), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.08333333333333333), 'ICIR': np.float64(0.1253924656438798)}}
+TRA_TARGET EVALUATE_BEGIN epoch 31 step 31 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.48it/s]
+TRA_TARGET EVALUATE_END epoch 31 step 31 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 32 step 31 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.53it/s]
+TRA_TARGET TRAIN_END epoch 32 step 32 {'loss': 0.06909653213289049}
+TRA_TARGET EVALUATE_BEGIN epoch 32 step 32 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.54it/s]
+TRA_TARGET EVALUATE_END epoch 32 step 32 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641976), 'MAE': np.float64(0.1851851851851852), 'IC': np.float64(0.4166666666666666), 'ICIR': np.float64(0.5661385170722978)}}
+TRA_TARGET EVALUATE_BEGIN epoch 32 step 32 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.77it/s]
+TRA_TARGET EVALUATE_END epoch 32 step 32 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 33 step 32 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.43it/s]
+TRA_TARGET TRAIN_END epoch 33 step 33 {'loss': 0.05771222379472521}
+TRA_TARGET EVALUATE_BEGIN epoch 33 step 33 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.53it/s]
+TRA_TARGET EVALUATE_END epoch 33 step 33 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.2592592592592593), 'IC': np.float64(-9.25185853854297e-18), 'ICIR': np.float64(-9.752315190490838e-18)}}
+TRA_TARGET EVALUATE_BEGIN epoch 33 step 33 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.49it/s]
+TRA_TARGET EVALUATE_END epoch 33 step 33 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 34 step 33 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.51it/s]
+TRA_TARGET TRAIN_END epoch 34 step 34 {'loss': 0.07026563750372992}
+TRA_TARGET EVALUATE_BEGIN epoch 34 step 34 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 112.72it/s]
+TRA_TARGET EVALUATE_END epoch 34 step 34 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1111111111111111), 'MAE': np.float64(0.25925925925925924), 'IC': np.float64(0.24999999999999997), 'ICIR': np.float64(0.408248290463863)}}
+TRA_TARGET EVALUATE_BEGIN epoch 34 step 34 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 114.53it/s]
+TRA_TARGET EVALUATE_END epoch 34 step 34 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-0.16666666666666666), 'ICIR': np.float64(-0.16012815380508713)}}
+TRA_TARGET TRAIN_BEGIN epoch 35 step 34 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:08, 12.27it/s]
+TRA_TARGET TRAIN_END epoch 35 step 35 {'loss': 0.06461136870914036}
+TRA_TARGET EVALUATE_BEGIN epoch 35 step 35 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 109.56it/s]
+TRA_TARGET EVALUATE_END epoch 35 step 35 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2098765432098766), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666666), 'ICIR': np.float64(-0.5661385170722977)}}
+TRA_TARGET EVALUATE_BEGIN epoch 35 step 35 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 124.28it/s]
+TRA_TARGET EVALUATE_END epoch 35 step 35 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.5), 'ICIR': np.float64(-0.5773502691896258)}}
+TRA_TARGET TRAIN_BEGIN epoch 36 step 35 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.40it/s]
+TRA_TARGET TRAIN_END epoch 36 step 36 {'loss': 0.06181751357184516}
+TRA_TARGET EVALUATE_BEGIN epoch 36 step 36 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.57it/s]
+TRA_TARGET EVALUATE_END epoch 36 step 36 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(-9.25185853854297e-18), 'ICIR': np.float64(-1.194409801374794e-17)}}
+TRA_TARGET EVALUATE_BEGIN epoch 36 step 36 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 120.98it/s]
+TRA_TARGET EVALUATE_END epoch 36 step 36 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.43643578047198484)}}
+TRA_TARGET EVALUATE_BEGIN epoch 36 step 36 {'segment': 'test', 'return_pred': True}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 120.22it/s]
+TRA_TARGET EVALUATE_END epoch 36 step 36 {'segment': 'test', 'metrics': {'MSE': nan, 'MAE': nan, 'IC': nan, 'ICIR': nan}}
+TRA_TARGET TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 31.40it/s]
+TRA_TARGET TRAIN_END epoch 0 step 0 {'loss': 6.73296292208963e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 0 step 0 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 122.43it/s]
+<locked_TRA_exact_maturity_adapter>:95: RuntimeWarning: divide by zero encountered in scalar divide
+TRA_TARGET EVALUATE_END epoch 0 step 0 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 0 step 0 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 119.25it/s]
+TRA_TARGET EVALUATE_END epoch 0 step 0 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 1 step 0 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:02, 34.13it/s]
+TRA_TARGET TRAIN_END epoch 1 step 1 {'loss': 6.430552134083377e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 1 step 1 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 125.24it/s]
+TRA_TARGET EVALUATE_END epoch 1 step 1 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 1 step 1 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 126.31it/s]
+TRA_TARGET EVALUATE_END epoch 1 step 1 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 2 step 1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.51it/s]
+TRA_TARGET TRAIN_END epoch 2 step 2 {'loss': 5.962759152882629e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 2 step 2 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 124.72it/s]
+TRA_TARGET EVALUATE_END epoch 2 step 2 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 2 step 2 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 124.90it/s]
+TRA_TARGET EVALUATE_END epoch 2 step 2 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 3 step 2 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.30it/s]
+TRA_TARGET TRAIN_END epoch 3 step 3 {'loss': 5.5752009049885804e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 3 step 3 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 124.29it/s]
+TRA_TARGET EVALUATE_END epoch 3 step 3 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 3 step 3 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 125.10it/s]
+TRA_TARGET EVALUATE_END epoch 3 step 3 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 4 step 3 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.33it/s]
+TRA_TARGET TRAIN_END epoch 4 step 4 {'loss': 5.1096948381099435e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 4 step 4 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 119.18it/s]
+TRA_TARGET EVALUATE_END epoch 4 step 4 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 4 step 4 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 126.91it/s]
+TRA_TARGET EVALUATE_END epoch 4 step 4 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 5 step 4 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:02, 33.06it/s]
+TRA_TARGET TRAIN_END epoch 5 step 5 {'loss': 4.8197346687730816e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 5 step 5 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 123.64it/s]
+TRA_TARGET EVALUATE_END epoch 5 step 5 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 5 step 5 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 123.69it/s]
+TRA_TARGET EVALUATE_END epoch 5 step 5 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 6 step 5 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 31.95it/s]
+TRA_TARGET TRAIN_END epoch 6 step 6 {'loss': 4.3708485059647094e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 6 step 6 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 124.11it/s]
+TRA_TARGET EVALUATE_END epoch 6 step 6 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 6 step 6 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 120.61it/s]
+TRA_TARGET EVALUATE_END epoch 6 step 6 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 7 step 6 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.12it/s]
+TRA_TARGET TRAIN_END epoch 7 step 7 {'loss': 3.96656137632413e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 7 step 7 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 122.82it/s]
+TRA_TARGET EVALUATE_END epoch 7 step 7 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 7 step 7 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.83it/s]
+TRA_TARGET EVALUATE_END epoch 7 step 7 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 8 step 7 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.24it/s]
+TRA_TARGET TRAIN_END epoch 8 step 8 {'loss': 3.793715344121059e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 8 step 8 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 119.67it/s]
+TRA_TARGET EVALUATE_END epoch 8 step 8 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 8 step 8 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 131.84it/s]
+TRA_TARGET EVALUATE_END epoch 8 step 8 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 9 step 8 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.08it/s]
+TRA_TARGET TRAIN_END epoch 9 step 9 {'loss': 3.376039158966806e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 9 step 9 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 124.03it/s]
+TRA_TARGET EVALUATE_END epoch 9 step 9 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 9 step 9 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 123.21it/s]
+TRA_TARGET EVALUATE_END epoch 9 step 9 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 10 step 9 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.39it/s]
+TRA_TARGET TRAIN_END epoch 10 step 10 {'loss': 3.078220308654838e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 10 step 10 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 123.85it/s]
+TRA_TARGET EVALUATE_END epoch 10 step 10 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 10 step 10 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 125.04it/s]
+TRA_TARGET EVALUATE_END epoch 10 step 10 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 11 step 10 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.18it/s]
+TRA_TARGET TRAIN_END epoch 11 step 11 {'loss': 2.8640820851756467e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 11 step 11 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 123.30it/s]
+TRA_TARGET EVALUATE_END epoch 11 step 11 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 11 step 11 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 122.00it/s]
+TRA_TARGET EVALUATE_END epoch 11 step 11 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 12 step 11 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 30.64it/s]
+TRA_TARGET TRAIN_END epoch 12 step 12 {'loss': 2.512566829358952e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 12 step 12 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 126.47it/s]
+TRA_TARGET EVALUATE_END epoch 12 step 12 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 12 step 12 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 121.53it/s]
+TRA_TARGET EVALUATE_END epoch 12 step 12 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 13 step 12 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 31.53it/s]
+TRA_TARGET TRAIN_END epoch 13 step 13 {'loss': 2.2831704376989768e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 13 step 13 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 119.78it/s]
+TRA_TARGET EVALUATE_END epoch 13 step 13 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 13 step 13 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 124.33it/s]
+TRA_TARGET EVALUATE_END epoch 13 step 13 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 14 step 13 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.45it/s]
+TRA_TARGET TRAIN_END epoch 14 step 14 {'loss': 2.122061656943212e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 14 step 14 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 122.12it/s]
+TRA_TARGET EVALUATE_END epoch 14 step 14 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 14 step 14 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 123.13it/s]
+TRA_TARGET EVALUATE_END epoch 14 step 14 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 15 step 14 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.60it/s]
+TRA_TARGET TRAIN_END epoch 15 step 15 {'loss': 1.903231249242607e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 15 step 15 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 122.41it/s]
+TRA_TARGET EVALUATE_END epoch 15 step 15 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 15 step 15 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 125.81it/s]
+TRA_TARGET EVALUATE_END epoch 15 step 15 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 16 step 15 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 31.42it/s]
+TRA_TARGET TRAIN_END epoch 16 step 16 {'loss': 1.7160021040278178e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 16 step 16 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 130.69it/s]
+TRA_TARGET EVALUATE_END epoch 16 step 16 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 16 step 16 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 127.02it/s]
+TRA_TARGET EVALUATE_END epoch 16 step 16 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 17 step 16 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.31it/s]
+TRA_TARGET TRAIN_END epoch 17 step 17 {'loss': 1.5352734610334868e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 17 step 17 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 125.33it/s]
+TRA_TARGET EVALUATE_END epoch 17 step 17 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 17 step 17 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 127.57it/s]
+TRA_TARGET EVALUATE_END epoch 17 step 17 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 18 step 17 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.51it/s]
+TRA_TARGET TRAIN_END epoch 18 step 18 {'loss': 1.3769007637165487e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 18 step 18 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 123.02it/s]
+TRA_TARGET EVALUATE_END epoch 18 step 18 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 18 step 18 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 124.51it/s]
+TRA_TARGET EVALUATE_END epoch 18 step 18 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 19 step 18 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 32.63it/s]
+TRA_TARGET TRAIN_END epoch 19 step 19 {'loss': 1.2450692237406554e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 19 step 19 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 120.09it/s]
+TRA_TARGET EVALUATE_END epoch 19 step 19 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 19 step 19 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.08it/s]
+TRA_TARGET EVALUATE_END epoch 19 step 19 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 20 step 19 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:02, 33.78it/s]
+TRA_TARGET TRAIN_END epoch 20 step 20 {'loss': 1.0726743817536368e-05}
+TRA_TARGET EVALUATE_BEGIN epoch 20 step 20 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 125.37it/s]
+TRA_TARGET EVALUATE_END epoch 20 step 20 {'segment': 'train', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 20 step 20 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 128.33it/s]
+TRA_TARGET EVALUATE_END epoch 20 step 20 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.29629629629629634), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.9999999999999999), 'ICIR': np.float64(-inf)}}
+TRA_TARGET EVALUATE_BEGIN epoch 20 step 20 {'segment': 'test', 'return_pred': True}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 131.62it/s]
+TRA_TARGET EVALUATE_END epoch 20 step 20 {'segment': 'test', 'metrics': {'MSE': nan, 'MAE': nan, 'IC': nan, 'ICIR': nan}}
+TRA_TARGET EVALUATE_BEGIN epoch -1 step -1 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.11it/s]
+TRA_TARGET EVALUATE_END epoch -1 step -1 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1358024691358025), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0833333333333333), 'ICIR': np.float64(0.12539246564387974)}}
+TRA_TARGET TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 28.56it/s]
+TRA_TARGET TRAIN_END epoch 0 step 0 {'loss': 0.3291245831383599}
+TRA_TARGET EVALUATE_BEGIN epoch 0 step 0 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.59it/s]
+TRA_TARGET EVALUATE_END epoch 0 step 0 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET EVALUATE_BEGIN epoch 0 step 0 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 111.83it/s]
+TRA_TARGET EVALUATE_END epoch 0 step 0 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1728395061728395), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.16666666666666663), 'ICIR': np.float64(-0.28867513459481275)}}
+TRA_TARGET TRAIN_BEGIN epoch 1 step 0 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 28.70it/s]
+TRA_TARGET TRAIN_END epoch 1 step 1 {'loss': 0.3527771102057563}
+TRA_TARGET EVALUATE_BEGIN epoch 1 step 1 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.03it/s]
+TRA_TARGET EVALUATE_END epoch 1 step 1 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1851851851851852), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.25), 'ICIR': np.float64(-0.4082482904638631)}}
+TRA_TARGET EVALUATE_BEGIN epoch 1 step 1 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.59it/s]
+TRA_TARGET EVALUATE_END epoch 1 step 1 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.1666666666666667), 'ICIR': np.float64(0.1601281538050872)}}
+TRA_TARGET TRAIN_BEGIN epoch 2 step 1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.61it/s]
+TRA_TARGET TRAIN_END epoch 2 step 2 {'loss': 0.32923340797424316}
+TRA_TARGET EVALUATE_BEGIN epoch 2 step 2 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.98it/s]
+TRA_TARGET EVALUATE_END epoch 2 step 2 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2098765432098766), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666666), 'ICIR': np.float64(-0.5661385170722977)}}
+TRA_TARGET EVALUATE_BEGIN epoch 2 step 2 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.45it/s]
+TRA_TARGET EVALUATE_END epoch 2 step 2 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.1666666666666667), 'ICIR': np.float64(0.1601281538050872)}}
+TRA_TARGET TRAIN_BEGIN epoch 3 step 2 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.84it/s]
+TRA_TARGET TRAIN_END epoch 3 step 3 {'loss': 0.33702052964104545}
+TRA_TARGET EVALUATE_BEGIN epoch 3 step 3 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.41it/s]
+TRA_TARGET EVALUATE_END epoch 3 step 3 {'segment': 'train', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.40740740740740744), 'IC': np.float64(-0.49999999999999994), 'ICIR': np.float64(-0.9128709291752768)}}
+TRA_TARGET EVALUATE_BEGIN epoch 3 step 3 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.13it/s]
+TRA_TARGET EVALUATE_END epoch 3 step 3 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.5), 'ICIR': np.float64(-0.5773502691896258)}}
+TRA_TARGET TRAIN_BEGIN epoch 4 step 3 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.89it/s]
+TRA_TARGET TRAIN_END epoch 4 step 4 {'loss': 0.3282722896999783}
+TRA_TARGET EVALUATE_BEGIN epoch 4 step 4 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 110.06it/s]
+TRA_TARGET EVALUATE_END epoch 4 step 4 {'segment': 'train', 'metrics': {'MSE': np.float64(0.13580246913580246), 'MAE': np.float64(0.25925925925925924), 'IC': np.float64(0.08333333333333333), 'ICIR': np.float64(0.09676412496452295)}}
+TRA_TARGET EVALUATE_BEGIN epoch 4 step 4 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 122.87it/s]
+TRA_TARGET EVALUATE_END epoch 4 step 4 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.33333333333333326), 'ICIR': np.float64(-0.4364357804719847)}}
+TRA_TARGET TRAIN_BEGIN epoch 5 step 4 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.73it/s]
+TRA_TARGET TRAIN_END epoch 5 step 5 {'loss': 0.33675803078545463}
+TRA_TARGET EVALUATE_BEGIN epoch 5 step 5 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.94it/s]
+TRA_TARGET EVALUATE_END epoch 5 step 5 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET EVALUATE_BEGIN epoch 5 step 5 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.55it/s]
+TRA_TARGET EVALUATE_END epoch 5 step 5 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.09876543209876543), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.3333333333333333), 'ICIR': np.float64(0.4364357804719848)}}
+TRA_TARGET TRAIN_BEGIN epoch 6 step 5 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.85it/s]
+TRA_TARGET TRAIN_END epoch 6 step 6 {'loss': 0.32237015830145943}
+TRA_TARGET EVALUATE_BEGIN epoch 6 step 6 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.93it/s]
+TRA_TARGET EVALUATE_END epoch 6 step 6 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.581988897471611)}}
+TRA_TARGET EVALUATE_BEGIN epoch 6 step 6 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.83it/s]
+TRA_TARGET EVALUATE_END epoch 6 step 6 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.07407407407407407), 'MAE': np.float64(0.2222222222222222), 'IC': np.float64(0.49999999999999983), 'ICIR': np.float64(4246034448350514.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 7 step 6 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.49it/s]
+TRA_TARGET TRAIN_END epoch 7 step 7 {'loss': 0.3358384238349067}
+TRA_TARGET EVALUATE_BEGIN epoch 7 step 7 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.54it/s]
+TRA_TARGET EVALUATE_END epoch 7 step 7 {'segment': 'train', 'metrics': {'MSE': np.float64(0.11111111111111112), 'MAE': np.float64(0.25925925925925924), 'IC': np.float64(0.24999999999999992), 'ICIR': np.float64(0.4082482904638629)}}
+TRA_TARGET EVALUATE_BEGIN epoch 7 step 7 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 107.63it/s]
+TRA_TARGET EVALUATE_END epoch 7 step 7 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.271604938271605), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.8333333333333331), 'ICIR': np.float64(-2.886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 8 step 7 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 31.22it/s]
+TRA_TARGET TRAIN_END epoch 8 step 8 {'loss': 0.3204544120364719}
+TRA_TARGET EVALUATE_BEGIN epoch 8 step 8 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.22it/s]
+TRA_TARGET EVALUATE_END epoch 8 step 8 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1851851851851852), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.25), 'ICIR': np.float64(-0.3042903097250923)}}
+TRA_TARGET EVALUATE_BEGIN epoch 8 step 8 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.43it/s]
+TRA_TARGET EVALUATE_END epoch 8 step 8 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-5.551115123125783e-17), 'ICIR': np.float64(-6.409875621278547e-17)}}
+TRA_TARGET TRAIN_BEGIN epoch 9 step 8 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.62it/s]
+TRA_TARGET TRAIN_END epoch 9 step 9 {'loss': 0.3212803469763862}
+TRA_TARGET EVALUATE_BEGIN epoch 9 step 9 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.25it/s]
+TRA_TARGET EVALUATE_END epoch 9 step 9 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1358024691358025), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0833333333333333), 'ICIR': np.float64(0.12539246564387974)}}
+TRA_TARGET EVALUATE_BEGIN epoch 9 step 9 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.58it/s]
+<locked_TRA_exact_maturity_adapter>:95: RuntimeWarning: divide by zero encountered in scalar divide
+TRA_TARGET EVALUATE_END epoch 9 step 9 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.49999999999999994), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 10 step 9 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.76it/s]
+TRA_TARGET TRAIN_END epoch 10 step 10 {'loss': 0.3210798369513618}
+TRA_TARGET EVALUATE_BEGIN epoch 10 step 10 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.18it/s]
+TRA_TARGET EVALUATE_END epoch 10 step 10 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1851851851851852), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.24999999999999997), 'ICIR': np.float64(-0.3042903097250923)}}
+TRA_TARGET EVALUATE_BEGIN epoch 10 step 10 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 114.63it/s]
+TRA_TARGET EVALUATE_END epoch 10 step 10 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 11 step 10 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.65it/s]
+TRA_TARGET TRAIN_END epoch 11 step 11 {'loss': 0.2906159030066596}
+TRA_TARGET EVALUATE_BEGIN epoch 11 step 11 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.61it/s]
+TRA_TARGET EVALUATE_END epoch 11 step 11 {'segment': 'train', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.48795003647426666)}}
+TRA_TARGET EVALUATE_BEGIN epoch 11 step 11 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.74it/s]
+TRA_TARGET EVALUATE_END epoch 11 step 11 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.16666666666666666), 'ICIR': np.float64(-0.2886751345948129)}}
+TRA_TARGET TRAIN_BEGIN epoch 12 step 11 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.60it/s]
+TRA_TARGET TRAIN_END epoch 12 step 12 {'loss': 0.29667960272894967}
+TRA_TARGET EVALUATE_BEGIN epoch 12 step 12 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.91it/s]
+TRA_TARGET EVALUATE_END epoch 12 step 12 {'segment': 'train', 'metrics': {'MSE': np.float64(0.16049382716049385), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-0.08333333333333331), 'ICIR': np.float64(-0.09676412496452293)}}
+TRA_TARGET EVALUATE_BEGIN epoch 12 step 12 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 119.90it/s]
+TRA_TARGET EVALUATE_END epoch 12 step 12 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.16666666666666666), 'ICIR': np.float64(-0.2886751345948129)}}
+TRA_TARGET TRAIN_BEGIN epoch 13 step 12 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.81it/s]
+TRA_TARGET TRAIN_END epoch 13 step 13 {'loss': 0.297211488087972}
+TRA_TARGET EVALUATE_BEGIN epoch 13 step 13 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.53it/s]
+TRA_TARGET EVALUATE_END epoch 13 step 13 {'segment': 'train', 'metrics': {'MSE': np.float64(0.07407407407407407), 'MAE': np.float64(0.1851851851851852), 'IC': np.float64(0.5), 'ICIR': np.float64(0.9128709291752769)}}
+TRA_TARGET EVALUATE_BEGIN epoch 13 step 13 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.29it/s]
+TRA_TARGET EVALUATE_END epoch 13 step 13 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 14 step 13 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.68it/s]
+TRA_TARGET TRAIN_END epoch 14 step 14 {'loss': 0.28277717696295845}
+TRA_TARGET EVALUATE_BEGIN epoch 14 step 14 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 112.64it/s]
+TRA_TARGET EVALUATE_END epoch 14 step 14 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814814), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(-1.850371707708594e-17), 'ICIR': np.float64(-2.388819602749588e-17)}}
+TRA_TARGET EVALUATE_BEGIN epoch 14 step 14 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 108.09it/s]
+TRA_TARGET EVALUATE_END epoch 14 step 14 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.09876543209876543), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.3333333333333333), 'ICIR': np.float64(0.4364357804719848)}}
+TRA_TARGET TRAIN_BEGIN epoch 15 step 14 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 30.99it/s]
+TRA_TARGET TRAIN_END epoch 15 step 15 {'loss': 0.3083193567064073}
+TRA_TARGET EVALUATE_BEGIN epoch 15 step 15 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.04it/s]
+TRA_TARGET EVALUATE_END epoch 15 step 15 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641976), 'MAE': np.float64(0.1851851851851852), 'IC': np.float64(0.4166666666666667), 'ICIR': np.float64(0.566138517072298)}}
+TRA_TARGET EVALUATE_BEGIN epoch 15 step 15 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 112.53it/s]
+TRA_TARGET EVALUATE_END epoch 15 step 15 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1728395061728395), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.16666666666666663), 'ICIR': np.float64(-0.28867513459481275)}}
+TRA_TARGET TRAIN_BEGIN epoch 16 step 15 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.13it/s]
+TRA_TARGET TRAIN_END epoch 16 step 16 {'loss': 0.29631884892781574}
+TRA_TARGET EVALUATE_BEGIN epoch 16 step 16 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.80it/s]
+TRA_TARGET EVALUATE_END epoch 16 step 16 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1111111111111111), 'MAE': np.float64(0.2592592592592593), 'IC': np.float64(0.25), 'ICIR': np.float64(0.4082482904638631)}}
+TRA_TARGET EVALUATE_BEGIN epoch 16 step 16 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.46it/s]
+TRA_TARGET EVALUATE_END epoch 16 step 16 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.12345679012345678), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(0.16666666666666666), 'ICIR': np.float64(0.2886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 17 step 16 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.85it/s]
+TRA_TARGET TRAIN_END epoch 17 step 17 {'loss': 0.30469677183363175}
+TRA_TARGET EVALUATE_BEGIN epoch 17 step 17 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.14it/s]
+TRA_TARGET EVALUATE_END epoch 17 step 17 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641976), 'MAE': np.float64(0.1851851851851852), 'IC': np.float64(0.4166666666666666), 'ICIR': np.float64(0.5661385170722978)}}
+TRA_TARGET EVALUATE_BEGIN epoch 17 step 17 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.39it/s]
+TRA_TARGET EVALUATE_END epoch 17 step 17 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 18 step 17 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 28.59it/s]
+TRA_TARGET TRAIN_END epoch 18 step 18 {'loss': 0.2802755832672119}
+TRA_TARGET EVALUATE_BEGIN epoch 18 step 18 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 118.75it/s]
+TRA_TARGET EVALUATE_END epoch 18 step 18 {'segment': 'train', 'metrics': {'MSE': np.float64(0.06172839506172839), 'MAE': np.float64(0.14814814814814817), 'IC': np.float64(0.5833333333333334), 'ICIR': np.float64(0.997965409896352)}}
+TRA_TARGET EVALUATE_BEGIN epoch 18 step 18 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.38it/s]
+TRA_TARGET EVALUATE_END epoch 18 step 18 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(3.700743415417188e-17), 'ICIR': np.float64(4.2732504141856984e-17)}}
+TRA_TARGET TRAIN_BEGIN epoch 19 step 18 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.67it/s]
+TRA_TARGET TRAIN_END epoch 19 step 19 {'loss': 0.3153653409745958}
+TRA_TARGET EVALUATE_BEGIN epoch 19 step 19 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.80it/s]
+TRA_TARGET EVALUATE_END epoch 19 step 19 {'segment': 'train', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.40740740740740744), 'IC': np.float64(-0.49999999999999994), 'ICIR': np.float64(-0.9128709291752768)}}
+TRA_TARGET EVALUATE_BEGIN epoch 19 step 19 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.19it/s]
+TRA_TARGET EVALUATE_END epoch 19 step 19 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.43643578047198484)}}
+TRA_TARGET TRAIN_BEGIN epoch 20 step 19 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.76it/s]
+TRA_TARGET TRAIN_END epoch 20 step 20 {'loss': 0.27568938997056747}
+TRA_TARGET EVALUATE_BEGIN epoch 20 step 20 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.66it/s]
+TRA_TARGET EVALUATE_END epoch 20 step 20 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-2.7755575615628914e-17), 'ICIR': np.float64(-3.5832294041243823e-17)}}
+TRA_TARGET EVALUATE_BEGIN epoch 20 step 20 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.82it/s]
+TRA_TARGET EVALUATE_END epoch 20 step 20 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.16666666666666666), 'ICIR': np.float64(-0.2886751345948129)}}
+TRA_TARGET TRAIN_BEGIN epoch 21 step 20 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.73it/s]
+TRA_TARGET TRAIN_END epoch 21 step 21 {'loss': 0.27887505955166286}
+TRA_TARGET EVALUATE_BEGIN epoch 21 step 21 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 111.53it/s]
+TRA_TARGET EVALUATE_END epoch 21 step 21 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814814), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET EVALUATE_BEGIN epoch 21 step 21 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 114.87it/s]
+TRA_TARGET EVALUATE_END epoch 21 step 21 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.49999999999999994), 'ICIR': np.float64(-inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 22 step 21 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 30.13it/s]
+TRA_TARGET TRAIN_END epoch 22 step 22 {'loss': 0.298328161239624}
+TRA_TARGET EVALUATE_BEGIN epoch 22 step 22 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.49it/s]
+TRA_TARGET EVALUATE_END epoch 22 step 22 {'segment': 'train', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.4879500364742666)}}
+TRA_TARGET EVALUATE_BEGIN epoch 22 step 22 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.40it/s]
+TRA_TARGET EVALUATE_END epoch 22 step 22 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.09876543209876544), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.33333333333333326), 'ICIR': np.float64(0.4364357804719847)}}
+TRA_TARGET TRAIN_BEGIN epoch 23 step 22 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.76it/s]
+TRA_TARGET TRAIN_END epoch 23 step 23 {'loss': 0.2845567332373725}
+TRA_TARGET EVALUATE_BEGIN epoch 23 step 23 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.73it/s]
+TRA_TARGET EVALUATE_END epoch 23 step 23 {'segment': 'train', 'metrics': {'MSE': np.float64(0.16049382716049385), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.08333333333333333), 'ICIR': np.float64(-0.1253924656438798)}}
+TRA_TARGET EVALUATE_BEGIN epoch 23 step 23 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.07it/s]
+TRA_TARGET EVALUATE_END epoch 23 step 23 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.09876543209876543), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.3333333333333333), 'ICIR': np.float64(0.4364357804719848)}}
+TRA_TARGET TRAIN_BEGIN epoch 24 step 23 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.69it/s]
+TRA_TARGET TRAIN_END epoch 24 step 24 {'loss': 0.2734764681922065}
+TRA_TARGET EVALUATE_BEGIN epoch 24 step 24 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.56it/s]
+TRA_TARGET EVALUATE_END epoch 24 step 24 {'segment': 'train', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.33333333333333326), 'ICIR': np.float64(-0.4879500364742665)}}
+TRA_TARGET EVALUATE_BEGIN epoch 24 step 24 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.57it/s]
+TRA_TARGET EVALUATE_END epoch 24 step 24 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.07407407407407408), 'MAE': np.float64(0.14814814814814817), 'IC': np.float64(0.49999999999999994), 'ICIR': np.float64(0.5773502691896257)}}
+TRA_TARGET TRAIN_BEGIN epoch 25 step 24 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 28.55it/s]
+TRA_TARGET TRAIN_END epoch 25 step 25 {'loss': 0.2689945697784424}
+TRA_TARGET EVALUATE_BEGIN epoch 25 step 25 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 120.45it/s]
+TRA_TARGET EVALUATE_END epoch 25 step 25 {'segment': 'train', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.16666666666666666), 'ICIR': np.float64(-0.22140372138502384)}}
+TRA_TARGET EVALUATE_BEGIN epoch 25 step 25 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 119.17it/s]
+TRA_TARGET EVALUATE_END epoch 25 step 25 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.43643578047198484)}}
+TRA_TARGET TRAIN_BEGIN epoch 26 step 25 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.57it/s]
+TRA_TARGET TRAIN_END epoch 26 step 26 {'loss': 0.2767514122856988}
+TRA_TARGET EVALUATE_BEGIN epoch 26 step 26 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.78it/s]
+TRA_TARGET EVALUATE_END epoch 26 step 26 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641976), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.4166666666666667), 'ICIR': np.float64(0.8475793795260131)}}
+TRA_TARGET EVALUATE_BEGIN epoch 26 step 26 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.27it/s]
+TRA_TARGET EVALUATE_END epoch 26 step 26 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(-3.700743415417188e-17), 'ICIR': np.float64(-4.2732504141856984e-17)}}
+TRA_TARGET TRAIN_BEGIN epoch 27 step 26 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.78it/s]
+TRA_TARGET TRAIN_END epoch 27 step 27 {'loss': 0.24604831801520455}
+TRA_TARGET EVALUATE_BEGIN epoch 27 step 27 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.04it/s]
+TRA_TARGET EVALUATE_END epoch 27 step 27 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641975), 'MAE': np.float64(0.2222222222222222), 'IC': np.float64(0.4166666666666666), 'ICIR': np.float64(0.8475793795260129)}}
+TRA_TARGET EVALUATE_BEGIN epoch 27 step 27 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.26it/s]
+TRA_TARGET EVALUATE_END epoch 27 step 27 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.09876543209876544), 'MAE': np.float64(0.14814814814814817), 'IC': np.float64(0.3333333333333333), 'ICIR': np.float64(0.28867513459481287)}}
+TRA_TARGET TRAIN_BEGIN epoch 28 step 27 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.81it/s]
+TRA_TARGET TRAIN_END epoch 28 step 28 {'loss': 0.26487451129489475}
+TRA_TARGET EVALUATE_BEGIN epoch 28 step 28 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 108.00it/s]
+TRA_TARGET EVALUATE_END epoch 28 step 28 {'segment': 'train', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.16666666666666663), 'ICIR': np.float64(-0.22140372138502376)}}
+TRA_TARGET EVALUATE_BEGIN epoch 28 step 28 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 124.14it/s]
+TRA_TARGET EVALUATE_END epoch 28 step 28 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.04938271604938271), 'MAE': np.float64(0.14814814814814814), 'IC': np.float64(0.6666666666666666), 'ICIR': np.float64(2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 29 step 28 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.44it/s]
+TRA_TARGET TRAIN_END epoch 29 step 29 {'loss': 0.25270329581366646}
+TRA_TARGET EVALUATE_BEGIN epoch 29 step 29 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.06it/s]
+TRA_TARGET EVALUATE_END epoch 29 step 29 {'segment': 'train', 'metrics': {'MSE': np.float64(0.07407407407407407), 'MAE': np.float64(0.1851851851851852), 'IC': np.float64(0.5), 'ICIR': np.float64(0.9128709291752769)}}
+TRA_TARGET EVALUATE_BEGIN epoch 29 step 29 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 119.08it/s]
+TRA_TARGET EVALUATE_END epoch 29 step 29 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 30 step 29 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.78it/s]
+TRA_TARGET TRAIN_END epoch 30 step 30 {'loss': 0.25587089856465656}
+TRA_TARGET EVALUATE_BEGIN epoch 30 step 30 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.80it/s]
+TRA_TARGET EVALUATE_END epoch 30 step 30 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1111111111111111), 'MAE': np.float64(0.2592592592592593), 'IC': np.float64(0.24999999999999997), 'ICIR': np.float64(0.408248290463863)}}
+TRA_TARGET EVALUATE_BEGIN epoch 30 step 30 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.84it/s]
+TRA_TARGET EVALUATE_END epoch 30 step 30 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.16666666666666663), 'ICIR': np.float64(0.1601281538050871)}}
+TRA_TARGET TRAIN_BEGIN epoch 31 step 30 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.71it/s]
+TRA_TARGET TRAIN_END epoch 31 step 31 {'loss': 0.2684386571248372}
+TRA_TARGET EVALUATE_BEGIN epoch 31 step 31 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.68it/s]
+TRA_TARGET EVALUATE_END epoch 31 step 31 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641976), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.4166666666666665), 'ICIR': np.float64(0.8475793795260128)}}
+TRA_TARGET EVALUATE_BEGIN epoch 31 step 31 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 110.64it/s]
+TRA_TARGET EVALUATE_END epoch 31 step 31 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.024691358024691357), 'MAE': np.float64(0.07407407407407407), 'IC': np.float64(0.8333333333333334), 'ICIR': np.float64(2.8867513459481295)}}
+TRA_TARGET TRAIN_BEGIN epoch 32 step 31 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.60it/s]
+TRA_TARGET TRAIN_END epoch 32 step 32 {'loss': 0.24470776981777614}
+TRA_TARGET EVALUATE_BEGIN epoch 32 step 32 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.75it/s]
+TRA_TARGET EVALUATE_END epoch 32 step 32 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2098765432098766), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666666), 'ICIR': np.float64(-0.5661385170722979)}}
+TRA_TARGET EVALUATE_BEGIN epoch 32 step 32 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.52it/s]
+TRA_TARGET EVALUATE_END epoch 32 step 32 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.12345679012345678), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.16666666666666663), 'ICIR': np.float64(0.28867513459481287)}}
+TRA_TARGET TRAIN_BEGIN epoch 33 step 32 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.38it/s]
+TRA_TARGET TRAIN_END epoch 33 step 33 {'loss': 0.2613755332099067}
+TRA_TARGET EVALUATE_BEGIN epoch 33 step 33 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.01it/s]
+TRA_TARGET EVALUATE_END epoch 33 step 33 {'segment': 'train', 'metrics': {'MSE': np.float64(0.23456790123456792), 'MAE': np.float64(0.40740740740740744), 'IC': np.float64(-0.5833333333333333), 'ICIR': np.float64(-0.9979654098963516)}}
+TRA_TARGET EVALUATE_BEGIN epoch 33 step 33 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.24it/s]
+TRA_TARGET EVALUATE_END epoch 33 step 33 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.16666666666666657), 'ICIR': np.float64(0.2886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 34 step 33 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.55it/s]
+TRA_TARGET TRAIN_END epoch 34 step 34 {'loss': 0.25642408265007866}
+TRA_TARGET EVALUATE_BEGIN epoch 34 step 34 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.59it/s]
+TRA_TARGET EVALUATE_END epoch 34 step 34 {'segment': 'train', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.1666666666666667), 'ICIR': np.float64(-0.22140372138502393)}}
+TRA_TARGET EVALUATE_BEGIN epoch 34 step 34 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.72it/s]
+TRA_TARGET EVALUATE_END epoch 34 step 34 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.04938271604938271), 'MAE': np.float64(0.14814814814814814), 'IC': np.float64(0.6666666666666666), 'ICIR': np.float64(2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 35 step 34 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.59it/s]
+TRA_TARGET TRAIN_END epoch 35 step 35 {'loss': 0.24554443359375}
+TRA_TARGET EVALUATE_BEGIN epoch 35 step 35 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.17it/s]
+TRA_TARGET EVALUATE_END epoch 35 step 35 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814814), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(1.850371707708594e-17), 'ICIR': np.float64(2.388819602749588e-17)}}
+TRA_TARGET EVALUATE_BEGIN epoch 35 step 35 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 120.27it/s]
+TRA_TARGET EVALUATE_END epoch 35 step 35 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 36 step 35 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.62it/s]
+TRA_TARGET TRAIN_END epoch 36 step 36 {'loss': 0.23363780975341797}
+TRA_TARGET EVALUATE_BEGIN epoch 36 step 36 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.99it/s]
+TRA_TARGET EVALUATE_END epoch 36 step 36 {'segment': 'train', 'metrics': {'MSE': np.float64(0.11111111111111112), 'MAE': np.float64(0.25925925925925924), 'IC': np.float64(0.24999999999999992), 'ICIR': np.float64(0.4082482904638629)}}
+TRA_TARGET EVALUATE_BEGIN epoch 36 step 36 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.07it/s]
+TRA_TARGET EVALUATE_END epoch 36 step 36 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.024691358024691357), 'MAE': np.float64(0.07407407407407407), 'IC': np.float64(0.8333333333333334), 'ICIR': np.float64(2.8867513459481295)}}
+TRA_TARGET TRAIN_BEGIN epoch 37 step 36 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.64it/s]
+TRA_TARGET TRAIN_END epoch 37 step 37 {'loss': 0.2352959844801161}
+TRA_TARGET EVALUATE_BEGIN epoch 37 step 37 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.78it/s]
+TRA_TARGET EVALUATE_END epoch 37 step 37 {'segment': 'train', 'metrics': {'MSE': np.float64(0.11111111111111112), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.24999999999999992), 'ICIR': np.float64(0.3042903097250922)}}
+TRA_TARGET EVALUATE_BEGIN epoch 37 step 37 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.71it/s]
+TRA_TARGET EVALUATE_END epoch 37 step 37 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.16666666666666663), 'ICIR': np.float64(-0.2886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 38 step 37 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.74it/s]
+TRA_TARGET TRAIN_END epoch 38 step 38 {'loss': 0.2518136501312256}
+TRA_TARGET EVALUATE_BEGIN epoch 38 step 38 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 111.72it/s]
+TRA_TARGET EVALUATE_END epoch 38 step 38 {'segment': 'train', 'metrics': {'MSE': np.float64(0.2098765432098766), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.4166666666666666), 'ICIR': np.float64(-0.5661385170722978)}}
+TRA_TARGET EVALUATE_BEGIN epoch 38 step 38 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 104.30it/s]
+TRA_TARGET EVALUATE_END epoch 38 step 38 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.2469135802469136), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.6666666666666666), 'ICIR': np.float64(-2.309401076758503)}}
+TRA_TARGET TRAIN_BEGIN epoch 39 step 38 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 31.38it/s]
+TRA_TARGET TRAIN_END epoch 39 step 39 {'loss': 0.2257711092631022}
+TRA_TARGET EVALUATE_BEGIN epoch 39 step 39 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.65it/s]
+TRA_TARGET EVALUATE_END epoch 39 step 39 {'segment': 'train', 'metrics': {'MSE': np.float64(0.06172839506172839), 'MAE': np.float64(0.1851851851851852), 'IC': np.float64(0.5833333333333333), 'ICIR': np.float64(2.857738033247041)}}
+TRA_TARGET EVALUATE_BEGIN epoch 39 step 39 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.25it/s]
+TRA_TARGET EVALUATE_END epoch 39 step 39 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.07407407407407407), 'MAE': np.float64(0.2222222222222222), 'IC': np.float64(0.49999999999999994), 'ICIR': np.float64(5200308914369308.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 40 step 39 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.59it/s]
+TRA_TARGET TRAIN_END epoch 40 step 40 {'loss': 0.25868972142537433}
+TRA_TARGET EVALUATE_BEGIN epoch 40 step 40 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 114.38it/s]
+TRA_TARGET EVALUATE_END epoch 40 step 40 {'segment': 'train', 'metrics': {'MSE': np.float64(0.18518518518518523), 'MAE': np.float64(0.3333333333333333), 'IC': np.float64(-0.24999999999999997), 'ICIR': np.float64(-0.3042903097250923)}}
+TRA_TARGET EVALUATE_BEGIN epoch 40 step 40 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.00it/s]
+TRA_TARGET EVALUATE_END epoch 40 step 40 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.5), 'ICIR': np.float64(-0.5773502691896258)}}
+TRA_TARGET TRAIN_BEGIN epoch 41 step 40 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.55it/s]
+TRA_TARGET TRAIN_END epoch 41 step 41 {'loss': 0.21788059340582955}
+TRA_TARGET EVALUATE_BEGIN epoch 41 step 41 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.04it/s]
+TRA_TARGET EVALUATE_END epoch 41 step 41 {'segment': 'train', 'metrics': {'MSE': np.float64(0.22222222222222224), 'MAE': np.float64(0.40740740740740744), 'IC': np.float64(-0.49999999999999994), 'ICIR': np.float64(-0.9128709291752768)}}
+TRA_TARGET EVALUATE_BEGIN epoch 41 step 41 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.03it/s]
+TRA_TARGET EVALUATE_END epoch 41 step 41 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.0), 'ICIR': np.float64(0.0)}}
+TRA_TARGET TRAIN_BEGIN epoch 42 step 41 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.02it/s]
+TRA_TARGET TRAIN_END epoch 42 step 42 {'loss': 0.21294011010064018}
+TRA_TARGET EVALUATE_BEGIN epoch 42 step 42 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 117.42it/s]
+TRA_TARGET EVALUATE_END epoch 42 step 42 {'segment': 'train', 'metrics': {'MSE': np.float64(0.09876543209876543), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.3333333333333333), 'ICIR': np.float64(0.48795003647426666)}}
+TRA_TARGET EVALUATE_BEGIN epoch 42 step 42 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.33it/s]
+TRA_TARGET EVALUATE_END epoch 42 step 42 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.07407407407407407), 'MAE': np.float64(0.2222222222222222), 'IC': np.float64(0.5), 'ICIR': np.float64(inf)}}
+TRA_TARGET TRAIN_BEGIN epoch 43 step 42 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.51it/s]
+TRA_TARGET TRAIN_END epoch 43 step 43 {'loss': 0.22841946283976236}
+TRA_TARGET EVALUATE_BEGIN epoch 43 step 43 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 105.97it/s]
+TRA_TARGET EVALUATE_END epoch 43 step 43 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.25925925925925924), 'IC': np.float64(0.16666666666666666), 'ICIR': np.float64(0.22140372138502382)}}
+TRA_TARGET EVALUATE_BEGIN epoch 43 step 43 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.85it/s]
+TRA_TARGET EVALUATE_END epoch 43 step 43 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.16666666666666666), 'ICIR': np.float64(0.16012815380508713)}}
+TRA_TARGET TRAIN_BEGIN epoch 44 step 43 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 25.85it/s]
+TRA_TARGET TRAIN_END epoch 44 step 44 {'loss': 0.22298500272962782}
+TRA_TARGET EVALUATE_BEGIN epoch 44 step 44 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.45it/s]
+TRA_TARGET EVALUATE_END epoch 44 step 44 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1358024691358025), 'MAE': np.float64(0.2592592592592593), 'IC': np.float64(0.08333333333333333), 'ICIR': np.float64(0.09676412496452295)}}
+TRA_TARGET EVALUATE_BEGIN epoch 44 step 44 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.31it/s]
+TRA_TARGET EVALUATE_END epoch 44 step 44 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.1666666666666667), 'ICIR': np.float64(0.1601281538050872)}}
+TRA_TARGET TRAIN_BEGIN epoch 45 step 44 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 28.86it/s]
+TRA_TARGET TRAIN_END epoch 45 step 45 {'loss': 0.20923639668358696}
+TRA_TARGET EVALUATE_BEGIN epoch 45 step 45 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 107.84it/s]
+TRA_TARGET EVALUATE_END epoch 45 step 45 {'segment': 'train', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.37037037037037046), 'IC': np.float64(-0.3333333333333333), 'ICIR': np.float64(-0.48795003647426666)}}
+TRA_TARGET EVALUATE_BEGIN epoch 45 step 45 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 122.37it/s]
+TRA_TARGET EVALUATE_END epoch 45 step 45 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.1234567901234568), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.1666666666666667), 'ICIR': np.float64(0.1601281538050872)}}
+TRA_TARGET TRAIN_BEGIN epoch 46 step 45 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.70it/s]
+TRA_TARGET TRAIN_END epoch 46 step 46 {'loss': 0.22061207559373644}
+TRA_TARGET EVALUATE_BEGIN epoch 46 step 46 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.97it/s]
+TRA_TARGET EVALUATE_END epoch 46 step 46 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641975), 'MAE': np.float64(0.2222222222222222), 'IC': np.float64(0.4166666666666667), 'ICIR': np.float64(0.8475793795260131)}}
+TRA_TARGET EVALUATE_BEGIN epoch 46 step 46 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 117.19it/s]
+TRA_TARGET EVALUATE_END epoch 46 step 46 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.17283950617283952), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-0.16666666666666663), 'ICIR': np.float64(-0.1601281538050871)}}
+TRA_TARGET TRAIN_BEGIN epoch 47 step 46 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.69it/s]
+TRA_TARGET TRAIN_END epoch 47 step 47 {'loss': 0.21723315450880262}
+TRA_TARGET EVALUATE_BEGIN epoch 47 step 47 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.24it/s]
+TRA_TARGET EVALUATE_END epoch 47 step 47 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(2.7755575615628914e-17), 'ICIR': np.float64(3.5832294041243823e-17)}}
+TRA_TARGET EVALUATE_BEGIN epoch 47 step 47 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 114.88it/s]
+TRA_TARGET EVALUATE_END epoch 47 step 47 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.04938271604938272), 'MAE': np.float64(0.14814814814814817), 'IC': np.float64(0.6666666666666665), 'ICIR': np.float64(2.309401076758502)}}
+TRA_TARGET TRAIN_BEGIN epoch 48 step 47 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.54it/s]
+TRA_TARGET TRAIN_END epoch 48 step 48 {'loss': 0.20725834369659424}
+TRA_TARGET EVALUATE_BEGIN epoch 48 step 48 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 115.98it/s]
+TRA_TARGET EVALUATE_END epoch 48 step 48 {'segment': 'train', 'metrics': {'MSE': np.float64(0.08641975308641976), 'MAE': np.float64(0.1851851851851852), 'IC': np.float64(0.4166666666666666), 'ICIR': np.float64(0.5661385170722979)}}
+TRA_TARGET EVALUATE_BEGIN epoch 48 step 48 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 114.16it/s]
+TRA_TARGET EVALUATE_END epoch 48 step 48 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.12345679012345678), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(0.16666666666666666), 'ICIR': np.float64(0.2886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 49 step 48 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 28.74it/s]
+TRA_TARGET TRAIN_END epoch 49 step 49 {'loss': 0.21521173583136666}
+TRA_TARGET EVALUATE_BEGIN epoch 49 step 49 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 119.59it/s]
+TRA_TARGET EVALUATE_END epoch 49 step 49 {'segment': 'train', 'metrics': {'MSE': np.float64(0.1358024691358025), 'MAE': np.float64(0.2962962962962963), 'IC': np.float64(0.08333333333333333), 'ICIR': np.float64(0.1253924656438798)}}
+TRA_TARGET EVALUATE_BEGIN epoch 49 step 49 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 116.83it/s]
+TRA_TARGET EVALUATE_END epoch 49 step 49 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.271604938271605), 'MAE': np.float64(0.4444444444444445), 'IC': np.float64(-0.8333333333333331), 'ICIR': np.float64(-2.886751345948128)}}
+TRA_TARGET TRAIN_BEGIN epoch 50 step 49 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.56it/s]
+TRA_TARGET TRAIN_END epoch 50 step 50 {'loss': 0.21544478999243843}
+TRA_TARGET EVALUATE_BEGIN epoch 50 step 50 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 116.78it/s]
+TRA_TARGET EVALUATE_END epoch 50 step 50 {'segment': 'train', 'metrics': {'MSE': np.float64(0.09876543209876544), 'MAE': np.float64(0.22222222222222224), 'IC': np.float64(0.3333333333333333), 'ICIR': np.float64(0.4879500364742666)}}
+TRA_TARGET EVALUATE_BEGIN epoch 50 step 50 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.77it/s]
+TRA_TARGET EVALUATE_END epoch 50 step 50 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.14814814814814817), 'MAE': np.float64(0.29629629629629634), 'IC': np.float64(-7.401486830834377e-17), 'ICIR': np.float64(-8.546500828371397e-17)}}
+TRA_TARGET TRAIN_BEGIN epoch 51 step 50 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 29.76it/s]
+TRA_TARGET TRAIN_END epoch 51 step 51 {'loss': 0.22117308775583902}
+TRA_TARGET EVALUATE_BEGIN epoch 51 step 51 {'segment': 'train', 'return_pred': False}
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 113.72it/s]
+TRA_TARGET EVALUATE_END epoch 51 step 51 {'segment': 'train', 'metrics': {'MSE': np.float64(0.14814814814814814), 'MAE': np.float64(0.25925925925925924), 'IC': np.float64(1.850371707708594e-17), 'ICIR': np.float64(1.9504630380981676e-17)}}
+TRA_TARGET EVALUATE_BEGIN epoch 51 step 51 {'segment': 'valid', 'return_pred': False}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 115.74it/s]
+TRA_TARGET EVALUATE_END epoch 51 step 51 {'segment': 'valid', 'metrics': {'MSE': np.float64(0.19753086419753088), 'MAE': np.float64(0.3703703703703704), 'IC': np.float64(-0.33333333333333326), 'ICIR': np.float64(-0.4364357804719847)}}
+TRA_TARGET EVALUATE_BEGIN epoch 51 step 51 {'segment': 'test', 'return_pred': True}
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 118.43it/s]
+TRA_TARGET EVALUATE_END epoch 51 step 51 {'segment': 'test', 'metrics': {'MSE': nan, 'MAE': nan, 'IC': nan, 'ICIR': nan}}
+{"status": "PASS_SYNTHETIC_FULL_FIT_IO_AND_DEFAULT_STOPPING", "scope": "tiny synthetic integration fixtures with original500epoch/20patience stopping; NOT full author public reference, NOT actual A-share research fits", "phases": [{"phase": "init", "epochs_completed": 37, "best_epoch": 16, "source_initial_model_retained": false, "stop_reason": "AUTHOR_EARLY_STOP20", "actual_optimizer_steps": 37, "forecast_rows": 9, "all_future_test_labels_unavailable_to_model": true, "checkpoint_and_outer_snapshot_verified": true}, {"phase": "T0", "epochs_completed": 21, "best_epoch": 0, "source_initial_model_retained": false, "stop_reason": "AUTHOR_EARLY_STOP20", "actual_optimizer_steps": 21, "forecast_rows": 9, "all_future_test_labels_unavailable_to_model": true, "checkpoint_and_outer_snapshot_verified": true}, {"phase": "T1", "epochs_completed": 52, "best_epoch": 31, "source_initial_model_retained": false, "stop_reason": "AUTHOR_EARLY_STOP20", "actual_optimizer_steps": 52, "forecast_rows": 9, "all_future_test_labels_unavailable_to_model": true, "checkpoint_and_outer_snapshot_verified": true}], "T0_T1_same_shared_backbone_frozen": true, "no_research_model_count_increase": true}

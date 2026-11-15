@@ -5,12 +5,12 @@ import numpy as np
 import pandas as pd
 import torch
 from core.round23_7.tra_reference import R,config
-from core.round23_7.tra_causal import Bundle,CausalDataset,causal_model_class
+from core.round23_7.tra_causal import Bundle,CausalDataset,causal_model_class,configure_target_runtime
 from core.round23_7.tra_counterfactual import replay_forecast
 from core.research_integrity_v5.cache import identity
 
 def run():
-    torch.set_num_threads(2);torch.set_num_interop_threads(2)
+    runtime=configure_target_runtime()
     root=R/'fixture_work';root.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='checkpoint_replay_fixture_',dir=root) as tmp:
         tmp=Path(tmp);data=tmp/'data';data.mkdir()
@@ -37,7 +37,7 @@ def run():
         frame.to_parquet(selected/'forecast.parquet',index=False)
         torch.save({'model':model.model.state_dict(),'tra':model.tra.state_dict()},selected/'model.bin')
         parameters=copy.deepcopy(cfg);parameters['model_init_state']=identity(init_path)
-        (selected/'contract.json').write_text(json.dumps({'parameters':{'model':parameters}},default=str))
+        (selected/'contract.json').write_text(json.dumps({'parameters':{'model':parameters,'target_runtime':runtime}},default=str))
         result=replay_forecast(selected,data,'five',2018)
         assert len(result['cases'])==3 and all(c['rows']==n for c in result['cases'])
         assert result['actual_nonempty_interventions']

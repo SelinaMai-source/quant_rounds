@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import torch
 from core.round23_7.tra_reference import R,config
-from core.round23_7.tra_causal import CausalDataset,causal_model_class
+from core.round23_7.tra_causal import CausalDataset,causal_model_class,configure_target_runtime
 from core.round23_7.tra_fit import observed_class,stopping_audit,value_hash
 
 def fixture():
@@ -22,7 +22,7 @@ def fixture():
     return SimpleNamespace(keys=keys,x=x,history=history,valid=np.ones(n,dtype=bool),y=((stock-1)*.01).astype('float32'),available=(keys.trade_date+pd.Timedelta(days=2,hours=15)).to_numpy().view('i8'),times=times,index=pd.MultiIndex.from_frame(keys[['instrument_id','trade_date']]).set_names(['instrument','datetime']))
 
 def run():
-    torch.set_num_threads(2);torch.set_num_interop_threads(2)
+    configure_target_runtime()
     base,_=causal_model_class();cls=observed_class(base)
     work=R/'fixture_work';work.mkdir(parents=True,exist_ok=True);records=[]
     with tempfile.TemporaryDirectory(prefix='default_stop_io_fixture_',dir=work) as tmp:
