@@ -1,0 +1,14 @@
+{
+  "pid": 2199283,
+  "status": "FAILED_OR_INTERRUPTED",
+  "wall_seconds": 11991.383138302714,
+  "CPU_user_seconds": 20539.049118000003,
+  "CPU_system_seconds": 3167.2533359999998,
+  "RSS_sampled_peak_bytes": 2390384640,
+  "RSS_sample_interval_seconds": 0.25,
+  "process_lifetime_ru_maxrss_KiB": 2365248,
+  "free_disk_before_bytes": 6458328756224,
+  "free_disk_after_bytes": 6457900195840,
+  "GPU_training_seconds": 0,
+  "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+}

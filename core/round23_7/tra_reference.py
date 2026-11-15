@@ -51,8 +51,8 @@ def verify_frozen():
 def reference_contract(phase,model,dataset,upstream=()):
     import qlib
     own=[Path(__file__),C/'core/research_integrity_v5/cache.py',C/'core/research_integrity_v5/resources.py']
-    inputs=[D/f'{n}.pkl' for n in ['feature','label','ret']]+[R/'CONTRACT.yaml',A/'configs'/('config_alstm_tra_init.yaml' if phase=='init' else 'config_alstm_tra.yaml')]
-    parameters={'phase':phase,'model':copy.deepcopy(model),'dataset':dataset,'compatibility':'pandas is_lexsorted spelling alias only; source algorithm unchanged','CPU_threads':2,'RSS_limit_GiB':16}
+    inputs=[D/f'{n}.pkl' for n in ['feature','label','ret']]+[R/'CONTRACT.yaml',R/'PUBLIC_REFERENCE_CPU_RUNTIME_CLARIFICATION.json',A/'configs'/('config_alstm_tra_init.yaml' if phase=='init' else 'config_alstm_tra.yaml')]
+    parameters={'phase':phase,'model':copy.deepcopy(model),'dataset':dataset,'compatibility':'pandas is_lexsorted spelling alias only; source algorithm unchanged','CPU_threads':8,'RSS_limit_GiB':16}
     parameters['model'].pop('logdir',None)
     if phase=='route':parameters['model']['model_init_state']=identity(model['model_init_state'])
     return {'code':source_manifest(own+[A/'src/model.py',A/'src/dataset.py',Path(qlib.__file__).parent]),'third_party':{'locked_source_commit':verify_frozen()['source_commit']},'dirty_diff':{n:__import__('hashlib').sha256(subprocess.check_output(['git','-C',str(B/n),'diff','HEAD'])).hexdigest() for n in ['round23_7','round26_1']},'environment':{d.metadata['Name']:d.version for d in importlib.metadata.distributions() if d.metadata['Name']},'parameters':parameters,'seed':17,'features':list(pd.read_pickle(D/'feature.pkl').columns),'universe':'unchanged author public benchmark index; no target-domain claim','calibration':'unchanged supplied processed public features/labels','data':[identity(p) for p in inputs],'label':'author supplied label.pkl','maturity':'original benchmark fixed horizon21; not asserted as variable-policy A-share maturity','windows':dataset['segments'],'execution':{'reference':'original legacy neural fit/test; separate from target Stock execution','default_stopping':'500epochs or20validation nonimprovements;100train batches/epoch'},'upstream':list(upstream)}
@@ -82,7 +82,7 @@ def export_phase(phase,path):
     (dest/'server_artifacts_manifest.json').write_text(json.dumps(artifacts,indent=2))
 
 def run_reference():
-    torch.set_num_threads(2);torch.set_num_interop_threads(2)
+    torch.set_num_threads(8);torch.set_num_interop_threads(2)
     verify_frozen();dsmod,modelmod=load_author();root=B/'TRA_reference';paths={}
     old_handler=signal.getsignal(signal.SIGUSR1)
     def guard_failure(*_):raise MemoryError('Actual self RSS exceeded frozen16GiB guard; no budget or architecture reduction')

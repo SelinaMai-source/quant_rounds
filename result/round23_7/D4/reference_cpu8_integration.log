@@ -1,0 +1,8 @@
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_hzv2a55m is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:10,  9.64it/s]  1%|          | 1/100 [00:00<00:10,  9.62it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:03, 27.11it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "CPU_threads": 8, "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}

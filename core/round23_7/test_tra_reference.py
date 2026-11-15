@@ -6,8 +6,9 @@ import pandas as pd
 import torch
 from core.round23_7.tra_reference import load_author,verify_frozen,config,observed_model_class,D,R
 
-def run():
-    torch.set_num_threads(2)
+def run(threads=2):
+    assert threads in [2,8]
+    torch.set_num_threads(threads)
     frozen=verify_frozen();dsmod,modelmod=load_author()
     init,ds=config('init',R/'fixture_unused')
     route,_=config('route',R/'fixture_unused',R/'not_a_real_checkpoint.bin')
@@ -48,8 +49,11 @@ def run():
         for attr in ['model','tra']:
             assert all(torch.equal(v,getattr(observed,attr).state_dict()[k]) for k,v in getattr(original,attr).state_dict().items())
         assert json.loads((Path(tmp)/'LIVE.json').read_text())['event']=='TRAIN_END'
-    result={'status':'PASS_REFERENCE_INTEGRATION','public_loader_rows':2512790,'full_original_default_configs_unchanged':True,'public_data_and_locked_source_hashes_pass':True,'observer_vs_original_one_batch_loss_and_all_parameters_exact':True,'original_cross_stock_boundary_issue_reproduced':True,'fixture_only_not_reference_completion':True,'target_adapter_not_tested_here':True}
+    result={'status':'PASS_REFERENCE_INTEGRATION','CPU_threads':threads,'public_loader_rows':2512790,'full_original_default_configs_unchanged':True,'public_data_and_locked_source_hashes_pass':True,'observer_vs_original_one_batch_loss_and_all_parameters_exact':True,'original_cross_stock_boundary_issue_reproduced':True,'fixture_only_not_reference_completion':True,'target_adapter_not_tested_here':True}
     R.mkdir(parents=True,exist_ok=True);(R/'REFERENCE_INTEGRATION.json').write_text(json.dumps(result,indent=2))
     print(json.dumps(result),flush=True)
 
-if __name__=='__main__':run()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser();parser.add_argument('--threads',type=int,default=2)
+    run(parser.parse_args().threads)

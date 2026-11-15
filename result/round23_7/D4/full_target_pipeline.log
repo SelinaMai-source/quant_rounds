@@ -16,3 +16,17 @@ D4 attached existing complete-budget author reference [2199283] {'UTC': '2026-11
 D4 attached existing complete-budget author reference [2199283] {'UTC': '2026-11-15T06:44:54.918778+00:00', 'pid': 2199283, 'event': 'EVALUATE_BEGIN', 'epoch': 4, 'global_step': 499, 'return_pred': False}
 D4 attached existing complete-budget author reference [2199283] {'UTC': '2026-11-15T06:44:54.918778+00:00', 'pid': 2199283, 'event': 'EVALUATE_BEGIN', 'epoch': 4, 'global_step': 499, 'return_pred': False}
 D4 attached existing complete-budget author reference [2199283] {'UTC': '2026-11-15T06:44:54.918778+00:00', 'pid': 2199283, 'event': 'EVALUATE_BEGIN', 'epoch': 4, 'global_step': 499, 'return_pred': False}
+Traceback (most recent call last):
+  File "/data1/stock-mxy/课题/一进二策略/tools/continue_round23_7_round26_1.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/tools/continue_round23_7_round26_1.py", line 40, in main
+    run(jobs=a.jobs,publish=a.publish)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/tra_pipeline.py", line 103, in run
+    complete_reference()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/tra_pipeline.py", line 38, in complete_reference
+    print('D4 attached existing complete-budget author reference',active,state,flush=True);time.sleep(55)
+                                                                                           ~~~~~~~~~~^^^^
+KeyboardInterrupt

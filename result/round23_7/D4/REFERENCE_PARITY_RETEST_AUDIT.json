@@ -1,0 +1,111 @@
+{
+  "initial_failure_log": "reference_integration_after_cpu_runtime_amendment.log",
+  "failure": "exact author/observer memory array assertion after equal scalar loss",
+  "diagnostic_reproduction": "not reproduced;10 default-runtime and10 deterministic-flag one-batch fixtures all passed; no algorithm or numerical tolerance was changed",
+  "subsequent_actual_public_loader_and_CPU8_integration": "PASS, reference_cpu8_integration.log",
+  "unresolved": "root cause of single transient strict parity assertion not established; retain failed log, do not claim a proven deterministic fix",
+  "target_cold_full_fits": "still pending; exact checkpoint/forecast assertions remain enforced, no tolerance relaxation",
+  "diagnostic_cases": [
+    {
+      "deterministic": false,
+      "case": 0,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 1,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 2,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 3,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 4,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 5,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 6,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 7,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 8,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 9,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 0,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 1,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 2,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 3,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 4,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 5,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 6,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 7,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 8,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 9,
+      "status": "PASS"
+    }
+  ],
+  "full_reference_complete": false
+}

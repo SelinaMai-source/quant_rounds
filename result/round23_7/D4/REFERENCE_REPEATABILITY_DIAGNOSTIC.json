@@ -1,0 +1,105 @@
+{
+  "scope": "one-batch synthetic observer parity fixtures only, no full reference or target models",
+  "cases": [
+    {
+      "deterministic": false,
+      "case": 0,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 1,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 2,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 3,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 4,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 5,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 6,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 7,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 8,
+      "status": "PASS"
+    },
+    {
+      "deterministic": false,
+      "case": 9,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 0,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 1,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 2,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 3,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 4,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 5,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 6,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 7,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 8,
+      "status": "PASS"
+    },
+    {
+      "deterministic": true,
+      "case": 9,
+      "status": "PASS"
+    }
+  ]
+}

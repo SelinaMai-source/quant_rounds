@@ -1,0 +1,63 @@
+{
+  "UTC": "2026-11-15T06:49:33.365167+00:00",
+  "processes": [
+    {
+      "pid": 2258310,
+      "kind": "waiting_target_controller",
+      "command": [
+        "research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-u",
+        "tools/continue_round23_7_round26_1.py",
+        "--deliverable",
+        "D4",
+        "--resume",
+        "--jobs",
+        "2",
+        "--seed",
+        "17",
+        "--publish"
+      ],
+      "CPU_times": {
+        "user": 6.41,
+        "system": 0.73,
+        "children_user": 0.0,
+        "children_system": 0.0,
+        "iowait": 0.0
+      },
+      "current_RSS_bytes": 312942592,
+      "create_time_epoch": 1794724387.04,
+      "proc_status_highwater": [
+        "VmPeak:\t 2570404 kB",
+        "VmHWM:\t  305608 kB"
+      ],
+      "action": "SIGINT for explicit frozen CPU-runtime restart, not external block"
+    },
+    {
+      "pid": 2199283,
+      "kind": "original2thread_incomplete_reference",
+      "command": [
+        "research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-u",
+        "-m",
+        "core.round23_7.tra_reference"
+      ],
+      "CPU_times": {
+        "user": 20550.79,
+        "system": 3167.68,
+        "children_user": 0.04,
+        "children_system": 0.08,
+        "iowait": 0.0
+      },
+      "current_RSS_bytes": 1407131648,
+      "create_time_epoch": 1794713377.21,
+      "proc_status_highwater": [
+        "VmPeak:\t 7167792 kB",
+        "VmHWM:\t 2365248 kB"
+      ],
+      "action": "SIGINT for explicit frozen CPU-runtime restart, not external block"
+    }
+  ],
+  "frozen_amendment_commit": "f997d2dbc0296e1715d90d89d36b8121238dcff7"
+}

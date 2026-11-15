@@ -1,0 +1,17 @@
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_zn882eo0 is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:13,  7.34it/s]  1%|          | 1/100 [00:00<00:13,  7.33it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:06, 14.79it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/test_tra_reference.py", line 55, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round23_7/test_tra_reference.py", line 47, in run
+    assert np.array_equal(left._data,right._data)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

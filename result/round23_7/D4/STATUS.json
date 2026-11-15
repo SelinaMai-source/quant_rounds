@@ -1,5 +1,5 @@
 {
-  "status": "REFERENCE_RUNNING_FULL_TARGET_PIPELINE_IMPLEMENTED",
+  "status": "PUBLIC_REFERENCE_CPU8_RESTART_PREPARED",
   "IMPLEMENTED": true,
   "UNIT_TESTED": true,
   "REFERENCE_RUN_COMPLETE": false,
@@ -9,8 +9,8 @@
   "external_blocker": false,
   "REFERENCE_IMPLEMENTED": true,
   "REFERENCE_INTEGRATION_PASS": true,
-  "reference_pid": 2199283,
-  "reference_log": "result/round23_7/D4/full_author_reference.log",
+  "reference_pid": null,
+  "reference_log": "result/round23_7/D4/full_author_reference_cpu8.log",
   "TARGET_DATA_COMPLETE": true,
   "TARGET_CAUSAL_ADAPTER_IMPLEMENTED": true,
   "CAUSAL_INTEGRATION_PASS": true,
@@ -21,5 +21,6 @@
   "completed_full_reference_phases": 0,
   "full_target_fit_counterfactuals_complete": false,
   "FULL_TARGET_COUNTERFACTUAL_IMPLEMENTED": true,
-  "FULL_REFERENCE_BENCHMARK_IMPLEMENTED": true
+  "FULL_REFERENCE_BENCHMARK_IMPLEMENTED": true,
+  "prior_attempt": "explicit runtime restart, source partial retained, not a full reference"
 }

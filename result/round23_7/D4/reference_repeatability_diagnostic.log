@@ -1,0 +1,180 @@
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_h2q5wv2c is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:13,  7.40it/s]  1%|          | 1/100 [00:00<00:13,  7.39it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:06, 14.20it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 0, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_ojwh8k0y is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 15.97it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:06, 16.02it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 1, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_esdhhdh6 is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 13.23it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.87it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 2, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_n8os8w1i is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 13.65it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:06, 15.80it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 3, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_1ykzhc3k is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 15.40it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:06, 16.03it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 4, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_kib4_s9l is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 16.41it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:06, 16.08it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 5, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_v7b29krq is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 14.46it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.44it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 6, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_fcrz4qe9 is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 15.11it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:06, 16.11it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 7, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_lsgk447z is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 14.45it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.11it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 8, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_rf73h0ll is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 12.92it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 12.86it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": false, "case": 9, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_zu87ksme is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 12.83it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.04it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 0, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_2fidtskw is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 13.49it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.33it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 1, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_e7wzc5i6 is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 15.61it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.41it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 2, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_n_gjmhti is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 13.41it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.03it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 3, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_55jxu0xa is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 12.76it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.71it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 4, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_ea1envyx is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 13.23it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.30it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 5, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_0mgoj3sr is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 12.54it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.45it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 6, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_7z5ci9cp is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 15.59it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.21it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 7, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_q80hj5ws is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:06, 15.27it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.01it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 8, "status": "PASS"}
+logdir /data1/stock-mxy/课题/一进二策略/result/round23_7/D4/fixture_work/TRA_observer_fixture_731pvx2t is not empty
+  0%|          | 0/100 [00:00<?, ?it/s]/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/dataset.py:245: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  label.append(self._label[slc.stop - 1])
+  1%|          | 1/100 [00:00<00:07, 13.47it/s]
+TRA_REFERENCE TRAIN_BEGIN epoch 0 step -1 {}
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:07, 13.41it/s]
+TRA_REFERENCE TRAIN_END epoch 0 step 0 {'loss': 0.10634126514196396}
+{"status": "PASS_REFERENCE_INTEGRATION", "public_loader_rows": 2512790, "full_original_default_configs_unchanged": true, "public_data_and_locked_source_hashes_pass": true, "observer_vs_original_one_batch_loss_and_all_parameters_exact": true, "original_cross_stock_boundary_issue_reproduced": true, "fixture_only_not_reference_completion": true, "target_adapter_not_tested_here": true}
+REPEATABILITY_CASE {"deterministic": true, "case": 9, "status": "PASS"}
