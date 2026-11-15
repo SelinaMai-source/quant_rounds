@@ -1178,5 +1178,595 @@
     "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
     "risk_improvements_reported_separately": true,
     "automatic_promotion": false
+  },
+  "AG_RAW_EQ3_A1_FIVE_ADD": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.06794133451323336,
+      "delta_sharpe": -0.1310804546260016,
+      "delta_maxdd": -0.001180599114770975,
+      "nav_improvement": -0.11121976037492165,
+      "delta_terminal_nav_rmb": -451917.62094190577,
+      "relative_terminal_nav_change": -0.11121976037492165,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": true,
+        "fee_direction_ok": null,
+        "not_only_2024_or_2025": true
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "PASS",
+        "fee_direction": "NOT_EVALUATED",
+        "not_only_year": "PASS"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": true,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": null,
+          "status": "NOT_EVALUATED",
+          "ok": null
+        },
+        "not_only_year": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 34,
+    "changed_top1_top2_real_entry_rows": 12,
+    "outside_2024_2025_log_relative_wealth": 0.028756398461394404,
+    "paired_cost_runs_present": false,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RAW_EQ3_A2_TEN_ADD": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.26852696683917654,
+      "delta_sharpe": -0.3114616719152199,
+      "delta_maxdd": -0.025867768471783736,
+      "nav_improvement": -0.38782100525258334,
+      "delta_terminal_nav_rmb": -1575827.402021314,
+      "relative_terminal_nav_change": -0.38782100525258334,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": false,
+        "fee_direction_ok": null,
+        "not_only_2024_or_2025": true
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "FAIL",
+        "fee_direction": "NOT_EVALUATED",
+        "not_only_year": "PASS"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": true,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": null,
+          "status": "NOT_EVALUATED",
+          "ok": null
+        },
+        "not_only_year": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 223,
+    "changed_top1_top2_real_entry_rows": 107,
+    "outside_2024_2025_log_relative_wealth": 0.11056997707791369,
+    "paired_cost_runs_present": false,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RAW_EQ3_A3_BOTH_ADD": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.3019307887050544,
+      "delta_sharpe": -0.4050786176603074,
+      "delta_maxdd": -0.025747937620035133,
+      "nav_improvement": -0.4269612158398419,
+      "delta_terminal_nav_rmb": -1734865.2455855543,
+      "relative_terminal_nav_change": -0.4269612158398419,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": false,
+        "fee_direction_ok": false,
+        "not_only_2024_or_2025": true
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "FAIL",
+        "fee_direction": "FAIL",
+        "not_only_year": "PASS"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": false,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        },
+        "not_only_year": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 234,
+    "changed_top1_top2_real_entry_rows": 113,
+    "outside_2024_2025_log_relative_wealth": 0.10808753378985961,
+    "paired_cost_runs_present": true,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RAW_EQ3_REMOVE_FIVE": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.004879196541077491,
+      "delta_sharpe": -0.006016371458065883,
+      "delta_maxdd": 0.0012489819514687195,
+      "nav_improvement": -0.008303533464850577,
+      "delta_terminal_nav_rmb": -33739.62573014945,
+      "relative_terminal_nav_change": -0.008303533464850577,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": true,
+        "fee_direction_ok": null,
+        "not_only_2024_or_2025": false
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "PASS",
+        "fee_direction": "NOT_EVALUATED",
+        "not_only_year": "FAIL"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": true,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": null,
+          "status": "NOT_EVALUATED",
+          "ok": null
+        },
+        "not_only_year": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 9,
+    "changed_top1_top2_real_entry_rows": 3,
+    "outside_2024_2025_log_relative_wealth": -0.0078073081852523575,
+    "paired_cost_runs_present": false,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RAW_EQ3_REPLACE_FIVE": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": 0.0527945991708898,
+      "delta_sharpe": 0.06602547002259262,
+      "delta_maxdd": 0.0036756326101679004,
+      "nav_improvement": 0.09307279680380831,
+      "delta_terminal_nav_rmb": 378181.33004601113,
+      "relative_terminal_nav_change": 0.09307279680380831,
+      "nav_improvement_ok": true,
+      "flags": {
+        "delta_cagr_ok": true,
+        "delta_sharpe_ok": true,
+        "nav_improvement_ok": true,
+        "top_changed_ok": true,
+        "maxdd_ok": true,
+        "fee_direction_ok": null,
+        "not_only_2024_or_2025": true
+      },
+      "statuses": {
+        "delta_cagr": "PASS",
+        "delta_sharpe": "PASS",
+        "nav_improvement": "PASS",
+        "top_changed": "PASS",
+        "maxdd": "PASS",
+        "fee_direction": "NOT_EVALUATED",
+        "not_only_year": "PASS"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": true,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": null,
+          "status": "NOT_EVALUATED",
+          "ok": null
+        },
+        "not_only_year": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        }
+      }
+    },
+    "verdict": "INSUFFICIENT_COST_EVIDENCE",
+    "changed_top1_top2_plan_rows": 10,
+    "changed_top1_top2_real_entry_rows": 5,
+    "outside_2024_2025_log_relative_wealth": 0.0857643236506558,
+    "paired_cost_runs_present": false,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RES_EQ3_A1_FIVE_ADD": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.10928359096039753,
+      "delta_sharpe": -0.2155084299180694,
+      "delta_maxdd": 0.0007219812277852178,
+      "nav_improvement": -0.17437378625707767,
+      "delta_terminal_nav_rmb": -708530.4479553592,
+      "relative_terminal_nav_change": -0.17437378625707767,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": true,
+        "fee_direction_ok": null,
+        "not_only_2024_or_2025": false
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "PASS",
+        "fee_direction": "NOT_EVALUATED",
+        "not_only_year": "FAIL"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": true,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": null,
+          "status": "NOT_EVALUATED",
+          "ok": null
+        },
+        "not_only_year": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 47,
+    "changed_top1_top2_real_entry_rows": 17,
+    "outside_2024_2025_log_relative_wealth": -0.0726903540192643,
+    "paired_cost_runs_present": false,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RES_EQ3_A2_TEN_ADD": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.1647557086298539,
+      "delta_sharpe": -0.2375739054127184,
+      "delta_maxdd": -0.038733835409740736,
+      "nav_improvement": -0.2539610281116793,
+      "delta_terminal_nav_rmb": -1031916.1203845693,
+      "relative_terminal_nav_change": -0.2539610281116793,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": false,
+        "fee_direction_ok": null,
+        "not_only_2024_or_2025": true
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "FAIL",
+        "fee_direction": "NOT_EVALUATED",
+        "not_only_year": "PASS"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": true,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": null,
+          "status": "NOT_EVALUATED",
+          "ok": null
+        },
+        "not_only_year": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 215,
+    "changed_top1_top2_real_entry_rows": 97,
+    "outside_2024_2025_log_relative_wealth": 0.041974504778371016,
+    "paired_cost_runs_present": false,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RES_EQ3_A3_BOTH_ADD": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.20027767159709908,
+      "delta_sharpe": -0.35257900687945787,
+      "delta_maxdd": -0.029560398133753774,
+      "nav_improvement": -0.3019321625825325,
+      "delta_terminal_nav_rmb": -1226836.5274315937,
+      "relative_terminal_nav_change": -0.3019321625825325,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": false,
+        "fee_direction_ok": false,
+        "not_only_2024_or_2025": false
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "FAIL",
+        "fee_direction": "FAIL",
+        "not_only_year": "FAIL"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": false,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        },
+        "not_only_year": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 241,
+    "changed_top1_top2_real_entry_rows": 107,
+    "outside_2024_2025_log_relative_wealth": -0.02062229053172454,
+    "paired_cost_runs_present": true,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RES_EQ3_REMOVE_FIVE": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.004879196541077491,
+      "delta_sharpe": -0.006016371458065883,
+      "delta_maxdd": 0.0012489819514687195,
+      "nav_improvement": -0.008303533464850577,
+      "delta_terminal_nav_rmb": -33739.62573014945,
+      "relative_terminal_nav_change": -0.008303533464850577,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": true,
+        "fee_direction_ok": null,
+        "not_only_2024_or_2025": false
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "PASS",
+        "fee_direction": "NOT_EVALUATED",
+        "not_only_year": "FAIL"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": true,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": null,
+          "status": "NOT_EVALUATED",
+          "ok": null
+        },
+        "not_only_year": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 9,
+    "changed_top1_top2_real_entry_rows": 3,
+    "outside_2024_2025_log_relative_wealth": -0.0078073081852523575,
+    "paired_cost_runs_present": false,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
+  },
+  "AG_RES_EQ3_REPLACE_FIVE": {
+    "economic_gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "AG_A0",
+      "delta_cagr": -0.011523139441200314,
+      "delta_sharpe": -0.009143982760510205,
+      "delta_maxdd": 0.00017600105001613908,
+      "nav_improvement": -0.019530534415402867,
+      "delta_terminal_nav_rmb": -79358.13401305489,
+      "relative_terminal_nav_change": -0.019530534415402867,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": true,
+        "fee_direction_ok": null,
+        "not_only_2024_or_2025": false
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "PASS",
+        "fee_direction": "NOT_EVALUATED",
+        "not_only_year": "FAIL"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": true,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": null,
+          "status": "NOT_EVALUATED",
+          "ok": null
+        },
+        "not_only_year": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        }
+      }
+    },
+    "verdict": "REJECT_CURRENT_CONFIGURATION",
+    "changed_top1_top2_plan_rows": 5,
+    "changed_top1_top2_real_entry_rows": 3,
+    "outside_2024_2025_log_relative_wealth": -0.014319954624751132,
+    "paired_cost_runs_present": false,
+    "baseline_scope": "matched2023-01-03..2026-07-24,300000,legacy execution",
+    "risk_improvements_reported_separately": true,
+    "automatic_promotion": false
   }
 }

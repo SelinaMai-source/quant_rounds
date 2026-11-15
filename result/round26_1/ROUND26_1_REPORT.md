@@ -1,6 +1,6 @@
 # Round26.1
 
-D0已执行。D3当前状态：PARTIAL_SEED_CHECKPOINT；原PPO模型 42，真实匹配回测 35。完整方法成绩、范围与未完成状态见D3/REPORT.md、D3/STATUS.json和all_results.csv。D5尚未在本提交执行。
+D0已执行。D3当前状态：D3_COMPLETE；原PPO模型 42，真实匹配回测 49。完整方法成绩、范围与未完成状态见D3/REPORT.md、D3/STATUS.json和all_results.csv。D5尚未在本提交执行。
 
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE

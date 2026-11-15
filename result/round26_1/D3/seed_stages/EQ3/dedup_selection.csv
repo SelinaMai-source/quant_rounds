@@ -1,0 +1,17 @@
+arm,seed,head,outer_year,most_correlated_old_feature,rho,threshold,high_correlation,selection_scope,rows,fit_cutoff
+AG_RAW,EQ3,five,2023,g0_amount_log,0.6648290745770172,0.6,True,prior3y original base-complete mature rows only,16180,2023-01-01
+AG_RAW,EQ3,five,2024,g0_amount_log,0.5988756341461895,0.6,False,prior3y original base-complete mature rows only,14489,2024-01-01
+AG_RAW,EQ3,five,2025,g0_amount_log,0.5835952224625611,0.6,False,prior3y original base-complete mature rows only,14942,2025-01-01
+AG_RAW,EQ3,five,2026,g0_amount_log,0.5082831470813279,0.6,False,prior3y original base-complete mature rows only,15774,2026-01-01
+AG_RAW,EQ3,ten,2023,h1_consistent_buy_ratio,0.5004402044279147,0.6,False,prior3y original base-complete mature rows only,16422,2023-01-01
+AG_RAW,EQ3,ten,2024,h1_consistent_buy_ratio,0.4117226884428642,0.6,False,prior3y original base-complete mature rows only,14644,2024-01-01
+AG_RAW,EQ3,ten,2025,fb_close_seal_streak_norm,-0.3536730155567484,0.6,False,prior3y original base-complete mature rows only,15168,2025-01-01
+AG_RAW,EQ3,ten,2026,fb_close_seal_streak_norm,-0.3365519476146315,0.6,False,prior3y original base-complete mature rows only,15997,2026-01-01
+AG_RES,EQ3,five,2023,g0_amount_log,0.6521979572161744,0.6,True,prior3y original base-complete mature rows only,16180,2023-01-01
+AG_RES,EQ3,five,2024,g0_amount_log,0.5205062387248856,0.6,False,prior3y original base-complete mature rows only,14489,2024-01-01
+AG_RES,EQ3,five,2025,g0_amount_log,0.40928108701235894,0.6,False,prior3y original base-complete mature rows only,14942,2025-01-01
+AG_RES,EQ3,five,2026,g0_amount_log,0.3128790858973534,0.6,False,prior3y original base-complete mature rows only,15774,2026-01-01
+AG_RES,EQ3,ten,2023,h1_consistent_buy_ratio,0.45365066838627177,0.6,False,prior3y original base-complete mature rows only,16422,2023-01-01
+AG_RES,EQ3,ten,2024,h1_consistent_buy_ratio,0.3526861845628852,0.6,False,prior3y original base-complete mature rows only,14644,2024-01-01
+AG_RES,EQ3,ten,2025,fb_close_seal_streak_norm,-0.2935929534069164,0.6,False,prior3y original base-complete mature rows only,15168,2025-01-01
+AG_RES,EQ3,ten,2026,fb_close_seal_streak_norm,-0.26563882519889737,0.6,False,prior3y original base-complete mature rows only,15997,2026-01-01
