@@ -37,6 +37,20 @@ def run():
     assert np.array_equal(after[0,slot,6:],expected)
     assert ds.feedback_audit['unmature_label_reads']==0
     assert ds.feedback_audit['mature_missing_target_rows']>0
+    periods=fixture()
+    period_dates=pd.to_datetime(['2016-12-01','2016-12-29','2017-01-03','2017-12-29','2018-01-03'])
+    periods.keys=pd.DataFrame({'trade_date':period_dates,'instrument_id':['A']*5})
+    periods.x=np.zeros((5,60,6),dtype='float32');periods.history=np.full((5,60),-1,dtype='int32');periods.valid=np.ones(5,dtype=bool);periods.y=np.ones(5,dtype='float32')*.01
+    periods.times=period_dates.to_numpy().view('i8');periods.available=pd.to_datetime(['2016-12-05 15:00','2017-01-03 15:00','2017-01-05 15:00','2018-01-03 15:00','2018-01-05 15:00']).to_numpy().view('i8')
+    periods.index=pd.MultiIndex.from_frame(periods.keys[['instrument_id','trade_date']]).set_names(['instrument','datetime'])
+    root=CausalDataset(periods,2018,3,512);tr,va,ou=root.prepare(['train','valid','test'])
+    assert tr.indices.tolist()==[0] and va.indices.tolist()==[2] and ou.indices.tolist()==[4]
+    tr.record_predictions([0],np.ones((1,3),dtype='float32'))
+    assert not va.recorded.any() and not ou.recorded.any()
+    tr.eval();va.eval();assert tr.indices.tolist()==[0,1] and va.indices.tolist()==[2,3]
+    assert np.isnan(list(tr)[-1]['label'].numpy()).all() and np.isnan(list(va)[-1]['label'].numpy()).all()
+    va.record_predictions([2],np.ones((1,3),dtype='float32'));va.eval();assert not va.recorded.any()
+    assert root.segment_states['train'][1][0] and not ou.recorded.any()
     interventions=[]
     def future_feedback(y,available,cutoff):
         out=y.copy();mask=(available==NAT)|(available>cutoff);out[mask]=1e6
@@ -58,6 +72,10 @@ def run():
     hook.remove()
     assert loss_original==loss_adapted and np.isfinite(loss_original)
     assert np.array_equal(right.predictions[captured['index']],captured['experts'])
+    old_loss={int(i):row for i,row in zip(captured['index'],captured['loss'])}
+    routed=right.batch_data([69])
+    for slot,i in enumerate(right.bundle.history[69,:-21]):
+        if i>=0:assert np.array_equal(routed[0,slot,6:],old_loss[int(i)])
     for name in ['model','tra']:
         assert all(torch.equal(v,getattr(adapted,name).state_dict()[k]) for k,v in getattr(original,name).state_dict().items())
     # Same frozen backbone in actual T0/T1 constructors; only head/router differ.
@@ -111,6 +129,9 @@ def run():
     result['full_fixture_causal_forecast_replay_rows']=len(forecast_original)
     result['actual_asof_unavailable_label_interventions']=len(interventions)
     result['asof_interventions_all_nonempty']=min(interventions)>0
+    result['all_evaluation_nodes_retained_mature_metric_labels_only']=True
+    result['no_train_fitted_state_in_validation_or_outer']=True
+    result['original_Torch_expert_loss_vs_released_queue_exact']=True
     (R/'CAUSAL_INTEGRATION.json').write_text(json.dumps(result,indent=2))
     (R/'ADAPTER_SOURCE_PROVENANCE.json').write_text(json.dumps(provenance,indent=2))
     print(json.dumps(result),flush=True)

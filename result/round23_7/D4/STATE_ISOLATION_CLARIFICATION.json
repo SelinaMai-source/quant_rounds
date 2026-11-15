@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-11-15T04:52:35.422285+00:00",
+  "stage": "BEFORE_ANY_FULL_ASHARE_FIT_OR_BACKTEST",
+  "scope": "maturity processor and model-specific feedback-state contract; architecture/OT/optimizer/default stopping unchanged",
+  "training": "gradient batches use only labels mature before train segment cutoff; chronological evaluation predicts all D-known train nodes and masks unavailable labels only in metrics",
+  "validation": "all D-known validation nodes retained; metric labels mature before validation cutoff only; new chronological causal queue for each validation pass",
+  "outer": "annual model starts a fresh queue; only expert outputs actually emitted by that frozen model during Outer feed its router after true maturity; no in-sample historical fitted error state carried into Outer",
+  "segment_state": "independent train/validation/test buffers; never transfer train fitted predictions into validation or Outer as if historical OOF",
+  "author21_recency_exclusion": "retained in addition to actual exit-based maturity mask",
+  "reference": "unmodified original public implementation continues separately",
+  "no_target_economic_result_seen": true
+}

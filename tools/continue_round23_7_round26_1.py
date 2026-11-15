@@ -34,8 +34,12 @@ def main():
    if a.seed!=17:raise ValueError('D3 executes the fixed17 ->42 ->73 sequence; start with --seed17 and --resume')
    from core.round26_1.alphagen_pipeline import run
    run(jobs=a.jobs,publish=a.publish)
+  elif d=='D4':
+   if a.seed!=17:raise ValueError('D4 executes the fixed17 ->42 ->73 sequence; start with --seed17 and --resume')
+   from core.round23_7.tra_pipeline import run
+   run(jobs=a.jobs,publish=a.publish)
   else:raise NotImplementedError(d+' has no implemented execution entry yet; no completion status written')
-  if a.publish and d!='D3':
+  if a.publish and d not in ['D3','D4']:
    from core.research_integrity_v5.publish import publish
    for branch in (['round23_7','round26_1'] if d=='D0' else ['round23_7']):publish(branch,'research: execute and audit '+d)
 if __name__=='__main__':main()

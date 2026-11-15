@@ -1,0 +1,7 @@
+{
+  "invalid_candidate_sequences": 0,
+  "reason_counts_overlap": {},
+  "undefined_VWAP_on_no_trade_days_is_not_an_access_permission_failure": true,
+  "no_VWAP_proxy_or_label_based_candidate_deletion": true,
+  "frozen_policy": "whole-day original v5 fallback on incomplete required predictions; invalid candidates remain in forecast universe"
+}

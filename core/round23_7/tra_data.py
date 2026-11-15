@@ -47,18 +47,20 @@ def targets(q,head):
 
 def contract():
     import zyquant
-    inputs=[SNAP/'manifest.json',R/'CONTRACT.yaml',R/'DATA_OBSERVATION_CLARIFICATION.json']+sorted((SNAP/'daily_raw').rglob('*.parquet'))
+    inputs=[SNAP/'manifest.json',R/'CONTRACT.yaml',R/'DATA_OBSERVATION_CLARIFICATION.json',R/'OBSERVATION_WARMUP_CLARIFICATION.json']+sorted((SNAP/'daily_raw').rglob('*.parquet'))
     inputs += [C/f'result/round22_3/data/{h}_{kind}.parquet' for h in ['five','ten'] for kind in ['training','candidate']]
-    return {'code':source_manifest([Path(__file__),C/'core/research_integrity_v5/cache.py',C/'core/round7/contract.py',Path(zyquant.__file__).parent]), 'third_party':{'zyquant':'2.0.10 existing API, no upgrades'},'dirty_diff':{n:hashlib.sha256(subprocess.check_output(['git','-C',str(B/n),'diff','HEAD'])).hexdigest() for n in ['round23_7','round26_1']},'environment':{d.metadata['Name']:d.version for d in importlib.metadata.distributions() if d.metadata['Name']},'parameters':{'sequence':60,'channels':CHANNELS,'prices':'each past price/current observed close -1','volume':'each past volume/current observed volume -1','raw_window':['2014-10-01','2026-07-24'],'missing':'invalid sequence, no semantic replacement; whole-day downstream fallback'},'seed':17,'features':CHANNELS,'universe':'union of then-known hard first-board/universe-eligible head candidate keys; never read target in candidate selector','calibration':'per-window observed final close and volume, no fitted future statistics','data':[identity(p) for p in inputs],'label':'Five label_e2_net; Ten label_exit_rule_net; original training/candidate labels checked for conflicts','maturity':'Five next2_date15:00; Ten actual_exit_date15:00; local exchange event time; unavailable remains NaT','windows':'full stock daily history before mapping candidates; target years2018..2026','execution':'data preparation only, frozen original executor is downstream','upstream':[]}
+    return {'code':source_manifest([Path(__file__),C/'core/research_integrity_v5/cache.py',C/'core/round7/contract.py',Path(zyquant.__file__).parent]), 'third_party':{'zyquant':'2.0.10 existing API, no upgrades'},'dirty_diff':{n:hashlib.sha256(subprocess.check_output(['git','-C',str(B/n),'diff','HEAD'])).hexdigest() for n in ['round23_7','round26_1']},'environment':{d.metadata['Name']:d.version for d in importlib.metadata.distributions() if d.metadata['Name']},'parameters':{'sequence':60,'channels':CHANNELS,'prices':'each past price/current observed close -1','volume':'each past volume/current observed volume -1','raw_window':['2010-01-01','2026-07-24'],'missing':'invalid sequence, no semantic replacement; whole-day downstream fallback'},'seed':17,'features':CHANNELS,'universe':'union of then-known hard first-board/universe-eligible head candidate keys; never read target in candidate selector','calibration':'per-window observed final close and volume, no fitted future statistics','data':[identity(p) for p in inputs],'label':'Five label_e2_net; Ten label_exit_rule_net; original training/candidate labels checked for conflicts','maturity':'Five next2_date15:00; Ten actual_exit_date15:00; local exchange event time; unavailable remains NaT','windows':'full stock daily history before mapping candidates; target years2018..2026','execution':'data preparation only, frozen original executor is downstream','upstream':[]}
 
 def prepare():
+    import pyarrow
+    pyarrow.set_cpu_count(2);pyarrow.set_io_thread_count(2)
     from zyquant.data import DataSnapshot
     c=contract();fp=fingerprint(c);root=B/'TRA_target_data'
     with transaction(root,c) as (dest,cached):
         if not cached:
             q=candidates();q=q.loc[q.trade_date.ge('2015-01-01')&q.trade_date.le('2026-07-24')].reset_index(drop=True)
             snapshot=DataSnapshot(SNAP)
-            bars=snapshot.table('daily_raw',start=pd.Timestamp('2014-10-01').date(),end=pd.Timestamp('2026-07-24').date(),cutoff=snapshot.metadata.as_of_date,fields=KEY+['open','close','high','low','volume','amount'])
+            bars=snapshot.table('daily_raw',start=pd.Timestamp('2010-01-01').date(),end=pd.Timestamp('2026-07-24').date(),cutoff=snapshot.metadata.as_of_date,fields=KEY+['open','close','high','low','volume','amount'])
             bars['trade_date']=pd.to_datetime(bars.trade_date);bars['instrument_id']=bars.instrument_id.astype(str)
             assert not bars.duplicated(KEY).any()
             bars['vwap']=bars.amount/bars.volume.where(bars.volume.gt(0))
@@ -67,6 +69,7 @@ def prepare():
             features=np.full((len(q),60,6),np.nan,dtype=np.float32)
             history=np.full((len(q),60),-1,dtype=np.int32)
             valid=np.zeros(len(q),dtype=bool);source_groups=bars.groupby('instrument_id',sort=False)
+            observation_counts=np.zeros(len(q),dtype='int16')
             for instrument,group in q.groupby('instrument_id',sort=False):
                 if instrument not in source_groups.indices:continue
                 stock=traded_history(source_groups.get_group(instrument))
@@ -76,6 +79,7 @@ def prepare():
                 for idx,loc in zip(group.index,positions):
                     if loc>=len(dates) or dates[loc]!=q.loc[idx,'trade_date'].to_datetime64():continue
                     stop=int(loc)+1;start=max(0,stop-60);n=stop-start
+                    observation_counts[idx]=n
                     raw=values[start:stop].copy();close=values[loc,1];volume=values[loc,4]
                     if not(np.isfinite(raw).all() and close>0 and volume>0):continue
                     raw[:,[0,1,2,3,5]]=raw[:,[0,1,2,3,5]]/close-1
@@ -84,12 +88,16 @@ def prepare():
                     for offset,bar in enumerate(range(start,stop),start=60-n):history[idx,offset]=signal_at.get(bar,-1)
                     valid[idx]=True
             np.save(dest/'features.npy',features);np.save(dest/'history_candidate_indices.npy',history);np.save(dest/'valid.npy',valid)
+            np.save(dest/'observation_counts.npy',observation_counts)
             q.to_parquet(dest/'candidate_keys.parquet',index=False)
             for head in [FIVE_HEAD,TEN_HEAD]:targets(q,head).to_parquet(dest/f'{head.name}_targets.parquet',index=False)
             audit={'candidate_rows':len(q),'candidate_start':str(q.trade_date.min()),'candidate_end':str(q.trade_date.max()),'candidate_selection_reads_target':False,'raw_rows':len(bars),'raw_start':str(bars.trade_date.min()),'raw_end':str(bars.trade_date.max()),'channels':CHANNELS,'valid_sequences':int(valid.sum()),'invalid_sequences':int((~valid).sum()),'missing_policy':'whole-day v5 fallback, not label-based row deletion','VWAP_inconsistent_source_rows_masked':int(inconsistent.sum()),'full_stock_history_before_candidate_mapping':True,'stock_boundary_clipped':True,'post_adjustment_fields_consumed':[],'current_listing_list_used':False,'vendor_revision_PIT_proven':False,'snapshot_manifest':identity(SNAP/'manifest.json')}
             (dest/'DATA_AUDIT.json').write_text(json.dumps(audit,indent=2))
             audit['observation_clarification']=identity(R/'DATA_OBSERVATION_CLARIFICATION.json')
             audit['zero_volume_zero_amount_no_trade_quotations_excluded']=int((bars.volume.eq(0)&bars.amount.eq(0)).sum())
+            audit['observation_warmup_clarification']=identity(R/'OBSERVATION_WARMUP_CLARIFICATION.json')
+            audit['full60_observations_sequences']=int((valid&(observation_counts==60)).sum())
+            audit['author_zero_padded_short_available_histories']=int((valid&(observation_counts<60)).sum())
             (dest/'DATA_AUDIT.json').write_text(json.dumps(audit,indent=2))
     path=root/fp
     exported=R/'target_data';exported.mkdir(parents=True,exist_ok=True)

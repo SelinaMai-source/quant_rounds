@@ -1,0 +1,41 @@
+{
+  "status": "PASS_SYNTHETIC_FULL_FIT_IO_AND_DEFAULT_STOPPING",
+  "scope": "tiny synthetic integration fixtures with original500epoch/20patience stopping; NOT full author public reference, NOT actual A-share research fits",
+  "phases": [
+    {
+      "phase": "init",
+      "epochs_completed": 37,
+      "best_epoch": 16,
+      "source_initial_model_retained": false,
+      "stop_reason": "AUTHOR_EARLY_STOP20",
+      "actual_optimizer_steps": 37,
+      "forecast_rows": 9,
+      "all_future_test_labels_unavailable_to_model": true,
+      "checkpoint_and_outer_snapshot_verified": true
+    },
+    {
+      "phase": "T0",
+      "epochs_completed": 21,
+      "best_epoch": 0,
+      "source_initial_model_retained": false,
+      "stop_reason": "AUTHOR_EARLY_STOP20",
+      "actual_optimizer_steps": 21,
+      "forecast_rows": 9,
+      "all_future_test_labels_unavailable_to_model": true,
+      "checkpoint_and_outer_snapshot_verified": true
+    },
+    {
+      "phase": "T1",
+      "epochs_completed": 52,
+      "best_epoch": 31,
+      "source_initial_model_retained": false,
+      "stop_reason": "AUTHOR_EARLY_STOP20",
+      "actual_optimizer_steps": 52,
+      "forecast_rows": 9,
+      "all_future_test_labels_unavailable_to_model": true,
+      "checkpoint_and_outer_snapshot_verified": true
+    }
+  ],
+  "T0_T1_same_shared_backbone_frozen": true,
+  "no_research_model_count_increase": true
+}

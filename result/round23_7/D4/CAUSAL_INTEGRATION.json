@@ -18,5 +18,8 @@
   },
   "full_fixture_causal_forecast_replay_rows": 70,
   "actual_asof_unavailable_label_interventions": 50,
-  "asof_interventions_all_nonempty": true
+  "asof_interventions_all_nonempty": true,
+  "all_evaluation_nodes_retained_mature_metric_labels_only": true,
+  "no_train_fitted_state_in_validation_or_outer": true,
+  "original_Torch_expert_loss_vs_released_queue_exact": true
 }

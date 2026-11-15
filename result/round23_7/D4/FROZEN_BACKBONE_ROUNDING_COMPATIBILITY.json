@@ -1,0 +1,28 @@
+{
+  "UTC": "2026-11-15T04:32:08.692150+00:00",
+  "stage": "BEFORE_ANY_FULL_TARGET_FIT_OR_BACKTEST",
+  "failed_integration_log": "synthetic_fit_io_integration.log",
+  "actual_original_average_of_five_identical_frozen_states_changed_tensors": 10,
+  "max_absolute_float32_change": 3.725290298461914e-09,
+  "changed_tensors": {
+    "rnn.weight_hh_l0": 3.725290298461914e-09,
+    "rnn.bias_ih_l0": 3.725290298461914e-09,
+    "rnn.bias_hh_l0": 3.725290298461914e-09,
+    "rnn.weight_ih_l1": 3.725290298461914e-09,
+    "rnn.weight_hh_l1": 3.725290298461914e-09,
+    "rnn.bias_ih_l1": 3.725290298461914e-09,
+    "rnn.bias_hh_l1": 3.725290298461914e-09,
+    "W.weight": 3.725290298461914e-09,
+    "W.bias": 3.725290298461914e-09,
+    "u.weight": 3.725290298461914e-09
+  },
+  "input_checkpoint": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/fixture_work/six_channel_init_fixture.bin",
+    "bytes": 3454658,
+    "sha256": "16e50ac71121c034b735f2cfb9c2bd414d23736fd0759c9c9c45dfc745474dc1"
+  },
+  "cause": "author fit averages even a frozen backbone; float32 mean of identical tensors can drift by rounding",
+  "correction": "target-only fit retains first identical frozen backbone state exactly instead of computing its mean; trainable backbone and TRA parameter averaging unchanged; no model parameters or stopping changes",
+  "reference_source_unchanged": true,
+  "not_external_blocker": true
+}

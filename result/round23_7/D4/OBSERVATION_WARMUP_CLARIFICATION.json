@@ -1,0 +1,9 @@
+{
+  "UTC": "2026-11-15T05:13:21.837510+00:00",
+  "stage": "BEFORE_ANY_FULL_ASHARE_FIT_OR_BACKTEST",
+  "reason": "after removing no-trade quotations, a fixed2014Oct start may not contain60 active observations for early2015 signals with suspensions, even where older local observations exist",
+  "correction": "read the entire existing2010..2026July24 raw OHLCV history before mapping2015..2026 candidates; no signal, label, split, model or budget change",
+  "padding": "only short available histories use author-style leading zero padding; save actual observation counts, never call padding a market observation",
+  "no_target_performance_seen": true,
+  "no_new_paid_or_remote_data": true
+}

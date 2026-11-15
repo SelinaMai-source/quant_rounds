@@ -33,6 +33,8 @@ class CausalDataset:
         self.recorded=np.zeros(len(bundle.keys),dtype=bool)
         self.record_kind=np.zeros(len(bundle.keys),dtype='int8')
         self.indices=np.arange(len(bundle.keys));self.feedback_audit={'mature_label_reads':0,'unmature_label_reads':0,'saved_expert_prediction_writes':0}
+        self.all_indices=self.indices;self.loss_indices=self.indices;self.fit_cutoff=None
+        self.segment_states={'train':(self.predictions,self.recorded,self.record_kind)}
         self.prediction_sink=prediction_sink
         self.inference_bundle=inference_bundle
         self.feedback_provider=feedback_provider
@@ -49,15 +51,25 @@ class CausalDataset:
             end=pd.Timestamp(f'{self.year+1}-01-01').value
             # Label, maturity and sequence validity do not select prediction nodes.
             selected=(b.times>=outer_cut)&(b.times<end)
+            all_selected=selected;obj.fit_cutoff=None
         else:
             start=pd.Timestamp(f'{self.year-3 if segments=="train" else self.year-1}-01-01').value
             cutoff=train_cut if segments=='train' else outer_cut
-            selected=(b.times>=start)&(b.times<cutoff)&(b.available!=NAT)&(b.available<cutoff)&np.isfinite(b.y)&b.valid
+            all_selected=(b.times>=start)&(b.times<cutoff)
+            selected=all_selected&(b.available!=NAT)&(b.available<cutoff)&np.isfinite(b.y)&b.valid
+            obj.fit_cutoff=cutoff
         obj.indices=np.flatnonzero(selected)
+        obj.loss_indices=obj.indices;obj.all_indices=np.flatnonzero(all_selected)
+        if segments not in self.segment_states:
+            self.segment_states[segments]=(np.full_like(self.predictions,np.nan),np.zeros_like(self.recorded),np.zeros_like(self.record_kind))
+        obj.predictions,obj.recorded,obj.record_kind=self.segment_states[segments]
         assert len(obj.indices)>0,f'No actual {segments} samples for{self.year}'
         return obj
-    def train(self):self.batch_size,self.drop_last,self.shuffle=self.params
-    def eval(self):self.batch_size=-1;self.drop_last=False;self.shuffle=False
+    def train(self):
+        self.batch_size,self.drop_last,self.shuffle=self.params;self.indices=self.loss_indices
+    def eval(self):
+        self.batch_size=-1;self.drop_last=False;self.shuffle=False;self.indices=self.all_indices
+        if self.segment in ['valid','test']:self.clear_memory()
     def clear_memory(self):
         self.predictions.fill(np.nan);self.recorded.fill(False);self.record_kind.fill(0)
     def restore_index(self,index):
@@ -117,7 +129,10 @@ class CausalDataset:
         for index in self._batches():
             data=self.batch_data(index)
             # Unknown Outer labels are not passed into original test metrics/loss.
-            labels=np.full(len(index),np.nan,dtype='float32') if self.segment=='test' else self.bundle.y[index]
+            labels=np.full(len(index),np.nan,dtype='float32')
+            if self.segment!='test':
+                known=(self.bundle.available[index]!=NAT)&(self.bundle.available[index]<self.fit_cutoff)
+                labels[known]=self.bundle.y[index[known]]
             yield {'data':torch.from_numpy(data),'label':torch.from_numpy(labels.copy()),'index':torch.from_numpy(index.copy())}
 
 def causal_model_class():
@@ -135,6 +150,8 @@ def causal_model_class():
         data_set.assign_data(index, L)  # save loss to memory'''
     assert test.count(old_test)==1,'locked author source changed'
     test=test.replace(old_test,'        data_set.record_predictions(index, all_preds)  # actual-exit queue; no unknown-label read')
+    assert test.count('metrics.append(evaluate(pred))')==1
+    test=test.replace('metrics.append(evaluate(pred))','metrics.append(evaluate(pred.loc[pred.label.notna()]))  # mature metric loss mask, all prediction nodes retained')
     namespace=dict(author.__dict__)
     exec(compile(train+'\n'+test,'<locked_TRA_exact_maturity_adapter>','exec'),namespace)
     original_forward=textwrap.dedent(inspect.getsource(author.LSTM.forward))
@@ -150,9 +167,24 @@ def causal_model_class():
     assert init!=original_init
     namespace['TargetLSTM']=TargetLSTM
     exec(compile(init,'<locked_TRA_data_cardinality_constructor>','exec'),namespace)
+    def average_backbone(states,model):
+        if all(not p.requires_grad for p in model.parameters()):
+            first=states[0]
+            assert all(all(torch.equal(first[k],state[k]) for k in first) for state in states),'Frozen backbone states differ before averaging'
+            return first
+        return author.average_params(states)
+    original_fit=textwrap.dedent(inspect.getsource(author.TRAModel.fit))
+    fit=original_fit.replace('self.model.load_state_dict(average_params(params_list["model"]))','self.model.load_state_dict(average_backbone(params_list["model"], self.model))')
+    assert fit!=original_fit
+    namespace['average_backbone']=average_backbone
+    exec(compile(fit,'<locked_TRA_constant_frozen_backbone_identity>','exec'),namespace)
     class CausalTRAModel(author.TRAModel):
         pass
-    CausalTRAModel.__init__=namespace['__init__'];CausalTRAModel.train_epoch=namespace['train_epoch'];CausalTRAModel.test_epoch=namespace['test_epoch']
+    CausalTRAModel.__init__=namespace['__init__'];CausalTRAModel.train_epoch=namespace['train_epoch'];CausalTRAModel.test_epoch=namespace['test_epoch'];CausalTRAModel.fit=namespace['fit']
     provenance={'original_source':str(Path(author.__file__)),'train_original_sha256':hashlib.sha256(original_train.encode()).hexdigest(),'test_original_sha256':hashlib.sha256(original_test.encode()).hexdigest(),'train_adapted_sha256':hashlib.sha256(train.encode()).hexdigest(),'test_adapted_sha256':hashlib.sha256(test.encode()).hexdigest(),'changes':['training memory assignment replaced by saved expert predictions','test error calculation and memory assignment replaced by saved expert predictions; Outer labels unavailable to loss/metrics'],'unchanged':['author LSTM','TRA router and stochastic Gumbel routing','MSE','Sinkhorn OT','optimizers','parameter averaging','fit and default early stopping'],'train_adapted_source':train,'test_adapted_source':test}
     provenance.update(singleton_compatibility='remove redundant squeeze after sum; retain [batch,hidden] for batch1; original reference untouched',lstm_original_sha256=hashlib.sha256(original_forward.encode()).hexdigest(),lstm_adapted_sha256=hashlib.sha256(forward.encode()).hexdigest(),constructor_original_sha256=hashlib.sha256(original_init.encode()).hexdigest(),constructor_adapted_sha256=hashlib.sha256(init.encode()).hexdigest(),lstm_adapted_source=forward,constructor_adapted_source=init)
+    provenance['unchanged'].remove('parameter averaging')
+    provenance['unchanged'].append('all trainable parameter averaging; constant frozen-backbone average uses exact identity compatibility')
+    provenance['changes'].append('metrics mask unavailable labels while keeping every evaluation prediction node; train/validation/Outer queues isolated in the data adapter')
+    provenance.update(fit_original_sha256=hashlib.sha256(original_fit.encode()).hexdigest(),fit_adapted_sha256=hashlib.sha256(fit.encode()).hexdigest(),fit_adapted_source=fit,frozen_backbone_compatibility='exact identity for a mean of tensor-identical frozen states; assertion forbids discarding distinct states; original public reference unmodified')
     return CausalTRAModel,provenance

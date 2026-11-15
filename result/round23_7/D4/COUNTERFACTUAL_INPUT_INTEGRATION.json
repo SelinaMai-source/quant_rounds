@@ -1,0 +1,192 @@
+{
+  "status": "PASS_SIX_REAL_STAGE_SPECIFIC_NONEMPTY_INPUT_MUTATIONS",
+  "full_counterfactual_fits_run": false,
+  "cases": [
+    {
+      "head": "five",
+      "year": 2018,
+      "input": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/1405e913e6e35af0d2d37884c8a56e108ce0b91251d0e77d3b8eefc5a45fd59e/five_targets.parquet",
+        "bytes": 654946,
+        "sha256": "ae6621be8d92393dd24e78ec674bc57ffb7bf2b8cb203ef55b3953c691d2384d",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "mutated": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_counterfactual_inputs/2018/five/fit_unavailable_targets.parquet",
+        "bytes": 654951,
+        "sha256": "d2ccdb7f9b69f5a113a1fac64e8b4e6e915136b2f0b36b35ca581913c4d10a8a",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "stages": {
+        "train": {
+          "in_domain_unavailable_rows": 7,
+          "actual_changed_rows": 7,
+          "maturity_metadata_preserved": true
+        },
+        "valid": {
+          "in_domain_unavailable_rows": 25,
+          "actual_changed_rows": 22,
+          "maturity_metadata_preserved": true
+        }
+      },
+      "scope": "fit-only phase-specific unavailable labels; original legally observed Outer feedback source retained; separate forecast replay perturbs as-of-unavailable values"
+    },
+    {
+      "head": "ten",
+      "year": 2018,
+      "input": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/1405e913e6e35af0d2d37884c8a56e108ce0b91251d0e77d3b8eefc5a45fd59e/ten_targets.parquet",
+        "bytes": 702222,
+        "sha256": "49940ca1eff1fbbc450982d1e6512362ae96bfeba8c530fe05dcfe95e20931ac",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "mutated": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_counterfactual_inputs/2018/ten/fit_unavailable_targets.parquet",
+        "bytes": 702190,
+        "sha256": "b9027d78d911781acaf908b66a0b08effd29004bf9824b38f9d3e36f2c159676",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "stages": {
+        "train": {
+          "in_domain_unavailable_rows": 416,
+          "actual_changed_rows": 14,
+          "maturity_metadata_preserved": true
+        },
+        "valid": {
+          "in_domain_unavailable_rows": 110,
+          "actual_changed_rows": 47,
+          "maturity_metadata_preserved": true
+        }
+      },
+      "scope": "fit-only phase-specific unavailable labels; original legally observed Outer feedback source retained; separate forecast replay perturbs as-of-unavailable values"
+    },
+    {
+      "head": "five",
+      "year": 2022,
+      "input": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/1405e913e6e35af0d2d37884c8a56e108ce0b91251d0e77d3b8eefc5a45fd59e/five_targets.parquet",
+        "bytes": 654946,
+        "sha256": "ae6621be8d92393dd24e78ec674bc57ffb7bf2b8cb203ef55b3953c691d2384d",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "mutated": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_counterfactual_inputs/2022/five/fit_unavailable_targets.parquet",
+        "bytes": 654941,
+        "sha256": "43e2b97912e5453e70e747cd693c51684475d6bb1484eb4b074b229d1b6c024f",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "stages": {
+        "train": {
+          "in_domain_unavailable_rows": 49,
+          "actual_changed_rows": 48,
+          "maturity_metadata_preserved": true
+        },
+        "valid": {
+          "in_domain_unavailable_rows": 41,
+          "actual_changed_rows": 39,
+          "maturity_metadata_preserved": true
+        }
+      },
+      "scope": "fit-only phase-specific unavailable labels; original legally observed Outer feedback source retained; separate forecast replay perturbs as-of-unavailable values"
+    },
+    {
+      "head": "ten",
+      "year": 2022,
+      "input": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/1405e913e6e35af0d2d37884c8a56e108ce0b91251d0e77d3b8eefc5a45fd59e/ten_targets.parquet",
+        "bytes": 702222,
+        "sha256": "49940ca1eff1fbbc450982d1e6512362ae96bfeba8c530fe05dcfe95e20931ac",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "mutated": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_counterfactual_inputs/2022/ten/fit_unavailable_targets.parquet",
+        "bytes": 702132,
+        "sha256": "8646ca11bfb5029c92135ab455c6cf2b0dc4d101aae282b69037d65f21fad692",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "stages": {
+        "train": {
+          "in_domain_unavailable_rows": 637,
+          "actual_changed_rows": 93,
+          "maturity_metadata_preserved": true
+        },
+        "valid": {
+          "in_domain_unavailable_rows": 238,
+          "actual_changed_rows": 82,
+          "maturity_metadata_preserved": true
+        }
+      },
+      "scope": "fit-only phase-specific unavailable labels; original legally observed Outer feedback source retained; separate forecast replay perturbs as-of-unavailable values"
+    },
+    {
+      "head": "five",
+      "year": 2026,
+      "input": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/1405e913e6e35af0d2d37884c8a56e108ce0b91251d0e77d3b8eefc5a45fd59e/five_targets.parquet",
+        "bytes": 654946,
+        "sha256": "ae6621be8d92393dd24e78ec674bc57ffb7bf2b8cb203ef55b3953c691d2384d",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "mutated": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_counterfactual_inputs/2026/five/fit_unavailable_targets.parquet",
+        "bytes": 654946,
+        "sha256": "e62eeb7c11453cce454d6978a1ccdc1415d8ad98fd0543cfa4c728decc6507ad",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "stages": {
+        "train": {
+          "in_domain_unavailable_rows": 31,
+          "actual_changed_rows": 28,
+          "maturity_metadata_preserved": true
+        },
+        "valid": {
+          "in_domain_unavailable_rows": 40,
+          "actual_changed_rows": 39,
+          "maturity_metadata_preserved": true
+        }
+      },
+      "scope": "fit-only phase-specific unavailable labels; original legally observed Outer feedback source retained; separate forecast replay perturbs as-of-unavailable values"
+    },
+    {
+      "head": "ten",
+      "year": 2026,
+      "input": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/1405e913e6e35af0d2d37884c8a56e108ce0b91251d0e77d3b8eefc5a45fd59e/ten_targets.parquet",
+        "bytes": 702222,
+        "sha256": "49940ca1eff1fbbc450982d1e6512362ae96bfeba8c530fe05dcfe95e20931ac",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "mutated": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_counterfactual_inputs/2026/ten/fit_unavailable_targets.parquet",
+        "bytes": 702212,
+        "sha256": "90c6ddfad3a936d853af83065adaf49af138c1f58031425b570d3fc396db2064",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+        "rows": 58830
+      },
+      "stages": {
+        "train": {
+          "in_domain_unavailable_rows": 985,
+          "actual_changed_rows": 58,
+          "maturity_metadata_preserved": true
+        },
+        "valid": {
+          "in_domain_unavailable_rows": 446,
+          "actual_changed_rows": 75,
+          "maturity_metadata_preserved": true
+        }
+      },
+      "scope": "fit-only phase-specific unavailable labels; original legally observed Outer feedback source retained; separate forecast replay perturbs as-of-unavailable values"
+    }
+  ]
+}
