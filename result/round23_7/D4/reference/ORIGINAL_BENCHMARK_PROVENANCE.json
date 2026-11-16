@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE_AUTHOR_PUBLIC_BENCHMARK",
+  "source_notebook": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/Reports.ipynb",
+    "bytes": 78019,
+    "sha256": "7f435d294021d8ea6563498fc55a4f0c532c10c1c54ba2121bc1c1327dcd8f7f"
+  },
+  "source_functions_sha256": "a1025bc9d8549d11a561c26d3f5633dc3424ba0bf355cf492b548724c54b07a1",
+  "original_functions": "def func(x, N=80):\n    ret = x.ret.copy()\n    x = x.rank(pct=True)\n    x[\"ret\"] = ret\n    diff = x.score.sub(x.label)\n    r = x.nlargest(N, columns=\"score\").ret.mean()\n    r -= x.nsmallest(N, columns=\"score\").ret.mean()\n    return pd.Series(\n        {\n            \"MSE\": diff.pow(2).mean(),\n            \"MAE\": diff.abs().mean(),\n            \"IC\": x.score.corr(x.label),\n            \"R\": r,\n        }\n    )\n\ndef backtest(fname, **kwargs):\n    pred = pd.read_pickle(fname).loc[\"2018-09-21\":\"2020-06-30\"]  # test period\n    pred[\"ret\"] = ret\n    dates = pred.index.unique(level=0)\n    res = Parallel(n_jobs=-1)(delayed(func)(pred.loc[d], **kwargs) for d in dates)\n    res = {dates[i]: res[i] for i in range(len(dates))}\n    res = pd.DataFrame(res).T\n    r = res[\"R\"].copy()\n    r.index = pd.to_datetime(r.index)\n    r = r.reindex(pd.date_range(r.index[0], r.index[-1])).fillna(0)  # paper use 365 days\n    return {\n        \"MSE\": res[\"MSE\"].mean(),\n        \"MAE\": res[\"MAE\"].mean(),\n        \"IC\": res[\"IC\"].mean(),\n        \"ICIR\": res[\"IC\"].mean() / res[\"IC\"].std(),\n        \"AR\": r.mean() * 365,\n        \"AV\": r.std() * 365**0.5,\n        \"SR\": r.mean() / r.std() * 365**0.5,\n        \"MDD\": (r.cumsum().cummax() - r.cumsum()).max(),\n    }, r",
+  "runtime_only_change": "joblib evaluation n_jobs=-1 routed to1; no model/metric/selection change",
+  "returns": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/public_data/TRA/kdd21/ret.pkl",
+    "bytes": 30198419,
+    "sha256": "edd2ff6cff66d3caa029b27016e2cc2dff8d19f6bab7a0a105bfd1180b59cba4"
+  },
+  "benchmark": "original top80 minus bottom80, supplied returns clipped[-.1,.1],365calendar annualization, arithmetic cumulative-return MDD; NOT Stock account NAV/fees",
+  "known_original_reference_slice_issue": "unaltered author stock-boundary behavior; target data adapter fixes it; reference does not establish target PIT",
+  "license": "MIT, Copyright(c) Microsoft Corporation; UPSTREAM_LICENSE_TRA.txt"
+}

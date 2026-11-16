@@ -1,0 +1,14 @@
+{
+  "status": "PASS_FULL_AUTHOR_STOPPING",
+  "epochs_completed": 82,
+  "best_epoch": 61,
+  "stop_reason": "AUTHOR_EARLY_STOP20",
+  "default_epoch_cap": 500,
+  "default_patience": 20,
+  "global_step": 8199,
+  "max_train_batches_per_epoch": 100,
+  "no_test_selection": true,
+  "reference_dataset_rows": 2512790,
+  "source": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/model.py",
+  "reference_boundary_behavior": "unaltered source _create_ts_slices may include preceding instrument rows; target adapter must clip instrument boundary; reference metrics do not establish target PIT"
+}
