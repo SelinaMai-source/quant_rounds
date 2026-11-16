@@ -44,3 +44,6 @@ PRODUCTION_CONFIG_CHANGED=FALSE
 
 <!-- PUBLIC_INIT_COMPLETE_20261115 -->
 公开作者参考init阶段已真实完成：49个完整epoch，best epoch=28，严格满足连续20次验证未改善的作者默认停止条件，global_step=4899；完整checkpoint、预测、49行日志、STOPPING_AUDIT及输入/模型manifest已保存。原作者最终测试指标MSE=0.1598477992、MAE=0.3234504645、IC=0.0409109791、ICIR=0.3025278028。实测本阶段wall=52839.772秒、CPU user=323564.129秒、CPU system=83893.442秒、采样峰值RSS=2419265536字节，GPU=0。这些仅是公开init结果，不是最终10-state路由参考，更不是A股成绩。完整route阶段已继续运行，REFERENCE_RUN_COMPLETE仍为false；真实A股模型及账户仍为0。
+
+<!-- RUNNING_ROUTE_HASH_AUDIT_20261116 -->
+route实际长时运行期间再次核验其契约：239个源码文件、6个输入文件以及已完成init的上游checkpoint，字节数与SHA256全部匹配，见reference/RUNNING_ROUTE_SOURCE_DATA_UPSTREAM_AUDIT_20261116_1418.json。该核验只证明冻结文件及上游工件未漂移；route默认停止、完整公开基准、真实A股模型、冷拟合及订单检验仍待完成，不据此提高完成状态。
