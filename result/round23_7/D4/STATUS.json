@@ -44,10 +44,15 @@
     "mkldnn_deterministic": true
   },
   "completed_reference_phase_names": [
-    "init"
+    "init",
+    "route"
   ],
   "init_epochs_completed": 49,
   "init_best_epoch": 28,
   "init_stop_reason": "AUTHOR_EARLY_STOP20",
-  "updated_UTC": "2026-11-15T21:35:35.916104+00:00"
+  "updated_UTC": "2026-11-16T23:01:31.918471+00:00",
+  "route_epochs_completed": 82,
+  "route_best_epoch": 61,
+  "route_stop_reason": "AUTHOR_EARLY_STOP20",
+  "active_target_phase": "seed17 2018 Five/Ten init workers launched; no completed target model yet"
 }

@@ -2621,3 +2621,5 @@ D4 attached existing complete-budget author reference [2265722] {'UTC': '2026-11
 phase  seed      MSE      MAE       IC     ICIR       AR       AV       SR      MDD
  init    17 0.159848 0.323450 0.040911 0.302528 0.087070 0.139455 0.624360 0.229931
 route    17 0.159120 0.322283 0.045276 0.344710 0.103819 0.138927 0.747292 0.198311
+{"branch": "round23_7", "commit": "d5bbd11ac9130449132200b8b7a161a5b1da91f8", "remote_sha": "d5bbd11ac9130449132200b8b7a161a5b1da91f8", "manifest_artifacts_verified": 1217, "clean": true, "source_tests_results_permissions_manifest_verified": true}
+TRA_TARGET_DATA /data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/TRA_target_data/dee8d2c4165ee7c5f84cf24b5233db87f43c6d0c736635e519abb0bf45bea6d1 cache_hit True

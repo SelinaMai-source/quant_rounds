@@ -1,0 +1,41 @@
+{
+  "status": "TWO_FULL_AUTHOR_PHASES_COMPLETE",
+  "scope": "Original public reference only, no A-share result implied",
+  "phases": {
+    "init": {
+      "pid": 2265722,
+      "status": "COMPLETED",
+      "wall_seconds": 52839.77219324,
+      "CPU_user_seconds": 323564.128558,
+      "CPU_system_seconds": 83893.441681,
+      "RSS_sampled_peak_bytes": 2419265536,
+      "RSS_sample_interval_seconds": 0.25,
+      "process_lifetime_ru_maxrss_KiB": 2420000,
+      "free_disk_before_bytes": 6457899520000,
+      "free_disk_after_bytes": 6457762004992,
+      "GPU_training_seconds": 0,
+      "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+    },
+    "route": {
+      "pid": 2265722,
+      "status": "COMPLETED",
+      "wall_seconds": 91413.88333980553,
+      "CPU_user_seconds": 528995.714133,
+      "CPU_system_seconds": 163688.800872,
+      "RSS_sampled_peak_bytes": 2054762496,
+      "RSS_sample_interval_seconds": 0.25,
+      "process_lifetime_ru_maxrss_KiB": 2420000,
+      "free_disk_before_bytes": 6457744232448,
+      "free_disk_after_bytes": 6452405825536,
+      "GPU_training_seconds": 0,
+      "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+    }
+  },
+  "sum_context_wall_seconds": 144253.65553304553,
+  "sum_context_CPU_user_seconds": 852559.8426910001,
+  "sum_context_CPU_system_seconds": 247582.242553,
+  "max_sampled_RSS_bytes": 2419265536,
+  "GPU_training_seconds": 0,
+  "incomplete_CPU2_attempt_counted_in_completed_phases": false,
+  "incomplete_CPU2_attempt_resources": "reference_attempts/cpu2_incomplete/RESOURCES.json"
+}
