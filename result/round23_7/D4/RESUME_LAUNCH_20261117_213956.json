@@ -1,0 +1,20 @@
+{
+  "pid": 3445952,
+  "command": [
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/env/bin/python",
+    "-B",
+    "-u",
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/tools/continue_round23_7_round26_1.py",
+    "--deliverable",
+    "D4",
+    "--resume",
+    "--jobs",
+    "2",
+    "--seed",
+    "17",
+    "--publish"
+  ],
+  "log": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/full_target_pipeline_resume_20261117_213956.log",
+  "start_new_session": true,
+  "UTC": "2026-11-17T21:39:56.036295+00:00"
+}
