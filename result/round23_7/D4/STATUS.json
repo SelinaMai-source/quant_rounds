@@ -17,7 +17,7 @@
   "BACKEND_SCORE_INTEGRATION_PASS": true,
   "TARGET_FULL_FIT_WORKER_IMPLEMENTED": true,
   "TARGET_CONTROLLER_IMPLEMENTED": true,
-  "completed_full_target_models": 36,
+  "completed_full_target_models": 42,
   "completed_full_reference_phases": 2,
   "full_target_fit_counterfactuals_complete": false,
   "FULL_TARGET_COUNTERFACTUAL_IMPLEMENTED": true,
@@ -50,9 +50,9 @@
   "init_epochs_completed": 49,
   "init_best_epoch": 28,
   "init_stop_reason": "AUTHOR_EARLY_STOP20",
-  "updated_UTC": "2026-11-17T12:10:03.732454+00:00",
+  "updated_UTC": "2026-11-17T15:04:24.156816+00:00",
   "route_epochs_completed": 82,
   "route_best_epoch": 61,
   "route_stop_reason": "AUTHOR_EARLY_STOP20",
-  "active_target_phase": "seed17 2018-2023 thirty-six full fits complete; 2024 Five/Ten init running"
+  "active_target_phase": "seed17 2018-2024 forty-two full fits complete; 2025 Five/Ten init running"
 }

@@ -1,0 +1,67 @@
+{
+  "UTC": "2026-11-17T15:04:24.156816+00:00",
+  "status": "PASS",
+  "source_files": [
+    {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round23_7/tra_reference.py",
+      "expected_sha256": "3baf88f3c610f63e654ad368b6be5a5314b5b7b7a6ce31a89f37357bdfcb5c06",
+      "actual_sha256": "3baf88f3c610f63e654ad368b6be5a5314b5b7b7a6ce31a89f37357bdfcb5c06",
+      "pass": true
+    },
+    {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round23_7/tra_data.py",
+      "expected_sha256": "648a43908c41e155c92ccb5c8e57245c345a9cdc3db8c60b57a0f3c341528686",
+      "actual_sha256": "648a43908c41e155c92ccb5c8e57245c345a9cdc3db8c60b57a0f3c341528686",
+      "pass": true
+    },
+    {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round23_7/tra_causal.py",
+      "expected_sha256": "1857d1f613ca2f2cb237a00875d05885c9e9970a298435b6b278f266908cd93b",
+      "actual_sha256": "1857d1f613ca2f2cb237a00875d05885c9e9970a298435b6b278f266908cd93b",
+      "pass": true
+    },
+    {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round23_7/tra_fit.py",
+      "expected_sha256": "560069318f5c7f262964000b612b9b2e9b1639e5d4a3c13eaa9fde256080d5f0",
+      "actual_sha256": "560069318f5c7f262964000b612b9b2e9b1639e5d4a3c13eaa9fde256080d5f0",
+      "pass": true
+    },
+    {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/research_integrity_v5/cache.py",
+      "expected_sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c",
+      "actual_sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c",
+      "pass": true
+    },
+    {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/research_integrity_v5/resources.py",
+      "expected_sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08",
+      "actual_sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08",
+      "pass": true
+    },
+    {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/local_executor.py",
+      "expected_sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed",
+      "actual_sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed",
+      "pass": true
+    },
+    {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round7/contract.py",
+      "expected_sha256": "1301375a49380fca14aa3fae66d940c482bbc060128f83b58979bddf21340f89",
+      "actual_sha256": "1301375a49380fca14aa3fae66d940c482bbc060128f83b58979bddf21340f89",
+      "pass": true
+    }
+  ],
+  "completed_target_fits": 42,
+  "completed_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "seed": 17,
+  "full_target_OOF_complete": false,
+  "actual_native_accounts": 0
+}

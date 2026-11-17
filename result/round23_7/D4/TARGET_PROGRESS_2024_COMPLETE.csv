@@ -1,0 +1,7 @@
+head,year,seed,phase,epochs_completed,best_epoch,stop_reason,actual_optimizer_steps,forecast_rows,forecast_invalid_input_rows,forecast_missing_on_valid_inputs,audit_path,audit_sha256,frozen_backbone_unchanged
+five,2024,17,T0,132,111,AUTHOR_EARLY_STOP20,1452,6792,0,0,result/round23_7/D4/target_models/original/17/2024/five/T0/FIT_AUDIT.json,cc3ed05e63067ac805dcd71282ca0bce26ba1bfe29ab1da525588d1c7518c7d3,True
+five,2024,17,T1,39,18,AUTHOR_EARLY_STOP20,429,6792,0,0,result/round23_7/D4/target_models/original/17/2024/five/T1/FIT_AUDIT.json,296df191819d4565a3dfa39c62bb0db988c44526345e05a55b3a30ce83da3258,True
+five,2024,17,init,33,12,AUTHOR_EARLY_STOP20,693,6792,0,0,result/round23_7/D4/target_models/original/17/2024/five/init/FIT_AUDIT.json,df063dd7b43bf8b2b361e8e11cb4b761db768641b942f7a31b9d1e089bf23315,
+ten,2024,17,T0,123,102,AUTHOR_EARLY_STOP20,1353,6792,0,0,result/round23_7/D4/target_models/original/17/2024/ten/T0/FIT_AUDIT.json,1a877aa361e1d493bebc667ef92dfd2a797a8d72ea024c2087d1fe78ab2820a1,True
+ten,2024,17,T1,78,57,AUTHOR_EARLY_STOP20,858,6792,0,0,result/round23_7/D4/target_models/original/17/2024/ten/T1/FIT_AUDIT.json,2801b4a7d31d266e8fbc18c39dbe30557aee0922108d1238499304e31a591936,True
+ten,2024,17,init,33,12,AUTHOR_EARLY_STOP20,726,6792,0,0,result/round23_7/D4/target_models/original/17/2024/ten/init/FIT_AUDIT.json,b69bdc9b03116602c7f415ffaa29d7b415bda054b8d15b11b3daeca47a2bf9ac,
