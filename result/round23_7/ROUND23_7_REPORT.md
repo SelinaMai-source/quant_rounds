@@ -30,3 +30,6 @@ D4完整代码、集成、目标数据与缓存修复已实现；公开参考CPU
 
 <!-- TARGET_2021_SIX_FULL_MODELS_COMPLETE_20261117 -->
 2026-11-17T05:53:51.245639+00:00：seed17/2021 Five/Ten各自init/T0/T1六次完整默认训练完成，累计2018–2021二十四次。详见TARGET_PROGRESS_2021_COMPLETE.csv及各模型checkpoint/forecast/FIT_AUDIT。每个模型保留完整5749条Outer预测，无有效输入预测缺失；各Head的T0/T1共享骨干且冻结权重未改变。关键8源码锁再次SHA全部匹配。2022年两路init已继续运行。完整年度/seed OOF、真实冷拟合与原生账户仍未完成，不据此宣称A股绩效或baseline改进。
+
+<!-- TARGET_2022_SIX_FULL_MODELS_COMPLETE_20261117 -->
+2026-11-17T09:09:55.598640+00:00：seed17/2022 Five/Ten各自init/T0/T1六次完整默认训练完成，累计2018–2022三十次。详见TARGET_PROGRESS_2022_COMPLETE.csv及各模型checkpoint/forecast/FIT_AUDIT。每个模型保留完整5600条Outer预测，无有效输入预测缺失；各Head的T0/T1共享骨干且冻结权重未改变。关键8源码锁再次SHA全部匹配。2023年两路init已继续运行。完整年度/seed OOF、真实冷拟合与原生账户仍未完成，不据此宣称A股绩效或baseline改进。
