@@ -82,3 +82,6 @@ route实际长时运行期间再次核验其契约：239个源码文件、6个�
 
 <!-- TARGET_2018_SIX_FULL_MODELS_COMPLETE_20261117 -->
 2026-11-17T00:47:06.451219+00:00：seed17/2018 Five、Ten各自init/T0/T1共6次完整默认预算训练完成，详见TARGET_PROGRESS_2018_COMPLETE.csv及各FIT_AUDIT/checkpoint/forecast。两个Head的T0/T1分别共享同一预训练骨干，且冻结权重均未改变。每个模型均输出完整3241条Outer预测，无有效输入预测缺失。模型关键源码8文件再次逐字节SHA核验通过，见RUNNING_TARGET_CODE_LOCK_AUDIT_20261117.json。2019年两路init已开始。这里只是中间检查点，完整174模型、6个真实冷拟合案例、7个原生反事实账户及24个经济配置尚未全部完成；TARGET_OOF_COMPLETE/BACKTEST_COMPLETE/EVIDENCE_COMPLETE仍为false，不宣称A股绩效或baseline改进。历史0模型段落为此前带日期的运行快照，不是当前计数。
+
+<!-- TARGET_2019_SIX_FULL_MODELS_COMPLETE_20261117 -->
+2026-11-17T01:26:23.404730+00:00：seed17/2019 Five/Ten各自init/T0/T1六次完整训练均已完成，累计2018–2019十二次。详见TARGET_PROGRESS_2019_COMPLETE.csv及各模型完整checkpoint/forecast/FIT_AUDIT。每个模型保留完整4711条Outer预测，无有效输入预测缺失；各Head的T0/T1共享骨干且冻结权重未改变。关键8源码锁再次SHA全部匹配。2020年两路init已继续运行。完整年度/seed OOF、真实冷拟合和账户回测仍未完成，不据此宣称A股绩效或baseline改进。
