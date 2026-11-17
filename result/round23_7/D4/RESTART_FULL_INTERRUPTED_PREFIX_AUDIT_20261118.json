@@ -1,0 +1,38 @@
+{
+  "UTC": "2026-11-17T23:08:09.336242+00:00",
+  "status": "PASS_EXACT_ENTIRE_INTERRUPTED_OBSERVED_PREFIX",
+  "scope": "All completed train/validation loss/metric log records retained before interruption; not per-epoch tensor equality, not full future-label cold-fit/order evidence",
+  "additional_training_models": 0,
+  "rows": [
+    {
+      "head": "five",
+      "old_log": "result/round23_7/D4/logs/original/17_2025_five_T0_1794931040108840256.log",
+      "new_log": "result/round23_7/D4/logs/original/17_2025_five_T0_1794951815054287764.log",
+      "all_old_completed_records": 432,
+      "covered_old_records": 432,
+      "max_old_completed_epoch": 143,
+      "all_old_prefix_covered": true,
+      "exact_all_old_completed_records_equal": true,
+      "old_full_log_sha256": "5753bc41263b85bc59fe74f2e239e20e6e07cfebb3f3ea5b74706f985910d486",
+      "old_selected_records_sha256": "81e26d8a17a66954fac2f19284770ffc232c06c5271b3e3385fca5d4e09f0aa4",
+      "new_selected_records_sha256": "81e26d8a17a66954fac2f19284770ffc232c06c5271b3e3385fca5d4e09f0aa4",
+      "missing_keys": [],
+      "differences": []
+    },
+    {
+      "head": "ten",
+      "old_log": "result/round23_7/D4/logs/original/17_2025_ten_T0_1794933670453436783.log",
+      "new_log": "result/round23_7/D4/logs/original/17_2025_ten_T0_1794951823050911230.log",
+      "all_old_completed_records": 220,
+      "covered_old_records": 220,
+      "max_old_completed_epoch": 73,
+      "all_old_prefix_covered": true,
+      "exact_all_old_completed_records_equal": true,
+      "old_full_log_sha256": "03736d671e799cf1f42cb3c40cc760cb0992830a1745f38db3ecfedaa5c6ad9b",
+      "old_selected_records_sha256": "8ee78e3cdb999671ec78b3eb97d72ea9b2794e434ce259521905b75a9ee0fb09",
+      "new_selected_records_sha256": "8ee78e3cdb999671ec78b3eb97d72ea9b2794e434ce259521905b75a9ee0fb09",
+      "missing_keys": [],
+      "differences": []
+    }
+  ]
+}

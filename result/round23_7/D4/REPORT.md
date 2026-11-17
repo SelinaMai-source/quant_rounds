@@ -82,3 +82,9 @@ route实际长时运行期间再次核验其契约：239个源码文件、6个�
 
 <!-- PROCESS_INTERRUPTION_RECOVERY_20261118 -->
 北京时间2026-11-18续跑审计：此前控制器和两路未完成学习进程已不存在，确切退出信号/退出码不可得；保留两路partial状态与原日志，不计为完整模型或外部阻断。见PROCESS_INTERRUPTION_RECOVERY_20261117_213956.json。新控制器3445952通过原CLI --resume启动，公开完整参考未重训，原45个完整目标模型逐个验证指纹/工件全部命中缓存，见RESUME_CACHE_REENTRY_AUDIT_20261118.json。中断的2025 Five/Ten T0按原seed、初始化权重和完整默认停止条件重跑；旧partial均保留。当前完整目标模型45个，完整OOF/反事实冷拟合/原生账户回测尚未完成，不宣称A股收益改进。
+
+<!-- AUTHOR_TRAIN_LOG_LOSS_SEMANTICS -->
+作者train_epoch的训练日志loss为各batch标量损失之和再除以总预测样本数（有路由时含原OT项），并非总体逐行加权MSE，不能用它的小数量级宣称泛化预测更好。该作者原行为未修改；默认早停仍按validation IC。正式公开参考MSE/MAE来自原evaluate(pred)，与训练日志字段分开。源码SHA与行号见AUTHOR_TRAIN_LOG_LOSS_SEMANTICS_AUDIT.json；未新增训练或改动参数。
+
+<!-- ENTIRE_INTERRUPTED_OBSERVED_PREFIX_PARITY_20261118 -->
+中断恢复后，已覆盖旧Five截至epoch143的432条、旧Ten截至epoch73的220条已完成训练/验证损失与指标日志，逐条字符串及选定记录SHA完全一致，见RESTART_FULL_INTERRUPTED_PREFIX_AUDIT_20261118.json。该证据仅为可观察日志前缀一致性，不等于逐epoch参数张量一致性，更不替代规定的完整未来标签冷拟合或原生订单回放。没有新增模型或修改学习参数；当前完整目标模型仍45个，完整OOF/回测/证据仍未完成。

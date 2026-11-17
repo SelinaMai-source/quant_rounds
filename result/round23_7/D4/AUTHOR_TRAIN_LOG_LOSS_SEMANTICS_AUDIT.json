@@ -1,0 +1,14 @@
+{
+  "observed_UTC": "2026-11-17T22:39:56.635495+00:00",
+  "source_path": "research/round23_6_26_execution/vendor/TRA/examples/benchmarks/TRA/src/model.py",
+  "source_sha256": "3dc690d2788b6776d7df482fdb7ac056e794600cca96d51f973230b42b03bceb",
+  "train_epoch_source_sha256": "62523cb54f941d0b6c61322040b2cc44c3fb32d691d45cbfc6882b7ad20c6116",
+  "source_line": 94,
+  "train_log_loss_definition": "sum of per-batch scalar losses (batch-mean MSE plus original OT regularization when active) divided by total batch prediction count",
+  "not_equivalent_to": "overall row-weighted MSE; never compare its magnitude directly to evaluate() MSE",
+  "unchanged_original_author_behavior": true,
+  "early_stopping_selection": "validation IC strict improvement, original patience20 and epoch cap500 remain unchanged",
+  "reported_reference_MSE_source": "original evaluate(pred) on public predictions; separate from logged train loss",
+  "learning_source_or_parameters_modified": false,
+  "additional_training_models": 0
+}

@@ -1,0 +1,26 @@
+{
+  "UTC": "2026-11-17T21:52:58.922955+00:00",
+  "status": "PASS_EXACT_OBSERVED_RESTART_PREFIX",
+  "rows": [
+    {
+      "head": "five",
+      "old_log": "result/round23_7/D4/logs/original/17_2025_five_T0_1794931040108840256.log",
+      "new_log": "result/round23_7/D4/logs/original/17_2025_five_T0_1794951815054287764.log",
+      "compared_completed_records": 47,
+      "max_completed_epoch_compared": 15,
+      "exact_all_record_strings_equal": true,
+      "differences": []
+    },
+    {
+      "head": "ten",
+      "old_log": "result/round23_7/D4/logs/original/17_2025_ten_T0_1794933670453436783.log",
+      "new_log": "result/round23_7/D4/logs/original/17_2025_ten_T0_1794951823050911230.log",
+      "compared_completed_records": 46,
+      "max_completed_epoch_compared": 15,
+      "exact_all_record_strings_equal": true,
+      "differences": []
+    }
+  ],
+  "scope": "Existing loss/metric log records only; no saved per-epoch tensor comparison; not a substitute for required complete future-label cold fits or native-order replays",
+  "additional_training_models": 0
+}
