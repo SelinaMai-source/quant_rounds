@@ -1,0 +1,14 @@
+{
+  "pid": 3022592,
+  "status": "COMPLETED",
+  "wall_seconds": 3222.7668798509985,
+  "CPU_user_seconds": 5087.943515,
+  "CPU_system_seconds": 1124.955672,
+  "RSS_sampled_peak_bytes": 1892409344,
+  "RSS_sample_interval_seconds": 0.25,
+  "process_lifetime_ru_maxrss_KiB": 1848056,
+  "free_disk_before_bytes": 6452254367744,
+  "free_disk_after_bytes": 6452229939200,
+  "GPU_training_seconds": 0,
+  "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+}

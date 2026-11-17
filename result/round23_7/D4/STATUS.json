@@ -17,7 +17,7 @@
   "BACKEND_SCORE_INTEGRATION_PASS": true,
   "TARGET_FULL_FIT_WORKER_IMPLEMENTED": true,
   "TARGET_CONTROLLER_IMPLEMENTED": true,
-  "completed_full_target_models": 0,
+  "completed_full_target_models": 6,
   "completed_full_reference_phases": 2,
   "full_target_fit_counterfactuals_complete": false,
   "FULL_TARGET_COUNTERFACTUAL_IMPLEMENTED": true,
@@ -50,9 +50,9 @@
   "init_epochs_completed": 49,
   "init_best_epoch": 28,
   "init_stop_reason": "AUTHOR_EARLY_STOP20",
-  "updated_UTC": "2026-11-16T23:01:31.918471+00:00",
+  "updated_UTC": "2026-11-17T00:47:06.451219+00:00",
   "route_epochs_completed": 82,
   "route_best_epoch": 61,
   "route_stop_reason": "AUTHOR_EARLY_STOP20",
-  "active_target_phase": "seed17 2018 Five/Ten init workers launched; no completed target model yet"
+  "active_target_phase": "seed17 2018 six full fits complete; 2019 Five/Ten init running"
 }

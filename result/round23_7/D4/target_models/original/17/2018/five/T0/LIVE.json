@@ -1,0 +1,14 @@
+{
+  "UTC": "2026-11-17T00:30:40.716865+00:00",
+  "pid": 3022592,
+  "event": "EVALUATE_END",
+  "epoch": 98,
+  "global_step": 989,
+  "segment": "test",
+  "metrics": {
+    "MSE": NaN,
+    "MAE": NaN,
+    "IC": NaN,
+    "ICIR": NaN
+  }
+}
