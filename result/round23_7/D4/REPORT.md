@@ -88,3 +88,6 @@ route实际长时运行期间再次核验其契约：239个源码文件、6个�
 
 <!-- TARGET_2020_SIX_FULL_MODELS_COMPLETE_20261117 -->
 2026-11-17T03:31:18.300736+00:00：seed17/2020 Five/Ten各自init/T0/T1六次完整默认训练完成，累计2018–2020十八次。详见TARGET_PROGRESS_2020_COMPLETE.csv和各模型checkpoint/forecast/FIT_AUDIT。每个模型保留完整5863条Outer预测，无有效输入预测缺失；各Head的T0/T1共享骨干且冻结权重未改变。关键8源码锁再次SHA全部匹配。2021年两路init已继续运行。Ten单头长时训练完整保留默认500cap/20patience预算，没有因耗时缩短轮次。完整年度/seed OOF、真实冷拟合与原生账户仍未完成，不据此宣称A股绩效或baseline改进。
+
+<!-- TARGET_2021_SIX_FULL_MODELS_COMPLETE_20261117 -->
+2026-11-17T05:53:51.245639+00:00：seed17/2021 Five/Ten各自init/T0/T1六次完整默认训练完成，累计2018–2021二十四次。详见TARGET_PROGRESS_2021_COMPLETE.csv及各模型checkpoint/forecast/FIT_AUDIT。每个模型保留完整5749条Outer预测，无有效输入预测缺失；各Head的T0/T1共享骨干且冻结权重未改变。关键8源码锁再次SHA全部匹配。2022年两路init已继续运行。完整年度/seed OOF、真实冷拟合与原生账户仍未完成，不据此宣称A股绩效或baseline改进。
