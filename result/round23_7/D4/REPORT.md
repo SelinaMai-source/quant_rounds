@@ -88,3 +88,6 @@ route实际长时运行期间再次核验其契约：239个源码文件、6个�
 
 <!-- ENTIRE_INTERRUPTED_OBSERVED_PREFIX_PARITY_20261118 -->
 中断恢复后，已覆盖旧Five截至epoch143的432条、旧Ten截至epoch73的220条已完成训练/验证损失与指标日志，逐条字符串及选定记录SHA完全一致，见RESTART_FULL_INTERRUPTED_PREFIX_AUDIT_20261118.json。该证据仅为可观察日志前缀一致性，不等于逐epoch参数张量一致性，更不替代规定的完整未来标签冷拟合或原生订单回放。没有新增模型或修改学习参数；当前完整目标模型仍45个，完整OOF/回测/证据仍未完成。
+
+<!-- TARGET_2025_SIX_FULL_MODELS_COMPLETE_20261118 -->
+北京时间2026-11-18：seed17/2025 Five/Ten各自init/T0/T1六次完整默认训练完成，累计2018–2025四十八次。详见TARGET_PROGRESS_2025_COMPLETE.csv及各模型checkpoint/forecast/FIT_AUDIT。每个模型保留完整6584条Outer预测，无有效输入预测缺失；各Head的T0/T1共享骨干且冻结权重未改变。关键8源码锁再次SHA全部匹配。2026年两路init已继续运行。中断的两路旧partial单独保留，不计完整模型；原45个完整缓存全部验证复用。完整年度/seed OOF、真实冷拟合与原生账户仍未完成，不据此宣称A股绩效或baseline改进。
