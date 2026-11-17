@@ -39,3 +39,6 @@ D4完整代码、集成、目标数据与缓存修复已实现；公开参考CPU
 
 <!-- TARGET_2024_SIX_FULL_MODELS_COMPLETE_20261117 -->
 2026-11-17T15:04:24.156816+00:00：seed17/2024 Five/Ten各自init/T0/T1六次完整默认训练完成，累计2018–2024四十二次。详见TARGET_PROGRESS_2024_COMPLETE.csv及各模型checkpoint/forecast/FIT_AUDIT。每个模型保留完整6792条Outer预测，无有效输入预测缺失；各Head的T0/T1共享骨干且冻结权重未改变。关键8源码锁再次SHA全部匹配。2025年两路init已继续运行。完整年度/seed OOF、真实冷拟合与原生账户仍未完成，不据此宣称A股绩效或baseline改进。
+
+<!-- PROCESS_INTERRUPTION_RECOVERY_20261118 -->
+北京时间2026-11-18续跑审计：此前控制器和两路未完成学习进程已不存在，确切退出信号/退出码不可得；保留两路partial状态与原日志，不计为完整模型或外部阻断。见PROCESS_INTERRUPTION_RECOVERY_20261117_213956.json。新控制器3445952通过原CLI --resume启动，公开完整参考未重训，原45个完整目标模型逐个验证指纹/工件全部命中缓存，见RESUME_CACHE_REENTRY_AUDIT_20261118.json。中断的2025 Five/Ten T0按原seed、初始化权重和完整默认停止条件重跑；旧partial均保留。当前完整目标模型45个，完整OOF/反事实冷拟合/原生账户回测尚未完成，不宣称A股收益改进。
