@@ -1,0 +1,29 @@
+{
+  "pid": 3873423,
+  "status": "COMPLETED",
+  "wall_seconds": 1962.3409846480936,
+  "CPU_user_seconds": 3209.0481689999997,
+  "CPU_system_seconds": 591.061315,
+  "RSS_sampled_peak_bytes": 1961283584,
+  "RSS_sample_interval_seconds": 0.25,
+  "process_lifetime_ru_maxrss_KiB": 8085524,
+  "free_disk_before_bytes": 6438080421888,
+  "free_disk_after_bytes": 6438069633024,
+  "GPU_training_seconds": 0,
+  "scope": "this CPU process; thread CPU included; CUDA runtime not used",
+  "process_lifetime_CPU_user_seconds": 3212.729956,
+  "process_lifetime_CPU_system_seconds": 591.236929,
+  "process_lifetime_wall_seconds_observed": 1964.316903591156,
+  "scope_detail": "context covers entire fit including preparation/hash; lifetime counters additionally include module import; no inferred historical values",
+  "result": {
+    "status": "FULL_TARGET_FIT_COMPLETE",
+    "head": "five",
+    "year": 2022,
+    "seed": 42,
+    "phase": "T1",
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2022/five/T1/2029d721f73ad172ad6f3eee030ea5b418d46d285f009597acf08817adfc5d4d",
+    "fingerprint": "2029d721f73ad172ad6f3eee030ea5b418d46d285f009597acf08817adfc5d4d",
+    "cache_hit": false,
+    "namespace": "original"
+  }
+}
