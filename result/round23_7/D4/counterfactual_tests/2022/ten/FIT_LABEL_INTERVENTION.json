@@ -1,0 +1,31 @@
+{
+  "head": "ten",
+  "year": 2022,
+  "input": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/dee8d2c4165ee7c5f84cf24b5233db87f43c6d0c736635e519abb0bf45bea6d1/ten_targets.parquet",
+    "bytes": 702222,
+    "sha256": "49940ca1eff1fbbc450982d1e6512362ae96bfeba8c530fe05dcfe95e20931ac",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+    "rows": 58830
+  },
+  "mutated": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_counterfactual_inputs/2022/ten/fit_unavailable_targets.parquet",
+    "bytes": 702132,
+    "sha256": "8646ca11bfb5029c92135ab455c6cf2b0dc4d101aae282b69037d65f21fad692",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ntarget: double\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 606",
+    "rows": 58830
+  },
+  "stages": {
+    "train": {
+      "in_domain_unavailable_rows": 637,
+      "actual_changed_rows": 93,
+      "maturity_metadata_preserved": true
+    },
+    "valid": {
+      "in_domain_unavailable_rows": 238,
+      "actual_changed_rows": 82,
+      "maturity_metadata_preserved": true
+    }
+  },
+  "scope": "fit-only phase-specific unavailable labels; original legally observed Outer feedback source retained; separate forecast replay perturbs as-of-unavailable values"
+}
