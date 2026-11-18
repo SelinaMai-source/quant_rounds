@@ -91,3 +91,6 @@ route实际长时运行期间再次核验其契约：239个源码文件、6个�
 
 <!-- TARGET_2025_SIX_FULL_MODELS_COMPLETE_20261118 -->
 北京时间2026-11-18：seed17/2025 Five/Ten各自init/T0/T1六次完整默认训练完成，累计2018–2025四十八次。详见TARGET_PROGRESS_2025_COMPLETE.csv及各模型checkpoint/forecast/FIT_AUDIT。每个模型保留完整6584条Outer预测，无有效输入预测缺失；各Head的T0/T1共享骨干且冻结权重未改变。关键8源码锁再次SHA全部匹配。2026年两路init已继续运行。中断的两路旧partial单独保留，不计完整模型；原45个完整缓存全部验证复用。完整年度/seed OOF、真实冷拟合与原生账户仍未完成，不据此宣称A股绩效或baseline改进。
+
+
+续跑核验（2026-11-18T01:04:29.110694+00:00）：seed17 已完成51个完整默认停止模型；新增2026 Five init为47轮/893步，Five T0为35轮/350步，二者各3667条预测且有效输入无缺失；T0骨干冻结哈希一致。8项学习代码锁均一致。Five T1、Ten T0仍在运行；完整真实冷启动反事实、原生账户与A股收益证据尚未完成。详见 D4/CONTINUATION_MODEL_AUDIT_20261118_0105.json。
