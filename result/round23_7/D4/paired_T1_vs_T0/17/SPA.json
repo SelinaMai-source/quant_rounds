@@ -1,0 +1,14 @@
+{
+  "status": "COMPUTED",
+  "pvalues": {
+    "lower": 0.0622,
+    "consistent": 0.0622,
+    "upper": 0.0622
+  },
+  "alternatives": [
+    "TRA_T1_17"
+  ],
+  "deduplicated": {},
+  "loss": "negative actual portfolio daily return",
+  "historical_development": true
+}

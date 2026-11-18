@@ -1,0 +1,25 @@
+{
+  "status": "COMPUTED",
+  "pvalues": {
+    "lower": 0.4766,
+    "consistent": 0.4766,
+    "upper": 0.9998
+  },
+  "alternatives": [
+    "TRA_T0_17",
+    "TRA_T1_17"
+  ],
+  "deduplicated": {},
+  "loss": "negative actual portfolio daily return",
+  "historical_development": true,
+  "registered_nonalpha_full_account_replay_aliases": {
+    "TRA_CF_SEED17_ORIGINAL_S0": "TRA_T1_17",
+    "TRA_CF_2018_FIVE_UNAVAILABLE_LABELS_S0": "TRA_T1_17",
+    "TRA_CF_2018_TEN_UNAVAILABLE_LABELS_S0": "TRA_T1_17",
+    "TRA_CF_2022_FIVE_UNAVAILABLE_LABELS_S0": "TRA_T1_17",
+    "TRA_CF_2022_TEN_UNAVAILABLE_LABELS_S0": "TRA_T1_17",
+    "TRA_CF_2026_FIVE_UNAVAILABLE_LABELS_S0": "TRA_T1_17",
+    "TRA_CF_2026_TEN_UNAVAILABLE_LABELS_S0": "TRA_T1_17"
+  },
+  "nonalpha_replay_returns_exactly_verified_against_primary_trial": true
+}

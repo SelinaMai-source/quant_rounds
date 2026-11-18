@@ -1,0 +1,119 @@
+{
+  "status": "PASS_SIX_REAL_FULL_BUDGET_CASES",
+  "cases": 6,
+  "passed": 6,
+  "full_cold_target_models_required": 12,
+  "scope": "each case independently reruns complete original-default init and T1, actual full Outer pointwise unavailable-label prediction replay and original-engine account/order replay",
+  "actual_order_replay": {
+    "status": "PASS_SIX_REAL_FULL_ACCOUNT_ORDER_REPLAYS",
+    "actual_native_diagnostic_configurations": 7,
+    "full_account_replay_comparisons": 6,
+    "checks": [
+      {
+        "head": "five",
+        "year": 2018,
+        "original_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_SEED17_ORIGINAL_S0/de703ee5372ae111b929999fe458c7a958f5ea58affcf8c96282da02962905a7",
+        "mutated_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_2018_FIVE_UNAVAILABLE_LABELS_S0/022c70341cc5d6954e0789e7f25d334ad0ad48ecfcad858eeca319445c37b3c8",
+        "all_actual_original_engine_tables_exact": [
+          "overlayed",
+          "trades",
+          "rejections",
+          "positions",
+          "sleeve_states",
+          "nav",
+          "cashflows",
+          "costs"
+        ],
+        "candidate_scores_and_whole_day_fallback_exact": true
+      },
+      {
+        "head": "ten",
+        "year": 2018,
+        "original_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_SEED17_ORIGINAL_S0/de703ee5372ae111b929999fe458c7a958f5ea58affcf8c96282da02962905a7",
+        "mutated_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_2018_TEN_UNAVAILABLE_LABELS_S0/0490a6b0cf27511ef92a518aea41e108df560d267f85b3d38b35f14c2d92efcf",
+        "all_actual_original_engine_tables_exact": [
+          "overlayed",
+          "trades",
+          "rejections",
+          "positions",
+          "sleeve_states",
+          "nav",
+          "cashflows",
+          "costs"
+        ],
+        "candidate_scores_and_whole_day_fallback_exact": true
+      },
+      {
+        "head": "five",
+        "year": 2022,
+        "original_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_SEED17_ORIGINAL_S0/de703ee5372ae111b929999fe458c7a958f5ea58affcf8c96282da02962905a7",
+        "mutated_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_2022_FIVE_UNAVAILABLE_LABELS_S0/2c4ec9392834f209894278ea4092bc192073207ccd47faf5ad1b0010186203ce",
+        "all_actual_original_engine_tables_exact": [
+          "overlayed",
+          "trades",
+          "rejections",
+          "positions",
+          "sleeve_states",
+          "nav",
+          "cashflows",
+          "costs"
+        ],
+        "candidate_scores_and_whole_day_fallback_exact": true
+      },
+      {
+        "head": "ten",
+        "year": 2022,
+        "original_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_SEED17_ORIGINAL_S0/de703ee5372ae111b929999fe458c7a958f5ea58affcf8c96282da02962905a7",
+        "mutated_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_2022_TEN_UNAVAILABLE_LABELS_S0/1227e402b320121d5423807b40b644ef939106c4800d04ceb32a0cc69c7d05a8",
+        "all_actual_original_engine_tables_exact": [
+          "overlayed",
+          "trades",
+          "rejections",
+          "positions",
+          "sleeve_states",
+          "nav",
+          "cashflows",
+          "costs"
+        ],
+        "candidate_scores_and_whole_day_fallback_exact": true
+      },
+      {
+        "head": "five",
+        "year": 2026,
+        "original_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_SEED17_ORIGINAL_S0/de703ee5372ae111b929999fe458c7a958f5ea58affcf8c96282da02962905a7",
+        "mutated_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_2026_FIVE_UNAVAILABLE_LABELS_S0/515de19a47b9de56a14c1bab23b0e062c3d07e1700a08c2bfe6ce0bc3f913cec",
+        "all_actual_original_engine_tables_exact": [
+          "overlayed",
+          "trades",
+          "rejections",
+          "positions",
+          "sleeve_states",
+          "nav",
+          "cashflows",
+          "costs"
+        ],
+        "candidate_scores_and_whole_day_fallback_exact": true
+      },
+      {
+        "head": "ten",
+        "year": 2026,
+        "original_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_SEED17_ORIGINAL_S0/de703ee5372ae111b929999fe458c7a958f5ea58affcf8c96282da02962905a7",
+        "mutated_path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/backtests/TRA_CF_2026_TEN_UNAVAILABLE_LABELS_S0/4d0d65ebdbf1e3b83a2e055e15c1ecb463c994c42d94975972c099e1c2b4636e",
+        "all_actual_original_engine_tables_exact": [
+          "overlayed",
+          "trades",
+          "rejections",
+          "positions",
+          "sleeve_states",
+          "nav",
+          "cashflows",
+          "costs"
+        ],
+        "candidate_scores_and_whole_day_fallback_exact": true
+      }
+    ],
+    "economic_path_alias": "TRA_T1_17",
+    "scope": "one actual original S0 account plus six label-mutated replays; not seven new alpha alternatives; all attempts retained"
+  },
+  "alpha_candidates_added": 0
+}

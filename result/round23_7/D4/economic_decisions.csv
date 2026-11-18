@@ -1,0 +1,3 @@
+experiment_id,baseline,decision,economic_gate_pass,missing_economic_evidence,changed_top1_top2_plan_rows,changed_top1_top2_real_entry_rows,paired_cost_direction,outside_2024_2025_log_relative_wealth,delta_cagr_ok,delta_sharpe_ok,nav_improvement_ok,top_changed_ok,maxdd_ok,fee_direction_ok,not_only_2024_or_2025
+TRA_T0_17,TRA_A0,REJECT_CURRENT_CONFIGURATION,False,False,1999,1236,False,-2.807419333373494,False,False,False,True,False,False,False
+TRA_T1_17,TRA_A0,REJECT_CURRENT_CONFIGURATION,False,False,2006,1242,False,-2.0753783241667367,False,False,False,True,False,False,False

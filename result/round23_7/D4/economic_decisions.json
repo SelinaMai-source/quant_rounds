@@ -1,0 +1,140 @@
+{
+  "TRA_T0_17": {
+    "experiment_id": "TRA_T0_17",
+    "baseline": "TRA_A0",
+    "decision": "REJECT_CURRENT_CONFIGURATION",
+    "economic_gate_pass": false,
+    "missing_economic_evidence": false,
+    "changed_top1_top2_plan_rows": 1999,
+    "changed_top1_top2_real_entry_rows": 1236,
+    "paired_cost_direction": false,
+    "outside_2024_2025_log_relative_wealth": -2.807419333373494,
+    "delta_cagr_ok": false,
+    "delta_sharpe_ok": false,
+    "nav_improvement_ok": false,
+    "top_changed_ok": true,
+    "maxdd_ok": false,
+    "fee_direction_ok": false,
+    "not_only_2024_or_2025": false,
+    "gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "TRA_A0",
+      "delta_cagr": -0.661503831742679,
+      "delta_sharpe": -2.4974697490382587,
+      "delta_maxdd": -0.49962525916663814,
+      "nav_improvement": -0.9915414958318792,
+      "delta_terminal_nav_rmb": -12450699.290717233,
+      "relative_terminal_nav_change": -0.9915414958318792,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": false,
+        "fee_direction_ok": false,
+        "not_only_2024_or_2025": false
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "FAIL",
+        "fee_direction": "FAIL",
+        "not_only_year": "FAIL"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": false,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        },
+        "not_only_year": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        }
+      }
+    },
+    "automatic_promotion": false,
+    "top_change_threshold": "inherited>0, no post-result threshold changes"
+  },
+  "TRA_T1_17": {
+    "experiment_id": "TRA_T1_17",
+    "baseline": "TRA_A0",
+    "decision": "REJECT_CURRENT_CONFIGURATION",
+    "economic_gate_pass": false,
+    "missing_economic_evidence": false,
+    "changed_top1_top2_plan_rows": 2006,
+    "changed_top1_top2_real_entry_rows": 1242,
+    "paired_cost_direction": false,
+    "outside_2024_2025_log_relative_wealth": -2.0753783241667367,
+    "delta_cagr_ok": false,
+    "delta_sharpe_ok": false,
+    "nav_improvement_ok": false,
+    "top_changed_ok": true,
+    "maxdd_ok": false,
+    "fee_direction_ok": false,
+    "not_only_2024_or_2025": false,
+    "gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "TRA_A0",
+      "delta_cagr": -0.5373654800623962,
+      "delta_sharpe": -1.718738739923306,
+      "delta_maxdd": -0.3317687567359071,
+      "nav_improvement": -0.9740182529256151,
+      "delta_terminal_nav_rmb": -12230661.47188541,
+      "relative_terminal_nav_change": -0.9740182529256151,
+      "nav_improvement_ok": false,
+      "flags": {
+        "delta_cagr_ok": false,
+        "delta_sharpe_ok": false,
+        "nav_improvement_ok": false,
+        "top_changed_ok": true,
+        "maxdd_ok": false,
+        "fee_direction_ok": false,
+        "not_only_2024_or_2025": false
+      },
+      "statuses": {
+        "delta_cagr": "FAIL",
+        "delta_sharpe": "FAIL",
+        "nav_improvement": "FAIL",
+        "top_changed": "PASS",
+        "maxdd": "FAIL",
+        "fee_direction": "FAIL",
+        "not_only_year": "FAIL"
+      },
+      "economically_material": false,
+      "promotion_blocked_missing_evidence": false,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        },
+        "not_only_year": {
+          "value": false,
+          "status": "FAIL",
+          "ok": false
+        }
+      }
+    },
+    "automatic_promotion": false,
+    "top_change_threshold": "inherited>0, no post-result threshold changes"
+  }
+}
