@@ -18,3 +18,6 @@ PRODUCTION_CONFIG_CHANGED=FALSE
 
 <!-- D4_REAL_EXECUTION_CHECKPOINT -->
 D4实际状态：PARTIAL_SEED_CHECKPOINT；已完成种子路径[17]。完整作者参考、真实目标模型、T0/T1同骨干回测、时间反事实与全部风险见[D4主报告](D4/REPORT.md)。不把合成集成测试叫真实研究，不修改正式v5/CURRENT。
+
+
+阶段核验（2026-11-18T09:00:59.956967+00:00）：seed17已实际完成54个常规模型、12个完整反事实模型、六组预测/模型反事实及七个原生诊断账户严格一致性、12个原生经济配置。匹配TRA_A0 S0 CAGR/Sharpe/MaxDD=0.5472179502/1.8646649834/-0.2405632772；T0_17=-0.1142858816/-0.6328047656/-0.7401885363；T1_17=0.0098524701/0.1459262435/-0.5723320339；T0/T1均REJECT_CURRENT_CONFIGURATION，压力结果见D4/all_results.csv。正式v5锚点独立保留，未混比。seed42的2018六模型已完整结束，有效输入预测无缺失，冻结骨干一致；2019 Five/Ten init正在运行，seed42经济结果尚未产生。8项学习代码锁仍一致；不因seed17否定而跳过42/73或后续MASTER。详见D4/TARGET_PROGRESS_SEED42_2018_COMPLETE.csv及对应代码锁审计。
