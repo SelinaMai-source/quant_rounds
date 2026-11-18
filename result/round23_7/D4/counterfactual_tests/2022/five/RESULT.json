@@ -1,0 +1,2604 @@
+{
+  "status": "PASS_FULL_DEFAULT_FIT_AND_CAUSAL_FORECAST_COUNTERFACTUAL",
+  "head": "five",
+  "year": 2022,
+  "init": {
+    "status": "FULL_TARGET_FIT_COMPLETE",
+    "head": "five",
+    "year": 2022,
+    "seed": 17,
+    "phase": "init",
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/cold_unavailable_targets/17/2022/five/init/30edfe510a895d9068e8c3800a1277196b814f1df09fc3abdd5cf15f303a4a63",
+    "fingerprint": "30edfe510a895d9068e8c3800a1277196b814f1df09fc3abdd5cf15f303a4a63",
+    "cache_hit": false,
+    "namespace": "cold_unavailable_targets",
+    "returncode": 0,
+    "log": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/logs/cold_unavailable_targets/17_2022_five_init_1794970627707276869.log",
+    "attempt": "1794970627707276869"
+  },
+  "T1": {
+    "status": "FULL_TARGET_FIT_COMPLETE",
+    "head": "five",
+    "year": 2022,
+    "seed": 17,
+    "phase": "T1",
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/cold_unavailable_targets/17/2022/five/T1/ffff9d7c040885af824ba75ce7c522ce8ed578915103d5a8222309f9c81afe9d",
+    "fingerprint": "ffff9d7c040885af824ba75ce7c522ce8ed578915103d5a8222309f9c81afe9d",
+    "cache_hit": false,
+    "namespace": "cold_unavailable_targets",
+    "returncode": 0,
+    "log": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/logs/cold_unavailable_targets/17_2022_five_T1_1794976387530017264.log",
+    "attempt": "1794976387530017264"
+  },
+  "init_exact": {
+    "checkpoint_model_value_sha256": "bd94e1c71dc930e8b82f247facd190836f8728cc5029adc854740760ebf71e93",
+    "checkpoint_TRA_value_sha256": "bf5cabc2f7e5e2ea9ec851e520a3a6db24794a7b9933186089f353f0d6c97dd1",
+    "full_forecast_rows_exact": 5600,
+    "default_stopping_and_all_eligible_input_identities_exact": true
+  },
+  "T1_exact": {
+    "checkpoint_model_value_sha256": "bd94e1c71dc930e8b82f247facd190836f8728cc5029adc854740760ebf71e93",
+    "checkpoint_TRA_value_sha256": "7ea0d38ad1c309474492fd5f82d50e9a885d05cd29867c765c15423708709b87",
+    "full_forecast_rows_exact": 5600,
+    "default_stopping_and_all_eligible_input_identities_exact": true
+  },
+  "forecast_replay": {
+    "status": "PASS_REAL_FULL_OUTER_FORECAST_REPLAY",
+    "cases": [
+      {
+        "case": "original",
+        "rows": 5600,
+        "queue_audit": {
+          "mature_label_reads": 1436,
+          "unmature_label_reads": 0,
+          "saved_expert_prediction_writes": 5600,
+          "mature_missing_target_rows": 111
+        }
+      },
+      {
+        "case": "future_and_unmature_labels",
+        "rows": 5600,
+        "queue_audit": {
+          "mature_label_reads": 1436,
+          "unmature_label_reads": 0,
+          "saved_expert_prediction_writes": 5600,
+          "mature_missing_target_rows": 111
+        }
+      },
+      {
+        "case": "delete_asof_future_and_unmature_labels",
+        "rows": 5600,
+        "queue_audit": {
+          "mature_label_reads": 1436,
+          "unmature_label_reads": 0,
+          "saved_expert_prediction_writes": 5600,
+          "mature_missing_target_rows": 111
+        }
+      }
+    ],
+    "actual_nonempty_interventions": [
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-02-09 15:00:00",
+        "actual_changed_unavailable_targets": 26283,
+        "in_forecast_year_changed_unavailable_targets": 5213
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-02-14 15:00:00",
+        "actual_changed_unavailable_targets": 26215,
+        "in_forecast_year_changed_unavailable_targets": 5145
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-02-16 15:00:00",
+        "actual_changed_unavailable_targets": 26176,
+        "in_forecast_year_changed_unavailable_targets": 5106
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-02-17 15:00:00",
+        "actual_changed_unavailable_targets": 26154,
+        "in_forecast_year_changed_unavailable_targets": 5084
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-02-22 15:00:00",
+        "actual_changed_unavailable_targets": 26096,
+        "in_forecast_year_changed_unavailable_targets": 5026
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-02-24 15:00:00",
+        "actual_changed_unavailable_targets": 26055,
+        "in_forecast_year_changed_unavailable_targets": 4985
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-02-28 15:00:00",
+        "actual_changed_unavailable_targets": 26004,
+        "in_forecast_year_changed_unavailable_targets": 4934
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-02 15:00:00",
+        "actual_changed_unavailable_targets": 25962,
+        "in_forecast_year_changed_unavailable_targets": 4892
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-04 15:00:00",
+        "actual_changed_unavailable_targets": 25914,
+        "in_forecast_year_changed_unavailable_targets": 4844
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-07 15:00:00",
+        "actual_changed_unavailable_targets": 25894,
+        "in_forecast_year_changed_unavailable_targets": 4824
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-08 15:00:00",
+        "actual_changed_unavailable_targets": 25878,
+        "in_forecast_year_changed_unavailable_targets": 4808
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-09 15:00:00",
+        "actual_changed_unavailable_targets": 25859,
+        "in_forecast_year_changed_unavailable_targets": 4789
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-10 15:00:00",
+        "actual_changed_unavailable_targets": 25855,
+        "in_forecast_year_changed_unavailable_targets": 4785
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-11 15:00:00",
+        "actual_changed_unavailable_targets": 25847,
+        "in_forecast_year_changed_unavailable_targets": 4777
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-15 15:00:00",
+        "actual_changed_unavailable_targets": 25777,
+        "in_forecast_year_changed_unavailable_targets": 4707
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-16 15:00:00",
+        "actual_changed_unavailable_targets": 25763,
+        "in_forecast_year_changed_unavailable_targets": 4693
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-17 15:00:00",
+        "actual_changed_unavailable_targets": 25758,
+        "in_forecast_year_changed_unavailable_targets": 4688
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-18 15:00:00",
+        "actual_changed_unavailable_targets": 25702,
+        "in_forecast_year_changed_unavailable_targets": 4632
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-21 15:00:00",
+        "actual_changed_unavailable_targets": 25660,
+        "in_forecast_year_changed_unavailable_targets": 4590
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-22 15:00:00",
+        "actual_changed_unavailable_targets": 25607,
+        "in_forecast_year_changed_unavailable_targets": 4537
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-23 15:00:00",
+        "actual_changed_unavailable_targets": 25573,
+        "in_forecast_year_changed_unavailable_targets": 4503
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-24 15:00:00",
+        "actual_changed_unavailable_targets": 25546,
+        "in_forecast_year_changed_unavailable_targets": 4476
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-25 15:00:00",
+        "actual_changed_unavailable_targets": 25513,
+        "in_forecast_year_changed_unavailable_targets": 4443
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-28 15:00:00",
+        "actual_changed_unavailable_targets": 25486,
+        "in_forecast_year_changed_unavailable_targets": 4416
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-29 15:00:00",
+        "actual_changed_unavailable_targets": 25455,
+        "in_forecast_year_changed_unavailable_targets": 4385
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-30 15:00:00",
+        "actual_changed_unavailable_targets": 25431,
+        "in_forecast_year_changed_unavailable_targets": 4361
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-03-31 15:00:00",
+        "actual_changed_unavailable_targets": 25416,
+        "in_forecast_year_changed_unavailable_targets": 4346
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-01 15:00:00",
+        "actual_changed_unavailable_targets": 25391,
+        "in_forecast_year_changed_unavailable_targets": 4321
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-06 15:00:00",
+        "actual_changed_unavailable_targets": 25373,
+        "in_forecast_year_changed_unavailable_targets": 4303
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-07 15:00:00",
+        "actual_changed_unavailable_targets": 25341,
+        "in_forecast_year_changed_unavailable_targets": 4271
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-08 15:00:00",
+        "actual_changed_unavailable_targets": 25313,
+        "in_forecast_year_changed_unavailable_targets": 4243
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-11 15:00:00",
+        "actual_changed_unavailable_targets": 25303,
+        "in_forecast_year_changed_unavailable_targets": 4233
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-12 15:00:00",
+        "actual_changed_unavailable_targets": 25284,
+        "in_forecast_year_changed_unavailable_targets": 4214
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-13 15:00:00",
+        "actual_changed_unavailable_targets": 25274,
+        "in_forecast_year_changed_unavailable_targets": 4204
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-14 15:00:00",
+        "actual_changed_unavailable_targets": 25240,
+        "in_forecast_year_changed_unavailable_targets": 4170
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-15 15:00:00",
+        "actual_changed_unavailable_targets": 25224,
+        "in_forecast_year_changed_unavailable_targets": 4154
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-18 15:00:00",
+        "actual_changed_unavailable_targets": 25197,
+        "in_forecast_year_changed_unavailable_targets": 4127
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-19 15:00:00",
+        "actual_changed_unavailable_targets": 25185,
+        "in_forecast_year_changed_unavailable_targets": 4115
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-20 15:00:00",
+        "actual_changed_unavailable_targets": 25151,
+        "in_forecast_year_changed_unavailable_targets": 4081
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-21 15:00:00",
+        "actual_changed_unavailable_targets": 25132,
+        "in_forecast_year_changed_unavailable_targets": 4062
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-22 15:00:00",
+        "actual_changed_unavailable_targets": 25117,
+        "in_forecast_year_changed_unavailable_targets": 4047
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-25 15:00:00",
+        "actual_changed_unavailable_targets": 25109,
+        "in_forecast_year_changed_unavailable_targets": 4039
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-26 15:00:00",
+        "actual_changed_unavailable_targets": 25090,
+        "in_forecast_year_changed_unavailable_targets": 4020
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-27 15:00:00",
+        "actual_changed_unavailable_targets": 25082,
+        "in_forecast_year_changed_unavailable_targets": 4012
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-28 15:00:00",
+        "actual_changed_unavailable_targets": 25064,
+        "in_forecast_year_changed_unavailable_targets": 3994
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-04-29 15:00:00",
+        "actual_changed_unavailable_targets": 24975,
+        "in_forecast_year_changed_unavailable_targets": 3905
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-05 15:00:00",
+        "actual_changed_unavailable_targets": 24956,
+        "in_forecast_year_changed_unavailable_targets": 3886
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-06 15:00:00",
+        "actual_changed_unavailable_targets": 24865,
+        "in_forecast_year_changed_unavailable_targets": 3795
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-09 15:00:00",
+        "actual_changed_unavailable_targets": 24814,
+        "in_forecast_year_changed_unavailable_targets": 3744
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-10 15:00:00",
+        "actual_changed_unavailable_targets": 24791,
+        "in_forecast_year_changed_unavailable_targets": 3721
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-11 15:00:00",
+        "actual_changed_unavailable_targets": 24754,
+        "in_forecast_year_changed_unavailable_targets": 3684
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-12 15:00:00",
+        "actual_changed_unavailable_targets": 24725,
+        "in_forecast_year_changed_unavailable_targets": 3655
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-13 15:00:00",
+        "actual_changed_unavailable_targets": 24698,
+        "in_forecast_year_changed_unavailable_targets": 3628
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-16 15:00:00",
+        "actual_changed_unavailable_targets": 24674,
+        "in_forecast_year_changed_unavailable_targets": 3604
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-17 15:00:00",
+        "actual_changed_unavailable_targets": 24646,
+        "in_forecast_year_changed_unavailable_targets": 3576
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-18 15:00:00",
+        "actual_changed_unavailable_targets": 24622,
+        "in_forecast_year_changed_unavailable_targets": 3552
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-19 15:00:00",
+        "actual_changed_unavailable_targets": 24603,
+        "in_forecast_year_changed_unavailable_targets": 3533
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-20 15:00:00",
+        "actual_changed_unavailable_targets": 24579,
+        "in_forecast_year_changed_unavailable_targets": 3509
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-23 15:00:00",
+        "actual_changed_unavailable_targets": 24557,
+        "in_forecast_year_changed_unavailable_targets": 3487
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-24 15:00:00",
+        "actual_changed_unavailable_targets": 24526,
+        "in_forecast_year_changed_unavailable_targets": 3456
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-25 15:00:00",
+        "actual_changed_unavailable_targets": 24496,
+        "in_forecast_year_changed_unavailable_targets": 3426
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-26 15:00:00",
+        "actual_changed_unavailable_targets": 24483,
+        "in_forecast_year_changed_unavailable_targets": 3413
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-27 15:00:00",
+        "actual_changed_unavailable_targets": 24451,
+        "in_forecast_year_changed_unavailable_targets": 3381
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-30 15:00:00",
+        "actual_changed_unavailable_targets": 24435,
+        "in_forecast_year_changed_unavailable_targets": 3365
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-05-31 15:00:00",
+        "actual_changed_unavailable_targets": 24412,
+        "in_forecast_year_changed_unavailable_targets": 3342
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-01 15:00:00",
+        "actual_changed_unavailable_targets": 24385,
+        "in_forecast_year_changed_unavailable_targets": 3315
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-02 15:00:00",
+        "actual_changed_unavailable_targets": 24355,
+        "in_forecast_year_changed_unavailable_targets": 3285
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-06 15:00:00",
+        "actual_changed_unavailable_targets": 24325,
+        "in_forecast_year_changed_unavailable_targets": 3255
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-07 15:00:00",
+        "actual_changed_unavailable_targets": 24301,
+        "in_forecast_year_changed_unavailable_targets": 3231
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-08 15:00:00",
+        "actual_changed_unavailable_targets": 24265,
+        "in_forecast_year_changed_unavailable_targets": 3195
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-09 15:00:00",
+        "actual_changed_unavailable_targets": 24241,
+        "in_forecast_year_changed_unavailable_targets": 3171
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-10 15:00:00",
+        "actual_changed_unavailable_targets": 24220,
+        "in_forecast_year_changed_unavailable_targets": 3150
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-13 15:00:00",
+        "actual_changed_unavailable_targets": 24204,
+        "in_forecast_year_changed_unavailable_targets": 3134
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-14 15:00:00",
+        "actual_changed_unavailable_targets": 24164,
+        "in_forecast_year_changed_unavailable_targets": 3094
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-15 15:00:00",
+        "actual_changed_unavailable_targets": 24139,
+        "in_forecast_year_changed_unavailable_targets": 3069
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-16 15:00:00",
+        "actual_changed_unavailable_targets": 24118,
+        "in_forecast_year_changed_unavailable_targets": 3048
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-17 15:00:00",
+        "actual_changed_unavailable_targets": 24092,
+        "in_forecast_year_changed_unavailable_targets": 3022
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-20 15:00:00",
+        "actual_changed_unavailable_targets": 24067,
+        "in_forecast_year_changed_unavailable_targets": 2997
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-21 15:00:00",
+        "actual_changed_unavailable_targets": 24043,
+        "in_forecast_year_changed_unavailable_targets": 2973
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-22 15:00:00",
+        "actual_changed_unavailable_targets": 24003,
+        "in_forecast_year_changed_unavailable_targets": 2933
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-23 15:00:00",
+        "actual_changed_unavailable_targets": 23981,
+        "in_forecast_year_changed_unavailable_targets": 2911
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-24 15:00:00",
+        "actual_changed_unavailable_targets": 23960,
+        "in_forecast_year_changed_unavailable_targets": 2890
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-27 15:00:00",
+        "actual_changed_unavailable_targets": 23921,
+        "in_forecast_year_changed_unavailable_targets": 2851
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-28 15:00:00",
+        "actual_changed_unavailable_targets": 23878,
+        "in_forecast_year_changed_unavailable_targets": 2808
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-29 15:00:00",
+        "actual_changed_unavailable_targets": 23844,
+        "in_forecast_year_changed_unavailable_targets": 2774
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-06-30 15:00:00",
+        "actual_changed_unavailable_targets": 23800,
+        "in_forecast_year_changed_unavailable_targets": 2730
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-01 15:00:00",
+        "actual_changed_unavailable_targets": 23780,
+        "in_forecast_year_changed_unavailable_targets": 2710
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-04 15:00:00",
+        "actual_changed_unavailable_targets": 23749,
+        "in_forecast_year_changed_unavailable_targets": 2679
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-05 15:00:00",
+        "actual_changed_unavailable_targets": 23723,
+        "in_forecast_year_changed_unavailable_targets": 2653
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-06 15:00:00",
+        "actual_changed_unavailable_targets": 23680,
+        "in_forecast_year_changed_unavailable_targets": 2610
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-07 15:00:00",
+        "actual_changed_unavailable_targets": 23662,
+        "in_forecast_year_changed_unavailable_targets": 2592
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-08 15:00:00",
+        "actual_changed_unavailable_targets": 23641,
+        "in_forecast_year_changed_unavailable_targets": 2571
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-11 15:00:00",
+        "actual_changed_unavailable_targets": 23613,
+        "in_forecast_year_changed_unavailable_targets": 2543
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-12 15:00:00",
+        "actual_changed_unavailable_targets": 23591,
+        "in_forecast_year_changed_unavailable_targets": 2521
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-13 15:00:00",
+        "actual_changed_unavailable_targets": 23571,
+        "in_forecast_year_changed_unavailable_targets": 2501
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-14 15:00:00",
+        "actual_changed_unavailable_targets": 23553,
+        "in_forecast_year_changed_unavailable_targets": 2483
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-15 15:00:00",
+        "actual_changed_unavailable_targets": 23524,
+        "in_forecast_year_changed_unavailable_targets": 2454
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-18 15:00:00",
+        "actual_changed_unavailable_targets": 23504,
+        "in_forecast_year_changed_unavailable_targets": 2434
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-19 15:00:00",
+        "actual_changed_unavailable_targets": 23484,
+        "in_forecast_year_changed_unavailable_targets": 2414
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-20 15:00:00",
+        "actual_changed_unavailable_targets": 23445,
+        "in_forecast_year_changed_unavailable_targets": 2375
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-21 15:00:00",
+        "actual_changed_unavailable_targets": 23413,
+        "in_forecast_year_changed_unavailable_targets": 2343
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-22 15:00:00",
+        "actual_changed_unavailable_targets": 23387,
+        "in_forecast_year_changed_unavailable_targets": 2317
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-25 15:00:00",
+        "actual_changed_unavailable_targets": 23366,
+        "in_forecast_year_changed_unavailable_targets": 2296
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-26 15:00:00",
+        "actual_changed_unavailable_targets": 23347,
+        "in_forecast_year_changed_unavailable_targets": 2277
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-27 15:00:00",
+        "actual_changed_unavailable_targets": 23332,
+        "in_forecast_year_changed_unavailable_targets": 2262
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-28 15:00:00",
+        "actual_changed_unavailable_targets": 23312,
+        "in_forecast_year_changed_unavailable_targets": 2242
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-07-29 15:00:00",
+        "actual_changed_unavailable_targets": 23281,
+        "in_forecast_year_changed_unavailable_targets": 2211
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-01 15:00:00",
+        "actual_changed_unavailable_targets": 23254,
+        "in_forecast_year_changed_unavailable_targets": 2184
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-02 15:00:00",
+        "actual_changed_unavailable_targets": 23232,
+        "in_forecast_year_changed_unavailable_targets": 2162
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-03 15:00:00",
+        "actual_changed_unavailable_targets": 23202,
+        "in_forecast_year_changed_unavailable_targets": 2132
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-04 15:00:00",
+        "actual_changed_unavailable_targets": 23191,
+        "in_forecast_year_changed_unavailable_targets": 2121
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-05 15:00:00",
+        "actual_changed_unavailable_targets": 23177,
+        "in_forecast_year_changed_unavailable_targets": 2107
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-08 15:00:00",
+        "actual_changed_unavailable_targets": 23158,
+        "in_forecast_year_changed_unavailable_targets": 2088
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-09 15:00:00",
+        "actual_changed_unavailable_targets": 23124,
+        "in_forecast_year_changed_unavailable_targets": 2054
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-10 15:00:00",
+        "actual_changed_unavailable_targets": 23094,
+        "in_forecast_year_changed_unavailable_targets": 2024
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-11 15:00:00",
+        "actual_changed_unavailable_targets": 23069,
+        "in_forecast_year_changed_unavailable_targets": 1999
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-12 15:00:00",
+        "actual_changed_unavailable_targets": 23035,
+        "in_forecast_year_changed_unavailable_targets": 1965
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-15 15:00:00",
+        "actual_changed_unavailable_targets": 23005,
+        "in_forecast_year_changed_unavailable_targets": 1935
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-16 15:00:00",
+        "actual_changed_unavailable_targets": 22980,
+        "in_forecast_year_changed_unavailable_targets": 1910
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-17 15:00:00",
+        "actual_changed_unavailable_targets": 22955,
+        "in_forecast_year_changed_unavailable_targets": 1885
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-18 15:00:00",
+        "actual_changed_unavailable_targets": 22924,
+        "in_forecast_year_changed_unavailable_targets": 1854
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-19 15:00:00",
+        "actual_changed_unavailable_targets": 22895,
+        "in_forecast_year_changed_unavailable_targets": 1825
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-22 15:00:00",
+        "actual_changed_unavailable_targets": 22869,
+        "in_forecast_year_changed_unavailable_targets": 1799
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-23 15:00:00",
+        "actual_changed_unavailable_targets": 22852,
+        "in_forecast_year_changed_unavailable_targets": 1782
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-24 15:00:00",
+        "actual_changed_unavailable_targets": 22818,
+        "in_forecast_year_changed_unavailable_targets": 1748
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-25 15:00:00",
+        "actual_changed_unavailable_targets": 22794,
+        "in_forecast_year_changed_unavailable_targets": 1724
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-26 15:00:00",
+        "actual_changed_unavailable_targets": 22786,
+        "in_forecast_year_changed_unavailable_targets": 1716
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-29 15:00:00",
+        "actual_changed_unavailable_targets": 22758,
+        "in_forecast_year_changed_unavailable_targets": 1688
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-30 15:00:00",
+        "actual_changed_unavailable_targets": 22738,
+        "in_forecast_year_changed_unavailable_targets": 1668
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-08-31 15:00:00",
+        "actual_changed_unavailable_targets": 22710,
+        "in_forecast_year_changed_unavailable_targets": 1640
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-01 15:00:00",
+        "actual_changed_unavailable_targets": 22695,
+        "in_forecast_year_changed_unavailable_targets": 1625
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-02 15:00:00",
+        "actual_changed_unavailable_targets": 22687,
+        "in_forecast_year_changed_unavailable_targets": 1617
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-05 15:00:00",
+        "actual_changed_unavailable_targets": 22673,
+        "in_forecast_year_changed_unavailable_targets": 1603
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-06 15:00:00",
+        "actual_changed_unavailable_targets": 22653,
+        "in_forecast_year_changed_unavailable_targets": 1583
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-07 15:00:00",
+        "actual_changed_unavailable_targets": 22630,
+        "in_forecast_year_changed_unavailable_targets": 1560
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-08 15:00:00",
+        "actual_changed_unavailable_targets": 22603,
+        "in_forecast_year_changed_unavailable_targets": 1533
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-09 15:00:00",
+        "actual_changed_unavailable_targets": 22582,
+        "in_forecast_year_changed_unavailable_targets": 1512
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-13 15:00:00",
+        "actual_changed_unavailable_targets": 22567,
+        "in_forecast_year_changed_unavailable_targets": 1497
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-14 15:00:00",
+        "actual_changed_unavailable_targets": 22551,
+        "in_forecast_year_changed_unavailable_targets": 1481
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-15 15:00:00",
+        "actual_changed_unavailable_targets": 22533,
+        "in_forecast_year_changed_unavailable_targets": 1463
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-16 15:00:00",
+        "actual_changed_unavailable_targets": 22524,
+        "in_forecast_year_changed_unavailable_targets": 1454
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-19 15:00:00",
+        "actual_changed_unavailable_targets": 22513,
+        "in_forecast_year_changed_unavailable_targets": 1443
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-20 15:00:00",
+        "actual_changed_unavailable_targets": 22505,
+        "in_forecast_year_changed_unavailable_targets": 1435
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-21 15:00:00",
+        "actual_changed_unavailable_targets": 22493,
+        "in_forecast_year_changed_unavailable_targets": 1423
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-22 15:00:00",
+        "actual_changed_unavailable_targets": 22470,
+        "in_forecast_year_changed_unavailable_targets": 1400
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-23 15:00:00",
+        "actual_changed_unavailable_targets": 22454,
+        "in_forecast_year_changed_unavailable_targets": 1384
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-26 15:00:00",
+        "actual_changed_unavailable_targets": 22443,
+        "in_forecast_year_changed_unavailable_targets": 1373
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-27 15:00:00",
+        "actual_changed_unavailable_targets": 22434,
+        "in_forecast_year_changed_unavailable_targets": 1364
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-28 15:00:00",
+        "actual_changed_unavailable_targets": 22419,
+        "in_forecast_year_changed_unavailable_targets": 1349
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-29 15:00:00",
+        "actual_changed_unavailable_targets": 22385,
+        "in_forecast_year_changed_unavailable_targets": 1315
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-09-30 15:00:00",
+        "actual_changed_unavailable_targets": 22378,
+        "in_forecast_year_changed_unavailable_targets": 1308
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-10 15:00:00",
+        "actual_changed_unavailable_targets": 22369,
+        "in_forecast_year_changed_unavailable_targets": 1299
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-11 15:00:00",
+        "actual_changed_unavailable_targets": 22356,
+        "in_forecast_year_changed_unavailable_targets": 1286
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-12 15:00:00",
+        "actual_changed_unavailable_targets": 22345,
+        "in_forecast_year_changed_unavailable_targets": 1275
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-13 15:00:00",
+        "actual_changed_unavailable_targets": 22328,
+        "in_forecast_year_changed_unavailable_targets": 1258
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-14 15:00:00",
+        "actual_changed_unavailable_targets": 22297,
+        "in_forecast_year_changed_unavailable_targets": 1227
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-17 15:00:00",
+        "actual_changed_unavailable_targets": 22269,
+        "in_forecast_year_changed_unavailable_targets": 1199
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-18 15:00:00",
+        "actual_changed_unavailable_targets": 22225,
+        "in_forecast_year_changed_unavailable_targets": 1155
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-19 15:00:00",
+        "actual_changed_unavailable_targets": 22186,
+        "in_forecast_year_changed_unavailable_targets": 1116
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-20 15:00:00",
+        "actual_changed_unavailable_targets": 22155,
+        "in_forecast_year_changed_unavailable_targets": 1085
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-21 15:00:00",
+        "actual_changed_unavailable_targets": 22138,
+        "in_forecast_year_changed_unavailable_targets": 1068
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-24 15:00:00",
+        "actual_changed_unavailable_targets": 22120,
+        "in_forecast_year_changed_unavailable_targets": 1050
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-25 15:00:00",
+        "actual_changed_unavailable_targets": 22099,
+        "in_forecast_year_changed_unavailable_targets": 1029
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-26 15:00:00",
+        "actual_changed_unavailable_targets": 22088,
+        "in_forecast_year_changed_unavailable_targets": 1018
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-27 15:00:00",
+        "actual_changed_unavailable_targets": 22066,
+        "in_forecast_year_changed_unavailable_targets": 996
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-28 15:00:00",
+        "actual_changed_unavailable_targets": 22031,
+        "in_forecast_year_changed_unavailable_targets": 961
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-10-31 15:00:00",
+        "actual_changed_unavailable_targets": 22008,
+        "in_forecast_year_changed_unavailable_targets": 938
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-01 15:00:00",
+        "actual_changed_unavailable_targets": 21999,
+        "in_forecast_year_changed_unavailable_targets": 929
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-02 15:00:00",
+        "actual_changed_unavailable_targets": 21966,
+        "in_forecast_year_changed_unavailable_targets": 896
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-03 15:00:00",
+        "actual_changed_unavailable_targets": 21924,
+        "in_forecast_year_changed_unavailable_targets": 854
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-04 15:00:00",
+        "actual_changed_unavailable_targets": 21885,
+        "in_forecast_year_changed_unavailable_targets": 815
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-07 15:00:00",
+        "actual_changed_unavailable_targets": 21870,
+        "in_forecast_year_changed_unavailable_targets": 800
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-08 15:00:00",
+        "actual_changed_unavailable_targets": 21838,
+        "in_forecast_year_changed_unavailable_targets": 768
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-09 15:00:00",
+        "actual_changed_unavailable_targets": 21815,
+        "in_forecast_year_changed_unavailable_targets": 745
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-10 15:00:00",
+        "actual_changed_unavailable_targets": 21801,
+        "in_forecast_year_changed_unavailable_targets": 731
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-11 15:00:00",
+        "actual_changed_unavailable_targets": 21787,
+        "in_forecast_year_changed_unavailable_targets": 717
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-14 15:00:00",
+        "actual_changed_unavailable_targets": 21767,
+        "in_forecast_year_changed_unavailable_targets": 697
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-15 15:00:00",
+        "actual_changed_unavailable_targets": 21736,
+        "in_forecast_year_changed_unavailable_targets": 666
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-16 15:00:00",
+        "actual_changed_unavailable_targets": 21709,
+        "in_forecast_year_changed_unavailable_targets": 639
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-17 15:00:00",
+        "actual_changed_unavailable_targets": 21668,
+        "in_forecast_year_changed_unavailable_targets": 598
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-18 15:00:00",
+        "actual_changed_unavailable_targets": 21653,
+        "in_forecast_year_changed_unavailable_targets": 583
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-21 15:00:00",
+        "actual_changed_unavailable_targets": 21637,
+        "in_forecast_year_changed_unavailable_targets": 567
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-22 15:00:00",
+        "actual_changed_unavailable_targets": 21615,
+        "in_forecast_year_changed_unavailable_targets": 545
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-23 15:00:00",
+        "actual_changed_unavailable_targets": 21597,
+        "in_forecast_year_changed_unavailable_targets": 527
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-24 15:00:00",
+        "actual_changed_unavailable_targets": 21579,
+        "in_forecast_year_changed_unavailable_targets": 509
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-25 15:00:00",
+        "actual_changed_unavailable_targets": 21561,
+        "in_forecast_year_changed_unavailable_targets": 491
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-28 15:00:00",
+        "actual_changed_unavailable_targets": 21544,
+        "in_forecast_year_changed_unavailable_targets": 474
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-29 15:00:00",
+        "actual_changed_unavailable_targets": 21526,
+        "in_forecast_year_changed_unavailable_targets": 456
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-11-30 15:00:00",
+        "actual_changed_unavailable_targets": 21513,
+        "in_forecast_year_changed_unavailable_targets": 443
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-01 15:00:00",
+        "actual_changed_unavailable_targets": 21463,
+        "in_forecast_year_changed_unavailable_targets": 393
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-02 15:00:00",
+        "actual_changed_unavailable_targets": 21446,
+        "in_forecast_year_changed_unavailable_targets": 376
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-05 15:00:00",
+        "actual_changed_unavailable_targets": 21418,
+        "in_forecast_year_changed_unavailable_targets": 348
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-06 15:00:00",
+        "actual_changed_unavailable_targets": 21388,
+        "in_forecast_year_changed_unavailable_targets": 318
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-07 15:00:00",
+        "actual_changed_unavailable_targets": 21363,
+        "in_forecast_year_changed_unavailable_targets": 293
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-08 15:00:00",
+        "actual_changed_unavailable_targets": 21348,
+        "in_forecast_year_changed_unavailable_targets": 278
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-09 15:00:00",
+        "actual_changed_unavailable_targets": 21333,
+        "in_forecast_year_changed_unavailable_targets": 263
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-12 15:00:00",
+        "actual_changed_unavailable_targets": 21317,
+        "in_forecast_year_changed_unavailable_targets": 247
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-13 15:00:00",
+        "actual_changed_unavailable_targets": 21301,
+        "in_forecast_year_changed_unavailable_targets": 231
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-14 15:00:00",
+        "actual_changed_unavailable_targets": 21284,
+        "in_forecast_year_changed_unavailable_targets": 214
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-15 15:00:00",
+        "actual_changed_unavailable_targets": 21254,
+        "in_forecast_year_changed_unavailable_targets": 184
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-16 15:00:00",
+        "actual_changed_unavailable_targets": 21229,
+        "in_forecast_year_changed_unavailable_targets": 159
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-19 15:00:00",
+        "actual_changed_unavailable_targets": 21221,
+        "in_forecast_year_changed_unavailable_targets": 151
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-20 15:00:00",
+        "actual_changed_unavailable_targets": 21206,
+        "in_forecast_year_changed_unavailable_targets": 136
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-22 15:00:00",
+        "actual_changed_unavailable_targets": 21192,
+        "in_forecast_year_changed_unavailable_targets": 122
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-23 15:00:00",
+        "actual_changed_unavailable_targets": 21186,
+        "in_forecast_year_changed_unavailable_targets": 116
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-26 15:00:00",
+        "actual_changed_unavailable_targets": 21175,
+        "in_forecast_year_changed_unavailable_targets": 105
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-27 15:00:00",
+        "actual_changed_unavailable_targets": 21161,
+        "in_forecast_year_changed_unavailable_targets": 91
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-28 15:00:00",
+        "actual_changed_unavailable_targets": 21134,
+        "in_forecast_year_changed_unavailable_targets": 64
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-29 15:00:00",
+        "actual_changed_unavailable_targets": 21111,
+        "in_forecast_year_changed_unavailable_targets": 41
+      },
+      {
+        "case": "perturb_asof_unavailable",
+        "asof": "2022-12-30 15:00:00",
+        "actual_changed_unavailable_targets": 21096,
+        "in_forecast_year_changed_unavailable_targets": 26
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-02-09 15:00:00",
+        "actual_changed_unavailable_targets": 24236,
+        "in_forecast_year_changed_unavailable_targets": 4899
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-02-14 15:00:00",
+        "actual_changed_unavailable_targets": 24172,
+        "in_forecast_year_changed_unavailable_targets": 4835
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-02-16 15:00:00",
+        "actual_changed_unavailable_targets": 24136,
+        "in_forecast_year_changed_unavailable_targets": 4799
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-02-17 15:00:00",
+        "actual_changed_unavailable_targets": 24116,
+        "in_forecast_year_changed_unavailable_targets": 4779
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-02-22 15:00:00",
+        "actual_changed_unavailable_targets": 24063,
+        "in_forecast_year_changed_unavailable_targets": 4726
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-02-24 15:00:00",
+        "actual_changed_unavailable_targets": 24022,
+        "in_forecast_year_changed_unavailable_targets": 4685
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-02-28 15:00:00",
+        "actual_changed_unavailable_targets": 23976,
+        "in_forecast_year_changed_unavailable_targets": 4639
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-02 15:00:00",
+        "actual_changed_unavailable_targets": 23939,
+        "in_forecast_year_changed_unavailable_targets": 4602
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-04 15:00:00",
+        "actual_changed_unavailable_targets": 23895,
+        "in_forecast_year_changed_unavailable_targets": 4558
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-07 15:00:00",
+        "actual_changed_unavailable_targets": 23875,
+        "in_forecast_year_changed_unavailable_targets": 4538
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-08 15:00:00",
+        "actual_changed_unavailable_targets": 23863,
+        "in_forecast_year_changed_unavailable_targets": 4526
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-09 15:00:00",
+        "actual_changed_unavailable_targets": 23845,
+        "in_forecast_year_changed_unavailable_targets": 4508
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-10 15:00:00",
+        "actual_changed_unavailable_targets": 23842,
+        "in_forecast_year_changed_unavailable_targets": 4505
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-11 15:00:00",
+        "actual_changed_unavailable_targets": 23834,
+        "in_forecast_year_changed_unavailable_targets": 4497
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-15 15:00:00",
+        "actual_changed_unavailable_targets": 23769,
+        "in_forecast_year_changed_unavailable_targets": 4432
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-16 15:00:00",
+        "actual_changed_unavailable_targets": 23755,
+        "in_forecast_year_changed_unavailable_targets": 4418
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-17 15:00:00",
+        "actual_changed_unavailable_targets": 23752,
+        "in_forecast_year_changed_unavailable_targets": 4415
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-18 15:00:00",
+        "actual_changed_unavailable_targets": 23697,
+        "in_forecast_year_changed_unavailable_targets": 4360
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-21 15:00:00",
+        "actual_changed_unavailable_targets": 23657,
+        "in_forecast_year_changed_unavailable_targets": 4320
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-22 15:00:00",
+        "actual_changed_unavailable_targets": 23612,
+        "in_forecast_year_changed_unavailable_targets": 4275
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-23 15:00:00",
+        "actual_changed_unavailable_targets": 23579,
+        "in_forecast_year_changed_unavailable_targets": 4242
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-24 15:00:00",
+        "actual_changed_unavailable_targets": 23553,
+        "in_forecast_year_changed_unavailable_targets": 4216
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-25 15:00:00",
+        "actual_changed_unavailable_targets": 23523,
+        "in_forecast_year_changed_unavailable_targets": 4186
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-28 15:00:00",
+        "actual_changed_unavailable_targets": 23498,
+        "in_forecast_year_changed_unavailable_targets": 4161
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-29 15:00:00",
+        "actual_changed_unavailable_targets": 23470,
+        "in_forecast_year_changed_unavailable_targets": 4133
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-30 15:00:00",
+        "actual_changed_unavailable_targets": 23446,
+        "in_forecast_year_changed_unavailable_targets": 4109
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-03-31 15:00:00",
+        "actual_changed_unavailable_targets": 23431,
+        "in_forecast_year_changed_unavailable_targets": 4094
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-01 15:00:00",
+        "actual_changed_unavailable_targets": 23408,
+        "in_forecast_year_changed_unavailable_targets": 4071
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-06 15:00:00",
+        "actual_changed_unavailable_targets": 23391,
+        "in_forecast_year_changed_unavailable_targets": 4054
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-07 15:00:00",
+        "actual_changed_unavailable_targets": 23364,
+        "in_forecast_year_changed_unavailable_targets": 4027
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-08 15:00:00",
+        "actual_changed_unavailable_targets": 23336,
+        "in_forecast_year_changed_unavailable_targets": 3999
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-11 15:00:00",
+        "actual_changed_unavailable_targets": 23329,
+        "in_forecast_year_changed_unavailable_targets": 3992
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-12 15:00:00",
+        "actual_changed_unavailable_targets": 23313,
+        "in_forecast_year_changed_unavailable_targets": 3976
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-13 15:00:00",
+        "actual_changed_unavailable_targets": 23303,
+        "in_forecast_year_changed_unavailable_targets": 3966
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-14 15:00:00",
+        "actual_changed_unavailable_targets": 23271,
+        "in_forecast_year_changed_unavailable_targets": 3934
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-15 15:00:00",
+        "actual_changed_unavailable_targets": 23255,
+        "in_forecast_year_changed_unavailable_targets": 3918
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-18 15:00:00",
+        "actual_changed_unavailable_targets": 23231,
+        "in_forecast_year_changed_unavailable_targets": 3894
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-19 15:00:00",
+        "actual_changed_unavailable_targets": 23221,
+        "in_forecast_year_changed_unavailable_targets": 3884
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-20 15:00:00",
+        "actual_changed_unavailable_targets": 23189,
+        "in_forecast_year_changed_unavailable_targets": 3852
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-21 15:00:00",
+        "actual_changed_unavailable_targets": 23172,
+        "in_forecast_year_changed_unavailable_targets": 3835
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-22 15:00:00",
+        "actual_changed_unavailable_targets": 23161,
+        "in_forecast_year_changed_unavailable_targets": 3824
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-25 15:00:00",
+        "actual_changed_unavailable_targets": 23160,
+        "in_forecast_year_changed_unavailable_targets": 3823
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-26 15:00:00",
+        "actual_changed_unavailable_targets": 23148,
+        "in_forecast_year_changed_unavailable_targets": 3811
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-27 15:00:00",
+        "actual_changed_unavailable_targets": 23140,
+        "in_forecast_year_changed_unavailable_targets": 3803
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-28 15:00:00",
+        "actual_changed_unavailable_targets": 23123,
+        "in_forecast_year_changed_unavailable_targets": 3786
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-04-29 15:00:00",
+        "actual_changed_unavailable_targets": 23037,
+        "in_forecast_year_changed_unavailable_targets": 3700
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-05 15:00:00",
+        "actual_changed_unavailable_targets": 23018,
+        "in_forecast_year_changed_unavailable_targets": 3681
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-06 15:00:00",
+        "actual_changed_unavailable_targets": 22933,
+        "in_forecast_year_changed_unavailable_targets": 3596
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-09 15:00:00",
+        "actual_changed_unavailable_targets": 22882,
+        "in_forecast_year_changed_unavailable_targets": 3545
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-10 15:00:00",
+        "actual_changed_unavailable_targets": 22861,
+        "in_forecast_year_changed_unavailable_targets": 3524
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-11 15:00:00",
+        "actual_changed_unavailable_targets": 22824,
+        "in_forecast_year_changed_unavailable_targets": 3487
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-12 15:00:00",
+        "actual_changed_unavailable_targets": 22795,
+        "in_forecast_year_changed_unavailable_targets": 3458
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-13 15:00:00",
+        "actual_changed_unavailable_targets": 22770,
+        "in_forecast_year_changed_unavailable_targets": 3433
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-16 15:00:00",
+        "actual_changed_unavailable_targets": 22748,
+        "in_forecast_year_changed_unavailable_targets": 3411
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-17 15:00:00",
+        "actual_changed_unavailable_targets": 22725,
+        "in_forecast_year_changed_unavailable_targets": 3388
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-18 15:00:00",
+        "actual_changed_unavailable_targets": 22702,
+        "in_forecast_year_changed_unavailable_targets": 3365
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-19 15:00:00",
+        "actual_changed_unavailable_targets": 22686,
+        "in_forecast_year_changed_unavailable_targets": 3349
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-20 15:00:00",
+        "actual_changed_unavailable_targets": 22664,
+        "in_forecast_year_changed_unavailable_targets": 3327
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-23 15:00:00",
+        "actual_changed_unavailable_targets": 22642,
+        "in_forecast_year_changed_unavailable_targets": 3305
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-24 15:00:00",
+        "actual_changed_unavailable_targets": 22614,
+        "in_forecast_year_changed_unavailable_targets": 3277
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-25 15:00:00",
+        "actual_changed_unavailable_targets": 22586,
+        "in_forecast_year_changed_unavailable_targets": 3249
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-26 15:00:00",
+        "actual_changed_unavailable_targets": 22576,
+        "in_forecast_year_changed_unavailable_targets": 3239
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-27 15:00:00",
+        "actual_changed_unavailable_targets": 22545,
+        "in_forecast_year_changed_unavailable_targets": 3208
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-30 15:00:00",
+        "actual_changed_unavailable_targets": 22529,
+        "in_forecast_year_changed_unavailable_targets": 3192
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-05-31 15:00:00",
+        "actual_changed_unavailable_targets": 22508,
+        "in_forecast_year_changed_unavailable_targets": 3171
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-01 15:00:00",
+        "actual_changed_unavailable_targets": 22482,
+        "in_forecast_year_changed_unavailable_targets": 3145
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-02 15:00:00",
+        "actual_changed_unavailable_targets": 22452,
+        "in_forecast_year_changed_unavailable_targets": 3115
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-06 15:00:00",
+        "actual_changed_unavailable_targets": 22423,
+        "in_forecast_year_changed_unavailable_targets": 3086
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-07 15:00:00",
+        "actual_changed_unavailable_targets": 22399,
+        "in_forecast_year_changed_unavailable_targets": 3062
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-08 15:00:00",
+        "actual_changed_unavailable_targets": 22363,
+        "in_forecast_year_changed_unavailable_targets": 3026
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-09 15:00:00",
+        "actual_changed_unavailable_targets": 22342,
+        "in_forecast_year_changed_unavailable_targets": 3005
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-10 15:00:00",
+        "actual_changed_unavailable_targets": 22323,
+        "in_forecast_year_changed_unavailable_targets": 2986
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-13 15:00:00",
+        "actual_changed_unavailable_targets": 22308,
+        "in_forecast_year_changed_unavailable_targets": 2971
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-14 15:00:00",
+        "actual_changed_unavailable_targets": 22270,
+        "in_forecast_year_changed_unavailable_targets": 2933
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-15 15:00:00",
+        "actual_changed_unavailable_targets": 22247,
+        "in_forecast_year_changed_unavailable_targets": 2910
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-16 15:00:00",
+        "actual_changed_unavailable_targets": 22228,
+        "in_forecast_year_changed_unavailable_targets": 2891
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-17 15:00:00",
+        "actual_changed_unavailable_targets": 22203,
+        "in_forecast_year_changed_unavailable_targets": 2866
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-20 15:00:00",
+        "actual_changed_unavailable_targets": 22179,
+        "in_forecast_year_changed_unavailable_targets": 2842
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-21 15:00:00",
+        "actual_changed_unavailable_targets": 22157,
+        "in_forecast_year_changed_unavailable_targets": 2820
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-22 15:00:00",
+        "actual_changed_unavailable_targets": 22117,
+        "in_forecast_year_changed_unavailable_targets": 2780
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-23 15:00:00",
+        "actual_changed_unavailable_targets": 22097,
+        "in_forecast_year_changed_unavailable_targets": 2760
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-24 15:00:00",
+        "actual_changed_unavailable_targets": 22077,
+        "in_forecast_year_changed_unavailable_targets": 2740
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-27 15:00:00",
+        "actual_changed_unavailable_targets": 22039,
+        "in_forecast_year_changed_unavailable_targets": 2702
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-28 15:00:00",
+        "actual_changed_unavailable_targets": 22000,
+        "in_forecast_year_changed_unavailable_targets": 2663
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-29 15:00:00",
+        "actual_changed_unavailable_targets": 21967,
+        "in_forecast_year_changed_unavailable_targets": 2630
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-06-30 15:00:00",
+        "actual_changed_unavailable_targets": 21923,
+        "in_forecast_year_changed_unavailable_targets": 2586
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-01 15:00:00",
+        "actual_changed_unavailable_targets": 21905,
+        "in_forecast_year_changed_unavailable_targets": 2568
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-04 15:00:00",
+        "actual_changed_unavailable_targets": 21874,
+        "in_forecast_year_changed_unavailable_targets": 2537
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-05 15:00:00",
+        "actual_changed_unavailable_targets": 21849,
+        "in_forecast_year_changed_unavailable_targets": 2512
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-06 15:00:00",
+        "actual_changed_unavailable_targets": 21807,
+        "in_forecast_year_changed_unavailable_targets": 2470
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-07 15:00:00",
+        "actual_changed_unavailable_targets": 21789,
+        "in_forecast_year_changed_unavailable_targets": 2452
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-08 15:00:00",
+        "actual_changed_unavailable_targets": 21770,
+        "in_forecast_year_changed_unavailable_targets": 2433
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-11 15:00:00",
+        "actual_changed_unavailable_targets": 21743,
+        "in_forecast_year_changed_unavailable_targets": 2406
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-12 15:00:00",
+        "actual_changed_unavailable_targets": 21723,
+        "in_forecast_year_changed_unavailable_targets": 2386
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-13 15:00:00",
+        "actual_changed_unavailable_targets": 21703,
+        "in_forecast_year_changed_unavailable_targets": 2366
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-14 15:00:00",
+        "actual_changed_unavailable_targets": 21689,
+        "in_forecast_year_changed_unavailable_targets": 2352
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-15 15:00:00",
+        "actual_changed_unavailable_targets": 21663,
+        "in_forecast_year_changed_unavailable_targets": 2326
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-18 15:00:00",
+        "actual_changed_unavailable_targets": 21643,
+        "in_forecast_year_changed_unavailable_targets": 2306
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-19 15:00:00",
+        "actual_changed_unavailable_targets": 21623,
+        "in_forecast_year_changed_unavailable_targets": 2286
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-20 15:00:00",
+        "actual_changed_unavailable_targets": 21586,
+        "in_forecast_year_changed_unavailable_targets": 2249
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-21 15:00:00",
+        "actual_changed_unavailable_targets": 21556,
+        "in_forecast_year_changed_unavailable_targets": 2219
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-22 15:00:00",
+        "actual_changed_unavailable_targets": 21530,
+        "in_forecast_year_changed_unavailable_targets": 2193
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-25 15:00:00",
+        "actual_changed_unavailable_targets": 21509,
+        "in_forecast_year_changed_unavailable_targets": 2172
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-26 15:00:00",
+        "actual_changed_unavailable_targets": 21493,
+        "in_forecast_year_changed_unavailable_targets": 2156
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-27 15:00:00",
+        "actual_changed_unavailable_targets": 21478,
+        "in_forecast_year_changed_unavailable_targets": 2141
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-28 15:00:00",
+        "actual_changed_unavailable_targets": 21460,
+        "in_forecast_year_changed_unavailable_targets": 2123
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-07-29 15:00:00",
+        "actual_changed_unavailable_targets": 21430,
+        "in_forecast_year_changed_unavailable_targets": 2093
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-01 15:00:00",
+        "actual_changed_unavailable_targets": 21405,
+        "in_forecast_year_changed_unavailable_targets": 2068
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-02 15:00:00",
+        "actual_changed_unavailable_targets": 21386,
+        "in_forecast_year_changed_unavailable_targets": 2049
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-03 15:00:00",
+        "actual_changed_unavailable_targets": 21361,
+        "in_forecast_year_changed_unavailable_targets": 2024
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-04 15:00:00",
+        "actual_changed_unavailable_targets": 21350,
+        "in_forecast_year_changed_unavailable_targets": 2013
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-05 15:00:00",
+        "actual_changed_unavailable_targets": 21336,
+        "in_forecast_year_changed_unavailable_targets": 1999
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-08 15:00:00",
+        "actual_changed_unavailable_targets": 21317,
+        "in_forecast_year_changed_unavailable_targets": 1980
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-09 15:00:00",
+        "actual_changed_unavailable_targets": 21285,
+        "in_forecast_year_changed_unavailable_targets": 1948
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-10 15:00:00",
+        "actual_changed_unavailable_targets": 21255,
+        "in_forecast_year_changed_unavailable_targets": 1918
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-11 15:00:00",
+        "actual_changed_unavailable_targets": 21230,
+        "in_forecast_year_changed_unavailable_targets": 1893
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-12 15:00:00",
+        "actual_changed_unavailable_targets": 21197,
+        "in_forecast_year_changed_unavailable_targets": 1860
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-15 15:00:00",
+        "actual_changed_unavailable_targets": 21167,
+        "in_forecast_year_changed_unavailable_targets": 1830
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-16 15:00:00",
+        "actual_changed_unavailable_targets": 21143,
+        "in_forecast_year_changed_unavailable_targets": 1806
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-17 15:00:00",
+        "actual_changed_unavailable_targets": 21120,
+        "in_forecast_year_changed_unavailable_targets": 1783
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-18 15:00:00",
+        "actual_changed_unavailable_targets": 21090,
+        "in_forecast_year_changed_unavailable_targets": 1753
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-19 15:00:00",
+        "actual_changed_unavailable_targets": 21062,
+        "in_forecast_year_changed_unavailable_targets": 1725
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-22 15:00:00",
+        "actual_changed_unavailable_targets": 21037,
+        "in_forecast_year_changed_unavailable_targets": 1700
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-23 15:00:00",
+        "actual_changed_unavailable_targets": 21020,
+        "in_forecast_year_changed_unavailable_targets": 1683
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-24 15:00:00",
+        "actual_changed_unavailable_targets": 20988,
+        "in_forecast_year_changed_unavailable_targets": 1651
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-25 15:00:00",
+        "actual_changed_unavailable_targets": 20967,
+        "in_forecast_year_changed_unavailable_targets": 1630
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-26 15:00:00",
+        "actual_changed_unavailable_targets": 20961,
+        "in_forecast_year_changed_unavailable_targets": 1624
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-29 15:00:00",
+        "actual_changed_unavailable_targets": 20933,
+        "in_forecast_year_changed_unavailable_targets": 1596
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-30 15:00:00",
+        "actual_changed_unavailable_targets": 20914,
+        "in_forecast_year_changed_unavailable_targets": 1577
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-08-31 15:00:00",
+        "actual_changed_unavailable_targets": 20887,
+        "in_forecast_year_changed_unavailable_targets": 1550
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-01 15:00:00",
+        "actual_changed_unavailable_targets": 20873,
+        "in_forecast_year_changed_unavailable_targets": 1536
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-02 15:00:00",
+        "actual_changed_unavailable_targets": 20865,
+        "in_forecast_year_changed_unavailable_targets": 1528
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-05 15:00:00",
+        "actual_changed_unavailable_targets": 20851,
+        "in_forecast_year_changed_unavailable_targets": 1514
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-06 15:00:00",
+        "actual_changed_unavailable_targets": 20831,
+        "in_forecast_year_changed_unavailable_targets": 1494
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-07 15:00:00",
+        "actual_changed_unavailable_targets": 20810,
+        "in_forecast_year_changed_unavailable_targets": 1473
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-08 15:00:00",
+        "actual_changed_unavailable_targets": 20783,
+        "in_forecast_year_changed_unavailable_targets": 1446
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-09 15:00:00",
+        "actual_changed_unavailable_targets": 20763,
+        "in_forecast_year_changed_unavailable_targets": 1426
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-13 15:00:00",
+        "actual_changed_unavailable_targets": 20748,
+        "in_forecast_year_changed_unavailable_targets": 1411
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-14 15:00:00",
+        "actual_changed_unavailable_targets": 20732,
+        "in_forecast_year_changed_unavailable_targets": 1395
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-15 15:00:00",
+        "actual_changed_unavailable_targets": 20715,
+        "in_forecast_year_changed_unavailable_targets": 1378
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-16 15:00:00",
+        "actual_changed_unavailable_targets": 20706,
+        "in_forecast_year_changed_unavailable_targets": 1369
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-19 15:00:00",
+        "actual_changed_unavailable_targets": 20695,
+        "in_forecast_year_changed_unavailable_targets": 1358
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-20 15:00:00",
+        "actual_changed_unavailable_targets": 20687,
+        "in_forecast_year_changed_unavailable_targets": 1350
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-21 15:00:00",
+        "actual_changed_unavailable_targets": 20675,
+        "in_forecast_year_changed_unavailable_targets": 1338
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-22 15:00:00",
+        "actual_changed_unavailable_targets": 20652,
+        "in_forecast_year_changed_unavailable_targets": 1315
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-23 15:00:00",
+        "actual_changed_unavailable_targets": 20636,
+        "in_forecast_year_changed_unavailable_targets": 1299
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-26 15:00:00",
+        "actual_changed_unavailable_targets": 20625,
+        "in_forecast_year_changed_unavailable_targets": 1288
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-27 15:00:00",
+        "actual_changed_unavailable_targets": 20616,
+        "in_forecast_year_changed_unavailable_targets": 1279
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-28 15:00:00",
+        "actual_changed_unavailable_targets": 20602,
+        "in_forecast_year_changed_unavailable_targets": 1265
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-29 15:00:00",
+        "actual_changed_unavailable_targets": 20569,
+        "in_forecast_year_changed_unavailable_targets": 1232
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-09-30 15:00:00",
+        "actual_changed_unavailable_targets": 20563,
+        "in_forecast_year_changed_unavailable_targets": 1226
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-10 15:00:00",
+        "actual_changed_unavailable_targets": 20556,
+        "in_forecast_year_changed_unavailable_targets": 1219
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-11 15:00:00",
+        "actual_changed_unavailable_targets": 20544,
+        "in_forecast_year_changed_unavailable_targets": 1207
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-12 15:00:00",
+        "actual_changed_unavailable_targets": 20533,
+        "in_forecast_year_changed_unavailable_targets": 1196
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-13 15:00:00",
+        "actual_changed_unavailable_targets": 20516,
+        "in_forecast_year_changed_unavailable_targets": 1179
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-14 15:00:00",
+        "actual_changed_unavailable_targets": 20486,
+        "in_forecast_year_changed_unavailable_targets": 1149
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-17 15:00:00",
+        "actual_changed_unavailable_targets": 20459,
+        "in_forecast_year_changed_unavailable_targets": 1122
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-18 15:00:00",
+        "actual_changed_unavailable_targets": 20418,
+        "in_forecast_year_changed_unavailable_targets": 1081
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-19 15:00:00",
+        "actual_changed_unavailable_targets": 20380,
+        "in_forecast_year_changed_unavailable_targets": 1043
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-20 15:00:00",
+        "actual_changed_unavailable_targets": 20351,
+        "in_forecast_year_changed_unavailable_targets": 1014
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-21 15:00:00",
+        "actual_changed_unavailable_targets": 20335,
+        "in_forecast_year_changed_unavailable_targets": 998
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-24 15:00:00",
+        "actual_changed_unavailable_targets": 20317,
+        "in_forecast_year_changed_unavailable_targets": 980
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-25 15:00:00",
+        "actual_changed_unavailable_targets": 20298,
+        "in_forecast_year_changed_unavailable_targets": 961
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-26 15:00:00",
+        "actual_changed_unavailable_targets": 20288,
+        "in_forecast_year_changed_unavailable_targets": 951
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-27 15:00:00",
+        "actual_changed_unavailable_targets": 20267,
+        "in_forecast_year_changed_unavailable_targets": 930
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-28 15:00:00",
+        "actual_changed_unavailable_targets": 20234,
+        "in_forecast_year_changed_unavailable_targets": 897
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-10-31 15:00:00",
+        "actual_changed_unavailable_targets": 20211,
+        "in_forecast_year_changed_unavailable_targets": 874
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-01 15:00:00",
+        "actual_changed_unavailable_targets": 20204,
+        "in_forecast_year_changed_unavailable_targets": 867
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-02 15:00:00",
+        "actual_changed_unavailable_targets": 20172,
+        "in_forecast_year_changed_unavailable_targets": 835
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-03 15:00:00",
+        "actual_changed_unavailable_targets": 20132,
+        "in_forecast_year_changed_unavailable_targets": 795
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-04 15:00:00",
+        "actual_changed_unavailable_targets": 20093,
+        "in_forecast_year_changed_unavailable_targets": 756
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-07 15:00:00",
+        "actual_changed_unavailable_targets": 20079,
+        "in_forecast_year_changed_unavailable_targets": 742
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-08 15:00:00",
+        "actual_changed_unavailable_targets": 20049,
+        "in_forecast_year_changed_unavailable_targets": 712
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-09 15:00:00",
+        "actual_changed_unavailable_targets": 20031,
+        "in_forecast_year_changed_unavailable_targets": 694
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-10 15:00:00",
+        "actual_changed_unavailable_targets": 20019,
+        "in_forecast_year_changed_unavailable_targets": 682
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-11 15:00:00",
+        "actual_changed_unavailable_targets": 20005,
+        "in_forecast_year_changed_unavailable_targets": 668
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-14 15:00:00",
+        "actual_changed_unavailable_targets": 19989,
+        "in_forecast_year_changed_unavailable_targets": 652
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-15 15:00:00",
+        "actual_changed_unavailable_targets": 19963,
+        "in_forecast_year_changed_unavailable_targets": 626
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-16 15:00:00",
+        "actual_changed_unavailable_targets": 19939,
+        "in_forecast_year_changed_unavailable_targets": 602
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-17 15:00:00",
+        "actual_changed_unavailable_targets": 19899,
+        "in_forecast_year_changed_unavailable_targets": 562
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-18 15:00:00",
+        "actual_changed_unavailable_targets": 19886,
+        "in_forecast_year_changed_unavailable_targets": 549
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-21 15:00:00",
+        "actual_changed_unavailable_targets": 19871,
+        "in_forecast_year_changed_unavailable_targets": 534
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-22 15:00:00",
+        "actual_changed_unavailable_targets": 19851,
+        "in_forecast_year_changed_unavailable_targets": 514
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-23 15:00:00",
+        "actual_changed_unavailable_targets": 19834,
+        "in_forecast_year_changed_unavailable_targets": 497
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-24 15:00:00",
+        "actual_changed_unavailable_targets": 19817,
+        "in_forecast_year_changed_unavailable_targets": 480
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-25 15:00:00",
+        "actual_changed_unavailable_targets": 19799,
+        "in_forecast_year_changed_unavailable_targets": 462
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-28 15:00:00",
+        "actual_changed_unavailable_targets": 19783,
+        "in_forecast_year_changed_unavailable_targets": 446
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-29 15:00:00",
+        "actual_changed_unavailable_targets": 19765,
+        "in_forecast_year_changed_unavailable_targets": 428
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-11-30 15:00:00",
+        "actual_changed_unavailable_targets": 19755,
+        "in_forecast_year_changed_unavailable_targets": 418
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-01 15:00:00",
+        "actual_changed_unavailable_targets": 19707,
+        "in_forecast_year_changed_unavailable_targets": 370
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-02 15:00:00",
+        "actual_changed_unavailable_targets": 19692,
+        "in_forecast_year_changed_unavailable_targets": 355
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-05 15:00:00",
+        "actual_changed_unavailable_targets": 19666,
+        "in_forecast_year_changed_unavailable_targets": 329
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-06 15:00:00",
+        "actual_changed_unavailable_targets": 19638,
+        "in_forecast_year_changed_unavailable_targets": 301
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-07 15:00:00",
+        "actual_changed_unavailable_targets": 19614,
+        "in_forecast_year_changed_unavailable_targets": 277
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-08 15:00:00",
+        "actual_changed_unavailable_targets": 19602,
+        "in_forecast_year_changed_unavailable_targets": 265
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-09 15:00:00",
+        "actual_changed_unavailable_targets": 19589,
+        "in_forecast_year_changed_unavailable_targets": 252
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-12 15:00:00",
+        "actual_changed_unavailable_targets": 19573,
+        "in_forecast_year_changed_unavailable_targets": 236
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-13 15:00:00",
+        "actual_changed_unavailable_targets": 19557,
+        "in_forecast_year_changed_unavailable_targets": 220
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-14 15:00:00",
+        "actual_changed_unavailable_targets": 19541,
+        "in_forecast_year_changed_unavailable_targets": 204
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-15 15:00:00",
+        "actual_changed_unavailable_targets": 19514,
+        "in_forecast_year_changed_unavailable_targets": 177
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-16 15:00:00",
+        "actual_changed_unavailable_targets": 19491,
+        "in_forecast_year_changed_unavailable_targets": 154
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-19 15:00:00",
+        "actual_changed_unavailable_targets": 19483,
+        "in_forecast_year_changed_unavailable_targets": 146
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-20 15:00:00",
+        "actual_changed_unavailable_targets": 19469,
+        "in_forecast_year_changed_unavailable_targets": 132
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-22 15:00:00",
+        "actual_changed_unavailable_targets": 19456,
+        "in_forecast_year_changed_unavailable_targets": 119
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-23 15:00:00",
+        "actual_changed_unavailable_targets": 19450,
+        "in_forecast_year_changed_unavailable_targets": 113
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-26 15:00:00",
+        "actual_changed_unavailable_targets": 19440,
+        "in_forecast_year_changed_unavailable_targets": 103
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-27 15:00:00",
+        "actual_changed_unavailable_targets": 19426,
+        "in_forecast_year_changed_unavailable_targets": 89
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-28 15:00:00",
+        "actual_changed_unavailable_targets": 19400,
+        "in_forecast_year_changed_unavailable_targets": 63
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-29 15:00:00",
+        "actual_changed_unavailable_targets": 19378,
+        "in_forecast_year_changed_unavailable_targets": 41
+      },
+      {
+        "case": "delete_asof_unavailable",
+        "asof": "2022-12-30 15:00:00",
+        "actual_changed_unavailable_targets": 19363,
+        "in_forecast_year_changed_unavailable_targets": 26
+      }
+    ],
+    "no_in_sample_history_transferred": true
+  },
+  "namespace_is_diagnostic_not_extra_alpha": true
+}
