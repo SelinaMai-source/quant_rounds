@@ -1,0 +1,53 @@
+{
+  "observed_at_utc": "2026-11-18T06:00:23.111575+00:00",
+  "status": "PARTIAL_FIVE_OF_SIX_REAL_MODEL_COUNTERFACTUALS_PASSED",
+  "original_seed17_full_models": 54,
+  "cold_full_models": 11,
+  "model_cases_passed": [
+    {
+      "year": 2018,
+      "head": "five",
+      "status": "PASS_FULL_DEFAULT_FIT_AND_CAUSAL_FORECAST_COUNTERFACTUAL",
+      "evidence": "result/round23_7/D4/counterfactual_tests/2018/five/RESULT.json",
+      "full_forecast_rows_exact": 3241,
+      "forecast_replay": "PASS_REAL_FULL_OUTER_FORECAST_REPLAY"
+    },
+    {
+      "year": 2018,
+      "head": "ten",
+      "status": "PASS_FULL_DEFAULT_FIT_AND_CAUSAL_FORECAST_COUNTERFACTUAL",
+      "evidence": "result/round23_7/D4/counterfactual_tests/2018/ten/RESULT.json",
+      "full_forecast_rows_exact": 3241,
+      "forecast_replay": "PASS_REAL_FULL_OUTER_FORECAST_REPLAY"
+    },
+    {
+      "year": 2022,
+      "head": "five",
+      "status": "PASS_FULL_DEFAULT_FIT_AND_CAUSAL_FORECAST_COUNTERFACTUAL",
+      "evidence": "result/round23_7/D4/counterfactual_tests/2022/five/RESULT.json",
+      "full_forecast_rows_exact": 5600,
+      "forecast_replay": "PASS_REAL_FULL_OUTER_FORECAST_REPLAY"
+    },
+    {
+      "year": 2022,
+      "head": "ten",
+      "status": "PASS_FULL_DEFAULT_FIT_AND_CAUSAL_FORECAST_COUNTERFACTUAL",
+      "evidence": "result/round23_7/D4/counterfactual_tests/2022/ten/RESULT.json",
+      "full_forecast_rows_exact": 5600,
+      "forecast_replay": "PASS_REAL_FULL_OUTER_FORECAST_REPLAY"
+    },
+    {
+      "year": 2026,
+      "head": "five",
+      "status": "PASS_FULL_DEFAULT_FIT_AND_CAUSAL_FORECAST_COUNTERFACTUAL",
+      "evidence": "result/round23_7/D4/counterfactual_tests/2026/five/RESULT.json",
+      "full_forecast_rows_exact": 3667,
+      "forecast_replay": "PASS_REAL_FULL_OUTER_FORECAST_REPLAY"
+    }
+  ],
+  "model_cases_remaining": 1,
+  "native_account_comparisons_complete": false,
+  "target_backtest_complete": false,
+  "target_evidence_complete": false,
+  "external_blocker": false
+}
