@@ -1,0 +1,13 @@
+MASTER_PUBLIC_LISTING [{"path": "master-data/opensource.zip", "bytes": 1601703168}, {"path": "master-data/original.zip", "bytes": 2771043827}]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_public.py", line 272, in <module>
+    run(parser.parse_args().list_only)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_public.py", line 259, in run
+    item = download(node)
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_public.py", line 193, in download
+    assert encrypted.exists() and encrypted.stat().st_size == node['s'], 'Public encrypted download incomplete after actual attempts'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Public encrypted download incomplete after actual attempts

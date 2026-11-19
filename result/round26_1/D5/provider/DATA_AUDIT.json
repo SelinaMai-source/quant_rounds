@@ -1,0 +1,13 @@
+{
+  "status": "PROVIDER_COMPLETE",
+  "rows": 14522056,
+  "stocks": 5807,
+  "calendar_dates": 4020,
+  "historical_vendor_revision_PIT": "PARTIALLY_VERIFIED",
+  "raw_data_not_uploaded": true,
+  "source_snapshot": {
+    "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features/manifest.json",
+    "bytes": 538626,
+    "sha256": "281ceafdce0c22b65f4b2820e83284f35027a6a7ad9806ab215a7973983e8eb4"
+  }
+}

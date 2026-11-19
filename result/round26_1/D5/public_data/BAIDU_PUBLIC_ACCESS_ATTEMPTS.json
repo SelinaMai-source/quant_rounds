@@ -1,0 +1,16 @@
+[
+  {
+    "step": "public_page",
+    "status": 200,
+    "share_metadata_available": {
+      "shareid": true,
+      "uk": true
+    }
+  },
+  {
+    "step": "publisher_supplied_password",
+    "status": 200,
+    "errno": 2,
+    "requires_captcha": false
+  }
+]

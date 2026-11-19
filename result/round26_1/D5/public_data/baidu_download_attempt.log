@@ -1,0 +1,7 @@
+[{"step": "owner_fields", "shareid_present": true, "share_uk_present": true, "visitor_uk_differs_from_owner": true}, {"step": "published_password", "errno": 0}, {"step": "correct_owner_file_list", "status": 200, "errno": 0, "files": [{"name": "MASTER-data", "size": "0", "isdir": "1"}]}]
+[{"step": "author_folder_files", "status": 200, "errno": 0, "files": [{"name": "opensource.zip", "size": 1601703168, "isdir": 0}, {"name": "original.zip", "size": 2771043827, "isdir": 0}]}, {"step": "public_download_configuration", "status": 200, "errno": 0, "data_fields": ["master_auto_transfer", "auto_transfer", "timestamp", "sign"]}]
+Traceback (most recent call last):
+  File "/home/mxy/Stock/课题/一进二策略/research/round23_7_26_1_execution/download_master_baidu.py", line 45, in <module>
+    report.append({'step':'public_file_download','errno':result.get('errno'),'download_link_present':bool(result.get('list') and result['list'][0].get('dlink'))})
+                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'

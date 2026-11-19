@@ -1,14 +1,17 @@
 {
-  "status": "FROZEN_NOT_IMPLEMENTED",
+  "status": "IMPLEMENTATION_AND_REAL_DATA_PREPARATION_IN_PROGRESS",
   "IMPLEMENTED": false,
-  "UNIT_TESTED": false,
+  "UNIT_TESTED": true,
   "REFERENCE_RUN_COMPLETE": false,
   "TARGET_OOF_COMPLETE": false,
   "BACKTEST_COMPLETE": false,
   "EVIDENCE_COMPLETE": false,
   "external_blocker": false,
-  "reason": "Freeze only; code and real runs pending, NOT_IMPLEMENTED is not external blockage",
+  "reason": "Actual model/data adapters implemented and source integration passed; complete NN pipeline, real nested OOF and backend backtests remain unfinished. Public reference data retrieval under active investigation; no whole-D5 external blocker.",
   "contract_sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3",
   "CURRENT_BASELINE_CHANGED": false,
-  "PRODUCTION_CONFIG_CHANGED": false
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "MODEL_ARCHITECTURE_INTEGRATION_PASS": true,
+  "EARLY_TARGET_RECOVERED": true,
+  "REAL_INDEX63_COMPLETE": true
 }

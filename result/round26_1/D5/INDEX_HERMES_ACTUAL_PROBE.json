@@ -1,0 +1,9 @@
+[
+  {
+    "source": "clickhouse://127.0.0.1:18123/hermes/mkt_idxd",
+    "HTTP_status": 401,
+    "authentication_failed": false,
+    "credentials_from_existing_environment": false,
+    "password_guessed": false
+  }
+]

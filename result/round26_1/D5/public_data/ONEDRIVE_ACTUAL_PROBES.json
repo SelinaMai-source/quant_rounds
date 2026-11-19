@@ -1,0 +1,28 @@
+[
+  {
+    "endpoint_kind": "anonymous_share_children",
+    "host": "api.onedrive.com",
+    "status": 401,
+    "content_type": "application/json;charset=utf-8",
+    "bytes": 165,
+    "json_top_keys": [
+      "error"
+    ],
+    "error_code": "unauthenticated"
+  },
+  {
+    "endpoint_kind": "anonymous_share_children",
+    "host": "graph.microsoft.com",
+    "status": 401,
+    "content_type": "application/json",
+    "bytes": 237,
+    "json_top_keys": [
+      "error"
+    ],
+    "error_code": "InvalidAuthenticationToken"
+  },
+  {
+    "endpoint_kind": "public_share_probe",
+    "error_type": "SSLError"
+  }
+]

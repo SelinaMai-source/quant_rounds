@@ -1,0 +1,22 @@
+[
+  {
+    "step": "public_share_password",
+    "errno": 0
+  },
+  {
+    "step": "public_share_files",
+    "status": 200,
+    "errno": 2,
+    "files": []
+  },
+  {
+    "step": "download_metadata",
+    "public_fields_present": {
+      "sign": false,
+      "timestamp": false,
+      "shareid": false,
+      "uk": false
+    },
+    "share_cookie_present": true
+  }
+]

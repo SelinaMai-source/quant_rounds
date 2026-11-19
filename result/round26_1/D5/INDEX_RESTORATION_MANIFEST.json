@@ -1,0 +1,97 @@
+{
+  "status": "THREE_REAL_AUTHOR_INDEX_SERIES_RESTORED",
+  "series": [
+    {
+      "code": "sh000300",
+      "source": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+      "provider_name": "沪深300",
+      "rows": 4020,
+      "start": "2010-01-04 00:00:00",
+      "end": "2026-07-24 00:00:00",
+      "raw_response_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_index_sources/000300_public_response.json",
+      "raw_response_bytes": 374166,
+      "raw_response_sha256": "2f920ec1ca3692b59e314c9cece3d7fb92f891a8b4822da56abc1624a7839ef2",
+      "parsed_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_index_sources/000300.parquet",
+      "parsed_sha256": "3b529e6a7d8e987719859a8c07555fea6ffe7c6ce89f6bff507e1cc9fbdd9dcf",
+      "columns": {
+        "trade_date": "datetime64[ns]",
+        "open": "float64",
+        "close": "float64",
+        "high": "float64",
+        "low": "float64",
+        "volume": "int64",
+        "amount": "float64",
+        "amplitude": "float64",
+        "pct_change": "float64",
+        "change": "float64",
+        "turnover": "float64"
+      }
+    },
+    {
+      "code": "sh000905",
+      "source": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+      "provider_name": "中证500",
+      "rows": 4020,
+      "start": "2010-01-04 00:00:00",
+      "end": "2026-07-24 00:00:00",
+      "raw_response_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_index_sources/000905_public_response.json",
+      "raw_response_bytes": 373793,
+      "raw_response_sha256": "98c0a7f978479c1b56eaff4340c14d14bdb6dd86a5beb5b7560eb01c3159dd68",
+      "parsed_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_index_sources/000905.parquet",
+      "parsed_sha256": "410f72b5dd08ecb1f94acb46fa0ca5af4ce8a06e06be0ee50633e9f7b279c578",
+      "columns": {
+        "trade_date": "datetime64[ns]",
+        "open": "float64",
+        "close": "float64",
+        "high": "float64",
+        "low": "float64",
+        "volume": "int64",
+        "amount": "float64",
+        "amplitude": "float64",
+        "pct_change": "float64",
+        "change": "float64",
+        "turnover": "float64"
+      }
+    },
+    {
+      "code": "sh000906",
+      "source": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+      "provider_name": "中证800",
+      "rows": 4020,
+      "start": "2010-01-04 00:00:00",
+      "end": "2026-07-24 00:00:00",
+      "raw_response_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_index_sources/000906_public_response.json",
+      "raw_response_bytes": 376375,
+      "raw_response_sha256": "c813276156a218b9f64ce089d9563998f92164aff6b4195ec6400f253f78ebc0",
+      "parsed_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_index_sources/000906.parquet",
+      "parsed_sha256": "fbbe90ade6524855348f4dbc30fea16cc896d6d8bee74274f8adbbb0d6dd586b",
+      "columns": {
+        "trade_date": "datetime64[ns]",
+        "open": "float64",
+        "close": "float64",
+        "high": "float64",
+        "low": "float64",
+        "volume": "int64",
+        "amount": "float64",
+        "amplitude": "float64",
+        "pct_change": "float64",
+        "change": "float64",
+        "turnover": "float64"
+      }
+    }
+  ],
+  "local_csi300_overlap_check": {
+    "overlap_rows": 4020,
+    "max_abs_close_difference": 0.010000000000218279,
+    "median_amount_ratio_local_over_restored": 1.0,
+    "median_volume_ratio_local_over_restored": 100.0
+  },
+  "raw_data_not_uploaded": true,
+  "unit_audit": {
+    "market_price_unit": "index points; public quote rounded cents, max local CSI300 overlap difference0.01 recorded",
+    "market_amount": "same units as existing local CSI300 amount, overlap median ratio1.0; use actual provider amount, no index volume consumed",
+    "public_index_volume": "provider hands; existing local shares/provider ratio100; not used in any of63 market inputs",
+    "date_cutoff": "all3 exactly2010-01-04..2026-07-24; no post-cutoff observations used",
+    "historical_provider_revision_PIT": "PARTIALLY_VERIFIED market observations, not independent vendor vintage proof"
+  }
+}

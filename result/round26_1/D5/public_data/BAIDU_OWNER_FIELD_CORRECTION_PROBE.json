@@ -1,0 +1,24 @@
+[
+  {
+    "step": "owner_fields",
+    "shareid_present": true,
+    "share_uk_present": true,
+    "visitor_uk_differs_from_owner": true
+  },
+  {
+    "step": "published_password",
+    "errno": 0
+  },
+  {
+    "step": "correct_owner_file_list",
+    "status": 200,
+    "errno": 0,
+    "files": [
+      {
+        "name": "MASTER-data",
+        "size": "0",
+        "isdir": "1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "frozen_at_UTC": "2026-11-19T22:44:36.050368+00:00",
+  "before_any_MASTER_NN_target_fit": true,
+  "unchanged_primary_contract": "CONTRACT.yaml",
+  "sequence_clock": "8 consecutive exchange calendar slots endingD, original Qlib TSDataSampler default fillna_type=none; missing stock slots remain NaN until Fillna0, never use any observation afterD. This is target data adapter clarification; author public dump history inspected separately when recovered.",
+  "normalizer_scope": "all D-known graph current features in first2 training years, original Qlib RobustZScoreNorm, no label filtering; same processor M0/M1",
+  "warmup": "2012 canonical hard-first-board + PIT ST targets reconstructed from actual raw snapshot using original helpers; 2013+ original frozen union keys only. Extra reconstructed 2013/14 keys are diagnostic, never backfilled into canonical domain.",
+  "overlap": "4866 common2013/14 labels exact0 and exit dates exact; 2242 extra early keys retained only in discrepancy artifact",
+  "source_model": "M1 direct import locked author master.py; M0 fixed diagonal spatial logits, all weights retained. Integration verifies full forward/backward/Adam update equality with original.",
+  "train_loss": "all graph nodes forward before legal mature target mask; original tails/Zscore plus frozen p0 fix; zero variance/N<2 skip only gradient date",
+  "full_epoch": "every training graph date visited once in original shuffled date order, source1epoch cap, original Adam/clip3. No model search or sample truncation.",
+  "budget_limitation": "example1full-epoch budget, not paper40epoch numerical reproduction",
+  "evidence": "random architecture integration is not public reference or real-data OOF proof"
+}

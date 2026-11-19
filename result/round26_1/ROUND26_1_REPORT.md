@@ -1,6 +1,6 @@
 # Round26.1
 
-D0已执行。D3当前状态：D3_COMPLETE；原PPO模型 42，真实匹配回测 49。完整方法成绩、范围与未完成状态见D3/REPORT.md、D3/STATUS.json和all_results.csv。D5尚未在本提交执行。
+D0已执行。D3当前状态：D3_COMPLETE；原PPO模型 42，真实匹配回测 49。完整方法成绩、范围与未完成状态见D3/REPORT.md、D3/STATUS.json和all_results.csv。D5已冻结并正在实际实现与准备数据；尚未完成真实NN训练、OOF及回测，不计为已交付。详见D5/REPORT.md和D5/STATUS.json。
 
 CURRENT_BASELINE_CHANGED=FALSE
 PRODUCTION_CONFIG_CHANGED=FALSE
