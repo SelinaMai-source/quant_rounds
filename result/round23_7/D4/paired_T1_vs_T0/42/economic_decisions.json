@@ -1,0 +1,71 @@
+{
+  "TRA_T1_42": {
+    "experiment_id": "TRA_T1_42",
+    "baseline": "TRA_T0_42",
+    "decision": "RESEARCH_CANDIDATE_REQUIRES_COMPLETE_EVIDENCE",
+    "economic_gate_pass": true,
+    "missing_economic_evidence": false,
+    "changed_top1_top2_plan_rows": 1681,
+    "changed_top1_top2_real_entry_rows": 987,
+    "paired_cost_direction": true,
+    "outside_2024_2025_log_relative_wealth": 0.14527734556597544,
+    "delta_cagr_ok": true,
+    "delta_sharpe_ok": true,
+    "nav_improvement_ok": true,
+    "top_changed_ok": true,
+    "maxdd_ok": true,
+    "fee_direction_ok": true,
+    "not_only_2024_or_2025": true,
+    "gate": {
+      "implementation": "CORRECTED",
+      "gate_id": "R21_3_ECONOMIC_MATERIALITY_V1",
+      "compare_to": "TRA_T0_42",
+      "delta_cagr": 0.024848483023076184,
+      "delta_sharpe": 0.2000672185802246,
+      "delta_maxdd": 0.022991915477802438,
+      "nav_improvement": 0.24410600398663762,
+      "delta_terminal_nav_rmb": 52099.67938042426,
+      "relative_terminal_nav_change": 0.24410600398663762,
+      "nav_improvement_ok": true,
+      "flags": {
+        "delta_cagr_ok": true,
+        "delta_sharpe_ok": true,
+        "nav_improvement_ok": true,
+        "top_changed_ok": true,
+        "maxdd_ok": true,
+        "fee_direction_ok": true,
+        "not_only_2024_or_2025": true
+      },
+      "statuses": {
+        "delta_cagr": "PASS",
+        "delta_sharpe": "PASS",
+        "nav_improvement": "PASS",
+        "top_changed": "PASS",
+        "maxdd": "PASS",
+        "fee_direction": "PASS",
+        "not_only_year": "PASS"
+      },
+      "economically_material": true,
+      "promotion_blocked_missing_evidence": false,
+      "evidence": {
+        "top_changed": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "fee_same_direction": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        },
+        "not_only_year": {
+          "value": true,
+          "status": "PASS",
+          "ok": true
+        }
+      }
+    },
+    "automatic_promotion": false,
+    "top_change_threshold": "inherited>0, no post-result threshold changes"
+  }
+}

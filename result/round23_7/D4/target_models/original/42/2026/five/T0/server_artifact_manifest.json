@@ -1,0 +1,74 @@
+[
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/ADAPTER_SOURCE_PROVENANCE.json",
+    "bytes": 12445,
+    "sha256": "09da2d0954b34eafb9a36183b1a281839c8974fbf2581e1a9a2e72c3d9e03df9"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/COMPLETE.json",
+    "bytes": 1636,
+    "sha256": "5478418a77b76c11ce0d2116aad9371d5cc7c0b4f77035b813e17cc6e628de5c"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/FINAL_SAVED_EXPERT_OUTPUTS.npz",
+    "bytes": 14943,
+    "sha256": "72fb0f2452f4e6b549dcb02784023536a14c1ea592041f4fa70f75e5c175459a"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/FIT_AUDIT.json",
+    "bytes": 4441,
+    "sha256": "a3da12ec11dace0625c9cbdcc069bca9ae2851c7b410fa884631a0d9239dd650"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/LIVE.json",
+    "bytes": 233,
+    "sha256": "cf8adacd0a5c1c02c88c2492a72dc609ca75493a85960622ba0ef5f069704383"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/OUTER_INITIAL_MEMORY.npz",
+    "bytes": 1042,
+    "sha256": "fb6c3f35c0430324938ba4f8629af7ae05256a30a4ab6184314fad93fe9acc35"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/OUTER_INITIAL_TORCH_RNG.pt",
+    "bytes": 6633,
+    "sha256": "f119a4274118a6c4b75e7679cbe06bc25a67eedc181a43a7921468827261e170"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/RESOURCES.json",
+    "bytes": 467,
+    "sha256": "b9ec61cd7fe129c546e1bb0ec59e0e3bb01e126de12569525e3c74630e92e052"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/contract.json",
+    "bytes": 20517,
+    "sha256": "af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/forecast.parquet",
+    "bytes": 43733,
+    "sha256": "c467eee657f1affbb56464aa13b5313f642888f5bf9248bdc1e6cec9f0e9d760",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: float\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 459",
+    "rows": 3667
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/info.json",
+    "bytes": 690,
+    "sha256": "595ff94b68ef6deceacea5bcc334c7209f953f819d877daa2f281954b4030b88"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/logs.csv",
+    "bytes": 7354,
+    "sha256": "e054f61f7bc523165bc751d455de3e5a1c136a5afc3c48a60ebdc6c9caf2d594"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/model.bin",
+    "bytes": 3457340,
+    "sha256": "a73dc52518a04486282f5dfe1c0b1533633eb8ce54bd89bca7fd83d0993e43bd"
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/42/2026/five/T0/af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4/pred.pkl",
+    "bytes": 138995,
+    "sha256": "b925edbd01bbcb48244366e3f04eae25445393b1dea835f40e57183ba808723e"
+  }
+]

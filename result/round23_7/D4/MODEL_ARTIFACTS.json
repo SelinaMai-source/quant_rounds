@@ -8602,5 +8602,6917 @@
       "bytes": 19928,
       "sha256": "d492039f8f0a07ebaf98497ae2ac079d527e0193a0da16cd3392c6a72b9b695b"
     }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "16cabd577693715f11b6d1696fa4097d6f5ebe4ea2f6fe99cd7c6602e7282648",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/five/T0/contract.json",
+      "bytes": 20517,
+      "sha256": "2cd97fdf53ce2c658ad034298f186263b36cf043eff4878a02cc75a73c2be436"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "67210d37cc1db8a25347bac9b57407235da44e0a35a616f45636296635f38415",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/five/T1/contract.json",
+      "bytes": 20518,
+      "sha256": "50b10aa95302188e729ff058459ab3610f4c99333a0530c1b06faeb2c222a836"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "af55701a64469b993f57fb64354c5b5c7abf9ea699814775f6582a2f849507b6",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/five/init/contract.json",
+      "bytes": 19931,
+      "sha256": "2edc6955fdcb16b4378dba00d45cb447614be499c08ae7ff68d5b49b4b35d60e"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "f43a7bdb3b2e50882c4ef2e26fb2000490c706169456ea2010a78b261e26cba6",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/ten/T0/contract.json",
+      "bytes": 20512,
+      "sha256": "1fae8decbd1c9dbbf8290cc6b1663ceb740a3a0be073ed5f9182437c41c467d9"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "fba371047274c60c07ecbde721650d51f8b92b31c11a3533ff517a2e286afd32",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/ten/T1/contract.json",
+      "bytes": 20513,
+      "sha256": "f2d9112255d295a449a9424fec0c628c18cfb42577dbcde2f84e49d6facc6a25"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "1a2a9ddb8d461eb269b04eb1d0f4df18d5d646095c11413f96b77ff5a7f710ac",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2018/ten/init/contract.json",
+      "bytes": 19928,
+      "sha256": "a9fed292b525fa2ec435aee79c9676ff71334dc1d8d6011ab11cfbc5c465ae53"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "675092a6ccd949622b807a01b9d1fb521efb01450a3c706326df08b2e63d488b",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/five/T0/contract.json",
+      "bytes": 20516,
+      "sha256": "08ceb3915367948c198454276f624fe840befed6985313fd56865ea53f28a0e0"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "cf47d8958fd7af82d5d2b57eaa9319b7661f65b90abe601bbd9d1bd767534848",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/five/T1/contract.json",
+      "bytes": 20517,
+      "sha256": "d4f2826cb597f568964f9b276003a3e86205c406e0249a6e84af27d074d005a2"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "d8872acbe7ced5318deb01e1d23e47a1a7f950b6572326a3045961fe84189156",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/five/init/contract.json",
+      "bytes": 19930,
+      "sha256": "08536b2c901ce221ac0917a0479564283dd3bf6796477448a75ecf7f1c977107"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "c54e4395c46a7f6bfd2e426af44557d550e248aafbea014ddcfce3fa5732600a",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/ten/T0/contract.json",
+      "bytes": 20511,
+      "sha256": "cec20b53f8e975a7fc1b052836b9d003fd4417e97957a395c6225b2792c8ab55"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "2d1cd67236a5e863a9860c72aca36ce67692aaabdcaf763cc05bafd9af762bb8",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/ten/T1/contract.json",
+      "bytes": 20512,
+      "sha256": "783f3e295e7a612dd6cf995e7478328dd9f431d1a7923ecdef003456beff1226"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "666d5db2bc4fa3c3ed0f24bd15275300cf7ff04b2a0bdf7170ff6bc98465e840",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2019/ten/init/contract.json",
+      "bytes": 19927,
+      "sha256": "88c35dcbb1e3984489a1cd8bbc6ed85b1aa24aac27392506af21c7cb5a47087a"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "61ab5902c0a9ebdd36b70e944b79e7b47ffd922a94253cc7dc546ddfa79e0338",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/five/T0/contract.json",
+      "bytes": 20516,
+      "sha256": "3972e9b8c11c3e41f8a91a735a630ff607bc32d78203d2443d55cf205fbda9f4"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "27d238365e325ee6c612fe9bbc83f8d525ed63085e8eaf7412af26ca11bcb518",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/five/T1/contract.json",
+      "bytes": 20517,
+      "sha256": "108a90df013723e24e0a76942e6e7401bea1df3ee7598cc4d4968112b57ac404"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "5d03556fb905bf6b73003c58b2fe9b6493be3aaaba03e93c998f4097b9a639bf",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/five/init/contract.json",
+      "bytes": 19930,
+      "sha256": "cfb5abe26eedbccece6e9b6a317d99c3e3cfc67ebb1b539303916b407ac9a5e9"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "c5f2829d5ffd721c5d62ac6d756bb475e313b3cbccf0b843caabf9a901e9baf5",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/ten/T0/contract.json",
+      "bytes": 20511,
+      "sha256": "76570c9a9143909ff04a2403fa857f057f06d7ad6c993db16fbdc189ec38e097"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "0315e91c74650df46c992cb2e6194255b71ab57e74f44e699e24582e592ea93a",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/ten/T1/contract.json",
+      "bytes": 20512,
+      "sha256": "a1a1757f46fc3b0bf8b089470a67a4d4c62898cf8717f75ef28543ad65356a01"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "3074f6f4b2562db03ee426851e80ef87a153170d972c5975f83d5bac6b116ccc",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2020/ten/init/contract.json",
+      "bytes": 19927,
+      "sha256": "268c78b862ad72e751a3ca27e68464d7eba8d5e777e933288f3dd8262256a263"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "d2eaa59186b8a1f152a69158c0b82f92a1240fa26caf2504fff8b18a4187cf7d",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/five/T0/contract.json",
+      "bytes": 20516,
+      "sha256": "aa2d9c0c6f27fa479568d6d25518578f98f0c22180fb4f10c731d86f4a0855a7"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "a45e93ac214f0ac61dda0f81fdaf875aa0b00dba86117e97623b1734f7473556",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/five/T1/contract.json",
+      "bytes": 20517,
+      "sha256": "5fb3d28b0be08ec61c88658a0a0097c7874d6331c5049eaf052d41ba3370928e"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "71f865910e248e222fbd50463ac6b818cda1758cd7fc62511cf25212ec464d9d",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/five/init/contract.json",
+      "bytes": 19930,
+      "sha256": "9f8d49c70f3b4176c8655ea32625facfbf1ad5dd9e0c7677d33f4d20efd8c93d"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "590dfcc5d3e28e79467a6df5a9e1d691fa9943c83f936a42b37097b1e1041c22",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/ten/T0/contract.json",
+      "bytes": 20511,
+      "sha256": "bbf76d467df2345389eb11c0d6c07f01058eaadb0b6db377c3ef3e75c26c90f9"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "76263cedb1191b201b1638a7227d34b531fca24bc1cab40db07f326b82e6c388",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/ten/T1/contract.json",
+      "bytes": 20512,
+      "sha256": "6c41bc1fea6e7ddc692ecf6fe2462b97bb5937ef02a04ab3ec9463d8664cbefc"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "40cba9030a96609e237980d84a8ebd4a2a00adcb7ecfd6039a0642e8ea14735c",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2021/ten/init/contract.json",
+      "bytes": 19927,
+      "sha256": "0c332776f13a35947dcac39cc73aa9f98fae05f8ceed67c01661875374c666f6"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "f8520bb6c559047991265f7904e514f87e8829c0b2de1b635807ddf374cde529",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/five/T0/contract.json",
+      "bytes": 20517,
+      "sha256": "0659f422c2ca3ae07f9125a2ac11f579bbaad57643459cf12433df8dece64d29"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "2aa77da4d85ef5eb47c8fcf46cac472f81d56cb0b0413efe3479fef719cdd542",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/five/T1/contract.json",
+      "bytes": 20518,
+      "sha256": "2029d721f73ad172ad6f3eee030ea5b418d46d285f009597acf08817adfc5d4d"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "6e610eeafce85a61dfab76e6c8be68285f7ea4cc11d0237710a9e78f1e9bb97a",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/five/init/contract.json",
+      "bytes": 19931,
+      "sha256": "36339930d8d9e0353c906785549837f09c43468b9b0cd213259b5a6f8ae98893"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "5243b525c662a7aa8ea637d59cb8b7d7fcb3f88f7c10545226dcc3a411e5bf72",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/ten/T0/contract.json",
+      "bytes": 20512,
+      "sha256": "642882c68446cf92e0760cad94de6b11a2c852a9d69d1f02f2f9c5a5d01700ed"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "5549bd85ae9afb12c414eb4bbe76d9a7cdd874ba1fd1c3f5d09a49b14a2d0c90",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/ten/T1/contract.json",
+      "bytes": 20513,
+      "sha256": "c6b1a37a2b27d9a1e09928e7010e0606b283d0aa9189ef10d1d9aa4bb784eb7f"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "31d2d25280683cc68616f7a27e12c4c63809e1abf61e91d3083c1468659d6d2a",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2022/ten/init/contract.json",
+      "bytes": 19928,
+      "sha256": "0bcbf52a6a29a2153fcf074699bff8b11d821fe03ab646bd81e3cb97122ed064"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "50c18f55ae344e1704ef772706370a5a3229148a5d93e4c8c99de03df42f1fff",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/five/T0/contract.json",
+      "bytes": 20518,
+      "sha256": "0ee25be3e41da53b80453d68852d0c79d5cce06e0ca041ef5f31ccd3bbdf5084"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "3a4488972f518b70db4ba35fe79701956d13b20e2bbb82ee96984f6363349f99",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/five/T1/contract.json",
+      "bytes": 20519,
+      "sha256": "0bfb097911444150c9db752c3239441a0873b7d955264dd6b092130d4d3b96d4"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "34c55fa8b44664794b93b359d95ae33dda8b2f9715d2ed9d89243cbc6ce9ac07",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/five/init/contract.json",
+      "bytes": 19932,
+      "sha256": "8cc03772d34a65122514e7eff03a5d8a0ea0402885bda969e629047801dec6d3"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "839c8dbc9f5fe42b468e884e64146df8459823ed792dee57f6c4bf21c80206e5",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/ten/T0/contract.json",
+      "bytes": 20513,
+      "sha256": "0e74c73aafa5c4bd62643d2a621139b405fa0c28d19df5be9015fa54bacbd317"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "43b9f763526f3ae6366efcba35194df7e6d486fecfe27e0546b99eea5a50451d",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/ten/T1/contract.json",
+      "bytes": 20514,
+      "sha256": "80a245e2ec345a43281af9f8998cc36031df729982c557a6630145d84ac788d9"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "3562942eb0d808113ce2e67f12cd67e99d9d3ca98791aa80976e89cb7823965d",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2023/ten/init/contract.json",
+      "bytes": 19929,
+      "sha256": "7f954638231615177163136fedada144a5bc7e031f0f07d04946d88bbc09df38"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "8ce2d39831f8cb1c352edc17175bba3a0d1aeb54df8ae8ebf6a007fa718c8cd4",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/five/T0/contract.json",
+      "bytes": 20518,
+      "sha256": "b75415a0a6a543389ecce74454bc1c9d690e79d9e42e739d5d7a57f103056b1f"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "8448bc13eb51e9bb328e289a0120bda7dbe4b2920d28ebe90bcad6f9094037b8",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/five/T1/contract.json",
+      "bytes": 20519,
+      "sha256": "fb651a02b5d7cb4813b6625d3855169eaff4c0d9e9ac29a4ee2f567947da313b"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "5d87dcc3127cfb69cec71083f0f8168cb970dfd4cbe0458a1f0c9991beb3e42a",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/five/init/contract.json",
+      "bytes": 19932,
+      "sha256": "d09a37715361a0920f215d377018aaf18637bdfc045de745742ac458e7335e1f"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "af5dd3b91ba8b8c687ed3f8838145013e5941d8757972619b2dc122f971e74ad",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/ten/T0/contract.json",
+      "bytes": 20513,
+      "sha256": "7ecc0bab10c645ebc91a6af293265fdc006b5c5dc0bb1a8db976c21b562ec81d"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "90243e2568313ac2506cfb348ec7e10b925e7298c1ee381f973014de29d696a8",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/ten/T1/contract.json",
+      "bytes": 20514,
+      "sha256": "8492dda002a32e0f510ace842eed130f67d860c6013744866830b7b72c2dffda"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "ce09470840e493f6f75bdb9d3833b038b424f0dce2565c9f25ed4b74c5509d4e",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2024/ten/init/contract.json",
+      "bytes": 19929,
+      "sha256": "7ce8376b8bfa2025d2abb7175a2a5e0eec5a6969695635e7e4303f27008dd2b3"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "45f821c253beb78a14f7685034973b240dc252480a273214506bad87c15b6a24",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/five/T0/contract.json",
+      "bytes": 20516,
+      "sha256": "dbab9a554b9c8882d78b2899caf39abd0d97c2aec2f48b67270d5905176ce848"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "ce9b73c25b7c6fa74893fe06f4ea19a69a2b70baf916243cef5462bc1e98e939",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/five/T1/contract.json",
+      "bytes": 20517,
+      "sha256": "9dfe83461b09a4656140fc5a106177035e2c8a6c67d8d480a6c8a942acfe77d8"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "a460c9651b5f0681b6b2ffe86fe974e180d3a95b6905482c61156ad998fd865f",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/five/init/contract.json",
+      "bytes": 19930,
+      "sha256": "1dd6636f0db86f760c752fa9392ca961ac3beb4b3592beb657de88d9ef7b8ea1"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "629567267614532bc685d3113bbe58d9f252475d6eb9d777fc93899e981109ca",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/ten/T0/contract.json",
+      "bytes": 20511,
+      "sha256": "b83c348517dc9531948b6eacba54808513462032013a1908b7539624219d8aa2"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "75d4bbf8a5b6c59b78de12228447dbc9a598932fa9de38e91b54702b6504131e",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/ten/T1/contract.json",
+      "bytes": 20512,
+      "sha256": "b9146885ef288375b01693cd1973b3389b43cfa40f9737e323566621ae858dd0"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "221088cbfb51c8a87f77a6b6f712c181e7785cbbf08eb50a1e8ca28dae4c152c",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2025/ten/init/contract.json",
+      "bytes": 19927,
+      "sha256": "ff380238827e4436c75c96f62e23b492d7d59cf47efa3c147259dddb291aac96"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/five/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "a73dc52518a04486282f5dfe1c0b1533633eb8ce54bd89bca7fd83d0993e43bd",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/five/T0/contract.json",
+      "bytes": 20517,
+      "sha256": "af0e47006a6c2da032a76fa386bc59bfd874a122ea5be2fa342f7edb7bbae7c4"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/five/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "bb35bff72caef9e6544fecebde5e4356b4c25cc96c1dbcb2a43a9237ebdfc451",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/five/T1/contract.json",
+      "bytes": 20518,
+      "sha256": "9656fbd15c5c86a029c918d17da4f5bf5f6d136896b38f5307f604fed4d71717"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/five/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "5030b7288e46336f9f3e483ac2cfd5e82863f51a3af9844912c95d1b1dae5ed1",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/five/init/contract.json",
+      "bytes": 19931,
+      "sha256": "9c43f80edb8db10237e002a494f651b3c6dbe56588115d10a79be80d5dcd0f44"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/ten/T0/model.bin",
+    "bytes": 3457340,
+    "sha256": "44093a180daf5fc019a339c2962d90bf3018ed744325903f39d2e303941cb756",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "predictors.weight": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/ten/T0/contract.json",
+      "bytes": 20512,
+      "sha256": "0f4d26b6a4f402ce094742ad1a135a1634bb4030d90e4fe2376b879da28583a9"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/ten/T1/model.bin",
+    "bytes": 3505706,
+    "sha256": "f2c4460ccd1f5de43b165723d472f88468fe3f06cbf33a997326715c711a8e99",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            10,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            10,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            10
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/ten/T1/contract.json",
+      "bytes": 20513,
+      "sha256": "ed7f00f19bce0768d6e3353f94faaa9656b363b6155e0501c4e5c3202e5035a5"
+    }
+  },
+  {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/ten/init/model.bin",
+    "bytes": 3474794,
+    "sha256": "59889fd6aa3318023810badadc90de2c64e38c1b965b4cca311146d25b57fcea",
+    "format": "torch state dictionaries: model, tra",
+    "tensor_schema": {
+      "model": {
+        "rnn.weight_ih_l0": {
+          "shape": [
+            1024,
+            6
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l0": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l0": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_ih_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.weight_hh_l1": {
+          "shape": [
+            1024,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_ih_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "rnn.bias_hh_l1": {
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.weight": {
+          "shape": [
+            256,
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "W.bias": {
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32"
+        },
+        "u.weight": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "tra": {
+        "router.weight_ih_l0": {
+          "shape": [
+            64,
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.weight_hh_l0": {
+          "shape": [
+            64,
+            16
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_ih_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "router.bias_hh_l0": {
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.weight": {
+          "shape": [
+            3,
+            528
+          ],
+          "dtype": "torch.float32"
+        },
+        "fc.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.weight": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "torch.float32"
+        },
+        "predictors.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        }
+      }
+    },
+    "contract": {
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/target_models/original/42/2026/ten/init/contract.json",
+      "bytes": 19928,
+      "sha256": "92c7aed2be45c553ccb87b5076fcfb2d0755ec613ed4e459f37344945866b68e"
+    }
   }
 ]

@@ -7,14 +7,15 @@
   "BACKTEST_COMPLETE": false,
   "EVIDENCE_COMPLETE": false,
   "completed_seed_paths": [
-    17
+    17,
+    42
   ],
-  "last_checkpoint_seed": 17,
-  "configured_original_target_models_completed": 54,
+  "last_checkpoint_seed": 42,
+  "configured_original_target_models_completed": 108,
   "configured_counterfactual_target_models_completed": 12,
   "failed_registry_rows": 0,
   "full_model_counterfactual_status": "PASS_SIX_REAL_FULL_BUDGET_CASES",
-  "actual_native_economic_configurations": 12,
+  "actual_native_economic_configurations": 18,
   "CURRENT_BASELINE_CHANGED": false,
   "PRODUCTION_CONFIG_CHANGED": false,
   "external_blocker": false,
