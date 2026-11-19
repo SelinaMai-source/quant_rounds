@@ -1,0 +1,45 @@
+{
+  "source": "https://mega.nz/folder/MS8mUTbL#qeVz3KR1-MyXc_uLPtkvTg",
+  "files": [
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_public/extracted/opensource/csi300_dl_test.pkl",
+      "bytes": 170867794,
+      "sha256": "d05194f2b8d0a1d94e79a13abc2702e1c16c9d8e514ead3ea1b41d4de07cfd95",
+      "archive_CRC_verified": true,
+      "contract": {
+        "archive_sha256": "bbfa32b032249c9efa50abf3c74b2ee7adfb78eae6986bad9b012252492763c2",
+        "member": "opensource/csi300_dl_test.pkl",
+        "bytes": 170867794,
+        "CRC32": 935241562
+      },
+      "cache_hit": false
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_public/extracted/opensource/csi300_dl_train.pkl",
+      "bytes": 802342540,
+      "sha256": "3b2871a360c0957ec9759bd995ad26324592934c1e271e0798648c2017852714",
+      "archive_CRC_verified": true,
+      "contract": {
+        "archive_sha256": "bbfa32b032249c9efa50abf3c74b2ee7adfb78eae6986bad9b012252492763c2",
+        "member": "opensource/csi300_dl_train.pkl",
+        "bytes": 802342540,
+        "CRC32": 2032100207
+      },
+      "cache_hit": false
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_public/extracted/opensource/csi300_dl_valid.pkl",
+      "bytes": 18329651,
+      "sha256": "7abd9b3ff8cc72400b6fcc4c9fa3875cfd2b644f3f1eb1089ed9e9d5eb15ea11",
+      "archive_CRC_verified": true,
+      "contract": {
+        "archive_sha256": "bbfa32b032249c9efa50abf3c74b2ee7adfb78eae6986bad9b012252492763c2",
+        "member": "opensource/csi300_dl_valid.pkl",
+        "bytes": 18329651,
+        "CRC32": 2167403147
+      },
+      "cache_hit": false
+    }
+  ],
+  "status": "PUBLIC_FILES_CONTENT_VERIFIED"
+}

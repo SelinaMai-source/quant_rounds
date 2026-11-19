@@ -1,0 +1,14 @@
+Canonical daily features 3451296
+/data1/stock-mxy/src/first_board_hermes/candidate_alignment.py:113: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  | work["previous_paused"].fillna(True).astype(bool)
+Recovered D-known targets 6172
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_early_targets.py", line 63, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_early_targets.py", line 61, in run
+    assert maxerror<=1e-12 and dates_equal and missing==0 and len(newonly)==0, 'Canonical overlap mismatch; preserve audit before further use'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Canonical overlap mismatch; preserve audit before further use

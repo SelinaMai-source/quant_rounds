@@ -1,0 +1,168 @@
+{
+  "status": "PASS_ORIGINAL_ALPHA158_REAL_SOURCE_RECOMPUTATION",
+  "cases": [
+    {
+      "year": 2015,
+      "decision": "2015-01-05",
+      "instrument": "000001.XSHE",
+      "mutation": "original",
+      "actual_future_stock_rows_intervened": 0,
+      "historical_rows_compared": 1213,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2015/original/actual_Alpha158.parquet",
+        "bytes": 2828158,
+        "sha256": "6e96607820152482e8da0b855d3f82446860fd6b20755d165d343b0ebb3b6949",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2015/original/provider"
+    },
+    {
+      "year": 2015,
+      "decision": "2015-01-05",
+      "instrument": "000001.XSHE",
+      "mutation": "future_CA_factor3",
+      "actual_future_stock_rows_intervened": 2807,
+      "historical_rows_compared": 1213,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2015/future_CA_factor3/actual_Alpha158.parquet",
+        "bytes": 2835342,
+        "sha256": "a19d93760fcb1940e03f69d600875cb6aaab76ae193a39ace39505e34a597314",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2015/future_CA_factor3/provider"
+    },
+    {
+      "year": 2015,
+      "decision": "2015-01-05",
+      "instrument": "000001.XSHE",
+      "mutation": "future_delete",
+      "actual_future_stock_rows_intervened": 2807,
+      "historical_rows_compared": 1213,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2015/future_delete/actual_Alpha158.parquet",
+        "bytes": 914407,
+        "sha256": "369b153f055e77b3d904c4d47a46ff17f1de2cb8e087323da356b828a71b37a7",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2015/future_delete/provider"
+    },
+    {
+      "year": 2021,
+      "decision": "2021-01-04",
+      "instrument": "000001.XSHE",
+      "mutation": "original",
+      "actual_future_stock_rows_intervened": 0,
+      "historical_rows_compared": 2675,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2021/original/actual_Alpha158.parquet",
+        "bytes": 2828158,
+        "sha256": "6e96607820152482e8da0b855d3f82446860fd6b20755d165d343b0ebb3b6949",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2021/original/provider"
+    },
+    {
+      "year": 2021,
+      "decision": "2021-01-04",
+      "instrument": "000001.XSHE",
+      "mutation": "future_CA_factor3",
+      "actual_future_stock_rows_intervened": 1345,
+      "historical_rows_compared": 2675,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2021/future_CA_factor3/actual_Alpha158.parquet",
+        "bytes": 2831263,
+        "sha256": "c27915103b7bfbbebd923da6571ad54d3cbd380deef1fcfe19e88618eb8ded54",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2021/future_CA_factor3/provider"
+    },
+    {
+      "year": 2021,
+      "decision": "2021-01-04",
+      "instrument": "000001.XSHE",
+      "mutation": "future_delete",
+      "actual_future_stock_rows_intervened": 1345,
+      "historical_rows_compared": 2675,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2021/future_delete/actual_Alpha158.parquet",
+        "bytes": 1924249,
+        "sha256": "77581f446abef0ffda4dfd3fa8d67cdc76b70f9aec32c34b3a9780aa315cf42c",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2021/future_delete/provider"
+    },
+    {
+      "year": 2026,
+      "decision": "2026-01-05",
+      "instrument": "000001.XSHE",
+      "mutation": "original",
+      "actual_future_stock_rows_intervened": 0,
+      "historical_rows_compared": 3887,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2026/original/actual_Alpha158.parquet",
+        "bytes": 2828158,
+        "sha256": "6e96607820152482e8da0b855d3f82446860fd6b20755d165d343b0ebb3b6949",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2026/original/provider"
+    },
+    {
+      "year": 2026,
+      "decision": "2026-01-05",
+      "instrument": "000001.XSHE",
+      "mutation": "future_CA_factor3",
+      "actual_future_stock_rows_intervened": 133,
+      "historical_rows_compared": 3887,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2026/future_CA_factor3/actual_Alpha158.parquet",
+        "bytes": 2828885,
+        "sha256": "27f5b6341266cd6c473e587b9fe34dbbbf4ad6257869afaff2dabbf3142487ad",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2026/future_CA_factor3/provider"
+    },
+    {
+      "year": 2026,
+      "decision": "2026-01-05",
+      "instrument": "000001.XSHE",
+      "mutation": "future_delete",
+      "actual_future_stock_rows_intervened": 133,
+      "historical_rows_compared": 3887,
+      "features": 158,
+      "historical_values_bitexact_including_missingness": true,
+      "source": {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2026/future_delete/actual_Alpha158.parquet",
+        "bytes": 2746955,
+        "sha256": "21b88e2af50e495884ffd5081ccc3198b5bed6255006eb2958d1c73f5df89002",
+        "schema": "KMID: float\nKLEN: float\nKMID2: float\nKUP: float\nKUP2: float\nKLOW: float\nKLOW2: float\nKSFT: float\nKSFT2: float\nOPEN0: float\nHIGH0: float\nLOW0: float\nVWAP0: float\nROC5: float\nROC10: float\nROC20: float\nROC30: float\nROC60: float\nMA5: float\nMA10: float\nMA20: float\nMA30: float\nMA60: float\nSTD5: float\nSTD10: float\nSTD20: float\nSTD30: float\nSTD60: float\nBETA5: float\nBETA10: float\nBETA20: float\nBETA30: float\nBETA60: float\nRSQR5: float\nRSQR10: float\nRSQR20: float\nRSQR30: float\nRSQR60: float\nRESI5: float\nRESI10: float\nRESI20: float\nRESI30: float\nRESI60: float\nMAX5: float\nMAX10: float\nMAX20: float\nMAX30: float\nMAX60: float\nMIN5: float\nMIN10: float\nMIN20: float\nMIN30: float\nMIN60: float\nQTLU5: float\nQTLU10: float\nQTLU20: float\nQTLU30: float\nQTLU60: float\nQTLD5: float\nQTLD10: float\nQTLD20: float\nQTLD30: float\nQTLD60: float\nRANK5: float\nRANK10: float\nRANK20: float\nRANK30: float\nRANK60: float\nRSV5: float\nRSV10: float\nRSV20: float\nRSV30: float\nRSV60: float\nIMAX5: float\nIMAX10: float\nIMAX20: float\nIMAX30: float\nIMAX60: float\nIMIN5: float\nIMIN10: float\nIMIN20: float\nIMIN30: float\nIMIN60: float\nIMXD5: float\nIMXD10: float\nIMXD20: float\nIMXD30: float\nIMXD60: float\nCORR5: float\nCORR10: float\nCORR20: float\nCORR30: float\nCORR60: float\nCORD5: float\nCORD10: float\nCORD20: float\nCORD30: float\nCORD60: float\nCNTP5: float\nCNTP10: float\nCNTP20: float\nCNTP30: float\nCNTP60: float\nCNTN5: float\nCNTN10: float\nCNTN20: float\nCNTN30: float\nCNTN60: float\nCNTD5: float\nCNTD10: float\nCNTD20: float\nCNTD30: float\nCNTD60: float\nSUMP5: float\nSUMP10: float\nSUMP20: float\nSUMP30: float\nSUMP60: float\nSUMN5: float\nSUMN10: float\nSUMN20: float\nSUMN30: float\nSUMN60: float\nSUMD5: float\nSUMD10: float\nSUMD20: float\nSUMD30: float\nSUMD60: float\nVMA5: float\nVMA10: float\nVMA20: float\nVMA30: float\nVMA60: float\nVSTD5: float\nVSTD10: float\nVSTD20: float\nVSTD30: float\nVSTD60: float\nWVMA5: float\nWVMA10: float\nWVMA20: float\nWVMA30: float\nWVMA60: float\nVSUMP5: float\nVSUMP10: float\nVSUMP20: float\nVSUMP30: float\nVSUMP60: float\nVSUMN5: float\nVSUMN10: float\nVSUMN20: float\nVSUMN30: float\nVSUMN60: float\nVSUMD5: float\nVSUMD10: float\nVSUMD20: float\nVSUMD30: float\nVSUMD60: float\ninstrument: string\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"instrument\", \"datetime\"], \"column_indexes\": ' + 18185",
+        "rows": 4020
+      },
+      "provider_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_feature_interventions/2026/future_delete/provider"
+    }
+  ],
+  "scope": "Original Qlib full-series expressions, actual future price/volume CA-event and missing-input intervention. Context re-selection and actual cold NN fits are separate tests."
+}

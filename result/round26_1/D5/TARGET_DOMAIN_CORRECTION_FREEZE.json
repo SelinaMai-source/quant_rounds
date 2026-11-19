@@ -1,0 +1,18 @@
+{
+  "at_UTC": "2026-11-19T23:42:14.444087+00:00",
+  "status": "FROZEN_BEFORE_CORRECTED_TARGET_FITS",
+  "supersedes": "Erroneous hard+ST-only2012 recovery interpretation in TARGET_COMPATIBILITY_FREEZE. Primary CONTRACT unchanged; all model params, seeds, windows, gates and budgets unchanged.",
+  "warmup2012_legal_targets": 1302,
+  "qualification": "Original apply_ai071_candidate_filters: hard board, PIT-ST,listing60,amount50m,floatMV1b,no one-word/BJ/resume anomaly; fail closed on missing inputs. Actual daily_valuation and raw2010+ inputs restored.",
+  "overlap2013_2014": {
+    "rows": 4866,
+    "new_keys": 0,
+    "missing_keys": 0,
+    "net_label_error": 0,
+    "exit_dates_exact": true
+  },
+  "calendar_boundary": "For2013/14 overlap replay only, reproduce original candidate-filter calendar starting2013: Jan4 has missing previous_market_date and is rejected. All frozen2013+ keys unchanged. New2012 warmup uses true restored prior2011 quotes; no future listing/delist metadata.",
+  "context_ranking": "float64 raw amount20 median, throughD-1, ties instrument_id. No undocumented float32 ranking quantization. NN feature tensors remain original float32.",
+  "invalid_runs": "First2015 M0/M1 pair trained on gross2012 hard+ST domain is INVALID_WARMUP_DOMAIN, never admitted as accepted OOF or backtested.2016 unfinished jobs explicitly stopped. Preserve all source, checkpoints and logs.",
+  "before_any_corrected_economic_result": true
+}

@@ -1,14 +1,14 @@
 {
-  "pid": 442335,
-  "status": "FAILED_OR_INTERRUPTED",
-  "wall_seconds": 6.1722871996462345,
-  "CPU_user_seconds": 0.029197,
-  "CPU_system_seconds": 2.999999999999531e-06,
-  "RSS_sampled_peak_bytes": 35983360,
+  "pid": 474327,
+  "status": "COMPLETED",
+  "wall_seconds": 1355.134477039799,
+  "CPU_user_seconds": 20.944504,
+  "CPU_system_seconds": 9.521385,
+  "RSS_sampled_peak_bytes": 44662784,
   "RSS_sample_interval_seconds": 0.25,
-  "process_lifetime_ru_maxrss_KiB": 35140,
-  "free_disk_before_bytes": 6431512592384,
-  "free_disk_after_bytes": 6431512567808,
+  "process_lifetime_ru_maxrss_KiB": 43616,
+  "free_disk_before_bytes": 6405609316352,
+  "free_disk_after_bytes": 6401382252544,
   "GPU_training_seconds": 0,
   "scope": "this CPU process; thread CPU included; CUDA runtime not used"
 }

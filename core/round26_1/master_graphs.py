@@ -12,7 +12,7 @@ def target_bank():
     q=candidates();q=q.loc[q.trade_date.ge('2013-01-01')].copy()
     labels=targets(q,TEN_HEAD).rename(columns={'target':'label_exit_rule_net'})
     labels['actual_exit_date']=pd.to_datetime(labels.label_available_at).dt.normalize()
-    early=pd.read_parquet(B/'MASTER_early_targets/recovered_2012_2014_targets.parquet')
+    early=pd.read_parquet(B/'MASTER_early_targets_AI071_boundary_replay/legal_2012_2014_targets.parquet')
     early=early.loc[early.trade_date.dt.year.eq(2012),KEY+['label_exit_rule_net','actual_exit_date']]
     out=pd.concat([early,labels[KEY+['label_exit_rule_net','actual_exit_date']]],ignore_index=True).sort_values(KEY).reset_index(drop=True)
     assert not out.duplicated(KEY).any()
@@ -21,8 +21,8 @@ def target_bank():
 
 def prepare(provider):
     provider=Path(provider)
-    inputs=[provider/'COMPLETE.json',B/'MASTER_early_targets/recovered_2012_2014_targets.parquet']+[C/f'result/round22_3/data/{head}_{kind}.parquet' for head in ['five','ten'] for kind in ['training','candidate']]
-    contract=dict(code=[identity(__file__),identity(C/'core/round23_7/tra_data.py')],third_party='no learned graph selection',dirty_diff='content identity',environment={'numpy':np.__version__,'pandas':pd.__version__},parameters={'context':1000,'median_window':20,'min_periods':1,'lag_calendar':1},seed=None,features='amount20 median on observed exchange calendar through D-1; no future values',universe='all target keys + SH/SZ D-1 tradable liquidity top1000',calibration='none',data=[identity(p) for p in inputs],label='Ten canonical exit net, independent column',maturity='actual_exit_date15:00',windows='2012..2026-07-24',execution='graph planning only',upstream=[identity(R/'CONTRACT.yaml')])
+    inputs=[provider/'COMPLETE.json',B/'MASTER_early_targets_AI071_boundary_replay/legal_2012_2014_targets.parquet']+[C/f'result/round22_3/data/{head}_{kind}.parquet' for head in ['five','ten'] for kind in ['training','candidate']]
+    contract=dict(code=[identity(__file__),identity(C/'core/round23_7/tra_data.py')],third_party='no learned graph selection',dirty_diff='content identity',environment={'numpy':np.__version__,'pandas':pd.__version__},parameters={'context':1000,'median_window':20,'min_periods':1,'lag_calendar':1,'liquidity_ranking_dtype':'float64'},seed=None,features='amount20 median on observed exchange calendar through D-1; no future values',universe='all target keys + SH/SZ D-1 tradable liquidity top1000',calibration='none',data=[identity(p) for p in inputs],label='Ten canonical exit net, independent column',maturity='actual_exit_date15:00',windows='2012..2026-07-24',execution='graph planning only',upstream=[identity(R/'CONTRACT.yaml'),identity(R/'TARGET_DOMAIN_CORRECTION_FREEZE.json'),identity(R/'EARLY_TARGET_RECOVERY.json')])
     fp=fingerprint(contract);root=B/'MASTER_graphs'
     with transaction(root,contract) as (dest,hit):
         if not hit:
@@ -32,14 +32,14 @@ def prepare(provider):
             q['day_idx']=dates.get_indexer(q.trade_date);q['stock_idx']=q.instrument_id.map(idmap)
             assert (q.day_idx>=0).all() and q.stock_idx.notna().all()
             quotes=pd.read_parquet(provider/'observed_quotes.parquet')
-            liquidity=np.full((len(dates),len(ids)),np.nan,dtype='float32')
+            liquidity=np.full((len(dates),len(ids)),np.nan,dtype='float64')
             eligible=np.zeros((len(dates),len(ids)),dtype=bool)
             for instrument,stock in quotes.groupby('instrument_id',sort=False):
                 if not instrument.endswith(('.XSHG','.XSHE')):continue
                 column=idmap[instrument];index=stock.cal_idx.to_numpy('int32')
                 amount=pd.Series(np.nan,index=np.arange(len(dates)))
                 amount.iloc[index]=stock.amount.to_numpy()
-                liquidity[:,column]=amount.rolling(20,min_periods=1).median().to_numpy('float32')
+                liquidity[:,column]=amount.rolling(20,min_periods=1).median().to_numpy('float64')
                 eligible[index,column]=(stock.close.gt(0)&stock.amount.gt(0)&stock.volume.gt(0)&~stock.paused.fillna(True).astype(bool)).to_numpy()
             qgroups=q.groupby('day_idx',sort=False).indices
             nodes=[];target_indices=[];offsets=[0];dayindices=[];counts=[]

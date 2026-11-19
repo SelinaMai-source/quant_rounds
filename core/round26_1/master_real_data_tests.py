@@ -12,7 +12,7 @@ def context(block,day,calendar):
     history=block.loc[block.trade_date.isin(prior)]
     last=history.loc[history.trade_date.eq(prior[-1])].copy()
     valid=last.close.gt(0)&last.volume.gt(0)&last.amount.gt(0)&~last.paused.fillna(True).astype(bool)&last.instrument_id.str.endswith(('.XSHG','.XSHE'))
-    median=history.groupby('instrument_id').amount.median().astype('float32')
+    median=history.groupby('instrument_id').amount.median()
     last=last.loc[valid,['instrument_id']].join(median.rename('liquidity'),on='instrument_id').dropna()
     return last.sort_values(['liquidity','instrument_id'],ascending=[False,True],kind='mergesort').head(1000).instrument_id.tolist()
 

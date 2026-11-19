@@ -1,0 +1,74 @@
+[
+  {
+    "phase": "train",
+    "start": "2008-01-01",
+    "end": "2020-03-31",
+    "step": 8,
+    "fillna": "ffill+bfill",
+    "start_idx": 0,
+    "end_idx": 856246,
+    "all_idx_nodes": 856246,
+    "len": 856246,
+    "missing_labels": 0,
+    "nonfinite_features": 0,
+    "day_counts": {
+      "count": 2979.0,
+      "mean": 287.4273246055723,
+      "std": 8.107384883536755,
+      "min": 203.0,
+      "25%": 283.0,
+      "50%": 288.0,
+      "75%": 292.0,
+      "max": 300.0
+    },
+    "date_major": true
+  },
+  {
+    "phase": "valid",
+    "start": "2020-04-01",
+    "end": "2020-06-30",
+    "step": 8,
+    "fillna": "ffill+bfill",
+    "start_idx": 2392,
+    "end_idx": 20039,
+    "all_idx_nodes": 20039,
+    "len": 20039,
+    "missing_labels": 0,
+    "nonfinite_features": 0,
+    "day_counts": {
+      "count": 67.0,
+      "mean": 299.089552238806,
+      "std": 0.5962342249633437,
+      "min": 298.0,
+      "25%": 299.0,
+      "50%": 299.0,
+      "75%": 299.0,
+      "max": 300.0
+    },
+    "date_major": true
+  },
+  {
+    "phase": "test",
+    "start": "2020-07-01",
+    "end": "2022-12-31",
+    "step": 8,
+    "fillna": "ffill+bfill",
+    "start_idx": 2400,
+    "end_idx": 185700,
+    "all_idx_nodes": 185700,
+    "len": 185700,
+    "missing_labels": 305,
+    "nonfinite_features": 0,
+    "day_counts": {
+      "count": 619.0,
+      "mean": 300.0,
+      "std": 0.0,
+      "min": 300.0,
+      "25%": 300.0,
+      "50%": 300.0,
+      "75%": 300.0,
+      "max": 300.0
+    },
+    "date_major": true
+  }
+]

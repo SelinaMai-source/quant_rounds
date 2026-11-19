@@ -1,0 +1,260 @@
+[
+  {
+    "phase": "train",
+    "class": "<class 'qlib.data.dataset.TSDataSampler'>",
+    "len": 856246,
+    "index_names": [
+      "instrument",
+      "datetime"
+    ],
+    "index_min": "2008-01-02 00:00:00",
+    "index_max": "2020-03-31 00:00:00",
+    "dates": 2979,
+    "attributes": {
+      "start": {
+        "type": "<class 'datetime.date'>",
+        "shape": null
+      },
+      "end": {
+        "type": "<class 'datetime.date'>",
+        "shape": null
+      },
+      "step_len": {
+        "type": "<class 'int'>",
+        "shape": null
+      },
+      "fillna_type": {
+        "type": "<class 'str'>",
+        "shape": null
+      },
+      "data_arr": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          856247,
+          222
+        ]
+      },
+      "nan_idx": {
+        "type": "<class 'int'>",
+        "shape": null
+      },
+      "idx_df": {
+        "type": "<class 'pandas.core.frame.DataFrame'>",
+        "shape": [
+          2979,
+          695
+        ]
+      },
+      "idx_map": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          856246,
+          2
+        ]
+      },
+      "data_index": {
+        "type": "<class 'pandas.core.indexes.multi.MultiIndex'>",
+        "shape": [
+          856246
+        ]
+      },
+      "start_idx": {
+        "type": "<class 'numpy.int64'>",
+        "shape": []
+      },
+      "end_idx": {
+        "type": "<class 'numpy.int64'>",
+        "shape": []
+      },
+      "idx_arr": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          2979,
+          695
+        ]
+      }
+    },
+    "first2_shape": [
+      2,
+      8,
+      222
+    ],
+    "sample_dtype": "float32",
+    "data_index_dates": [
+      "2008-01-02 00:00:00",
+      "2020-03-31 00:00:00"
+    ]
+  },
+  {
+    "phase": "valid",
+    "class": "<class 'qlib.data.dataset.TSDataSampler'>",
+    "len": 20039,
+    "index_names": [
+      "instrument",
+      "datetime"
+    ],
+    "index_min": "2020-03-20 00:00:00",
+    "index_max": "2020-06-30 00:00:00",
+    "dates": 67,
+    "attributes": {
+      "start": {
+        "type": "<class 'datetime.date'>",
+        "shape": null
+      },
+      "end": {
+        "type": "<class 'datetime.date'>",
+        "shape": null
+      },
+      "step_len": {
+        "type": "<class 'int'>",
+        "shape": null
+      },
+      "fillna_type": {
+        "type": "<class 'str'>",
+        "shape": null
+      },
+      "data_arr": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          20040,
+          222
+        ]
+      },
+      "nan_idx": {
+        "type": "<class 'int'>",
+        "shape": null
+      },
+      "idx_df": {
+        "type": "<class 'pandas.core.frame.DataFrame'>",
+        "shape": [
+          67,
+          321
+        ]
+      },
+      "idx_map": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          20039,
+          2
+        ]
+      },
+      "data_index": {
+        "type": "<class 'pandas.core.indexes.multi.MultiIndex'>",
+        "shape": [
+          20039
+        ]
+      },
+      "start_idx": {
+        "type": "<class 'numpy.int64'>",
+        "shape": []
+      },
+      "end_idx": {
+        "type": "<class 'numpy.int64'>",
+        "shape": []
+      },
+      "idx_arr": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          67,
+          321
+        ]
+      }
+    },
+    "first2_shape": [
+      2,
+      8,
+      222
+    ],
+    "sample_dtype": "float32",
+    "data_index_dates": [
+      "2020-03-20 00:00:00",
+      "2020-06-30 00:00:00"
+    ]
+  },
+  {
+    "phase": "test",
+    "class": "<class 'qlib.data.dataset.TSDataSampler'>",
+    "len": 185700,
+    "index_names": [
+      "instrument",
+      "datetime"
+    ],
+    "index_min": "2020-06-17 00:00:00",
+    "index_max": "2022-12-30 00:00:00",
+    "dates": 619,
+    "attributes": {
+      "start": {
+        "type": "<class 'datetime.date'>",
+        "shape": null
+      },
+      "end": {
+        "type": "<class 'datetime.date'>",
+        "shape": null
+      },
+      "step_len": {
+        "type": "<class 'int'>",
+        "shape": null
+      },
+      "fillna_type": {
+        "type": "<class 'str'>",
+        "shape": null
+      },
+      "data_arr": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          185701,
+          222
+        ]
+      },
+      "nan_idx": {
+        "type": "<class 'int'>",
+        "shape": null
+      },
+      "idx_df": {
+        "type": "<class 'pandas.core.frame.DataFrame'>",
+        "shape": [
+          619,
+          433
+        ]
+      },
+      "idx_map": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          185700,
+          2
+        ]
+      },
+      "data_index": {
+        "type": "<class 'pandas.core.indexes.multi.MultiIndex'>",
+        "shape": [
+          185700
+        ]
+      },
+      "start_idx": {
+        "type": "<class 'numpy.int64'>",
+        "shape": []
+      },
+      "end_idx": {
+        "type": "<class 'numpy.int64'>",
+        "shape": []
+      },
+      "idx_arr": {
+        "type": "<class 'numpy.ndarray'>",
+        "shape": [
+          619,
+          433
+        ]
+      }
+    },
+    "first2_shape": [
+      2,
+      8,
+      222
+    ],
+    "sample_dtype": "float32",
+    "data_index_dates": [
+      "2020-06-17 00:00:00",
+      "2022-12-30 00:00:00"
+    ]
+  }
+]

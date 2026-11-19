@@ -1,0 +1,51 @@
+{
+  "archive": {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_public/files/master-data/opensource.zip",
+    "bytes": 1601703168,
+    "sha256": "bbfa32b032249c9efa50abf3c74b2ee7adfb78eae6986bad9b012252492763c2"
+  },
+  "entries": [
+    {
+      "path": "opensource/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "CRC32": 0
+    },
+    {
+      "path": "opensource/csi300_dl_test.pkl",
+      "bytes": 170867794,
+      "compressed_bytes": 89456502,
+      "CRC32": 935241562
+    },
+    {
+      "path": "opensource/csi300_dl_train.pkl",
+      "bytes": 802342540,
+      "compressed_bytes": 406550812,
+      "CRC32": 2032100207
+    },
+    {
+      "path": "opensource/csi300_dl_valid.pkl",
+      "bytes": 18329651,
+      "compressed_bytes": 9671905,
+      "CRC32": 2167403147
+    },
+    {
+      "path": "opensource/csi800_dl_test.pkl",
+      "bytes": 454478891,
+      "compressed_bytes": 237308979,
+      "CRC32": 3773199335
+    },
+    {
+      "path": "opensource/csi800_dl_train.pkl",
+      "bytes": 1656849951,
+      "compressed_bytes": 833160215,
+      "CRC32": 6918373
+    },
+    {
+      "path": "opensource/csi800_dl_valid.pkl",
+      "bytes": 48794951,
+      "compressed_bytes": 25553279,
+      "CRC32": 4193670043
+    }
+  ]
+}

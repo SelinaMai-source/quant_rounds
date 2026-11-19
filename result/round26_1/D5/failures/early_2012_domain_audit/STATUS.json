@@ -1,0 +1,69 @@
+{
+  "status": "INVALID_2012_DOMAIN_DIAGNOSTICS_NOT_ACCEPTED_OOF",
+  "at_UTC": "2026-11-19T23:31:45.089100+00:00",
+  "reason": "2012 recovered hard+PIT-ST targets lacked original AI071 listing60/amount50m/floatMV1b/one-word/BJ/resume filters. Fix original legal target qualification and require2013/14 exact key parity before rerunning. This is implementation/data-adapter correction, not external blockage.2015 completed fits use invalid warmup;2016 partial jobs stopped. No economic candidate result or winner used.",
+  "accepted_OOF_models": 0,
+  "process_snapshots": [
+    {
+      "pid": 470137,
+      "command": [
+        "/home/mxy/Stock/课题/一进二策略/research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-c",
+        "from multiprocessing.resource_tracker import main;main(7)"
+      ],
+      "CPU_user_at_stop": 0.04,
+      "CPU_system_at_stop": 0.0,
+      "RSS_bytes_at_stop": 13639680,
+      "scope": "process snapshot; not per-fit peak"
+    },
+    {
+      "pid": 478757,
+      "command": [
+        "/home/mxy/Stock/课题/一进二策略/research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=16)",
+        "--multiprocessing-fork"
+      ],
+      "CPU_user_at_stop": 1109.48,
+      "CPU_system_at_stop": 34.85,
+      "RSS_bytes_at_stop": 2023796736,
+      "scope": "process snapshot; not per-fit peak"
+    },
+    {
+      "pid": 478842,
+      "command": [
+        "/home/mxy/Stock/课题/一进二策略/research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14)",
+        "--multiprocessing-fork"
+      ],
+      "CPU_user_at_stop": 1113.27,
+      "CPU_system_at_stop": 14.8,
+      "RSS_bytes_at_stop": 2133102592,
+      "scope": "process snapshot; not per-fit peak"
+    },
+    {
+      "pid": 470131,
+      "command": [
+        "/home/mxy/Stock/课题/一进二策略/research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-m",
+        "core.round26_1.master_pipeline",
+        "--store",
+        "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1",
+        "--seed",
+        "17",
+        "--jobs",
+        "2",
+        "--fit-only"
+      ],
+      "CPU_user_at_stop": 0.49,
+      "CPU_system_at_stop": 0.04,
+      "RSS_bytes_at_stop": 112046080,
+      "scope": "process snapshot; not per-fit peak"
+    }
+  ]
+}

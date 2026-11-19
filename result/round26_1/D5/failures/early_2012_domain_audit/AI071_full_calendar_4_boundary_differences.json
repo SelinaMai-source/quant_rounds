@@ -1,0 +1,145 @@
+{
+  "status": "CANONICAL_AI071_LEGAL_RECOVERY_AUDITED",
+  "candidate_filter_audit": {
+    "contract": "AI_07.21 original candidate research filters after hard first-board definition",
+    "parameters": {
+      "min_listing_days": 60,
+      "min_amount": 50000000.0,
+      "min_float_mv": 1000000000.0,
+      "exclude_one_word_first_board": true,
+      "exclude_bj": true,
+      "exclude_resume_anomaly": true,
+      "missing_filter_inputs": "fail_closed"
+    },
+    "layers": [
+      {
+        "layer": "C0_first_board_hard",
+        "before": 10597,
+        "rejected": 0,
+        "after": 10597,
+        "reason": "not_hard_first_board"
+      },
+      {
+        "layer": "filter_ST",
+        "before": 10597,
+        "rejected": 808,
+        "after": 9789,
+        "reason": "ST"
+      },
+      {
+        "layer": "filter_listing_days",
+        "before": 9789,
+        "rejected": 228,
+        "after": 9561,
+        "reason": "listing_days"
+      },
+      {
+        "layer": "filter_amount",
+        "before": 9561,
+        "rejected": 1992,
+        "after": 7569,
+        "reason": "amount"
+      },
+      {
+        "layer": "filter_float_mv",
+        "before": 7569,
+        "rejected": 924,
+        "after": 6645,
+        "reason": "float_mv"
+      },
+      {
+        "layer": "filter_one_word",
+        "before": 6645,
+        "rejected": 149,
+        "after": 6496,
+        "reason": "one_word_board"
+      },
+      {
+        "layer": "filter_bj",
+        "before": 6496,
+        "rejected": 0,
+        "after": 6496,
+        "reason": "bj_board"
+      },
+      {
+        "layer": "filter_resume_anomaly",
+        "before": 6496,
+        "rejected": 324,
+        "after": 6172,
+        "reason": "resume_anomaly"
+      }
+    ],
+    "rows_before": 10597,
+    "rows_after": 6172,
+    "reject_reasons": {
+      "amount": 1992,
+      "float_mv": 924,
+      "ST": 808,
+      "resume_anomaly": 324,
+      "listing_days": 228,
+      "one_word_board": 149
+    }
+  },
+  "recovered_rows": 6172,
+  "year_counts": {
+    "2012": 1302,
+    "2013": 2185,
+    "2014": 2685
+  },
+  "overlap_rows": 4866,
+  "known_label_max_abs_diff": 0.0,
+  "exit_dates_equal": true,
+  "2013_2014_new_only": 4,
+  "2013_2014_old_only": 0,
+  "label_audit": {
+    "contract": "D+1 modeled open buy; first executable modeled close from D+2; limit-up close held",
+    "costs": {
+      "slippage_bps": 12.3,
+      "commission_bps": 1.0,
+      "transfer_fee_bps": 0.1,
+      "sell_tax_bps": 5.0
+    },
+    "rows": 6172,
+    "valid_labels": 5937,
+    "reasons": {
+      "ok": 5937,
+      "buy_open_limit_up": 127,
+      "buy_paused": 108
+    },
+    "delayed_exit_rows": 292,
+    "maximum_exit_signal_offset": 210
+  },
+  "inputs": [
+    {
+      "path": "/data1/stock-mxy/data/datasets/hermes-cn-a-2010-20260724-v7-all-features/manifest.json",
+      "bytes": 538626,
+      "sha256": "281ceafdce0c22b65f4b2820e83284f35027a6a7ad9806ab215a7973983e8eb4"
+    }
+  ],
+  "output": {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_early_targets_AI071/legal_2012_2014_targets.parquet",
+    "bytes": 131730,
+    "sha256": "f2b53ec23b0b23ab05f56967531454065256869412fc0a0a3bbb4ef05aeb71f9",
+    "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ncal_idx: int32\nactual_entry_date: timestamp[ns]\nactual_exit_date: timestamp[ns]\nexit_signal_offset: double\nholding_sessions: double\nlabel_exit_rule_net: double\nlabel_exit_rule_reason: string\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1441",
+    "rows": 6172
+  },
+  "future_listing_or_delist_used": false,
+  "raw_data_not_uploaded": true,
+  "canonical_sources": [
+    {
+      "path": "/data1/Stock/src/first_board_hermes/dataset.py",
+      "bytes": 26117,
+      "sha256": "1903f43e9358bf5f6122b4ff2baddfc36c2e9370a8dc6229c97371e30bbbb3d0"
+    },
+    {
+      "path": "/data1/Stock/src/first_board_hermes/labels.py",
+      "bytes": 12678,
+      "sha256": "6a2b15fd0bc9b6ea9e52e34b4e661d10f2a09f310d89f9761fc105331168d9ca"
+    },
+    {
+      "path": "/data1/Stock/src/first_board_hermes/candidate_alignment.py",
+      "bytes": 7495,
+      "sha256": "18cb9ca3a37041c0ca7c5a33e94963676f736f0b0816f298e6c0ffe4e6a20d4f"
+    }
+  ]
+}

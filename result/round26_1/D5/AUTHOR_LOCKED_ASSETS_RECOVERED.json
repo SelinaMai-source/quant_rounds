@@ -1,0 +1,47 @@
+{
+  "status": "RECOVERED_FROM_EXACT_LOCKED_GIT_OBJECTS",
+  "correction": "Initial working-directory inspection missed assets because upstream checkout is sparse. The locked tree DOES supply original opensource CSI300 seed0 and market63 CSV. Missing local working-tree files were not data/permission blockers.",
+  "files": [
+    {
+      "repository": "https://github.com/SJTU-DMTai/MASTER",
+      "commit": "de8f58557096abde4216a701b35fc4368158d111",
+      "upstream_path": "model/csi300_opensource_0.pkl",
+      "git_blob": "311d5855e0510db20c6853843f5ffa382f142c06",
+      "server_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_author_assets/model/csi300_opensource_0.pkl",
+      "bytes": 3214036,
+      "sha256": "581443312928ac27fab1c94482cea9e3e0a250f50948fe17e88d8ab5fa188a59",
+      "working_tree_sparse_omission": true
+    },
+    {
+      "repository": "https://github.com/SJTU-DMTai/MASTER",
+      "commit": "de8f58557096abde4216a701b35fc4368158d111",
+      "upstream_path": "data/csi_market_information.csv",
+      "git_blob": "018c2bf95f52921a80b9d08e3183f29780423042",
+      "server_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_author_assets/data/csi_market_information.csv",
+      "bytes": 2525550,
+      "sha256": "c30a91d16ac9cca1f86cdd70db8f6d20b2278c55bfc2e0a7d45ea013ff9a3734",
+      "working_tree_sparse_omission": true
+    },
+    {
+      "repository": "https://github.com/SJTU-DMTai/MASTER",
+      "commit": "de8f58557096abde4216a701b35fc4368158d111",
+      "upstream_path": "model/performance.xlsx",
+      "git_blob": "f0b21ea7b1bd52cbfec350b9f27dcaa31b0ed4ce",
+      "server_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_author_assets/model/performance.xlsx",
+      "bytes": 12740,
+      "sha256": "5adf70750c5cb216c8210f9a8ca194877a87cd786bde50daacfbc20ef4d11426",
+      "working_tree_sparse_omission": true
+    },
+    {
+      "repository": "https://github.com/SJTU-DMTai/MASTER",
+      "commit": "de8f58557096abde4216a701b35fc4368158d111",
+      "upstream_path": "MASTER-supplementary-materials.pdf",
+      "git_blob": "8d891246022be1d631be2c2c7cf6c06fa7fe799e",
+      "server_path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_author_assets/MASTER-supplementary-materials.pdf",
+      "bytes": 108171,
+      "sha256": "4d50b36ac996cab4cf145fd41293b909394afcc6b9e7ab95fc86eda062fe7b5b",
+      "working_tree_sparse_omission": true
+    }
+  ],
+  "private_models_use_original_checkpoint": false
+}

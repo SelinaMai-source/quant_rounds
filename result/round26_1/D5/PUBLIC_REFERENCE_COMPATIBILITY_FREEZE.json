@@ -1,0 +1,13 @@
+{
+  "at_UTC": "2026-11-19T23:51:39.701450+00:00",
+  "before_any_public_reference_training": true,
+  "author_commit": "de8f58557096abde4216a701b35fc4368158d111",
+  "data": "Actual author opensource.zip, full MEGA MAC and ZIP CRC verified, SHA256bbfa32b032249c9efa50abf3c74b2ee7adfb78eae6986bad9b012252492763c2",
+  "budget": "Unchanged original1full-epoch cap,2979 actual training dates,seed17,Adam1e-5,trainloss0.95 stopping,original core architecture and per-date training operations. Not paper40epoch numerical reproduction.",
+  "sampler_compatibility": "Old pickles store unsliced idx_map/data_index plus original start_idx/end_idx. Current Qlib methods expect presliced arrays. AuthorView maps exactly to stored original bounds by date: train2008Jan1..2020Mar31,valid2020Apr1..Jun30,test2020Jul1..2022Dec31; retain original preceding8-slot history and ffill+bfill. No label-based node deletion.",
+  "nodes": "All finite idx_df nodes within declared phase retained. Public test retains305missing-label nodes. No guessed300-node insertion; source raw universe completeness/first-publication vintage cannot be proven from dump alone.",
+  "metrics": "Original source.predict outputs and raw original IC/IR stored. Separately aggregate only finite-label IC dates when original np.mean is NaN; retain every forecast node/date. No checkpoint or parameter selection from test.",
+  "author_checkpoint": "Original seed0 from exact same locked Git tree, recovered sparse-checkout omission; evaluate only as diagnostic, never private initialization. Source load_param sets fitted string while predict compares fitted<0; cast gate-only fitted=0 after loading, no tensor/math changes.",
+  "maturity_scope": "Public dump has no actual-exit label_available_at metadata: preserve original benchmark training labels/dates and disclose original boundary/vintage limitations. Private A-share folds enforce true actual-exit maturity independently.",
+  "resources": "At most2 CPU learners total,2threads/2interop each,16GiB own RSS guard,noGPU."
+}
