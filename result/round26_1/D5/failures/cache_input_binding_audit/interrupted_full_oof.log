@@ -1,0 +1,14 @@
+MASTER M1 17 2015 full-epoch day 0 / 481 loss None
+MASTER M0 17 2015 full-epoch day 0 / 481 loss None
+MASTER M1 17 2015 full-epoch day 25 / 481 loss 0.8715927600860596
+MASTER M0 17 2015 full-epoch day 25 / 481 loss 0.8009120225906372
+MASTER M1 17 2015 full-epoch day 50 / 481 loss 1.0464447736740112
+MASTER M0 17 2015 full-epoch day 50 / 481 loss 0.9378295540809631
+MASTER M1 17 2015 full-epoch day 75 / 481 loss 1.0517598390579224
+MASTER M0 17 2015 full-epoch day 75 / 481 loss 0.8013660311698914
+MASTER M1 17 2015 full-epoch day 100 / 481 loss 0.9082229137420654
+MASTER M0 17 2015 full-epoch day 100 / 481 loss 1.0524053573608398
+MASTER M1 17 2015 full-epoch day 125 / 481 loss 0.7880836129188538
+MASTER M0 17 2015 full-epoch day 125 / 481 loss 0.9596696496009827
+/root/miniconda3/lib/python3.13/multiprocessing/resource_tracker.py:400: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown: {'/mp-k594a9m9', '/mp-t5u227a2', '/mp-1_z7angw', '/mp-y5k4ii64', '/mp-ecx3zsms'}
+  warnings.warn(

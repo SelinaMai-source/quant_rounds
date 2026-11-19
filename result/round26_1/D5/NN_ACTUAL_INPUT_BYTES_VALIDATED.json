@@ -1,0 +1,151 @@
+{
+  "status": "PASS_BEFORE_CACHE_LOOKUP",
+  "at_UTC": "2026-11-19T23:01:33.256190+00:00",
+  "records": [
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+      "bytes": 563,
+      "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/STORE.json",
+      "bytes": 757,
+      "sha256": "7d8584dfb7fccc36d9973e73eb49ee885835b3648aad4ddd48f3743291a834be"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/contract.json",
+      "bytes": 1955,
+      "sha256": "d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/equity.npy",
+      "bytes": 14753496608,
+      "sha256": "7fddda06f82b43867d8d0eb551413f8a6ef769a271f28d22b6db99de1d0570f1"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/market.npy",
+      "bytes": 1013168,
+      "sha256": "a4be82f3da19f7ad50bcfad4c9a6215667b223c86a9d0bef45b6655880deb5c2"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/COMPLETE.json",
+      "bytes": 811,
+      "sha256": "a2d39584520843cfa678e94143ecd060d108559856c40014c7afc1295b631e94"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/GRAPH_AUDIT.json",
+      "bytes": 243,
+      "sha256": "eb7c4026243726dafc22e42cd7d88a7721750fb4af9169b4f5be8350ffffb5a9"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/GRAPH_COUNTS.csv",
+      "bytes": 91468,
+      "sha256": "bb47b0198cb52c2844f2206d5770a681b5ecd5b15704d42be5df655f38a167a9"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/contract.json",
+      "bytes": 33187,
+      "sha256": "f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/graph_plan.npz",
+      "bytes": 28691584,
+      "sha256": "ba451163df209fc9bc697e3a1ea11ea19befd9d0019623df85ddd1ba0ffba31a"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/instruments.json",
+      "bytes": 87105,
+      "sha256": "899d9323273d89d61a333df38b7a7fb86960699aec472ccdd2398ffa70ff9d09"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/targets.parquet",
+      "bytes": 857915,
+      "sha256": "e25269a89b4f089417a6068c939e3a92e849b44f1c4ad509d4589679cfd5bb86",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nactual_exit_date: timestamp[ns]\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 773",
+      "rows": 66377
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_provider/c53ff308b182a1f6c9beb242ad99233bb6a4a3bf71cdc0793a95f09325e3edae/COMPLETE.json",
+      "bytes": 4697024,
+      "sha256": "50b3518822715bbf82e3d920e309d2bb71a93659fffd54d36b06d6bdcc786fa9"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_provider/c53ff308b182a1f6c9beb242ad99233bb6a4a3bf71cdc0793a95f09325e3edae/calendars/day.txt",
+      "bytes": 44220,
+      "sha256": "a1f1f4bf8bdc8e6984af14c381395508c9bdf6fb563349a4a09667fd23c131e9"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_provider/c53ff308b182a1f6c9beb242ad99233bb6a4a3bf71cdc0793a95f09325e3edae/instruments/all.txt",
+      "bytes": 197438,
+      "sha256": "efdce9e8932ec9431b40bfe6ac088864c72e6caf0bffc0089a6742417867359c"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/COMPLETE.json",
+      "bytes": 1678,
+      "sha256": "813be228f512af1a27b51b2003d93d3e15d0d5a7e3125dc8423850d10d6b52c1"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/AUDIT.json",
+      "bytes": 3034,
+      "sha256": "a777d8cfb19206a92b1a9e2d162e5a5c103129fc85fb3f74cfd763a766decc94"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/contract.json",
+      "bytes": 3004,
+      "sha256": "d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/market63.npy",
+      "bytes": 1013168,
+      "sha256": "a4be82f3da19f7ad50bcfad4c9a6215667b223c86a9d0bef45b6655880deb5c2"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/market63.parquet",
+      "bytes": 1478610,
+      "sha256": "9177373c83e2cce3548e2fd8a0866709be2aa15d8c47429c541c679a177c44d5",
+      "schema": "SH000300:$close/Ref($close,1)-1: float\nSH000300:Mean($close/Ref($close,1)-1,5): float\nSH000300:Std($close/Ref($close,1)-1,5): float\nSH000300:Mean($amount,5)/$amount: float\nSH000300:Std($amount,5)/$amount: float\nSH000300:Mean($close/Ref($close,1)-1,10): float\nSH000300:Std($close/Ref($close,1)-1,10): float\nSH000300:Mean($amount,10)/$amount: float\nSH000300:Std($amount,10)/$amount: float\nSH000300:Mean($close/Ref($close,1)-1,20): float\nSH000300:Std($close/Ref($close,1)-1,20): float\nSH000300:Mean($amount,20)/$amount: float\nSH000300:Std($amount,20)/$amount: float\nSH000300:Mean($close/Ref($close,1)-1,30): float\nSH000300:Std($close/Ref($close,1)-1,30): float\nSH000300:Mean($amount,30)/$amount: float\nSH000300:Std($amount,30)/$amount: float\nSH000300:Mean($close/Ref($close,1)-1,60): float\nSH000300:Std($close/Ref($close,1)-1,60): float\nSH000300:Mean($amount,60)/$amount: float\nSH000300:Std($amount,60)/$amount: float\nSH000905:$close/Ref($close,1)-1: float\nSH000905:Mean($close/Ref($close,1)-1,5): float\nSH000905:Std($close/Ref($close,1)-1,5): float\nSH000905:Mean($amount,5)/$amount: float\nSH000905:Std($amount,5)/$amount: float\nSH000905:Mean($close/Ref($close,1)-1,10): float\nSH000905:Std($close/Ref($close,1)-1,10): float\nSH000905:Mean($amount,10)/$amount: float\nSH000905:Std($amount,10)/$amount: float\nSH000905:Mean($close/Ref($close,1)-1,20): float\nSH000905:Std($close/Ref($close,1)-1,20): float\nSH000905:Mean($amount,20)/$amount: float\nSH000905:Std($amount,20)/$amount: float\nSH000905:Mean($close/Ref($close,1)-1,30): float\nSH000905:Std($close/Ref($close,1)-1,30): float\nSH000905:Mean($amount,30)/$amount: float\nSH000905:Std($amount,30)/$amount: float\nSH000905:Mean($close/Ref($close,1)-1,60): float\nSH000905:Std($close/Ref($close,1)-1,60): float\nSH000905:Mean($amount,60)/$amount: float\nSH000905:Std($amount,60)/$amount: float\nSH000906:$close/Ref($close,1)-1: float\nSH000906:Mean($close/Ref($close,1)-1,5): float\nSH000906:Std($close/Ref($close,1)-1,5): float\nSH000906:Mean($amount,5)/$amount: float\nSH000906:Std($amount,5)/$amount: float\nSH000906:Mean($close/Ref($close,1)-1,10): float\nSH000906:Std($close/Ref($close,1)-1,10): float\nSH000906:Mean($amount,10)/$amount: float\nSH000906:Std($amount,10)/$amount: float\nSH000906:Mean($close/Ref($close,1)-1,20): float\nSH000906:Std($close/Ref($close,1)-1,20): float\nSH000906:Mean($amount,20)/$amount: float\nSH000906:Std($amount,20)/$amount: float\nSH000906:Mean($close/Ref($close,1)-1,30): float\nSH000906:Std($close/Ref($close,1)-1,30): float\nSH000906:Mean($amount,30)/$amount: float\nSH000906:Std($amount,30)/$amount: float\nSH000906:Mean($close/Ref($close,1)-1,60): float\nSH000906:Std($close/Ref($close,1)-1,60): float\nSH000906:Mean($amount,60)/$amount: float\nSH000906:Std($amount,60)/$amount: float\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"datetime\"], \"column_indexes\": [{\"name\": null' + 11192",
+      "rows": 4020
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/provider/calendars/day.txt",
+      "bytes": 44220,
+      "sha256": "a1f1f4bf8bdc8e6984af14c381395508c9bdf6fb563349a4a09667fd23c131e9"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/provider/features/sh000300/amount.day.bin",
+      "bytes": 16084,
+      "sha256": "498edc3831a7d1ba479c63848d68fb84f6bd26a51a715be9480d03d277d7cbd9"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/provider/features/sh000300/close.day.bin",
+      "bytes": 16084,
+      "sha256": "8a25de29d7b8861ef0832ffb75d2ed608a70aaf8d171e05c9ca37c22a09f5c45"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/provider/features/sh000905/amount.day.bin",
+      "bytes": 16084,
+      "sha256": "dfe4970872bc0e23077a34ca7f9a5e5416661a3b37fe7b665f4f5801d7dc6647"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/provider/features/sh000905/close.day.bin",
+      "bytes": 16084,
+      "sha256": "54b074e14cf4684a56203996065fc3836f8d7d4bff4d880c5a45b96e306e384c"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/provider/features/sh000906/amount.day.bin",
+      "bytes": 16084,
+      "sha256": "919432e2dd9bcdec49ece78925dc2a34a1ec8868c9dcc6d0c812ebcb48a64d95"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/provider/features/sh000906/close.day.bin",
+      "bytes": 16084,
+      "sha256": "ed54440345a57a3e0dbc3d28f9048240877d93f12d6b928dd866aacab3f592c6"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58/provider/instruments/all.txt",
+      "bytes": 93,
+      "sha256": "f579679f0aeacae2716e1a27a10b1c9175d65d4875048f1af499ed18b208a47e"
+    }
+  ],
+  "labels_maturity_graphs_features_calendars_bytes_checked": true
+}

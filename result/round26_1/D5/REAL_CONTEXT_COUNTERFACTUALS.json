@@ -1,0 +1,47 @@
+{
+  "status": "PASS_REAL_CONTEXT_REBUILD",
+  "cases": [
+    {
+      "year": 2015,
+      "day": "2015-01-05",
+      "nodes": 1019,
+      "targets": 49,
+      "context": 1000,
+      "actual_future_quote_rows_perturbed_or_deleted": 12970,
+      "all_reconstructed_nodes_bitexact": true,
+      "all_nodes_finite": true,
+      "all_target_nodes_retained_independent_of_label": true,
+      "clock": "median amount of prior20 exchange dates, explicit D-1 tradability"
+    },
+    {
+      "year": 2021,
+      "day": "2021-01-04",
+      "nodes": 1027,
+      "targets": 50,
+      "context": 1000,
+      "actual_future_quote_rows_perturbed_or_deleted": 20935,
+      "all_reconstructed_nodes_bitexact": true,
+      "all_nodes_finite": true,
+      "all_target_nodes_retained_independent_of_label": true,
+      "clock": "median amount of prior20 exchange dates, explicit D-1 tradability"
+    },
+    {
+      "year": 2026,
+      "day": "2026-01-05",
+      "nodes": 1049,
+      "targets": 59,
+      "context": 1000,
+      "actual_future_quote_rows_perturbed_or_deleted": 27350,
+      "all_reconstructed_nodes_bitexact": true,
+      "all_nodes_finite": true,
+      "all_target_nodes_retained_independent_of_label": true,
+      "clock": "median amount of prior20 exchange dates, explicit D-1 tradability"
+    }
+  ],
+  "graph_plan": {
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/graph_plan.npz",
+    "bytes": 28691584,
+    "sha256": "ba451163df209fc9bc697e3a1ea11ea19befd9d0019623df85ddd1ba0ffba31a"
+  },
+  "scope": "Real source quotation perturb/delete and complete context re-selection; NN cold fits and feature calculation interventions are separate evidence, not claimed by this test"
+}

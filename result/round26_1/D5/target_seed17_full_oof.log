@@ -1,0 +1,57 @@
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.13/concurrent/futures/process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_pipeline.py", line 13, in worker
+    path=run(store,arm,seed,year)
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py", line 74, in run
+    mean,std=fit_normalizer(store,(year-3,year-1),dest);guard()
+             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py", line 54, in fit_normalizer
+    if not cached:_compute_normalizer(store,years,work)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py", line 34, in _compute_normalizer
+    processor.fit(frame)
+    ~~~~~~~~~~~~~^^^^^^^
+  File "/home/mxy/Stock/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py", line 282, in fit
+    df = fetch_df_by_index(df, slice(self.fit_start_time, self.fit_end_time), level="datetime")
+  File "/home/mxy/Stock/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/utils.py", line 74, in fetch_df_by_index
+    return df.loc[pd.IndexSlice[idx_slc],]  # noqa: E231
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/core/indexing.py", line 1185, in __getitem__
+    return self._getitem_tuple(key)
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/core/indexing.py", line 1376, in _getitem_tuple
+    return self._multi_take(tup)
+           ~~~~~~~~~~~~~~~~^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/core/indexing.py", line 1328, in _multi_take
+    axis: self._get_listlike_indexer(key, axis)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/core/indexing.py", line 1559, in _get_listlike_indexer
+    keyarr, indexer = ax._get_indexer_strict(key, axis_name)
+                      ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index([slice('2012-01-01', '2013-12-31', None), slice(None, None, None)], dtype='object', name='datetime')] are in the [index]"
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_pipeline.py", line 41, in <module>
+    run(args.store,args.seed,args.jobs,args.fit_only)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_pipeline.py", line 25, in run
+    record=future.result();records.append(record)
+  File "/root/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/root/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+KeyError: "None of [Index([slice('2012-01-01', '2013-12-31', None), slice(None, None, None)], dtype='object', name='datetime')] are in the [index]"

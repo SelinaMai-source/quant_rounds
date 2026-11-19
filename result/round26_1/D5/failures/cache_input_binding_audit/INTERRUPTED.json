@@ -1,0 +1,68 @@
+{
+  "status": "EXPLICITLY_INTERRUPTED_FOR_CACHE_BINDING_FIX",
+  "at_UTC": "2026-11-19T22:59:52.650780+00:00",
+  "reason": "Before completing first pair, audit found NN contract bound completed store manifests transitively but did not validate actual transitive feature/graph/label/maturity bytes before cache lookup. Strengthen actual artifact validation before any reuse; this is implementation work, not external blockage. Partial fits are not accepted as complete.",
+  "processes": [
+    {
+      "pid": 465110,
+      "command": [
+        "/home/mxy/Stock/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-c",
+        "from multiprocessing.resource_tracker import main;main(7)"
+      ],
+      "CPU_user_seconds_at_stop": 0.03,
+      "CPU_system_seconds_at_stop": 0.01,
+      "RSS_bytes_at_stop": 13684736,
+      "scope": "process snapshot, not per-fit peak"
+    },
+    {
+      "pid": 465111,
+      "command": [
+        "/home/mxy/Stock/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=12)",
+        "--multiprocessing-fork"
+      ],
+      "CPU_user_seconds_at_stop": 306.95,
+      "CPU_system_seconds_at_stop": 13.0,
+      "RSS_bytes_at_stop": 2111385600,
+      "scope": "process snapshot, not per-fit peak"
+    },
+    {
+      "pid": 465114,
+      "command": [
+        "/home/mxy/Stock/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14)",
+        "--multiprocessing-fork"
+      ],
+      "CPU_user_seconds_at_stop": 303.73,
+      "CPU_system_seconds_at_stop": 3.69,
+      "RSS_bytes_at_stop": 2250240000,
+      "scope": "process snapshot, not per-fit peak"
+    },
+    {
+      "pid": 465102,
+      "command": [
+        "/home/mxy/Stock/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/env/bin/python",
+        "-B",
+        "-m",
+        "core.round26_1.master_pipeline",
+        "--store",
+        "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1",
+        "--seed",
+        "17",
+        "--jobs",
+        "2",
+        "--fit-only"
+      ],
+      "CPU_user_seconds_at_stop": 0.46,
+      "CPU_system_seconds_at_stop": 0.04,
+      "RSS_bytes_at_stop": 110006272,
+      "scope": "process snapshot, not per-fit peak"
+    }
+  ]
+}

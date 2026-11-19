@@ -22,13 +22,13 @@ def guard():
     if psutil.Process(os.getpid()).memory_info().rss>16*1024**3:
         raise MemoryError('Own MASTER learner RSS exceeded frozen16GiB')
 
-def fit_normalizer(store,years,dest):
+def _compute_normalizer(store,years,dest):
     from qlib.data.dataset.processor import RobustZScoreNorm
     indices=store.indices(f'{years[0]}-01-01',f'{years[1]}-01-01')
     values=[];dates=[]
     for i in indices:
         x=store.current(i);values.append(x);dates.extend([store.dates[i]]*len(x))
-    frame=pd.DataFrame(np.concatenate(values),index=pd.DatetimeIndex(dates,name='datetime'))
+    frame=pd.DataFrame(np.concatenate(values),index=pd.MultiIndex.from_arrays([pd.DatetimeIndex(dates),np.arange(len(dates))],names=['datetime','instrument']))
     del values
     processor=RobustZScoreNorm(f'{years[0]}-01-01',f'{years[1]-1}-12-31',clip_outlier=True)
     processor.fit(frame)
@@ -39,15 +39,30 @@ def fit_normalizer(store,years,dest):
     actual=np.clip((sample.to_numpy()-processor.mean_train)/processor.std_train,-3,3)
     actual[np.isnan(actual)]=0
     assert np.array_equal(actual.astype('float32'),expected,equal_nan=True)
-    audit={'fit_start':str(frame.index.min()),'fit_end':str(frame.index.max()),'rows':len(frame),'features':221,'missing_stats':int(np.isnan(processor.mean_train).sum()),'original_processor_actual_row_bitexact':True}
+    audit={'fit_start':str(frame.index.get_level_values('datetime').min()),'fit_end':str(frame.index.get_level_values('datetime').max()),'rows':len(frame),'features':221,'missing_stats':int(np.isnan(processor.mean_train).sum()),'original_processor_actual_row_bitexact':True}
     (dest/'NORMALIZER_AUDIT.json').write_text(json.dumps(audit,indent=2))
     return processor.mean_train,processor.std_train
+
+def fit_normalizer(store,years,dest):
+    import fcntl,shutil
+    c=dict(code=[identity(__file__)],third_party='original Qlib RobustZScoreNorm',dirty_diff='content identity',environment={'numpy':np.__version__,'pandas':pd.__version__},parameters={'training_years':years,'same_persisted_processor_for_all_arms_seeds':True},seed=None,features='221 original inputs',universe='all train graph nodes, no label filtering',calibration='median/MAD+EPS times1.4826 clip3 Fillna0',data=__import__('core.round26_1.master_bindings',fromlist=['validate_store']).validate_store(store.path),label='not read',maturity='not read',windows=years,execution='normalizer only',upstream=[identity(R/'TARGET_COMPATIBILITY_FREEZE.json')])
+    fp=fingerprint(c);root=B/'MASTER_normalizers'/str(years[0])
+    root.mkdir(parents=True,exist_ok=True)
+    with (root/'prepare.lock').open('a') as lock:
+        fcntl.flock(lock,fcntl.LOCK_EX)
+        with transaction(root,c) as (work,cached):
+            if not cached:_compute_normalizer(store,years,work)
+        source=root/fp
+        for name in ['NORMALIZER.npz','NORMALIZER_AUDIT.json']:
+            shutil.copy2(source/name,dest/name)
+        fitted=np.load(source/'NORMALIZER.npz')
+        return fitted['mean'],fitted['std']
 
 def contract(store_path,arm,seed,year,mutation):
     import importlib.metadata,inspect
     from qlib.data.dataset.processor import RobustZScoreNorm
-    own=['master_fit.py','master_model.py','master_store.py','master_graphs.py','master_provider.py','master_features.py','master_market.py']
-    return dict(code=[identity(C/'core/round26_1'/n) for n in own]+[identity(C/'core/research_integrity_v5'/n) for n in ['cache.py','resources.py']],third_party={'author':[identity(VENDOR/n) for n in EXPECTED],'processor':identity(inspect.getfile(RobustZScoreNorm))},dirty_diff='complete imported source content identities',environment={n:importlib.metadata.version(n) for n in ['torch','numpy','pandas','pyqlib','zyquant']},parameters={'arm':arm,'year':year,'seed':seed,'epochs':1,'lr':1e-5,'threshold':.95,'gradient_clip_value':3.,'hidden':256,'temporal_heads':4,'spatial_heads':2,'dropout':.5,'beta':5,'CPUthreads':2,'interop':2,'mutation':mutation},seed=seed,features='original158+actual market63, train-only original RobustZScoreNorm',universe='frozen D-known all target+lagged top1000 context graph',calibration='one scalar canonicalTen target, no calibration',data=[identity(Path(store_path)/'COMPLETE.json')],label='canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall',maturity=f'train before{year-1}-01-01, valid before{year}-01-01',windows={'train':[year-3,year-2],'valid':year-1,'heldout':year,'sequence':8},execution={'baseline':'v5 immutable; backend/native execution separate','costs':[12.3,1.,.1,5.],'capital':300000,'source':identity(C/'core/local_executor.py')},upstream=[identity(R/'CONTRACT.yaml'),identity(R/'TARGET_COMPATIBILITY_FREEZE.json')])
+    own=['master_bindings.py','master_fit.py','master_model.py','master_store.py','master_graphs.py','master_provider.py','master_features.py','master_market.py']
+    return dict(code=[identity(C/'core/round26_1'/n) for n in own]+[identity(C/'core/research_integrity_v5'/n) for n in ['cache.py','resources.py']],third_party={'author':[identity(VENDOR/n) for n in EXPECTED],'processor':identity(inspect.getfile(RobustZScoreNorm))},dirty_diff='complete imported source content identities',environment={n:importlib.metadata.version(n) for n in ['torch','numpy','pandas','pyqlib','zyquant']},parameters={'arm':arm,'year':year,'seed':seed,'epochs':1,'lr':1e-5,'threshold':.95,'gradient_clip_value':3.,'hidden':256,'temporal_heads':4,'spatial_heads':2,'dropout':.5,'beta':5,'CPUthreads':2,'interop':2,'mutation':mutation},seed=seed,features='original158+actual market63, train-only original RobustZScoreNorm',universe='frozen D-known all target+lagged top1000 context graph',calibration='one scalar canonicalTen target, no calibration',data=__import__('core.round26_1.master_bindings',fromlist=['validate_store']).validate_store(store_path),label='canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall',maturity=f'train before{year-1}-01-01, valid before{year}-01-01',windows={'train':[year-3,year-2],'valid':year-1,'heldout':year,'sequence':8},execution={'baseline':'v5 immutable; backend/native execution separate','costs':[12.3,1.,.1,5.],'capital':300000,'source':identity(C/'core/local_executor.py')},upstream=[identity(R/'CONTRACT.yaml'),identity(R/'TARGET_COMPATIBILITY_FREEZE.json')])
 
 def run(store_path,arm,seed,year,mutation='none',namespace=None):
     c=contract(store_path,arm,seed,year,mutation);fp=fingerprint(c)

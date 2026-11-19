@@ -1,5 +1,5 @@
 {
-  "status": "IMPLEMENTATION_AND_REAL_DATA_PREPARATION_IN_PROGRESS",
+  "status": "REAL_OOF_RUNNING_SEED17",
   "IMPLEMENTED": false,
   "UNIT_TESTED": true,
   "REFERENCE_RUN_COMPLETE": false,
@@ -7,11 +7,14 @@
   "BACKTEST_COMPLETE": false,
   "EVIDENCE_COMPLETE": false,
   "external_blocker": false,
-  "reason": "Actual model/data adapters implemented and source integration passed; complete NN pipeline, real nested OOF and backend backtests remain unfinished. Public reference data retrieval under active investigation; no whole-D5 external blocker.",
+  "reason": "Original architecture integration/cache checks and real context-rebuild tests passed. Full-cap seed17 annual M0/M1 OOF is now running; reference recovery and full NN/backend/cost/risk audit remain incomplete. Retained24 initial normalizer-format failures and2 explicitly interrupted partial folds for input-binding correction; neither is external blockage.",
   "contract_sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3",
   "CURRENT_BASELINE_CHANGED": false,
   "PRODUCTION_CONFIG_CHANGED": false,
   "MODEL_ARCHITECTURE_INTEGRATION_PASS": true,
   "EARLY_TARGET_RECOVERED": true,
-  "REAL_INDEX63_COMPLETE": true
+  "REAL_INDEX63_COMPLETE": true,
+  "REAL_ALPHA158_COMPLETE": true,
+  "BASELINE_HEAD_CONFIGURATIONS": 18,
+  "BASELINE_BOOSTER_FITS": 90
 }

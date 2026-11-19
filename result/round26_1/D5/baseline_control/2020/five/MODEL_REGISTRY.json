@@ -1,0 +1,82 @@
+{
+  "parameters": {
+    "arm": "NO_FACTOR",
+    "factor_seed": "CONTROL",
+    "head": "five",
+    "year": 2020,
+    "mode": "BASELINE",
+    "removed": null,
+    "feature_order": [
+      "g_prim_px_vol_corr",
+      "fb_close_seal_streak_norm",
+      "fb_last30_amount_ratio",
+      "h5_last_first_limit_value_change_sym",
+      "h1_consistent_buy_ratio",
+      "h1_last15m_volume_ratio",
+      "h4_large_net_to_turnover",
+      "h4_retail_net_to_turnover",
+      "g0_amount_log",
+      "g0_amt_vs_5",
+      "g1_ret_5",
+      "g3_days_since_limit",
+      "ind_seal_rate_excess",
+      "d1_open_gap"
+    ],
+    "tree_seeds": [
+      17,
+      42,
+      73,
+      101,
+      202
+    ],
+    "XGB_params": {
+      "objective": "rank:ndcg",
+      "eval_metric": null,
+      "ndcg_exp_gain": true,
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_child_weight": 1.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "reg_lambda": 1.0,
+      "reg_alpha": 0.0,
+      "tree_method": "hist",
+      "random_state": 17,
+      "n_jobs": 2
+    },
+    "eval_metric": "ndcg@1",
+    "rank_bins": 5,
+    "fit_cutoff": "2020-01-01",
+    "max_training_label_available_at": "2019-12-31 15:00:00",
+    "training_keys": "51f43146f58bfbada44f67f52b76e3c7978f74f868493508f4264f5cae5a8b64",
+    "prediction_keys": "07ce23fe1d910f3c8472fdf9597d64b6a560d4c63021864311f4bb093c0cf4dd",
+    "training_original": "48a3da6f4b8dfd7f48b896dc415f88798ff9a712061bcd3b30426c74a5eb8fd2",
+    "prediction_original": "6fd0379520b9052160d7758daa1ed578c3bcc76cd512f9ead9e5bd63202977ef",
+    "training_actual": "48a3da6f4b8dfd7f48b896dc415f88798ff9a712061bcd3b30426c74a5eb8fd2",
+    "prediction_actual": "6fd0379520b9052160d7758daa1ed578c3bcc76cd512f9ead9e5bd63202977ef"
+  },
+  "models": [
+    {
+      "seed": 17,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc"
+    },
+    {
+      "seed": 42,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc"
+    },
+    {
+      "seed": 73,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc"
+    },
+    {
+      "seed": 101,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc"
+    },
+    {
+      "seed": 202,
+      "sha256": "e7ac75864b921efb5d5185bfe0a207118bcb49d5c4987aae0cca91e90d8410dc"
+    }
+  ],
+  "actual_booster_fits": 5
+}

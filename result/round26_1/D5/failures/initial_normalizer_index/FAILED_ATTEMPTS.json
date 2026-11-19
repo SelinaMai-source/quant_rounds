@@ -1,0 +1,3822 @@
+{
+  "status": "IMPLEMENTATION_FAILURE_NOT_EXTERNAL_BLOCK",
+  "reason": "Original Qlib processor requires MultiIndex datetime/instrument. Adapter incorrectly supplied single DatetimeIndex; failed during normalizer fit, before any NN gradient day. Correct index representation and rerun full frozen budget.",
+  "attempts": [
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2015/3f64b4e5fa709b93e329019b40dc13589d1d5759e9abbd35c429ba8b54046202.partial.vtq15lb3",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2014-01-01, valid before2015-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2015
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2015,
+          "sequence": 8,
+          "train": [
+            2012,
+            2013
+          ],
+          "valid": 2014
+        }
+      },
+      "resources": {
+        "pid": 463738,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 3.2606264241039753,
+        "CPU_user_seconds": 0.9886519999999996,
+        "CPU_system_seconds": 0.6210100000000001,
+        "RSS_sampled_peak_bytes": 2046861312,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2058580,
+        "free_disk_before_bytes": 6405628899328,
+        "free_disk_after_bytes": 6405628858368,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2017/cc3df7db227abc6cace95a9b26f2d538d754a45bf2964ec0b20a95b80a5e78a0.partial.30ed6jqd",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2016-01-01, valid before2017-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2017
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2017,
+          "sequence": 8,
+          "train": [
+            2014,
+            2015
+          ],
+          "valid": 2016
+        }
+      },
+      "resources": {
+        "pid": 463924,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5549305975437164,
+        "CPU_user_seconds": 1.0714070000000002,
+        "CPU_system_seconds": 0.49644900000000003,
+        "RSS_sampled_peak_bytes": 2186133504,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2195924,
+        "free_disk_before_bytes": 6405628739584,
+        "free_disk_after_bytes": 6405628715008,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2021/25db91da6e5dc45b590327e83d3d283adcd50e50a8149696ae3ca9aa6a1b77db.partial.4mi9l3ze",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2020-01-01, valid before2021-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2021
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2021,
+          "sequence": 8,
+          "train": [
+            2018,
+            2019
+          ],
+          "valid": 2020
+        }
+      },
+      "resources": {
+        "pid": 464213,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.6876984518021345,
+        "CPU_user_seconds": 1.0481749999999996,
+        "CPU_system_seconds": 0.639818,
+        "RSS_sampled_peak_bytes": 2209779712,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2217640,
+        "free_disk_before_bytes": 6405628444672,
+        "free_disk_after_bytes": 6405628432384,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2023/fcc0d43c8fcff1a9d7d2065af34ec93770656a3fc497ce9607abebaced1d2271.partial.eutiwemy",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2022-01-01, valid before2023-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2023
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2023,
+          "sequence": 8,
+          "train": [
+            2020,
+            2021
+          ],
+          "valid": 2022
+        }
+      },
+      "resources": {
+        "pid": 464378,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.6534192562103271,
+        "CPU_user_seconds": 0.9265480000000004,
+        "CPU_system_seconds": 0.715538,
+        "RSS_sampled_peak_bytes": 2366988288,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2371680,
+        "free_disk_before_bytes": 6405628305408,
+        "free_disk_after_bytes": 6405628293120,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2018/eba03f21c5c027612618a400b35792a0ae7599e39642ee43324ed876a1990e9f.partial.m4loy212",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2017-01-01, valid before2018-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2018
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2018,
+          "sequence": 8,
+          "train": [
+            2015,
+            2016
+          ],
+          "valid": 2017
+        }
+      },
+      "resources": {
+        "pid": 463987,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5468433052301407,
+        "CPU_user_seconds": 1.005649,
+        "CPU_system_seconds": 0.552624,
+        "RSS_sampled_peak_bytes": 2230779904,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2238332,
+        "free_disk_before_bytes": 6405628657664,
+        "free_disk_after_bytes": 6405628645376,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2024/c430ba18448a7f807ecc5563d8424433d2bfe4e83c00ade327cecb9d66dc5084.partial.zqld1zdd",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2023-01-01, valid before2024-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2024
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2024,
+          "sequence": 8,
+          "train": [
+            2021,
+            2022
+          ],
+          "valid": 2023
+        }
+      },
+      "resources": {
+        "pid": 464465,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5399126932024956,
+        "CPU_user_seconds": 0.952658,
+        "CPU_system_seconds": 0.5874409999999999,
+        "RSS_sampled_peak_bytes": 2380865536,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2385092,
+        "free_disk_before_bytes": 6405628235776,
+        "free_disk_after_bytes": 6405628223488,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2022/1434b2f19e19e998c47ceee715e2da5d3a5cf61de9bb2986ad1f9cca31bac6ae.partial.k0qmh13c",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2021-01-01, valid before2022-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2022
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2022,
+          "sequence": 8,
+          "train": [
+            2019,
+            2020
+          ],
+          "valid": 2021
+        }
+      },
+      "resources": {
+        "pid": 464292,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5826897080987692,
+        "CPU_user_seconds": 1.0343029999999995,
+        "CPU_system_seconds": 0.546365,
+        "RSS_sampled_peak_bytes": 2302275584,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2308240,
+        "free_disk_before_bytes": 6405628375040,
+        "free_disk_after_bytes": 6405628362752,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2025/4a005e495c112aa264beefb2c2a9eff065247b1d665ba5a73ed2abe95ee31bfa.partial.wxr92p2_",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2024-01-01, valid before2025-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2025
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2025,
+          "sequence": 8,
+          "train": [
+            2022,
+            2023
+          ],
+          "valid": 2024
+        }
+      },
+      "resources": {
+        "pid": 464535,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.6628107484430075,
+        "CPU_user_seconds": 1.06866,
+        "CPU_system_seconds": 0.582197,
+        "RSS_sampled_peak_bytes": 2349182976,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2354424,
+        "free_disk_before_bytes": 6405628166144,
+        "free_disk_after_bytes": 6405628153856,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2026/43924409db13022878b382aa0faa1ebaa99b1aabf38ec9d75addd85eb856bfee.partial.7j8ke28x",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2025-01-01, valid before2026-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2026
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2026,
+          "sequence": 8,
+          "train": [
+            2023,
+            2024
+          ],
+          "valid": 2025
+        }
+      },
+      "resources": {
+        "pid": 464642,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.6482200026512146,
+        "CPU_user_seconds": 0.9967740000000003,
+        "CPU_system_seconds": 0.66039,
+        "RSS_sampled_peak_bytes": 2402693120,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2406300,
+        "free_disk_before_bytes": 6405628096512,
+        "free_disk_after_bytes": 6405628084224,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/03639d087f680d5773cb52bd79fc46659302b1894e339643f414df452301b9cf.partial.c456o1j9",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2018-01-01, valid before2019-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2019
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2019,
+          "sequence": 8,
+          "train": [
+            2016,
+            2017
+          ],
+          "valid": 2018
+        }
+      },
+      "resources": {
+        "pid": 464060,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5199943259358406,
+        "CPU_user_seconds": 0.9832090000000004,
+        "CPU_system_seconds": 0.5488569999999999,
+        "RSS_sampled_peak_bytes": 2190446592,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2198996,
+        "free_disk_before_bytes": 6405628588032,
+        "free_disk_after_bytes": 6405628575744,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2016/e9bc272ffea254dbd2857d109bc6d4ee89c55932b6bbf72efc0146fe15aa2282.partial.5_znp5jv",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2015-01-01, valid before2016-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2016
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2016,
+          "sequence": 8,
+          "train": [
+            2013,
+            2014
+          ],
+          "valid": 2015
+        }
+      },
+      "resources": {
+        "pid": 463845,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.531696705147624,
+        "CPU_user_seconds": 0.9977459999999994,
+        "CPU_system_seconds": 0.54745,
+        "RSS_sampled_peak_bytes": 2067660800,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2078000,
+        "free_disk_before_bytes": 6405628809216,
+        "free_disk_after_bytes": 6405628784640,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2020/11e0214dd9777d6a99b65b8321eefb80255d8aad6b6d652cd293a33911f41130.partial.kjv_f_nb",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2019-01-01, valid before2020-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M1",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2020
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2020,
+          "sequence": 8,
+          "train": [
+            2017,
+            2018
+          ],
+          "valid": 2019
+        }
+      },
+      "resources": {
+        "pid": 464138,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5299328714609146,
+        "CPU_user_seconds": 0.9463950000000003,
+        "CPU_system_seconds": 0.596363,
+        "RSS_sampled_peak_bytes": 2176565248,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2185280,
+        "free_disk_before_bytes": 6405628518400,
+        "free_disk_after_bytes": 6405628506112,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2015/982973ddd22e6211278883fc88d6da89bdcb897e2a1ee45c84e71d5f1cd50736.partial.rr5gd0vx",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2014-01-01, valid before2015-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2015
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2015,
+          "sequence": 8,
+          "train": [
+            2012,
+            2013
+          ],
+          "valid": 2014
+        }
+      },
+      "resources": {
+        "pid": 463741,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.779252229258418,
+        "CPU_user_seconds": 0.9170090000000002,
+        "CPU_system_seconds": 0.855526,
+        "RSS_sampled_peak_bytes": 2047971328,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2058500,
+        "free_disk_before_bytes": 6405628919808,
+        "free_disk_after_bytes": 6405628878848,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2017/222fe95aa4b9fd77330c01eee99a425cdd2bda0ae74dcafec6f4f223f7fca34c.partial.i0qo7juz",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2016-01-01, valid before2017-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2017
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2017,
+          "sequence": 8,
+          "train": [
+            2014,
+            2015
+          ],
+          "valid": 2016
+        }
+      },
+      "resources": {
+        "pid": 463913,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5375869516283274,
+        "CPU_user_seconds": 1.048953,
+        "CPU_system_seconds": 0.5008379999999999,
+        "RSS_sampled_peak_bytes": 2188087296,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2197016,
+        "free_disk_before_bytes": 6405628764160,
+        "free_disk_after_bytes": 6405628735488,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2021/d398e497641840b0788a9ddaa1d9bc8d7e271d3fd26d94f8227f731d93aa57af.partial.hvjcb4r2",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2020-01-01, valid before2021-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2021
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2021,
+          "sequence": 8,
+          "train": [
+            2018,
+            2019
+          ],
+          "valid": 2020
+        }
+      },
+      "resources": {
+        "pid": 464193,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5789637435227633,
+        "CPU_user_seconds": 1.0108639999999998,
+        "CPU_system_seconds": 0.581394,
+        "RSS_sampled_peak_bytes": 2209394688,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2217380,
+        "free_disk_before_bytes": 6405628481536,
+        "free_disk_after_bytes": 6405628465152,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2023/997c7bb4bfd98fe9516f9addde31dbe4c4ae199deeb17fafe99c14d027b25b5a.partial.vqxooqpm",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2022-01-01, valid before2023-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2023
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2023,
+          "sequence": 8,
+          "train": [
+            2020,
+            2021
+          ],
+          "valid": 2022
+        }
+      },
+      "resources": {
+        "pid": 464346,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5454795937985182,
+        "CPU_user_seconds": 0.9879669999999994,
+        "CPU_system_seconds": 0.5696209999999999,
+        "RSS_sampled_peak_bytes": 2366341120,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2370968,
+        "free_disk_before_bytes": 6405628342272,
+        "free_disk_after_bytes": 6405628325888,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2018/75325b801a7da29b91fef1caef5e7512ee03a4d5bc62855594415c608e4358eb.partial.5r9yi5z0",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2017-01-01, valid before2018-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2018
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2018,
+          "sequence": 8,
+          "train": [
+            2015,
+            2016
+          ],
+          "valid": 2017
+        }
+      },
+      "resources": {
+        "pid": 463978,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.550400536507368,
+        "CPU_user_seconds": 0.9909709999999996,
+        "CPU_system_seconds": 0.573055,
+        "RSS_sampled_peak_bytes": 2230771712,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2238508,
+        "free_disk_before_bytes": 6405628694528,
+        "free_disk_after_bytes": 6405628678144,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2024/a9587850fa1de85983d7d0e2c62f6b285345005d177b084f86b024ff793e8126.partial.0s61tvwz",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2023-01-01, valid before2024-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2024
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2024,
+          "sequence": 8,
+          "train": [
+            2021,
+            2022
+          ],
+          "valid": 2023
+        }
+      },
+      "resources": {
+        "pid": 464428,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5534824952483177,
+        "CPU_user_seconds": 0.9560370000000002,
+        "CPU_system_seconds": 0.6095470000000001,
+        "RSS_sampled_peak_bytes": 2380509184,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2384744,
+        "free_disk_before_bytes": 6405628272640,
+        "free_disk_after_bytes": 6405628256256,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2022/03d5c20e55830eb7dbbe59815af5f8e4fab036021057e38277897048b9de7066.partial.r7clm5fy",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2021-01-01, valid before2022-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2022
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2022,
+          "sequence": 8,
+          "train": [
+            2019,
+            2020
+          ],
+          "valid": 2021
+        }
+      },
+      "resources": {
+        "pid": 464274,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5322921965271235,
+        "CPU_user_seconds": 1.0719570000000003,
+        "CPU_system_seconds": 0.47275999999999996,
+        "RSS_sampled_peak_bytes": 2302025728,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2307900,
+        "free_disk_before_bytes": 6405628411904,
+        "free_disk_after_bytes": 6405628395520,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2025/c578ea708e302865d73fa8ccf5abc987c8b3068059ead84f31b04d0b93f5f001.partial.jt5ltm1l",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2024-01-01, valid before2025-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2025
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2025,
+          "sequence": 8,
+          "train": [
+            2022,
+            2023
+          ],
+          "valid": 2024
+        }
+      },
+      "resources": {
+        "pid": 464519,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5297655388712883,
+        "CPU_user_seconds": 0.9657819999999999,
+        "CPU_system_seconds": 0.576009,
+        "RSS_sampled_peak_bytes": 2351140864,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2355812,
+        "free_disk_before_bytes": 6405628203008,
+        "free_disk_after_bytes": 6405628186624,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2026/b35ebf01055f57f217ada66be31b245daf6c820fb769bc6b5dc2b7150b5f4a71.partial.o1y_hitp",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2025-01-01, valid before2026-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2026
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2026,
+          "sequence": 8,
+          "train": [
+            2023,
+            2024
+          ],
+          "valid": 2025
+        }
+      },
+      "resources": {
+        "pid": 464614,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5285119488835335,
+        "CPU_user_seconds": 1.0367049999999995,
+        "CPU_system_seconds": 0.504956,
+        "RSS_sampled_peak_bytes": 2403766272,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2406956,
+        "free_disk_before_bytes": 6405628133376,
+        "free_disk_after_bytes": 6405628116992,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2019/c2c47e2d6ca632defa6b58c5c4cf5ecba5be6f0ee5474bfcce5148ef3a06cc20.partial.a28eknn9",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2018-01-01, valid before2019-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2019
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2019,
+          "sequence": 8,
+          "train": [
+            2016,
+            2017
+          ],
+          "valid": 2018
+        }
+      },
+      "resources": {
+        "pid": 464046,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5523232445120811,
+        "CPU_user_seconds": 0.9973640000000001,
+        "CPU_system_seconds": 0.5688059999999999,
+        "RSS_sampled_peak_bytes": 2190745600,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2198920,
+        "free_disk_before_bytes": 6405628624896,
+        "free_disk_after_bytes": 6405628608512,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2016/180cdad2cd8e6d4d0c7032b2b5355fe673aa93dc6777a87e5313b56dc1b5c09d.partial.euqwtmfx",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2015-01-01, valid before2016-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2016
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2016,
+          "sequence": 8,
+          "train": [
+            2013,
+            2014
+          ],
+          "valid": 2015
+        }
+      },
+      "resources": {
+        "pid": 463825,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.4809244647622108,
+        "CPU_user_seconds": 1.0494439999999998,
+        "CPU_system_seconds": 0.44395700000000005,
+        "RSS_sampled_peak_bytes": 2067849216,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2077968,
+        "free_disk_before_bytes": 6405628833792,
+        "free_disk_after_bytes": 6405628805120,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M0/17/2020/48c67376118ee363952a5b2bfd55173de17ac07d85cd0188d4d94593e699f096.partial.aqdr_25q",
+      "contract": {
+        "calibration": "one scalar canonicalTen target, no calibration",
+        "code": [
+          {
+            "bytes": 10885,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_fit.py",
+            "sha256": "65d788102b4de97e931e7d3167268485090b79792c14c4903b162464515777ae"
+          },
+          {
+            "bytes": 3684,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_model.py",
+            "sha256": "db34b637a2bd6295162d4b8421013bda8b733a3a1b07e311f2ef639d0b009da4"
+          },
+          {
+            "bytes": 4740,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_store.py",
+            "sha256": "f8b9826a10513043208c3833de873cb6e0d1a245cdec5c913b851c9379c8aa81"
+          },
+          {
+            "bytes": 5877,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_graphs.py",
+            "sha256": "3456b7edf57eefc40aae8aa5b75a42dd9429ef363961dc4e33f525f8b8a7fbc9"
+          },
+          {
+            "bytes": 6024,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_provider.py",
+            "sha256": "9e27b9109df9364595e630b794ffa4749c23ec39af53a1bb708ea785d58245b5"
+          },
+          {
+            "bytes": 3154,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_features.py",
+            "sha256": "5d12c8b421b9880ba4a6a4179ac8c8a4c4931d3a57e1ab0fb3aaddbff273e628"
+          },
+          {
+            "bytes": 3551,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/round26_1/master_market.py",
+            "sha256": "9cdf7cdb416c700a6517babef1324b58cf406874b873e7a1dd606ac2c7e0b0cf"
+          },
+          {
+            "bytes": 2724,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/cache.py",
+            "sha256": "c5c7a3628e9e6ff5bc7e1a86b0dd7e5f3d6a7246ee9e83abdcc341b1c2a9e79c"
+          },
+          {
+            "bytes": 1438,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/research_integrity_v5/resources.py",
+            "sha256": "7ec7e3830fd65c03021026c24abd936108d1a49a2519c5f98b6c8835fee7eb08"
+          }
+        ],
+        "data": [
+          {
+            "bytes": 563,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/d3f729ff8606ab586ec8e0eb4b41fc3de05cf358732d19c4e1d664fbd229a1f1/COMPLETE.json",
+            "sha256": "06884d22807eaa5421b7850a35e8dd19e2fe6b7c9cc0d6d100de8786c4425cfd"
+          }
+        ],
+        "dirty_diff": "complete imported source content identities",
+        "environment": {
+          "numpy": "2.2.3",
+          "pandas": "2.3.3",
+          "pyqlib": "0.9.8",
+          "torch": "2.15.0+cpu",
+          "zyquant": "2.0.10"
+        },
+        "execution": {
+          "baseline": "v5 immutable; backend/native execution separate",
+          "capital": 300000,
+          "costs": [
+            12.3,
+            1.0,
+            0.1,
+            5.0
+          ],
+          "source": {
+            "bytes": 45705,
+            "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+            "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+          }
+        },
+        "features": "original158+actual market63, train-only original RobustZScoreNorm",
+        "label": "canonical label_exit_rule_net, mask only after all-node forward; drop2.5percent tails, p0 keepall",
+        "maturity": "train before2019-01-01, valid before2020-01-01",
+        "parameters": {
+          "CPUthreads": 2,
+          "arm": "M0",
+          "beta": 5,
+          "dropout": 0.5,
+          "epochs": 1,
+          "gradient_clip_value": 3.0,
+          "hidden": 256,
+          "interop": 2,
+          "lr": 1e-05,
+          "mutation": "none",
+          "seed": 17,
+          "spatial_heads": 2,
+          "temporal_heads": 4,
+          "threshold": 0.95,
+          "year": 2020
+        },
+        "seed": 17,
+        "third_party": {
+          "author": [
+            {
+              "bytes": 8141,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/master.py",
+              "sha256": "e5e798952c9636c8c43fc91cff51a6dbbebc009b99d16a1ae090be32d0744fe4"
+            },
+            {
+              "bytes": 7734,
+              "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/vendor/MASTER/base_model.py",
+              "sha256": "116322431b83194234390a5929cd98883afb8fac2b1eaffb3d01556b9f5d691a"
+            }
+          ],
+          "processor": {
+            "bytes": 14534,
+            "path": "/data1/stock-mxy/课题/一进二策略/research/round23_6_26_execution/env/lib/python3.13/site-packages/qlib/data/dataset/processor.py",
+            "sha256": "424af44e81c99467171c2d0b7978fb9f95d3b4c8b743a535ff4fe45d708cf517"
+          }
+        },
+        "universe": "frozen D-known all target+lagged top1000 context graph",
+        "upstream": [
+          {
+            "bytes": 25333,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/CONTRACT.yaml",
+            "sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3"
+          },
+          {
+            "bytes": 1720,
+            "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/TARGET_COMPATIBILITY_FREEZE.json",
+            "sha256": "891b396d75ee14eef9e28f203588755963158f8987f09346383b082c620b8dbe"
+          }
+        ],
+        "windows": {
+          "heldout": 2020,
+          "sequence": 8,
+          "train": [
+            2017,
+            2018
+          ],
+          "valid": 2019
+        }
+      },
+      "resources": {
+        "pid": 464118,
+        "status": "FAILED_OR_INTERRUPTED",
+        "wall_seconds": 1.5310948472470045,
+        "CPU_user_seconds": 1.0027640000000004,
+        "CPU_system_seconds": 0.541755,
+        "RSS_sampled_peak_bytes": 2175713280,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 2185264,
+        "free_disk_before_bytes": 6405628555264,
+        "free_disk_after_bytes": 6405628538880,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    }
+  ]
+}
