@@ -1,0 +1,14 @@
+{
+  "status": "FROZEN_NOT_IMPLEMENTED",
+  "IMPLEMENTED": false,
+  "UNIT_TESTED": false,
+  "REFERENCE_RUN_COMPLETE": false,
+  "TARGET_OOF_COMPLETE": false,
+  "BACKTEST_COMPLETE": false,
+  "EVIDENCE_COMPLETE": false,
+  "external_blocker": false,
+  "reason": "Freeze only; code and real runs pending, NOT_IMPLEMENTED is not external blockage",
+  "contract_sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3",
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false
+}
