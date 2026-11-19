@@ -1,0 +1,25 @@
+{
+  "pid": 5424,
+  "command": [
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/env/bin/python",
+    "-B",
+    "-u",
+    "-m",
+    "core.round23_7.tra_fit",
+    "--head",
+    "five",
+    "--year",
+    "2020",
+    "--seed",
+    "73",
+    "--phase",
+    "T0",
+    "--data",
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_data/dee8d2c4165ee7c5f84cf24b5233db87f43c6d0c736635e519abb0bf45bea6d1",
+    "--namespace",
+    "original",
+    "--init-state",
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/TRA_target_models/original/73/2020/five/init/83a13aa25ff5d1e0f9fb8593dba9432c6b32bbab3d2268d22a1a10c5b96e8edc/model.bin"
+  ],
+  "UTC_epoch": 1795066435.948039
+}
