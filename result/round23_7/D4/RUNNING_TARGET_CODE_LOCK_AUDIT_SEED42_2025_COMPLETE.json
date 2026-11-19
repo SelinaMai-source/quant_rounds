@@ -1,0 +1,18 @@
+{
+  "observed_at_utc": "2026-11-19T00:02:20.750177+00:00",
+  "learning_code_lock": {
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round23_7/tra_reference.py": true,
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round23_7/tra_data.py": true,
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round23_7/tra_causal.py": true,
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round23_7/tra_fit.py": true,
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/research_integrity_v5/cache.py": true,
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/research_integrity_v5/resources.py": true,
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/local_executor.py": true,
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round7/contract.py": true
+  },
+  "original_seed17_full_models": 54,
+  "original_seed42_full_models": 48,
+  "diagnostic_full_models": 12,
+  "all_valid_forecasts_present": true,
+  "seed42_economic_results": "NOT_RUN"
+}
