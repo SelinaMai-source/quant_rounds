@@ -12,7 +12,7 @@
   "raw_file": "/data1/stock-mxy/课题/一进二策略/core/round21_4/contract.py",
   "raw_file_hash": "35bff8add6b4dfb79bae14e852cfcdae3904ff611a9ed4a621ddf64263aac5ad",
   "gate_code_hash": "e89c30f4b50e22887bf0eebbe607abc76e9295d81d473fd18dda1796d7771607",
-  "freeze_timestamp": "2026-11-19T10:00:47.831717+08:00",
+  "freeze_timestamp": "2026-11-20T05:58:20.977170+08:00",
   "implementation": {
     "LEGACY": "core.round22_3.contract.material_vs_v5（绝对值 nav_rel；缺证据默认真）",
     "CORRECTED": "research_integrity_v2.economic_gate.evaluate_economic_gate"

@@ -20,6 +20,12 @@
       "matches_actual_results": true
     },
     {
+      "experiment_id": "TRA_T0_73",
+      "terminal_wealth": 0.3867060213773799,
+      "MaxDD": -0.686466633398492,
+      "matches_actual_results": true
+    },
+    {
       "experiment_id": "TRA_A0",
       "terminal_wealth": 41.85637327688377,
       "MaxDD": -0.24056327715394077,
@@ -36,18 +42,24 @@
       "terminal_wealth": 0.8851007740407103,
       "MaxDD": -0.4504897298192658,
       "matches_actual_results": true
+    },
+    {
+      "experiment_id": "TRA_T1_73",
+      "terminal_wealth": 0.1722005194832004,
+      "MaxDD": -0.8366616933849069,
+      "matches_actual_results": true
     }
   ],
   "inputs": [
     {
       "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/daily_returns.csv.gz",
-      "bytes": 227505,
-      "sha256": "33eb2b0a584cfe830866e87664b79129912f54a6d260ddf3adbff989c0f63a33"
+      "bytes": 315716,
+      "sha256": "b10067a05638b49a11374741da8f79ac46514ea48377951332f7a1c4d1b897c1"
     },
     {
       "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round23_7/D4/all_results.csv",
-      "bytes": 7361,
-      "sha256": "54adc2e5e027319b748d2c11bd6dbcda2af180c680a9180a037e0034005abb6c"
+      "bytes": 9869,
+      "sha256": "a990907f9e6f16af8bdf1e65e120bcfd1c12baec788fe31c1606b72e71bf0b3c"
     }
   ]
 }
