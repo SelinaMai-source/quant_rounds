@@ -1,11 +1,17 @@
 {
   "status": "COMPUTED",
   "pvalues": {
-    "lower": 0.8148,
-    "consistent": 0.9954,
-    "upper": 0.9976
+    "lower": 0.8736,
+    "consistent": 0.9992,
+    "upper": 0.9996
   },
   "alternatives": [
+    "M0_73_FIVE_ADD",
+    "M0_73_TEN_ADD",
+    "M0_73_BOTH_ADD",
+    "M1_73_FIVE_ADD",
+    "M1_73_TEN_ADD",
+    "M1_73_BOTH_ADD",
     "M0_17_FIVE_ADD",
     "M0_17_TEN_ADD",
     "M0_17_BOTH_ADD",

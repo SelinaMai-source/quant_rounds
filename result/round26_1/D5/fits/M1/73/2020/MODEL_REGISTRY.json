@@ -1,0 +1,20 @@
+{
+  "status": "FACTOR_OOF_YEAR_COMPLETE",
+  "arm": "M1",
+  "seed": 73,
+  "year": 2020,
+  "epochs": 1,
+  "all_training_dates": 487,
+  "gradient_dates": 476,
+  "mean_train_loss": 1.0179780482964105,
+  "checkpoint_reason": "CAP_REACHED",
+  "checkpoint_sha256": "d6a27704e46c862f38b7e9fb08d2f8a737edf61c74b706dca737d4ec97fb5977",
+  "normalizer_sha256": "ddd6e233fc156e9af3292671df3c74ce21399d6fe0b8198ba41254f353e476a6",
+  "fit_cutoff": "2020-01-01",
+  "max_training_label_available_at": "2018-12-28 15:00:00",
+  "unavailable_training_target_interventions": 0,
+  "mutation": "none",
+  "model_shape_parameters": 775041,
+  "train_only_fit": true,
+  "historical_OOF_not_training_fitted_values": true
+}
