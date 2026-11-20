@@ -1,9 +1,9 @@
 {
   "status": "COMPUTED",
   "pvalues": {
-    "lower": 0.7846,
-    "consistent": 0.9998,
-    "upper": 1.0
+    "lower": 0.8148,
+    "consistent": 0.9954,
+    "upper": 0.9976
   },
   "alternatives": [
     "M0_17_FIVE_ADD",
@@ -11,7 +11,13 @@
     "M0_17_BOTH_ADD",
     "M1_17_FIVE_ADD",
     "M1_17_TEN_ADD",
-    "M1_17_BOTH_ADD"
+    "M1_17_BOTH_ADD",
+    "M0_42_FIVE_ADD",
+    "M0_42_TEN_ADD",
+    "M0_42_BOTH_ADD",
+    "M1_42_FIVE_ADD",
+    "M1_42_TEN_ADD",
+    "M1_42_BOTH_ADD"
   ],
   "deduplicated": {},
   "loss": "negative actual portfolio daily return",

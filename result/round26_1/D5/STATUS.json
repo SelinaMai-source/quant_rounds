@@ -12,23 +12,23 @@
       "all24_OOF_complete": true
     },
     "42": {
-      "accepted_OOF_models": 16,
-      "all24_OOF_complete": false
+      "accepted_OOF_models": 24,
+      "all24_OOF_complete": true
     },
     "73": {
       "accepted_OOF_models": 0,
       "all24_OOF_complete": false
     }
   },
-  "accepted_target_NN_models": 40,
-  "accepted_target_NN_training_dates": 19438,
+  "accepted_target_NN_models": 48,
+  "accepted_target_NN_training_dates": 23316,
   "full_cold_NN_runs": 12,
   "full_cold_backend_configurations": 24,
   "full_cold_backend_boosters": 120,
   "actual_native_causal_replays": 12,
-  "actual_economic_account_configurations": 21,
-  "actual_regular_head_configurations": 36,
-  "actual_regular_head_boosters": 180,
+  "actual_economic_account_configurations": 39,
+  "actual_regular_head_configurations": 72,
+  "actual_regular_head_boosters": 360,
   "no_factor_control_configurations": 18,
   "no_factor_control_boosters": 90,
   "diagnostic_tests": {
@@ -36,7 +36,7 @@
     "backend24": true,
     "native12": true
   },
-  "completed_checkpoint_seed": 17,
+  "completed_checkpoint_seed": 42,
   "CURRENT_BASELINE_CHANGED": false,
   "PRODUCTION_CONFIG_CHANGED": false,
   "external_blocker": false,

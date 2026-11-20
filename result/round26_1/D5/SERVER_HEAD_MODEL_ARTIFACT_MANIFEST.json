@@ -3796,5 +3796,3803 @@
         "sha256": "c689a2aa32dbb14198511ba4857b6c8f6e149e2639e308923b89e22b98674a63"
       }
     ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2018,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "b2595ab52506ef30d4e09af0e042c6709ffcd1262ec5611143cd965c90817ecb"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "5c1c1d71e9d6228084f9c59b41f4014fe541271d18155cf4174ed0770c3456b1"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "44c5507032783e075e4f957fce0b98ad04a15015077ba9c3b6051e28e39ce73a"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/contract.json",
+        "bytes": 20049,
+        "sha256": "5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/predictions.parquet",
+        "bytes": 27097,
+        "sha256": "1140d573a7fffb599a5a4faa8f737862ec0a1d49796a7a6e1aefebdee634a02f",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 3168
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/xgb_101.json",
+        "bytes": 78420,
+        "sha256": "83fa464eb96e2a6d5003bf3e19fcf52362b0d8c6b62521fca43171b343e93f82"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/xgb_17.json",
+        "bytes": 78420,
+        "sha256": "83fa464eb96e2a6d5003bf3e19fcf52362b0d8c6b62521fca43171b343e93f82"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/xgb_202.json",
+        "bytes": 78420,
+        "sha256": "83fa464eb96e2a6d5003bf3e19fcf52362b0d8c6b62521fca43171b343e93f82"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/xgb_42.json",
+        "bytes": 78420,
+        "sha256": "83fa464eb96e2a6d5003bf3e19fcf52362b0d8c6b62521fca43171b343e93f82"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2018/5f445956e9a89465c0ac78e92ff5c79d74d9fb61902d0ef1b5d233023878238e/xgb_73.json",
+        "bytes": 78420,
+        "sha256": "83fa464eb96e2a6d5003bf3e19fcf52362b0d8c6b62521fca43171b343e93f82"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2019,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "f1560794d0766a5b7ed92e6fd205200a75a2baeffe1630cdc05f36f7e92a4610"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "fae4e0fb75c248acc7715fc82897e9be8417bdaf19ef5d2cf443ad175e4b60bb"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "ab755a85dd630479da17b8708b67eed4bb9d100970dafecc6e910b28e86afb6b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/contract.json",
+        "bytes": 20049,
+        "sha256": "e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/predictions.parquet",
+        "bytes": 39287,
+        "sha256": "c8b124d7f19e76f9c23d9b68b52f2e64d1202c864ea9791cd1fa75b9851bfcbc",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 4698
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/xgb_101.json",
+        "bytes": 78415,
+        "sha256": "5158927505446e873a065bf72180e4a12e3fd8887cfbbd3cbc53aa4011cd39b3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/xgb_17.json",
+        "bytes": 78415,
+        "sha256": "5158927505446e873a065bf72180e4a12e3fd8887cfbbd3cbc53aa4011cd39b3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/xgb_202.json",
+        "bytes": 78415,
+        "sha256": "5158927505446e873a065bf72180e4a12e3fd8887cfbbd3cbc53aa4011cd39b3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/xgb_42.json",
+        "bytes": 78415,
+        "sha256": "5158927505446e873a065bf72180e4a12e3fd8887cfbbd3cbc53aa4011cd39b3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2019/e6320c5a8b1df46e3d3c55c99fdc652003fcd5872f6dbf61343e56130e982e67/xgb_73.json",
+        "bytes": 78415,
+        "sha256": "5158927505446e873a065bf72180e4a12e3fd8887cfbbd3cbc53aa4011cd39b3"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2020,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "6c6d8ba8ac7f9939d1ec24cf4109a35343d3dba614933b3da64e9b30ace4ff97"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "be52619cf3a93ff3b0ce94367949f173fcf7d0d4c593c2a4ecc978776a4a7750"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "1b80ae598916b1b0cc01fc8278b5135759e6f6f15e463f3973fe7d38ce644bc0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/contract.json",
+        "bytes": 20049,
+        "sha256": "a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/predictions.parquet",
+        "bytes": 45909,
+        "sha256": "ab62c0fdc76f14fb32092406f7620f30f75e82e639e256a1d8eccc68c4eba8a0",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5848
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/xgb_101.json",
+        "bytes": 78432,
+        "sha256": "99c1f838623dbeb94d80423318eedc6252f2a380101f43827aeb4c857a56ba08"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/xgb_17.json",
+        "bytes": 78432,
+        "sha256": "99c1f838623dbeb94d80423318eedc6252f2a380101f43827aeb4c857a56ba08"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/xgb_202.json",
+        "bytes": 78432,
+        "sha256": "99c1f838623dbeb94d80423318eedc6252f2a380101f43827aeb4c857a56ba08"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/xgb_42.json",
+        "bytes": 78432,
+        "sha256": "99c1f838623dbeb94d80423318eedc6252f2a380101f43827aeb4c857a56ba08"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2020/a65e9022ef1a3b572ec5879d84fe0cfed1ee90160e5f3090a6c19790f9607ed6/xgb_73.json",
+        "bytes": 78432,
+        "sha256": "99c1f838623dbeb94d80423318eedc6252f2a380101f43827aeb4c857a56ba08"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2021,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "d42781f3f01063acab675fda6ff4c4ce341f53860cb5b59cf47b7c97474ee7d9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "29e0c30a30e64a84c763935d554c1b1765777de5c0d288e39a2adfb3a28ac739"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/RESOURCES.json",
+        "bytes": 480,
+        "sha256": "310078f7c4876a3bf609e63989ef33681e6ca65c5732270ba7a33ccfecf60aa3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/contract.json",
+        "bytes": 20049,
+        "sha256": "d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/predictions.parquet",
+        "bytes": 41571,
+        "sha256": "9426623d91feb4199e90bacc7f4b394bac083d7d7393e38d9560d0d20bff4dee",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5736
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/xgb_101.json",
+        "bytes": 78245,
+        "sha256": "bce8777558091389d90f43201da08f4611b76d57107c04d14d1cb92eb5c40e00"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/xgb_17.json",
+        "bytes": 78245,
+        "sha256": "bce8777558091389d90f43201da08f4611b76d57107c04d14d1cb92eb5c40e00"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/xgb_202.json",
+        "bytes": 78245,
+        "sha256": "bce8777558091389d90f43201da08f4611b76d57107c04d14d1cb92eb5c40e00"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/xgb_42.json",
+        "bytes": 78245,
+        "sha256": "bce8777558091389d90f43201da08f4611b76d57107c04d14d1cb92eb5c40e00"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2021/d5de10f4f56bdcd43ebb6de19e34bc2d7154ab9a0a234f18c193260b692870e0/xgb_73.json",
+        "bytes": 78245,
+        "sha256": "bce8777558091389d90f43201da08f4611b76d57107c04d14d1cb92eb5c40e00"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2022,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "8ee306c5aab915b30321d8afa948ad2c0a787b7ac45e4161d5fc7d13a6e8b6ec"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "4ea465705da37e05fce487d04e78f225299f4a7e34fbb045cb9455342ca217b6"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "45fca01ec35dc7bd81802ef9d6b468d2add2067071ca84684138a10d91c61fdf"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/contract.json",
+        "bytes": 20049,
+        "sha256": "d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/predictions.parquet",
+        "bytes": 41867,
+        "sha256": "9c0194c6d916a32413cf1d6d0c1f850432a7d365163474f5d3a5b1ca8820d5df",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5579
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/xgb_101.json",
+        "bytes": 78222,
+        "sha256": "ecfea651940342a1d9e2d4ce212f941db44f715bf18cefb8f9cd0578e0cc25c3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/xgb_17.json",
+        "bytes": 78222,
+        "sha256": "ecfea651940342a1d9e2d4ce212f941db44f715bf18cefb8f9cd0578e0cc25c3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/xgb_202.json",
+        "bytes": 78222,
+        "sha256": "ecfea651940342a1d9e2d4ce212f941db44f715bf18cefb8f9cd0578e0cc25c3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/xgb_42.json",
+        "bytes": 78222,
+        "sha256": "ecfea651940342a1d9e2d4ce212f941db44f715bf18cefb8f9cd0578e0cc25c3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2022/d708964da7b7f28a43282c7b36d3301934e89e1bf3868d722e7e9e8f2fd6a107/xgb_73.json",
+        "bytes": 78222,
+        "sha256": "ecfea651940342a1d9e2d4ce212f941db44f715bf18cefb8f9cd0578e0cc25c3"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2023,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "8b3fab2701a6e22b2b1ef56c17a5eb40c495bf5b2f385c0d130e34a1930d54ae"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "0e6d8fd9b6691e3103a8ffa78795e03d7e50273d1d24a4374227e05c5cbb3ed9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "943cf8c02e962dc4591ae4f56f7a7081a990771a37bd6d10302ec8c5cb7d3df7"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/contract.json",
+        "bytes": 20049,
+        "sha256": "2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/predictions.parquet",
+        "bytes": 32673,
+        "sha256": "0d20f203bc3203f437165e9ffb51d7d3979a89683f3d42e54c1a4f4044e7c0bd",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 4015
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/xgb_101.json",
+        "bytes": 78329,
+        "sha256": "3b3365889445d8593c9c72d47cecf1f669232a3c0531f5baf350d5d5ab257612"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/xgb_17.json",
+        "bytes": 78329,
+        "sha256": "3b3365889445d8593c9c72d47cecf1f669232a3c0531f5baf350d5d5ab257612"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/xgb_202.json",
+        "bytes": 78329,
+        "sha256": "3b3365889445d8593c9c72d47cecf1f669232a3c0531f5baf350d5d5ab257612"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/xgb_42.json",
+        "bytes": 78329,
+        "sha256": "3b3365889445d8593c9c72d47cecf1f669232a3c0531f5baf350d5d5ab257612"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2023/2af8de4255a17188b0fa33c31e12d217679437f51ae97fd67f66ef30b2d7526c/xgb_73.json",
+        "bytes": 78329,
+        "sha256": "3b3365889445d8593c9c72d47cecf1f669232a3c0531f5baf350d5d5ab257612"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2024,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "2533816f60a0390d87a68f8585380f51ca07b0ea90c3ae6aab935f896abe60f7"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "ff7c92e0c4d76bbf783194995ccd8aa1a3c0ee13889fd8743eb9991cde488547"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "210df57eaba0c89f2d74730071147af98f60eb06f7d29cdd6a69827ab54428fd"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/contract.json",
+        "bytes": 20049,
+        "sha256": "f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/predictions.parquet",
+        "bytes": 54315,
+        "sha256": "550f6ffdc054f4e50f84e6a07daedf25dd10fc8fb85d8e823f1eac57ef3b0729",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 6784
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/xgb_101.json",
+        "bytes": 78432,
+        "sha256": "ccfe6c53f1d9adfaa73afaf853e9e30c5853126b97181f1a2102dde89ba62919"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/xgb_17.json",
+        "bytes": 78432,
+        "sha256": "ccfe6c53f1d9adfaa73afaf853e9e30c5853126b97181f1a2102dde89ba62919"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/xgb_202.json",
+        "bytes": 78432,
+        "sha256": "ccfe6c53f1d9adfaa73afaf853e9e30c5853126b97181f1a2102dde89ba62919"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/xgb_42.json",
+        "bytes": 78432,
+        "sha256": "ccfe6c53f1d9adfaa73afaf853e9e30c5853126b97181f1a2102dde89ba62919"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2024/f9f2d77f3198f89485bc0557a413fa2a9889533a5cad5f7ce3a3bcd664e4c93f/xgb_73.json",
+        "bytes": 78432,
+        "sha256": "ccfe6c53f1d9adfaa73afaf853e9e30c5853126b97181f1a2102dde89ba62919"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2025,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "deb9330d2e8d1211c81851322e210f7a98185de87d676897ed326281940b44ac"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "be6d120ac7aa40cd8f4c92b4accd1f03a21d544e121736e5278953516d8274bc"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "2cfd7924e137d06336c5707a3694d6c30d2f9c35434fbfbd3459fbdf6623e041"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/contract.json",
+        "bytes": 20049,
+        "sha256": "c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/predictions.parquet",
+        "bytes": 48190,
+        "sha256": "39874172a1de786214f18942df2ede32bdf3f82a7ef381cae1b8411805af4933",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 6563
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/xgb_101.json",
+        "bytes": 78512,
+        "sha256": "fe9f3a2a5681681b205d46e1b5e36e2cf059e776cdfc3d2d0535b8cbee9a01a0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/xgb_17.json",
+        "bytes": 78512,
+        "sha256": "fe9f3a2a5681681b205d46e1b5e36e2cf059e776cdfc3d2d0535b8cbee9a01a0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/xgb_202.json",
+        "bytes": 78512,
+        "sha256": "fe9f3a2a5681681b205d46e1b5e36e2cf059e776cdfc3d2d0535b8cbee9a01a0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/xgb_42.json",
+        "bytes": 78512,
+        "sha256": "fe9f3a2a5681681b205d46e1b5e36e2cf059e776cdfc3d2d0535b8cbee9a01a0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2025/c938262da24dddde3326b7b5d47817fccfc2a0748c53750d07a81f11faf14ed0/xgb_73.json",
+        "bytes": 78512,
+        "sha256": "fe9f3a2a5681681b205d46e1b5e36e2cf059e776cdfc3d2d0535b8cbee9a01a0"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "five",
+    "year": 2026,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "70ce9cf5b5a37c35eb6f5e228dd6be9b9f329af69c69b2ee6481939e49774a4c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "d65afdad857451d28035b1ddf972552aeb9e3bdfda90800f7ec2865d5d2050be"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/RESOURCES.json",
+        "bytes": 480,
+        "sha256": "91eb03cc73b3953e7463c7bc8996356c36af2d9f01b25400c96b5b1b1cf273c4"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/contract.json",
+        "bytes": 20049,
+        "sha256": "4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/predictions.parquet",
+        "bytes": 35396,
+        "sha256": "8ec479201e35fbe7ebf87f6fe2df9665a8b736cc551943311dbdca9618644155",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 3657
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/xgb_101.json",
+        "bytes": 78384,
+        "sha256": "1c31b4ba48c516e68248734c142f8dc5115c42ea7743d9870353909c7cc075ca"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/xgb_17.json",
+        "bytes": 78384,
+        "sha256": "1c31b4ba48c516e68248734c142f8dc5115c42ea7743d9870353909c7cc075ca"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/xgb_202.json",
+        "bytes": 78384,
+        "sha256": "1c31b4ba48c516e68248734c142f8dc5115c42ea7743d9870353909c7cc075ca"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/xgb_42.json",
+        "bytes": 78384,
+        "sha256": "1c31b4ba48c516e68248734c142f8dc5115c42ea7743d9870353909c7cc075ca"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/five/ADD/2026/4e0c453c893e7b190f7b56f0dbe30e546d8e352cbc8795b0c9a2ce5c58ff5836/xgb_73.json",
+        "bytes": 78384,
+        "sha256": "1c31b4ba48c516e68248734c142f8dc5115c42ea7743d9870353909c7cc075ca"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2018,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "91ce3d1cadb3cb1f8b7830e86e8ba54e4cc472694e0d207cc53f2d4f07e3660e"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "339d634ec0b27015555a9b983374ec17860c0b6b06fcf107e449e2593d57b4b4"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/RESOURCES.json",
+        "bytes": 484,
+        "sha256": "54d0005d6d5ee7ed0f5cd5e244012f387650196f65c26018667dfc970aee82be"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/contract.json",
+        "bytes": 20346,
+        "sha256": "da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/predictions.parquet",
+        "bytes": 27112,
+        "sha256": "4a617ffdd8c93c881555bccaa8da013864c03cea98ef7fc77c6dcb85c84784b5",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 3168
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/xgb_101.json",
+        "bytes": 78371,
+        "sha256": "36690c4bda7dfd26096c23c0bc348c18e3623c7077fcc52fc36c76ba5845b74f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/xgb_17.json",
+        "bytes": 78371,
+        "sha256": "36690c4bda7dfd26096c23c0bc348c18e3623c7077fcc52fc36c76ba5845b74f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/xgb_202.json",
+        "bytes": 78371,
+        "sha256": "36690c4bda7dfd26096c23c0bc348c18e3623c7077fcc52fc36c76ba5845b74f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/xgb_42.json",
+        "bytes": 78371,
+        "sha256": "36690c4bda7dfd26096c23c0bc348c18e3623c7077fcc52fc36c76ba5845b74f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2018/da599aca2eecfb2ad88508e0ccad130b5b7f683f281a18e2a7f3126a3758a67f/xgb_73.json",
+        "bytes": 78371,
+        "sha256": "36690c4bda7dfd26096c23c0bc348c18e3623c7077fcc52fc36c76ba5845b74f"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2019,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "84808783401b3d60d10e3fbd4e97fba41cc486f9470d58a409333d16b5270c8a"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "04f5c3ec66834187177c59f0df39a51ac27e25854e3db38efbb2ad96055b6df9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "bd0d943f4ccc31b3a37538665c1ba6e25b8a0b3ad4de925e5bf455cea0ad0d30"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/contract.json",
+        "bytes": 20346,
+        "sha256": "7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/predictions.parquet",
+        "bytes": 39188,
+        "sha256": "0f8a9c342be2e827b7970d93dab1df68364799c5c607f619db7cc0cf8deabaa3",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 4698
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/xgb_101.json",
+        "bytes": 78358,
+        "sha256": "7863e723294c8598af1fd1f6656acf77bcbe14a770d7aead13e89e4045ed08a0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/xgb_17.json",
+        "bytes": 78358,
+        "sha256": "7863e723294c8598af1fd1f6656acf77bcbe14a770d7aead13e89e4045ed08a0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/xgb_202.json",
+        "bytes": 78358,
+        "sha256": "7863e723294c8598af1fd1f6656acf77bcbe14a770d7aead13e89e4045ed08a0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/xgb_42.json",
+        "bytes": 78358,
+        "sha256": "7863e723294c8598af1fd1f6656acf77bcbe14a770d7aead13e89e4045ed08a0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2019/7f80c56d9eb248fa783a41758172f80cc3c7a6e1d179a80b7786bf2fd2b8b0c4/xgb_73.json",
+        "bytes": 78358,
+        "sha256": "7863e723294c8598af1fd1f6656acf77bcbe14a770d7aead13e89e4045ed08a0"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2020,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "14d72aa910c425e6db023f7efd99697c9741fe143af4b7d4c79ef4ea5c6a4e70"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "d91773b58c056e4492a8d4f01c861a71c99095623ef6cd04665cf4d84da19267"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "2e6d1e958506800cf612cd091b37797d3cdeafb0bc42e8f271626036d7e45596"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/contract.json",
+        "bytes": 20346,
+        "sha256": "16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/predictions.parquet",
+        "bytes": 45922,
+        "sha256": "d9eb183fa4c3aed590bec63b8573a6bced2a1c42de98ff1ecfd8c5b6044310f7",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5848
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/xgb_101.json",
+        "bytes": 78384,
+        "sha256": "eadc18ecaa561a433cb940267df4e2f1e8c9032488c633956760d3f72b077a43"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/xgb_17.json",
+        "bytes": 78384,
+        "sha256": "eadc18ecaa561a433cb940267df4e2f1e8c9032488c633956760d3f72b077a43"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/xgb_202.json",
+        "bytes": 78384,
+        "sha256": "eadc18ecaa561a433cb940267df4e2f1e8c9032488c633956760d3f72b077a43"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/xgb_42.json",
+        "bytes": 78384,
+        "sha256": "eadc18ecaa561a433cb940267df4e2f1e8c9032488c633956760d3f72b077a43"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2020/16dcab893fa472e063992005b9d9152a7af1d5aa5a8be3aedd35ce1acee7f190/xgb_73.json",
+        "bytes": 78384,
+        "sha256": "eadc18ecaa561a433cb940267df4e2f1e8c9032488c633956760d3f72b077a43"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2021,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "3f8fb86e91c13f11e1408da2272dfd8c77be47e722d3b55cb1b39eb8e6caf1e6"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "7241ceda02bd93565d9348ba680a3dceec59095e9debe0320bdbc01eb2ebcd21"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "50b85c1965b5613ce122a8256f571cf5b595980bb34c9cf1683245698b72fd86"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/contract.json",
+        "bytes": 20346,
+        "sha256": "ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/predictions.parquet",
+        "bytes": 41596,
+        "sha256": "3b41e2a0619f68764532048380374c403c4d30752967c05af4beb1ac5cb3085e",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5736
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/xgb_101.json",
+        "bytes": 78439,
+        "sha256": "183f0532a81dfbf7d6eba177621263c57aa4288c59158f7f02b9016e7fb65384"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/xgb_17.json",
+        "bytes": 78439,
+        "sha256": "183f0532a81dfbf7d6eba177621263c57aa4288c59158f7f02b9016e7fb65384"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/xgb_202.json",
+        "bytes": 78439,
+        "sha256": "183f0532a81dfbf7d6eba177621263c57aa4288c59158f7f02b9016e7fb65384"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/xgb_42.json",
+        "bytes": 78439,
+        "sha256": "183f0532a81dfbf7d6eba177621263c57aa4288c59158f7f02b9016e7fb65384"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2021/ef152327cf28463cc7d78cb65d4973f475295fecda1d299a97a7ef9a22d456f0/xgb_73.json",
+        "bytes": 78439,
+        "sha256": "183f0532a81dfbf7d6eba177621263c57aa4288c59158f7f02b9016e7fb65384"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2022,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "3e6b0adc904632cf8afbf7ba42b142f0a9407736c221ec2523a1f06d3573723d"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "bb7d3b1c47fd3f4509ef5c0ec799ce1de0e280162c5b998799bb4e41e9990c40"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "eb60fbea4a47286b40c9034b8588b661f4bc47773ff3282bc4eedf89b3a0eaf6"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/contract.json",
+        "bytes": 20346,
+        "sha256": "456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/predictions.parquet",
+        "bytes": 41844,
+        "sha256": "c4975eaec8e55926a14b892e62efe4972509d22a6edbd986feddd3fb01036270",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5579
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/xgb_101.json",
+        "bytes": 78291,
+        "sha256": "841b3221257bf99192bcfc54da07eb49376a62a1de6838cba48bb53c9f31ce74"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/xgb_17.json",
+        "bytes": 78291,
+        "sha256": "841b3221257bf99192bcfc54da07eb49376a62a1de6838cba48bb53c9f31ce74"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/xgb_202.json",
+        "bytes": 78291,
+        "sha256": "841b3221257bf99192bcfc54da07eb49376a62a1de6838cba48bb53c9f31ce74"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/xgb_42.json",
+        "bytes": 78291,
+        "sha256": "841b3221257bf99192bcfc54da07eb49376a62a1de6838cba48bb53c9f31ce74"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2022/456482425c8116c161b4de8a1e55fd845b16793cfe7f3d2af38e7a4f632d302b/xgb_73.json",
+        "bytes": 78291,
+        "sha256": "841b3221257bf99192bcfc54da07eb49376a62a1de6838cba48bb53c9f31ce74"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2023,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "ca8ddf3a12edf99213128d9fcc2abf80f4241e50bc2dd5fe92b29bcaa9d5679c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "5acbbd4f931750c55e065252053edafe0c6d2962bd602ee8028f757c5664739b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/RESOURCES.json",
+        "bytes": 479,
+        "sha256": "624454f26f7c02ce925d57a397266c4ae820a1b34b85281a59ddca2c8c4113a2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/contract.json",
+        "bytes": 20346,
+        "sha256": "0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/predictions.parquet",
+        "bytes": 32676,
+        "sha256": "d4532ad0b88bed2c1f26e308c0b283cfeb7c317c2bc9c77a5c974812db8dfbf8",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 4015
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/xgb_101.json",
+        "bytes": 78300,
+        "sha256": "b5781c1b20a680ca117794e784e83cd0e1bf116c07be4fbf9223bb5a58c3db42"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/xgb_17.json",
+        "bytes": 78300,
+        "sha256": "b5781c1b20a680ca117794e784e83cd0e1bf116c07be4fbf9223bb5a58c3db42"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/xgb_202.json",
+        "bytes": 78300,
+        "sha256": "b5781c1b20a680ca117794e784e83cd0e1bf116c07be4fbf9223bb5a58c3db42"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/xgb_42.json",
+        "bytes": 78300,
+        "sha256": "b5781c1b20a680ca117794e784e83cd0e1bf116c07be4fbf9223bb5a58c3db42"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2023/0d9ece6da9d2f41ee46894104048e7085df7732f5a52c092ed8ad0906dac00f1/xgb_73.json",
+        "bytes": 78300,
+        "sha256": "b5781c1b20a680ca117794e784e83cd0e1bf116c07be4fbf9223bb5a58c3db42"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2024,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "92554e4f191d6fb3754c80b84895e8d8d0871ebf92b63ad52d32876cf6ceab4a"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "bd759bf0db992325795ee481d4f825c73f9cd8a347b248554e164c25301a0b36"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "0902828150f7134ccdf5d138910790e89ede279a2b4fbc47f789a3312b747f43"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/contract.json",
+        "bytes": 20346,
+        "sha256": "427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/predictions.parquet",
+        "bytes": 54299,
+        "sha256": "5d4139fe7fbaed451ba02d716f24a5f82f2fec2879bc53ae23c32c5bbae8aa17",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 6784
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/xgb_101.json",
+        "bytes": 78448,
+        "sha256": "b525bcad46e4a32fba45eebbc11773bced819d110302a5607d6b24f18faee829"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/xgb_17.json",
+        "bytes": 78448,
+        "sha256": "b525bcad46e4a32fba45eebbc11773bced819d110302a5607d6b24f18faee829"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/xgb_202.json",
+        "bytes": 78448,
+        "sha256": "b525bcad46e4a32fba45eebbc11773bced819d110302a5607d6b24f18faee829"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/xgb_42.json",
+        "bytes": 78448,
+        "sha256": "b525bcad46e4a32fba45eebbc11773bced819d110302a5607d6b24f18faee829"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2024/427344dc8a9136012f5c50d14d5c9499579599da7ade98a29068c9e8f34c05ed/xgb_73.json",
+        "bytes": 78448,
+        "sha256": "b525bcad46e4a32fba45eebbc11773bced819d110302a5607d6b24f18faee829"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2025,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "1458bfe0c3c30d8ebd129a312735ea76dde4a27c7a3f903b19fa93785586d2de"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "9bb0d34389742fb8c7f11766d6131d39f472dbfe5763f90108b3d9197bfa1669"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "eda4229becb19de50681dad3591f1bf81fa57eea34eeaf83e8bef25fe24843af"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/contract.json",
+        "bytes": 20346,
+        "sha256": "f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/predictions.parquet",
+        "bytes": 49052,
+        "sha256": "7da2433f78fe5cc4c8ab832def0bd1fd55a5e7eff73c4c70ff145df99cf2e7ff",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 6563
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/xgb_101.json",
+        "bytes": 78406,
+        "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/xgb_17.json",
+        "bytes": 78406,
+        "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/xgb_202.json",
+        "bytes": 78406,
+        "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/xgb_42.json",
+        "bytes": 78406,
+        "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2025/f6eeff988c2c318217bbb9017c687ade597a96aca794ae4f2114d369f162d606/xgb_73.json",
+        "bytes": 78406,
+        "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+      }
+    ]
+  },
+  {
+    "arm": "M0",
+    "seed": 42,
+    "head": "ten",
+    "year": 2026,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "59bc3c08b2d1d37e6c0b5969967d280f64ec55d581dca8bbd6eaa08b12658c16"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "bfb27d345961551974c3078532f27e533a8e5b0a6508a12fce666bf411f79239"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "a7fe312baa7748da4875b4c0c17780d8a1917e5921c4a01a8a79ba6ed78be064"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/contract.json",
+        "bytes": 20346,
+        "sha256": "e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/predictions.parquet",
+        "bytes": 35421,
+        "sha256": "3662dad925b4e12aad9bb6a9caa2c308be050cb3b76e48d1be1d54b818f89d41",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 3657
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/xgb_101.json",
+        "bytes": 78380,
+        "sha256": "c2b091e7e83f70170a43eb0386766a73dafae62f1fdcdabddeb2d4cd2e2252ef"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/xgb_17.json",
+        "bytes": 78380,
+        "sha256": "c2b091e7e83f70170a43eb0386766a73dafae62f1fdcdabddeb2d4cd2e2252ef"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/xgb_202.json",
+        "bytes": 78380,
+        "sha256": "c2b091e7e83f70170a43eb0386766a73dafae62f1fdcdabddeb2d4cd2e2252ef"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/xgb_42.json",
+        "bytes": 78380,
+        "sha256": "c2b091e7e83f70170a43eb0386766a73dafae62f1fdcdabddeb2d4cd2e2252ef"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M0/42/ten/ADD/2026/e83ad2bd7bcaba6a0041079155139bad7ca065a36bcf9263c0a1930ab81cd7fd/xgb_73.json",
+        "bytes": 78380,
+        "sha256": "c2b091e7e83f70170a43eb0386766a73dafae62f1fdcdabddeb2d4cd2e2252ef"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2018,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "6b79bde674a5e663c97fd9825293ee1df0304d41dad50d3a5dc4d59f08f89d49"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "9b04513b7b59c579442687a0fb5c85989d67fcb92170fa1b3bf81821089c3509"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "f4aade2975edf7ac90b046f82a63005794baed0a831692bdea246af30e252851"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/contract.json",
+        "bytes": 20049,
+        "sha256": "9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/predictions.parquet",
+        "bytes": 27104,
+        "sha256": "d1499c9c89a3001e57a0e4bf694f14f7c2901d57dff3ec36ad1af8025115cad5",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 3168
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/xgb_101.json",
+        "bytes": 78377,
+        "sha256": "124f5d0c0eb1d3e6b47beeff0500609be3ac73269e1ac76aa90052bbf53d069c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/xgb_17.json",
+        "bytes": 78377,
+        "sha256": "124f5d0c0eb1d3e6b47beeff0500609be3ac73269e1ac76aa90052bbf53d069c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/xgb_202.json",
+        "bytes": 78377,
+        "sha256": "124f5d0c0eb1d3e6b47beeff0500609be3ac73269e1ac76aa90052bbf53d069c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/xgb_42.json",
+        "bytes": 78377,
+        "sha256": "124f5d0c0eb1d3e6b47beeff0500609be3ac73269e1ac76aa90052bbf53d069c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2018/9b1f8944c32c6b5b1557663c8e9fee7972439827ca901928e7e11f2f3aea6fe7/xgb_73.json",
+        "bytes": 78377,
+        "sha256": "124f5d0c0eb1d3e6b47beeff0500609be3ac73269e1ac76aa90052bbf53d069c"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2019,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "d40d1fe92cc1127b9a57f50ecc59f4d5b415349302d3b738390eef966bc6b0c7"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "a20488870ba5f8e4bb5ad992457d124cf863d2969c628b12fab51e0b189457f6"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "b3435e40bf2cc4f9c314fb11eeee6d27b73d14779e677acb862e4a854575499e"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/contract.json",
+        "bytes": 20049,
+        "sha256": "e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/predictions.parquet",
+        "bytes": 39206,
+        "sha256": "199c6ca24a970540bf6ea6fe00cc236850fffe438810dea1c41121021112553a",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 4698
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/xgb_101.json",
+        "bytes": 78472,
+        "sha256": "c976897b8827fc5c367b5225fece928a99bc2965d3e15665f95bfaabfb88889c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/xgb_17.json",
+        "bytes": 78472,
+        "sha256": "c976897b8827fc5c367b5225fece928a99bc2965d3e15665f95bfaabfb88889c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/xgb_202.json",
+        "bytes": 78472,
+        "sha256": "c976897b8827fc5c367b5225fece928a99bc2965d3e15665f95bfaabfb88889c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/xgb_42.json",
+        "bytes": 78472,
+        "sha256": "c976897b8827fc5c367b5225fece928a99bc2965d3e15665f95bfaabfb88889c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2019/e84d1624bfbc8408c8780740fe1252e8fc72d376d72b03ce969f3213debfe8c8/xgb_73.json",
+        "bytes": 78472,
+        "sha256": "c976897b8827fc5c367b5225fece928a99bc2965d3e15665f95bfaabfb88889c"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2020,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "55b8498dc560d7ef7cafc98679a9e4ab316a907b1d8c6bf55d132f8fa4439ea0"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "3f421e3c656f3125e6a56b5569d37ec23260746e11f002b5a5881253b22dfacc"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "3fc823469f3b68c8d643815df626384a0263c34594d43b58aa94f9376a3e8cef"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/contract.json",
+        "bytes": 20049,
+        "sha256": "999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/predictions.parquet",
+        "bytes": 45894,
+        "sha256": "5cd320c44c928e72237b5af1e1c83c9f7150ff25c9adf8a5320291081a7ac5f1",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5848
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/xgb_101.json",
+        "bytes": 78456,
+        "sha256": "598c4c6683d7e8cfcf41585fc1d90d4da81bcd294004bdae20c3d48121cb5234"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/xgb_17.json",
+        "bytes": 78456,
+        "sha256": "598c4c6683d7e8cfcf41585fc1d90d4da81bcd294004bdae20c3d48121cb5234"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/xgb_202.json",
+        "bytes": 78456,
+        "sha256": "598c4c6683d7e8cfcf41585fc1d90d4da81bcd294004bdae20c3d48121cb5234"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/xgb_42.json",
+        "bytes": 78456,
+        "sha256": "598c4c6683d7e8cfcf41585fc1d90d4da81bcd294004bdae20c3d48121cb5234"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2020/999001aae932c52d7828a5f2395c6bcca6ef0c6bcd671fadecbed5ec38c0161d/xgb_73.json",
+        "bytes": 78456,
+        "sha256": "598c4c6683d7e8cfcf41585fc1d90d4da81bcd294004bdae20c3d48121cb5234"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2021,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "40f4204a6d8d456229b11762a96265d625354caf14382429b8025a49146cdecc"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "fd8801f7113391039eb4834ede57ca0f33da2f2054be40e1e18d14bab60baf26"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "74daada1282f143ae192f083e6bd90c1df6613f6b007b19d5704817678d47788"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/contract.json",
+        "bytes": 20049,
+        "sha256": "0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/predictions.parquet",
+        "bytes": 41567,
+        "sha256": "ee1b3a0e880cddc818876725a1d1fa6600aad3c08cc6659c2b5f5fe02467c3ec",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5736
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/xgb_101.json",
+        "bytes": 78301,
+        "sha256": "2d83e3d3bf7034df99fca090edb83f61eb13d158fc58496ed93cd3a0fc6ec6d9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/xgb_17.json",
+        "bytes": 78301,
+        "sha256": "2d83e3d3bf7034df99fca090edb83f61eb13d158fc58496ed93cd3a0fc6ec6d9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/xgb_202.json",
+        "bytes": 78301,
+        "sha256": "2d83e3d3bf7034df99fca090edb83f61eb13d158fc58496ed93cd3a0fc6ec6d9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/xgb_42.json",
+        "bytes": 78301,
+        "sha256": "2d83e3d3bf7034df99fca090edb83f61eb13d158fc58496ed93cd3a0fc6ec6d9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2021/0191ed16670a056a844d5cb3c58645c9a525d0a6cbee6198e243873f421bdab1/xgb_73.json",
+        "bytes": 78301,
+        "sha256": "2d83e3d3bf7034df99fca090edb83f61eb13d158fc58496ed93cd3a0fc6ec6d9"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2022,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "b29d1c993ac9ea6438e1a59ea88c7c051e32109a2d71aec8b0a39e9df258287a"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "28ecf31b87f9ed9789ccc7f6ccce33def494f73d7800e7861044012924f9837f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "bed3fa4d07ca4bb504bd4fe4168e2bda85f0a3476b249c1036ae1bd786e61df1"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/contract.json",
+        "bytes": 20049,
+        "sha256": "751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/predictions.parquet",
+        "bytes": 41823,
+        "sha256": "1c8813a15ad52043d8e113bf9e32e8a179032843d42df257406d368aa964ecb5",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5579
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/xgb_101.json",
+        "bytes": 78222,
+        "sha256": "42af6a350b7ce767adddcdf3429601bd2aa98d2a1e226b792ebea9d1af349e83"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/xgb_17.json",
+        "bytes": 78222,
+        "sha256": "42af6a350b7ce767adddcdf3429601bd2aa98d2a1e226b792ebea9d1af349e83"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/xgb_202.json",
+        "bytes": 78222,
+        "sha256": "42af6a350b7ce767adddcdf3429601bd2aa98d2a1e226b792ebea9d1af349e83"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/xgb_42.json",
+        "bytes": 78222,
+        "sha256": "42af6a350b7ce767adddcdf3429601bd2aa98d2a1e226b792ebea9d1af349e83"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2022/751ac4f605c2f7857caad4d05f4365cd9e4ffddd4ee368b9424deb8951ad308b/xgb_73.json",
+        "bytes": 78222,
+        "sha256": "42af6a350b7ce767adddcdf3429601bd2aa98d2a1e226b792ebea9d1af349e83"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2023,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "4f91cc8f1925f2880facd66ebd8259f1290494a773835b185f2ea7b44b4c0247"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "8b2e6083266f8fbfe78a4d8b563cf2b3f34c215bb2c0a99f977ee22c4694f363"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "db3deff1154b5dc013e48da96cbc6356b354948177fa0887fbf661c9b5e7632e"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/contract.json",
+        "bytes": 20049,
+        "sha256": "f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/predictions.parquet",
+        "bytes": 32673,
+        "sha256": "f18f384ec59ccde3c757b067acb70f586b9ea0d41423e31912b9a902ef692fe1",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 4015
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/xgb_101.json",
+        "bytes": 78288,
+        "sha256": "9da6021781154094b0deef4e42207e35545a00026ee9ce989efd81e512b6485b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/xgb_17.json",
+        "bytes": 78288,
+        "sha256": "9da6021781154094b0deef4e42207e35545a00026ee9ce989efd81e512b6485b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/xgb_202.json",
+        "bytes": 78288,
+        "sha256": "9da6021781154094b0deef4e42207e35545a00026ee9ce989efd81e512b6485b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/xgb_42.json",
+        "bytes": 78288,
+        "sha256": "9da6021781154094b0deef4e42207e35545a00026ee9ce989efd81e512b6485b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2023/f2369b1c43b1cb9f9f9940617253bbd082013bebcfaf49835c64d2b6c286f891/xgb_73.json",
+        "bytes": 78288,
+        "sha256": "9da6021781154094b0deef4e42207e35545a00026ee9ce989efd81e512b6485b"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2024,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "2898b8338d997a2a130e4e64f6440ba402086efd96edd30b4e2d0c9848c0057f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "6d5a64043162ee3cb532356efa8966b60c07e70cfbbd2f99ab19df649514b18b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/RESOURCES.json",
+        "bytes": 480,
+        "sha256": "e0033d7448ed8eadb91b2685ac30ca203fcf6a41710b8e9a10e137cdfadac9b9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/contract.json",
+        "bytes": 20049,
+        "sha256": "b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/predictions.parquet",
+        "bytes": 54332,
+        "sha256": "56669710d2af20a3e6d49f883cadbbf9b99724101495d66f0ba7a221f0f555ed",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 6784
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/xgb_101.json",
+        "bytes": 78370,
+        "sha256": "1081087d011e6d932c1fea11f3d5970056410e61fc45eabd4b88acaaaa72b6a2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/xgb_17.json",
+        "bytes": 78370,
+        "sha256": "1081087d011e6d932c1fea11f3d5970056410e61fc45eabd4b88acaaaa72b6a2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/xgb_202.json",
+        "bytes": 78370,
+        "sha256": "1081087d011e6d932c1fea11f3d5970056410e61fc45eabd4b88acaaaa72b6a2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/xgb_42.json",
+        "bytes": 78370,
+        "sha256": "1081087d011e6d932c1fea11f3d5970056410e61fc45eabd4b88acaaaa72b6a2"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2024/b5694d9689577d3d5f8ae01298da095ca387f4fc265479be29993c7e25701c01/xgb_73.json",
+        "bytes": 78370,
+        "sha256": "1081087d011e6d932c1fea11f3d5970056410e61fc45eabd4b88acaaaa72b6a2"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2025,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "7a3d781faa4a6220794ee16ef8c85a0e6a7a232446d14c88fbb9788df20e9d58"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "ea0e94029091dc8450a0cc2f15d23346cfc23aec7e1df9618be570bc856b2f41"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "ec60fc19c1d449d6a70adbd25f5bd59f10ac6bf48689103173a0d2a38e1e926b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/contract.json",
+        "bytes": 20049,
+        "sha256": "5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/predictions.parquet",
+        "bytes": 48219,
+        "sha256": "f0f313abff6a2fb02181ef2ed139a186396ff1305232e295c08b2fcfdc8d223e",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 6563
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/xgb_101.json",
+        "bytes": 78402,
+        "sha256": "0fa4eb3b9bbc00985e1ac755b12672f33a046650f69f2e42003bc544305cf860"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/xgb_17.json",
+        "bytes": 78402,
+        "sha256": "0fa4eb3b9bbc00985e1ac755b12672f33a046650f69f2e42003bc544305cf860"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/xgb_202.json",
+        "bytes": 78402,
+        "sha256": "0fa4eb3b9bbc00985e1ac755b12672f33a046650f69f2e42003bc544305cf860"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/xgb_42.json",
+        "bytes": 78402,
+        "sha256": "0fa4eb3b9bbc00985e1ac755b12672f33a046650f69f2e42003bc544305cf860"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2025/5ecdfe58a394777bc1525915bf8fbd9cf044d2a3fea6d7f8792c1f9ea9fd0e95/xgb_73.json",
+        "bytes": 78402,
+        "sha256": "0fa4eb3b9bbc00985e1ac755b12672f33a046650f69f2e42003bc544305cf860"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "five",
+    "year": 2026,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amount_log",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "caa397418c975574052ff79297992a8cccdee9fc692dd89572cd18b1bafe91fc"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "af6ab91b0c5f9860720ebf6d31b1d605f7c1946f8dd1fffdb6c173379e7c521a"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "3f012eded4f40e59879dfeb1b10c8dda7e7079d3fbc0af6fc4f3a0363402d586"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/contract.json",
+        "bytes": 20049,
+        "sha256": "0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/predictions.parquet",
+        "bytes": 34933,
+        "sha256": "ee579d6fffd9bb498648ec798bed06ae1a0f96a7012cfc351f261d4a4aca61bd",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 3657
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/xgb_101.json",
+        "bytes": 78321,
+        "sha256": "b0116bd7a86193424b218d9966c16cfcadb6fd1d6a0992914e011140907d18a3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/xgb_17.json",
+        "bytes": 78321,
+        "sha256": "b0116bd7a86193424b218d9966c16cfcadb6fd1d6a0992914e011140907d18a3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/xgb_202.json",
+        "bytes": 78321,
+        "sha256": "b0116bd7a86193424b218d9966c16cfcadb6fd1d6a0992914e011140907d18a3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/xgb_42.json",
+        "bytes": 78321,
+        "sha256": "b0116bd7a86193424b218d9966c16cfcadb6fd1d6a0992914e011140907d18a3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/five/ADD/2026/0f730d6a9e7d2b818ef7184dfc990876f0671e1de40d3d1d1941e82e65bec7f9/xgb_73.json",
+        "bytes": 78321,
+        "sha256": "b0116bd7a86193424b218d9966c16cfcadb6fd1d6a0992914e011140907d18a3"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2018,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "6a5da5462bd194db0f716cc9245222a68fa3723e083845f8e96992229cd7a173"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "08480849f7339d1b294ab91378fc825d052f9458705d40b1e4363bb364730314"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "ed9d2da43847ab6edbbe9f051a3d50b38c651ae9f80ed7105ada932f369cbddb"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/contract.json",
+        "bytes": 20346,
+        "sha256": "042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/predictions.parquet",
+        "bytes": 27098,
+        "sha256": "c7efa37b7a9f00c802730995e795ee6216ffff4a5e055b45b7e18512ed1739c1",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 3168
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/xgb_101.json",
+        "bytes": 78323,
+        "sha256": "677aa0e1a3752058bced092086ca73cea696b81c18f805002051613d2be1d492"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/xgb_17.json",
+        "bytes": 78323,
+        "sha256": "677aa0e1a3752058bced092086ca73cea696b81c18f805002051613d2be1d492"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/xgb_202.json",
+        "bytes": 78323,
+        "sha256": "677aa0e1a3752058bced092086ca73cea696b81c18f805002051613d2be1d492"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/xgb_42.json",
+        "bytes": 78323,
+        "sha256": "677aa0e1a3752058bced092086ca73cea696b81c18f805002051613d2be1d492"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2018/042710da2140054502b765add6330f1d79bd2006d4fc32a681d28f06f23eea5e/xgb_73.json",
+        "bytes": 78323,
+        "sha256": "677aa0e1a3752058bced092086ca73cea696b81c18f805002051613d2be1d492"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2019,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "0b7638706288a3b14c5f6be3954e5640fd460aebcb1c49fe158b5b7f6727098d"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "57483d33ff2b87a1c079a0c8d8cfc5192654d91f19d71df1b86ff9879328e30c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "634864ddfeb03cfcdddfd01bac532890bbc1a69f1fdee883234d2ea81d45b91a"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/contract.json",
+        "bytes": 20346,
+        "sha256": "ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/predictions.parquet",
+        "bytes": 39243,
+        "sha256": "39ab5da86bad1fb46bcca4501b03e1878bfeb5bd2e677e86f598a3c0ffcf731a",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 4698
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/xgb_101.json",
+        "bytes": 78317,
+        "sha256": "9a477e247d15bcff045ca2beaa99595577e9bafb8e7b029c7da96011a1fd5a20"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/xgb_17.json",
+        "bytes": 78317,
+        "sha256": "9a477e247d15bcff045ca2beaa99595577e9bafb8e7b029c7da96011a1fd5a20"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/xgb_202.json",
+        "bytes": 78317,
+        "sha256": "9a477e247d15bcff045ca2beaa99595577e9bafb8e7b029c7da96011a1fd5a20"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/xgb_42.json",
+        "bytes": 78317,
+        "sha256": "9a477e247d15bcff045ca2beaa99595577e9bafb8e7b029c7da96011a1fd5a20"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2019/ce4f022dde33574ff39dd55913bb7b733d8e3cb2e0bf7b1c1dbc79265db561df/xgb_73.json",
+        "bytes": 78317,
+        "sha256": "9a477e247d15bcff045ca2beaa99595577e9bafb8e7b029c7da96011a1fd5a20"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2020,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "8b9aacf6c8fbc7801a53e86508cfa9028b187edccab4c88a00aea1ac8f638d9b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "04d1cf0a08d6badc10d1e1dbd64504116b23445bea756da41e3ea10853a3c8ab"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "f1399c9698c672572a9f52cbfa77ca7088a5d34828782502c23895339ad13a5a"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/contract.json",
+        "bytes": 20346,
+        "sha256": "b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/predictions.parquet",
+        "bytes": 45905,
+        "sha256": "df77e9f4beb2191a63495954911259d5292558a8e0037bf4d2526a2d1091837b",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5848
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/xgb_101.json",
+        "bytes": 78426,
+        "sha256": "a193cff9fdc685ca772408b9bc7c0720e541705af3f11bded712d875f3e80b6c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/xgb_17.json",
+        "bytes": 78426,
+        "sha256": "a193cff9fdc685ca772408b9bc7c0720e541705af3f11bded712d875f3e80b6c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/xgb_202.json",
+        "bytes": 78426,
+        "sha256": "a193cff9fdc685ca772408b9bc7c0720e541705af3f11bded712d875f3e80b6c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/xgb_42.json",
+        "bytes": 78426,
+        "sha256": "a193cff9fdc685ca772408b9bc7c0720e541705af3f11bded712d875f3e80b6c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2020/b1fa60a82c66b90097a305eb669292968c9a8002b8cf0a0f0c53aa264e10544c/xgb_73.json",
+        "bytes": 78426,
+        "sha256": "a193cff9fdc685ca772408b9bc7c0720e541705af3f11bded712d875f3e80b6c"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2021,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "fa75b5042a0c9060d5a007aec65b3fddda06d12e0f193b7f961cc11eab07c35f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "feef18f18b48a3f95e05e82a0895265e383355cbb03ed45e8b17f3bb6a5cd3dc"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "19b6929daf45a1efec2c70e2e61bc5d7dcd74ae2f9bc833ea2aa9a416a8d6938"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/contract.json",
+        "bytes": 20346,
+        "sha256": "d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/predictions.parquet",
+        "bytes": 41605,
+        "sha256": "375ccde384f3d39c9bda23d8d489128b4821f43908cfe3c13d613868a519b54e",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5736
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/xgb_101.json",
+        "bytes": 78350,
+        "sha256": "39c60c95b6dd7d523ad9eb56defc69a52620e07c59b8a425ce10a5fd6d428ffb"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/xgb_17.json",
+        "bytes": 78350,
+        "sha256": "39c60c95b6dd7d523ad9eb56defc69a52620e07c59b8a425ce10a5fd6d428ffb"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/xgb_202.json",
+        "bytes": 78350,
+        "sha256": "39c60c95b6dd7d523ad9eb56defc69a52620e07c59b8a425ce10a5fd6d428ffb"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/xgb_42.json",
+        "bytes": 78350,
+        "sha256": "39c60c95b6dd7d523ad9eb56defc69a52620e07c59b8a425ce10a5fd6d428ffb"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2021/d23437f6fea965a177948437d6fbe475b61b1e1d3527d4e1c50d815a912ffc4c/xgb_73.json",
+        "bytes": 78350,
+        "sha256": "39c60c95b6dd7d523ad9eb56defc69a52620e07c59b8a425ce10a5fd6d428ffb"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2022,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "a744c80378168a18a9bf6e0be4f3874e397a906bb23acdda6b1d732fd974fca7"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "ff877ee0facab5f5c3107ea3e5ef5ebda0fdf6b093d04aac0a653e28d9a874fe"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/RESOURCES.json",
+        "bytes": 479,
+        "sha256": "6a11f6e93bc3e25f23ce7c37c104d9faa449e29912a74fdc8fbd85d99a7a1493"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/contract.json",
+        "bytes": 20346,
+        "sha256": "bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/predictions.parquet",
+        "bytes": 41879,
+        "sha256": "1b3b6124ad035d9dffe58f76b9255c8a4323b6924f89500be55e203b6dc49007",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 5579
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/xgb_101.json",
+        "bytes": 78286,
+        "sha256": "cf2b405778c3e31fb7b7dc136b247f93d7daa4c3955ad4a749a02dacce45c16f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/xgb_17.json",
+        "bytes": 78286,
+        "sha256": "cf2b405778c3e31fb7b7dc136b247f93d7daa4c3955ad4a749a02dacce45c16f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/xgb_202.json",
+        "bytes": 78286,
+        "sha256": "cf2b405778c3e31fb7b7dc136b247f93d7daa4c3955ad4a749a02dacce45c16f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/xgb_42.json",
+        "bytes": 78286,
+        "sha256": "cf2b405778c3e31fb7b7dc136b247f93d7daa4c3955ad4a749a02dacce45c16f"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2022/bd1781108aa8e6c2975e1e56facc8fe535b498782c698debca9521883d03a5f3/xgb_73.json",
+        "bytes": 78286,
+        "sha256": "cf2b405778c3e31fb7b7dc136b247f93d7daa4c3955ad4a749a02dacce45c16f"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2023,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "73a5402a427200567c77514ef2c651053b6cbfc37938c7a78429983938f6fb18"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "3a00120bedd0e7db7a661e27cef53d53ddc9f9575a47069b5bf2e83f923ea18b"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/RESOURCES.json",
+        "bytes": 481,
+        "sha256": "261ac08227a3fbc7c614ae003a702fbdbf93f5f987dd715889c247fa5a5bd0f4"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/contract.json",
+        "bytes": 20346,
+        "sha256": "aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/predictions.parquet",
+        "bytes": 32681,
+        "sha256": "a1d96b0db4d0d7ea2e2395fe865962fc0c7a43f83c9630603211c349ce2c56a8",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 4015
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/xgb_101.json",
+        "bytes": 78415,
+        "sha256": "bbf9ce2e7ff16061ea67874d0f28e1a18ae612392ac3763eab393866d1a8bc31"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/xgb_17.json",
+        "bytes": 78415,
+        "sha256": "bbf9ce2e7ff16061ea67874d0f28e1a18ae612392ac3763eab393866d1a8bc31"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/xgb_202.json",
+        "bytes": 78415,
+        "sha256": "bbf9ce2e7ff16061ea67874d0f28e1a18ae612392ac3763eab393866d1a8bc31"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/xgb_42.json",
+        "bytes": 78415,
+        "sha256": "bbf9ce2e7ff16061ea67874d0f28e1a18ae612392ac3763eab393866d1a8bc31"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2023/aff607b63be8b4e6cc309cbb5574ea6e6792c85515c61074afa68801914b48de/xgb_73.json",
+        "bytes": 78415,
+        "sha256": "bbf9ce2e7ff16061ea67874d0f28e1a18ae612392ac3763eab393866d1a8bc31"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2024,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "c65c8280d9d25cd4b4bb73f39c51112b9f3d3fb0fb2ae54de211dc82a80a85fc"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "ca211e7387b11c4c52f588f0e0d0d50d4f586ea1cb51e790cfd7ed13b4ee1f32"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/RESOURCES.json",
+        "bytes": 483,
+        "sha256": "09aeddf67e4ebeba4eb2077402d9eb4a0d54aa0586ecf485f0a09f7311648c28"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/contract.json",
+        "bytes": 20346,
+        "sha256": "892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/predictions.parquet",
+        "bytes": 54086,
+        "sha256": "2705eabe0671b6e7f88637ff0f7eeb975436d37585974fe3924b9eff84bea3f4",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 6784
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/xgb_101.json",
+        "bytes": 78377,
+        "sha256": "b0e722dc761342a9020d896b6a8cda7a0b33a865af4e106eba29991e74326d4c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/xgb_17.json",
+        "bytes": 78377,
+        "sha256": "b0e722dc761342a9020d896b6a8cda7a0b33a865af4e106eba29991e74326d4c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/xgb_202.json",
+        "bytes": 78377,
+        "sha256": "b0e722dc761342a9020d896b6a8cda7a0b33a865af4e106eba29991e74326d4c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/xgb_42.json",
+        "bytes": 78377,
+        "sha256": "b0e722dc761342a9020d896b6a8cda7a0b33a865af4e106eba29991e74326d4c"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2024/892f071b2df30f224baef1d971b166ba2ff043fef02a0329e43a78b41fcadad9/xgb_73.json",
+        "bytes": 78377,
+        "sha256": "b0e722dc761342a9020d896b6a8cda7a0b33a865af4e106eba29991e74326d4c"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2025,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "efeebecc0950270afd148974aafbd2e7522e14386e634893d733e9dec96e6160"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "9757ff6d418baf200d5b04ec279ed8aa82203c322478bacb69298f4f3ade2770"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "84a29c6b40cc20427851482e9162964febc97dfd63c47945a0a20f084083faf3"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/contract.json",
+        "bytes": 20346,
+        "sha256": "44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/predictions.parquet",
+        "bytes": 49077,
+        "sha256": "f32ee7f684d4997950fe0e87ef0c3b63af728e6b7d6968a65adf06ff724aeb0b",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 6563
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/xgb_101.json",
+        "bytes": 78480,
+        "sha256": "a2de08442adc841ccac1879cae78832f9753e67c27adf960dd02d0b1219b6508"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/xgb_17.json",
+        "bytes": 78480,
+        "sha256": "a2de08442adc841ccac1879cae78832f9753e67c27adf960dd02d0b1219b6508"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/xgb_202.json",
+        "bytes": 78480,
+        "sha256": "a2de08442adc841ccac1879cae78832f9753e67c27adf960dd02d0b1219b6508"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/xgb_42.json",
+        "bytes": 78480,
+        "sha256": "a2de08442adc841ccac1879cae78832f9753e67c27adf960dd02d0b1219b6508"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2025/44e5c850b4ebc1690f6834940f74dc17b23d14d8ac1c0caadfe1191d756a73ca/xgb_73.json",
+        "bytes": 78480,
+        "sha256": "a2de08442adc841ccac1879cae78832f9753e67c27adf960dd02d0b1219b6508"
+      }
+    ]
+  },
+  {
+    "arm": "M1",
+    "seed": 42,
+    "head": "ten",
+    "year": 2026,
+    "mode": "ADD",
+    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab",
+    "actual_booster_fits": 5,
+    "model_schema": {
+      "format": "XGBoost Ranker JSON",
+      "feature_order": [
+        "g_prim_px_vol_corr",
+        "fb_close_seal_streak_norm",
+        "fb_last30_amount_ratio",
+        "h5_last_first_limit_value_change_sym",
+        "h1_consistent_buy_ratio",
+        "h1_last15m_volume_ratio",
+        "h4_large_net_to_turnover",
+        "h4_retail_net_to_turnover",
+        "g0_amt_vs_5",
+        "g1_ret_5",
+        "g3_days_since_limit",
+        "ind_seal_rate_excess",
+        "d1_open_gap",
+        "z_MASTER"
+      ],
+      "tree_seeds": [
+        17,
+        42,
+        73,
+        101,
+        202
+      ],
+      "model_parameters": {
+        "objective": "rank:ndcg",
+        "eval_metric": null,
+        "ndcg_exp_gain": true,
+        "n_estimators": 100,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "tree_method": "hist",
+        "random_state": 17,
+        "n_jobs": 2
+      }
+    },
+    "artifacts": [
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/COMPLETE.json",
+        "bytes": 1144,
+        "sha256": "88fca32d643ebdb1b5fe354d6a195397c7c1d12095a36bc397e340499495d72a"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "1a8a19d5e8be8dbc7a37f18c8f6e99fdf1789a172074b1d6a1c80d23c9ccc549"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/RESOURCES.json",
+        "bytes": 482,
+        "sha256": "f755145a405c5628914134c2251d2069bf5bb08a465615d1a5ab9bf9d84012c1"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/contract.json",
+        "bytes": 20346,
+        "sha256": "fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/predictions.parquet",
+        "bytes": 35539,
+        "sha256": "db966a14f0f171ee2efe83b87030a67cfad00e93b0c3e4b3e4234188dd3f0877",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nscore: double\nfit_cutoff: timestamp[ms]\nmax_training_label_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 758",
+        "rows": 3657
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/xgb_101.json",
+        "bytes": 78458,
+        "sha256": "08908ff2b725d4f77da36bdbde280b443ae26f62eea19f21a71edf3a52f74974"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/xgb_17.json",
+        "bytes": 78458,
+        "sha256": "08908ff2b725d4f77da36bdbde280b443ae26f62eea19f21a71edf3a52f74974"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/xgb_202.json",
+        "bytes": 78458,
+        "sha256": "08908ff2b725d4f77da36bdbde280b443ae26f62eea19f21a71edf3a52f74974"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/xgb_42.json",
+        "bytes": 78458,
+        "sha256": "08908ff2b725d4f77da36bdbde280b443ae26f62eea19f21a71edf3a52f74974"
+      },
+      {
+        "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_backend/M1/42/ten/ADD/2026/fa4371a9570d8617efd5cf211d042fcb4d5ad55dc617af199c470e6fb229eaab/xgb_73.json",
+        "bytes": 78458,
+        "sha256": "08908ff2b725d4f77da36bdbde280b443ae26f62eea19f21a71edf3a52f74974"
+      }
+    ]
   }
 ]

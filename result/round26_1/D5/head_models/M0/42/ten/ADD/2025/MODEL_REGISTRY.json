@@ -1,0 +1,82 @@
+{
+  "parameters": {
+    "arm": "M0",
+    "factor_seed": 42,
+    "head": "ten",
+    "year": 2025,
+    "mode": "ADD",
+    "removed": null,
+    "feature_order": [
+      "g_prim_px_vol_corr",
+      "fb_close_seal_streak_norm",
+      "fb_last30_amount_ratio",
+      "h5_last_first_limit_value_change_sym",
+      "h1_consistent_buy_ratio",
+      "h1_last15m_volume_ratio",
+      "h4_large_net_to_turnover",
+      "h4_retail_net_to_turnover",
+      "g0_amt_vs_5",
+      "g1_ret_5",
+      "g3_days_since_limit",
+      "ind_seal_rate_excess",
+      "d1_open_gap",
+      "z_MASTER"
+    ],
+    "tree_seeds": [
+      17,
+      42,
+      73,
+      101,
+      202
+    ],
+    "XGB_params": {
+      "objective": "rank:ndcg",
+      "eval_metric": null,
+      "ndcg_exp_gain": true,
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_child_weight": 1.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "reg_lambda": 1.0,
+      "reg_alpha": 0.0,
+      "tree_method": "hist",
+      "random_state": 17,
+      "n_jobs": 2
+    },
+    "eval_metric": "ndcg@2",
+    "rank_bins": 10,
+    "fit_cutoff": "2025-01-01",
+    "max_training_label_available_at": "2024-12-31 15:00:00",
+    "training_keys": "971261352e48d95f746f4075be1450a993ad163b2b39b83d9e7dc168689811ba",
+    "prediction_keys": "4b17bf8d80beeae2f75eafd6afaedd773a09276e7f53dceaae3dc470221a9145",
+    "training_original": "0dae63d2a040d444c91d4998082c267514414744830a24531a52b8eee14c7443",
+    "prediction_original": "6842e71a1613597f47f07775224a7a51e99d52d6505ab8fb6b0de18207d6fee7",
+    "training_actual": "0d00de385b385f5fac3ff318ef763282c1257f81bd6b1fb5caf5f49185e2ee37",
+    "prediction_actual": "0f513243ad931393e535f1ae175a32eece5d91e0fe35257020f891e12742d363"
+  },
+  "models": [
+    {
+      "seed": 17,
+      "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+    },
+    {
+      "seed": 42,
+      "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+    },
+    {
+      "seed": 73,
+      "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+    },
+    {
+      "seed": 101,
+      "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+    },
+    {
+      "seed": 202,
+      "sha256": "3d8427865b03a31ea0068ae45187e706069f9a9f032698995ed875c7fb43dfe2"
+    }
+  ],
+  "actual_booster_fits": 5
+}

@@ -48,6 +48,54 @@
       "all_wealth_values_match_actual_NAV": true,
       "all_drawdown_values_match_actual_NAV": true,
       "plotted_MaxDD": -0.49051500998476194
+    },
+    {
+      "seed": 42,
+      "experiment_id": "MASTER_A0",
+      "nav_file": {
+        "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/backtests/MASTER_A0/01de7567a83f26f216799a9d049db6d38a191b93c0041c985daed531fe4c5860/nav.parquet",
+        "bytes": 59307,
+        "sha256": "b7829291f5d6db58a0b4c05ee2ea03477cbe383b6edb3b67f81c655f645eedd9",
+        "schema": "trade_date: timestamp[ns]\ncash: double\nmarket_value: double\ntotal_asset: double\nlive_sleeves: int64\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 700",
+        "rows": 2076
+      },
+      "initial_wealth": 1.0,
+      "actual_NAV_points": 2076,
+      "all_wealth_values_match_actual_NAV": true,
+      "all_drawdown_values_match_actual_NAV": true,
+      "plotted_MaxDD": -0.24056327715394388
+    },
+    {
+      "seed": 42,
+      "experiment_id": "M0_42_BOTH_ADD",
+      "nav_file": {
+        "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/backtests/M0_42_BOTH_ADD/59f335f529e5abc91a5cafd7c0dcc75a29e4fa7ffebd4a5af030616ce393761c/nav.parquet",
+        "bytes": 59863,
+        "sha256": "fdfb6f3035ab1ef3929233404127273f9b2f1c17951750007fb937c0c8a72c81",
+        "schema": "trade_date: timestamp[ns]\ncash: double\nmarket_value: double\ntotal_asset: double\nlive_sleeves: int64\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 700",
+        "rows": 2076
+      },
+      "initial_wealth": 1.0,
+      "actual_NAV_points": 2076,
+      "all_wealth_values_match_actual_NAV": true,
+      "all_drawdown_values_match_actual_NAV": true,
+      "plotted_MaxDD": -0.2962758400970358
+    },
+    {
+      "seed": 42,
+      "experiment_id": "M1_42_BOTH_ADD",
+      "nav_file": {
+        "path": "/data1/stock-mxy/课题/一进二策略/result/round26_1/D5/backtests/M1_42_BOTH_ADD/4b8d88ad4dac2f276133be4c02ee80c4c55dd8b77e4925c1408f002eda460fed/nav.parquet",
+        "bytes": 59992,
+        "sha256": "c3ac848c3bff1e176a4bbf20a4e17fe748a00e8cf1610cdf1b3d0ecf51870ce5",
+        "schema": "trade_date: timestamp[ns]\ncash: double\nmarket_value: double\ntotal_asset: double\nlive_sleeves: int64\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 700",
+        "rows": 2076
+      },
+      "initial_wealth": 1.0,
+      "actual_NAV_points": 2076,
+      "all_wealth_values_match_actual_NAV": true,
+      "all_drawdown_values_match_actual_NAV": true,
+      "plotted_MaxDD": -0.2404659841047514
     }
   ]
 }

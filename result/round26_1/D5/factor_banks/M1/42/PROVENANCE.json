@@ -1,0 +1,138 @@
+{
+  "models": [
+    {
+      "year": 2015,
+      "checkpoint_sha256": "9be00b588a9ea75b318b410dc7bfe49daea711e0603c40654de071f04e1dd29b",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2015/987dae00eb58944ebe64e9269e62ea0b2cf59ad6c2c4ae6f636a02610635a0b4/factor_predictions.parquet",
+        "bytes": 132738,
+        "sha256": "d3458a4294a06b6c98e0da37b4a14d8741e44b4f635e951c796e1bdbd9fb50d2",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 6538
+      }
+    },
+    {
+      "year": 2016,
+      "checkpoint_sha256": "83e2c498df4f7525fc993a4100f2b13d1670a4c66214e83ddc2a2ab0c6dce2db",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2016/44992b7c331569bc0d09da52fa90c5f0a006b37f720e9e46c63ff84239e8afdf/factor_predictions.parquet",
+        "bytes": 81708,
+        "sha256": "db9ae5df27360b5a1e6fc1bd8431ea6e3219a45fb398c5e9f1caada39245c80c",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 3676
+      }
+    },
+    {
+      "year": 2017,
+      "checkpoint_sha256": "7b5dea3844ebec324887d20f47928ca403ed9eca5a66f7c5246759ab77cb9cb1",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2017/b408de21a2fc43eebb829e6e98ffbb029aa325e8fbe4f7d0228172d4b658863d/factor_predictions.parquet",
+        "bytes": 57689,
+        "sha256": "0da3dd12224e3070f3c61e1ad3cc88a90a5c9803c7fe1024b801be04548bc301",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 2382
+      }
+    },
+    {
+      "year": 2018,
+      "checkpoint_sha256": "4d314069ac8ccaeafa5d104abcd0f99b74299dc3048f226a697af3fc4b5f07ab",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2018/dda52a0daca04a8c8ecd55c1b28b6927290fcc2d751972cc788b18f20be8f62c/factor_predictions.parquet",
+        "bytes": 73342,
+        "sha256": "c24c7f6a68a4f4a1f290f15460113b0c61712c316e365b28d94a6d677b1acf12",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 3241
+      }
+    },
+    {
+      "year": 2019,
+      "checkpoint_sha256": "fed6b2791f1cd884a5a5f347dbc2631cf8d3a483ca8a99e19320496a32cee2fc",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2019/92f56486957e36896e13c5901c945e24d894c02672b416e81eb25ef9d5cb32b1/factor_predictions.parquet",
+        "bytes": 100508,
+        "sha256": "b470f6535e38aea81665ad78827bee71da930da45a07ad66158f2630bc297876",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 4711
+      }
+    },
+    {
+      "year": 2020,
+      "checkpoint_sha256": "b8c546bf0429ba5262692589971094699f33ee43b639306215906d4be9b7aa27",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2020/c4cc4120a894cb32e82e16f2738e25fbad1d5da8ad2ecb12d2fdca31a5eea146/factor_predictions.parquet",
+        "bytes": 122929,
+        "sha256": "2232e2aafa61739115b8459bc5cbab73d24c81698fc9ac2d390c733d2a1d42a6",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 5863
+      }
+    },
+    {
+      "year": 2021,
+      "checkpoint_sha256": "f331a93ac910c1fc5ccb819f4682546d52fe711433d3a5efe9f38ddbe2ca43cd",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2021/25a3a35a7bab62c00e383e549d5d489ea96dfa5ba8dd6217f602f772dce072ee/factor_predictions.parquet",
+        "bytes": 121632,
+        "sha256": "0c6fc1ae32489891da72bfcd595e76f80ff8dccd179829cb645dd80f403fac41",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 5749
+      }
+    },
+    {
+      "year": 2022,
+      "checkpoint_sha256": "d6a5ae99fd71f72cb53369166dc70f3b559ba5d9ef529c4e09a8f055dc8c9e05",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2022/959dd98e5ece5d9de629607d133a26f23355cbb4c2c8aa57c24305a80337fffd/factor_predictions.parquet",
+        "bytes": 118226,
+        "sha256": "611f98c5961f07d12aab54689d14b91f4b06e230b0b63a53bf5460cb3ab502c0",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 5600
+      }
+    },
+    {
+      "year": 2023,
+      "checkpoint_sha256": "f54df219de38b5654ff009812a26fd640a2815276d2b586d7031e1eb399467d9",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2023/128d8c3c48a91f1d4a7d627ed200ac9eb333fc11f57a6dc9e2882f3f66c10a22/factor_predictions.parquet",
+        "bytes": 89189,
+        "sha256": "1b585ed95c7cf35ae461ac427b8a3cf03da6cedcfe1ec8b38eeb8c1b1aa0a72d",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 4027
+      }
+    },
+    {
+      "year": 2024,
+      "checkpoint_sha256": "66d6507635e52a519d7f944f9ba4eea5891f09d041a2ec2e63f948961795a94b",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2024/d47a8dc5bef8fbc2e37367ce977a40799b8754036afe6031e47779df6626f3cf/factor_predictions.parquet",
+        "bytes": 136749,
+        "sha256": "3b3ed6aa3d49edf5e114c29d03867a5ec3e255675e8b9c865cba74e20df14e02",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 6792
+      }
+    },
+    {
+      "year": 2025,
+      "checkpoint_sha256": "c00239db8fae15569606e5326eaf8a035b8b9e032a736361dfcef69b1c53dade",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2025/559695f187f014bd8a6d5e5555cca08a202c8e6a97adaecdc123793c9f605821/factor_predictions.parquet",
+        "bytes": 136781,
+        "sha256": "51f08e6ff460eb1844820dd1780bf34a0687938d665c8fa77f097c955ecfe7b1",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 6584
+      }
+    },
+    {
+      "year": 2026,
+      "checkpoint_sha256": "5aff0d3fc2f4f5be905eb4adc2be4c2d98f03cd6e48ebcd46709d9e3979e514a",
+      "prediction": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/42/2026/14dd79dbb5b71d0ef8a517039e82a7add7dd13c70b5fef13e638acaa64d52980/factor_predictions.parquet",
+        "bytes": 83013,
+        "sha256": "a202a6e09d532ddd36a9b835c3ca072a2afa8c12d1938a0ab1979433ba571680",
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+        "rows": 3667
+      }
+    }
+  ],
+  "status": "TRUE_ANNUAL_OOF_ONLY",
+  "in_sample_NN_values_used": false
+}
