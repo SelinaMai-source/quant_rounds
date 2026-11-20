@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2016-01-04",
+    "nodes": 1000,
+    "max_abs_error": 0.0,
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  {
+    "date": "2016-07-05",
+    "nodes": 1008,
+    "max_abs_error": 0.0,
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  {
+    "date": "2016-12-30",
+    "nodes": 1004,
+    "max_abs_error": 1.1920928955078125e-07,
+    "atol": 1e-05,
+    "rtol": 1e-05
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "status": "FACTOR_OOF_YEAR_COMPLETE",
+  "arm": "M1",
+  "seed": 42,
+  "year": 2015,
+  "epochs": 1,
+  "all_training_dates": 481,
+  "gradient_dates": 421,
+  "mean_train_loss": 0.9085537611093204,
+  "checkpoint_reason": "THRESHOLD_REACHED",
+  "checkpoint_sha256": "9be00b588a9ea75b318b410dc7bfe49daea711e0603c40654de071f04e1dd29b",
+  "normalizer_sha256": "69621b45ad0a74fd7c05778ff4e98056b4236fe5d5df33ac5fd7d3aa1ebae543",
+  "fit_cutoff": "2015-01-01",
+  "max_training_label_available_at": "2013-12-31 15:00:00",
+  "unavailable_training_target_interventions": 0,
+  "mutation": "none",
+  "model_shape_parameters": 775041,
+  "train_only_fit": true,
+  "historical_OOF_not_training_fitted_values": true
+}
