@@ -8,8 +8,8 @@
   "EVIDENCE_COMPLETE": false,
   "seed_states": {
     "17": {
-      "accepted_OOF_models": 20,
-      "all24_OOF_complete": false
+      "accepted_OOF_models": 24,
+      "all24_OOF_complete": true
     },
     "42": {
       "accepted_OOF_models": 0,
@@ -20,9 +20,9 @@
       "all24_OOF_complete": false
     }
   },
-  "accepted_target_NN_models": 20,
-  "accepted_target_NN_training_dates": 9722,
-  "full_cold_NN_runs": 0,
+  "accepted_target_NN_models": 24,
+  "accepted_target_NN_training_dates": 11658,
+  "full_cold_NN_runs": 2,
   "full_cold_backend_configurations": 0,
   "full_cold_backend_boosters": 0,
   "actual_native_causal_replays": 0,

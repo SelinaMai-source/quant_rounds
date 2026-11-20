@@ -1,0 +1,331 @@
+{
+  "status": "PASS_ACTUAL_INPUTS_BEFORE_BACKEND_FIT",
+  "cases": [
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2018,
+      "actual_legal_training_rows": 11379,
+      "actual_heldout_prediction_rows": 3168,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2019,
+      "actual_legal_training_rows": 8565,
+      "actual_heldout_prediction_rows": 4698,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2020,
+      "actual_legal_training_rows": 9531,
+      "actual_heldout_prediction_rows": 5848,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2021,
+      "actual_legal_training_rows": 12743,
+      "actual_heldout_prediction_rows": 5736,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2022,
+      "actual_legal_training_rows": 15257,
+      "actual_heldout_prediction_rows": 5579,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2023,
+      "actual_legal_training_rows": 16180,
+      "actual_heldout_prediction_rows": 4015,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2024,
+      "actual_legal_training_rows": 14489,
+      "actual_heldout_prediction_rows": 6784,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2025,
+      "actual_legal_training_rows": 14942,
+      "actual_heldout_prediction_rows": 6563,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "five",
+      "year": 2026,
+      "actual_legal_training_rows": 15774,
+      "actual_heldout_prediction_rows": 3657,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2018,
+      "actual_legal_training_rows": 11754,
+      "actual_heldout_prediction_rows": 3168,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2019,
+      "actual_legal_training_rows": 8690,
+      "actual_heldout_prediction_rows": 4698,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2020,
+      "actual_legal_training_rows": 9658,
+      "actual_heldout_prediction_rows": 5848,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2021,
+      "actual_legal_training_rows": 12960,
+      "actual_heldout_prediction_rows": 5736,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2022,
+      "actual_legal_training_rows": 15488,
+      "actual_heldout_prediction_rows": 5579,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2023,
+      "actual_legal_training_rows": 16422,
+      "actual_heldout_prediction_rows": 4015,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2024,
+      "actual_legal_training_rows": 14644,
+      "actual_heldout_prediction_rows": 6784,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2025,
+      "actual_legal_training_rows": 15168,
+      "actual_heldout_prediction_rows": 6563,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M0",
+      "head": "ten",
+      "year": 2026,
+      "actual_legal_training_rows": 15997,
+      "actual_heldout_prediction_rows": 3657,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2018,
+      "actual_legal_training_rows": 11379,
+      "actual_heldout_prediction_rows": 3168,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2019,
+      "actual_legal_training_rows": 8565,
+      "actual_heldout_prediction_rows": 4698,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2020,
+      "actual_legal_training_rows": 9531,
+      "actual_heldout_prediction_rows": 5848,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2021,
+      "actual_legal_training_rows": 12743,
+      "actual_heldout_prediction_rows": 5736,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2022,
+      "actual_legal_training_rows": 15257,
+      "actual_heldout_prediction_rows": 5579,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2023,
+      "actual_legal_training_rows": 16180,
+      "actual_heldout_prediction_rows": 4015,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2024,
+      "actual_legal_training_rows": 14489,
+      "actual_heldout_prediction_rows": 6784,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2025,
+      "actual_legal_training_rows": 14942,
+      "actual_heldout_prediction_rows": 6563,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "five",
+      "year": 2026,
+      "actual_legal_training_rows": 15774,
+      "actual_heldout_prediction_rows": 3657,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2018,
+      "actual_legal_training_rows": 11754,
+      "actual_heldout_prediction_rows": 3168,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2019,
+      "actual_legal_training_rows": 8690,
+      "actual_heldout_prediction_rows": 4698,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2020,
+      "actual_legal_training_rows": 9658,
+      "actual_heldout_prediction_rows": 5848,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2021,
+      "actual_legal_training_rows": 12960,
+      "actual_heldout_prediction_rows": 5736,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2022,
+      "actual_legal_training_rows": 15488,
+      "actual_heldout_prediction_rows": 5579,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2023,
+      "actual_legal_training_rows": 16422,
+      "actual_heldout_prediction_rows": 4015,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2024,
+      "actual_legal_training_rows": 14644,
+      "actual_heldout_prediction_rows": 6784,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2025,
+      "actual_legal_training_rows": 15168,
+      "actual_heldout_prediction_rows": 6563,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    },
+    {
+      "arm": "M1",
+      "head": "ten",
+      "year": 2026,
+      "actual_legal_training_rows": 15997,
+      "actual_heldout_prediction_rows": 3657,
+      "all_historical_factor_rows_true_OOF": true,
+      "finite_factor_coverage": true
+    }
+  ],
+  "in_sample_NN_values_used": false,
+  "raw_labels_exported_in_derived_bank": false
+}
