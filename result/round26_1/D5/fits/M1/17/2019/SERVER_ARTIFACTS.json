@@ -1,0 +1,65 @@
+{
+  "directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c",
+  "private_training_panels_and_checkpoints_not_copied_to_repo": true,
+  "artifacts": [
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/COMPLETE.json",
+      "bytes": 1303,
+      "sha256": "eaf05fae4c0f7864f44447c1dd70da1d0e11f75aea5433ad903a646bc978b0ce"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/MODEL_REGISTRY.json",
+      "bytes": 694,
+      "sha256": "8d8ef4789c04aebe74bfb8d5fd5fd97e0b34619378fb9a7f3f24de31cb8cc948"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/NORMALIZER.npz",
+      "bytes": 2268,
+      "sha256": "4e5d7bd5aea31825e378d7475f1ad6fa0d6393f6bd699b951c9f7a3952548021"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/NORMALIZER_AUDIT.json",
+      "bytes": 185,
+      "sha256": "8ab9cd76869cee9c39f218981050f5f12d5673456533ca9ebaebfe09529acefc"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/PERMUTATION_REAL.json",
+      "bytes": 410,
+      "sha256": "55733312dbe6eb4ba74e860a6b0a7f02436e51693ea42c405691e9f489ffdbd7"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/RESOURCES.json",
+      "bytes": 473,
+      "sha256": "45daea6cfc7a0b268919420926fe183ee8139b8047dd400b15fe47b6823477c9"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/TRAINING_DAYS.csv",
+      "bytes": 24047,
+      "sha256": "5ffdb80993212c86fd56946c778736dec6c24d830f2f6ea1071baa79a52e0d89"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/contract.json",
+      "bytes": 15145,
+      "sha256": "5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/factor_predictions.parquet",
+      "bytes": 100508,
+      "sha256": "3bbc9a05faacd9b991ebfe13a4ecf4615dda43074acce283a8bfa7df37d61966",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: null\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1135",
+      "rows": 4711
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/model.pt",
+      "bytes": 3213001,
+      "sha256": "b6b29c8f042f53eac90456b301fbd49be05fcbd2d5407d679508b157794d8569"
+    },
+    {
+      "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_fits/M1/17/2019/5c390d7e2456388a9920276b3cde3b31861b7c330c432af929ba106bf044090c/validation_diagnostic.parquet",
+      "bytes": 73638,
+      "sha256": "19c2007a9689b62f368f9bed4df538f0742eebb748e85143c75fd0aeaf70e694",
+      "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nlabel_available_at: timestamp[ns]\nz_MASTER: float\nphase: string\nfactor_fit_cutoff: timestamp[ms]\nmetric_label_legal: bool\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1134",
+      "rows": 3241
+    }
+  ]
+}

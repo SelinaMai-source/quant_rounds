@@ -22,7 +22,7 @@ No completed valid account result yet.
 No paired account result yet.
 ```
 
-已完成有效目标NN 6/72；三个seed状态见STATUS；原生经济配置0。完整CPU/GPU/RSS、模型/输入/预测/订单工件的实际schema/bytes/SHA及服务器路径已导出；大型特征/私有训练面板及检查点不复制到仓库，SERVER_*是服务器工件目录，仓库artifact_manifest另验证实际上传文件。所有失败与未完成均保留。
+已完成有效目标NN 10/72；三个seed状态见STATUS；原生经济配置0。完整CPU/GPU/RSS、模型/输入/预测/订单工件的实际schema/bytes/SHA及服务器路径已导出；大型特征/私有训练面板及检查点不复制到仓库，SERVER_*是服务器工件目录，仓库artifact_manifest另验证实际上传文件。所有失败与未完成均保留。
 
 全cap冷NN、完整双Head XGB重训、未来上下文/报价/label扰动与删除、完整原生8账表比较，均以实际通过案例为准：{"NN12": false, "backend24": false, "native12": false}。随机架构测试或缓存测试不替代这些真实运行。价格/指标/processor缓存查询前校验实际传递输入字节和全部契约；局部失败/未完成从不命中完成缓存。
 
