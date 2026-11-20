@@ -1,7 +1,24 @@
 [
   {
+    "schemas": {
+      "equity.npy": {
+        "shape": [
+          5807,
+          4020,
+          158
+        ],
+        "dtype": "float32"
+      },
+      "market.npy": {
+        "shape": [
+          4020,
+          63
+        ],
+        "dtype": "float32"
+      }
+    },
     "kind": "store",
-    "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/f5e914fa8db1cdf185d2adc89743abea61be915cd255a36def09392c62985709",
+    "server_directory": "research/round23_7_26_1_execution/MASTER_store/f5e914fa8db1cdf185d2adc89743abea61be915cd255a36def09392c62985709",
     "complete_manifest": {
       "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_store/f5e914fa8db1cdf185d2adc89743abea61be915cd255a36def09392c62985709/COMPLETE.json",
       "bytes": 563,
@@ -32,6 +49,38 @@
     "raw_or_derived_large_inputs_not_uploaded": true
   },
   {
+    "schemas": {
+      "graph_plan.npz": {
+        "nodes": {
+          "shape": [
+            3579859
+          ],
+          "dtype": "int32"
+        },
+        "target_indices": {
+          "shape": [
+            3579859
+          ],
+          "dtype": "int32"
+        },
+        "offsets": {
+          "shape": [
+            3535
+          ],
+          "dtype": "int64"
+        },
+        "day_indices": {
+          "shape": [
+            3534
+          ],
+          "dtype": "int32"
+        }
+      },
+      "targets.parquet": {
+        "rows": 64998,
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\nlabel_exit_rule_net: double\nactual_exit_date: timestamp[ns]\nlabel_available_at: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 773"
+      }
+    },
     "kind": "graphs",
     "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/6b04988d89f61a6cf327f639805fdf50b1bb45e2881bf57b8cef74bc0bd23680",
     "complete_manifest": {
@@ -74,6 +123,12 @@
     "raw_or_derived_large_inputs_not_uploaded": true
   },
   {
+    "schemas": {
+      "observed_quotes.parquet": {
+        "rows": 14522056,
+        "schema": "trade_date: timestamp[ns]\ninstrument_id: string\ncal_idx: int64\nclose: double\nvolume: int64\namount: double\npaused: bool\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 899"
+      }
+    },
     "kind": "provider",
     "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_provider/c53ff308b182a1f6c9beb242ad99233bb6a4a3bf71cdc0793a95f09325e3edae",
     "complete_manifest": {
@@ -174326,6 +174381,19 @@
     "raw_or_derived_large_inputs_not_uploaded": true
   },
   {
+    "schemas": {
+      "market63.npy": {
+        "shape": [
+          4020,
+          63
+        ],
+        "dtype": "float32"
+      },
+      "market63.parquet": {
+        "rows": 4020,
+        "schema": "SH000300:$close/Ref($close,1)-1: float\nSH000300:Mean($close/Ref($close,1)-1,5): float\nSH000300:Std($close/Ref($close,1)-1,5): float\nSH000300:Mean($amount,5)/$amount: float\nSH000300:Std($amount,5)/$amount: float\nSH000300:Mean($close/Ref($close,1)-1,10): float\nSH000300:Std($close/Ref($close,1)-1,10): float\nSH000300:Mean($amount,10)/$amount: float\nSH000300:Std($amount,10)/$amount: float\nSH000300:Mean($close/Ref($close,1)-1,20): float\nSH000300:Std($close/Ref($close,1)-1,20): float\nSH000300:Mean($amount,20)/$amount: float\nSH000300:Std($amount,20)/$amount: float\nSH000300:Mean($close/Ref($close,1)-1,30): float\nSH000300:Std($close/Ref($close,1)-1,30): float\nSH000300:Mean($amount,30)/$amount: float\nSH000300:Std($amount,30)/$amount: float\nSH000300:Mean($close/Ref($close,1)-1,60): float\nSH000300:Std($close/Ref($close,1)-1,60): float\nSH000300:Mean($amount,60)/$amount: float\nSH000300:Std($amount,60)/$amount: float\nSH000905:$close/Ref($close,1)-1: float\nSH000905:Mean($close/Ref($close,1)-1,5): float\nSH000905:Std($close/Ref($close,1)-1,5): float\nSH000905:Mean($amount,5)/$amount: float\nSH000905:Std($amount,5)/$amount: float\nSH000905:Mean($close/Ref($close,1)-1,10): float\nSH000905:Std($close/Ref($close,1)-1,10): float\nSH000905:Mean($amount,10)/$amount: float\nSH000905:Std($amount,10)/$amount: float\nSH000905:Mean($close/Ref($close,1)-1,20): float\nSH000905:Std($close/Ref($close,1)-1,20): float\nSH000905:Mean($amount,20)/$amount: float\nSH000905:Std($amount,20)/$amount: float\nSH000905:Mean($close/Ref($close,1)-1,30): float\nSH000905:Std($close/Ref($close,1)-1,30): float\nSH000905:Mean($amount,30)/$amount: float\nSH000905:Std($amount,30)/$amount: float\nSH000905:Mean($close/Ref($close,1)-1,60): float\nSH000905:Std($close/Ref($close,1)-1,60): float\nSH000905:Mean($amount,60)/$amount: float\nSH000905:Std($amount,60)/$amount: float\nSH000906:$close/Ref($close,1)-1: float\nSH000906:Mean($close/Ref($close,1)-1,5): float\nSH000906:Std($close/Ref($close,1)-1,5): float\nSH000906:Mean($amount,5)/$amount: float\nSH000906:Std($amount,5)/$amount: float\nSH000906:Mean($close/Ref($close,1)-1,10): float\nSH000906:Std($close/Ref($close,1)-1,10): float\nSH000906:Mean($amount,10)/$amount: float\nSH000906:Std($amount,10)/$amount: float\nSH000906:Mean($close/Ref($close,1)-1,20): float\nSH000906:Std($close/Ref($close,1)-1,20): float\nSH000906:Mean($amount,20)/$amount: float\nSH000906:Std($amount,20)/$amount: float\nSH000906:Mean($close/Ref($close,1)-1,30): float\nSH000906:Std($close/Ref($close,1)-1,30): float\nSH000906:Mean($amount,30)/$amount: float\nSH000906:Std($amount,30)/$amount: float\nSH000906:Mean($close/Ref($close,1)-1,60): float\nSH000906:Std($close/Ref($close,1)-1,60): float\nSH000906:Mean($amount,60)/$amount: float\nSH000906:Std($amount,60)/$amount: float\ndatetime: timestamp[ns]\n-- schema metadata --\npandas: '{\"index_columns\": [\"datetime\"], \"column_indexes\": [{\"name\": null' + 11192"
+      }
+    },
     "kind": "market63",
     "server_directory": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_market63/d2d098c578180186d455f31db7d79843cab7c946b90664c944474cb89d25fd58",
     "complete_manifest": {
