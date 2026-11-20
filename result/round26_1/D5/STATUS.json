@@ -1,24 +1,50 @@
 {
-  "status": "CORRECTED_LEGAL_DOMAIN_FROZEN_DATA_BUILDING",
-  "IMPLEMENTED": false,
+  "status": "PARTIAL_SEED_CHECKPOINT",
+  "IMPLEMENTED": true,
   "UNIT_TESTED": true,
-  "REFERENCE_RUN_COMPLETE": false,
+  "REFERENCE_RUN_COMPLETE": true,
   "TARGET_OOF_COMPLETE": false,
   "BACKTEST_COMPLETE": false,
   "EVIDENCE_COMPLETE": false,
-  "external_blocker": false,
-  "reason": "Original AI071 legal warmup fixed and exact2013/14 key/label parity passed. Rebuild graph/store before corrected fits. Public data now fully recovered; original-source reference not yet run. Preserve invalid/failed/interrupted attempts.",
-  "contract_sha256": "5de3092ff43c53c38f1c717e62e8cf3675b1cb9efa77776f96d83dda00ca98f3",
+  "seed_states": {
+    "17": {
+      "accepted_OOF_models": 2,
+      "all24_OOF_complete": false
+    },
+    "42": {
+      "accepted_OOF_models": 0,
+      "all24_OOF_complete": false
+    },
+    "73": {
+      "accepted_OOF_models": 0,
+      "all24_OOF_complete": false
+    }
+  },
+  "accepted_target_NN_models": 2,
+  "accepted_target_NN_training_dates": 962,
+  "full_cold_NN_runs": 0,
+  "full_cold_backend_configurations": 0,
+  "full_cold_backend_boosters": 0,
+  "actual_native_causal_replays": 0,
+  "actual_economic_account_configurations": 0,
+  "actual_regular_head_configurations": 0,
+  "actual_regular_head_boosters": 0,
+  "no_factor_control_configurations": 18,
+  "no_factor_control_boosters": 90,
+  "diagnostic_tests": {
+    "NN12": false,
+    "backend24": false,
+    "native12": false
+  },
+  "completed_checkpoint_seed": 17,
   "CURRENT_BASELINE_CHANGED": false,
   "PRODUCTION_CONFIG_CHANGED": false,
-  "MODEL_ARCHITECTURE_INTEGRATION_PASS": true,
-  "EARLY_TARGET_RECOVERED": true,
-  "REAL_INDEX63_COMPLETE": true,
-  "REAL_ALPHA158_COMPLETE": true,
-  "BASELINE_HEAD_CONFIGURATIONS": 18,
-  "BASELINE_BOOSTER_FITS": 90,
-  "legal2012_targets": 1302,
-  "REFERENCE_DATA_RECOVERED": true,
-  "accepted_target_OOF_models": 0,
-  "invalid_completed_target_NN_diagnostics": 2
+  "external_blocker": false,
+  "invalid_gross2012_completed_NN_diagnostics": 2,
+  "initial_normalizer_format_failed_attempts": 24,
+  "intentionally_interrupted_partial_NN_attempts": 4,
+  "no_failure_or_invalid_model_counted_as_accepted": true,
+  "signal_end": "2026-07-01",
+  "valuation_end": "2026-07-24",
+  "scope": "historical development walk-forward, not untouched forward/live execution proof"
 }

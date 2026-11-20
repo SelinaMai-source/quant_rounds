@@ -1,0 +1,117 @@
+{
+  "status": "REFERENCE_PUBLIC_CORE_FULL_LOCKED_EPOCH_COMPLETE",
+  "scope": "original author public implementation/example-budget reference; not full40epoch paper reproduction or confidential business system",
+  "training_dates": 2979,
+  "actual_optimizer_steps": 2979,
+  "train_losses": [
+    1.0344289385780228
+  ],
+  "checkpoint_reason": "CAP_REACHED",
+  "epochs": 1,
+  "fresh_seed": 17,
+  "terminal_checkpoint_sha256": "adcf6bbe9996d4532aac646e0853109f8c06391d092410f0b996535e510a6d24",
+  "original_author_seed0_checkpoint": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_author_assets/model/csi300_opensource_0.pkl",
+    "bytes": 3214036,
+    "sha256": "581443312928ac27fab1c94482cea9e3e0a250f50948fe17e88d8ab5fa188a59"
+  },
+  "author_checkpoint_loader_original_fitted_type": "str",
+  "author_loader_IO_gate_cast_only": true,
+  "fresh_valid": {
+    "original_source_metrics": {
+      "IC": 0.1016982258973929,
+      "ICIR": 0.8077041121345254,
+      "RIC": 0.09613819594800861,
+      "RICIR": 0.7886021574724422
+    },
+    "finite_label_metric_aggregation": {
+      "IC": 0.1016982258973929,
+      "ICIR": 0.8077041121345254,
+      "RIC": 0.09613819594800861,
+      "RICIR": 0.7886021574724423
+    },
+    "scored_dates": 59,
+    "all_forecast_dates": 59,
+    "undefined_IC_dates": 0,
+    "fewer_than_two_metric_labels_dates": 0,
+    "constant_prediction_dates": 0,
+    "constant_label_dates": 0,
+    "prediction_nodes": 17647,
+    "unknown_labels_retained_at_inference": 0,
+    "metric_correction": "Only unscorable-label dates excluded from means; all forecast nodes/dates retained. Raw original np.mean metrics saved even if NaN."
+  },
+  "fresh_test": {
+    "original_source_metrics": {
+      "IC": 0.0398077807075356,
+      "ICIR": 0.255920742140121,
+      "RIC": 0.03535096276015015,
+      "RICIR": 0.21809021114953228
+    },
+    "finite_label_metric_aggregation": {
+      "IC": 0.0398077807075356,
+      "ICIR": 0.25592074214012095,
+      "RIC": 0.03535096276015015,
+      "RICIR": 0.2180902111495322
+    },
+    "scored_dates": 611,
+    "all_forecast_dates": 611,
+    "undefined_IC_dates": 0,
+    "fewer_than_two_metric_labels_dates": 0,
+    "constant_prediction_dates": 0,
+    "constant_label_dates": 0,
+    "prediction_nodes": 183300,
+    "unknown_labels_retained_at_inference": 305,
+    "metric_correction": "Only unscorable-label dates excluded from means; all forecast nodes/dates retained. Raw original np.mean metrics saved even if NaN."
+  },
+  "author0_valid": {
+    "original_source_metrics": {
+      "IC": 0.05059132986196153,
+      "ICIR": 0.55130963670435,
+      "RIC": 0.050945774149132074,
+      "RICIR": 0.4864553161686951
+    },
+    "finite_label_metric_aggregation": {
+      "IC": 0.05059132986196153,
+      "ICIR": 0.55130963670435,
+      "RIC": 0.050945774149132074,
+      "RICIR": 0.48645531616869514
+    },
+    "scored_dates": 59,
+    "all_forecast_dates": 59,
+    "undefined_IC_dates": 0,
+    "fewer_than_two_metric_labels_dates": 0,
+    "constant_prediction_dates": 0,
+    "constant_label_dates": 0,
+    "prediction_nodes": 17647,
+    "unknown_labels_retained_at_inference": 0,
+    "metric_correction": "Only unscorable-label dates excluded from means; all forecast nodes/dates retained. Raw original np.mean metrics saved even if NaN."
+  },
+  "author0_test": {
+    "original_source_metrics": {
+      "IC": 0.06541623539226336,
+      "ICIR": 0.4398960399579871,
+      "RIC": 0.0691032871315594,
+      "RICIR": 0.45102312249176885
+    },
+    "finite_label_metric_aggregation": {
+      "IC": 0.06541623539226336,
+      "ICIR": 0.43989603995798693,
+      "RIC": 0.0691032871315594,
+      "RICIR": 0.4510231224917688
+    },
+    "scored_dates": 611,
+    "all_forecast_dates": 611,
+    "undefined_IC_dates": 0,
+    "fewer_than_two_metric_labels_dates": 0,
+    "constant_prediction_dates": 0,
+    "constant_label_dates": 0,
+    "prediction_nodes": 183300,
+    "unknown_labels_retained_at_inference": 305,
+    "metric_correction": "Only unscorable-label dates excluded from means; all forecast nodes/dates retained. Raw original np.mean metrics saved even if NaN."
+  },
+  "all_available_dump_nodes_retained": true,
+  "prediction_segments_disjoint": true,
+  "private_fits_use_author_weights": false,
+  "dump_raw_universe_and_first_publication_vintage_proven": false,
+  "train_label_available_at_metadata_supplied": false
+}

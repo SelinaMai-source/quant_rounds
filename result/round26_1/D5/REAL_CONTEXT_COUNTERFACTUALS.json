@@ -39,9 +39,9 @@
     }
   ],
   "graph_plan": {
-    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/f1038553142431e9bf05172d35870bcd9516fda6b487a2ac2c6facfe0bc2c734/graph_plan.npz",
-    "bytes": 28691584,
-    "sha256": "ba451163df209fc9bc697e3a1ea11ea19befd9d0019623df85ddd1ba0ffba31a"
+    "path": "/data1/stock-mxy/课题/一进二策略/research/round23_7_26_1_execution/MASTER_graphs/6b04988d89f61a6cf327f639805fdf50b1bb45e2881bf57b8cef74bc0bd23680/graph_plan.npz",
+    "bytes": 28682312,
+    "sha256": "d0eb7a71faa786c17d2ac681e62a2e730387daee866211664912597120c1d267"
   },
   "scope": "Real source quotation perturb/delete and complete context re-selection; NN cold fits and feature calculation interventions are separate evidence, not claimed by this test"
 }

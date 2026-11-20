@@ -1,0 +1,101 @@
+{
+  "native_config": {
+    "initial_cash": 300000.0,
+    "sleeve_count": 2,
+    "sleeve_cash": 150000.0,
+    "top_k": 2,
+    "name_budget": 10000.0,
+    "name_budget_nav_fraction": null,
+    "rank_name_budget_nav_fractions": [
+      0.3,
+      0.1
+    ],
+    "cohort_cash_fraction": 1.0,
+    "lot_size": 100,
+    "costs": {
+      "slippage_bps": 12.3,
+      "commission_bps": 1.0,
+      "transfer_fee_bps": 0.1,
+      "sell_tax_bps": 5.0
+    },
+    "limit_up_tolerance": 0.005,
+    "market_up_ratio_min": null,
+    "market_up_ratio_full_allocation_min": null,
+    "reduced_name_budget_nav_fraction": null,
+    "high_gap_threshold": null,
+    "high_gap_extra_entry_slippage_bps": 0.0,
+    "open_gap_min": null,
+    "open_gap_max": null,
+    "minimum_score": null,
+    "exit_mode": "close_from_d2",
+    "ma_window": 5,
+    "max_holding_sessions": 10
+  },
+  "Five14": [
+    "g_prim_px_vol_corr",
+    "fb_close_seal_streak_norm",
+    "fb_last30_amount_ratio",
+    "h5_last_first_limit_value_change_sym",
+    "h1_consistent_buy_ratio",
+    "h1_last15m_volume_ratio",
+    "h4_large_net_to_turnover",
+    "h4_retail_net_to_turnover",
+    "g0_amount_log",
+    "g0_amt_vs_5",
+    "g1_ret_5",
+    "g3_days_since_limit",
+    "ind_seal_rate_excess",
+    "d1_open_gap"
+  ],
+  "Ten13": [
+    "g_prim_px_vol_corr",
+    "fb_close_seal_streak_norm",
+    "fb_last30_amount_ratio",
+    "h5_last_first_limit_value_change_sym",
+    "h1_consistent_buy_ratio",
+    "h1_last15m_volume_ratio",
+    "h4_large_net_to_turnover",
+    "h4_retail_net_to_turnover",
+    "g0_amt_vs_5",
+    "g1_ret_5",
+    "g3_days_since_limit",
+    "ind_seal_rate_excess",
+    "d1_open_gap"
+  ],
+  "tree_seeds": [
+    17,
+    42,
+    73,
+    101,
+    202
+  ],
+  "model_parameters": {
+    "objective": "rank:ndcg",
+    "eval_metric": null,
+    "ndcg_exp_gain": true,
+    "n_estimators": 100,
+    "learning_rate": 0.05,
+    "max_depth": 2,
+    "min_child_weight": 1.0,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.0,
+    "tree_method": "hist",
+    "random_state": 17,
+    "n_jobs": 2
+  },
+  "fusion": {
+    "ten": 0.9,
+    "five": 0.1
+  },
+  "B03_O01": "original apply_b03_o01, unchanged",
+  "fees": "original12.3bp slippage,1bp commission,.1bp transfer,flat5bp sell tax; buy+10/+20bp stress at execution only",
+  "corporate_action_coverage": "original prepared market with no supplied events, zero is not coverage proof",
+  "legacy": "D+1 opening-gap lane and original high/low fill assumptions retained, no live-fill/PIT proof",
+  "source": {
+    "path": "/data1/stock-mxy/课题/一进二策略/core/local_executor.py",
+    "bytes": 45705,
+    "sha256": "31d22099578069dbf8f4378cd4738624942c12ae2c99089cbe1d29c6a723eeed"
+  }
+}

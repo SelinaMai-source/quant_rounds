@@ -10,8 +10,8 @@ from core.research_integrity_v5.cache import sha,identity
 def nn_worker(task):
     from core.round26_1.master_fit import configure,run
     configure()
-    store,arm,year,reference=task
-    dest=run(store,arm,17,year,'unavailable_plus1e6',namespace=B/'MASTER_cold_fits'/arm/str(year))
+    store,arm,year,reference,mutation=task
+    dest=run(store,arm,17,year,mutation,namespace=B/'MASTER_cold_fits'/arm/str(year))
     reference=Path(reference)
     first=torch.load(reference/'model.pt',map_location='cpu',weights_only=True)
     second=torch.load(dest/'model.pt',map_location='cpu',weights_only=True)
@@ -22,8 +22,8 @@ def nn_worker(task):
     registry=json.loads((dest/'MODEL_REGISTRY.json').read_text())
     assert registry['unavailable_training_target_interventions']>0
     assert sha(reference/'NORMALIZER.npz')==sha(dest/'NORMALIZER.npz')
-    result={'status':'PASS_FULL_CAP_COLD_FIT','arm':arm,'year':year,'seed':17,'unavailable_training_target_interventions':registry['unavailable_training_target_interventions'],'all_state_tensors_bitexact':True,'OOF_predictions_bitexact':True,'same_persisted_normalizer_bytes':True,'original':str(reference),'cold':str(dest),'original_registry':identity(reference/'MODEL_REGISTRY.json'),'cold_registry':identity(dest/'MODEL_REGISTRY.json'),'resources':json.loads((dest/'RESOURCES.json').read_text())}
-    out=R/'counterfactuals';out.mkdir(exist_ok=True);(out/f'NN_{arm}_{year}.json').write_text(json.dumps(result,indent=2));return result
+    result={'status':'PASS_FULL_CAP_COLD_FIT','arm':arm,'year':year,'seed':17,'mutation':mutation,'unavailable_training_target_interventions':registry['unavailable_training_target_interventions'],'all_state_tensors_bitexact':True,'OOF_predictions_bitexact':True,'same_persisted_normalizer_bytes':True,'original':str(reference),'cold':str(dest),'original_registry':identity(reference/'MODEL_REGISTRY.json'),'cold_registry':identity(dest/'MODEL_REGISTRY.json'),'resources':json.loads((dest/'RESOURCES.json').read_text())}
+    out=R/'counterfactuals';out.mkdir(exist_ok=True);(out/f'NN_{arm}_{year}_{mutation}.json').write_text(json.dumps(result,indent=2));return result
 
 def run_nn(store,jobs=2):
     from concurrent.futures import ProcessPoolExecutor,as_completed
@@ -33,11 +33,12 @@ def run_nn(store,jobs=2):
     for year in [2015,2021,2026]:
         for arm in ['M0','M1']:
             matches=rows.loc[rows.arm.eq(arm)&rows.year.eq(year)];assert len(matches)==1
-            tasks.append((str(store),arm,year,matches.iloc[0].path))
+            for mutation in ['unavailable_plus1e6','unavailable_delete']:
+                tasks.append((str(store),arm,year,matches.iloc[0].path,mutation))
     results=[]
     with ProcessPoolExecutor(max_workers=jobs,mp_context=multiprocessing.get_context('spawn'),max_tasks_per_child=1) as pool:
         for result in pool.map(nn_worker,tasks):
-            results.append(result);print('MASTER actual full cold fit',result['arm'],result['year'],'PASS',flush=True)
+            results.append(result);print('MASTER actual full cold fit',result['arm'],result['year'],result['mutation'],'PASS',flush=True)
     (R/'NN_COLD_COUNTERFACTUALS.json').write_text(json.dumps({'status':'PASS','cases':results},indent=2));return results
 
 if __name__=='__main__':

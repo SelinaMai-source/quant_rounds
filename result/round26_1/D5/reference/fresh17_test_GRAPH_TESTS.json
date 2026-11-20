@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "date": "2020-07-01",
+      "nodes": 300,
+      "permutation_max_abs": 2.175569534301758e-06,
+      "atol": 1e-05,
+      "rtol": 1e-05,
+      "actual_label_perturb_delete_predictions_bitexact": true
+    },
+    {
+      "date": "2021-09-28",
+      "nodes": 300,
+      "permutation_max_abs": 2.421438694000244e-06,
+      "atol": 1e-05,
+      "rtol": 1e-05,
+      "actual_label_perturb_delete_predictions_bitexact": true
+    },
+    {
+      "date": "2022-12-30",
+      "nodes": 300,
+      "permutation_max_abs": 1.4975666999816895e-06,
+      "atol": 1e-05,
+      "rtol": 1e-05,
+      "actual_label_perturb_delete_predictions_bitexact": true
+    }
+  ]
+}

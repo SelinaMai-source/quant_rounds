@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "architecture integration; random inputs, NOT real-data training or public reference",
+  "M1_author_forward_backward_update_bitexact": true,
+  "M0_M1_initial_parameters_bitexact": true,
+  "label_only_mask_N_lt40_keeps9": {
+    "legal": 9,
+    "used": 9,
+    "reason": "TRAIN"
+  },
+  "permutation": [
+    {
+      "arm": "M0",
+      "permutation_max_abs": 1.7881393432617188e-07,
+      "first_node_changed_by_other_nodes": false
+    },
+    {
+      "arm": "M1",
+      "permutation_max_abs": 2.086162567138672e-07,
+      "first_node_changed_by_other_nodes": true
+    }
+  ],
+  "parameter_count": 775041
+}

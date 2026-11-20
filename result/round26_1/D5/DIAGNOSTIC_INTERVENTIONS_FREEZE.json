@@ -1,0 +1,25 @@
+{
+  "at_UTC": "2026-11-20T00:01:40.723669+00:00",
+  "status": "FIXED_DIAGNOSTIC_CASES_BEFORE_CORRECTED_COLD_FITS_OR_ECONOMIC_RESULTS",
+  "NN": {
+    "logical_cases": "M0/M1 x2015/2021/2026,seed17",
+    "variants": [
+      "all unavailable training targets+1e6 (NaN->1e6)",
+      "all unavailable training targets deleted/NaN"
+    ],
+    "full_cap_runs": 12,
+    "unchanged_budget": "original one full epoch, exact same processor and all other inputs",
+    "require": "nonempty interventions; model tensors, predictions and processor bytes exact"
+  },
+  "backend": {
+    "logical_cases": "M0/M1 xFive/Ten x2018/2022/2026,seed17",
+    "variants": [
+      "unavailable target perturb",
+      "unavailable target-row delete"
+    ],
+    "full_configs": 24,
+    "original_boosters_per_config": 5,
+    "require": "original filtering before complete full XGB fits; identical legal training hashes and predictions; actual full fused plan and native ledger replays"
+  },
+  "scope": "Causal diagnostics, not additional alpha candidates, parameter grids or winner selection. Main candidate budgets unchanged."
+}

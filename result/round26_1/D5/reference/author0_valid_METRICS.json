@@ -1,0 +1,23 @@
+{
+  "original_source_metrics": {
+    "IC": 0.05059132986196153,
+    "ICIR": 0.55130963670435,
+    "RIC": 0.050945774149132074,
+    "RICIR": 0.4864553161686951
+  },
+  "finite_label_metric_aggregation": {
+    "IC": 0.05059132986196153,
+    "ICIR": 0.55130963670435,
+    "RIC": 0.050945774149132074,
+    "RICIR": 0.48645531616869514
+  },
+  "scored_dates": 59,
+  "all_forecast_dates": 59,
+  "undefined_IC_dates": 0,
+  "fewer_than_two_metric_labels_dates": 0,
+  "constant_prediction_dates": 0,
+  "constant_label_dates": 0,
+  "prediction_nodes": 17647,
+  "unknown_labels_retained_at_inference": 0,
+  "metric_correction": "Only unscorable-label dates excluded from means; all forecast nodes/dates retained. Raw original np.mean metrics saved even if NaN."
+}
