@@ -1,0 +1,82 @@
+{
+  "parameters": {
+    "arm": "M0",
+    "factor_seed": 17,
+    "head": "ten",
+    "year": 2020,
+    "mode": "ADD",
+    "removed": null,
+    "feature_order": [
+      "g_prim_px_vol_corr",
+      "fb_close_seal_streak_norm",
+      "fb_last30_amount_ratio",
+      "h5_last_first_limit_value_change_sym",
+      "h1_consistent_buy_ratio",
+      "h1_last15m_volume_ratio",
+      "h4_large_net_to_turnover",
+      "h4_retail_net_to_turnover",
+      "g0_amt_vs_5",
+      "g1_ret_5",
+      "g3_days_since_limit",
+      "ind_seal_rate_excess",
+      "d1_open_gap",
+      "z_MASTER"
+    ],
+    "tree_seeds": [
+      17,
+      42,
+      73,
+      101,
+      202
+    ],
+    "XGB_params": {
+      "objective": "rank:ndcg",
+      "eval_metric": null,
+      "ndcg_exp_gain": true,
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_child_weight": 1.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "reg_lambda": 1.0,
+      "reg_alpha": 0.0,
+      "tree_method": "hist",
+      "random_state": 17,
+      "n_jobs": 2
+    },
+    "eval_metric": "ndcg@2",
+    "rank_bins": 10,
+    "fit_cutoff": "2020-01-01",
+    "max_training_label_available_at": "2019-12-31 15:00:00",
+    "training_keys": "d0c2b89744bbec9a49949c8cda5f91474fa647aa1936beb7aee56bf5a847355b",
+    "prediction_keys": "07ce23fe1d910f3c8472fdf9597d64b6a560d4c63021864311f4bb093c0cf4dd",
+    "training_original": "1419200e0110d7bdd3d99e5555fc9db253ecd3d65f14e864424c906de5411f57",
+    "prediction_original": "201889210ed71fefee725ee16d9082513125c488254df446c039b8a8943e12b5",
+    "training_actual": "74c695663fb6e6ac7308c7b1aca220905d76a67fa1786cfc56915dd9ad0c4cc8",
+    "prediction_actual": "477ff03b7ba44fdcd38ad0ea727e365ead8bc63665304ac66b69d0f473379648"
+  },
+  "models": [
+    {
+      "seed": 17,
+      "sha256": "c709b09ae613224512619c7a8644fec78ef44edeb6b565c9cba2faac0f841afd"
+    },
+    {
+      "seed": 42,
+      "sha256": "c709b09ae613224512619c7a8644fec78ef44edeb6b565c9cba2faac0f841afd"
+    },
+    {
+      "seed": 73,
+      "sha256": "c709b09ae613224512619c7a8644fec78ef44edeb6b565c9cba2faac0f841afd"
+    },
+    {
+      "seed": 101,
+      "sha256": "c709b09ae613224512619c7a8644fec78ef44edeb6b565c9cba2faac0f841afd"
+    },
+    {
+      "seed": 202,
+      "sha256": "c709b09ae613224512619c7a8644fec78ef44edeb6b565c9cba2faac0f841afd"
+    }
+  ],
+  "actual_booster_fits": 5
+}

@@ -1,0 +1,52 @@
+{
+  "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+  "arm": "M0",
+  "seed": 17,
+  "head": "five",
+  "year": 2018,
+  "variant": "delete",
+  "source_interventions": [
+    {
+      "rows": 25,
+      "dates": 2,
+      "earliest_signal": "2017-12-28 00:00:00",
+      "latest_signal": "2017-12-29 00:00:00",
+      "stage": "actual source frame before maturity filtering"
+    }
+  ],
+  "full_booster_fits": 5,
+  "all_training_input_and_prediction_hashes_exact": true,
+  "all_booster_model_hashes_exact": true,
+  "predictions_bitexact": true,
+  "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2018/00f3447ef963c591eb7f1be9e433baf72e826fa125e95ef83e81efc7d5e855df",
+  "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2018/delete/1cc73ac8b79ea711a4c251ca177279e20fad70b1c5ecd3a8a3ee6ce1ec054596",
+  "counterfactual_driver": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+    "bytes": 7271,
+    "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+  },
+  "original_registry": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2018/00f3447ef963c591eb7f1be9e433baf72e826fa125e95ef83e81efc7d5e855df/MODEL_REGISTRY.json",
+    "bytes": 2399,
+    "sha256": "b5693470e92986f27270773127a56209e424cf527cd71653c5c22f87e3f44426"
+  },
+  "cold_registry": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2018/delete/1cc73ac8b79ea711a4c251ca177279e20fad70b1c5ecd3a8a3ee6ce1ec054596/MODEL_REGISTRY.json",
+    "bytes": 2422,
+    "sha256": "2cc0f082fdf3f2291dfcecaf156b7c7f18c63a8a1b7b2a3cf31389954a66a2bf"
+  },
+  "resources": {
+    "pid": 689378,
+    "status": "COMPLETED",
+    "wall_seconds": 3.4737800676375628,
+    "CPU_user_seconds": 6.223832,
+    "CPU_system_seconds": 0.015226000000000017,
+    "RSS_sampled_peak_bytes": 305451008,
+    "RSS_sample_interval_seconds": 0.25,
+    "process_lifetime_ru_maxrss_KiB": 7975000,
+    "free_disk_before_bytes": 6381124595712,
+    "free_disk_after_bytes": 6381123694592,
+    "GPU_training_seconds": 0,
+    "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+  }
+}

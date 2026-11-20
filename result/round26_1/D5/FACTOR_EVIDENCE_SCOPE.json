@@ -1,0 +1,13 @@
+{
+  "status": "REAL_OOF_FACTOR_EVIDENCE_COMPLETE_FOR_AVAILABLE_BANKS",
+  "banks": 2,
+  "raw_domains": [
+    "D_KNOWN_TARGET_DOMAIN",
+    "LEGACY_BACKEND_DOMAIN"
+  ],
+  "primary": "2018..2026 development",
+  "warmup": "2015..2017 genuinely heldout annual NN factors, separately labelled",
+  "conditional": "2018..2026 actual same-factory no-factor XGB vs real Add XGB heldout predictions, not fitted-row regressions",
+  "label_maturity_for_metrics_only": "2026-07-24 exchange23:59:59",
+  "prediction_node_selection_reads_future_labels": false
+}

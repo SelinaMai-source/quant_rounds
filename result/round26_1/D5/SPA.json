@@ -1,0 +1,34 @@
+{
+  "status": "COMPUTED",
+  "pvalues": {
+    "lower": 0.7846,
+    "consistent": 0.9998,
+    "upper": 1.0
+  },
+  "alternatives": [
+    "M0_17_FIVE_ADD",
+    "M0_17_TEN_ADD",
+    "M0_17_BOTH_ADD",
+    "M1_17_FIVE_ADD",
+    "M1_17_TEN_ADD",
+    "M1_17_BOTH_ADD"
+  ],
+  "deduplicated": {},
+  "loss": "negative actual portfolio daily return",
+  "historical_development": true,
+  "causal_diagnostic_aliases": {
+    "CF_M0_17_BOTH_ADD_2018_perturb": "M0_17_BOTH_ADD",
+    "CF_M0_17_BOTH_ADD_2018_delete": "M0_17_BOTH_ADD",
+    "CF_M0_17_BOTH_ADD_2022_perturb": "M0_17_BOTH_ADD",
+    "CF_M0_17_BOTH_ADD_2022_delete": "M0_17_BOTH_ADD",
+    "CF_M0_17_BOTH_ADD_2026_perturb": "M0_17_BOTH_ADD",
+    "CF_M0_17_BOTH_ADD_2026_delete": "M0_17_BOTH_ADD",
+    "CF_M1_17_BOTH_ADD_2018_perturb": "M1_17_BOTH_ADD",
+    "CF_M1_17_BOTH_ADD_2018_delete": "M1_17_BOTH_ADD",
+    "CF_M1_17_BOTH_ADD_2022_perturb": "M1_17_BOTH_ADD",
+    "CF_M1_17_BOTH_ADD_2022_delete": "M1_17_BOTH_ADD",
+    "CF_M1_17_BOTH_ADD_2026_perturb": "M1_17_BOTH_ADD",
+    "CF_M1_17_BOTH_ADD_2026_delete": "M1_17_BOTH_ADD"
+  },
+  "causal_alias_all8_native_tables_verified": true
+}

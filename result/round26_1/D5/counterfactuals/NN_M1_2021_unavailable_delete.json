@@ -1,0 +1,37 @@
+{
+  "status": "PASS_FULL_CAP_COLD_FIT",
+  "arm": "M1",
+  "year": 2021,
+  "seed": 17,
+  "mutation": "unavailable_delete",
+  "unavailable_training_target_interventions": 473,
+  "all_state_tensors_bitexact": true,
+  "OOF_predictions_bitexact": true,
+  "same_persisted_normalizer_bytes": true,
+  "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/17/2021/0d8e0e2348a589574415503f1745fb28607782cf8f9833dbfe57c161d4dfcbb0",
+  "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_cold_fits/M1/2021/8326c53df43376d7d23c67b7f34120da2220e1b3d9aef3abecb85e572bf9b3e3",
+  "original_registry": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_fits/M1/17/2021/0d8e0e2348a589574415503f1745fb28607782cf8f9833dbfe57c161d4dfcbb0/MODEL_REGISTRY.json",
+    "bytes": 694,
+    "sha256": "49561416a74382052599693c12c61e85401765c6911674ce6362dd4e81ba6626"
+  },
+  "cold_registry": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_cold_fits/M1/2021/8326c53df43376d7d23c67b7f34120da2220e1b3d9aef3abecb85e572bf9b3e3/MODEL_REGISTRY.json",
+    "bytes": 710,
+    "sha256": "0c150851f2b92966605d14ffbc4ea17ccc91681045854d82193906e27d96a757"
+  },
+  "resources": {
+    "pid": 657468,
+    "status": "COMPLETED",
+    "wall_seconds": 838.5982162263244,
+    "CPU_user_seconds": 1409.57807,
+    "CPU_system_seconds": 31.417643,
+    "RSS_sampled_peak_bytes": 4419051520,
+    "RSS_sample_interval_seconds": 0.25,
+    "process_lifetime_ru_maxrss_KiB": 4346704,
+    "free_disk_before_bytes": 6381189382144,
+    "free_disk_after_bytes": 6381182357504,
+    "GPU_training_seconds": 0,
+    "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+  }
+}

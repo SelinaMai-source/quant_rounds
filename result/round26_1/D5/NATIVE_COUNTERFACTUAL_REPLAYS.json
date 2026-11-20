@@ -1,0 +1,257 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M0",
+      "year": 2018,
+      "variant": "perturb",
+      "code": "CF_M0_17_BOTH_ADD_2018_perturb",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M0_17_BOTH_ADD_2018_perturb/220904d1b4b8c13f9806d4c618e4c5260a69dec2c9c00a0ebe0f3404fb9d1bd8",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M0_17_BOTH_ADD/0f823e287a6149028c6a6464654fd95e09aa1c7d30e968e004a655e36e6fb235",
+      "fingerprint": "220904d1b4b8c13f9806d4c618e4c5260a69dec2c9c00a0ebe0f3404fb9d1bd8",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M0",
+      "year": 2018,
+      "variant": "delete",
+      "code": "CF_M0_17_BOTH_ADD_2018_delete",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M0_17_BOTH_ADD_2018_delete/88f43d72a82cbfeace85299ad0c1d0b0bcc0d41b06d37ae7f644cc706441d35a",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M0_17_BOTH_ADD/0f823e287a6149028c6a6464654fd95e09aa1c7d30e968e004a655e36e6fb235",
+      "fingerprint": "88f43d72a82cbfeace85299ad0c1d0b0bcc0d41b06d37ae7f644cc706441d35a",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M0",
+      "year": 2022,
+      "variant": "perturb",
+      "code": "CF_M0_17_BOTH_ADD_2022_perturb",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M0_17_BOTH_ADD_2022_perturb/d065c892e5cee95150decf8b42468d0262e9e2db940923c0edba1023984cd6a3",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M0_17_BOTH_ADD/0f823e287a6149028c6a6464654fd95e09aa1c7d30e968e004a655e36e6fb235",
+      "fingerprint": "d065c892e5cee95150decf8b42468d0262e9e2db940923c0edba1023984cd6a3",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M0",
+      "year": 2022,
+      "variant": "delete",
+      "code": "CF_M0_17_BOTH_ADD_2022_delete",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M0_17_BOTH_ADD_2022_delete/fc94e004cfdde80ae3118cc5866c256b01919cd0bbcffa9d70205e2dbf465e1a",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M0_17_BOTH_ADD/0f823e287a6149028c6a6464654fd95e09aa1c7d30e968e004a655e36e6fb235",
+      "fingerprint": "fc94e004cfdde80ae3118cc5866c256b01919cd0bbcffa9d70205e2dbf465e1a",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M0",
+      "year": 2026,
+      "variant": "perturb",
+      "code": "CF_M0_17_BOTH_ADD_2026_perturb",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M0_17_BOTH_ADD_2026_perturb/534800a64b08b92f10028ef256e02ba1904007d4ceca5086336f059a7842b4f6",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M0_17_BOTH_ADD/0f823e287a6149028c6a6464654fd95e09aa1c7d30e968e004a655e36e6fb235",
+      "fingerprint": "534800a64b08b92f10028ef256e02ba1904007d4ceca5086336f059a7842b4f6",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M0",
+      "year": 2026,
+      "variant": "delete",
+      "code": "CF_M0_17_BOTH_ADD_2026_delete",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M0_17_BOTH_ADD_2026_delete/e05e33dc60eda8aaa3debea3cbc569aa17cbff929cfe905ca7267134b1616fdc",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M0_17_BOTH_ADD/0f823e287a6149028c6a6464654fd95e09aa1c7d30e968e004a655e36e6fb235",
+      "fingerprint": "e05e33dc60eda8aaa3debea3cbc569aa17cbff929cfe905ca7267134b1616fdc",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M1",
+      "year": 2018,
+      "variant": "perturb",
+      "code": "CF_M1_17_BOTH_ADD_2018_perturb",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M1_17_BOTH_ADD_2018_perturb/f345345242fedf1c14de41b72b3002086cf4426db42512378ff4a0e2d992b96e",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M1_17_BOTH_ADD/d017a22e7f1757b77e3c37a9595e33e9f219df1a445b2d740d3da8fbb8d65def",
+      "fingerprint": "f345345242fedf1c14de41b72b3002086cf4426db42512378ff4a0e2d992b96e",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M1",
+      "year": 2018,
+      "variant": "delete",
+      "code": "CF_M1_17_BOTH_ADD_2018_delete",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M1_17_BOTH_ADD_2018_delete/68c828ae55fda68627e2e7ee09bd4f9041b9a56207d5bd2801410ff471cb7373",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M1_17_BOTH_ADD/d017a22e7f1757b77e3c37a9595e33e9f219df1a445b2d740d3da8fbb8d65def",
+      "fingerprint": "68c828ae55fda68627e2e7ee09bd4f9041b9a56207d5bd2801410ff471cb7373",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M1",
+      "year": 2022,
+      "variant": "perturb",
+      "code": "CF_M1_17_BOTH_ADD_2022_perturb",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M1_17_BOTH_ADD_2022_perturb/03e90b8f4d43e9fac854879ab94f9c0c4148e0255d8a60f81cecaa2e8e056a8c",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M1_17_BOTH_ADD/d017a22e7f1757b77e3c37a9595e33e9f219df1a445b2d740d3da8fbb8d65def",
+      "fingerprint": "03e90b8f4d43e9fac854879ab94f9c0c4148e0255d8a60f81cecaa2e8e056a8c",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M1",
+      "year": 2022,
+      "variant": "delete",
+      "code": "CF_M1_17_BOTH_ADD_2022_delete",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M1_17_BOTH_ADD_2022_delete/2b654c78de0d9621d788abe9020b46cff97eb3dc0ec1a1c29cc1df645a20f8b9",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M1_17_BOTH_ADD/d017a22e7f1757b77e3c37a9595e33e9f219df1a445b2d740d3da8fbb8d65def",
+      "fingerprint": "2b654c78de0d9621d788abe9020b46cff97eb3dc0ec1a1c29cc1df645a20f8b9",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M1",
+      "year": 2026,
+      "variant": "perturb",
+      "code": "CF_M1_17_BOTH_ADD_2026_perturb",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M1_17_BOTH_ADD_2026_perturb/563142d267535eb138b067ee23f43c8a31b61ba3be1d2906c52e4b5e81aa9207",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M1_17_BOTH_ADD/d017a22e7f1757b77e3c37a9595e33e9f219df1a445b2d740d3da8fbb8d65def",
+      "fingerprint": "563142d267535eb138b067ee23f43c8a31b61ba3be1d2906c52e4b5e81aa9207",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_NATIVE_REPLAY_ALL8_TABLES_EXACT",
+      "arm": "M1",
+      "year": 2026,
+      "variant": "delete",
+      "code": "CF_M1_17_BOTH_ADD_2026_delete",
+      "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/CF_M1_17_BOTH_ADD_2026_delete/54c21ed3a66b2b32f85f87fefe5b23c3b5d8d589e4e4c13087ee2453877c5824",
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/result/round26_1/D5/backtests/M1_17_BOTH_ADD/d017a22e7f1757b77e3c37a9595e33e9f219df1a445b2d740d3da8fbb8d65def",
+      "fingerprint": "54c21ed3a66b2b32f85f87fefe5b23c3b5d8d589e4e4c13087ee2453877c5824",
+      "cache_hit": false,
+      "exact_tables": [
+        "overlayed",
+        "trades",
+        "rejections",
+        "positions",
+        "sleeve_states",
+        "nav",
+        "cashflows",
+        "costs"
+      ]
+    }
+  ]
+}

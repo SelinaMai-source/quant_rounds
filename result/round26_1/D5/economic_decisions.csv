@@ -1,0 +1,7 @@
+experiment_id,baseline,decision,economic_gate_pass,missing_economic_evidence,changed_top1_top2_plan_rows,changed_top1_top2_real_entry_rows,paired_cost_direction,outside_2024_2025_log_relative_wealth,delta_cagr_ok,delta_sharpe_ok,nav_improvement_ok,top_changed_ok,maxdd_ok,fee_direction_ok,not_only_2024_or_2025
+M0_17_FIVE_ADD,MASTER_A0,REJECT_CURRENT_CONFIGURATION,False,False,106,31,False,-0.05810241963832014,False,False,False,True,False,False,False
+M0_17_TEN_ADD,MASTER_A0,REJECT_CURRENT_CONFIGURATION,False,False,680,339,False,-0.3977532343853748,False,False,False,True,False,False,False
+M0_17_BOTH_ADD,MASTER_A0,REJECT_CURRENT_CONFIGURATION,False,False,722,347,False,-0.49252981890216163,False,False,False,True,False,False,False
+M1_17_FIVE_ADD,MASTER_A0,REJECT_CURRENT_CONFIGURATION,False,False,110,36,False,-0.33514114869804057,False,False,False,True,False,False,False
+M1_17_TEN_ADD,MASTER_A0,REJECT_CURRENT_CONFIGURATION,False,False,783,392,False,-0.8543005662633005,False,False,False,True,False,False,False
+M1_17_BOTH_ADD,MASTER_A0,REJECT_CURRENT_CONFIGURATION,False,False,817,403,False,-0.9010743354362896,False,False,False,True,False,False,False

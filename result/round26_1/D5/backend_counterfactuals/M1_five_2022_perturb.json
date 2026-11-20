@@ -1,0 +1,52 @@
+{
+  "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+  "arm": "M1",
+  "seed": 17,
+  "head": "five",
+  "year": 2022,
+  "variant": "perturb",
+  "source_interventions": [
+    {
+      "rows": 41,
+      "dates": 2,
+      "earliest_signal": "2021-12-30 00:00:00",
+      "latest_signal": "2021-12-31 00:00:00",
+      "stage": "actual source frame before maturity filtering"
+    }
+  ],
+  "full_booster_fits": 5,
+  "all_training_input_and_prediction_hashes_exact": true,
+  "all_booster_model_hashes_exact": true,
+  "predictions_bitexact": true,
+  "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2022/b445abb857c657ed579dec566787b4cb971c043ae0ef29afe2f90f742c624ed5",
+  "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2022/perturb/54d38e50d6a55c73e33d017e4d1ff548b453cf183af9969d79067f870f68f66e",
+  "counterfactual_driver": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+    "bytes": 7271,
+    "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+  },
+  "original_registry": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2022/b445abb857c657ed579dec566787b4cb971c043ae0ef29afe2f90f742c624ed5/MODEL_REGISTRY.json",
+    "bytes": 2399,
+    "sha256": "d256200d66541081408fee8f1ecd0b03880d02fda9a79d5f20b2429fa61e30c1"
+  },
+  "cold_registry": {
+    "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2022/perturb/54d38e50d6a55c73e33d017e4d1ff548b453cf183af9969d79067f870f68f66e/MODEL_REGISTRY.json",
+    "bytes": 2423,
+    "sha256": "140f7dd84df93dbbf273581bea4565e3e01a1ea6c7cc79702de758abaedfb989"
+  },
+  "resources": {
+    "pid": 689375,
+    "status": "COMPLETED",
+    "wall_seconds": 2.941821141168475,
+    "CPU_user_seconds": 5.126319000000002,
+    "CPU_system_seconds": 0.019928999999999863,
+    "RSS_sampled_peak_bytes": 332836864,
+    "RSS_sample_interval_seconds": 0.25,
+    "process_lifetime_ru_maxrss_KiB": 7975000,
+    "free_disk_before_bytes": 6381116735488,
+    "free_disk_after_bytes": 6381115920384,
+    "GPU_training_seconds": 0,
+    "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+  }
+}

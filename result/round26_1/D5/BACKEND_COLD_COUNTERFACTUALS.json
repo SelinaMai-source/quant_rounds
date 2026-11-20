@@ -1,0 +1,1256 @@
+{
+  "status": "PASS",
+  "full_configurations": 24,
+  "full_booster_fits": 120,
+  "cases": [
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "five",
+      "year": 2018,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 25,
+          "dates": 2,
+          "earliest_signal": "2017-12-28 00:00:00",
+          "latest_signal": "2017-12-29 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2018/00f3447ef963c591eb7f1be9e433baf72e826fa125e95ef83e81efc7d5e855df",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2018/perturb/ba0b9ac958e134c177bb2e1c9b975a2badba883b8856fe1f4034646a05ade2ff",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2018/00f3447ef963c591eb7f1be9e433baf72e826fa125e95ef83e81efc7d5e855df/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "b5693470e92986f27270773127a56209e424cf527cd71653c5c22f87e3f44426"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2018/perturb/ba0b9ac958e134c177bb2e1c9b975a2badba883b8856fe1f4034646a05ade2ff/MODEL_REGISTRY.json",
+        "bytes": 2423,
+        "sha256": "ee5c137fb9b6c0c17201155a78ce9f133cd3437f0e5f981bf745d1867a29d606"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.43858839944005,
+        "CPU_user_seconds": 6.163575,
+        "CPU_system_seconds": 0.015116999999999992,
+        "RSS_sampled_peak_bytes": 307122176,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381124624384,
+        "free_disk_after_bytes": 6381123825664,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "five",
+      "year": 2018,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 25,
+          "dates": 2,
+          "earliest_signal": "2017-12-28 00:00:00",
+          "latest_signal": "2017-12-29 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2018/00f3447ef963c591eb7f1be9e433baf72e826fa125e95ef83e81efc7d5e855df",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2018/delete/1cc73ac8b79ea711a4c251ca177279e20fad70b1c5ecd3a8a3ee6ce1ec054596",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2018/00f3447ef963c591eb7f1be9e433baf72e826fa125e95ef83e81efc7d5e855df/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "b5693470e92986f27270773127a56209e424cf527cd71653c5c22f87e3f44426"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2018/delete/1cc73ac8b79ea711a4c251ca177279e20fad70b1c5ecd3a8a3ee6ce1ec054596/MODEL_REGISTRY.json",
+        "bytes": 2422,
+        "sha256": "2cc0f082fdf3f2291dfcecaf156b7c7f18c63a8a1b7b2a3cf31389954a66a2bf"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.4737800676375628,
+        "CPU_user_seconds": 6.223832,
+        "CPU_system_seconds": 0.015226000000000017,
+        "RSS_sampled_peak_bytes": 305451008,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381124595712,
+        "free_disk_after_bytes": 6381123694592,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "ten",
+      "year": 2018,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 25,
+          "dates": 2,
+          "earliest_signal": "2017-12-28 00:00:00",
+          "latest_signal": "2017-12-29 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2018/b263aa2f8945aeb2c8d4a07c410286d2f317f6de279bb9f60ac548eab01284a1",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2018/perturb/afcbdd2d34508d6921742acf2d8e2e8d74207393746381271d93bf63cbdf89a5",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2018/b263aa2f8945aeb2c8d4a07c410286d2f317f6de279bb9f60ac548eab01284a1/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "97785a4865d6fa4c60dd3acb4a8ce7827f0c4f772f6945ef2b855646b0dba630"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2018/perturb/afcbdd2d34508d6921742acf2d8e2e8d74207393746381271d93bf63cbdf89a5/MODEL_REGISTRY.json",
+        "bytes": 2400,
+        "sha256": "c6c5a8bc0b4ebe42214e1b2ca0eba016ec4ba1d10dff227f3de5c1bd072c2305"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.738703927025199,
+        "CPU_user_seconds": 6.757932,
+        "CPU_system_seconds": 0.019969999999999988,
+        "RSS_sampled_peak_bytes": 334397440,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381123645440,
+        "free_disk_after_bytes": 6381122846720,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "ten",
+      "year": 2018,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 25,
+          "dates": 2,
+          "earliest_signal": "2017-12-28 00:00:00",
+          "latest_signal": "2017-12-29 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2018/b263aa2f8945aeb2c8d4a07c410286d2f317f6de279bb9f60ac548eab01284a1",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2018/delete/4db5f1b5c214ee45148426636fb63ef3508f1016c037f4a731c35dbf62a8f552",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2018/b263aa2f8945aeb2c8d4a07c410286d2f317f6de279bb9f60ac548eab01284a1/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "97785a4865d6fa4c60dd3acb4a8ce7827f0c4f772f6945ef2b855646b0dba630"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2018/delete/4db5f1b5c214ee45148426636fb63ef3508f1016c037f4a731c35dbf62a8f552/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "d4925f0e6fcf2bf5a08cc47a48f7a305fd154f75f913986184f822e4caa8c3c0"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.789515847340226,
+        "CPU_user_seconds": 6.846822999999999,
+        "CPU_system_seconds": 0.019876000000000005,
+        "RSS_sampled_peak_bytes": 317120512,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381123616768,
+        "free_disk_after_bytes": 6381122719744,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "five",
+      "year": 2022,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 41,
+          "dates": 2,
+          "earliest_signal": "2021-12-30 00:00:00",
+          "latest_signal": "2021-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2022/385aae082282cea00ce6fb1110c9302bba633d463b017e3e114ab5a0c8db9dab",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2022/perturb/f8b5d6ef55d422ed52be7f2655730c40c8c7d2798212430793b620b6c0483a6f",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2022/385aae082282cea00ce6fb1110c9302bba633d463b017e3e114ab5a0c8db9dab/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "9879b190c3d174ea041840ca25f672ab00e6193668145c7e9ec01cf1f823a870"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2022/perturb/f8b5d6ef55d422ed52be7f2655730c40c8c7d2798212430793b620b6c0483a6f/MODEL_REGISTRY.json",
+        "bytes": 2423,
+        "sha256": "21d2096435a4b8159456dee33f91960c05c88857dc5b862d825569f50756b0c0"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 2.941729072481394,
+        "CPU_user_seconds": 5.128132999999998,
+        "CPU_system_seconds": 0.015764,
+        "RSS_sampled_peak_bytes": 339013632,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381122674688,
+        "free_disk_after_bytes": 6381121859584,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "five",
+      "year": 2022,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 41,
+          "dates": 2,
+          "earliest_signal": "2021-12-30 00:00:00",
+          "latest_signal": "2021-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2022/385aae082282cea00ce6fb1110c9302bba633d463b017e3e114ab5a0c8db9dab",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2022/delete/3bd14044a132f61df29ba3478d3d8764c7c49f0ccf59ab95bdbb4dd844d5cff0",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2022/385aae082282cea00ce6fb1110c9302bba633d463b017e3e114ab5a0c8db9dab/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "9879b190c3d174ea041840ca25f672ab00e6193668145c7e9ec01cf1f823a870"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2022/delete/3bd14044a132f61df29ba3478d3d8764c7c49f0ccf59ab95bdbb4dd844d5cff0/MODEL_REGISTRY.json",
+        "bytes": 2422,
+        "sha256": "ba51a7225279de6280aae677588323cd2951a0bc5cb805dbb3d7d79fd7b88aaa"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 2.9811298232525587,
+        "CPU_user_seconds": 5.196757000000002,
+        "CPU_system_seconds": 0.011969000000000007,
+        "RSS_sampled_peak_bytes": 312635392,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381122646016,
+        "free_disk_after_bytes": 6381121716224,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "ten",
+      "year": 2022,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 44,
+          "dates": 5,
+          "earliest_signal": "2021-12-22 00:00:00",
+          "latest_signal": "2021-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2022/04b604eff63a3bb7dcec47eae3be23daff22d902f975bbb252657869e17b7e7a",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2022/perturb/0d6667f994bd6d3c90432889edf2cae5badb1f793c7273521c917624bb6d57a3",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2022/04b604eff63a3bb7dcec47eae3be23daff22d902f975bbb252657869e17b7e7a/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "2fad5923e0fc815c283bfb0ec1ea3891e60a0875dc53df03535954c67e4122b1"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2022/perturb/0d6667f994bd6d3c90432889edf2cae5badb1f793c7273521c917624bb6d57a3/MODEL_REGISTRY.json",
+        "bytes": 2400,
+        "sha256": "c09971daa58ef7bdd483b9f81dad7a0c7a8950eaccfbb62ab34acfda6d04f476"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.091102484613657,
+        "CPU_user_seconds": 5.4232890000000005,
+        "CPU_system_seconds": 0.01189399999999996,
+        "RSS_sampled_peak_bytes": 319086592,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381121671168,
+        "free_disk_after_bytes": 6381120856064,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "ten",
+      "year": 2022,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 44,
+          "dates": 5,
+          "earliest_signal": "2021-12-22 00:00:00",
+          "latest_signal": "2021-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2022/04b604eff63a3bb7dcec47eae3be23daff22d902f975bbb252657869e17b7e7a",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2022/delete/20fbb9678f71efa2ed63f75b243332eadfb817de026ce7bb5743b10ec768daac",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2022/04b604eff63a3bb7dcec47eae3be23daff22d902f975bbb252657869e17b7e7a/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "2fad5923e0fc815c283bfb0ec1ea3891e60a0875dc53df03535954c67e4122b1"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2022/delete/20fbb9678f71efa2ed63f75b243332eadfb817de026ce7bb5743b10ec768daac/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "283dc64ce69f71d2791f18066761f5eb5d11f636230efe2c67f5ee689bceb1c9"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.110450077801943,
+        "CPU_user_seconds": 5.460534000000003,
+        "CPU_system_seconds": 0.007987000000000077,
+        "RSS_sampled_peak_bytes": 315080704,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381121642496,
+        "free_disk_after_bytes": 6381120712704,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "five",
+      "year": 2026,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 40,
+          "dates": 2,
+          "earliest_signal": "2025-12-30 00:00:00",
+          "latest_signal": "2025-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2026/933c0ab97e8ec75685328cdbd295bd8cf81095c1889448ad126ab27383482dd1",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2026/perturb/ac08061945c94d414d4386eac84e91dc5a16d00165640d225e1df976c9c22f49",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2026/933c0ab97e8ec75685328cdbd295bd8cf81095c1889448ad126ab27383482dd1/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "d014f4ca534b2c6f7da4bfa0deb103557e3118a3cf0dbff25fff826f30a51bfc"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2026/perturb/ac08061945c94d414d4386eac84e91dc5a16d00165640d225e1df976c9c22f49/MODEL_REGISTRY.json",
+        "bytes": 2423,
+        "sha256": "086b97b69558d618ce1dc689e5b2eba7fcdc0da6e8d35e2b40b43ace4a8f4cf1"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.0718891471624374,
+        "CPU_user_seconds": 5.396105000000002,
+        "CPU_system_seconds": 0.007921999999999985,
+        "RSS_sampled_peak_bytes": 321802240,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381120667648,
+        "free_disk_after_bytes": 6381119860736,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "five",
+      "year": 2026,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 40,
+          "dates": 2,
+          "earliest_signal": "2025-12-30 00:00:00",
+          "latest_signal": "2025-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2026/933c0ab97e8ec75685328cdbd295bd8cf81095c1889448ad126ab27383482dd1",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2026/delete/9030a603cf2973b4aa5f7fe02231fc1f5fb559d74d41a3b3694a0bb3fc68df54",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/five/ADD/2026/933c0ab97e8ec75685328cdbd295bd8cf81095c1889448ad126ab27383482dd1/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "d014f4ca534b2c6f7da4bfa0deb103557e3118a3cf0dbff25fff826f30a51bfc"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/five/2026/delete/9030a603cf2973b4aa5f7fe02231fc1f5fb559d74d41a3b3694a0bb3fc68df54/MODEL_REGISTRY.json",
+        "bytes": 2422,
+        "sha256": "dc0c91fb9d99222a193f7940d63ff9f9e748bc89c7a0b8ce242c3d785128fa71"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.105752505362034,
+        "CPU_user_seconds": 5.453063,
+        "CPU_system_seconds": 0.00784600000000002,
+        "RSS_sampled_peak_bytes": 330747904,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381120638976,
+        "free_disk_after_bytes": 6381119721472,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "ten",
+      "year": 2026,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 40,
+          "dates": 4,
+          "earliest_signal": "2025-12-25 00:00:00",
+          "latest_signal": "2025-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2026/c2307d5d38ed6dbb26988aa6116243e22b3de37d8eb17cf876e6d2251573868d",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2026/perturb/7334a5df55698c3b60a369e1c378d764bae5943fd1a9cc6d5ea7e747b35df0d5",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2026/c2307d5d38ed6dbb26988aa6116243e22b3de37d8eb17cf876e6d2251573868d/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "e641b547042548c87e0d726544495be3185de773bc403b6a4305d6cfd33b693c"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2026/perturb/7334a5df55698c3b60a369e1c378d764bae5943fd1a9cc6d5ea7e747b35df0d5/MODEL_REGISTRY.json",
+        "bytes": 2400,
+        "sha256": "c80d4516971b70f18a76b1507c95ef1498175501eb6f93ba5ff052216bf07589"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.2289371490478516,
+        "CPU_user_seconds": 5.706052999999997,
+        "CPU_system_seconds": 0.015900000000000025,
+        "RSS_sampled_peak_bytes": 340140032,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381119676416,
+        "free_disk_after_bytes": 6381118869504,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M0",
+      "seed": 17,
+      "head": "ten",
+      "year": 2026,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 40,
+          "dates": 4,
+          "earliest_signal": "2025-12-25 00:00:00",
+          "latest_signal": "2025-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2026/c2307d5d38ed6dbb26988aa6116243e22b3de37d8eb17cf876e6d2251573868d",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2026/delete/92d1ed28949e4297fca7ba46f0ac79f2840cbb313e5f010d1c952d1f778d9925",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M0/17/ten/ADD/2026/c2307d5d38ed6dbb26988aa6116243e22b3de37d8eb17cf876e6d2251573868d/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "e641b547042548c87e0d726544495be3185de773bc403b6a4305d6cfd33b693c"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M0/ten/2026/delete/92d1ed28949e4297fca7ba46f0ac79f2840cbb313e5f010d1c952d1f778d9925/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "009567ff35e6e5ee3917e4d38bc032a0795f936a9b70739b365fdb2dddc9adc4"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.2542350366711617,
+        "CPU_user_seconds": 5.737870000000001,
+        "CPU_system_seconds": 0.024039000000000033,
+        "RSS_sampled_peak_bytes": 329834496,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381119647744,
+        "free_disk_after_bytes": 6381118734336,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "five",
+      "year": 2018,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 25,
+          "dates": 2,
+          "earliest_signal": "2017-12-28 00:00:00",
+          "latest_signal": "2017-12-29 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2018/99fb7766d8c07adb25b224e4d2fa23ca0851a237d073b0b46f64665073c45525",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2018/perturb/a5f90c3e4ce6170fd2e026a33937abd9a0964c13c8b18c3da60bea574886ea9d",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2018/99fb7766d8c07adb25b224e4d2fa23ca0851a237d073b0b46f64665073c45525/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "66c4da62a807bd71ae2835bbd43963f4d47f40807fdc52240af109062a39c804"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2018/perturb/a5f90c3e4ce6170fd2e026a33937abd9a0964c13c8b18c3da60bea574886ea9d/MODEL_REGISTRY.json",
+        "bytes": 2423,
+        "sha256": "1d5641d956f03f1c6d08d2ec7dc3d3b84a90a2e407c48a5b52393a25fe1b633d"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.4279332291334867,
+        "CPU_user_seconds": 6.153185000000001,
+        "CPU_system_seconds": 0.008040000000000047,
+        "RSS_sampled_peak_bytes": 349372416,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381118681088,
+        "free_disk_after_bytes": 6381117882368,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "five",
+      "year": 2018,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 25,
+          "dates": 2,
+          "earliest_signal": "2017-12-28 00:00:00",
+          "latest_signal": "2017-12-29 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2018/99fb7766d8c07adb25b224e4d2fa23ca0851a237d073b0b46f64665073c45525",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2018/delete/0b12ae9c2798a7ac48a23681ee2fd4a83e6c0ecfff168e62414a6df8b4e4e9ea",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2018/99fb7766d8c07adb25b224e4d2fa23ca0851a237d073b0b46f64665073c45525/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "66c4da62a807bd71ae2835bbd43963f4d47f40807fdc52240af109062a39c804"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2018/delete/0b12ae9c2798a7ac48a23681ee2fd4a83e6c0ecfff168e62414a6df8b4e4e9ea/MODEL_REGISTRY.json",
+        "bytes": 2422,
+        "sha256": "97797e1913c4adf0e73121729015630d6f1b76dc98e3a9b2cdcb8b09f2a7e8c3"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.463008116930723,
+        "CPU_user_seconds": 6.197676999999999,
+        "CPU_system_seconds": 0.023977000000000026,
+        "RSS_sampled_peak_bytes": 335261696,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381118652416,
+        "free_disk_after_bytes": 6381117755392,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "ten",
+      "year": 2018,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 25,
+          "dates": 2,
+          "earliest_signal": "2017-12-28 00:00:00",
+          "latest_signal": "2017-12-29 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2018/b1e46b549e6b9168d679fe8875e51bc746e8e21fdb2376e51ff95bfa6bf3f3fb",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2018/perturb/a0dd7906c06fe0510daace4b3f8ecbc51a265ddff9d99c13f53e37414b83337c",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2018/b1e46b549e6b9168d679fe8875e51bc746e8e21fdb2376e51ff95bfa6bf3f3fb/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "518dcc510dcc4648a8ac6eb3415a9ac9996722eda33934299b6e2441fe3cc92b"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2018/perturb/a0dd7906c06fe0510daace4b3f8ecbc51a265ddff9d99c13f53e37414b83337c/MODEL_REGISTRY.json",
+        "bytes": 2400,
+        "sha256": "372734747c59b2784eb74ce005c95a972e4fa26d90bb94986b3da20af45eb4b9"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.7124544251710176,
+        "CPU_user_seconds": 6.7267420000000016,
+        "CPU_system_seconds": 0.007879999999999887,
+        "RSS_sampled_peak_bytes": 338317312,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381117706240,
+        "free_disk_after_bytes": 6381116907520,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "ten",
+      "year": 2018,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 25,
+          "dates": 2,
+          "earliest_signal": "2017-12-28 00:00:00",
+          "latest_signal": "2017-12-29 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2018/b1e46b549e6b9168d679fe8875e51bc746e8e21fdb2376e51ff95bfa6bf3f3fb",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2018/delete/f422d078bafaa41826c00d007284f4d3df56455ed1969e6c4791934093b668f0",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2018/b1e46b549e6b9168d679fe8875e51bc746e8e21fdb2376e51ff95bfa6bf3f3fb/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "518dcc510dcc4648a8ac6eb3415a9ac9996722eda33934299b6e2441fe3cc92b"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2018/delete/f422d078bafaa41826c00d007284f4d3df56455ed1969e6c4791934093b668f0/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "04d4913922b096c72f187451e005f7fe8c3200ceec87714360dc17e04d2c5cf6"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.7710401490330696,
+        "CPU_user_seconds": 6.819796000000004,
+        "CPU_system_seconds": 0.019878000000000062,
+        "RSS_sampled_peak_bytes": 331460608,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381117677568,
+        "free_disk_after_bytes": 6381116780544,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "five",
+      "year": 2022,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 41,
+          "dates": 2,
+          "earliest_signal": "2021-12-30 00:00:00",
+          "latest_signal": "2021-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2022/b445abb857c657ed579dec566787b4cb971c043ae0ef29afe2f90f742c624ed5",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2022/perturb/54d38e50d6a55c73e33d017e4d1ff548b453cf183af9969d79067f870f68f66e",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2022/b445abb857c657ed579dec566787b4cb971c043ae0ef29afe2f90f742c624ed5/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "d256200d66541081408fee8f1ecd0b03880d02fda9a79d5f20b2429fa61e30c1"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2022/perturb/54d38e50d6a55c73e33d017e4d1ff548b453cf183af9969d79067f870f68f66e/MODEL_REGISTRY.json",
+        "bytes": 2423,
+        "sha256": "140f7dd84df93dbbf273581bea4565e3e01a1ea6c7cc79702de758abaedfb989"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 2.941821141168475,
+        "CPU_user_seconds": 5.126319000000002,
+        "CPU_system_seconds": 0.019928999999999863,
+        "RSS_sampled_peak_bytes": 332836864,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381116735488,
+        "free_disk_after_bytes": 6381115920384,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "five",
+      "year": 2022,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 41,
+          "dates": 2,
+          "earliest_signal": "2021-12-30 00:00:00",
+          "latest_signal": "2021-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2022/b445abb857c657ed579dec566787b4cb971c043ae0ef29afe2f90f742c624ed5",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2022/delete/16c675b4db99a2140116780a5129084456b3622392264b0ae055859c4b751f4b",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2022/b445abb857c657ed579dec566787b4cb971c043ae0ef29afe2f90f742c624ed5/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "d256200d66541081408fee8f1ecd0b03880d02fda9a79d5f20b2429fa61e30c1"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2022/delete/16c675b4db99a2140116780a5129084456b3622392264b0ae055859c4b751f4b/MODEL_REGISTRY.json",
+        "bytes": 2422,
+        "sha256": "b3079c9733e765290b98c025edf311e34fe11d820067c0336a84df517ef76069"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 2.9737397767603397,
+        "CPU_user_seconds": 5.181784999999998,
+        "CPU_system_seconds": 0.01192099999999996,
+        "RSS_sampled_peak_bytes": 338063360,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381116706816,
+        "free_disk_after_bytes": 6381115777024,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "ten",
+      "year": 2022,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 44,
+          "dates": 5,
+          "earliest_signal": "2021-12-22 00:00:00",
+          "latest_signal": "2021-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2022/86556956e28385e3a507e23a32bd8912557dc61c21fef297255bd4c8c4c9ab35",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2022/perturb/1fd71e41e03f225039bf35f5ee11d3e28b6474653666da113679e132b79d1125",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2022/86556956e28385e3a507e23a32bd8912557dc61c21fef297255bd4c8c4c9ab35/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "a32d30f2d68a6e10c97b27b539ac2f359d0a4f8c29d3515fecb5fe6226955f94"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2022/perturb/1fd71e41e03f225039bf35f5ee11d3e28b6474653666da113679e132b79d1125/MODEL_REGISTRY.json",
+        "bytes": 2400,
+        "sha256": "d2bc643d1735e1f9a59b45dd8082ecfa82ed526e5166d4db6ad0b8cc2f488393"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.075664585456252,
+        "CPU_user_seconds": 5.394666999999991,
+        "CPU_system_seconds": 0.023938999999999933,
+        "RSS_sampled_peak_bytes": 330694656,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381115731968,
+        "free_disk_after_bytes": 6381114916864,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "ten",
+      "year": 2022,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 44,
+          "dates": 5,
+          "earliest_signal": "2021-12-22 00:00:00",
+          "latest_signal": "2021-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2022/86556956e28385e3a507e23a32bd8912557dc61c21fef297255bd4c8c4c9ab35",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2022/delete/0635b67af8f4813feceb8a78e95474254e9d8907473c22be69fbfa329feaa59f",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2022/86556956e28385e3a507e23a32bd8912557dc61c21fef297255bd4c8c4c9ab35/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "a32d30f2d68a6e10c97b27b539ac2f359d0a4f8c29d3515fecb5fe6226955f94"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2022/delete/0635b67af8f4813feceb8a78e95474254e9d8907473c22be69fbfa329feaa59f/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "ad81a0584e5ba4d43b111c991edd2dbb9476c135257b08e14a539bc0e7b05421"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.105807749554515,
+        "CPU_user_seconds": 5.441757000000003,
+        "CPU_system_seconds": 0.02391600000000005,
+        "RSS_sampled_peak_bytes": 334266368,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381115703296,
+        "free_disk_after_bytes": 6381114773504,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "five",
+      "year": 2026,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 40,
+          "dates": 2,
+          "earliest_signal": "2025-12-30 00:00:00",
+          "latest_signal": "2025-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2026/d0999e7c396cd5790c9e7bfa97e592bce4f92ff4b82bfa5015cd68e0121447ff",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2026/perturb/15d3f7189ccac186c9dfd64e3041a372a3f71a46f64d35532291e01e4fb9b1e6",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2026/d0999e7c396cd5790c9e7bfa97e592bce4f92ff4b82bfa5015cd68e0121447ff/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "2e240d4f2eb1c94ddeeca0a76071ccce9769e14fdcec311d6258edffd6e08275"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2026/perturb/15d3f7189ccac186c9dfd64e3041a372a3f71a46f64d35532291e01e4fb9b1e6/MODEL_REGISTRY.json",
+        "bytes": 2423,
+        "sha256": "fd641cf07aacfa18151c69a8257366f63b9fff99d64f4d68e5e665d21b643469"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.0724324956536293,
+        "CPU_user_seconds": 5.406206999999995,
+        "CPU_system_seconds": 0.003924000000000039,
+        "RSS_sampled_peak_bytes": 355602432,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381114728448,
+        "free_disk_after_bytes": 6381113921536,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "five",
+      "year": 2026,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 40,
+          "dates": 2,
+          "earliest_signal": "2025-12-30 00:00:00",
+          "latest_signal": "2025-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2026/d0999e7c396cd5790c9e7bfa97e592bce4f92ff4b82bfa5015cd68e0121447ff",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2026/delete/5c3c3c9eb0033ec7814df2e8dc755deffbb76e51c396c4b9db2b06acb4842154",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/five/ADD/2026/d0999e7c396cd5790c9e7bfa97e592bce4f92ff4b82bfa5015cd68e0121447ff/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "2e240d4f2eb1c94ddeeca0a76071ccce9769e14fdcec311d6258edffd6e08275"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/five/2026/delete/5c3c3c9eb0033ec7814df2e8dc755deffbb76e51c396c4b9db2b06acb4842154/MODEL_REGISTRY.json",
+        "bytes": 2422,
+        "sha256": "6f311427e84bafe11292dbb26b42be34e952a10b661bd118450f160aa9f097ef"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.1141006276011467,
+        "CPU_user_seconds": 5.466949999999997,
+        "CPU_system_seconds": 0.011995999999999896,
+        "RSS_sampled_peak_bytes": 333832192,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381114699776,
+        "free_disk_after_bytes": 6381113786368,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "ten",
+      "year": 2026,
+      "variant": "perturb",
+      "source_interventions": [
+        {
+          "rows": 40,
+          "dates": 4,
+          "earliest_signal": "2025-12-25 00:00:00",
+          "latest_signal": "2025-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2026/4840fd9d6e5a108b67b2246c1f4fe399f99be54e492cb78cc2eb5bb2a9bba857",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2026/perturb/8b89b2b1e78e52a2bef9e65ad8662368092634e83017a991737de46d613a84ef",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2026/4840fd9d6e5a108b67b2246c1f4fe399f99be54e492cb78cc2eb5bb2a9bba857/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "82f91ec66e6307b507dc1ac8aeb35f2531cae7b0340dd65e3155125af2f5587b"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2026/perturb/8b89b2b1e78e52a2bef9e65ad8662368092634e83017a991737de46d613a84ef/MODEL_REGISTRY.json",
+        "bytes": 2400,
+        "sha256": "aa59dca3a9c35a843d27c1d218c5d80ca750f2fea611b4bacf0ef80e2b3e169e"
+      },
+      "resources": {
+        "pid": 689375,
+        "status": "COMPLETED",
+        "wall_seconds": 3.2161424346268177,
+        "CPU_user_seconds": 5.687189000000004,
+        "CPU_system_seconds": 0.01602199999999998,
+        "RSS_sampled_peak_bytes": 345595904,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381113741312,
+        "free_disk_after_bytes": 6381112934400,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    },
+    {
+      "status": "PASS_FULL_ORIGINAL_XGB_COLD_FIT",
+      "arm": "M1",
+      "seed": 17,
+      "head": "ten",
+      "year": 2026,
+      "variant": "delete",
+      "source_interventions": [
+        {
+          "rows": 40,
+          "dates": 4,
+          "earliest_signal": "2025-12-25 00:00:00",
+          "latest_signal": "2025-12-31 00:00:00",
+          "stage": "actual source frame before maturity filtering"
+        }
+      ],
+      "full_booster_fits": 5,
+      "all_training_input_and_prediction_hashes_exact": true,
+      "all_booster_model_hashes_exact": true,
+      "predictions_bitexact": true,
+      "original": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2026/4840fd9d6e5a108b67b2246c1f4fe399f99be54e492cb78cc2eb5bb2a9bba857",
+      "cold": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2026/delete/90b33e04a97c0bbd92d1f5bf280e91cf3e3e2dba9b614bc846c364555cb19457",
+      "counterfactual_driver": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/core/round26_1/master_backend_counterfactual.py",
+        "bytes": 7271,
+        "sha256": "738b85b0b8b819dc34d5462c36a74b12ab1068d3ca2ae33ad2bd537ebb05953c"
+      },
+      "original_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend/M1/17/ten/ADD/2026/4840fd9d6e5a108b67b2246c1f4fe399f99be54e492cb78cc2eb5bb2a9bba857/MODEL_REGISTRY.json",
+        "bytes": 2376,
+        "sha256": "82f91ec66e6307b507dc1ac8aeb35f2531cae7b0340dd65e3155125af2f5587b"
+      },
+      "cold_registry": {
+        "path": "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_7_26_1_execution/MASTER_backend_CF/M1/ten/2026/delete/90b33e04a97c0bbd92d1f5bf280e91cf3e3e2dba9b614bc846c364555cb19457/MODEL_REGISTRY.json",
+        "bytes": 2399,
+        "sha256": "934127d3f31c021fac64de45e7354ad5ae0e7db19c36d924707dabec4b404d74"
+      },
+      "resources": {
+        "pid": 689378,
+        "status": "COMPLETED",
+        "wall_seconds": 3.2382992208004,
+        "CPU_user_seconds": 5.726652000000001,
+        "CPU_system_seconds": 0.008050000000000113,
+        "RSS_sampled_peak_bytes": 337555456,
+        "RSS_sample_interval_seconds": 0.25,
+        "process_lifetime_ru_maxrss_KiB": 7975000,
+        "free_disk_before_bytes": 6381113712640,
+        "free_disk_after_bytes": 6381112799232,
+        "GPU_training_seconds": 0,
+        "scope": "this CPU process; thread CPU included; CUDA runtime not used"
+      }
+    }
+  ],
+  "actual_native_replays": 12
+}
