@@ -8,7 +8,7 @@
   "EVIDENCE_COMPLETE": false,
   "seed_states": {
     "17": {
-      "accepted_OOF_models": 10,
+      "accepted_OOF_models": 20,
       "all24_OOF_complete": false
     },
     "42": {
@@ -20,8 +20,8 @@
       "all24_OOF_complete": false
     }
   },
-  "accepted_target_NN_models": 10,
-  "accepted_target_NN_training_dates": 4858,
+  "accepted_target_NN_models": 20,
+  "accepted_target_NN_training_dates": 9722,
   "full_cold_NN_runs": 0,
   "full_cold_backend_configurations": 0,
   "full_cold_backend_boosters": 0,
