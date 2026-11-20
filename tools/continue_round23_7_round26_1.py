@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Sequential, explicit deliverables; unsupported paths fail without fake statuses."""
 from pathlib import Path
-import sys,argparse
-C=Path('/data1/stock-mxy/课题/一进二策略');sys.path.insert(0,str(C));sys.dont_write_bytecode=True
+import sys,argparse,os
+C=Path('/data1/stock-mxy/课题/一进二策略');sys.path.insert(0,str(C));sys.dont_write_bytecode=True;os.environ["PYTHONDONTWRITEBYTECODE"]="1"
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--deliverable',choices=['D0','D1','D2','D3','D4','D5','all'],required=True);p.add_argument('--resume',action='store_true');p.add_argument('--publish',action='store_true');p.add_argument('--jobs',type=int,default=1);p.add_argument('--seed',type=int,default=17);a=p.parse_args()
@@ -38,8 +38,11 @@ def main():
    if a.seed!=17:raise ValueError('D4 executes the fixed17 ->42 ->73 sequence; start with --seed17 and --resume')
    from core.round23_7.tra_pipeline import run
    run(jobs=a.jobs,publish=a.publish)
-  else:raise NotImplementedError(d+' has no implemented execution entry yet; no completion status written')
-  if a.publish and d not in ['D3','D4']:
+  elif d=='D5':
+   if a.seed!=17:raise ValueError('D5 executes fixed17 ->42 ->73 complete deliveries; start with --seed17 --resume')
+   from core.round26_1.master_delivery import run
+   run(jobs=a.jobs,publish=a.publish,resume=a.resume)
+  if a.publish and d not in ['D3','D4','D5']:
    from core.research_integrity_v5.publish import publish
    for branch in (['round23_7','round26_1'] if d=='D0' else ['round23_7']):publish(branch,'research: execute and audit '+d)
 if __name__=='__main__':main()
