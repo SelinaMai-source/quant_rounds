@@ -1,0 +1,17 @@
+{
+  "exit_code": 0,
+  "command": [
+    "/home/mxy/Stock/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/research/round23_6_26_execution/env/bin/python",
+    "-B",
+    "/data1/stock-mxy/\u8bfe\u9898/\u4e00\u8fdb\u4e8c\u7b56\u7565/tools/continue_round23_7_round26_1.py",
+    "--deliverable",
+    "D5",
+    "--resume",
+    "--publish",
+    "--jobs",
+    "2",
+    "--seed",
+    "17"
+  ],
+  "scope": "complete reference then17full/push->42full/push->73full/push; no extra frameworks"
+}

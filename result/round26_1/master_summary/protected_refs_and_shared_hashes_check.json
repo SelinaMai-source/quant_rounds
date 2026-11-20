@@ -1,0 +1,12 @@
+{
+  "observed_UTC": "2026-11-20T11:37:07.368031+00:00",
+  "protected_remote_refs_unchanged": {
+    "baseline_v5": "feda6870a26f6efe5d722fd9c3b11130ca266d85",
+    "round23_5": "2c28c2083097a28cda921c59c28b254c30cd0976",
+    "round23_6": "efcb7da982566e6aaf1e0be8a1ce8353835569ac",
+    "round26": "ec1816154347622c4ecf401c65489c9a1479f5b7"
+  },
+  "CURRENT_BASELINE_CHANGED": false,
+  "PRODUCTION_CONFIG_CHANGED": false,
+  "scope": "protected Git refs; no invented retroactive production-file baseline hashes"
+}

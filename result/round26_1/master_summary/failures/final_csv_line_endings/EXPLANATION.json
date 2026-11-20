@@ -1,0 +1,7 @@
+{
+  "status": "PUBLISH_FORMAT_FAILURE_REPAIRED",
+  "cause": "csv.DictWriter default CRLF rejected by required git diff --check; explicit LF fixed",
+  "research_results_or_gates_changed": false,
+  "external_blocker": false,
+  "failed_attempt_log_and_source_preserved": true
+}
